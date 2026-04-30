@@ -5,7 +5,7 @@ topic: use-case
 reading_time_min: 4
 sources: 4
 image_prompt: Editorial illustration of a digital control room with multiple swirling model streams converging into a single coding workflow conveyor belt, minimal flat shapes, deep navy and warm orange palette, cinematic light rays from above, no text no logos no faces
-image:
+image: images/26-05-01-0627-02-ibm-bob-80k-employees-multi-model-routing.png
 ---
 
 # IBM Bob ขึ้น GA — 80,000 พนักงานใช้จริง, 45% productivity, multi-model routing คุม cost

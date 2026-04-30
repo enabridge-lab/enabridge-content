@@ -5,7 +5,7 @@ topic: use-case
 reading_time_min: 3
 sources: 2
 image_prompt: Editorial illustration of a glowing parcel traveling through a translucent globe along thin connecting lines that converge into a single chat bubble interface, minimal flat shapes, soft coral and indigo palette, light beams from above, no text no logos no faces
-image:
+image: images/26-05-01-0627-04-easyship-mcp-shipping-agentic-commerce.png
 ---
 
 # Easyship เปิด MCP Server — agentic commerce ได้ shipping layer แล้ว

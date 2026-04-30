@@ -5,7 +5,7 @@ topic: openbridge-trend
 reading_time_min: 4
 sources: 3
 image_prompt: Editorial illustration of layered translucent data lakes stacked vertically with autonomous agents threading between them through a single glowing protocol channel, minimal flat shapes, cool steel blue and copper accents, dramatic vertical lighting, no text no logos no faces
-image:
+image: images/26-05-01-0627-03-microsoft-agentic-fabric-mcp-data-platform.png
 ---
 
 # Microsoft ผูก MCP เข้ากับ Fabric — data platform กลายเป็น "AI-native OS"

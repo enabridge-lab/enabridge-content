@@ -1,0 +1,32 @@
+{
+  "date": "26-05-01-0627",
+  "iso_date": "2026-05-01T06:27:00+07:00",
+  "title": "Daily AI Brief — 26-05-01 06:27",
+  "items": [
+    {
+      "file": "26-05-01-0627-01-cloudflare-code-mode-agents-customers.md",
+      "title": "Cloudflare เปิดทาง agents เป็นลูกค้าตัวเอง — พร้อมบีบ API 1.17M tokens เหลือ 1,000",
+      "order": 1
+    },
+    {
+      "file": "26-05-01-0627-02-ibm-bob-80k-employees-multi-model-routing.md",
+      "title": "IBM Bob ขึ้น GA — 80,000 พนักงานใช้จริง, 45% productivity, multi-model routing คุม cost",
+      "order": 2
+    },
+    {
+      "file": "26-05-01-0627-03-microsoft-agentic-fabric-mcp-data-platform.md",
+      "title": "Microsoft ผูก MCP เข้ากับ Fabric — data platform กลายเป็น \"AI-native OS\"",
+      "order": 3
+    },
+    {
+      "file": "26-05-01-0627-04-easyship-mcp-shipping-agentic-commerce.md",
+      "title": "Easyship เปิด MCP Server — agentic commerce ได้ shipping layer แล้ว",
+      "order": 4
+    }
+  ],
+  "script_char_count": 3641,
+  "audio_file": "26-05-01-0627.mp3",
+  "voice": "coral",
+  "model": "gpt-4o-mini-tts",
+  "speed": 1.3
+}

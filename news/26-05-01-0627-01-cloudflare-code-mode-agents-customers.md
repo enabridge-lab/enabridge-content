@@ -5,7 +5,7 @@ topic: agentic-ai
 reading_time_min: 4
 sources: 4
 image_prompt: Editorial illustration of a glowing API portal compressing thousands of pipes into a single thin beam of light, with autonomous agent silhouettes stepping through as paying customers, minimal flat shapes, muted teal and amber palette, dramatic side lighting, no text no logos no faces
-image:
+image: images/26-05-01-0627-01-cloudflare-code-mode-agents-customers.png
 ---
 
 # Cloudflare เปิดทาง agents เป็นลูกค้าตัวเอง — พร้อมบีบ API 1.17M tokens เหลือ 1,000
