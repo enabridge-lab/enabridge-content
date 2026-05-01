@@ -1,0 +1,32 @@
+{
+  "date": "26-05-02-0624",
+  "iso_date": "2026-05-02T06:24:00+07:00",
+  "title": "Daily AI Brief — 26-05-02 06:24",
+  "items": [
+    {
+      "file": "26-05-02-0624-01-pentagon-7-companies-classified-anthropic-blackballed.md",
+      "title": "Pentagon ปิดดีล AI classified 7 บริษัทรวด — Anthropic ถูกล็อกออกอย่างเป็นทางการ, รัฐบาลสหรัฐแบ่งค่ายโมเดลเสร็จ",
+      "order": 1
+    },
+    {
+      "file": "26-05-02-0624-02-anthropic-900b-valuation-50b-round-48-hours.md",
+      "title": "Anthropic เปิดดีล $50B ที่ valuation $900B — กำหนด 48 ชั่วโมงให้นักลงทุน, แซง OpenAI ขึ้นเป็น AI lab อันดับ 1 โลก",
+      "order": 2
+    },
+    {
+      "file": "26-05-02-0624-03-salesforce-agentforce-operations-back-office-blueprints.md",
+      "title": "Salesforce ขึ้น Agentforce Operations — agent ทำงาน back-office ครบ end-to-end ลด cycle time 50-70%, ลด manual task 80%",
+      "order": 3
+    },
+    {
+      "file": "26-05-02-0624-04-sierra-ghostwriter-fragment-agent-builds-agent.md",
+      "title": "Sierra ปล่อย Ghostwriter — agent ที่สร้าง agent อื่นด้วยภาษาธรรมชาติ + ซื้อ Fragment เป็นการ acquire ครั้งที่ 3 ในปีนี้: Bret Taylor เดิมพัน \"ยุคปุ่มหมดแล้ว\"",
+      "order": 4
+    }
+  ],
+  "script_char_count": 5869,
+  "audio_file": "26-05-02-0624.mp3",
+  "voice": "coral",
+  "model": "gpt-4o-mini-tts",
+  "speed": 1.3
+}

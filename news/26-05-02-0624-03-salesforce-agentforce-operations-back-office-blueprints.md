@@ -5,7 +5,7 @@ topic: use-case
 reading_time_min: 4
 sources: 5
 image_prompt: Editorial illustration of an automated factory floor where invisible mechanical arms process invoices and documents in mid-air, with one human supervisor watching from a glass walkway above, minimal flat shapes, muted indigo and warm peach palette, dramatic top-down lighting, no text no logos no faces
-image:
+image: images/26-05-02-0624-03-salesforce-agentforce-operations-back-office-blueprints.png
 ---
 
 # Salesforce ขึ้น Agentforce Operations — agent ทำงาน back-office ครบ end-to-end ลด cycle time 50-70%, ลด manual task 80%

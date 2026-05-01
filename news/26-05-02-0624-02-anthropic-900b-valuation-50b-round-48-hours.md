@@ -5,7 +5,7 @@ topic: openbridge-trend
 reading_time_min: 4
 sources: 5
 image_prompt: Editorial illustration of a colossal hourglass made of glass towers with golden sand pouring downward at high speed, surrounded by floating financial documents and clock faces, minimal flat shapes, deep teal and gold palette, dramatic backlighting, no text no logos no faces
-image:
+image: images/26-05-02-0624-02-anthropic-900b-valuation-50b-round-48-hours.png
 ---
 
 # Anthropic เปิดดีล $50B ที่ valuation $900B — กำหนด 48 ชั่วโมงให้นักลงทุน, แซง OpenAI ขึ้นเป็น AI lab อันดับ 1 โลก

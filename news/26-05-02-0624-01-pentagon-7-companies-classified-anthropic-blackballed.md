@@ -5,7 +5,7 @@ topic: openbridge-trend
 reading_time_min: 4
 sources: 5
 image_prompt: Editorial illustration of a fortified citadel of seven glowing data servers connected by classified-blue cables, while one server stands outside the wall fading into shadow, minimal flat shapes, deep navy and amber palette, dramatic chiaroscuro lighting, no text no logos no faces
-image:
+image: images/26-05-02-0624-01-pentagon-7-companies-classified-anthropic-blackballed.png
 ---
 
 # Pentagon ปิดดีล AI classified 7 บริษัทรวด — Anthropic ถูกล็อกออกอย่างเป็นทางการ, รัฐบาลสหรัฐแบ่งค่ายโมเดลเสร็จ

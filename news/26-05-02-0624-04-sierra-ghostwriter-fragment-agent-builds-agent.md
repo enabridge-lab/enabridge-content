@@ -5,7 +5,7 @@ topic: agentic-ai
 reading_time_min: 4
 sources: 5
 image_prompt: Editorial illustration of a hand sketching a stick figure on paper, and the stick figure stepping out of the page fully formed and walking into a city of glowing buildings, minimal flat shapes, soft cream and electric purple palette, dramatic side lighting, no text no logos no faces
-image:
+image: images/26-05-02-0624-04-sierra-ghostwriter-fragment-agent-builds-agent.png
 ---
 
 # Sierra ปล่อย Ghostwriter — agent ที่สร้าง agent อื่นด้วยภาษาธรรมชาติ + ซื้อ Fragment เป็นการ acquire ครั้งที่ 3 ในปีนี้: Bret Taylor เดิมพัน "ยุคปุ่มหมดแล้ว"
