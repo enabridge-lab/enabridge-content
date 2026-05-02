@@ -5,7 +5,7 @@ topic: use-case
 reading_time_min: 4
 sources: 5
 image_prompt: Editorial illustration of two towering bookshelves of legal volumes morphing into translucent glowing interfaces, with delicate geometric scales floating between them suggesting a duel of forces, minimal flat shapes, muted burgundy and ivory palette, dramatic backlight, no text no logos no faces
-image:
+image: images/26-05-03-0604-03-legora-100m-arr-vertical-legal-ai.png
 ---
 
 # Legora แตะ $100M ARR — vertical AI agent กลายเป็น category ที่ยั่งยืน ไม่ใช่ wrapper

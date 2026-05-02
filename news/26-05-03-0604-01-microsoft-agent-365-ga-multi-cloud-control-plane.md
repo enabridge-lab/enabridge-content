@@ -5,7 +5,7 @@ topic: openbridge-trend
 reading_time_min: 5
 sources: 5
 image_prompt: Editorial illustration of a single luminous control tower projecting concentric rings of light over scattered drone-like agent silhouettes hovering above three distant cloud landmasses, minimal flat shapes, muted indigo and amber palette, dramatic top-down lighting, no text no logos no faces
-image:
+image: images/26-05-03-0604-01-microsoft-agent-365-ga-multi-cloud-control-plane.png
 ---
 
 # Microsoft Agent 365 ขึ้น GA — กลายเป็น control plane กลางสำหรับ agents ทุกค่ายในองค์กร

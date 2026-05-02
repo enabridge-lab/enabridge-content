@@ -5,7 +5,7 @@ topic: agentic-ai
 reading_time_min: 4
 sources: 4
 image_prompt: Editorial illustration of branching tree-like pipelines flowing through a transparent factory floor, each branch carrying glowing data tokens, with a clean barrier separating control room from production line, minimal flat shapes, muted forest green and warm cream palette, dramatic side lighting, no text no logos no faces
-image:
+image: images/26-05-03-0604-02-mistral-workflows-temporal-eu-orchestration.png
 ---
 
 # Mistral เปิด Workflows — EU วาง orchestration plane ของตัวเอง สวน US hyperscaler

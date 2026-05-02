@@ -5,7 +5,7 @@ topic: use-case
 reading_time_min: 4
 sources: 4
 image_prompt: Editorial illustration of a sequence of small chime-like notification orbs cascading from a calendar grid, an envelope, and a chat bubble — each orb morphing into a busy worker silhouette mid-task, minimal flat shapes, muted teal and golden palette, dramatic backlight, no text no logos no faces
-image:
+image: images/26-05-03-0604-04-writer-action-agent-event-trigger-autonomy.png
 ---
 
 # Writer ปล่อย Action Agent — agent ทำงานเองเมื่อมีเหตุการณ์ ไม่ต้องรอ prompt อีกต่อไป
