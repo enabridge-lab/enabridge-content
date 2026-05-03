@@ -5,7 +5,7 @@ topic: agentic-ai
 sources: 4
 reading_time_min: 4
 image_prompt: Editorial illustration of nine glowing creative tools — paintbrush, 3D wireframe cube, music waveform, camera lens, vector pen, sculpting hand — orbiting a central conversational nucleus connected by golden threads, minimal flat geometric shapes, muted violet and gold palette, dramatic backlight, no text no logos no faces
-image:
+image: images/26-05-04-0608-04-anthropic-claude-creative-mcp-9-connectors.png
 ---
 
 # Anthropic ปล่อย 9 Claude connectors เปิด Adobe + Blender + Autodesk + Ableton — desktop creative app กลายเป็น MCP surface

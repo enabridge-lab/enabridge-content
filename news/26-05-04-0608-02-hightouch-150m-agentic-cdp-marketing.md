@@ -5,7 +5,7 @@ topic: openbridge-trend
 reading_time_min: 4
 sources: 4
 image_prompt: Editorial illustration of a glowing data lake feeding into a constellation of orchestrated marketing channels, with autonomous robotic conductors directing email pulses, SMS waves, and push-notification ribbons across a city grid at dusk, minimal flat geometric shapes, muted teal and coral palette, dramatic backlight, no text no logos no faces
-image:
+image: images/26-05-04-0608-02-hightouch-150m-agentic-cdp-marketing.png
 ---
 
 # Hightouch ระดม $150M ที่ valuation $2.75B — แปลง CDP เดิมเป็น "agentic marketing OS" ให้ Domino's, PetSmart, DraftKings

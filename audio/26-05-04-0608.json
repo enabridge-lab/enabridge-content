@@ -1,0 +1,32 @@
+{
+  "date": "26-05-04-0608",
+  "iso_date": "2026-05-04T06:08:00+07:00",
+  "title": "Daily AI Brief — 26-05-04 06:08",
+  "items": [
+    {
+      "file": "26-05-04-0608-01-reflection-ai-pentagon-2b-dark-horse.md",
+      "title": "Reflection AI ม้ามืดที่ไม่มีสินค้าขายแม้แต่ตัวเดียว — แต่ได้บัตรผ่าน Pentagon classified พร้อม OpenAI/Google/Microsoft",
+      "order": 1
+    },
+    {
+      "file": "26-05-04-0608-02-hightouch-150m-agentic-cdp-marketing.md",
+      "title": "Hightouch ระดม $150M ที่ valuation $2.75B — แปลง CDP เดิมเป็น \"agentic marketing OS\" ให้ Domino's, PetSmart, DraftKings",
+      "order": 2
+    },
+    {
+      "file": "26-05-04-0608-03-parallel-web-systems-100m-agent-infra.md",
+      "title": "Parag Agrawal กลับมาแล้ว — Parallel Web ระดม $100M ที่ $2B สร้าง \"เว็บคู่ขนาน\" ให้ AI agent ใช้แทนคน",
+      "order": 3
+    },
+    {
+      "file": "26-05-04-0608-04-anthropic-claude-creative-mcp-9-connectors.md",
+      "title": "Anthropic ปล่อย 9 Claude connectors เปิด Adobe + Blender + Autodesk + Ableton — desktop creative app กลายเป็น MCP surface",
+      "order": 4
+    }
+  ],
+  "script_char_count": 6210,
+  "audio_file": "26-05-04-0608.mp3",
+  "voice": "coral",
+  "model": "gpt-4o-mini-tts",
+  "speed": 1.3
+}

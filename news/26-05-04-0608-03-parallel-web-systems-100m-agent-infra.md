@@ -5,7 +5,7 @@ topic: agentic-ai
 sources: 4
 reading_time_min: 4
 image_prompt: Editorial illustration of a glowing parallel web of interconnected nodes branching off a familiar globe, with autonomous robotic arms reaching through API portals to fetch data from floating webpages, minimal flat geometric shapes, muted indigo and amber palette, dramatic backlight, no text no logos no faces
-image:
+image: images/26-05-04-0608-03-parallel-web-systems-100m-agent-infra.png
 ---
 
 # Parag Agrawal กลับมาแล้ว — Parallel Web ระดม $100M ที่ $2B สร้าง "เว็บคู่ขนาน" ให้ AI agent ใช้แทนคน

@@ -5,7 +5,7 @@ topic: openbridge-trend
 reading_time_min: 4
 sources: 4
 image_prompt: Editorial illustration of a dark horse silhouette galloping past six gleaming corporate towers toward a fortified pentagon-shaped citadel under a stormy sky, minimal flat geometric shapes, muted slate and amber palette, dramatic backlight, cinematic depth, no text no logos no faces
-image:
+image: images/26-05-04-0608-01-reflection-ai-pentagon-2b-dark-horse.png
 ---
 
 # Reflection AI ม้ามืดที่ไม่มีสินค้าขายแม้แต่ตัวเดียว — แต่ได้บัตรผ่าน Pentagon classified พร้อม OpenAI/Google/Microsoft
