@@ -1,0 +1,32 @@
+{
+  "date": "26-05-03-0604",
+  "iso_date": "2026-05-03T06:04:00+07:00",
+  "title": "Daily AI Brief — 26-05-03 06:04",
+  "items": [
+    {
+      "file": "26-05-03-0604-01-microsoft-agent-365-ga-multi-cloud-control-plane.md",
+      "title": "Microsoft Agent 365 ขึ้น GA — กลายเป็น control plane กลางสำหรับ agents ทุกค่ายในองค์กร",
+      "order": 1
+    },
+    {
+      "file": "26-05-03-0604-02-mistral-workflows-temporal-eu-orchestration.md",
+      "title": "Mistral เปิด Workflows — EU วาง orchestration plane ของตัวเอง สวน US hyperscaler",
+      "order": 2
+    },
+    {
+      "file": "26-05-03-0604-03-legora-100m-arr-vertical-legal-ai.md",
+      "title": "Legora แตะ $100M ARR — vertical AI agent กลายเป็น category ที่ยั่งยืน ไม่ใช่ wrapper",
+      "order": 3
+    },
+    {
+      "file": "26-05-03-0604-04-writer-action-agent-event-trigger-autonomy.md",
+      "title": "Writer ปล่อย Action Agent — agent ทำงานเองเมื่อมีเหตุการณ์ ไม่ต้องรอ prompt อีกต่อไป",
+      "order": 4
+    }
+  ],
+  "script_char_count": 5034,
+  "audio_file": "26-05-03-0604.mp3",
+  "voice": "coral",
+  "model": "gpt-4o-mini-tts",
+  "speed": 1.3
+}
