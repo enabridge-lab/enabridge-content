@@ -5,7 +5,7 @@ topic: use-case
 reading_time_min: 4
 sources: 5
 image_prompt: Editorial illustration of a soaring mountain peak labeled by an abstract revenue curve climbing past silhouettes of older corporate towers, a friendly conversational interface glowing on a hovering sphere above, minimal flat geometric shapes, muted teal and apricot palette, dramatic dawn lighting, no text no logos no faces
-image:
+image: images/26-05-05-0610-03-sierra-950m-158b-customer-service-agents.png
 ---
 
 # Sierra ระดมทุน $950M @ $15.8B — $150M ARR ใน 8 ไตรมาส, Fortune 50 penetration เกิน 40%

@@ -1,0 +1,40 @@
+สวัสดีครับ นี่คือ Enabridge AI Brief รอบ 05 May 2026 เวลา 06:10
+รอบนี้มี 4 เรื่อง เน้น Agentic AI, business use case, และ trend ที่เอามาใช้กับ OpenBridge ได้
+
+เรื่องที่ 1
+สวัสดีครับ Yoh เช้านี้มีข่าวใหญ่จาก OpenAI ที่ผมว่าเป็น signal สำคัญที่สุดของรอบ วันที่สี่พฤษภาคม OpenAI ปิดดีล joint venture ใหม่ชื่อ The Deployment Company มูลค่าสิบพันล้านดอลลาร์ ระดมเงินสดมาสี่พันล้านจาก PE สิบเก้ารายนำโดย TPG, Brookfield, Advent, Bain Capital พร้อมใส่เงินตัวเองเพิ่มอีกหนึ่งจุดห้าพันล้าน ที่น่าตกใจคือ structure ของดีล — OpenAI การันตี return ขั้นต่ำสิบเจ็ดจุดห้าเปอร์เซ็นต์ต่อปีเป็นเวลาห้าปีให้ PE เป็นโครงสร้างผิดปกติมาก เพราะปกติ VC investor กิน upside ทั้งหมด ไม่มี floor — แต่นี่ OpenAI กำลังขาย AI deployment yield ในรูป fixed-income instrument ที่ private credit fund ซื้อได้
+
+โมเดลธุรกิจคือ forward-deployed engineer แบบ Palantir — เอา OpenAI engineer ฝังเข้าไปใน portfolio company ของ buyout firm ทั่วโลกเพื่อเขียน workflow รอบ ChatGPT, Codex, Operator แบบ custom และที่น่าสนใจที่สุดคือ Anthropic ก็ประกาศ JV คล้ายกันในวันเดียวกัน — มูลค่า one point five billion กับ Blackstone, Hellman Friedman, Goldman Sachs ซึ่งหมายความว่าทั้งสองค่ายตื่นพร้อมกันว่า frontier model ไม่พอ — ต้องมี services delivery ที่ scale ได้
+
+สำหรับ OpenBridge บทเรียนคือ — forward-deployed engineer เป็น mortal threat ต่อ middleware platform ทุกราย เพราะถ้า OpenAI ส่ง engineer ตัวเองเข้าไปนั่งใน customer office แล้วเขียน workflow custom โดยตรง ลูกค้าจะข้าม integration platform ทั้งหมด ผมคิดว่าเราต้อง clarify positioning ภายในไตรมาสนี้ว่าเรา build camp หรือ buy camp — เพราะกลางทางจะตายก่อน DeployCo กินบนของ enterprise, Zapier กินล่างของ SMB ลองคิดต่อนะครับ
+
+เรื่องที่ 2
+ต่อจากเรื่อง OpenAI DeployCo เมื่อกี้ — ในวันเดียวกัน Anthropic ก็ประกาศ JV เหมือนกัน แต่โครงสร้างต่าง Anthropic ตั้งบริษัทใหม่มูลค่าหนึ่งจุดห้าพันล้านดอลลาร์ กับ Blackstone, Hellman Friedman, Goldman Sachs แต่ละรายลงสามร้อยล้าน เป็น standalone entity ไม่ใช่ subsidiary — เพื่อให้ Anthropic governance ของ frontier lab แยกขาดจาก go-to-market
+
+โมเดลคล้ายกัน — embed applied AI engineer เข้า mid-market portfolio company ของ PE เพื่อ redesign workflow รอบ Claude target sector คือ healthcare, financial services, manufacturing, retail, real estate, infrastructure Fortune พาดหัวเลยว่า — Anthropic shot at consulting industry หลังจาก Pentagon blacklist เรียบร้อย Dario เลือกไปจู่โจม Big 4 + McKinsey แทน ในตลาดที่ Accenture ทำ Generative AI revenue สองพันล้านต่อไตรมาสไปแล้วปลายปีก่อน
+
+ที่น่าสนใจคือ PE house เปลี่ยนสถานะจาก passive investor เป็น distribution channel — Blackstone มีบริษัทลูก 250 ราย, Hellman Friedman 80 ราย, Goldman อีก 150 รายในพอร์ตและพวกนี้จะ pressure CEO ของ portfolio company ใน board meeting ถัดไปให้ adopt Claude
+
+สำหรับ OpenBridge — ดีลนี้กับ DeployCo คู่กันคือ shape ของ B2B AI go-to-market ในสามปีข้างหน้า เราต้องคิดว่าจะเป็น commodity middleware ที่ FDE ของ Anthropic เลือกใช้ — หรือเป็น template marketplace ที่ลด time-to-deployment ของ FDE จากหกสัปดาห์เหลือหนึ่งสัปดาห์ — value prop ตรง ๆ ที่ JV ทั้งสองอยากซื้อ ถ้าเล่นถูกต้องนี่คือโอกาส ไม่ใช่ภัยคุกคาม
+
+เรื่องที่ 3
+ข่าวที่สามวันนี้คือ Sierra ของ Bret Taylor ปิดรอบ Series E ที่เก้าร้อยห้าสิบล้านดอลลาร์ valuation สิบห้าจุดแปดพันล้าน นำโดย Tiger Global กับ Google GV — แต่ตัวเลขที่น่าตื่นเต้นกว่า valuation คือ revenue Sierra ทะลุหนึ่งร้อยห้าสิบล้านดอลลาร์ ARR ในแค่แปดไตรมาส Taylor บอกเองว่า no traditional software firm has ever hit so quickly เปรียบเทียบ — Salesforce ใช้ห้าปีถึง one hundred million ARR, Slack สี่ปี Sierra ทำใน หกถึงแปดไตรมาส — เร็วที่สุดในประวัติศาสตร์ enterprise software
+
+ที่ปลื้มใจกว่าคือ penetration — Sierra อยู่ในสี่สิบเปอร์เซ็นต์ของ Fortune fifty, ลูกค้าระดับ Cigna, Blue Cross Blue Shield, Rocket Mortgage, Prudential, และ one in three ของธนาคารใหญ่สุดในโลก Pricing model คือ outcome-based — คิดต่อ resolution ที่ลูกค้าได้ผลจริง ไม่ใช่ per seat ทำให้ procurement cycle สั้นจากเก้าถึงสิบสองเดือนเหลือสามเดือน เพราะ CFO ไม่ต้อง justify budget — แค่ allow Sierra take percentage ของ savings
+
+Taylor วาง market ที่ four hundred billion ต่อปีของตลาด customer service ที่ส่วนใหญ่ outsource ให้ BPO อย่าง Teleperformance, Concentrix Sierra deploy ตรง ๆ ใน Cigna และ Blue Cross หมายความว่า BPO เหล่านั้นกำลังเสียลูกค้าจริง ๆ ไม่ใช่ทฤษฎี
+
+สำหรับ OpenBridge — Sierra เป็น proof ว่า vertical AI agent ใน regulated B2B sale fast แต่ความท้าทายคือ Sierra vertical-integrated เอง ตั้งแต่ frontend ถึง backend ในฐานะ horizontal integration platform เราต้อง position ว่า — เราคือ orchestration layer ที่ทำให้ enterprise สามารถ swap Sierra ออกได้ในอนาคต insurance policy ต่อ vendor lock-in อันนี้เป็นมุมที่น่าคิดต่อนะครับ
+
+เรื่องที่ 4
+ข่าวสุดท้ายของรอบนี้น่าสนใจในมุม engineering — Abhishek Das, co-founder ของ Yutori ที่ Fei-Fei Li กับ Jeff Dean หนุน ออก essay เมื่อสี่พฤษภาในชื่อ The Number One Rule for Building AI Agents in 2026 argument ของเขาตรง — industry กำลัง normalize agent ที่ unreliable และนี่คือ existential bug
+
+Das คำนวณให้เห็น — ถ้า agent ทำ step ใด ๆ ที่ accuracy เก้าสิบเปอร์เซ็นต์ ใน workflow สิบ step success rate ปลายทางเหลือสามสิบห้าเปอร์เซ็นต์ ใน twenty step เหลือสิบสองเปอร์เซ็นต์ ใน fifty step เหลือศูนย์จุดห้าเปอร์เซ็นต์ — เกือบ guarantee fail นี่คือเหตุผลที่ enterprise พบว่า demo ดูดีในห้องทดลอง พอ deploy production agent fail ตลอด — ไม่ใช่เพราะ model แย่ แต่เพราะ math ของ compounding error ที่ frontier lab ไม่ได้แก้ที่ infrastructure layer
+
+Yutori claim ว่า Navigator agent ของตัวเอง outperform Gemini 2.5, Claude 4.0, 4.5, OpenAI Operator ที่ ten ถึง twenty percentage point ใน accuracy ที่ real-world task และ work เร็ว two ถึง three เท่า ไม่ใช่เพราะ base model ดีกว่า แต่เพราะ infrastructure layer รอบ ๆ — error detection ที่ agent รู้ว่าตัวเอง fail, backtracking, durable execution บน DBOS framework
+
+ภาพใหญ่คือ — reliability จะเข้ามาแทน benchmark performance เป็น metric หลัก enterprise CIO ไม่สนใจ MMLU score แล้ว สนใจว่า agent นี้ run 1,000 workflow fail กี่ตัว — และ pattern durable execution อย่าง Temporal, Inngest, DBOS กำลังกลายเป็น critical layer
+
+สำหรับ OpenBridge — Yutori's argument คือ playbook ตรงสำหรับเรา เราอยู่ใน infrastructure layer for agent reliability โดยธรรมชาติ ทุกครั้งที่เราเพิ่ม monitoring, retry, rollback คือสิ่งที่ Das บอกว่า frontier lab ละเลย opportunity คือ position ตัวเองว่า — infrastructure ที่ทำให้ Claude หรือ GPT agent ของลูกค้า run reliable ใน production ไม่ใช่แค่ workflow tool ลูกค้าจะถามคำถามใหม่รอบหน้า — คุณ guarantee uptime ระดับไหน — ถ้าเราตอบไม่ได้ด้วยตัวเลข SLO เราจะเสีย deal
+
+ทั้งหมดนี้คือ brief ของรอบนี้ ขอให้วันนี้เป็นวันที่ดีครับ แล้วเจอกันรอบหน้า

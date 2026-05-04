@@ -5,7 +5,7 @@ topic: openbridge-trend
 reading_time_min: 4
 sources: 5
 image_prompt: Editorial illustration of a sleek glass tower fragmenting into modular blocks that flow toward smaller industrial buildings, each block carrying a luminous engineer-shaped glyph, abstract financial ribbons binding the scene, minimal flat shapes, muted indigo and bronze palette, dramatic side lighting, no text no logos no faces
-image:
+image: images/26-05-05-0610-02-anthropic-blackstone-goldman-15b-services-firm.png
 ---
 
 # Anthropic เปิดบริษัทใหม่ $1.5B กับ Blackstone, Goldman Sachs, Hellman & Friedman — เล็ง consulting industry แทน Pentagon

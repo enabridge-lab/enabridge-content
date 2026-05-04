@@ -5,7 +5,7 @@ topic: openbridge-trend
 reading_time_min: 4
 sources: 5
 image_prompt: Editorial illustration of a glowing geometric vault opening to reveal armies of identical engineer silhouettes marching out into rows of office buildings, abstract financial graph lines weaving through the scene, minimal flat shapes, muted teal and gold palette, dramatic lighting, no text no logos no faces
-image:
+image: images/26-05-05-0610-01-openai-deployment-company-10b-pe-palantir.png
 ---
 
 # OpenAI ตั้ง "The Deployment Company" $10B กับกอง PE — การันตี return 17.5% ต่อปี เพื่อยัด Claude... เอ้ย ChatGPT เข้า portfolio company

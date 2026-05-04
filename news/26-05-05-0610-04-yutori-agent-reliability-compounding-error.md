@@ -5,7 +5,7 @@ topic: agentic-ai
 reading_time_min: 4
 sources: 4
 image_prompt: Editorial illustration of a long winding bridge of glass blocks across a vast canyon, each block subtly cracked while one hand patiently aligns them, abstract decay particles drifting downward, minimal flat geometric shapes, muted slate and pale-yellow palette, dramatic side lighting, no text no logos no faces
-image:
+image: images/26-05-05-0610-04-yutori-agent-reliability-compounding-error.png
 ---
 
 # Yutori ออกมาท้า industry — "agent ที่ทำงานได้ 90% ก็ใช้ไม่ได้" reliability เป็น moat ที่แท้จริงของ agentic AI
