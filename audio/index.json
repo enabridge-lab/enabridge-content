@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-03T23:19:52Z",
+  "generated_at": "2026-05-04T02:46:39Z",
   "count": 18,
   "episodes": [
     {
@@ -98,7 +98,7 @@
         }
       ],
       "audio_file": "26-05-02-0624.mp3",
-      "audio_size_bytes": 6738816,
+      "audio_size_bytes": 6526464,
       "voice": "coral",
       "model": "gpt-4o-mini-tts",
       "speed": 1.3,
