@@ -1,0 +1,44 @@
+สวัสดีครับ นี่คือ Enabridge AI Brief รอบ 04 May 2026 เวลา 06:08
+รอบนี้มี 4 เรื่อง เน้น Agentic AI, business use case, และ trend ที่เอามาใช้กับ OpenBridge ได้
+
+เรื่องที่ 1
+สวัสดีครับ Yoh เช้านี้มีข่าวใหญ่จาก Pentagon ที่อยากเล่าให้ฟัง วันที่หนึ่งพฤษภาคม Pentagon ประกาศรายชื่อ AI vendor เจ็ดรายที่ได้รับอนุญาตให้ deploy โมเดลบน classified networks ห้ารายแรกเป็นคนคุ้นหน้า — OpenAI, Google, Microsoft, AWS, Nvidia, SpaceX — แต่รายที่เจ็ดเป็น dark horse ชื่อ Reflection AI ที่หลายคนยังไม่รู้จัก Reflection AI ก่อตั้งโดยอดีต Google DeepMind สองคน เพิ่งระดมทุน Series B สองพันล้านดอลลาร์เมื่อปลายปีที่แล้ว แต่จนถึงวันนี้ก็ยังไม่มี product commercial ขาย ยังไม่มี customer แม้แต่รายเดียว ที่น่าสนใจคือ cap table มี Nvidia กับ 1789 Capital ซึ่งเป็นกองทุน anti-woke ของ Donald Trump Jr. — เลยกลายเป็น politically safe option ที่ Pentagon เลือกใช้แทน Anthropic ที่ถูก designation supply-chain risk ตั้งแต่กุมภาพันธ์
+
+ความสำคัญของเรื่องนี้สามชั้นนะ — ชั้นแรก government procurement กำลังเปลี่ยนเป็น values-aligned market ที่ alignment ของ founder สำคัญกว่า benchmark ชั้นที่สอง Pentagon ยอม bet เงินภาษีระดับสองร้อยล้านกับโมเดลที่ยังไม่ exist เพื่อหลีกเลี่ยง vendor lock-in ชั้นที่สาม Anthropic เสีย DoD แต่ run-rate ยังโตจาก nine billion เป็น thirty billion ในไม่ถึงห้าเดือน — แสดงว่า commercial market ใหญ่พอจะ sustain โดยไม่ต้องพึ่ง government
+
+สำหรับ OpenBridge บทเรียนชัด — workflow ของเราต้อง swap LLM provider ได้ผ่าน config เดียว ไม่ผูก hard กับ Claude หรือ GPT รายเดียว เพราะลูกค้า enterprise จะถามคำถามนี้แน่นอนในรอบ procurement หน้า ลองคิดต่อนะครับว่าจะ design abstraction layer แบบไหน
+
+เรื่องที่ 2
+ข่าวที่สอง — Hightouch บริษัท CDP จาก San Francisco ปิด Series D ที่ร้อยห้าสิบล้านดอลลาร์ ที่ valuation สองพันเจ็ดร้อยห้าสิบล้าน นำโดย Goldman Sachs Growth Equity และ Bain Capital Ventures มี TD7 ซึ่งเป็น VC arm ของ The Trade Desk ตามเข้ามาด้วย — สัญญาณว่า ad-tech กำลังหา positioning ใน era post-cookie
+
+Hightouch เริ่มจาก Y Combinator ในฐานะ reverse-ETL tool — เครื่องมือที่ส่งข้อมูลจาก data warehouse ออกไป Salesforce, HubSpot — แต่ในปี 2024 pivot สำคัญด้วยการ launch AI Decisioning agent ที่ตัดสินใจอัตโนมัติว่า customer แต่ละคนควรได้รับ message อะไร ผ่าน channel ไหน ที่เวลาใด — แทนที่ marketer จะนั่ง config rule รายตัว
+
+ตัวเลขโตจริงนะ — PetSmart ใช้ Hightouch ส่ง email personalized สี่พันล้านฉบับต่อปี ดันยอดขาย double-digit, engagement เพิ่มร้อยห้าสิบเปอร์เซ็นต์ Domino's, DraftKings, Ramp, Whoop ก็เป็นลูกค้าหลัก revenue โตมากกว่าร้อยเปอร์เซ็นต์สองปีติด ARR ใกล้สองร้อยล้าน
+
+Pattern สำคัญที่ apply กับ OpenBridge ได้: data ของลูกค้าอยู่ที่ไหน เราไปหา ไม่ migrate มา — Hightouch ไม่เคย store data ของลูกค้าเลย ทุกอย่างยัง federated อยู่บน Snowflake, Databricks ของเขา Hightouch แค่เป็น compute + decisioning layer ทับลงไป pattern นี้ enterprise CDO ชอบมาก เพราะไม่มี data residency issue ไม่ต้องทำ ETL ใหม่
+
+OpenBridge ควรคิดเรื่องเดียวกัน — เรามี decisioning layer บน workflow ของเราหรือยัง agent ที่บอกได้ว่าลูกค้าใหม่นี้ควร trigger workflow แบบไหน — เพราะถ้ายัง stuck อยู่ที่ utility pricing แบบ reverse-ETL valuation 2.75 พันล้านแบบ Hightouch จะไม่มีทางได้
+
+เรื่องที่ 3
+ข่าวที่สาม — Parag Agrawal อดีต CEO Twitter ที่ Elon Musk ไล่ออกในปี 2022 กลับมาแล้วในฐานะ founder ของ Parallel Web Systems บริษัทเพิ่งปิด Series B หนึ่งร้อยล้านดอลลาร์ ที่ valuation สองพันล้าน นำโดย Sequoia — เพียงห้าเดือนหลัง Series A ที่ valuation เจ็ดร้อยสี่สิบล้าน ขึ้นเกือบสามเท่าในห้าเดือน
+
+product ของ Parallel คือ search API ที่ออกแบบให้ AI agent ใช้แทนคน thesis คือ — web ปัจจุบันออกแบบมาเพื่อให้คนอ่าน HTML, JavaScript, captcha, paywall ทุกอย่างเป็นอุปสรรคสำหรับ agent ที่ต้องการ fetch ข้อมูลแบบ programmatic Parallel เลยสร้าง shadow web ของตัวเอง — index เว็บที่ pre-rendered, pre-structured ให้อยู่ในรูป markdown + JSON ที่ agent กินได้ทันที
+
+ลูกค้าใหญ่ ๆ มี Clay, Harvey, Notion, Opendoor — Clay ใช้ Parallel แทน Google + scraping ของตัวเอง ลด infra cost หกสิบเปอร์เซ็นต์ latency จากสิบสองวินาทีเหลือสองจุดสี่วินาที pricing per-query สูงกว่า Google API แปดถึงสิบห้าเท่า แต่ลูกค้ายอมจ่ายเพราะ cost-per-resolved-task ของ agent ต่ำกว่าคู่แข่งสามเท่า run-rate ARR สี่สิบล้านในสิบสี่เดือนแรก
+
+จุดสำคัญคือ Sequoia note ว่า infrastructure layer ของ agent economy จะมีมูลค่ามากกว่า model layer ภายในห้าปี — agent ไม่ใช่แค่ใช้ Claude หรือ GPT เท่านั้น ยังต้องการ web access, runtime, browser, payment rail ที่ออกแบบเพื่อ machine
+
+OpenBridge ควรคิดเรื่องเดียวกัน — connector ของเราที่ออกแบบให้ human map field manually กำลังจะ obsolete agent ของลูกค้าจะคาดหวัง semantic schema + auto-mapping พร้อม pricing ของเราด้วย — ถ้ายังคิดเป็น API call ต่อเดือนจะ undercharge ในอีกสองปี
+
+เรื่องที่ 4
+ข่าวที่สี่ — Anthropic ปล่อย 9 connector ใหม่ให้ Claude เชื่อมตรงเข้า Adobe Creative Cloud, Blender, Autodesk Fusion, Ableton Live, Splice, Affinity และอีกหลาย creative tool — ทั้งหมดใช้ MCP เป็น protocol underlying
+
+ตัวอย่าง demo ที่ event — 3D artist สั่ง Claude ใน Blender ได้ว่า วิเคราะห์ scene นี้ บอก lighting issue และเขียน Python script batch-rename material ทุกตัวตาม convention ใหม่ Claude อ่าน scene metadata ผ่าน MCP เห็น 47 object พร้อม material generate Python script run ใน Blender environment ตรง ๆ — ทั้งหมดในการ session เดียว ไม่มี copy-paste
+
+คู่กับ connector launch Anthropic ปล่อย Claude Design product ใหม่ — สำหรับ ideation ที่ output เป็น file format ของ tool ปลายทาง มี layer มี vector path มี keyframe ที่ edit ต่อได้ ราคาเริ่มสี่สิบดอลลาร์ต่อ seat — pivot ใหญ่จาก Claude เป็น chatbot เป็น Claude เป็น creative collaborator ใน toolchain
+
+จุดที่สำคัญ — Adobe ที่ครองตลาด creative software มาสามสิบปียอมเปิด connector ให้ Claude แม้ stock ตกสิบสองเปอร์เซ็นต์ทันทีหลัง launch CFO บอกว่า เราเลือกเป็น integrated layer ของทุก AI mainstream ดีกว่าปฏิเสธ — pattern ที่ Adobe เคยพลาดในยุค mobile รั้ง Flash นานเกินไป
+
+OpenBridge ควรอ่านสัญญาณนี้ตรง ๆ — MCP กำลังกลายเป็น universal integration protocol ลูกค้า enterprise จะคาดหวังว่า OpenBridge มี MCP server ของตัวเองภายในสิบสองถึงสิบแปดเดือน ถ้าไม่มี Claude หรือ ChatGPT ของลูกค้า orchestrate workflow ของเราผ่าน chat ไม่ได้ — เราจะกลายเป็น data plumbing ที่ AI สั่งไม่ได้ และเสีย competitive position ทันที action item คือเริ่ม build MCP server wrapping API ของเรา หนึ่งสองสปรินต์ก็เสร็จ
+
+ทั้งหมดนี้คือ brief ของรอบนี้ ขอให้วันนี้เป็นวันที่ดีครับ แล้วเจอกันรอบหน้า
