@@ -2,8 +2,8 @@ name: daily-branch-build
 
 # Triggers on push to any `daily/*` branch (the research routine pushes these).
 # Pipeline:
-#   1. Generate hero images (DALL-E 3) for any brief missing `image:` frontmatter
-#   2. Generate day's TTS MP3 + metadata
+#   1. Generate hero images (Gemini "Nano Banana Pro") for any brief missing `image:` frontmatter
+#   2. Generate day's TTS MP3 + metadata (Google Cloud TTS Chirp 3 HD)
 #   3. Rebuild audio/index.json
 #   4. Commit everything back to the same branch
 #   5. Open/update a PR to main
@@ -62,24 +62,30 @@ jobs:
       - name: Install deps
         run: |
           pip install --upgrade pip
-          pip install openai python-dotenv requests "httpx[socks]"
+          pip install google-genai google-cloud-texttospeech python-dotenv requests "httpx[socks]"
 
       - name: Configure git identity
         run: |
           git config user.name  "enabridge-bot"
           git config user.email "bot@enabridge.ai"
 
-      - name: Generate hero images (DALL-E 3)
+      - name: Generate hero images (Gemini Nano Banana Pro)
         env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
           python3 scripts/gen_images.py --slug "${{ steps.slug.outputs.slug }}"
 
-      - name: Generate TTS
+      - name: Generate TTS (Google Cloud Chirp 3 HD)
         env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          GCP_TTS_SA_JSON: ${{ secrets.GCP_TTS_SA_JSON }}
         run: |
+          # Decode base64-encoded service-account JSON to a temp file and
+          # point Google client libraries at it via ADC env var.
+          SA_PATH="$RUNNER_TEMP/gcp-sa.json"
+          printf '%s' "$GCP_TTS_SA_JSON" | base64 -d > "$SA_PATH"
+          export GOOGLE_APPLICATION_CREDENTIALS="$SA_PATH"
           python3 scripts/tts.py --slug "${{ steps.slug.outputs.slug }}"
+          rm -f "$SA_PATH"
 
       - name: Rebuild audio/index.json
         run: |

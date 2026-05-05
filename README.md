@@ -21,8 +21,8 @@ flowchart TD
     subgraph REPO["📦 this repo (Enabridge/EnabridgeResearch)"]
         B["push daily/SLUG branch"]
         C["GitHub Actions<br/>daily-branch-build.yml"]
-        D["gen_images.py<br/>(DALL-E 3)"]
-        E["tts.py<br/>(gpt-4o-mini-tts)"]
+        D["gen_images.py<br/>(Gemini Nano Banana Pro)"]
+        E["tts.py<br/>(GCP Chirp 3 HD)"]
         F["update_index.py<br/>(rebuild audio/index.json)"]
         G["commit back + open PR to main"]
         M["main branch"]
@@ -84,9 +84,9 @@ Pipeline กินขอบเขต 4 ระบบ — เอกสารนี
 2. **Connect repo**: `Enabridge/EnabridgeResearch`
 3. **Schedule**: `0 6 * * *` timezone `Asia/Bangkok` (= 06:00 ไทย ทุกวัน)
 4. **Secrets** (inject เป็น env var ใน routine sandbox):
-   - `OPENAI_API_KEY` — ใช้สำหรับ WebSearch ถ้า routine ต้อง (optional — DALL-E/TTS รันบน GHA)
    - `TELEGRAM_BOT_TOKEN`
    - `TELEGRAM_CHAT_ID`
+   - (image gen + TTS รันบน GHA — routine ไม่ต้องมี GEMINI_API_KEY / GOOGLE_APPLICATION_CREDENTIALS)
 5. **Routine prompt**: copy จาก [`prompts/daily-research.md`](prompts/daily-research.md)
 6. **Permissions**: Bash, WebSearch, WebFetch, file read/write
 7. **Git write access**: routine ต้อง push ได้ — Claude Code web ใช้ GitHub App integration (ตั้งค่าอัตโนมัติจาก "Connect repo")
@@ -100,9 +100,13 @@ Pipeline กินขอบเขต 4 ระบบ — เอกสารนี
 
 | Key | Value | ใช้ทำอะไร |
 |---|---|---|
-| `OPENAI_API_KEY` | `sk-proj-...` | DALL-E 3 + gpt-4o-mini-tts |
+| `GEMINI_API_KEY` | `AIza...` (จาก [Google AI Studio](https://aistudio.google.com/apikey)) | Gemini Nano Banana Pro image gen |
+| `GCP_TTS_SA_JSON` | **base64** ของ service-account JSON (role: `Cloud Text-to-Speech User`) | Google Cloud TTS Chirp 3 HD |
 | `TELEGRAM_BOT_TOKEN` | จาก `@BotFather` | ส่ง preview หลัง GHA เสร็จ |
 | `TELEGRAM_CHAT_ID` | user ID ของ Yoh (ได้จาก `scripts/telegram_setup.py`) | destination ของ Telegram preview |
+
+> Encode SA JSON: `base64 -i gcp-tts-sa.json | pbcopy` (macOS) — paste ค่าเข้า GitHub secret ตรง ๆ
+> ถ้ายัง keep `OPENAI_API_KEY` ไว้สำหรับ rollback ก็ปล่อยไว้ได้ — workflow ปัจจุบันไม่ใช้แล้ว
 
 **Workflow permissions**: `Settings → Actions → General` →
 - เลือก **"Read and write permissions"**
@@ -164,7 +168,7 @@ enabridge-research/
 ├── news/
 │   ├── SLUG-NN-slug.md                 # individual brief (e.g. 26-04-21-0606-01-adobe-cx.md)
 │   ├── SLUG-index.md                   # round-level theme + TL;DR
-│   └── images/SLUG-NN-slug.png         # DALL-E 3 hero image (GHA-generated)
+│   └── images/SLUG-NN-slug.png         # Gemini Nano Banana Pro hero image (GHA-generated)
 ├── audio/
 │   ├── SLUG.mp3                        # TTS output (GHA-generated)
 │   ├── SLUG.txt                        # TTS script source
@@ -176,8 +180,8 @@ enabridge-research/
 │   └── brief.md                        # brief skeleton
 ├── scripts/
 │   ├── write_briefs.sh                 # routine's final step — branch + commit + push
-│   ├── gen_images.py                   # DALL-E 3 (GHA)
-│   ├── tts.py                          # gpt-4o-mini-tts (GHA)
+│   ├── gen_images.py                   # Gemini Nano Banana Pro (GHA)
+│   ├── tts.py                          # Google Cloud TTS Chirp 3 HD (GHA)
 │   ├── update_index.py                 # rebuild audio/index.json (GHA)
 │   ├── push_telegram.py                # Telegram notification (GHA)
 │   ├── telegram_setup.py               # one-time: discover chat_id
@@ -198,7 +202,11 @@ enabridge-research/
 ---
 title: ...
 topic: agentic-ai | use-case | openbridge-trend
-image_prompt: Editorial illustration, minimal flat shapes, muted palette, ห้ามใส่ text/logos/faces
+image_prompt: |
+  EN, 3–5 ประโยค, story-driven hero illustration:
+  story beat + visual metaphor + composition + style.
+  Logos OK, text rendering OK (อ่านออกใน 200px thumbnail),
+  1:1 aspect, no real human faces (silhouette OK).
 image:                                   # GHA เติมให้
 source_url: https://...
 ---
@@ -227,9 +235,11 @@ Canonical prompt อยู่ที่ [`prompts/daily-research.md`](prompts/dai
 
 ```bash
 # Dependencies (macOS with system Python)
-pip3 install openai python-dotenv requests 'httpx[socks]' --break-system-packages
+pip3 install google-genai google-cloud-texttospeech python-dotenv requests 'httpx[socks]' --break-system-packages
 
-# Simulate a routine run locally (needs .env with OPENAI_API_KEY)
+# Simulate a routine run locally
+#   - .env needs GEMINI_API_KEY for image gen
+#   - .env needs GOOGLE_APPLICATION_CREDENTIALS=/path/to/sa.json for TTS
 SLUG=$(TZ=Asia/Bangkok date +%y-%m-%d-%H%M)
 git checkout main && git pull
 git checkout -b "daily/${SLUG}"
@@ -246,11 +256,14 @@ bash scripts/write_briefs.sh "${SLUG}"
 
 | Item | Cost |
 |---|---|
-| DALL-E 3 standard × 4 | $0.16 |
-| gpt-4o-mini-tts ~6k chars | ~$0.09 |
+| Gemini 3 Pro Image (Nano Banana Pro) 1K × 4 | ~$0.54 (≈ $0.134/image) |
+| Google Cloud TTS Chirp 3 HD ~6k chars | ~$0.18 (≈ $30/1M chars) |
 | Claude Code routine | Pro plan (no extra) |
 | GitHub Actions | Free (public repo) |
-| **Monthly total** | **~$7.50** |
+| **Monthly total** | **~$22** |
+
+> Trade-off: ภาพดีขึ้นมาก (รองรับ logo/text/composition จริง) + เสียงไทยธรรมชาติขึ้น แลกกับค่าใช้จ่ายเพิ่ม ~3× จาก stack OpenAI เดิม
+> ลดได้ถ้าเปลี่ยนเป็น `gemini-2.5-flash-image` (fallback model) — ถูกกว่ามาก แต่คุณภาพต่ำลง
 
 ---
 

@@ -45,9 +45,13 @@
 3. สำหรับแต่ละเรื่อง เขียนไฟล์ใหม่ `news/${SLUG}-NNN-slug.md` ตาม `templates/brief.md`
    (เช่น `news/26-04-19-0700-001-cloudflare-agents.md`)
    - `topic:` = agentic-ai / use-case / openbridge-trend
-   - `image_prompt:` = English 1-2 ประโยค บรรยายภาพ editorial illustration style (ไม่ใช่ photo-realistic)
-     - ตัวอย่าง: `"Editorial illustration of a glowing server rack turning into a conversational interface, minimal flat shapes, muted blue and coral palette, dramatic lighting"`
-     - ห้ามใส่ logo/brand/คน (DALL-E อาจ reject)
+   - `image_prompt:` = **English 3–5 ประโยค** story-driven hero illustration สำหรับ Gemini Nano Banana Pro (gen ผ่าน GHA)
+     - **Logos OK** — ใส่ brand mark ของบริษัทหลักของข่าวได้ (e.g. OpenAI, Anthropic, Google) — Nano Banana Pro render ได้แม่น
+     - **Text rendering OK** — ใส่ headline/keyword/number ในภาพได้ ต้องอ่านออกเมื่อย่อเหลือ thumbnail 200px (ตัวใหญ่ ๆ contrast สูง)
+     - **1:1 aspect** เสมอ (จะถูก crop เป็น square thumbnail)
+     - **No real human faces** — ใช้ silhouette / abstract figures แทน
+     - **Story beat + visual metaphor + composition + style** ต้องครบ
+     - ตัวอย่าง: `"A muted teal vault door cracks open in the center of the frame, releasing rows of identical engineer silhouettes that march outward in perspective toward a horizon of small office buildings. Abstract gold financial graph lines arc through the negative space, tying the silhouettes back to a glowing orb behind the door. Bold sans-serif headline 'DEPLOY' floats in the upper-left corner in cream, with '17.5%' in coral on the lower-right. Editorial illustration, flat geometric shapes with subtle gradients, slate blue + coral + cream palette on a deep navy background, dramatic side-lighting from the vault."`
    - `image:` = เว้นว่าง — GHA จะเติมให้
 
 4. เขียนไฟล์ index ของรอบ `news/${SLUG}-index.md` — theme + list ทุกเรื่อง + TL;DR
@@ -63,7 +67,7 @@
 
 ## ภาษา
 
-- ไทยเป็นหลัก (ยกเว้น `image_prompt` เป็น EN)
+- ไทยเป็นหลัก (ยกเว้น `image_prompt` เป็น EN — story-driven 3–5 ประโยค ใส่ logo/text ได้)
 - ศัพท์ tech ใช้ EN (agentic, RAG, fine-tuning, MCP, orchestration)
 - โทน: VC analyst ส่ง morning memo — สั้น คม actionable แต่ content แน่น อ่านเพลิน
 

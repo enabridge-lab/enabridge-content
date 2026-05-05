@@ -2,7 +2,7 @@
 
 > การเปลี่ยนแปลง (หลัง Phase 2):
 > - **Routine เขียนแค่ briefs** (ไม่ทำ TTS/Telegram เอง) → push ไป branch `daily/YY-MM-DD`
-> - **GHA รับช่วงต่อ**: gen images (DALL-E 3) → TTS → update index → commit กลับ → เปิด PR → ส่ง Telegram preview
+> - **GHA รับช่วงต่อ**: gen images (Gemini Nano Banana Pro) → TTS (GCP Chirp 3 HD) → update index → commit กลับ → เปิด PR → ส่ง Telegram preview
 > - **Yoh review** ใน Telegram + GitHub → merge PR → content ขึ้น main → site update ภายใน 5 นาที
 > - **Site redesign**: `/research` เป็น grid ของ 60 วันล่าสุด, `/research/[date]` เป็น detail page พร้อมรูป + markdown + audio player
 
@@ -10,15 +10,29 @@
 
 ### 1. เพิ่ม GitHub Actions secrets
 
-ไปที่ `https://github.com/Enabridge/EnabridgeResearch/settings/secrets/actions` → **New repository secret** ทั้ง 3 ตัว:
+ไปที่ `https://github.com/Enabridge/EnabridgeResearch/settings/secrets/actions` → **New repository secret** ทั้ง 4 ตัว:
 
 ```
-OPENAI_API_KEY       = sk-proj-Q9Vcd2K...    (key เดียวกับ routine — ใช้สำหรับ DALL-E + TTS)
-TELEGRAM_BOT_TOKEN   = 8740988487:AAH7RSy... (จาก .env)
-TELEGRAM_CHAT_ID     = 7500968194             (จาก .env)
+GEMINI_API_KEY       = AIza...                  (Google AI Studio → Get API key)
+GCP_TTS_SA_JSON      = <base64 ของ SA JSON>     (GCP service account, role: Cloud Text-to-Speech User)
+TELEGRAM_BOT_TOKEN   = 8740988487:AAH7RSy...    (จาก .env)
+TELEGRAM_CHAT_ID     = 7500968194               (จาก .env)
+```
+
+**สร้าง `GCP_TTS_SA_JSON`:**
+
+```bash
+# 1. ใน GCP Console → IAM → Service Accounts → Create
+#    role: "Cloud Text-to-Speech User"
+# 2. Keys → Add key → Create new key → JSON → ดาวน์โหลด
+# 3. base64-encode + copy:
+base64 -i gcp-tts-sa.json | pbcopy   # macOS
+# base64 -w0 gcp-tts-sa.json | xclip -sel c  # Linux
+# 4. paste เข้า GitHub secret value field
 ```
 
 > `GITHUB_TOKEN` — ใช้ default ของ GHA, ไม่ต้องเพิ่มเอง
+> `OPENAI_API_KEY` — เก็บไว้ก็ได้ถ้าจะ rollback แต่ workflow ปัจจุบันไม่ใช้แล้ว
 
 ### 2. เปิดสิทธิ์ PR ให้ workflow
 
@@ -61,7 +75,7 @@ Working dir: ~/ws/company/enabridge-research
 
 3. เขียน briefs ใน `news/${SLUG}-NNN-slug.md` + index `news/${SLUG}-index.md` ใช้ `templates/brief.md`
    **ทุก brief ต้องมี:**
-   - `image_prompt:` (English, editorial illustration, ห้าม text/logos/faces)
+   - `image_prompt:` (English, 3–5 ประโยค story-driven; logos OK, text rendering OK, 1:1, no real human faces)
    - เนื้อหา 3–5 ย่อหน้า story-driven (เหมือน Stratechery article)
    - `## Audio script` สำหรับ TTS
 
@@ -139,8 +153,8 @@ bash scripts/write_briefs.sh "${SLUG}"
                      ▼
 ┌──────────────────────────────────────────────────────────────┐
 │  GitHub Actions: daily-branch-build.yml                      │
-│  1. gen_images.py  --slug ${SLUG}  (DALL-E 3)                │
-│  2. tts.py         --slug ${SLUG}  (gpt-4o-mini-tts coral)   │
+│  1. gen_images.py  --slug ${SLUG}  (Gemini Nano Banana Pro)  │
+│  2. tts.py         --slug ${SLUG}  (GCP Chirp 3 HD Achernar) │
 │  3. update_index.py                                          │
 │  4. commit back to daily/${SLUG}                             │
 │  5. open PR to main  (title: Daily AI Brief — YY-MM-DD HH:MM)│
@@ -164,9 +178,9 @@ bash scripts/write_briefs.sh "${SLUG}"
 ## Cost estimate
 
 Per day (4 briefs assumed):
-- DALL-E 3 standard: 4 × $0.04 = **$0.16**
-- TTS gpt-4o-mini-tts: ~6k chars × $0.015/1k = **~$0.09**
+- Gemini 3 Pro Image (Nano Banana Pro) 1K: 4 × $0.134 = **~$0.54**
+- TTS Chirp 3 HD: ~6k chars × $0.030/1k = **~$0.18**
 - Claude Code routine: included in Pro plan (no extra)
 - GHA: free for public repo
 
-Monthly: **~$7.50** all-in
+Monthly: **~$22** all-in (≈ 3× ของ stack OpenAI เดิม) — แลกกับ image quality ที่รองรับ logo/text จริง + เสียงไทย Chirp 3 HD ที่ธรรมชาติขึ้น
