@@ -5,7 +5,7 @@ topic: agentic-ai
 reading_time_min: 1
 sources: 0
 image_prompt: A bold cream sans-serif wordmark "TEST" sits centered on a deep navy background, with the words "GOOGLE STACK" stacked below in slate blue smaller caps. In the upper-right corner, a large coral stencil-style label reads "NANO BANANA". A small pale-yellow footer reads "26-05-05-2231". Abstract geometric shapes — interlocking flat hexagons in slate blue and coral — radiate outward from the wordmark, suggesting a network or pipeline activating. Editorial illustration, flat geometric shapes with subtle gradients, slate-blue + coral + cream palette on deep navy, dramatic side-lighting from the wordmark, 1:1 hero composition optimized to remain legible at 200px thumbnail.
-image: images/26-05-05-2231-01-test-google-stack.png
+image:
 ---
 
 # Test brief — Google stack migration end-to-end

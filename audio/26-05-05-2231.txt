@@ -1,7 +1,0 @@
-สวัสดีครับ นี่คือ Enabridge AI Brief รอบ 05 May 2026 เวลา 22:31
-รอบนี้มี 1 เรื่อง เน้น Agentic AI, business use case, และ trend ที่เอามาใช้กับ OpenBridge ได้
-
-เรื่องที่ 1
-นี่คือ test run ของ Google stack ใหม่ครับ Yoh เป็นการทดสอบ pipeline สอง stack — Gemini Nano Banana Pro สำหรับ image generation และ Google Cloud Text-to-Speech Chirp 3 HD voice Achernar สำหรับเสียงไทย ถ้าคุณกำลังฟังเสียงนี้อยู่ใน Telegram แสดงว่า workflow ใหม่ทำงานครบ pipeline ภาพ hero ของ test brief นี้กำลัง render คำว่า TEST GOOGLE STACK และ NANO BANANA ซึ่งเป็น capability ที่ stack เดิมของ DALL-E ทำไม่ได้ ถ้าทุกอย่างดู OK เรา merge migration PR เข้า main ได้เลยครับ
-
-ทั้งหมดนี้คือ brief ของรอบนี้ ขอให้วันนี้เป็นวันที่ดีครับ แล้วเจอกันรอบหน้า
