@@ -1,7 +1,26 @@
 {
-  "generated_at": "2026-05-04T23:22:45Z",
-  "count": 19,
+  "generated_at": "2026-05-05T15:43:06Z",
+  "count": 20,
   "episodes": [
+    {
+      "date": "26-05-05-2231",
+      "iso_date": "2026-05-05T22:31:00+07:00",
+      "title": "Daily AI Brief — 26-05-05 22:31",
+      "description": "1. Test brief — Google stack migration end-to-end",
+      "items": [
+        {
+          "file": "26-05-05-2231-01-test-google-stack.md",
+          "title": "Test brief — Google stack migration end-to-end",
+          "order": 1
+        }
+      ],
+      "audio_file": "26-05-05-2231.mp3",
+      "audio_size_bytes": 222048,
+      "voice": "th-TH-Chirp3-HD-Achernar",
+      "model": "google-cloud-tts-chirp3-hd",
+      "speed": 1.3,
+      "script_char_count": 719
+    },
     {
       "date": "26-05-05-0610",
       "iso_date": "2026-05-05T06:10:00+07:00",
