@@ -1,0 +1,32 @@
+{
+  "date": "26-05-05-0610",
+  "iso_date": "2026-05-05T06:10:00+07:00",
+  "title": "Daily AI Brief — 26-05-05 06:10",
+  "items": [
+    {
+      "file": "26-05-05-0610-01-openai-deployment-company-10b-pe-palantir.md",
+      "title": "OpenAI ตั้ง \"The Deployment Company\" $10B กับกอง PE — การันตี return 17.5% ต่อปี เพื่อยัด Claude... เอ้ย ChatGPT เข้า portfolio company",
+      "order": 1
+    },
+    {
+      "file": "26-05-05-0610-02-anthropic-blackstone-goldman-15b-services-firm.md",
+      "title": "Anthropic เปิดบริษัทใหม่ $1.5B กับ Blackstone, Goldman Sachs, Hellman & Friedman — เล็ง consulting industry แทน Pentagon",
+      "order": 2
+    },
+    {
+      "file": "26-05-05-0610-03-sierra-950m-158b-customer-service-agents.md",
+      "title": "Sierra ระดมทุน $950M @ $15.8B — $150M ARR ใน 8 ไตรมาส, Fortune 50 penetration เกิน 40%",
+      "order": 3
+    },
+    {
+      "file": "26-05-05-0610-04-yutori-agent-reliability-compounding-error.md",
+      "title": "Yutori ออกมาท้า industry — \"agent ที่ทำงานได้ 90% ก็ใช้ไม่ได้\" reliability เป็น moat ที่แท้จริงของ agentic AI",
+      "order": 4
+    }
+  ],
+  "script_char_count": 6482,
+  "audio_file": "26-05-05-0610.mp3",
+  "voice": "coral",
+  "model": "gpt-4o-mini-tts",
+  "speed": 1.3
+}
