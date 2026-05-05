@@ -1,13 +1,16 @@
 #!/usr/bin/env python3
 """
-Generate daily podcast audio from brief .md files using OpenAI TTS.
+Generate daily podcast audio from brief .md files using Google Cloud
+Text-to-Speech (Chirp 3 HD voices).
 
 Usage:
     python scripts/tts.py --slug 26-04-18-0700
-    python scripts/tts.py --slug 26-04-18-0700 --voice nova --model gpt-4o-mini-tts
+    python scripts/tts.py --slug 26-04-18-0700 --voice th-TH-Chirp3-HD-Charon
 
 Reads:  news/YY-MM-DD-HHMM-NNN-*.md (excluding -index.md)
 Writes: audio/YY-MM-DD-HHMM.mp3 + audio/YY-MM-DD-HHMM.json (metadata)
+
+Auth: set GOOGLE_APPLICATION_CREDENTIALS to a service-account JSON path.
 """
 import argparse
 import json
@@ -18,18 +21,19 @@ from datetime import datetime
 from pathlib import Path
 
 try:
-    from openai import OpenAI
+    from google.cloud import texttospeech
 except ImportError:
-    sys.exit("ต้อง: pip install openai python-dotenv --break-system-packages")
+    sys.exit("ต้อง: pip install google-cloud-texttospeech --break-system-packages")
 
 try:
     from dotenv import load_dotenv
 except ImportError:
-    sys.exit("ต้อง: pip install python-dotenv --break-system-packages")
+    load_dotenv = None  # type: ignore[assignment]
 
 
 ROOT = Path(__file__).resolve().parent.parent
-load_dotenv(ROOT / ".env")
+if load_dotenv is not None:
+    load_dotenv(ROOT / ".env")
 
 
 def extract_audio_script(md_text: str) -> str | None:
@@ -50,10 +54,6 @@ def parse_slug(slug: str) -> tuple[str, str, str]:
     """
     Parse YY-MM-DD-HHMM slug.
     Returns (iso_date, human_intro, human_title_suffix).
-
-    iso_date           = "2026-04-19T07:00:00+07:00"
-    human_intro        = "19 April 2026 เวลา 07:00" (used inside TTS intro)
-    human_title_suffix = "26-04-19 07:00"            (used in episode title)
     """
     parts = slug.split("-")
     if len(parts) != 4 or len(parts[3]) != 4:
@@ -106,61 +106,68 @@ def build_daily_script(slug: str) -> tuple[str, list[dict], str, str]:
     return "\n".join(parts), items, iso_date, title_suffix
 
 
-THAI_INSTRUCTIONS = (
-    "Speak in natural Thai with a warm, professional tone — "
-    "like a morning news anchor briefing a friend. "
-    "Pronounce Thai words with correct tones and native rhythm. "
-    "English technical terms (MCP, agentic, orchestration) keep in English, "
-    "pronounced naturally within Thai sentences. "
-    "Energetic brisk pace — about 30% faster than normal narration, "
-    "but still clear enunciation with brief pauses between stories."
-)
+# Google Cloud TTS limit is 5000 bytes per request — stay safely under.
+CHUNK_BYTES = 4500
 
 
-def generate_audio(text: str, out_path: Path, voice: str, model: str,
-                   instructions: str | None = None,
-                   speed: float = 1.0) -> None:
-    client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
-
-    # OpenAI TTS has a ~4096 char limit per call. Chunk if needed.
-    MAX = 3800
-    chunks = []
+def _split_chunks(text: str, max_bytes: int) -> list[str]:
+    """Split UTF-8 text into chunks ≤ max_bytes, preferring newline > space cuts.
+    Thai characters are 3 bytes each so character-length is not enough."""
+    chunks: list[str] = []
     remaining = text
     while remaining:
-        if len(remaining) <= MAX:
+        if len(remaining.encode("utf-8")) <= max_bytes:
             chunks.append(remaining)
             break
-        cut = remaining.rfind("\n", 0, MAX)
-        if cut < MAX // 2:
-            cut = remaining.rfind(" ", 0, MAX)
-        if cut < 0:
-            cut = MAX
+
+        # Largest character-prefix whose UTF-8 size fits, via binary search.
+        lo, hi = 1, len(remaining)
+        while lo < hi:
+            mid = (lo + hi + 1) // 2
+            if len(remaining[:mid].encode("utf-8")) <= max_bytes:
+                lo = mid
+            else:
+                hi = mid - 1
+        limit = lo
+
+        cut = remaining.rfind("\n", 0, limit)
+        if cut < limit // 2:
+            cut = remaining.rfind(" ", 0, limit)
+        if cut <= 0:
+            cut = limit
+
         chunks.append(remaining[:cut])
         remaining = remaining[cut:].lstrip()
+    return chunks
 
-    print(f"[tts] {len(chunks)} chunk(s), voice={voice}, model={model}, speed={speed}x")
-    if instructions and model.startswith("gpt-4o"):
-        print(f"[tts] instructions: {instructions[:80]}...")
+
+def generate_audio(text: str, out_path: Path, voice_name: str,
+                   speaking_rate: float, sample_rate: int) -> None:
+    client = texttospeech.TextToSpeechClient()
+
+    voice = texttospeech.VoiceSelectionParams(
+        language_code="th-TH",
+        name=voice_name,
+    )
+    audio_config = texttospeech.AudioConfig(
+        audio_encoding=texttospeech.AudioEncoding.MP3,
+        speaking_rate=speaking_rate,
+        sample_rate_hertz=sample_rate,
+    )
+
+    chunks = _split_chunks(text, CHUNK_BYTES)
+    print(f"[tts] {len(chunks)} chunk(s), voice={voice_name}, rate={speaking_rate}x, {sample_rate}Hz")
 
     out_path.parent.mkdir(parents=True, exist_ok=True)
     with out_path.open("wb") as f:
         for i, chunk in enumerate(chunks, 1):
-            print(f"[tts] chunk {i}/{len(chunks)} ({len(chunk)} chars)")
-            kwargs = dict(
-                model=model,
+            print(f"[tts] chunk {i}/{len(chunks)} ({len(chunk.encode('utf-8'))} bytes)")
+            response = client.synthesize_speech(
+                input=texttospeech.SynthesisInput(text=chunk),
                 voice=voice,
-                input=chunk,
-                response_format="mp3",
+                audio_config=audio_config,
             )
-            # gpt-4o-mini-tts and gpt-4o-tts accept an `instructions` param
-            # for tone/accent guidance — older tts-1* models ignore it.
-            if instructions and model.startswith("gpt-4o"):
-                kwargs["instructions"] = instructions
-            # `speed` is supported across all TTS models (0.25–4.0, default 1.0)
-            if speed != 1.0:
-                kwargs["speed"] = speed
-            resp = client.audio.speech.create(**kwargs)
-            f.write(resp.content)
+            f.write(response.audio_content)
     print(f"[tts] wrote {out_path} ({out_path.stat().st_size // 1024} KB)")
 
 
@@ -168,17 +175,12 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--slug", required=True,
                     help="Timestamp slug YY-MM-DD-HHMM (e.g. 26-04-18-0700)")
-    ap.add_argument("--voice", default="coral",
-                    help="alloy|ash|ballad|coral|echo|fable|nova|onyx|sage|shimmer|verse "
-                         "(default: coral — warm, works well with Thai)")
-    ap.add_argument("--model", default="gpt-4o-mini-tts",
-                    help="gpt-4o-mini-tts (best multilingual, DEFAULT) | "
-                         "gpt-4o-tts (best quality, pricier) | "
-                         "tts-1-hd (older, worse Thai)")
-    ap.add_argument("--instructions", default=THAI_INSTRUCTIONS,
-                    help="Tone/style guidance (only used by gpt-4o-* models). Pass '' to disable.")
-    ap.add_argument("--speed", type=float, default=1.3,
-                    help="Speech speed 0.25–4.0 (default: 1.3 = 30%% faster than normal)")
+    ap.add_argument("--voice", default="th-TH-Chirp3-HD-Achernar",
+                    help="Google Cloud TTS voice (default: th-TH-Chirp3-HD-Achernar — female Thai)")
+    ap.add_argument("--speaking-rate", type=float, default=1.3,
+                    help="Speech rate 0.25–2.0 (default: 1.3 ≈ 30%% faster)")
+    ap.add_argument("--sample-rate", type=int, default=24000,
+                    help="Output sample rate Hz (default: 24000)")
     ap.add_argument("--dry-run", action="store_true",
                     help="Build + save script only, skip API call")
     args = ap.parse_args()
@@ -194,11 +196,10 @@ def main():
 
     out_mp3 = audio_dir / f"{args.slug}.mp3"
     if not args.dry_run:
-        generate_audio(script, out_mp3, args.voice, args.model,
-                       instructions=args.instructions or None,
-                       speed=args.speed)
+        generate_audio(script, out_mp3, args.voice, args.speaking_rate, args.sample_rate)
 
-    # Metadata for RSS feed
+    # Metadata for RSS feed. Field name `speed` retained for backwards compat
+    # with audio/index.json entries from the OpenAI era — same semantic.
     meta = {
         "date": args.slug,
         "iso_date": iso_date,
@@ -207,8 +208,8 @@ def main():
         "script_char_count": len(script),
         "audio_file": out_mp3.name,
         "voice": args.voice,
-        "model": args.model,
-        "speed": args.speed,
+        "model": "google-cloud-tts-chirp3-hd",
+        "speed": args.speaking_rate,
     }
     meta_path = audio_dir / f"{args.slug}.json"
     meta_path.write_text(json.dumps(meta, ensure_ascii=False, indent=2), encoding="utf-8")

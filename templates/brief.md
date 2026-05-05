@@ -4,7 +4,7 @@ slug: {{short-slug}}
 topic: {{agentic-ai | use-case | openbridge-trend}}
 reading_time_min: {{1-5}}
 sources: {{n}}
-image_prompt: {{คำอธิบายภาพ illustration editorial style 1-2 ประโยค ภาษาอังกฤษ — GHA จะเอาไป gen ผ่าน DALL-E 3}}
+image_prompt: {{EN, 3–5 ประโยค, story-driven hero illustration; logos + text rendering OK (อ่านออกใน 200px thumbnail), 1:1 aspect, no real human faces (silhouette OK); story beat + visual metaphor + composition + style — GHA gen ผ่าน Gemini Nano Banana Pro}}
 image: {{GHA เติมให้เอง หลัง gen — path ของไฟล์ใน news/images/}}
 ---
 

@@ -1,6 +1,12 @@
 # Phase 2 Plan — Audio + Podcast + Email/Line Delivery
 
-> สถานะ: Phase 1 เสร็จ — มี brief .md รายวัน + scheduled task รัน 07:00 แล้ว
+> ⚠️ **HISTORICAL — kept for context.** Phase 2 ตัดสินใจ + ขึ้นแล้ว, Phase 3 (review-before-publish) ก็ขึ้นแล้ว
+> ตั้งแต่ **2026-05-05 stack ถูก migrate**: OpenAI DALL-E 3 → Gemini Nano Banana Pro (image gen),
+> OpenAI gpt-4o-mini-tts → Google Cloud TTS Chirp 3 HD (TTS).
+> ดู `PHASE3-SETUP.md` สำหรับ setup ปัจจุบัน, `RUNBOOK.md` สำหรับ ops
+> ตารางตัวเลือก TTS ด้านล่างไม่ใช่สิ่งที่ใช้จริงแล้ว — เก็บไว้เพื่อแสดง trade-off ตอน planning
+
+> สถานะเดิม (เม.ย. 2026): Phase 1 เสร็จ — มี brief .md รายวัน + scheduled task รัน 07:00 แล้ว
 > Phase 2 = เพิ่ม audio + delivery channels
 
 ## สิ่งที่ต้องตัดสินใจก่อนเริ่ม
