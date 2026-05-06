@@ -1,5 +1,9 @@
 # Phase 3 — Review-before-publish + rich content + site redesign
 
+> ⚠️ **Updated 2026-05-06**: image gen ย้ายออกจาก GHA ไปทำใน routine ผ่าน Higgsfield MCP แล้ว
+> → `GEMINI_API_KEY` กลายเป็น **fallback only** (CI ไม่ใช้แล้ว) — ดู [README.md](README.md) + [prompts/daily-research.md](prompts/daily-research.md) สำหรับสถานะปัจจุบัน
+> เนื้อหาด้านล่างคือสภาพ Phase 3 ตอนปล่อย (snapshot)
+
 > การเปลี่ยนแปลง (หลัง Phase 2):
 > - **Routine เขียนแค่ briefs** (ไม่ทำ TTS/Telegram เอง) → push ไป branch `daily/YY-MM-DD`
 > - **GHA รับช่วงต่อ**: gen images (Gemini Nano Banana Pro) → TTS (GCP Chirp 3 HD) → update index → commit กลับ → เปิด PR → ส่ง Telegram preview
