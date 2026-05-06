@@ -1,0 +1,32 @@
+{
+  "date": "26-05-06-0604",
+  "iso_date": "2026-05-06T06:04:00+07:00",
+  "title": "Daily AI Brief — 26-05-06 06:04",
+  "items": [
+    {
+      "file": "26-05-06-0604-01-anthropic-claude-opus-47-finance-agents-moodys.md",
+      "title": "Anthropic ships the JV's product on Day 2 — Claude Opus 4.7 + 10 banking agents + Moody's MCP + Microsoft 365",
+      "order": 1
+    },
+    {
+      "file": "26-05-06-0604-02-fis-anthropic-financial-crimes-aml-agent-bmo.md",
+      "title": "FIS x Anthropic ทำ AML investigator agent — BMO + Amalgamated เป็น first deployment",
+      "order": 2
+    },
+    {
+      "file": "26-05-06-0604-03-openai-pwc-cfo-finance-function.md",
+      "title": "OpenAI x PwC สร้าง \"AI-native finance function\" — dogfood ใน OpenAI ก่อน scale ขายลูกค้า",
+      "order": 3
+    },
+    {
+      "file": "26-05-06-0604-04-rogo-160m-series-d-felix-vertical-finance-agent.md",
+      "title": "Rogo ปิด $160M Series D — vertical finance agent ตั้งรับก่อน frontier lab บุก",
+      "order": 4
+    }
+  ],
+  "script_char_count": 5093,
+  "audio_file": "26-05-06-0604.mp3",
+  "voice": "th-TH-Chirp3-HD-Achernar",
+  "model": "google-cloud-tts-chirp3-hd",
+  "speed": 1.3
+}
