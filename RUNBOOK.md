@@ -4,15 +4,14 @@
 
 ## Cloud mode (GitHub Actions) — default
 
-ถ้ารันผ่าน Claude Code web: external API ถูก block ที่ sandbox → TTS/image gen ทำ local ไม่ได้
-**Solution:** `.github/workflows/daily-branch-build.yml` จะ trigger auto เมื่อ push `daily/*` branch
-→ GHA runner รัน image gen + TTS + update_index + commit back + open PR + push Telegram
+**Image gen** ทำใน Claude Code routine ก่อน push (Higgsfield MCP, ดู `prompts/daily-research.md` step 5)
+**TTS / index / PR / Telegram** ทำต่อโดย GHA — `.github/workflows/daily-branch-build.yml` trigger auto เมื่อ push `daily/*` branch
 
 **Setup ครั้งเดียว (ที่ repo settings → Secrets and variables → Actions):**
-- `GEMINI_API_KEY` — Google AI Studio → API key
 - `GCP_TTS_SA_JSON` — base64 ของ service-account JSON (role: `Cloud Text-to-Speech User`)
 - `TELEGRAM_BOT_TOKEN`
 - `TELEGRAM_CHAT_ID`
+- `GEMINI_API_KEY` — **fallback only** ถ้า Higgsfield ใช้ไม่ได้ + ต้องรัน `scripts/gen_images.py` มือ (CI ไม่ได้ใช้แล้ว)
 
 **Backfill วันที่พลาด:** GitHub → Actions tab → "daily-branch-build" → Run workflow on existing `daily/*` branch
 
@@ -56,7 +55,7 @@ bash scripts/run_daily.sh 26-04-18
 - Telegram message + voice file จะเด้งเข้ามือถือคุณ
 
 ถ้าพังที่ TTS → ดู `audio/26-04-18.txt` ก่อน (script ยังอยู่), ตรวจ `GOOGLE_APPLICATION_CREDENTIALS` ชี้ไปที่ SA JSON ที่ valid + role `Cloud Text-to-Speech User`
-ถ้าพังที่ image gen → ตรวจ `GEMINI_API_KEY` ใน Google AI Studio
+ถ้าพังที่ image gen (Higgsfield MCP) → check `mcp__...__balance` ดู credits, หรือ fallback มือ `python3 scripts/gen_images.py --slug ${SLUG}` (ใช้ `GEMINI_API_KEY`)
 ถ้าพังที่ Telegram → ตรวจ TELEGRAM_CHAT_ID ใน .env
 
 ## 3. Deploy enabridge-site ให้ feed ใช้งานได้
@@ -88,7 +87,8 @@ npm run build   # ตรวจว่า route ใหม่ build ผ่าน
 | ปัญหา | ที่ดู |
 |---|---|
 | MP3 เป็น 0 ไบต์ | SA JSON ไม่ valid / TTS API ยังไม่ enabled / role ขาด — ดู error ใน terminal |
-| Image gen 403 / quota | Gemini API key ใช้หมด quota → check Google AI Studio billing; หรือ fallback ไป `gemini-2.5-flash-image` ใน script |
+| Higgsfield MCP fail / out of credits | check `mcp__...__balance`; top up ที่ Higgsfield; หรือ fallback มือ: `python3 scripts/gen_images.py --slug ${SLUG}` (ใช้ Gemini) แล้ว commit รูป + frontmatter |
+| Image gen 403 / quota (Gemini fallback) | API key ใช้หมด quota → check Google AI Studio billing; หรือ fallback ไป `gemini-2.5-flash-image` ใน script |
 | Telegram ไม่ส่ง | `python3 scripts/telegram_setup.py` อีกครั้ง, ตรวจว่า chat ยังเปิดอยู่ |
 | Feed ว่าง | MP3 ยังไม่ถูก copy ไป `enabridge-site/public/research/audio/` — ตรวจ path ใน `run_daily.sh` |
 | Feed โหลดไม่ได้ | Deploy enabridge-site ยัง? ตรวจ vercel log |

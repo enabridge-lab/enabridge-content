@@ -10,18 +10,19 @@ Daily AI research brief pipeline สำหรับทีม Enabridge / OpenBri
 
 ## How it works
 
-ทุกเช้า Claude Code Remote Routine ค้นข่าว เขียน brief + push branch → GitHub Actions ทำ images + audio + PR + Telegram preview → Yoh ฟัง + approve → `enabridge-site` ขึ้น episode ใหม่ภายใน 5 นาที
+ทุกเช้า Claude Code Remote Routine ค้นข่าว เขียน brief + gen รูป hero (Higgsfield MCP) + push branch → GitHub Actions ทำ audio + PR + Telegram preview → Yoh ฟัง + approve → `enabridge-site` ขึ้น episode ใหม่ภายใน 5 นาที
 
 ```mermaid
 flowchart TD
     subgraph CC["🤖 Claude Desktop — Remote Routine (cron 06:00 Asia/Bangkok)"]
         A["WebSearch + write briefs<br/>SLUG = YY-MM-DD-HHMM"]
+        D["Higgsfield MCP<br/>(nano_banana_2 hero images)"]
+        A --> D
     end
 
     subgraph REPO["📦 this repo (Enabridge/EnabridgeResearch)"]
-        B["push daily/SLUG branch"]
+        B["push daily/SLUG branch<br/>(briefs + images)"]
         C["GitHub Actions<br/>daily-branch-build.yml"]
-        D["gen_images.py<br/>(Gemini Nano Banana Pro)"]
         E["tts.py<br/>(GCP Chirp 3 HD)"]
         F["update_index.py<br/>(rebuild audio/index.json)"]
         G["commit back + open PR to main"]
@@ -36,9 +37,8 @@ flowchart TD
         K["/research (grid)<br/>/research/[slug] (detail)<br/>/research/feed.xml (podcast RSS)"]
     end
 
-    A -->|push| B
+    D -->|push| B
     B -->|on: push| C
-    C --> D --> G
     C --> E --> G
     C --> F --> G
     G --> I
@@ -50,9 +50,9 @@ flowchart TD
 **Text-only timeline:**
 
 ```
-  06:06  routine wakes → writes 3–5 briefs → push daily/SLUG branch
+  06:06  routine wakes → writes 3–5 briefs + gen hero images (Higgsfield) → push daily/SLUG branch
     ↓
-  06:07  GHA runs (~3–5 min): images + audio + index + PR + Telegram preview
+  06:07  GHA runs (~2–3 min): audio + index + PR + Telegram preview
     ↓
   06:10  📱 Telegram: MP3 + PR link
     ↓
@@ -86,7 +86,8 @@ Pipeline กินขอบเขต 4 ระบบ — เอกสารนี
 4. **Secrets** (inject เป็น env var ใน routine sandbox):
    - `TELEGRAM_BOT_TOKEN`
    - `TELEGRAM_CHAT_ID`
-   - (image gen + TTS รันบน GHA — routine ไม่ต้องมี GEMINI_API_KEY / GOOGLE_APPLICATION_CREDENTIALS)
+   - (TTS รันบน GHA — routine ไม่ต้องมี GOOGLE_APPLICATION_CREDENTIALS)
+   - (image gen ใช้ Higgsfield MCP — routine ใช้ session credentials ของ MCP, ไม่มี env var ต้อง set)
 5. **Routine prompt**: copy จาก [`prompts/daily-research.md`](prompts/daily-research.md)
 6. **Permissions**: Bash, WebSearch, WebFetch, file read/write
 7. **Git write access**: routine ต้อง push ได้ — Claude Code web ใช้ GitHub App integration (ตั้งค่าอัตโนมัติจาก "Connect repo")
@@ -100,10 +101,10 @@ Pipeline กินขอบเขต 4 ระบบ — เอกสารนี
 
 | Key | Value | ใช้ทำอะไร |
 |---|---|---|
-| `GEMINI_API_KEY` | `AIza...` (จาก [Google AI Studio](https://aistudio.google.com/apikey)) | Gemini Nano Banana Pro image gen |
 | `GCP_TTS_SA_JSON` | **base64** ของ service-account JSON (role: `Cloud Text-to-Speech User`) | Google Cloud TTS Chirp 3 HD |
 | `TELEGRAM_BOT_TOKEN` | จาก `@BotFather` | ส่ง preview หลัง GHA เสร็จ |
 | `TELEGRAM_CHAT_ID` | user ID ของ Yoh (ได้จาก `scripts/telegram_setup.py`) | destination ของ Telegram preview |
+| `GEMINI_API_KEY` *(optional)* | `AIza...` (จาก [Google AI Studio](https://aistudio.google.com/apikey)) | **fallback only** — ถ้า Higgsfield MCP fail แล้วต้องรัน `scripts/gen_images.py` มือ. CI ไม่ได้ใช้แล้ว |
 
 > Encode SA JSON: `base64 -i gcp-tts-sa.json | pbcopy` (macOS) — paste ค่าเข้า GitHub secret ตรง ๆ
 > ถ้ายัง keep `OPENAI_API_KEY` ไว้สำหรับ rollback ก็ปล่อยไว้ได้ — workflow ปัจจุบันไม่ใช้แล้ว
@@ -168,7 +169,7 @@ enabridge-research/
 ├── news/
 │   ├── SLUG-NN-slug.md                 # individual brief (e.g. 26-04-21-0606-01-adobe-cx.md)
 │   ├── SLUG-index.md                   # round-level theme + TL;DR
-│   └── images/SLUG-NN-slug.png         # Gemini Nano Banana Pro hero image (GHA-generated)
+│   └── images/SLUG-NN-slug.png         # Higgsfield (nano_banana_2) hero image (routine-generated)
 ├── audio/
 │   ├── SLUG.mp3                        # TTS output (GHA-generated)
 │   ├── SLUG.txt                        # TTS script source
@@ -180,7 +181,7 @@ enabridge-research/
 │   └── brief.md                        # brief skeleton
 ├── scripts/
 │   ├── write_briefs.sh                 # routine's final step — branch + commit + push
-│   ├── gen_images.py                   # Gemini Nano Banana Pro (GHA)
+│   ├── gen_images.py                   # Gemini Nano Banana Pro (fallback only — routine uses Higgsfield MCP)
 │   ├── tts.py                          # Google Cloud TTS Chirp 3 HD (GHA)
 │   ├── update_index.py                 # rebuild audio/index.json (GHA)
 │   ├── push_telegram.py                # Telegram notification (GHA)
@@ -226,8 +227,9 @@ Canonical prompt อยู่ที่ [`prompts/daily-research.md`](prompts/dai
 1. **Setup**: `SLUG=$(date +%y-%m-%d-%H%M)` → `git checkout -b "daily/${SLUG}"`
 2. **Research**: WebSearch ข่าว 24–48 ชม. ที่ผ่านมา — signal > noise, 3–5 เรื่องคุณภาพพอ
 3. **Write**: `news/${SLUG}-NN-slug.md` แต่ละเรื่อง + `news/${SLUG}-index.md`
-4. **Push**: `bash scripts/write_briefs.sh "${SLUG}"` → GHA รับช่วงต่อ
-5. **หยุด** — ห้าม merge PR เอง, ห้ามรัน TTS/Telegram/update_index เอง
+4. **Gen hero images**: เรียก Higgsfield MCP `generate_image` (model `nano_banana_2`, 1:1) สำหรับแต่ละ brief → save `news/images/${SLUG}-NN-*.png` + update `image:` frontmatter
+5. **Push**: `bash scripts/write_briefs.sh "${SLUG}"` → GHA รับช่วงต่อ
+6. **หยุด** — ห้าม merge PR เอง, ห้ามรัน TTS/Telegram/update_index เอง
 
 ---
 
@@ -236,14 +238,17 @@ Canonical prompt อยู่ที่ [`prompts/daily-research.md`](prompts/dai
 ```bash
 # Dependencies (macOS with system Python)
 pip3 install google-genai google-cloud-texttospeech python-dotenv requests 'httpx[socks]' --break-system-packages
+# google-genai needed only for fallback gen_images.py (Higgsfield MCP doesn't have a Python SDK)
 
 # Simulate a routine run locally
-#   - .env needs GEMINI_API_KEY for image gen
-#   - .env needs GOOGLE_APPLICATION_CREDENTIALS=/path/to/sa.json for TTS
+#   - hero images: ใช้ Higgsfield MCP ใน Claude Code session, หรือ fallback gen_images.py (.env needs GEMINI_API_KEY)
+#   - TTS: .env needs GOOGLE_APPLICATION_CREDENTIALS=/path/to/sa.json
 SLUG=$(TZ=Asia/Bangkok date +%y-%m-%d-%H%M)
 git checkout main && git pull
 git checkout -b "daily/${SLUG}"
 # … write news/${SLUG}-NN-*.md + news/${SLUG}-index.md manually …
+# gen hero images (manual fallback — routine uses Higgsfield MCP):
+#   python3 scripts/gen_images.py --slug "${SLUG}"
 bash scripts/write_briefs.sh "${SLUG}"
 # GHA picks up from here
 ```
@@ -256,14 +261,14 @@ bash scripts/write_briefs.sh "${SLUG}"
 
 | Item | Cost |
 |---|---|
-| Gemini 3 Pro Image (Nano Banana Pro) 1K × 4 | ~$0.54 (≈ $0.134/image) |
+| Higgsfield (nano_banana_2) hero images × 4 | covered by Higgsfield subscription credits (no per-run API charge) |
 | Google Cloud TTS Chirp 3 HD ~6k chars | ~$0.18 (≈ $30/1M chars) |
 | Claude Code routine | Pro plan (no extra) |
 | GitHub Actions | Free (public repo) |
-| **Monthly total** | **~$22** |
+| **Monthly TTS** | **~$5.5** |
 
-> Trade-off: ภาพดีขึ้นมาก (รองรับ logo/text/composition จริง) + เสียงไทยธรรมชาติขึ้น แลกกับค่าใช้จ่ายเพิ่ม ~3× จาก stack OpenAI เดิม
-> ลดได้ถ้าเปลี่ยนเป็น `gemini-2.5-flash-image` (fallback model) — ถูกกว่ามาก แต่คุณภาพต่ำลง
+> Trade-off: ย้าย image gen จาก Gemini API (pay-per-use ~$0.54/run) ไปใช้ Higgsfield MCP (subscription) — ตัด variable cost ของรูปออก, แลกกับ subscription คงที่ + ต้องมี Claude session run routine
+> Fallback: ถ้า Higgsfield down — `python3 scripts/gen_images.py` (Gemini, ~$0.54/run) ยังใช้ได้ (ต้อง `GEMINI_API_KEY`)
 
 ---
 

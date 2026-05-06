@@ -4,8 +4,8 @@ slug: {{short-slug}}
 topic: {{agentic-ai | use-case | openbridge-trend}}
 reading_time_min: {{1-5}}
 sources: {{n}}
-image_prompt: {{EN, 3–5 ประโยค, story-driven hero illustration; logos + text rendering OK (อ่านออกใน 200px thumbnail), 1:1 aspect, no real human faces (silhouette OK); story beat + visual metaphor + composition + style — GHA gen ผ่าน Gemini Nano Banana Pro}}
-image: {{GHA เติมให้เอง หลัง gen — path ของไฟล์ใน news/images/}}
+image_prompt: {{EN, 3–5 ประโยค, story-driven hero illustration; logos + text rendering OK (อ่านออกใน 200px thumbnail), 1:1 aspect, no real human faces (silhouette OK); story beat + visual metaphor + composition + style — gen ผ่าน Higgsfield MCP (nano_banana_2)}}
+image: {{เติมหลัง gen — path relative จาก news/, e.g. images/26-04-19-0700-001-cloudflare-agents.png}}
 ---
 
 # {{หัวข้อ — 1 บรรทัด คม ๆ}}
