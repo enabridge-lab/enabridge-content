@@ -81,8 +81,8 @@ def build_daily_script(slug: str) -> tuple[str, list[dict], str, str]:
     iso_date, intro_label, title_suffix = parse_slug(slug)
 
     parts = [
-        f"สวัสดีครับ นี่คือ Enabridge AI Brief รอบ {intro_label}",
-        f"รอบนี้มี {len(briefs)} เรื่อง เน้น Agentic AI, business use case, และ trend ที่เอามาใช้กับ OpenBridge ได้",
+        f"สวัสดีครับ นี่คือ Enabridge AI Brief รอบ {intro_label}.",
+        f"รอบนี้มี {len(briefs)} เรื่อง เน้น Agentic AI, business use case, และ trend ที่เอามาใช้กับ OpenBridge ได้.",
         "",
     ]
     items = []
@@ -93,7 +93,11 @@ def build_daily_script(slug: str) -> tuple[str, list[dict], str, str]:
         if not script:
             print(f"[warn] {brief_path.name} ไม่มี '## Audio script' — ข้าม")
             continue
-        parts.append(f"เรื่องที่ {i}")
+        parts.append(f"เรื่องที่ {i}.")
+        # Ensure script terminates with a sentence-ending mark so the next
+        # section's header doesn't fuse into the final sentence on TTS.
+        if script and script[-1] not in ".!?":
+            script = script + "."
         parts.append(script)
         parts.append("")
         items.append({
@@ -102,7 +106,7 @@ def build_daily_script(slug: str) -> tuple[str, list[dict], str, str]:
             "order": i,
         })
 
-    parts.append("ทั้งหมดนี้คือ brief ของรอบนี้ ขอให้วันนี้เป็นวันที่ดีครับ แล้วเจอกันรอบหน้า")
+    parts.append("ทั้งหมดนี้คือ brief ของรอบนี้. ขอให้วันนี้เป็นวันที่ดีครับ. แล้วเจอกันรอบหน้า.")
     return "\n".join(parts), items, iso_date, title_suffix
 
 
