@@ -120,35 +120,62 @@ def build_daily_script(slug: str) -> tuple[str, list[dict], str, str]:
 
 # Google Cloud TTS limit is 5000 bytes per request — stay safely under.
 CHUNK_BYTES = 4500
+# Per-sentence cap: Chirp 3 HD Thai voices reject "long sentences" even when
+# well under the byte limit. Keep each request to ≤ this many bytes so a
+# single sentence never trips the engine's sentence-length heuristic.
+SENTENCE_BYTES = 600
+
+
+def _split_sentences(text: str) -> list[str]:
+    """Split text into sentences on .!? + whitespace, plus newline boundaries."""
+    raw = re.split(r"(?<=[.!?])\s+|\n+", text)
+    return [s.strip() for s in raw if s.strip()]
+
+
+def _soft_split_long(sentence: str, max_bytes: int) -> list[str]:
+    """Break a single over-long sentence at commas / connector words / spaces."""
+    if len(sentence.encode("utf-8")) <= max_bytes:
+        return [sentence]
+    pieces: list[str] = []
+    remaining = sentence
+    while len(remaining.encode("utf-8")) > max_bytes:
+        # Find largest char-prefix fitting max_bytes.
+        lo, hi = 1, len(remaining)
+        while lo < hi:
+            mid = (lo + hi + 1) // 2
+            if len(remaining[:mid].encode("utf-8")) <= max_bytes:
+                lo = mid
+            else:
+                hi = mid - 1
+        limit = lo
+        cut = max(
+            remaining.rfind(", ", 0, limit),
+            remaining.rfind(" — ", 0, limit),
+            remaining.rfind(" ", 0, limit),
+        )
+        if cut <= 0:
+            cut = limit
+        pieces.append(remaining[:cut].strip())
+        remaining = remaining[cut:].lstrip()
+    if remaining:
+        pieces.append(remaining)
+    return pieces
 
 
 def _split_chunks(text: str, max_bytes: int) -> list[str]:
-    """Split text into chunks ≤ max_bytes by grouping whole sentences.
+    """Split text into per-sentence chunks (one sentence ≈ one TTS request).
 
-    Google Cloud Chirp 3 HD's Thai sentence detection respects period+space
-    but not period+newline — feeding it text with `\\n` between sentences
-    causes adjacent sentences to fuse into one over-length sentence and the
-    request is rejected. So we split on sentence terminators (.!?) and
-    paragraph breaks, drop newlines entirely, and rejoin with single spaces.
+    Chirp 3 HD's Thai sentence parser does not reliably treat ASCII period
+    as a sentence terminator — feeding it any text wider than a single
+    sentence causes it to fuse content into one over-length sentence and
+    reject the request. So we send each sentence as its own request and
+    concatenate the resulting MP3 frames.
     """
-    sentences = re.split(r"(?<=[.!?])\s+|\n+", text)
-    sentences = [s.strip() for s in sentences if s.strip()]
-
-    chunks: list[str] = []
-    current: list[str] = []
-    current_bytes = 0
-    sep_bytes = len(b" ")
-    for sent in sentences:
-        sb = len(sent.encode("utf-8"))
-        if current and current_bytes + sep_bytes + sb > max_bytes:
-            chunks.append(" ".join(current))
-            current, current_bytes = [sent], sb
-        else:
-            current.append(sent)
-            current_bytes += sb + (sep_bytes if len(current) > 1 else 0)
-    if current:
-        chunks.append(" ".join(current))
-    return chunks
+    sentences = _split_sentences(text)
+    out: list[str] = []
+    for s in sentences:
+        out.extend(_soft_split_long(s, max_bytes))
+    return out
 
 
 def generate_audio(text: str, out_path: Path, voice_name: str,
@@ -165,13 +192,14 @@ def generate_audio(text: str, out_path: Path, voice_name: str,
         sample_rate_hertz=sample_rate,
     )
 
-    chunks = _split_chunks(text, CHUNK_BYTES)
-    print(f"[tts] {len(chunks)} chunk(s), voice={voice_name}, rate={speaking_rate}x, {sample_rate}Hz")
+    chunks = _split_chunks(text, SENTENCE_BYTES)
+    print(f"[tts] {len(chunks)} sentence(s), voice={voice_name}, rate={speaking_rate}x, {sample_rate}Hz")
 
     out_path.parent.mkdir(parents=True, exist_ok=True)
     with out_path.open("wb") as f:
         for i, chunk in enumerate(chunks, 1):
-            print(f"[tts] chunk {i}/{len(chunks)} ({len(chunk.encode('utf-8'))} bytes)")
+            if i == 1 or i == len(chunks) or i % 10 == 0:
+                print(f"[tts] sentence {i}/{len(chunks)} ({len(chunk.encode('utf-8'))} bytes)")
             response = client.synthesize_speech(
                 input=texttospeech.SynthesisInput(text=chunk),
                 voice=voice,
