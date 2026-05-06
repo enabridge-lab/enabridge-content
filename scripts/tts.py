@@ -123,33 +123,31 @@ CHUNK_BYTES = 4500
 
 
 def _split_chunks(text: str, max_bytes: int) -> list[str]:
-    """Split UTF-8 text into chunks ≤ max_bytes, preferring newline > space cuts.
-    Thai characters are 3 bytes each so character-length is not enough."""
+    """Split text into chunks ≤ max_bytes by grouping whole sentences.
+
+    Google Cloud Chirp 3 HD's Thai sentence detection respects period+space
+    but not period+newline — feeding it text with `\\n` between sentences
+    causes adjacent sentences to fuse into one over-length sentence and the
+    request is rejected. So we split on sentence terminators (.!?) and
+    paragraph breaks, drop newlines entirely, and rejoin with single spaces.
+    """
+    sentences = re.split(r"(?<=[.!?])\s+|\n+", text)
+    sentences = [s.strip() for s in sentences if s.strip()]
+
     chunks: list[str] = []
-    remaining = text
-    while remaining:
-        if len(remaining.encode("utf-8")) <= max_bytes:
-            chunks.append(remaining)
-            break
-
-        # Largest character-prefix whose UTF-8 size fits, via binary search.
-        lo, hi = 1, len(remaining)
-        while lo < hi:
-            mid = (lo + hi + 1) // 2
-            if len(remaining[:mid].encode("utf-8")) <= max_bytes:
-                lo = mid
-            else:
-                hi = mid - 1
-        limit = lo
-
-        cut = remaining.rfind("\n", 0, limit)
-        if cut < limit // 2:
-            cut = remaining.rfind(" ", 0, limit)
-        if cut <= 0:
-            cut = limit
-
-        chunks.append(remaining[:cut])
-        remaining = remaining[cut:].lstrip()
+    current: list[str] = []
+    current_bytes = 0
+    sep_bytes = len(b" ")
+    for sent in sentences:
+        sb = len(sent.encode("utf-8"))
+        if current and current_bytes + sep_bytes + sb > max_bytes:
+            chunks.append(" ".join(current))
+            current, current_bytes = [sent], sb
+        else:
+            current.append(sent)
+            current_bytes += sb + (sep_bytes if len(current) > 1 else 0)
+    if current:
+        chunks.append(" ".join(current))
     return chunks
 
 
