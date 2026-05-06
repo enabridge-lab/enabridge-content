@@ -5,7 +5,7 @@ topic: use-case
 reading_time_min: 4
 sources: 4
 image_prompt: A muted teal investment bank deal table at the center of a deep navy frame, with an autonomous coral-red robot silhouette labeled "FELIX" in cream sans-serif marching across it carrying a stack of CIM documents, while smaller silhouetted analyst figures step back to make room. The cream Rogo wordmark hovers above as a logo badge. Three skyscraper silhouettes for Rothschild, Jefferies, and Lazard line the lower margin in muted slate. A bold sans-serif headline "$160M" floats in the upper-left in cream, with "250+ FIRMS" in coral on the lower-right. Editorial illustration, flat geometric shapes with subtle gradients, slate blue + coral + cream palette on deep navy, dramatic side-lighting from above the table, 1:1 aspect.
-image:
+image: images/26-05-06-0604-04-rogo-160m-series-d-felix-vertical-finance-agent.png
 ---
 
 # Rogo ปิด $160M Series D — vertical finance agent ตั้งรับก่อน frontier lab บุก

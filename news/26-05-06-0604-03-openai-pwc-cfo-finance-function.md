@@ -5,7 +5,7 @@ topic: agentic-ai
 reading_time_min: 4
 sources: 4
 image_prompt: A muted teal CFO desk in deep navy editorial scene, with eight glowing coral nodes arranged in a circular orbit around it labeled in tiny cream text "PLAN", "FORECAST", "REPORT", "PROCURE", "PAY", "TREASURY", "TAX", "CLOSE" — each node connected to the desk by thin gold lines. The cream OpenAI knot logo and the coral PwC checkmark hover above the desk as a partnership badge. A silhouetted figure sits at the desk reviewing a glowing dashboard. A bold sans-serif headline "AI-NATIVE CFO" floats in the upper-left in cream, with "PROCUREMENT" in coral on the lower-right. Editorial illustration, flat geometric shapes with subtle gradients, slate blue + coral + cream palette on deep navy, dramatic side-lighting from the dashboard, 1:1 aspect.
-image:
+image: images/26-05-06-0604-03-openai-pwc-cfo-finance-function.png
 ---
 
 # OpenAI x PwC สร้าง "AI-native finance function" — dogfood ใน OpenAI ก่อน scale ขายลูกค้า

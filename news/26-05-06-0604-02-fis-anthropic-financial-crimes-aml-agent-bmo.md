@@ -5,7 +5,7 @@ topic: use-case
 reading_time_min: 4
 sources: 4
 image_prompt: A muted teal bank vault door cracked half-open at the center of a deep navy frame, pouring a stream of golden coin-shaped tokens through a coral-red AML detection grid that filters the suspicious ones into a separate cream-colored evidence folder. Above the vault, the cream FIS wordmark and the orange Anthropic squiggle hover side by side as a partnership badge, with small silhouetted bank tower icons for BMO and Amalgamated in the lower margin. A bold sans-serif headline "DAYS → MINUTES" floats in the upper-left in cream, with "$40B" in coral on the lower-right. Editorial illustration, flat geometric shapes with subtle gradients, slate blue + coral + cream palette on deep navy, dramatic vault-light side-lighting, 1:1 aspect.
-image:
+image: images/26-05-06-0604-02-fis-anthropic-financial-crimes-aml-agent-bmo.png
 ---
 
 # FIS x Anthropic ทำ AML investigator agent — BMO + Amalgamated เป็น first deployment

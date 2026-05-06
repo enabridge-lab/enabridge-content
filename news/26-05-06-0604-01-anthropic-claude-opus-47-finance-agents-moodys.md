@@ -5,7 +5,7 @@ topic: agentic-ai
 reading_time_min: 4
 sources: 5
 image_prompt: A bold cream-colored Anthropic squiggle logo sits at the center of a dark navy editorial scene, its lines splitting into ten parallel beams of warm orange light that fan outward into ten silhouetted skyscrapers shaped like Wall Street towers. A muted teal Microsoft 365 hex tile and a coral Moody's "M" badge orbit the squiggle as small connected nodes, with subtle ledger-grid lines arcing between them. A bold sans-serif headline "OPUS 4.7" floats in the upper-left in cream, with the number "64.37%" in coral on the lower-right. Editorial illustration, flat geometric shapes with subtle gradients, slate blue + coral + cream palette on deep navy, dramatic side-lighting from the squiggle outward, 1:1 aspect.
-image:
+image: images/26-05-06-0604-01-anthropic-claude-opus-47-finance-agents-moodys.png
 ---
 
 # Anthropic ships the JV's product on Day 2 — Claude Opus 4.7 + 10 banking agents + Moody's MCP + Microsoft 365
