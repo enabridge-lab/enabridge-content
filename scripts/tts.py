@@ -80,8 +80,15 @@ def build_daily_script(slug: str) -> tuple[str, list[dict], str, str]:
 
     iso_date, intro_label, title_suffix = parse_slug(slug)
 
+    # Thai ordinals — avoid "เรื่องที่ 1." pattern: Google's Thai parser
+    # treats digit+period as a decimal number, not a sentence terminator,
+    # which fuses the header into the next paragraph and exceeds the
+    # Chirp 3 HD per-sentence length limit.
+    thai_ordinals = ["แรก", "ที่สอง", "ที่สาม", "ที่สี่", "ที่ห้า",
+                     "ที่หก", "ที่เจ็ด", "ที่แปด", "ที่เก้า", "ที่สิบ"]
+
     parts = [
-        f"สวัสดีครับ นี่คือ Enabridge AI Brief รอบ {intro_label}.",
+        f"สวัสดีครับ นี่คือ Enabridge AI Brief รอบ {intro_label} ครับ.",
         f"รอบนี้มี {len(briefs)} เรื่อง เน้น Agentic AI, business use case, และ trend ที่เอามาใช้กับ OpenBridge ได้.",
         "",
     ]
@@ -93,7 +100,8 @@ def build_daily_script(slug: str) -> tuple[str, list[dict], str, str]:
         if not script:
             print(f"[warn] {brief_path.name} ไม่มี '## Audio script' — ข้าม")
             continue
-        parts.append(f"เรื่องที่ {i}.")
+        ordinal = thai_ordinals[i - 1] if i <= len(thai_ordinals) else f"ที่ {i}"
+        parts.append(f"เรื่อง{ordinal}.")
         # Ensure script terminates with a sentence-ending mark so the next
         # section's header doesn't fuse into the final sentence on TTS.
         if script and script[-1] not in ".!?":
