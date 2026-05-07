@@ -5,7 +5,7 @@ topic: agentic-ai
 reading_time_min: 5
 sources: 5
 image_prompt: A massive translucent cyan vault door labeled "AGENT 365" stands center-frame, with three glowing pipelines branching outward into smaller clouds tagged "AWS BEDROCK", "GOOGLE CLOUD", and "AZURE" in slate blue block letters. Tiny abstract agent icons (geometric robots, no faces) flow back through the pipelines into a registry grid behind the vault, each tagged with a small lock symbol. A bold headline "REGISTRY SYNC" floats in the upper-left in cream sans-serif, with "$15/seat" in coral on the lower-right. Editorial illustration, flat geometric shapes with subtle gradients, cyan + slate blue + coral palette on a deep navy background, dramatic top-down lighting. No real human faces. 1:1 aspect.
-image:
+image: images/26-05-06-1744-02-microsoft-agent-365-multicloud-registry-sync.png
 ---
 
 # Microsoft Agent 365 ขยับเป็น "registry of registries" — multi-cloud sync ดู AWS Bedrock + Google Gemini Enterprise ครบจอเดียว, $15/seat ลาก agent governance ขึ้นไปทับ hyperscaler คู่แข่ง

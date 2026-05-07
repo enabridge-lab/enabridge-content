@@ -5,7 +5,7 @@ topic: agentic-ai
 reading_time_min: 5
 sources: 5
 image_prompt: A giant cream-colored ChatGPT speech bubble cracks open in the center of the frame, releasing a procession of small geometric agent icons that march across the canvas toward connected app silhouettes labeled "SLACK" "SALESFORCE" "NOTION" "DRIVE" in slate blue. A bold coral price tag dangles from the speech bubble showing "$20" in cream block letters, with a smaller "MAY 6" calendar badge in the upper-right corner in white. Editorial illustration, flat geometric shapes with subtle grain, cream + coral + slate blue palette on a deep navy background, dramatic side-lighting suggesting a curtain rising. No real human faces, no logos beyond the abstract app silhouettes. 1:1 aspect.
-image:
+image: images/26-05-06-1744-01-openai-workspace-agents-paid-pricing-launch.png
 ---
 
 # OpenAI พลิก Workspace Agents จากฟรี → คิดเครดิตวันนี้ — Codex-powered, ทะลุ Slack/Salesforce/Notion ตรง พ่วงเป็น "successor to custom GPTs"

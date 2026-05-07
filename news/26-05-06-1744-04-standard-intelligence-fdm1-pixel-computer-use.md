@@ -5,7 +5,7 @@ topic: agentic-ai
 reading_time_min: 5
 sources: 5
 image_prompt: A massive amber computer monitor fills the center of the frame, with raw pixelated video frames cascading inside it like a waterfall, flowing downward into a slate blue robotic hand silhouette gripping a white car steering wheel below the screen. Above the monitor, a glowing cream banner reads "FDM-1" in bold sans-serif, with a smaller coral tag "11M HOURS" in the upper-right and "50x TOKENS" in the lower-left. Editorial illustration, flat geometric shapes with subtle grain and pixel-art texture, amber + slate blue + cream + coral palette on a deep navy background, dramatic glow from the monitor lighting the hand. No real human faces. 1:1 aspect.
-image:
+image: images/26-05-06-1744-04-standard-intelligence-fdm1-pixel-computer-use.png
 ---
 
 # Standard Intelligence ปิด $75M (Sequoia + Spark) — FDM-1 เรียน computer use จาก raw video 11M ชั่วโมง, ขับรถใน SF ด้วย arrow keys, ท้าทาย Anthropic Computer Use ที่ระดับ foundation

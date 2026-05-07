@@ -5,7 +5,7 @@ topic: use-case
 reading_time_min: 5
 sources: 5
 image_prompt: A massive cream-colored monolithic vault labeled "S/4HANA" cracks down the middle in the center of the frame, with abstract geometric agent figures (no faces, slate blue silhouettes) carrying glowing amber code blocks out through the crack toward a sunrise horizon of small Fortune 500 office towers. A bold coral headline "$89B" floats in the upper-right in cream sans-serif, with a smaller "5x FASTER" badge in the lower-left. Editorial illustration, flat geometric shapes with subtle grain, cream + slate blue + amber + coral palette on a deep navy background, dramatic side-lighting from a rising sun. No real human faces. 1:1 aspect.
-image:
+image: images/26-05-06-1744-03-nova-intelligence-sap-agentic-89b-migration.png
 ---
 
 # Nova Intelligence ปิด $31.5M Series A — agentic AI ลงไปจับ SAP $89B migration wave, Festo รัน "เดือน → 1 วัน" เร็วขึ้น 5 เท่า, Kyndryl ลด manual 75%
