@@ -5,7 +5,7 @@ topic: agentic-ai
 reading_time_min: 4
 sources: 4
 image_prompt: A vast parallel grid of small geometric robotic agent silhouettes in teal stretches across a deep navy editorial frame, each silhouette holding a glowing blue code-block icon, arranged in 8-by-12 perspective rows that recede toward a horizon. From the foreground, three glowing conduit lines converge into a single bright cream sphere labeled with the bold sans-serif word 'BLITZY'. A bold cream sans-serif headline '5x VELOCITY' floats top-left, with '$200M' rendered very large in coral on the lower-right. Editorial illustration, flat geometric shapes with subtle gradients, slate blue + teal + coral + cream palette, dramatic side-lighting from upper-left.
-image:
+image: images/26-05-07-0612-04-blitzy-200m-autonomous-software-development.png
 ---
 
 # Blitzy ระดม $200M @ $1.4B — เคลม "thousands of coding agents in parallel" สำหรับ enterprise

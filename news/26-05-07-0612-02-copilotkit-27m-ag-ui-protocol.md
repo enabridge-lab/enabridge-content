@@ -5,7 +5,7 @@ topic: openbridge-trend
 reading_time_min: 4
 sources: 4
 image_prompt: A central abstract glowing cube representing an enterprise application sits on a deep navy editorial background, its faces shimmering teal. From inside the cube, four bold conduit lines extend outward toward four flat geometric badges of Google, Microsoft, Amazon and Oracle logos arranged around it in symmetric corners — clear brand marks, no faces. A stream of small chat-bubble silhouettes flows along the conduits, fusing into the cube's surface as part of the UI. Bold cream sans-serif headline 'AG-UI' floats top-left, with '$27M' rendered very large in coral on the lower-right corner. Editorial illustration, flat geometric shapes with subtle gradients, slate blue + teal + coral + cream palette, dramatic side-lighting from upper-right.
-image:
+image: images/26-05-07-0612-02-copilotkit-27m-ag-ui-protocol.png
 ---
 
 # CopilotKit ระดม $27M — protocol "AG-UI" ที่ Google/Microsoft/Amazon/Oracle ลงเรือพร้อมกัน

@@ -5,7 +5,7 @@ topic: agentic-ai
 reading_time_min: 4
 sources: 4
 image_prompt: A large red emergency stop button dominates the center of a deep navy editorial frame, casting a hot crimson glow across a control panel etched with the silhouettes of dozens of small robotic agent figures arranged in symmetric grid rows beneath it. Around the button, abstract rings of blue connector lines fan outward to small isometric icons of AWS, Google Cloud, Microsoft Azure, SAP, Oracle and Workday — depicted as flat geometric badges, no text-on-icon — wired into the same control plane. A bold cream sans-serif headline 'KILL SWITCH' floats top-left, with '9 SEC' rendered very large in coral on the lower-right. Editorial illustration, flat geometric shapes with subtle gradients, slate blue + crimson + cream palette, dramatic top-down spotlight on the red button.
-image:
+image: images/26-05-07-0612-01-servicenow-kill-switch-ai-control-tower.png
 ---
 
 # ServiceNow ติดปุ่ม "Kill Switch" ให้ AI agents — สัญญาณว่ายุค deploy ฟรีจบแล้ว

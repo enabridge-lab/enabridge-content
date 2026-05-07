@@ -5,7 +5,7 @@ topic: use-case
 reading_time_min: 4
 sources: 4
 image_prompt: A massive abstract glass tower labeled with the bold cream sans-serif text 'SAP' rises from the lower-right of a deep navy editorial frame, weathered with cracked legacy code lines snaking across its surface. A swarm of small geometric robotic agent silhouettes in teal flow upward along scaffolding around the tower, replacing each cracked code segment with clean glowing blue glyphs as they ascend. A bold cream sans-serif headline 'S/4HANA' floats top-left, with '$89B' rendered very large in coral on the lower-left edge. Editorial illustration, flat geometric shapes with subtle gradients, slate blue + teal + coral + cream palette on deep navy background, dramatic uplighting from the base of the tower.
-image:
+image: images/26-05-07-0612-03-nova-intelligence-315m-sap-migration-agentic.png
 ---
 
 # Nova Intelligence ระดม $31.5M — เคลม 75% manual reduction บน SAP migration $89B wave
