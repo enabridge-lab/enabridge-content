@@ -1,0 +1,40 @@
+สวัสดีครับ นี่คือ Enabridge AI Brief รอบ 08 May 2026 เวลา 06:10 ครับ.
+รอบนี้มี 4 เรื่อง เน้น Agentic AI, business use case, และ trend ที่เอามาใช้กับ OpenBridge ได้.
+
+เรื่องแรก.
+สวัสดีครับโย วันนี้ OpenAI ทำสามอย่างพร้อมกันที่เปลี่ยนเกม enterprise หนึ่งคือปิด free preview ของ Workspace Agents เริ่มเก็บเงินแบบ credit base ตั้งแต่ 6 พ.ค. สองคือเปิดเผยว่า enterprise ทำรายได้เกิน 40% ของบริษัทแล้ว ตั้งเป้าเท่าฝั่ง consumer ภายในสิ้นปี และสามคือย้าย GPT 5.5 กับ Codex ขึ้น Amazon Bedrock พร้อมเปิด Bedrock Managed Agents ที่ powered by OpenAI
+
+หัวใจของ pivot คือ Frontier ที่ OpenAI วางเป็น intelligence layer เหนือ agent ทุกตัวในบริษัท ลูกค้าที่เผยตัวคือ Oracle State Farm Uber Workspace Agents เองคือ spec ที่เขียนครั้งเดียว แล้วรันได้ทั้งใน ChatGPT Slack Salesforce Google Drive และระบบของบริษัท Codex อยู่ใต้ฝา persistent run on cloud มี approval gate มี admin control ระดับ user group
+
+ที่สำคัญคือทุกค่าย ServiceNow Salesforce IBM Microsoft กำลัง claim ตำแหน่ง intelligence layer แบบเดียวกัน เกมไม่ใช่แข่ง LLM ใครเก่งกว่าแล้ว แต่เป็นใครเก็บ rent ระดับ orchestration ได้ ใครยอมให้ลูกค้า portable ก่อน คนนั้นชนะ
+
+มุม OpenBridge สามเรื่อง หนึ่งคือ Workspace Agents จะเรียก OpenBridge ผ่าน MCP เรียกผ่าน connector ของเรา ถ้ามี MCP server auto discover ใน ChatGPT registry dev ต่อได้ใน 5 นาทีกลายเป็น default สองคือ credit pricing ทำให้ลูกค้า optimize per call cost connector ที่ batch กับ cache ดีจะ win ที่ราคาต่อ outcome สามคือลูกค้าใช้หลาย control plane พร้อมกัน OpenBridge ต้อง emit telemetry ที่ Frontier ServiceNow Microsoft กินได้หมด เป็น Switzerland ของ agent telemetry ครับ.
+
+เรื่องที่สอง.
+สวัสดีครับโย ข่าวใหญ่จาก The Information คือ Anthropic ตกลงจ่าย Google Cloud สองแสนล้านดอลลาร์ตลอด 5 ปี เริ่ม 2027 เป็น compute commitment ที่ใหญ่ที่สุดในประวัติศาสตร์ private company ดีลครอบคลุม TPU capacity เกิน 1 gigawatt ที่ Google ออกแบบเฉพาะสำหรับรัน Claude
+
+ที่น่าสนใจคือเทียบกับที่ Google ลงทุนกลับใน Anthropic up to 40 พันล้านเมื่อ 24 เมษา reciprocity อยู่ที่ 5 ต่อ 1 Anthropic จ่ายมากกว่ารับ pattern circular financing ระดับใหม่ของ AI era นักวิเคราะห์ Motley Fool คำนวณว่า 200 พันล้าน คิดเป็นกว่า 40% ของ Google Cloud backlog ทั้งหมด แปลว่า Anthropic บริษัทเดียวคือลูกค้า cloud ใหญ่กว่า SaaS รายอื่นที่ Google เคยมี
+
+context ของวงการคือวันเดียวกัน OpenAI ก็ย้าย GPT 5.5 ขึ้น Amazon Bedrock ทุก foundation model lab กำลัง diversify cloud diversify chip ยุค 1 lab 1 cloud จบแล้ว และ Nvidia เริ่มเสียส่วนแบ่งใน workload ระดับ trillion token per day ให้ in house chip ทุกค่าย TPU Trainium Maia MTIA
+
+มุม OpenBridge สามเรื่อง หนึ่งราคา Claude API จะ stable ลดลงในระยะยาว เพราะ TPU ถูกกว่า GPU ทีม product ควรประเมิน cost ต่อ 1k token ของ Claude vs GPT แล้ววาง multi model routing สองคือ Anthropic Google จะออก Claude on Vertex AI ต่อจากนี้ ลูกค้าไทยใช้ GCP เยอะ ถ้ามี Vertex native connector ของ OpenBridge รัน Claude agent บน TPU ของลูกค้า ไม่มี egress ไม่มี latency เป็น differentiator ชัด สามคือ multi model fallback architecture ตั้งแต่วันนี้ อย่า lock vendor เดียว ลูกค้า enterprise จะ value vendor neutral สูงครับ.
+
+เรื่องที่สาม.
+สวัสดีครับโย IBM Think 2026 ที่ Boston เพิ่งจบ Arvind Krishna เปิดด้วย thesis ที่ตรง AI ไม่ใช่ feature แปะลงระบบเดิม แต่ต้องการ operating model ใหม่ทั้งบริษัท ประกอบด้วยสี่ชั้น Agents Data Automation Hybrid ขาดชั้นใดชั้นหนึ่งก็ scale agent ไม่ได้
+
+product เปิด 4 ตัวพร้อมกัน watsonx Orchestrate generation ใหม่สำหรับ multi agent IBM Confluent ดัน Kafka เป็น real time data plane สำหรับ agent IBM Concert คือ agentic operations platform ที่รวม Instana Turbonomic SevOne เข้า unified knowledge graph และ Sovereign Core สำหรับลูกค้า government regulated industry ที่รัน air gap private cloud
+
+ตัวเลขที่ IBM โชว์คือ บริษัทที่มี governance tool ได้ project เข้า production 12 เท่าของบริษัทที่ไม่มี ตัวนี้จะถูก quote ในทุก board meeting Q3 IBM ใช้ framing AI Divide เพื่อกดดัน laggard ที่ทำ AI ไม่สำเร็จ ในวันเดียวกัน 5 พฤษภา Microsoft IBM Anthropic ServiceNow ออกของ control plane พร้อมกันหมด consensus ของตลาดคือเข้า phase scale agent แล้ว ไม่ใช่ phase build
+
+มุม OpenBridge ในกรอบ 4 ชั้นของ IBM เราอยู่ตำแหน่ง Data plus Automation ระหว่าง Agent กับ business system narrative ใหม่ที่ใช้กับลูกค้าควร frame ว่าเรา คือ data automation layer ที่ทำให้ agent touch SAP Oracle HubSpot ได้แบบ governed ของจริงต้องทำสามอย่าง connector ที่ IBM Concert consume ได้ผ่าน OpenTelemetry กับ Kafka สอง sovereign mode ที่ลูกค้า self host ได้ และสามขายเป็น managed AI operating model สำหรับ SMB ที่ไม่มีงบ IBM Concert ครับ.
+
+เรื่องที่สี่.
+สวัสดีครับโย Microsoft ปล่อย Work Trend Index 2026 พร้อม post ของ Satya Nadella เรื่อง human agency รายงานสร้างจาก survey 20000 คน 10 ประเทศ บวก trillion ของ Microsoft 365 signals บวก 100000 บทสนทนาใน Copilot
+
+ตัวเลขที่ทะลุ headline คือ 78 เปอร์เซ็นต์ ของ knowledge worker ใช้ AI agent ทุกสัปดาห์ ขึ้นจาก 12 เปอร์เซ็นต์ปี 2024 6 เท่าครึ่งใน 24 เดือน เปรียบเทียบ Gmail ใช้ 5 ปี Slack 7 ปีถึงระดับ adoption นี้ AI agent ทำใน 24 เดือน 49 เปอร์เซ็นต์ ของบทสนทนาใน Copilot คือ cognitive work งานที่เคยต้องการความเชี่ยวชาญลึก 67 เปอร์เซ็นต์ ของ business leader บอกว่า agent reshape อย่างน้อย 1 core process แล้ว
+
+แต่ insight ที่จะถูก quote ทั้งปีคือ Microsoft วิเคราะห์ว่า AI impact 67 เปอร์เซ็นต์ มาจาก organizational factor culture manager support talent practice และเพียง 32 เปอร์เซ็นต์ มาจาก individual enthusiasm บริษัทที่ design ระบบให้คนใช้ AI ได้ชนะ 2 ต่อ 1 เหนือบริษัทที่ซื้อ Copilot แล้วหวังให้พนักงานคิดเอง
+
+มุม OpenBridge สามเรื่อง หนึ่งเลิกถามลูกค้าว่าพร้อมใช้ AI หรือยัง เริ่มถามว่า 78 เปอร์เซ็นต์ ของพนักงานคุณใช้ agent อยู่แล้ว มี governance ทันไหม สอง emit telemetry agent X เรียก connector Y data Z เข้า Microsoft Agent 365 ServiceNow IBM Concert OpenBridge เห็น tool call ที่ Microsoft Defender มองไม่เห็น และสามเปิด service line ใหม่ AI workflow design ไม่ใช่ integration project แต่ redesign process รอบ agent ครับ.
+
+ทั้งหมดนี้คือ brief ของรอบนี้. ขอให้วันนี้เป็นวันที่ดีครับ. แล้วเจอกันรอบหน้า.

@@ -1,7 +1,41 @@
 {
-  "generated_at": "2026-05-07T01:36:48Z",
-  "count": 21,
+  "generated_at": "2026-05-07T23:22:22Z",
+  "count": 22,
   "episodes": [
+    {
+      "date": "26-05-08-0610",
+      "iso_date": "2026-05-08T06:10:00+07:00",
+      "title": "Daily AI Brief — 26-05-08 06:10",
+      "description": "1. OpenAI พลิก Workspace Agents เป็น paid + เปิด Frontier เป็น \"enterprise OS\" — Enterprise แตะ 40% รายได้แล้ว\n2. Anthropic ขายอนาคตให้ Google $200B — เงินแลกชิป TPU 5 ปี ขณะที่ Google ลงทุนกลับแค่ 1 ใน 5\n3. IBM Think 2026 — เปิด blueprint \"AI Operating Model\" 4 ชั้น พร้อม Concert + Sovereign Core ขณะที่ \"AI divide\" ขยาย\n4. Microsoft Work Trend Index 2026 — 78% knowledge worker ใช้ agent ทุกสัปดาห์ จาก 12% เมื่อ 2024 (พุ่ง 6 เท่าใน 24 เดือน)",
+      "items": [
+        {
+          "file": "26-05-08-0610-01-openai-frontier-workspace-agents-paid-enterprise.md",
+          "title": "OpenAI พลิก Workspace Agents เป็น paid + เปิด Frontier เป็น \"enterprise OS\" — Enterprise แตะ 40% รายได้แล้ว",
+          "order": 1
+        },
+        {
+          "file": "26-05-08-0610-02-anthropic-google-200b-tpu-compute-lock-in.md",
+          "title": "Anthropic ขายอนาคตให้ Google $200B — เงินแลกชิป TPU 5 ปี ขณะที่ Google ลงทุนกลับแค่ 1 ใน 5",
+          "order": 2
+        },
+        {
+          "file": "26-05-08-0610-03-ibm-think-2026-watsonx-orchestrate-concert-sovereign.md",
+          "title": "IBM Think 2026 — เปิด blueprint \"AI Operating Model\" 4 ชั้น พร้อม Concert + Sovereign Core ขณะที่ \"AI divide\" ขยาย",
+          "order": 3
+        },
+        {
+          "file": "26-05-08-0610-04-microsoft-work-trend-index-78-percent-weekly-agents.md",
+          "title": "Microsoft Work Trend Index 2026 — 78% knowledge worker ใช้ agent ทุกสัปดาห์ จาก 12% เมื่อ 2024 (พุ่ง 6 เท่าใน 24 เดือน)",
+          "order": 4
+        }
+      ],
+      "audio_file": "26-05-08-0610.mp3",
+      "audio_size_bytes": 1533792,
+      "voice": "th-TH-Chirp3-HD-Achernar",
+      "model": "google-cloud-tts-chirp3-hd",
+      "speed": 1.3,
+      "script_char_count": 5866
+    },
     {
       "date": "26-05-07-0612",
       "iso_date": "2026-05-07T06:12:00+07:00",

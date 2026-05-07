@@ -1,0 +1,32 @@
+{
+  "date": "26-05-08-0610",
+  "iso_date": "2026-05-08T06:10:00+07:00",
+  "title": "Daily AI Brief — 26-05-08 06:10",
+  "items": [
+    {
+      "file": "26-05-08-0610-01-openai-frontier-workspace-agents-paid-enterprise.md",
+      "title": "OpenAI พลิก Workspace Agents เป็น paid + เปิด Frontier เป็น \"enterprise OS\" — Enterprise แตะ 40% รายได้แล้ว",
+      "order": 1
+    },
+    {
+      "file": "26-05-08-0610-02-anthropic-google-200b-tpu-compute-lock-in.md",
+      "title": "Anthropic ขายอนาคตให้ Google $200B — เงินแลกชิป TPU 5 ปี ขณะที่ Google ลงทุนกลับแค่ 1 ใน 5",
+      "order": 2
+    },
+    {
+      "file": "26-05-08-0610-03-ibm-think-2026-watsonx-orchestrate-concert-sovereign.md",
+      "title": "IBM Think 2026 — เปิด blueprint \"AI Operating Model\" 4 ชั้น พร้อม Concert + Sovereign Core ขณะที่ \"AI divide\" ขยาย",
+      "order": 3
+    },
+    {
+      "file": "26-05-08-0610-04-microsoft-work-trend-index-78-percent-weekly-agents.md",
+      "title": "Microsoft Work Trend Index 2026 — 78% knowledge worker ใช้ agent ทุกสัปดาห์ จาก 12% เมื่อ 2024 (พุ่ง 6 เท่าใน 24 เดือน)",
+      "order": 4
+    }
+  ],
+  "script_char_count": 5866,
+  "audio_file": "26-05-08-0610.mp3",
+  "voice": "th-TH-Chirp3-HD-Achernar",
+  "model": "google-cloud-tts-chirp3-hd",
+  "speed": 1.3
+}
