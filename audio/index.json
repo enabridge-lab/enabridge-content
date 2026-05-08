@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-07T23:22:22Z",
-  "count": 22,
+  "generated_at": "2026-05-08T01:15:50Z",
+  "count": 23,
   "episodes": [
     {
       "date": "26-05-08-0610",
@@ -69,6 +69,40 @@
       "model": "google-cloud-tts-chirp3-hd",
       "speed": 1.3,
       "script_char_count": 5702
+    },
+    {
+      "date": "26-05-06-1744",
+      "iso_date": "2026-05-06T17:44:00+07:00",
+      "title": "Daily AI Brief — 26-05-06 17:44",
+      "description": "1. OpenAI พลิก Workspace Agents จากฟรี → คิดเครดิตวันนี้ — Codex-powered, ทะลุ Slack/Salesforce/Notion ตรง พ่วงเป็น \"successor to custom GPTs\"\n2. Microsoft Agent 365 ขยับเป็น \"registry of registries\" — multi-cloud sync ดู AWS Bedrock + Google Gemini Enterprise ครบจอเดียว, $15/seat ลาก agent governance ขึ้นไปทับ hyperscaler คู่แข่ง\n3. Nova Intelligence ปิด $31.5M Series A — agentic AI ลงไปจับ SAP $89B migration wave, Festo รัน \"เดือน → 1 วัน\" เร็วขึ้น 5 เท่า, Kyndryl ลด manual 75%\n4. Standard Intelligence ปิด $75M (Sequoia + Spark) — FDM-1 เรียน computer use จาก raw video 11M ชั่วโมง, ขับรถใน SF ด้วย arrow keys, ท้าทาย Anthropic Computer Use ที่ระดับ foundation",
+      "items": [
+        {
+          "file": "26-05-06-1744-01-openai-workspace-agents-paid-pricing-launch.md",
+          "title": "OpenAI พลิก Workspace Agents จากฟรี → คิดเครดิตวันนี้ — Codex-powered, ทะลุ Slack/Salesforce/Notion ตรง พ่วงเป็น \"successor to custom GPTs\"",
+          "order": 1
+        },
+        {
+          "file": "26-05-06-1744-02-microsoft-agent-365-multicloud-registry-sync.md",
+          "title": "Microsoft Agent 365 ขยับเป็น \"registry of registries\" — multi-cloud sync ดู AWS Bedrock + Google Gemini Enterprise ครบจอเดียว, $15/seat ลาก agent governance ขึ้นไปทับ hyperscaler คู่แข่ง",
+          "order": 2
+        },
+        {
+          "file": "26-05-06-1744-03-nova-intelligence-sap-agentic-89b-migration.md",
+          "title": "Nova Intelligence ปิด $31.5M Series A — agentic AI ลงไปจับ SAP $89B migration wave, Festo รัน \"เดือน → 1 วัน\" เร็วขึ้น 5 เท่า, Kyndryl ลด manual 75%",
+          "order": 3
+        },
+        {
+          "file": "26-05-06-1744-04-standard-intelligence-fdm1-pixel-computer-use.md",
+          "title": "Standard Intelligence ปิด $75M (Sequoia + Spark) — FDM-1 เรียน computer use จาก raw video 11M ชั่วโมง, ขับรถใน SF ด้วย arrow keys, ท้าทาย Anthropic Computer Use ที่ระดับ foundation",
+          "order": 4
+        }
+      ],
+      "audio_file": "26-05-06-1744.mp3",
+      "audio_size_bytes": 3678336,
+      "voice": "th-TH-Chirp3-HD-Achernar",
+      "model": "google-cloud-tts-chirp3-hd",
+      "speed": 1.3,
+      "script_char_count": 12418
     },
     {
       "date": "26-05-06-0604",

@@ -1,0 +1,74 @@
+สวัสดีครับ นี่คือ Enabridge AI Brief รอบ 06 May 2026 เวลา 17:44 ครับ.
+รอบนี้มี 4 เรื่อง เน้น Agentic AI, business use case, และ trend ที่เอามาใช้กับ OpenBridge ได้.
+
+เรื่องแรก.
+วันนี้หกพฤษภา OpenAI พลิก Workspace Agents จากฟรีเป็น credit based pricing เต็มตัว. ข่าวจริงไม่ใช่แค่ pricing เปลี่ยน. เป็น shift จาก seat economics ไป consumption economics สำหรับ agent layer ทั้งชั้นบน ChatGPT Enterprise.
+
+Workspace Agents ออกกลางเมษา OpenAI พ่วงคำว่า successor to custom GPTs. custom GPT เก่าเป็นแค่ wrapper prompt บวก retrieval. workspace agent ทำได้เยอะกว่า. รัน scheduled. รับ task ใน Slack ทันทีที่ใคร mention. ทำงาน async ในคลาวด์ตอนคนปิดเครื่อง. ขอ approval หรือ handoff เมื่อเจอ branch ที่คนต้องตัดสินใจ. หลังบ้านทุกตัวเป็น Codex. code generation browser action tool call วิ่งผ่าน sandbox เดียวกัน.
+
+ขาที่ OpenAI ทุ่มหนักคือ connector breadth. ออกมาพร้อม Slack Google Drive Microsoft 365 Salesforce Notion Atlassian Rovo เสียบตรง. admin set IAM ต่อ user group ได้ละเอียด. ตัด pain point ที่ enterprise IT ใช้ custom GPT ไม่ได้เพราะ governance อ่อน.
+
+ตัวเลข background. enterprise share ของ OpenAI revenue โตจากสามสิบเปอร์เซ็นต์ปลายปีก่อนเป็นสี่สิบเปอร์เซ็นต์ตอนนี้. revenue runrate สองพันล้านดอลลาร์ต่อเดือน. API ทะลุสิบห้าพันล้าน token ต่อนาที. หลัง round หนึ่งร้อยยี่สิบสองพันล้านดอลลาร์ที่ valuation แปดร้อยห้าสิบสองพันล้าน นักลงทุนกดดันให้ monetize enterprise ให้คุ้ม compute.
+
+OpenAI โดนบีบสองทาง. Microsoft Agent 365 GA วันที่หนึ่งพฤษภา สิบห้าดอลลาร์ต่อ seat ต่อเดือน multi cloud registry sync ดูแล agent บน AWS Bedrock บวก Google Gemini Enterprise ด้วย. และ Google Gemini Enterprise Agent Platform ที่ ship A2A version หนึ่งจุดศูนย์ production ที่หนึ่งร้อยห้าสิบองค์กร.
+
+bet ของผม. ถ้า OpenAI ยังไม่เปิด on prem หรือ regional model ที่จับ EU Asia compliance ได้จริง deal Fortune 1000 จะตกไปฝั่ง Microsoft Google ในสิบสองเดือนหน้า. เหมือน AWS ที่แพ้ภาครัฐช่วงสองพันสิบแปดถึงสองพันยี่สิบ.
+
+อีกชั้น underrated. Codex เป็นเครื่องยนต์ workspace agent. OpenAI กลายเป็น execution layer ของ agent ที่สร้างใน LangChain LlamaIndex Crew CopilotKit. ลูกค้า build ใน framework ใดก็ได้ แต่ payload วิ่งใต้ Codex sandbox. คล้าย Stripe ที่ไม่แข่ง Shopify แต่ขับ payment ใต้ Shopify.
+
+สำหรับ OpenBridge. workspace agent pitch ใกล้เรามาก. ทางรุกคือเสนอ flat rate alternative สำหรับ Thai SMB ที่กลัว variable bill. สามสิบวันต้อง pricing comparison sheet OpenBridge vs OpenAI ที่หนึ่งร้อย ห้าร้อย สองพัน task ต่อเดือน. และ landing page predictable cost. ส่วน hedge ระยะกลาง ทำ MCP adapter ตรงเข้า Codex ให้ workflow OpenBridge ยิงงานเข้า Codex sandbox แล้วรับผลลัพธ์มา compose. เร็วกว่าการ ship code mode เอง. และต้องเปิด OpenAI Solutions partner application ภายในสามสิบวัน. ไม่ผ่านรอบแรกก็ได้ ความสัมพันธ์เปิดประตู referral.
+
+เรื่องที่สอง.
+Microsoft Agent 365 GA วันที่หนึ่งพฤษภา ราคาสิบห้าดอลลาร์ต่อ seat ต่อเดือน หรือ bundle ใน Microsoft 365 E7 Frontier Suite. ที่หนักจริงคือสิ่งที่เปิด public preview ตามมา. registry sync กับ AWS Bedrock บวก Google Cloud Gemini Enterprise.
+
+ฉากหลัง. Satya Nadella เปิด keynote Microsoft Build เล่าเรื่อง registry problem. ลูกค้า Fortune 500 ปกติมี agent run ใน production สองร้อยถึงหนึ่งพันห้าร้อยตัว. กระจายข้าม Azure OpenAI AWS Bedrock Vertex AI plus LangChain LlamaIndex deployment ภายใน. ไม่มีใครในห้อง CISO ตอบได้ว่ามีกี่ตัว ใคร own agent ไหน เข้าถึง customer data ระดับไหน. agent sprawl ที่ทุกบริษัท Fortune 500 ปวดหัว.
+
+Agent 365 ไม่ใช่ agent platform แข่ง Copilot Studio หรือ Bedrock Agents. เป็น inventory governance plane. admin กด consent. Microsoft ดึง metadata ของ agent ทุกตัวบน Bedrock บวก Gemini Enterprise เข้ามา. discover. inventory. lifecycle governance. agent deletion ข้าม cloud. Microsoft กดลบ agent ที่อยู่บน Bedrock ผ่าน Agent 365 ได้. โร้ดแม็พจะเพิ่ม suspend rate limit scope revoke ในไตรมาสหน้า.
+
+ราคาเล่นแรง. สิบห้าดอลลาร์ต่ำกว่า ChatGPT Business ยี่สิบ. ต่ำกว่า ChatGPT Enterprise สี่สิบถึงหกสิบ. Microsoft ใช้ pricing เป็นที่กระทุ้งเข้า footprint Microsoft 365 ที่มีอยู่สี่ร้อยล้าน paid seat. ไม่ต้องขายใหม่. แค่ upsell คนเดิม.
+
+key signal. Microsoft ไม่หวังว่าลูกค้าใช้ Azure OpenAI ร้อยเปอร์เซ็นต์. ยอมรับ multi cloud และวาง Agent 365 เป็น control plane กลาง. lift จาก Intune playbook สองพันสิบแปด. ปีนั้น Microsoft ขาย Intune ให้บริษัทที่ใช้ iPhone. ไม่ได้บังคับให้ใช้ Surface. ขาย MDM กลางจัด iOS Android ในจอเดียว. pattern เดียวกันแต่เป็น agent.
+
+POV ของผม. ภายในหกถึงสิบสองเดือน CISO จะถามคำถามเดียวก่อนซื้อ agent platform ใด. registry sync กับ Microsoft Agent 365 ได้ไหม. ถ้าตอบไม่ได้ deal เลื่อนหรือ reject. เหมือนตอน SOC 2 หรือ Okta SSO ที่กลายเป็น mandatory checkbox ใน eighteen เดือน. agent vendor ที่ไม่มี Microsoft registry sync จะถูก disqualify ใน enterprise procurement.
+
+trade off underrated. Microsoft positioning ว่า neutral registry. แต่จริง ๆ ถือ identity Entra ID บวก endpoint Intune บวก agent registry ทั้งหมด. moat ที่ Google AWS replicate ไม่ทันสองสามปี. Microsoft ไม่ต้องเก่งที่ AI. เก่งที่ identity บวก governance ก็พอ.
+
+สำหรับ OpenBridge. agent ที่ deploy ให้ลูกค้า Thai enterprise ที่ใช้ Microsoft 365 ต้องเตรียม integration กับ Agent 365 registry ภายในสิ้นไตรมาสสาม. implement Connect Existing Agents API. ส่ง metadata เข้าไป. CISO audit เห็น OpenBridge agent ในรายการ. ตัดข้อ shadow IT ที่เป็น blocker deal enterprise. ไม่ควรพยายาม build registry แข่ง Microsoft. position เป็น workflow that registers cleanly. flow ที่ deploy ผ่าน OpenBridge มี metadata Agent 365 อ่านได้ครบ มี audit log มี approval gate. moat ที่ Workato Zapier ไม่มีถ้าเรา ship ก่อนหกเดือน. tactical สามสิบวัน. หนึ่งคน implement metadata adapter ใช้สองสามสัปดาห์. ขอ access Microsoft Build for AI Partner program. เตรียม case study OpenBridge agents fully governed by your Microsoft Agent 365.
+
+เรื่องที่สาม.
+ห้าพฤษภา Fortune ปล่อย exclusive. Nova Intelligence ปิด Series A สามสิบเอ็ดจุดห้าล้านดอลลาร์. นำโดย Chemistry. รวม total funding สี่สิบล้าน. โฟกัสแคบมาก. agentic AI สำหรับ SAP custom code modernization บนเส้น migration ไป S 4 HANA.
+
+ตลาดที่ Nova เล็ง. SAP มี customer สามหมื่นห้าพันราย. ส่วนใหญ่มี custom ABAP code ห้าถึงสิบห้าล้านบรรทัด เขียนทับกันมายี่สิบสามสิบปี. payroll supply chain finance core. SAP บังคับทุกรายต้อง migrate ไป S 4 HANA ภายในสองพันสามสิบ. analyst ตีราคารวมตลาดที่แปดสิบเก้าพันล้านดอลลาร์. consultancy big 4 ตีราคา deal Fortune 500 ที่สามสิบถึงร้อยล้านต่อราย. timeline สิบแปดถึงสามสิบหกเดือน. Nova เสนอลด timeline ห้าสิบถึงเจ็ดสิบห้าเปอร์เซ็นต์ด้วย agent.
+
+ของจริงที่ Nova ขาย. agent อ่าน custom ABAP code. ระบุว่าตัวไหน redundant. เทียบกับ SAP standard. ต้อง rewrite. generate รหัส clean core ใหม่อัตโนมัติ. ไม่ใช่ transpile. เป็น semantic rewrite ที่เข้าใจ business logic.
+
+เคสที่ Nova ยก. Festo. หนึ่งในสามสิบบริษัทแรกของโลกที่ใช้ SAP ตั้งแต่ทศวรรษเจ็ดสิบ. มี ABAP code base ซับซ้อนที่สุดในวงการ. CIO ระบุ บางโปรแกรมเคยใช้เวลาเป็นเดือน ตอนนี้ทำเสร็จในวันเดียว เร็วกว่าเดิมห้าเท่า. Kyndryl case study เมษายนปีก่อน. ลด manual effort เจ็ดสิบห้าเปอร์เซ็นต์ ลด cost ห้าสิบเปอร์เซ็นต์.
+
+moat ที่ Claude GPT raw ทำไม่ได้. Nova ได้ strategic investment จาก SAP iO Fund. เข้าถึง process intelligence knowledge graph จาก SAP product team. ใครก็ generate ABAP ได้. แต่ใครจะรู้ว่า Q3 2026 SAP จะเลิก support feature ตัวไหน. insider knowledge ที่ปล่อยใน community ช้ากว่าหกเดือน.
+
+pattern ที่กลับมาในหกเดือน. vertical agent ที่ลึก กินเงินมากกว่า horizontal agent ที่กว้าง. VC เทเงินเข้า horizontal LangChain CrewAI AutoGen ปี 2024 2025. payback ตามไม่ทัน. enterprise ไม่ซื้อ framework เพื่อ build เอง. ซื้อ agent ที่ทำงาน job เดียวเสร็จ.
+
+POV ของผม. frontier lab จะไม่ลง vertical SAP. market segment เล็กเกินใน lens ของ OpenAI Anthropic. แปดสิบเก้าพันล้านหาร สามหมื่นห้าพัน customer หาร ห้าปี ได้ห้าแสนต่อปี. ไม่ใหญ่พอดึง compute attention. vertical ที่ไม่ฮอตในข่าวแต่เงียบใหญ่ defendable จะ shape return portfolio สองพันยี่สิบหก ยี่สิบเจ็ดมากกว่า horizontal play.
+
+สำหรับ OpenBridge. ไม่ direct เกี่ยวกับ SAP. แต่ adjacent insight สามข้อ. หนึ่ง vertical depth equal pricing power ที่ horizontal play ไม่มี. ต้อง pick หนึ่ง vertical ที่ Thai SMB เจ็บ. SME accounting close. e commerce returns. HR onboarding restaurant retail. เลือกหนึ่ง. หกเดือนจับ benchmark X เปอร์เซ็นต์ time saved Y เปอร์เซ็นต์ cost reduction จาก customer สามถึงห้าราย. publish. สอง knowledge graph เป็น moat ที่ build ได้. partner กับ FlowAccount PEAK K Cloud ดึง schema updates หกเดือนก่อน community. moat ที่ Microsoft OpenAI ทำไม่ได้. สาม Festo case คือ playbook copy ได้. OpenBridge ต้องมีเคสระดับ Siam Cement CP Charoen Pokphand ก่อนสิ้นปี. ลงไปช่วยฟรีถ้าจำเป็น. ได้ logo บวก numbers ที่กลายเป็น sales asset ตลอด สองพันยี่สิบเจ็ด.
+
+เรื่องที่สี่.
+Standard Intelligence ออกจาก stealth ปลายเดือนที่แล้วด้วยรูปที่ไม่ค่อยเห็น. หกคนทีม Seattle. มี foundation model ที่ scale แล้ว. มี Sequoia บวก Spark ลงทุนเจ็ดสิบห้าล้านดอลลาร์ในรอบเดียว. ของจริงคือ FDM 1 first fully general computer action model ที่เรียนจาก raw video ของคนใช้คอมพิวเตอร์สิบเอ็ดล้านชั่วโมง.
+
+thesis ตรงข้ามกับ Anthropic Computer Use. Anthropic ใช้ Claude เก่าบวก screenshot training. post train. Standard บอกผิด ต้อง pre train จาก video ตั้งแต่ scratch. เหมือน LLM pre train จาก text web.
+
+เทคนิค key คือ inverse dynamics model. แทนที่จะหา human annotator มาบอกว่า frame นี้คนกดอะไร. Standard ฝึก model ตัวกลางที่ดูสองเฟรมติดกันแล้วเดา action ระหว่างนั้น. scale labeling ได้สิบเอ็ดล้านชั่วโมง video อัตโนมัติ. orders of magnitude ใหญ่กว่า dataset ที่ Anthropic OpenAI ใช้.
+
+ที่สอง custom video encoder ที่ achieve ห้าสิบเท่า token efficiency. สองชั่วโมง video สามสิบ fps fit ใน หนึ่งล้าน token context window. ก่อนหน้านี้ video model กิน token มหาศาล. Standard เคลม encoder ใหม่ทำได้ที่หนึ่งจุดสี่ token ต่อวินาที. นี่คือ secret sauce ที่ Sequoia ตี value.
+
+demo ที่ shock ตลาด. หนึ่ง build mechanical gear ใน Blender จาก prompt make a twelve tooth gear connected to twenty four tooth gear three to one ratio. ไม่ใช่ Blender API. ไม่ใช่ Python script. agent มอง screen ขยับเมาส์ กดปุ่ม shortcut render gear จริง. สอง debug software bug ผ่าน UI exploration. เปิด VS Code navigate stack trace ลองแก้ run test iterate. เหมือน junior dev. สาม ที่ดูบ้าที่สุด ขับ Tesla Model Y ใน San Francisco ด้วย arrow keys บวก camera feed. สิบห้าถึงยี่สิบนาทีบนถนนจริง ผ่าน safety driver supervision. ไม่ใช่ self driving stack. เป็น general computer action model ที่ apply ได้กับทุก embodiment ที่รับ keystroke.
+
+pattern ที่ตลาดต้องเลือกข้าง. ปี 2026 2027 agent layer แบ่งเป็นสอง school. หนึ่ง API first. agent ทำงานผ่าน MCP connector structured API. clean fast governable แต่จำกัดที่ software ที่เปิด API. สอง pixel first. agent มอง screen output keystroke. generalize กว้าง ทำงานกับ legacy software ที่ไม่มี API แต่ slower harder to govern.
+
+POV ของผม. ทั้งสอง school จะอยู่ร่วมกัน ไม่ใช่ winner takes all. แต่ pixel first จะกินตลาดเฉพาะที่ API first เข้าไม่ถึง. legacy enterprise software. SAP ECC ที่ยังไม่ migrate. mainframe. internal tool ที่ไม่มี API. Excel deep automation. regulated industry ที่ห้าม API ออก. ตลาดนี้ไม่เล็ก analyst ตีสองร้อยพันล้านดอลลาร์ legacy software automation.
+
+ที่ underrated คือ self driving as side effect. fact ที่ FDM 1 ขับรถใน SF ได้ตั้งแต่ pre train แรก โดยไม่ได้ specifically ฝึก driving คือ strongest signal ของ generalization ในรอบหลายปี. Tesla FSD ใช้ vision only แต่ฝึก specifically สำหรับ driving. FDM 1 ฝึก general human action prediction แล้วขับได้เป็น byproduct. ถ้า scale ขึ้นสิบเท่า อาจจะเก่งกว่า Tesla FSD โดยไม่ได้ตั้งใจ. embodiment agnostic action model.
+
+สำหรับ OpenBridge. ไม่ direct เกี่ยวกับ product ตอนนี้ที่เป็น API first. แต่สาม signal. หนึ่ง API first ที่เรา serve คือตลาด majority แปดสิบเปอร์เซ็นต์ของ Thai SMB. แต่ pixel first จะกินยี่สิบเปอร์เซ็นต์ที่ยากที่สุด. โรงงานเก่ารัน Windows XP control panel. ระบบ ERP ภาษาไทยที่ไม่มี API. ระบบราชการ. ไม่ต้องลง pixel first ตอนนี้ แต่ต้อง track FDM 1 บวก Anthropic Computer Use เป็น roadmap candidate สองพันยี่สิบเจ็ด. สอง ถ้า FDM 1 ออก commercial API ใน สองพันยี่สิบเจ็ด OpenBridge ควรเป็น first integrator ในไทย. wrap FDM 1 เป็น PixelAgent tool ที่ workflow OpenBridge เรียกได้ตอนเจอ legacy software ที่ไม่มี API. customer Thai industrial โรงงาน โรงพยาบาล ราชการ จะ pay premium สูงสุด. สาม hiring signal. คนที่มีพื้น computer vision RL foundation model จะ underprice ในไทย. Standard จ่ายระดับ Bay Area สามแสนถึงห้าแสนต่อปี. Thai hire จาก KMUTT Chula Mahidol research grad ราคาต่ำกว่าหกสิบเจ็ดสิบเปอร์เซ็นต์ quality ใกล้เคียง. ลงหนึ่งสองคนตอนนี้ build pixel first capability ในสองพันยี่สิบเจ็ดโดยไม่ต้องรอ FDM 1 commercial release.
+
+ทั้งหมดนี้คือ brief ของรอบนี้. ขอให้วันนี้เป็นวันที่ดีครับ. แล้วเจอกันรอบหน้า.
