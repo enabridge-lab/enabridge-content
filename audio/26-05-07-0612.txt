@@ -1,0 +1,42 @@
+สวัสดีครับ นี่คือ Enabridge AI Brief รอบ 07 May 2026 เวลา 06:12 ครับ.
+รอบนี้มี 4 เรื่อง เน้น Agentic AI, business use case, และ trend ที่เอามาใช้กับ OpenBridge ได้.
+
+เรื่องแรก.
+สวัสดีครับโย วันนี้เรื่องใหญ่จาก Knowledge 2026 ของ ServiceNow ที่ลาสเวกัส คือเขาออกฟีเจอร์ใหม่ใน AI Control Tower ที่ Fortune เรียกว่า kill switch สำหรับ agent หมายถึงปุ่มหยุดฉุกเฉิน ที่ถ้า agent ตัวไหนเริ่มทำงานเพี้ยน หรือไปแตะระบบที่ไม่ควรแตะ ทีม security กดทีเดียวหยุดได้ทันที real-time ไม่ว่า agent ตัวนั้นจะรันอยู่บน AWS, Google Cloud, Azure หรือใน SAP Oracle Workday ก็ตาม เพราะ ServiceNow เพิ่ม connector ใหม่ 30 ตัวให้ Control Tower มองเห็นทั้งหมด
+
+Bill McDermott CEO พูดประโยคที่ติดทั้งงานเลยว่า enterprise ต้องการ AI ที่ sense decide แล้วก็ securely act ซึ่งสะท้อน pain point ที่ CIO ทุกที่กำลังเจอ คือ agent มันเริ่มมีอำนาจมากพอที่จะลบ database หรือส่งเงินภายในไม่กี่วินาที พาดหัวข่าวบอกเลยว่า AI ของคุณลบทุกอย่างได้ใน 9 วินาที
+
+ที่น่าสนใจคืออาทิตย์เดียวกัน Collibra Nvidia แล้วก็ Anthropic ออกของฝั่ง governance พร้อมกันหมด pattern นี้บอกว่าตลาด agent กำลังเข้าเฟสที่สอง เฟสแรกแข่งสร้าง agent เฟสที่สองแข่งสร้างระบบควบคุม agent ใครได้ control plane ก่อน คนนั้นเก็บ rent ยาว ๆ
+
+มุม OpenBridge สำคัญสองเรื่อง หนึ่งคือ audit log ระดับ action ทุก tool call ที่ agent invoke ผ่านเรา ต้องมี trail tamper-proof สองคือ revocation ถ้าลูกค้ากดหยุดที่ Control Tower เราต้อง honor signal นั้น disconnect ทันที ถ้าวาง telemetry schema ส่งเข้า ServiceNow Collibra ได้ตั้งแต่วันแรก เราจะเป็น partner ของ control plane แทนที่จะโดน bypass ครับ.
+
+เรื่องที่สอง.
+อีกเรื่องที่อยากให้สนใจ คือ CopilotKit จาก Seattle ปิด Series A $20 ล้าน บวก seed เก่าที่ไม่เคยประกาศอีก $7 ล้าน รวม $27 ล้าน นำโดย Glilot Capital, NFX, SignalFire ลูกค้าหลักคือ Deutsche Telekom, Docusign, Cisco, S&P Global บริษัทบอกว่ามี Fortune 500 ส่วนใหญ่ใช้แล้ว
+
+ที่ใหญ่กว่าตัวเลข funding คือ protocol ที่บริษัทเป็นเจ้าภาพ ชื่อ AG-UI เป็น open standard สำหรับให้ agent ฝังเข้า UI ของแอปได้โดยตรง ไม่ใช่ chatbot ข้าง ๆ จอแบบเดิม เปิด state สื่อสารกับ user ได้ และ Google Microsoft Amazon Oracle ก็ adopt เป็น standard ของตัวเองแล้ว
+
+ความหมายเชิง stack คือ ตอนนี้อุตสาหกรรม agent ครบสามชั้น MCP สำหรับเชื่อม data tool, Agent2Agent ของ Google สำหรับ agent คุย agent, แล้ว AG-UI ของ CopilotKit สำหรับ agent คุย UI ใครคุม protocol ชั้นไหน คนนั้นเก็บภาษีชั้นนั้นยาว ๆ
+
+มุม OpenBridge เรื่องนี้ใกล้ตัวที่สุดในรอบนี้ ถ้า horizon ปีข้างหน้า agent คือ user หลักของ integration ที่เราสร้าง connector ของเราต้องพูด MCP ได้ และเราควรมี SDK ฝั่ง UI ที่พูด AG-UI ด้วย ถ้า dev ที่ใช้ CopilotKit ต่อ OpenBridge ได้ใน 5 นาที เราจะกลายเป็น default integration layer แต่ถ้ายังต้องเขียน boilerplate 200 บรรทัด นั่นคือ moat เปล่า ๆ ที่ปิด opportunity ตัวเอง window กำลังเปิดอยู่ครับ.
+
+เรื่องที่สาม.
+เรื่องที่สาม Nova Intelligence จาก San Francisco ปิด Series A $31.5 ล้าน นำโดย Chemistry รวม total $40 ล้านขึ้น CEO Emma Qian มาจาก SAP labs เดิม สร้าง agentic AI ที่ parse code ABAP เก่า ๆ ของ SAP แล้วแปลเป็น code ใหม่ที่รันบน S/4HANA ได้
+
+ที่ timing นี้สำคัญคือ SAP บังคับให้ลูกค้าต้อง migrate จาก ECC ไป S/4HANA ภายในปี 2030 ไม่งั้น support ดับ analyst ประเมินตลาดนี้ที่ $89 พันล้านเหรียญ รวมค่า implementation upgrade managed service Nova เลยอยู่ในตำแหน่ง vertical agent ที่ตลาดถูก mandate ไม่ต้อง educate ลูกค้าก่อน
+
+case study กับ Kyndryl เม.ย.ที่ผ่านมาบอกว่าลด manual effort 75% ลด cost 50% ตัวเลข บริษัทอ้าง ยังไม่มี third-party verify แต่ Kyndryl เซ็น strategic partnership แล้ว ส่งสัญญาณว่าทำซ้ำได้
+
+pattern ที่น่าจับคือ vertical agent ที่ชนะคือตัวที่เกาะ regulation หรือ deadline ที่ขยับไม่ได้ Cursor Devin ต้องสู้ตลาดเปิด แต่ Nova ลูกค้าไม่มี option ไม่ migrate อันนี้ใช้ได้กับไทยด้วย เช่น TFRS 18 หรือ e-Tax e-Withholding tax — ใครทำ agent automate compliance ของพวกนี้ procurement จ่ายแน่
+
+มุม OpenBridge ไม่ direct แต่ lesson ฝั่ง GTM สำคัญ Nova ไม่ขายตัวเองว่า AI for SAP แต่ขายเป็น 75 percent เร็วกว่า half cost ภาษา outcome-based เราควรเปลี่ยนจาก integration platform with N connectors เป็น ลด time-to-integrate จาก 6 สัปดาห์เหลือ 2 วัน เพื่อให้ procurement หยิบเอกสารเข้าบอร์ดได้ครับ.
+
+เรื่องที่สี่.
+เรื่องสุดท้ายของรอบนี้ Blitzy จาก Cambridge รัฐ Massachusetts ปิด funding $200 ล้าน ที่ valuation $1.4 พันล้าน นำโดย Northzone บวก PSG Battery Ventures Jump Capital ที่ unusual คือมี strategic investor สอง insurer คือ Liberty Mutual กับ Erie Insurance ลงในรอบเดียวกันด้วย รวมทั้งหมดบริษัทระดมเกิน $204 ล้านแล้ว
+
+CEO Brian Elliott เคยเป็น Army Ranger และเคยทำ Wove มาก่อน partner co-founder คือ Sid Pardeshi alum จาก Nvidia ตั้งบริษัทมาตั้งแต่ปี 2023 strategy ต่างจาก Cursor หรือ Devin ตรงที่ไม่จับ developer แต่จับ engineering org เป็นหน่วย เคลมว่า platform ทำ months of software development autonomously ในเวลาวันถึงสัปดาห์ velocity 5 เท่าบน Fortune 500 ตัวเลขนี้บริษัทอ้าง ยังไม่มี third party verify
+
+Insurer สองรายลงในรอบเดียวบ่งบอกว่า Blitzy คงทำ pilot แก้ legacy claims processing หรือ underwriting platform ของสองเจ้านี้ legacy COBOL Java เก่าหลายสิบปี ตลาด autonomous coding กำลังแยกชัดเจน ฝั่ง developer copilot อย่าง Cursor มูลค่า $60 พันล้าน ขาย individual กับฝั่ง enterprise autonomous platform อย่าง Blitzy ขายเป็น contract 6-7 หลัก TAM น้อยกว่าแต่ retention ดี
+
+มุม OpenBridge ไม่ direct เกี่ยว แต่บอก 3 อย่าง หนึ่งคือ thousands of agents in parallel คือสัญญาณว่า orchestration scale ไป 1000 เท่า ระบบ integration ที่ rate-limit per-workflow จะ bottleneck ต้องเปลี่ยนเป็น per-agent quota สองคือ playbook strategic investor จาก lighthouse customer ใน vertical เป็นวิธีหา premium valuation สามคือ ถ้า autonomous coding agent ทำงานเร็วระดับนี้จริง integration platform ที่ provision เร็วจะกลายเป็น critical path เพราะ agent ต้องการ environment ทดสอบทันที DX ของเราต้องเร็วครับ.
+
+ทั้งหมดนี้คือ brief ของรอบนี้. ขอให้วันนี้เป็นวันที่ดีครับ. แล้วเจอกันรอบหน้า.
