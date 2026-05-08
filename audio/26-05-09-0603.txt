@@ -1,0 +1,44 @@
+สวัสดีครับ นี่คือ Enabridge AI Brief รอบ 09 May 2026 เวลา 06:03 ครับ.
+รอบนี้มี 4 เรื่อง เน้น Agentic AI, business use case, และ trend ที่เอามาใช้กับ OpenBridge ได้.
+
+เรื่องแรก.
+สวัสดีครับโย วันนี้ AWS ทำสองข่าวในสองวันที่เปลี่ยนเกม agent infrastructure ระดับ foundational ครับ วันที่ 6 พ.ค. ปล่อย AWS MCP Server GA agent เข้าถึง AWS API หนึ่งหมื่นห้าพันตัวผ่าน IAM, CloudTrail, CloudWatch ใช้ฟรีจ่ายเฉพาะ resource ที่สร้าง วันรุ่งขึ้น 7 พ.ค. ปล่อย AgentCore Payments preview ให้ agent ค้นหาจ่ายเงินเองผ่าน HTTP 402 และ x402 protocol ใช้ USDC บน Base settle 200 มิลลิวินาที ค่าธรรมเนียมต่ำกว่าเศษเซ็นต์
+
+partner คือ Coinbase ดูแล chain Stripe ดูแล wallet ผ่าน Privy ที่ Stripe ซื้อปลายปีก่อน ทำให้ทุก agent มี wallet default มี spending policy ที่ owner เซ็ต เช่นห้ามเกิน 50 ดอลลาร์ต่อวัน ห้าม recipient นอก allowlist agent ไม่ต้องมี human อนุมัติแต่ละครั้ง
+
+นี่คือครั้งแรกที่ hyperscaler ยอมรับว่า agent เป็น economic actor ไม่ใช่เครื่องมือของคน ค่าธรรมเนียม sub cent ลบ floor ของ pay per API ลง 100 เท่า เปิดตลาด atomic API ที่ value ต่ำกว่า 1 cent ต่อ call เป็นไปได้ MCP server ทำเงินได้เองโดยไม่ต้องผ่าน subscription HTTP 402 ทำงานจริงครั้งแรกในรอบ 30 ปี
+
+มุม OpenBridge สามเรื่อง หนึ่ง MCP server ของเรากลายเป็น revenue source โดยตรง ทุก connector ตอบ 402 พร้อมราคา AgentCore จ่ายอัตโนมัติ ลูกค้าจ่ายตาม usage จริงไม่ต้อง subscribe สอง policy enforcement ของ AgentCore จะเป็นภาษีกลาง connector ต้อง emit metadata invoice ID ราคา latency vendor score ครบไม่งั้น default block สาม AWS MCP Server เป็น template ที่ enterprise คาดหวัง OpenBridge ต้อง match per tenant credential, structured audit log, sandbox ให้ครบ ออกแบบ AWS grade ตั้งแต่วันแรก slot เข้า enterprise ได้โดยไม่ต้อง security review สามเดือนครับ.
+
+เรื่องที่สอง.
+สวัสดีครับโย Snyk ออกข่าวสำคัญสองอย่างวันที่ 7 พ.ค. หนึ่งคือฝัง Claude ของ Anthropic เข้าทั่วทั้ง Snyk AI Security Platform ทำ vulnerability discovery prioritization และ fix ใน code dependency container และ AI artifact และ Evo by Snyk ใช้ Claude red team agent ที่ run production จริง prompt injection data exfiltration supply chain runtime policy
+
+สองคือปล่อย State of Agentic AI Adoption 2026 จาก 500 enterprise deployment ตัวเลขที่ทำให้ขนลุก 65 ถึง 70 เปอร์เซ็นต์ของ production code เป็น AI generated แล้ว เกือบครึ่งมี vulnerability deploy 1 model ลาก software component เพิ่มสามเท่าโดย average 82 เปอร์เซ็นต์ของ AI tool มาจาก third party แต่ traditional governance ไม่ track
+
+ความหมายเชิง category คือ AppSec แบบเดิมที่ออกแบบสำหรับคนเขียน code ไม่ใช้แล้ว security team ต้อง audit agent reasoning loop ไม่ใช่ audit code Snyk pivot Evo เป็น AI BOM ที่ track ทุก model agent MCP server skill embedding คู่แข่งคือ Cisco Splunk Microsoft Purview Datadog ตอนนี้คล้าย SBOM 2020 ใครชนะ integration ที่ enterprise ใช้ง่ายที่สุดได้ winner
+
+มุม OpenBridge สามเรื่อง หนึ่ง เป็น good citizen ของ AI BOM emit metadata version capability dependency signing key reputation ครบ ผ่าน security review Fortune 500 ใน 1 สัปดาห์ สอง audit prompt injection ทุก connector tool description ห้ามมี inline instruction strict validate schema quarterly red team สาม build Compliance Connector pack ที่ pipe MCP call log เข้า Evo Cisco Purview ServiceNow Control Tower ในรูปแบบ unified กลายเป็น Switzerland of agent security telemetry ที่ enterprise ยอมจ่ายเพิ่มไม่ต่อรองครับ.
+
+เรื่องที่สาม.
+สวัสดีครับโย Anthropic ปล่อยข่าว 6 พ.ค. ที่เปลี่ยนทั้ง compute landscape และ Claude Code product เซ็นข้อตกลงกับ SpaceX ใช้ compute ทั้งหมดที่ Colossus 1 ของ SpaceX มากกว่า 300 เมกะวัตต์ มากกว่า 220000 GPU ของ NVIDIA ใหม่ภายในเดือนนี้ ที่น่าสนใจคือ Colossus 1 เป็นชื่อ cluster เดิมที่ xAI ใช้ฝึก Grok ตอนนี้ถูกย้าย ownership ออกมาขายเป็น compute asset
+
+ผลทันทีต่อ product Claude Code 5 hour limit ของทุก tier double ปลด peak hour throttle Pro Max API Tier 1 Opus เพิ่ม input จาก 30000 เป็น 500000 tokens per minute output จาก 8000 เป็น 80000 ขึ้น 16 เท่ากับ 10 เท่า workload agent ที่ต้องรอ rate limit ตอน peak รัน real time ได้
+
+signal ใหญ่กว่า rate limit คือ Anthropic บอกว่าสนใจร่วมพัฒนา orbital AI compute หลาย gigawatt กับ SpaceX จริง ไม่ใช่ blue sky talk เพราะ Starlink Gen 3 มี compute payload Starship V3 cost to orbit 1500 ดอลลาร์ต่อ kg ทำให้ TCO data center ใน LEO แข่งกับโลกได้ในที่ที่ไฟแพง
+
+ภาพ portfolio Anthropic ตอนนี้ AWS 5 กิกะวัตต์ Google 5 กิกะวัตต์ Microsoft 30 พันล้าน Fluidstack 50 พันล้าน SpaceX 300 เมกะวัตต์ multi cloud hedge extreme ระดับที่ scarcity compute ชนะ political alignment การที่ Anthropic safety first เลือก compute จาก Elon entity เปิดเผยเป็น signal ว่า compute จะ commoditize เหมือน oil 1973
+
+มุม OpenBridge adjacent หนึ่ง Claude Code limits 2x dev velocity เพิ่ม 20 ถึง 30 เปอร์เซ็นต์ Yoh ควรพิจารณา upgrade plan สอง ลูกค้า Fortune 500 commit volume Claude มากขึ้น MCP connector จะถูกเรียกถี่ขึ้น 10 ถึง 20 เท่าในบางเคส load testing ใหม่จำเป็น สาม region aware routing ใน MCP layer เป็น value add ที่ raw SDK ไม่มี ลูกค้าอยากให้เลือก region ใกล้ fallback ถ้า throttle ครับ.
+
+เรื่องที่สี่.
+สวัสดีครับโย ServiceNow กับ Accenture ประกาศ 6 พ.ค. ที่ Knowledge 2026 เปิด Forward Deployed Engineering program ร่วม ทีม FDE ของทั้งสองค่ายเข้าไป embed ใน customer environment พร้อมกัน build agentic workflow native บน ServiceNow AI Platform deliver value ใน production ก่อน rollout เต็มบริษัท
+
+ลูกค้าได้สองอย่าง 300 plus pre built AI agent skills บน ServiceNow marketplace แก้ขั้นตอน specific ตั้งแต่ auto resolve ticket onboard vendor rotate credential Accenture เพิ่ม industry vertical banking telecom hospital ทับอีกชั้น และ access สู่ AI Control Tower ที่ govern agent identity permission observability kill switch แบบ vendor agnostic
+
+ข่าวนี้คือ third example ในรอบสองสัปดาห์ OpenAI ตั้ง services arm 4 พันล้าน Anthropic ตั้ง Blackstone backed services ตอนนี้ ServiceNow Accenture ทุกคนยอมรับว่า product led growth ไม่ scale ในตลาด agentic enterprise 70 ถึง 80 เปอร์เซ็นต์ของ project ค้าง POC ต้องมี human plus AI hybrid team เข้าไปทำให้รัน Palantir playbook กลาย mainstream
+
+ServiceNow ได้เปรียบกว่า OpenAI Anthropic ที่ distribution 8100 ลูกค้ามีใบอยู่แล้ว context ticket change request employee record พร้อม agent ฝังใช้ทันที AI Control Tower จะเป็น flashpoint Microsoft Agent 365 Salesforce Agentforce 360 ChatGPT Frontier IBM watsonx Concert ทุกค่าย claim เกมยังเปิด
+
+มุม OpenBridge สามเรื่อง หนึ่ง ServiceNow AI Platform เป็น surface สำคัญ MCP connector ต้อง register ใน Skill marketplace inherit traffic Fortune 500 ทันที สอง emit telemetry ที่ Control Tower ingest ได้ action ID agent identity latency cost outcome ส่งไป ServiceNow Microsoft Purview Splunk Datadog พร้อมกัน เป็น default integration layer สาม FDE model เลียนได้ embedded engineer นั่งกับ consultant 2 ถึง 4 สัปดาห์ต่อ deal unlock deal size 10 เท่า เทียบ self serve subscription scale 50 ถึง 500 ลูกค้าใน 18 เดือนครับ.
+
+ทั้งหมดนี้คือ brief ของรอบนี้. ขอให้วันนี้เป็นวันที่ดีครับ. แล้วเจอกันรอบหน้า.

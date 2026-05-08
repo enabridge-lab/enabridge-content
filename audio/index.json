@@ -1,7 +1,41 @@
 {
-  "generated_at": "2026-05-08T01:15:50Z",
-  "count": 23,
+  "generated_at": "2026-05-08T23:15:54Z",
+  "count": 24,
   "episodes": [
+    {
+      "date": "26-05-09-0603",
+      "iso_date": "2026-05-09T06:03:00+07:00",
+      "title": "Daily AI Brief — 26-05-09 06:03",
+      "description": "1. AWS เปิด AgentCore Payments — agent จ่ายเงิน agent ด้วย USDC ผ่าน x402, settle 200ms ต่ำกว่าเศษเซ็นต์\n2. Snyk ฝัง Claude เข้า Evo + ปล่อย \"State of Agentic AI 2026\" — 70% ของ production code มาจาก AI ครึ่งหนึ่งมีช่องโหว่\n3. Anthropic เซ็น SpaceX Colossus 1 — 300MW + 220K GPUs ใหม่ + คุย \"orbital compute\" — Claude Code limits 2x ทันที\n4. ServiceNow + Accenture เปิด FDE สำหรับ agentic AI — 300+ pre-built skills + AI Control Tower เป็น \"command center\" ของ agent",
+      "items": [
+        {
+          "file": "26-05-09-0603-01-aws-agentcore-payments-x402-coinbase-stripe.md",
+          "title": "AWS เปิด AgentCore Payments — agent จ่ายเงิน agent ด้วย USDC ผ่าน x402, settle 200ms ต่ำกว่าเศษเซ็นต์",
+          "order": 1
+        },
+        {
+          "file": "26-05-09-0603-02-snyk-claude-evo-agentic-ai-state.md",
+          "title": "Snyk ฝัง Claude เข้า Evo + ปล่อย \"State of Agentic AI 2026\" — 70% ของ production code มาจาก AI ครึ่งหนึ่งมีช่องโหว่",
+          "order": 2
+        },
+        {
+          "file": "26-05-09-0603-03-anthropic-spacex-colossus-300mw-orbital.md",
+          "title": "Anthropic เซ็น SpaceX Colossus 1 — 300MW + 220K GPUs ใหม่ + คุย \"orbital compute\" — Claude Code limits 2x ทันที",
+          "order": 3
+        },
+        {
+          "file": "26-05-09-0603-04-servicenow-accenture-fde-300-agent-skills.md",
+          "title": "ServiceNow + Accenture เปิด FDE สำหรับ agentic AI — 300+ pre-built skills + AI Control Tower เป็น \"command center\" ของ agent",
+          "order": 4
+        }
+      ],
+      "audio_file": "26-05-09-0603.mp3",
+      "audio_size_bytes": 1846176,
+      "voice": "th-TH-Chirp3-HD-Achernar",
+      "model": "google-cloud-tts-chirp3-hd",
+      "speed": 1.3,
+      "script_char_count": 6799
+    },
     {
       "date": "26-05-08-0610",
       "iso_date": "2026-05-08T06:10:00+07:00",
