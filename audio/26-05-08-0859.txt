@@ -1,0 +1,42 @@
+สวัสดีครับ นี่คือ Enabridge AI Brief รอบ 08 May 2026 เวลา 08:59 ครับ.
+รอบนี้มี 4 เรื่อง เน้น Agentic AI, business use case, และ trend ที่เอามาใช้กับ OpenBridge ได้.
+
+เรื่องแรก.
+สวัสดีครับโย วันที่ 7 พ.ค. OpenAI ปล่อยรายงานชื่อ B2B Signals ครั้งแรก เป็นเหมือน PMI หรือ ISM ของยุค AI ที่วัดว่า AI กระจายเข้าธุรกิจเร็วแค่ไหน หน่วยวัดที่ใช้คือ intelligence per worker ตัวเลขสำคัญคือบริษัทที่อยู่ frontier ที่ percentile 95 ใช้ AI หนักกว่าบริษัททั่วไป 3.5 เท่า เพิ่มจาก 2 เท่าเมื่อปีก่อน หมายความว่าช่องว่างขยายเกือบ 2 เท่าใน 12 เดือน
+
+ที่น่าสนใจคือ message volume อธิบายแค่ 36 เปอร์เซ็นต์ของช่องว่าง อีก 64 เปอร์เซ็นต์มาจากใช้ลึกกว่า ส่ง context ยาวกว่า ใช้ tool ที่ delegate งานหลาย step Codex นำขาดที่ 16 เท่า ChatGPT Agent Apps in ChatGPT Deep Research GPTs ตามมา OpenAI สรุป 5 ข้อสำหรับองค์กรที่อยากปิด gap วัด depth ไม่ใช่ message count build governance invest enablement scale what works ย้ายจาก chat ไป delegated work with agents
+
+ทำไมสำคัญ นี่คือครั้งแรกที่ AI vendor ปล่อย diffusion gap เป็น metric รายไตรมาส board ของทุก Fortune 500 จะถามใน Q3 ว่าเราอยู่ percentile ไหน frontier vs typical จะกลายเป็นภาษามาตรฐานของ AI strategy ภายใน 18 เดือน 64 เปอร์เซ็นต์ที่ไม่ใช่ message volume ยืนยันว่า ROI ของ AI คือปัญหา engineering บวกปัญหา organization ไม่ใช่แค่ซื้อ license
+
+มุม OpenBridge ขาย diffusion gap audit เป็น service ใหม่ ตรวจ percentile ของลูกค้าเทียบ industry ออก score ที่ board quote ได้ ลูกค้าไทย Fortune 100 ส่วนใหญ่อยู่ percentile 30-50 มี runway 18 เดือน เน้น depth metric ในทุก case study build Workspace Agents starter pack ที่ pre-wire HubSpot Salesforce LINE OA SAP Stripe ผ่าน MCP กลายเป็น default integration layer ของลูกค้า ASEAN ครับ.
+
+เรื่องที่สอง.
+สวัสดีครับโย วันที่ 5 พ.ค. ที่ ServiceNow Knowledge 2026 Bill McDermott กับ Jensen Huang ขึ้น stage ร่วมกันเปิด Project Arc เป็น autonomous desktop agent ที่คิด เขียน code execute และปรับตัวเองเมื่อมีปัญหา ทำงาน multi-step ข้าม local file terminal enterprise app โดยไม่ต้อง pre-build workflow available เป็น early preview
+
+หัวใจคือ NVIDIA OpenShell ที่เป็น sandboxed runtime ที่ทุก action ต้องผ่าน policy gate ของ ServiceNow AI Control Tower admin ตั้ง rule ได้ว่า agent ห้ามเขียน folder ไหน ห้ามเรียก API ไหน อ่าน folder PII ไม่ได้ และมี audit trail ที่ระบุได้ทุกการกระทำของ agent ที่ทำให้ Project Arc ต่างจาก desktop agent อื่นคือ enterprise grounding รันบน ServiceNow Action Fabric grounded ใน CMDB ทำให้ agent รู้ว่า HRIS ผูกกับ Workday SAP Salesforce Zscaler ตั้งแต่ first run ไม่ต้อง bootstrap context
+
+ทำไมสำคัญ นี่คือ endpoint native autonomous agent ที่ ship พร้อม governance ตั้งแต่วันแรก ใน Q3 CISO กับ CIO จะไม่ผ่าน agent ที่ไม่มี OpenShell equivalent NVIDIA เริ่ม claim layer ระหว่าง chip กับ workload margin จะย้ายจาก hardware ไป runtime stickiness ของ NVIDIA stack จะลึกกว่า GPU ตัวเดียวมาก เกม Q3 จะเป็น Microsoft Agent 365 vs ServiceNow ที่ใครคุม governance layer ของ desktop agent
+
+มุม OpenBridge ออก ServiceNow Action Fabric connector ลูกค้า Thai Fortune 100 ที่ใช้ ServiceNow จะ adopt Project Arc ใน 6 ถึง 12 เดือน ที่อยู่ใน Action Fabric registry ก่อน wave จะเป็น default connector emit telemetry ที่ AI Control Tower กิน CISO เห็น OpenBridge ใน dashboard เดียวกับ Project Arc เตรียม OpenShell compliant SDK รับ NVIDIA verified badge enterprise procurement จะเช็ก list นี้เหมือน SOC 2 ครับ.
+
+เรื่องที่สาม.
+สวัสดีครับโย วันที่ 6 พ.ค. ที่ ServiceNow Knowledge 2026 Bill McDermott กับ Julie Sweet ขึ้น stage ด้วยกันเปิด Forward Deployed Engineering program ร่วมกัน ให้ ServiceNow FDE ที่รู้ Action Fabric CMDB AI Control Tower ทำงานคู่กับ Accenture industry FDE ที่รู้ banking insurance healthcare manufacturing retail ลงสนามใน customer environment build agent ใน production ก่อน enterprise rollout
+
+ของจริงคือ 300 พรีบิลด์ AI agent skill กับ agentic workflow ที่ Accenture สะสมจาก global delivery 770,000 คนแล้วใส่ลง ServiceNow AI Platform ลูกค้าไม่ต้อง build จาก zero เลือกจาก library เชื่อม data customize deploy ใน 4 ถึง 8 สัปดาห์ จากเดิม 6 ถึง 12 เดือน หัวใจ pitch คือ deliver value ใน production ก่อน rollout กลับ logic PoC pilot SIT UAT rollout 9 ถึง 18 เดือน แบบเดิม
+
+ทำไมสำคัญ consulting อุตสาหกรรมเริ่ม commodity ขายเป็น product แล้ว pricing จะเป็น outcome based ไม่ใช่ time and material 86 เปอร์เซ็นต์ของ enterprise agent ตอนนี้หยุดที่ pilot น้อยกว่า 15 เปอร์เซ็นต์ scale ไป organization wide FDE program ตอบโจทย์ pilot purgatory ตรง Accenture เป็น partner ทั้ง OpenAI Frontier Anthropic services venture แล้ว ServiceNow ลูกค้า Fortune 500 ใช้ Accenture เดียวคุม 3 ค่าย LLM ลด vendor risk ได้
+
+มุม OpenBridge เปิด OpenBridge skill ลง ServiceNow Accenture catalog wrap HubSpot Stripe LINE OA Shopee SAP ให้ FDE team ที่ deploy ใน Thai Fortune 500 เลือกเป็น default partner กับ Accenture Thailand G-Able Yip In Tsoi เป็น ServiceNow FDE delivery partner emit agent outcome metric ให้ Accenture ใช้เขียน case study ขายต่อ ได้ free distribution สร้าง OpenBridge Skill Marketplace ก่อนคู่แข่ง regional ลงสนามครับ.
+
+เรื่องที่สี่.
+สวัสดีครับโย วันที่ 6 พ.ค. ที่ IBM Think 2026 ใน Boston IBM Consulting เปิด IBM Enterprise Advantage เป็น first of its kind asset based consulting service ที่ขาย asset model agent workflow ที่ลูกค้าซื้อซ้ำได้ ไม่ใช่ขายชั่วโมงคน Krishna พูดในเปิดงานว่า AI first enterprise hybrid by default
+
+ของจริงคือ Context Studio ที่ GA แล้ว ให้ enterprise สร้าง agent ที่ ground บน data structure ของบริษัทเอง ดึง schema จาก Snowflake Databricks SAP Oracle map process จาก CMDB SAP S4 demo accuracy บน enterprise question จาก 23 เปอร์เซ็นต์เป็น 78 เปอร์เซ็นต์ และ Process Studio ที่ coming soon ใช้ agent อ่าน SOP work instruction extract เป็น agent ready workflow pilot จริงคือ analyze 1,400 procedure ค้นพบ 1,000 improvement project ลด operating cost 25 เปอร์เซ็นต์ใน 18 เดือน
+
+อีกข่าวสำคัญคือ IBM ขยาย partnership SAP ผ่าน A2A protocol IBM Consulting Advantage agent manage SAP Joule agent ได้ทันที first concrete cross vendor agent orchestration ระดับ deployed Sapphire 2026 ที่ 11 พ.ค. SAP จะประกาศ Joule reimagined ที่ทำงาน agent to agent กับ ServiceNow Salesforce Workday IBM พร้อมกัน รวมกับ FedRAMP environment และ Sovereign Core สำหรับ government IBM กลายเป็นค่ายแรกที่ครบ stack consulting platform sovereignty
+
+ทำไมสำคัญ IBM ทำสิ่งที่ Accenture Deloitte McKinsey กลัว แปลง consulting เป็น asset based product ลูกค้าจ่าย subscription แทน T&M Accenture services revenue 76 พันล้านพังถ้าลูกค้าซื้อ asset แทน consultant 25 เปอร์เซ็นต์ cost reduction ถ้า third party verify จะถูก quote ใน board pack ทุก Fortune 1000 ใน Q4 vendor ที่ไม่ implement A2A เช่น OpenAI จะถูกบีบให้รวม
+
+มุม OpenBridge build OpenBridge Process Studio integration submit connector kit ลง IBM catalog emit A2A compliant agent card ที่ทุกค่าย discover ได้ ขาย Sovereign Connector Pack สำหรับลูกค้า government Thai margin 40 ถึง 60 เปอร์เซ็นต์ รัน OpenBridge ROI Calculator ที่ output cost saving แทนขาย API count ครับ.
+
+ทั้งหมดนี้คือ brief ของรอบนี้. ขอให้วันนี้เป็นวันที่ดีครับ. แล้วเจอกันรอบหน้า.
