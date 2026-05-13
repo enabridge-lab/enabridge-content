@@ -1,0 +1,32 @@
+{
+  "date": "26-05-14-0605",
+  "iso_date": "2026-05-14T06:05:00+07:00",
+  "title": "Daily AI Brief — 26-05-14 06:05",
+  "items": [
+    {
+      "file": "26-05-14-0605-01-sap-sapphire-autonomous-enterprise-claude-200-agents.md",
+      "title": "SAP เปิด Autonomous Enterprise: 200+ agents, Claude เป็นสมอง, NVIDIA OpenShell เป็นกรง",
+      "order": 1
+    },
+    {
+      "file": "26-05-14-0605-02-thomson-reuters-cocounsel-claude-agent-sdk-mcp-fiduciary.md",
+      "title": "Thomson Reuters เอา 175 ปีของกฎหมายมาผูก Claude Agent SDK — MCP เริ่มไต่ขึ้น regulated industry",
+      "order": 2
+    },
+    {
+      "file": "26-05-14-0605-03-amdocs-google-gemini-marketplace-telco-agentic-os.md",
+      "title": "Amdocs ลง Google Gemini Marketplace — vertical agentic OS เริ่ม ship เป็นสินค้า",
+      "order": 3
+    },
+    {
+      "file": "26-05-14-0605-04-judgment-labs-32m-agent-trajectory-eval-lightspeed.md",
+      "title": "Judgment Labs ระดม $32M เพราะ \"evaluation\" คือคอขวดถัดไปของ agent ทุกตัว",
+      "order": 4
+    }
+  ],
+  "script_char_count": 4298,
+  "audio_file": "26-05-14-0605.mp3",
+  "voice": "th-TH-Chirp3-HD-Achernar",
+  "model": "google-cloud-tts-chirp3-hd",
+  "speed": 1.3
+}
