@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-17T16:04:33Z",
-  "count": 31,
+  "generated_at": "2026-05-17T16:04:59Z",
+  "count": 32,
   "episodes": [
     {
       "date": "26-05-17-0602",
@@ -35,6 +35,40 @@
       "model": "google-cloud-tts-chirp3-hd",
       "speed": 1.3,
       "script_char_count": 6156
+    },
+    {
+      "date": "26-05-14-0605",
+      "iso_date": "2026-05-14T06:05:00+07:00",
+      "title": "Daily AI Brief — 26-05-14 06:05",
+      "description": "1. SAP เปิด Autonomous Enterprise: 200+ agents, Claude เป็นสมอง, NVIDIA OpenShell เป็นกรง\n2. Thomson Reuters เอา 175 ปีของกฎหมายมาผูก Claude Agent SDK — MCP เริ่มไต่ขึ้น regulated industry\n3. Amdocs ลง Google Gemini Marketplace — vertical agentic OS เริ่ม ship เป็นสินค้า\n4. Judgment Labs ระดม $32M เพราะ \"evaluation\" คือคอขวดถัดไปของ agent ทุกตัว",
+      "items": [
+        {
+          "file": "26-05-14-0605-01-sap-sapphire-autonomous-enterprise-claude-200-agents.md",
+          "title": "SAP เปิด Autonomous Enterprise: 200+ agents, Claude เป็นสมอง, NVIDIA OpenShell เป็นกรง",
+          "order": 1
+        },
+        {
+          "file": "26-05-14-0605-02-thomson-reuters-cocounsel-claude-agent-sdk-mcp-fiduciary.md",
+          "title": "Thomson Reuters เอา 175 ปีของกฎหมายมาผูก Claude Agent SDK — MCP เริ่มไต่ขึ้น regulated industry",
+          "order": 2
+        },
+        {
+          "file": "26-05-14-0605-03-amdocs-google-gemini-marketplace-telco-agentic-os.md",
+          "title": "Amdocs ลง Google Gemini Marketplace — vertical agentic OS เริ่ม ship เป็นสินค้า",
+          "order": 3
+        },
+        {
+          "file": "26-05-14-0605-04-judgment-labs-32m-agent-trajectory-eval-lightspeed.md",
+          "title": "Judgment Labs ระดม $32M เพราะ \"evaluation\" คือคอขวดถัดไปของ agent ทุกตัว",
+          "order": 4
+        }
+      ],
+      "audio_file": "26-05-14-0605.mp3",
+      "audio_size_bytes": 1181184,
+      "voice": "th-TH-Chirp3-HD-Achernar",
+      "model": "google-cloud-tts-chirp3-hd",
+      "speed": 1.3,
+      "script_char_count": 4298
     },
     {
       "date": "26-05-13-0606",
