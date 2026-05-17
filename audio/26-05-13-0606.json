@@ -1,0 +1,32 @@
+{
+  "date": "26-05-13-0606",
+  "iso_date": "2026-05-13T06:06:00+07:00",
+  "title": "Daily AI Brief — 26-05-13 06:06",
+  "items": [
+    {
+      "file": "26-05-13-0606-01-openai-deployment-company-4b-tomoro-150-specialists.md",
+      "title": "OpenAI ตั้ง Deployment Company $4B ซื้อ Tomoro 150 คน — ขายของไม่พอ ต้อง implement ด้วย",
+      "order": 1
+    },
+    {
+      "file": "26-05-13-0606-02-tcs-rezolve-agentic-commerce-30b-global.md",
+      "title": "TCS ($30B revenue) ขาย Rezolve Ai ทั่วโลก — agentic commerce ออกจาก lab ลง global enterprise",
+      "order": 2
+    },
+    {
+      "file": "26-05-13-0606-03-servicenow-action-fabric-kill-switch-30-integrations.md",
+      "title": "ServiceNow ติด \"kill switch\" ให้ AI agent — 30 integration ใหม่ ขอเป็น control plane ของ enterprise",
+      "order": 3
+    },
+    {
+      "file": "26-05-13-0606-04-anthropic-claude-security-500-vulnerabilities-public-beta.md",
+      "title": "Anthropic เปิด Claude Security public beta — Opus 4.7 หาช่องโหว่ในโค้ด 500+ ตัวที่ expert มองข้าม",
+      "order": 4
+    }
+  ],
+  "script_char_count": 5435,
+  "audio_file": "26-05-13-0606.mp3",
+  "voice": "th-TH-Chirp3-HD-Achernar",
+  "model": "google-cloud-tts-chirp3-hd",
+  "speed": 1.3
+}

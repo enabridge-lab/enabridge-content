@@ -1,0 +1,32 @@
+{
+  "date": "26-05-10-0638",
+  "iso_date": "2026-05-10T06:38:00+07:00",
+  "title": "Daily AI Brief — 26-05-10 06:38",
+  "items": [
+    {
+      "file": "26-05-10-0638-01-anthropic-dreaming-outcomes-multiagent-claude-managed.md",
+      "title": "Anthropic ติดความฝันให้ Claude — Dreaming, Outcomes, Multi-Agent Orchestration เปลี่ยน agent จาก stateless tool เป็น team ที่เรียนรู้ระหว่างคืน",
+      "order": 1
+    },
+    {
+      "file": "26-05-10-0638-02-anthropic-wall-street-banking-agents-moodys-msft365.md",
+      "title": "Anthropic เปิด 10 banking agent + Microsoft 365 + Moody's data — Dario กับ Jamie Dimon ขึ้นเวทีร่วมก่อน IPO ฤดูใบไม้ร่วง",
+      "order": 2
+    },
+    {
+      "file": "26-05-10-0638-03-sierra-950m-15b-ai-agents-fortune50.md",
+      "title": "Sierra ระดมทุน $950M ที่ valuation $15B — Bret Taylor พิสูจน์ \"AI agent vertical SaaS\" คือ category จริง $150M ARR ใน 7 ไตรมาส",
+      "order": 3
+    },
+    {
+      "file": "26-05-10-0638-04-openai-gpt-realtime-2-voice-agents-trio.md",
+      "title": "OpenAI ปล่อย GPT-Realtime-2 + Translate + Whisper — voice agent ก้าวจาก demo เป็น production layer ราคา audio token เข้าใกล้ text",
+      "order": 4
+    }
+  ],
+  "script_char_count": 4469,
+  "audio_file": "26-05-10-0638.mp3",
+  "voice": "th-TH-Chirp3-HD-Achernar",
+  "model": "google-cloud-tts-chirp3-hd",
+  "speed": 1.3
+}
