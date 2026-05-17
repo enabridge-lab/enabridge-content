@@ -1,0 +1,40 @@
+สวัสดีครับ นี่คือ Enabridge AI Brief รอบ 17 May 2026 เวลา 06:02 ครับ.
+รอบนี้มี 4 เรื่อง เน้น Agentic AI, business use case, และ trend ที่เอามาใช้กับ OpenBridge ได้.
+
+เรื่องแรก.
+สวัสดีครับโย้ มาเล่าเรื่องใหญ่ของวันที่ 14 พฤษภาคม PwC กับ Anthropic ประกาศขยาย alliance ครั้งใหญ่ ที่จะ train และ certify พนักงาน PwC สามหมื่นคนให้เป็น Claude expert พร้อมตั้ง Center of Excellence ร่วมกัน และเปิด Office of the CFO เป็น business unit ใหม่ของ PwC ที่ build บน Claude ตั้งแต่วันแรก โรลออก Claude Code และ Cowork ทั่วทีม US ก่อนขยายไป global workforce หลายแสนคน
+
+ตัวเลขที่น่าสนใจคือ insurance underwriting ที่เคยใช้สิบสัปดาห์ ตอนนี้ใช้สิบวัน security work ที่เคยใช้ชั่วโมง ตอนนี้เสร็จในนาที delivery time โดยรวมลดสูงสุดเจ็ดสิบเปอร์เซ็นต์ และมี Advocate Health เครือสุขภาพหนึ่งแสนหกหมื่นเจ็ดพันคน กำลัง build full deployment
+
+ทำไมเรื่องนี้สำคัญ Timing ตรงสามวันหลัง OpenAI ประกาศ Deployment Company สี่พันล้านดอลลาร์ Anthropic เลือกเส้นทาง Big Four เป็น distribution channel แทนการสร้าง consulting in-house เอง playbook นี้คล้าย Salesforce ที่ใช้ Accenture และ Deloitte เป็นแขนขามาตลอด ผลคือใน 12 เดือนข้างหน้า Big Four ทั้งสี่จะเลือกข้าง LLM stack ของตัวเอง ลูกค้า enterprise ที่จ้าง consultant ก็จะถูก lock-in โมเดลผ่าน SI ที่เลือก
+
+มุม OpenBridge ตลาดจะคาดหวัง deployment kit governance และ connector library เป็น default ของ Big Four ทุกราย OpenBridge ควรสร้าง SI-friendly product surface ที่มี per-seat pricing white-label option และ audit log ที่ Big Four อ่านได้ และต้องบุก PwC Thailand Innovation Lab ก่อนที่ stack จะถูก dictate มาจาก global HQ ครับ.
+
+เรื่องที่สอง.
+สวัสดีครับโย้ มาเล่าเรื่อง pricing ที่เปลี่ยนเกม วันที่ 14 พฤษภาคม Anthropic ประกาศแยก programmatic Claude usage ออกจาก chat subscription เดิม เริ่มผลบังคับ 15 มิถุนายน ที่ผ่านมาใครใช้ Claude Pro ยี่สิบดอลลาร์ต่อเดือน ใช้ Claude.ai กับ Claude Code นับ quota เดียวกัน ต่อไป interactive usage ยังนับเดิม แต่ Agent SDK GitHub Actions และ third party framework เช่น OpenClaw จะดึงจาก credit pool ใหม่ที่คิดเงินแบบ API token-based
+
+เหตุผลคือ 6 เดือนที่ผ่านมา Claude Code กับ Agent SDK เป็นช่องที่ heavy user run loop 24 ชั่วโมงต่อวัน ผ่าน flat fee ทำให้ Anthropic ขาดทุนต่อ token เยอะ การ decouple ก็คือผลักให้คนที่ใช้เยอะจ่ายตามจริง Axios รายงานว่า move นี้ตามจังหวะที่ OpenAI กำลัง court agent user หนักด้วย free tier เยอะกว่า
+
+ทำไมเรื่องนี้สำคัญ นี่คือสัญญาณแรกที่ frontier lab ยอมแยกตลาด chat กับ agent เป็นสอง economic engine ที่ผ่านมาทุกคนจ่ายเท่ากันแต่ใช้ไม่เท่ากัน heavy user ได้ subsidized จาก casual user โครงสร้างนี้ scale ไม่ได้เมื่อ agent ทำงานเองยี่สิบสี่ชั่วโมงเป็น default workload ใหม่ pattern ที่จะตามมาคือ OpenAI น่าจะออกโครงสร้างคล้ายกันใน 60 ถึง 90 วัน
+
+มุม OpenBridge ถ้า build agent orchestration layer ต้องผนวก token accounting และ budget alarm เป็น core feature ตั้งแต่วันแรก ลูกค้า enterprise จะถามว่า agent loop กินไปเท่าไหร่ ก่อนถามว่าเสร็จยัง อีก insight คือ Anthropic แยก SDK เปิดทางให้ multi-model orchestration platform มี value ใหม่ ทำ routing ส่ง task ไป model ที่คุ้มที่สุด ช่วยลูกค้าประหยัดสามสิบถึงหกสิบเปอร์เซ็นต์ของ agent budget ครับ.
+
+เรื่องที่สาม.
+สวัสดีครับโย้ มาเล่าเรื่อง research paper ที่ตบหน้าวงการ agentic AI นักวิจัย Microsoft Research สามคน Philippe Laban Tobias Schnabel และ Jennifer Neville ออก preprint ชื่อตรงเลยว่า LLMs Corrupt Your Documents When You Delegate ทำ benchmark ใหม่ชื่อ DELEGATE 52 ทดสอบ frontier model ใน 52 vertical domain โดยจำลองการ delegate งานต่อเนื่อง 20 รอบ
+
+ผลที่ออกมาช็อกวงการ Gemini 3.1 Pro Claude 4.6 Opus และ GPT 5.4 ทุกตัวเสียเนื้อหา document เฉลี่ย 25 เปอร์เซ็นต์ หลัง 20 รอบ ค่าเฉลี่ย model ทั้งหมด degradation 50 เปอร์เซ็นต์ และ catastrophic corruption เกิดในกว่า 80 เปอร์เซ็นต์ของ model domain combination จาก 52 vertical มีแค่ Python programming ตัวเดียวที่ผ่านเกณฑ์ ready ที่ 98 เปอร์เซ็นต์
+
+จุดที่เจ็บที่สุดคือ เมื่อเพิ่ม agentic harness ให้ model มี tool ใช้ file read write กับ code execution performance แย่ลงเฉลี่ย 6 เปอร์เซ็นต์ จุด ให้เครื่องมือเยอะขึ้น เท่ากับ พังเร็วขึ้น สำหรับ workflow ที่ไม่ใช่ code นัยตรงๆคือทุก agentic framework ที่ขายอยู่ตอนนี้ ที่ปั้น agent loop ให้ทำงานต่อเนื่อง อาจกำลังขยาย error rate มากกว่าลด
+
+ทำไมสำคัญ Microsoft Research ไม่มี dog in this fight เพราะ Azure ขายทุกโมเดล การออกมาเตือนแบบนี้คือสัญญาณ responsibility deflection ก่อน enterprise deployment failure ที่จะมาครึ่งปีหลัง มุม OpenBridge ถ้าทำ workflow orchestration ต้องไม่ออกแบบให้ agent loop เกินสิบ step โดยไม่มี human checkpoint หรือ deterministic validator design pattern ที่ปลอดภัยคือ agent ทำงานเป็น batch สั้นๆ แล้วเก็บ state ส่งให้ rule-based engine ตรวจ ก่อน hand off กลับให้ agent ต่อ เป็น circuit breaker สำหรับ agent loop ครับ.
+
+เรื่องที่สี่.
+สวัสดีครับโย้ มาเล่าเรื่อง startup ออกจาก stealth ที่น่าสนใจของวันที่ 14 พฤษภาคม Graphon AI เปิดตัวด้วย seed round แปดล้านสามแสนดอลลาร์ นำโดย Novera Ventures ของ Arvind Gupta พร้อม Perplexity Fund Samsung Next GS Futures Hitachi Ventures syndicate tilt ไป Asia กับ industrial ชัดเจน ไม่ใช่ Silicon Valley generalist
+
+Pitch ของ Graphon คือ pre-model intelligence layer แทนที่จะ optimize ใน context window ของ LLM แบบ RAG Graphon ทำงานก่อนที่ data จะเข้า model ใช้ graphon function คณิตศาสตร์ที่ Christian Borgs formalize ปี 2008 ที่ Berkeley auto-discover ว่า data ใน enterprise เชื่อมโยงกันยังไง ครอบคลุม video audio document image structured database team มาจาก Amazon Meta MIT Rivian Google Apple NVIDIA Samsung AI Center NASA early customer คือ GS group เครือ chaebol เกาหลีรายได้ยี่สิบสองพันล้านดอลลาร์
+
+ทำไมเรื่องนี้สำคัญ นี่คือ thesis ที่ตอบคำถามใหญ่ว่า RAG พอแล้วหรือยัง ตลอดปีที่ผ่านมา RAG เป็น default architecture แต่ scale ไม่ถึงเพราะไม่ understand cross-modal และ context window ใหญ่ขึ้น cost quadratic Graphon เสนอ alternative คือ pre-compute connection ทั้งหมดเป็น graph แล้วใช้ math ตัดสิน
+
+มุม OpenBridge มี opening คุยกับ Graphon เป็น go-to-market partner สำหรับ SEA เพราะ Graphon เน้น Asian enterprise และ Asian capital หนัก อีกมุมต้องตัดสินใจว่าจะ partner กับ Graphon เป็น component หรือ build own thin layer ในระยะ 6 เดือนแรก partner น่าจะคุ้มกว่า เพราะ category ยัง early มีหลาย vendor แข่งกัน OpenBridge รอจน winning approach ชัดก่อนค่อย commit deep ครับ.
+
+ทั้งหมดนี้คือ brief ของรอบนี้. ขอให้วันนี้เป็นวันที่ดีครับ. แล้วเจอกันรอบหน้า.

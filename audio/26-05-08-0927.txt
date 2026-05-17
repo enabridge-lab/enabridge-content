@@ -1,0 +1,50 @@
+สวัสดีครับ นี่คือ Enabridge AI Brief รอบ 08 May 2026 เวลา 09:27 ครับ.
+รอบนี้มี 4 เรื่อง เน้น Agentic AI, business use case, และ trend ที่เอามาใช้กับ OpenBridge ได้.
+
+เรื่องแรก.
+สวัสดีครับโย วันนี้เรื่องใหญ่จาก Atlassian ที่ Team '26 เมื่อวาน บริษัทเปิด Teamwork Graph ที่มี 150 billion connections ให้ AI agent ค่ายอื่นเข้าถึงโดยตรงผ่าน MCP server กับ CLI 300 กว่า command แปลว่า dev เปิด Claude Code หรือ Cursor บนเครื่องตัวเอง พิมพ์ query เดียว ดึง Jira issue Confluence page Bitbucket PR กลับมาพร้อม เขียนกลับเข้าไปใน graph ได้ ตัว agent ไม่ต้องอยู่ใน product Atlassian เลย
+
+ตัวเลขที่โชว์อ่านแล้วน่าทึ่ง 14 ล้าน Rovo assisted action ในเดือนที่ผ่านมา 90% ของ enterprise cloud customer ใช้ Rovo agentic automation โต 7 เท่าใน 6 เดือน ที่สำคัญคือ Atlassian อ้างว่า AI ที่ ground บน Teamwork Graph ตอบถูกขึ้น 44% แถมใช้ token น้อยกว่า 48% เป็น claim แรกที่ context layer ลด hallucination ได้แบบ measurable ใน enterprise scale
+
+Customer story ก็มีน้ำหนัก SpotOn deflect ticket จาก 40% เป็น 53% Teach for All สร้าง agent ที่ generate weekly report 60 ถึง 70% อัตโนมัติ Lendi Group เดินข้าม Jira Confluence Slack ด้วย agent เดียว CTO ของ Lendi พูดประโยคที่ดี ว่า Rovo กับ Teamwork Graph คือ connective spine ที่ทำให้ AI ฝังในเนื้อแทนที่จะ hover อยู่ขอบ
+
+ที่สำคัญคือ Atlassian เลือก strategy ตรงข้าม Microsoft ที่ Agent 365 ห่อทุกอย่างไว้ Atlassian เปิดกว้างวาง bet ว่า graph เป็น moat จริง ไม่ใช่ chat UI ความเสี่ยงคือถ้า third party agent ดีกว่า Rovo Atlassian จะกลายเป็น data warehouse for agent เก็บเงินจาก storage แทน UX
+
+มุม OpenBridge เรื่องนี้ใหญ่ครับ Teamwork Graph CLI กับ MCP server คือ blueprint ที่ OpenBridge ควรลอก เรามี metadata ของ HubSpot Stripe Shopify SAP อยู่แล้ว เปิด OpenBridge Graph CLI ให้ Claude Code Cursor ดึง entity relationship ข้ามระบบลูกค้าใน command เดียว positioning ตรง 44% accuracy 48% token saving คือ benchmark ที่ OpenBridge ต้อง measure ถ้า connector เรา ground agent ดีกว่า raw API นี่คือเหตุผลที่ลูกค้าจ่ายเรา และที่ Thai Fortune 500 ใช้ Atlassian อยู่แล้วเยอะ partnership กับ Atlassian Solution Partner คือ deal flow ที่ pre-qualified เคลื่อนเร็วก่อน Sea กับ GoTo ลงสนามครับ.
+
+เรื่องที่สอง.
+สวัสดีครับโย วันนี้เรื่องที่ไม่มีใครคาดถึงเลย Anthropic ประกาศเมื่อ 6 พ.ค. ว่าจะใช้ compute ทั้งหมดของ Colossus 1 data center ที่ Memphis ของ SpaceX 300 megawatt บวก 220 พัน Nvidia GPU พร้อมใน 1 เดือน Colossus 1 เคยเป็นโรงงาน Electrolux เก่าที่ Musk สร้าง world largest AI supercomputer ปี 2024 เพื่อ train Grok ของ xAI ตอนนี้ Anthropic ที่เป็นคู่แข่งโดยตรงของ xAI กลับเข้ามากินที่ทั้งโต๊ะ
+
+จุดที่น่าทึ่งคือใน press release ทั้งสองฝั่ง พูดถึง exploratory partnership ที่จะร่วมพัฒนา orbital compute หลาย gigawatt ในวงโคจร เป็น declared statement แรกของ frontier lab ที่ commit ถึง space based AI infrastructure แบบจริงจัง Bezos กับ Project Kuiper เคย hint แต่ไม่เคย sign ดีลแบบนี้ Microsoft กับ Google ยังอยู่ระดับ R&D เท่านั้น
+
+financial term ไม่เปิด แต่ scale บอกตัวเอง 220 พัน Nvidia GPU ราคา 30K ต่อตัว คือ 6.6 พันล้านดอลลาร์ของ capex ที่ SpaceX ลงไปแล้ว Anthropic เซ็น lease usage contract เข้ามาใช้ พร้อมประกาศว่า Claude Code limit จะขยายอย่างมีนัยสำคัญ แปลว่า Anthropic compute starved อยู่จริง ก่อนที่ดีลนี้จะปิด เห็นได้จากการ throttle Claude Sonnet Opus หลายรอบใน Q1 Q2
+
+ที่น่าจับตาคือ Anthropic เพิ่ง close ดีล Google TPU 200 พันล้าน เปิด venture firm กับ Blackstone Goldman 1.5 พันล้าน และตอนนี้ดีล SpaceX อีกหนึ่ง ทั้งหมดในระยะ 10 วัน Anthropic ที่เคย narrative ว่าเป็น small lab ตอนนี้กำกับ infrastructure portfolio ที่กว้างกว่า OpenAI ที่พึ่ง Azure อย่างเดียว ตอนนี้มี compute ใน 4 ค่ายขนานกัน Amazon Trainium Google TPU Microsoft Azure SpaceX Nvidia GPU compute arbitrage กลายเป็น core competency
+
+มุม OpenBridge ไม่ direct เกี่ยว แต่สาม insight หนึ่ง multi cloud ของ Anthropic แปลว่าลูกค้า Thai enterprise ที่ pick Claude เพราะ data residency จะมีทางเลือกมากขึ้น OpenBridge connector ที่ route AI call ตาม customer policy ขาย B2B Thai ได้ตรง สอง throughput ที่เพิ่ม Claude API rate limit ที่เคยเจอใน Q1 Q2 จะ unblock pricing tier ของเรา refresh เดือน มิ.ย. สาม orbital compute อย่ารีบ FOMO แต่ในเอกสาร investor ใส่ slide ว่า no matter where compute lives ground cloud orbit connector เราเชื่อมที่ data ลูกค้าอยู่ ภาพ futuristic ที่ VC ชอบครับ.
+
+เรื่องที่สาม.
+สวัสดีครับโย วันนี้ OpenAI เปิดตัว B2B Signals เมื่อ 7 พ.ค. เป็น telemetry based research ที่ตามรอย AI usage ของลูกค้าธุรกิจแบบ recurring measure ใช้ aggregated signal จาก ChatGPT Enterprise Business Edu Teachers หลักล้านคน วาง B2B Signals เป็น series quarterly ให้ exec เห็นว่าตัวเองอยู่ percentile ไหน
+
+ตัวเลขที่เด่น frontier firm คือ บริษัทที่อยู่ percentile 95 ใช้ intelligence per worker 3.5 เท่าของ typical firm ที่ median เพิ่มจาก 2 เท่าเมื่อ เม.ย. 2025 ที่หักลึกที่สุดคือ Codex frontier firm send Codex message ต่อ worker 16 เท่าของ typical dev ใน frontier ใช้ AI coding หนักกว่ากระทบทุกบริษัทที่ไม่ได้อยู่ percentile
+
+ที่ OpenAI สื่อสารเป็น point สำคัญคือ message volume อธิบาย gap ได้แค่ 36% หมายความว่า frontier firm ไม่ใช่แค่พิมพ์เยอะ แต่ใช้ในแบบ richer more complex agentic tool custom GPT MCP connector Codex แทน plain chat ตัวอย่างคือ accounting firm ใช้ Codex รัน reconciliation agent ทุกคืน legal firm ใช้ Workspace Agents pre draft contract review consulting firm ใช้ Knowledge Connector ดึง Egnyte Slack Google Drive ก่อน meeting
+
+ที่สำคัญที่สุดคือ ตัวเลขนี้ทำลาย narrative ที่ดี ปีที่ผ่านมาทุกคนเชื่อว่า AI gap ใน enterprise เริ่ม flatten แต่ telemetry บอกตรงข้าม gap ขยายจาก 2x เป็น 3.5x ใน 12 เดือน แปลว่า AI ไม่ใช่ commodity ที่ทุกคนได้เท่ากัน เป็น compounding advantage 5 ปีจะมี winner takes most ใน sector ที่ AI sensitive consulting legal finance software คล้าย Internet adoption 1998 ถึง 2003
+
+ที่น่าจับตา 16x Codex gap แปลว่า dev productivity inequality widen รุนแรง บริษัทขนาดกลางที่ไม่ได้ทำ Codex enablement จะ struggle hire dev เพราะทำงานช้ากว่าคู่แข่ง 5 เท่า เกมเปลี่ยนจาก Git เป็น agent driven coding
+
+มุม OpenBridge สามอย่าง หนึ่ง สร้าง Frontier Firm Score ภายในที่ rate ลูกค้าใน CRM จาก connector count MCP depth Codex activity ลูกค้า score สูง invest expansion score ต่ำ automate self serve สอง ทำ pricing tier Frontier กับ Standard ราคา 5 ถึง 10 เท่ากัน ลูกค้า Standard ขยับขึ้นเพราะรายงาน OpenBridge ที่บอกว่าบริษัทขนาดเดียวกัน tier นี้ deploy 12 connector vs คุณ 3 สาม OpenBridge Graph CLI กับ MCP server activate Codex Claude Code ลูกค้าที่ใช้หนัก ship integration เร็ว 5 เท่า stick กับเรา ในตลาดไทย Frontier firm มีแค่ 5 ถึง 8 บริษัท SCB KBank CP AIS True D ไป land หนักก่อน เป็น lighthouse pull ตลาดตามครับ.
+
+เรื่องที่สี่.
+สวัสดีครับโย วันนี้เรื่องจีน Moonshot AI ผู้สร้าง Kimi ปิดรอบ funding 2 พันล้านดอลลาร์ ที่ valuation 20 พันล้านดอลลาร์ เมื่อ 7 พ.ค. นำโดย Long Z VC ของ Meituan ลงทุน 200 ล้าน เป็น anchor พ่วง Tsinghua Capital China Mobile CPE Yuanfeng combination ของ tech corporate กับ state affiliated capital บอกว่า Moonshot ตอนนี้ถูก position เป็น China strategic AI champion ในระดับเดียวกับ DeepSeek ARR เดือน เม.ย. ทะลุ 200 ล้านแล้ว ตัวเลขที่บางบริษัท US 1 พันล้านดอลลาร์ valuation ยังไม่ถึง
+
+ตัวที่ทำให้น่ากลัวที่สุดคือ Kimi K2.6 model open source release 20 เม.ย. ออกแบบเป็น Mixture of Experts 1 trillion parameter ประกอบ 384 experts ใช้ KV cache compression รองรับ context 1 ล้าน token handle agentic coding 13 ชั่วโมง coordinate sub agent ได้ 300 ตัว generate code 4 พันบรรทัดใน run เดียว ตอนนี้อยู่อันดับ 2 ของ LLM ที่ used มากสุดบน OpenRouter รองจาก Claude Sonnet แปลว่า dev จริงเลือกใช้ ไม่ใช่แค่ benchmark ดี
+
+positioning ต่างจาก US frontier คือ open source license บวกราคา inference ถูกกว่า Claude GPT 5 ถึง 10 เท่า สำหรับ agent workload ที่รัน 24 7 บริษัทใช้ K2.6 แทน Claude ใน workflow ไม่ critical ประหยัดเดือนละหลายแสน DeepSeek กำลัง raise valuation 45 พันล้าน Zhipu MiniMax แตะ 30 พันล้านแล้ว tier ของ China open source frontier ขยายเร็วและกว้าง
+
+ที่สำคัญตลาด AI ปี 2026 ไม่ใช่ US lab ครองโลกอีกต่อไป 6 จีน lab DeepSeek Moonshot Zhipu MiniMax Alibaba Qwen ByteDance Doubao 4 ใน 6 เปิด open source บางส่วน บริษัท ASEAN Middle East Africa Latin America ที่ไม่ต้องการ vendor lock มี practical alternative แล้ว ที่ลึกคือ Meituan เป็น lead investor มี data user 700 ล้าน train Kimi deploy agent ใน food order CS hotel booking จีนกำลังสร้าง vertically integrated AI champion คล้าย OpenAI Microsoft Anthropic Amazon Moonshot Meituan คือคู่ของจีน
+
+มุม OpenBridge สาม insight หนึ่ง AI router ระหว่าง provider เป็น core feature ลูกค้า Thai ที่กลัว vendor lock route workload ระหว่าง Claude critical GPT general K2.6 throughput ตาม policy ราคา premium ที่ลูกค้ายอมจ่ายเพราะ break even 1 เดือนจาก inference saving สอง sovereignty narrative ของ China model ขายเข้า government GLC ไทยได้ตรง KTB GovTech ราชการที่ไม่อยากใช้ US only model OpenBridge ที่ wrap K2.6 certify data residency Thailand ได้ deal flow ที่คู่แข่ง US aligned ทำไม่ได้ สาม K2.6 1 ล้าน token context กับ 13 ชั่วโมง coding เป็น dev tool ใน developer mode dev ที่ใช้ OpenBridge scan codebase ใหญ่ suggest connector ใน รอบเดียว ราคาถูกกว่า Claude Code feature dev plan free tier ดึงดูด indie developer adjacent insight ที่ Moonshot ใช้ playbook Linux กับ Windows ในยุค 1995 ถึง 2005 open cheap good enough ค่อย ๆ กิน OpenBridge ต้องเตรียม thesis ว่า we serve all models รวม open source ที่จะเป็นใหญ่ใน 5 ถึง 10 ปีครับ.
+
+ทั้งหมดนี้คือ brief ของรอบนี้. ขอให้วันนี้เป็นวันที่ดีครับ. แล้วเจอกันรอบหน้า.
