@@ -1,0 +1,40 @@
+สวัสดีครับ นี่คือ Enabridge AI Brief รอบ 18 May 2026 เวลา 06:03 ครับ.
+รอบนี้มี 4 เรื่อง เน้น Agentic AI, business use case, และ trend ที่เอามาใช้กับ OpenBridge ได้.
+
+เรื่องแรก.
+สวัสดีครับโย้ มาเล่าเรื่อง Sierra สตาร์ตอัพ voice agent ของ Bret Taylor ที่เพิ่งปิดราวด์ 950 ล้านดอลลาร์ที่ valuation 15.8 พันล้านดอลลาร์ บวกขึ้น 58 เปอร์เซ็นต์จากไตรมาสที่แล้ว เงินสดในแบงก์รวมเกินพันล้านเหรียญ
+
+ตัวเลขที่ทำให้นักลงทุนเขย่าคือ ARR แตะ 150 ล้านเหรียญในปีที่ 3 ทะลุ 100 ล้านใน 7 ไตรมาส ลูกค้าครอบคลุม 40 เปอร์เซ็นต์ของ Fortune 50 และ voice แซง text เป็น primary channel มาตั้งแต่กันยายนปีก่อน Proof point ที่ verify ได้คือ Nordstrom เปิด voice agent ภายใน 5 สัปดาห์ Singtel ใน 10 สัปดาห์ที่ resolution rate มากกว่า 70 เปอร์เซ็นต์ และ Cigna 8 สัปดาห์ตัด authentication time ลง 80 เปอร์เซ็นต์
+
+ทำไมเรื่องนี้สำคัญ Sierra trading ที่ 100 เท่าของ ARR สูงกว่า peak SaaS multiple ยุค 2021 ห้าถึงสิบเท่า นักลงทุนเดิมพันว่า Sierra จะกินตลาด CCaaS 85 พันล้านดอลลาร์ บวกบางส่วนของ BPO อีก 300 พันล้าน รวมหา addressable market ราว 400 พันล้าน ถ้า capture แค่ 10 เปอร์เซ็นต์ก็ทำได้ 40 พันล้าน revenue ทำให้ 150 ล้านวันนี้ดูเหมือนแค่จุดเริ่มต้น
+
+มุม OpenBridge ลูกค้าที่ deploy voice agent ต้องต่อ CRM billing scheduling knowledge base identity 8 ถึง 15 ระบบต่อ deployment OpenBridge สามารถสร้าง voice agent connector kit ที่ certify กับ Sierra และคู่แข่งทั้งหมด แล้ว position ตัวเองเป็น integration layer ใต้ voice agent ทุกตัวในตลาด SEA ก่อนที่ Sierra หรือ Avoca จะตั้ง regional team ครับ.
+
+เรื่องที่สอง.
+สวัสดีครับโย้ มาเล่าเรื่อง Circle ผู้ออก USDC ที่ตอนนี้เป็นบริษัทมหาชนใน NYSE เพิ่งเปิดตัว Circle Agent Stack เมื่อวันที่ 11 พฤษภาคม เป็น infrastructure ใหม่ที่ให้ AI agent ทำตัวเป็น autonomous economic actor ถือเงินจ่ายเงินรับเงินกันเองได้
+
+Stack มี 5 ชิ้น Circle CLI สำหรับ developer และ agent ใช้ build แอปบน Circle Agent Wallets ที่ policy-controlled agent ถือเงินภายใน guardrail Agent Marketplace ที่ agent browse และจ่ายค่าบริการได้เอง Nanopayments ผ่าน Circle Gateway ทำ USDC transfer แบบ gas-free ที่ระดับหนึ่งในล้านดอลลาร์ และ Circle Skills
+
+ทำไมเรื่องนี้สำคัญ ก่อนหน้านี้ MCP ทำให้ agent คุยกันได้ A2A protocol ทำให้ delegate task ข้ามองค์กรได้ แต่เงินยังไม่ไหล Circle เปิด layer สุดท้าย คือ agent มี wallet มี spending policy มี audit trail ของตัวเอง ถ้า nanopayment เกิดจริง business model ของ AI API service จะพลิก ChatGPT 20 ดอลลาร์ต่อเดือน Anthropic per-token Replicate per-second ทั้งหมดออกแบบสำหรับ human ส่วน agentic economy ต้องการ pay-per-call ระดับเศษเสี้ยวเซนต์ที่ settle ทันที Circle เป็นเจ้าแรกที่รวม wallet marketplace nanopay ใน stack เดียว
+
+มุม OpenBridge ถ้า agent กลายเป็น primary user ภายใน 24 เดือน pricing model ต้องรองรับ pay-per-call ระดับ sub-cent OpenBridge ควรทดลอง integrate Circle Agent Stack เป็น optional billing layer และพิจารณา list ตัวเองบน Circle Marketplace หา global discoverability พร้อม build local marketplace สำหรับ regulated integration ใน SEA ที่ Circle ไม่เข้าใจครับ.
+
+เรื่องที่สาม.
+สวัสดีครับโย้ มาเล่าเรื่อง Broadridge บริษัท post-trade infrastructure ที่ 80 เปอร์เซ็นต์ของ Tier-1 banks ทั่วโลกใช้ ประมวลผล 11 ล้านล้านดอลลาร์ต่อวัน เพิ่งประกาศเมื่อวันที่ 11 พฤษภาคมว่า agentic AI ของบริษัท live ใน production แล้ว ครอบคลุม capital markets และ wealth management
+
+Capability ที่อยู่ใน production คือ trade fail management break resolution account opening real-time valuation exception customer inquiry และ email workflow ทำงานร่วมกับ DeepSee partner AI-native ของ Broadridge ทุก workflow ทำใน human-supervised architecture ที่ยังมี audit oversight ครบตามเกณฑ์ regulator ตัวเลขที่ verify ได้คือ 40 กว่า client ใช้งานมาตั้งแต่ปี 2024 ประมวลผล millions of operational transactions ต่อเดือน ลูกค้าใหม่ได้ 30 เปอร์เซ็นต์ Day-1 operational cost reduction
+
+ทำไมเรื่องนี้สำคัญ Broadridge อยู่ใน critical path ของ trade settlement ระดับ trillion ต่อวัน ถ้า agent ทำผิดมี real settlement risk การที่ Broadridge ยอม deploy production แล้ว claim 30 เปอร์เซ็นต์ Day-1 cost cut แปลว่า risk model ของ agentic AI พร้อมสำหรับ Tier-1 finance แล้ว เกณฑ์สูงสุดในตลาด pattern นี้จะ trigger FIS State Street DTCC SSC ตามมาทั้งหมด ใน 6 เดือน buy-side และ sell-side ทั่วโลกจะเปลี่ยน procurement จาก explore AI เป็น rip-and-replace ops infra ด้วย agentic stack
+
+มุม OpenBridge นี่คือ signal ตรงว่าถ้าจะขายเข้า financial services SEA ต้อง position OpenBridge เป็น compliance-grade integration backbone มี audit log immutable transaction trail ตั้งแต่วันแรกตามเกณฑ์ BOT MAS BNM และควรทำ pattern แบบ Broadridge บวก DeepSee คือ partner กับ AI-native vertical startup ในไทยที่ทำ AML KYC แล้ว wrap ใต้ OpenBridge เพื่อขายเข้า Thai bank ครับ.
+
+เรื่องที่สี่.
+สวัสดีครับโย้ มาเล่าเรื่อง counter-narrative ที่ enterprise CIO ต้องฟัง ในช่วงที่ทุกคนเร่ง deploy agent Google Security Team ปล่อย report ที่ scan web 2 ถึง 3 พันล้านหน้าต่อเดือน เจอ Indirect Prompt Injection หรือ IPI ในป่าจริง โต 32 เปอร์เซ็นต์ระหว่างพฤศจิกายนปีก่อนถึงกุมภาพันธ์ปีนี้ และเรื่องนี้กลับมาเป็น top of news cycle อีกครั้งสัปดาห์นี้
+
+Payload ที่ Google เจอจริงคือ คำสั่ง PayPal transaction เต็มรูปแบบฝังใน HTML ที่ user มองไม่เห็น รอ AI agent ที่มี payment capability scrape page agent จะ execute ทันที อีกตัวอย่างใช้ meta tag namespace injection กับ keyword ultrathink เพื่อ route financial action ของ AI ไปยัง Stripe donation link ของ attacker จุดที่น่ากลัวคือ agent ใช้ legitimate credential ที่ approved แล้ว action มองไม่ออกจาก daily operation ปกติ audit log จับไม่ได้
+
+ทำไมเรื่องนี้สำคัญ ที่ผ่านมาทุก announcement ทำให้ board เข้าใจว่า agent คือ competitive necessity แต่ Google data ชี้ว่า attack surface โตเร็วกว่า defense playbook 82 เปอร์เซ็นต์ของ executive เชื่อว่า policy ป้องกันได้ แต่จริง ๆ แค่ 37 ถึง 40 เปอร์เซ็นต์มี containment control เทียบกับ 58 ถึง 59 เปอร์เซ็นต์ที่มีแค่ monitoring เรียกว่าเห็น agent ทำงานแต่หยุดไม่ได้ คาดว่าใน 6 ถึง 9 เดือนจะเห็น major IPI breach event ของบริษัทใหญ่ ตามมาด้วยการที่ procurement จะ require IPI testing certification เหมือน SOC2
+
+มุม OpenBridge ที่ position เป็น integration layer agent ของลูกค้าจะ pass-through OpenBridge ทุก call สามารถ build agent policy enforcement point เป็น feature core ทำให้ตัวเองกลายเป็น Datadog ของ agentic security เป็น recurring revenue และเปิด white paper เรื่อง IPI-resistant pattern สำหรับ SEA banks ภายใน 60 วันเพื่อ position เป็น thought leader ก่อนคู่แข่งครับ.
+
+ทั้งหมดนี้คือ brief ของรอบนี้. ขอให้วันนี้เป็นวันที่ดีครับ. แล้วเจอกันรอบหน้า.
