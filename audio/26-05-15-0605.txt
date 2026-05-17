@@ -1,0 +1,40 @@
+สวัสดีครับ นี่คือ Enabridge AI Brief รอบ 15 May 2026 เวลา 06:05 ครับ.
+รอบนี้มี 4 เรื่อง เน้น Agentic AI, business use case, และ trend ที่เอามาใช้กับ OpenBridge ได้.
+
+เรื่องแรก.
+สวัสดีครับโย้ ข่าวใหญ่วันที่ 13 พฤษภาคมจาก SAP Sapphire 2026 ที่ออร์แลนโด CEO Christian Klein เปิดวิสัยทัศน์ใหม่ชื่อ Autonomous Enterprise วาง SAP เป็น ERP ที่ agent ทำงานแทน human ไม่ใช่แค่ ERP ที่มี AI ช่วย โครงสร้างใหม่ของเขาคือ Joule Assistant ห้าสิบกว่าตัวใน finance supply chain HR procurement สั่งงาน specialized agent อีกสองร้อยกว่าตัวลงไปทำ task ละเอียด เข้าถึงข้อมูลเจ็ดล้านฟิลด์ใน SAP Business AI Platform
+
+ที่หนักคือ partnership กับ Anthropic ขยายเต็มตัว Claude กลายเป็น primary reasoning engine ของ Joule agent ทั้งหมด เข้าถึงลูกค้า SAP หลักแสนรายทันที proof point ที่ Klein โชว์บนเวทีคือ Autonomous Close Assistant บีบเวลาปิดงบจากหลายสัปดาห์เหลือไม่กี่วัน อีกขาคือ Palantir ใช้ AIP ทำ migration agent ลด effort ย้าย legacy ERP ลงสามสิบห้าเปอร์เซ็นต์ Accenture เป็น strategic partner ระดับโลก
+
+ทำไมสำคัญ pattern ที่เห็นชัดคือ frontier lab อย่าง Anthropic ไม่ขายของผู้ใช้โดยตรง แต่ฝังเข้า distribution channel ของ enterprise stack ใหญ่ Anthropic เลือก SAP เป็นช่อง ERP เลือก Moody's เป็นช่อง banking ส่วน SAP ก็ได้ reasoning engine ระดับสูงโดยไม่ต้องสร้างเอง แต่ Forrester เตือนว่ามี concentration risk ถ้า Anthropic สะดุดสองสามปีข้างหน้า SAP จะติดตามไม่ทัน
+
+มุม OpenBridge ลูกค้า mid-market ใช้ Odoo Dynamics SAP B1 ไม่มี budget จ้าง Palantir แต่ก็อยากได้ Assistant แบบเรียกแล้วงานเสร็จ ตรงนี้คือช่องว่างของ agentic ERP wrapper สำหรับ SEA SMB ที่ OpenBridge เข้าได้ครับ.
+
+เรื่องที่สอง.
+สวัสดีครับโย้ ข่าว voice AI ที่ใหญ่ที่สุดของสัปดาห์ Vapi บริษัทจาก San Francisco ปิด Series B ห้าสิบล้านดอลลาร์ valuation ห้าร้อยล้าน นำโดย Peak XV ชื่อใหม่ของ Sequoia India มี Microsoft M12 Kleiner Perkins Bessemer ร่วมด้วย แต่ที่กลายเป็น headline คือ deal กับ Amazon Ring ที่ทดสอบ vendor มากกว่าสี่สิบรายแล้วเลือก Vapi โดย deploy zero to production ภายในสองสัปดาห์ และตอนนี้ inbound call ของ Ring ทั้งหมดร้อยเปอร์เซ็นต์วิ่งบน Vapi
+
+ตัวเลข operational ก็โหด หนึ่งพันล้าน call สะสม รันหนึ่งถึงห้าล้าน call ต่อวัน developer หนึ่งล้านคนใช้ self-serve platform ARR run rate เขาเรียก healthy eight figures หมายถึงราวสามสิบถึงแปดสิบล้านดอลลาร์ ตัว product คือ vertical voice stack ที่ build เอง telephony STT LLM routing TTS latency ต่ำกว่าห้าร้อย millisecond ไม่ใช่ wrapper ของ OpenAI Realtime
+
+ทำไมสำคัญ ก่อนหน้านี้ voice AI ติดที่ pilot จบที่ thirty percent deflection การที่ Ring ที่อยู่ใต้ regulatory pressure ยอมเอาหนึ่งร้อยเปอร์เซ็นต์ของ inbound มาให้ AI ดู เป็นสัญญาณว่า vertical voice agent ผ่าน threshold production แล้ว ปีนี้จะเห็น telco retail insurance ทำตามเป็น case study ใหม่
+
+มุม OpenBridge สิ่งที่ Ring เลือก Vapi เพราะ deploy สองสัปดาห์ ไม่ใช่ราคา ไม่ใช่ feature list metric ที่ enterprise buyer ตอนนี้ดูจริงคือ speed to production OpenBridge ควรชู go-live ภายในกี่วัน connector pre-built กี่ตัว ไม่ใช่ตัวเลขรองรับสองร้อย connector ที่เทียบไม่ได้ อีกมุมคือ voice ในภาษาไทยอินโดเวียดนามยังเป็นช่องว่างที่ Vapi global ไม่ optimize ครับ.
+
+เรื่องที่สาม.
+สวัสดีครับโย้ ข่าวที่เกี่ยวกับ OpenBridge ตรงที่สุดของวัน Notion เปิด Developer Platform ใหม่ใน Dev Day 2026 มีสามขา หนึ่ง Notion Workers เป็น hosted runtime ที่เขียน custom code แล้ว deploy ผ่าน CLI ไปรันใน sandbox บน infra Notion ไม่ต้องเปิด server เอง สอง External Agent API ให้ agent จากค่ายอื่นเข้ามาทำงานใน Notion ได้ตรง พาร์ตเนอร์วันแรกคือ Claude Code Codex Cursor Decagon สาม Database Sync bi-directional กับ Salesforce Zendesk Postgres และ database ที่มี API ทุกตัว
+
+จุดสำคัญคือ Notion เลิกพยายามเป็น agent ที่เก่งที่สุดแล้ว ขอเป็น control room ให้ agent ค่ายอื่นมา dock แทน Ivan Zhao อธิบายว่า ticket support จะ route ไปหา coding agent ที่ propose fix อัตโนมัติ แล้ว loop กลับมาให้ทีม human approve ใน Notion page เดิม Workspace กลายเป็น orchestration UI ไม่ใช่ destination ที่ user มาพิมพ์ doc
+
+ทำไมสำคัญ workspace กลายเป็นสมรภูมิใหม่ Slack ยังไม่เปิด External Agent API Atlassian ยังเชื่อม Confluence Jira ไม่ดี Microsoft 365 Copilot ผูกของตัวเอง Notion ขึ้นเป็น first-mover ของ workspace orchestration แต่จุดเสี่ยงคือ Notion lock-in ผ่าน credit-based pricing ที่อาจทำให้ลูกค้า enterprise bypass ไปใช้ Claude Code ตรงถ้า volume สูง
+
+มุม OpenBridge insight ตรงคือ External Agent API บอกว่า value pool ไม่ได้อยู่ที่เป็น agent แต่อยู่ที่เป็น protocol layer ที่ agent ทุกค่ายมาเชื่อม OpenBridge ทำเรื่องนี้บน workflow layer ของ business operation ที่ Notion เข้าไม่ถึง อีกข้อ database sync bi-directional กลายเป็น standard feature แล้ว buyer จะถามว่า sync สองทางได้ไหม conflict resolution ยังไง ไม่ใช่เชื่อมกี่ระบบครับ.
+
+เรื่องที่สี่.
+สวัสดีครับโย้ inflection ใหญ่ของวงการ enterprise AI Ramp AI Index ของเดือนพฤษภาคมเผยตัวเลขที่ทำให้วงการอึ้ง เดือนเมษายน Anthropic ครองสามสิบสี่จุดสี่เปอร์เซ็นต์ของธุรกิจ US ที่ใช้ AI vendor OpenAI ครองสามสิบสองจุดสาม Anthropic แซง OpenAI เป็นครั้งแรก เส้นโค้งหนักกว่าคือ Anthropic โตจากเจ็ดจุดเก้าเปอร์เซ็นต์เป็นสามสิบสี่จุดสี่ภายในสิบสองเดือน OpenAI ในช่วงเดียวกันโตแค่ศูนย์จุดสาม percentage point
+
+driver หลักคือ Claude Code ที่ Anthropic บอกว่าเป็น product โตเร็วที่สุดในประวัติบริษัท Pragmatic Engineer ทำ survey เจอว่าเจ็ดสิบเปอร์เซ็นต์ของ engineering team Fortune 500 ที่ใช้ coding agent ตอนนี้คือ Claude Code วันที่สิบสามพฤษภาคม Anthropic ขยาย weekly limit ของ Claude Code อีกห้าสิบเปอร์เซ็นต์ วันต่อมาเปิด Claude for Small Business ฝัง Claude เข้า QuickBooks Shopify HubSpot พร้อม workshop tour ฟรีสิบเมือง
+
+ทำไมสำคัญ inflection นี้ falsify สมมติฐานที่วงการเชื่อมาสองข้อ หนึ่ง OpenAI brand recognition เท่ากับ enterprise default ผิด consumer ยังเรียก ChatGPT แต่ enterprise vote ด้วย Claude สอง multi model routing คือคำตอบ ผิด CIO ส่วนใหญ่เลือก single primary model อีกมุมคือ Anthropic เริ่มใส่ credit meter บน outside tool บีบ margin ขณะ OpenAI ทำตรงข้ามคือลดราคาดูดผู้ใช้กลับ ตลาดยังไม่ converge ลูกค้าจะมีอำนาจต่อรองสูงในหกถึงสิบสองเดือน
+
+มุม OpenBridge buyer SMB ที่ Anthropic เพิ่งลงจับคือ segment เดียวกัน ข้อดีคือ Anthropic เปิดตลาดให้ SMB เชื่อมั่นในเชิง AI แล้ว ลูกค้าจะถามต่อว่าเชื่อม Claude เข้า ERP CRM ฉันได้ไหม ข้อเสียคือถ้า Anthropic ลงตลาด SMB ลึกผ่าน Shopify QuickBooks จะ disintermediate integration platform ทางออกคือ position ที่ vertical workflow ที่ Anthropic global ไม่ลงมา ภาษาไทย ระบบบัญชี SEA LINE Lazada Shopee และต้องชู Claude-native MCP-first เป็น default narrative ครับ.
+
+ทั้งหมดนี้คือ brief ของรอบนี้. ขอให้วันนี้เป็นวันที่ดีครับ. แล้วเจอกันรอบหน้า.

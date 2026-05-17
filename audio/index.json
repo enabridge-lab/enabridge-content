@@ -1,7 +1,41 @@
 {
-  "generated_at": "2026-05-15T23:15:05Z",
-  "count": 27,
+  "generated_at": "2026-05-17T16:05:58Z",
+  "count": 34,
   "episodes": [
+    {
+      "date": "26-05-17-0602",
+      "iso_date": "2026-05-17T06:02:00+07:00",
+      "title": "Daily AI Brief — 26-05-17 06:02",
+      "description": "1. PwC ขนพนักงาน 30,000 คนเรียน Claude — Anthropic ได้ Big Four คนแรกเป็น distribution channel ระดับโลก\n2. Anthropic แยก Claude agent ออกจาก chat sub — บิลแบบ API-style ตั้งแต่ 15 มิ.ย. สัญญาณ \"agent economy\" เริ่มแยกตลาดจริง\n3. Microsoft Research ตบหน้า agentic hype — Gemini/Claude/GPT เสีย 25% เนื้อหา document หลัง 20 รอบ delegate, มีแค่ Python ที่พร้อมจริง\n4. Graphon AI ออกจาก stealth $8.3M — ขาย \"pre-model layer\" ที่ทำให้ LLM อ่าน data ก่อนเข้า context window",
+      "items": [
+        {
+          "file": "26-05-17-0602-01-pwc-anthropic-30k-certified-claude-enterprise.md",
+          "title": "PwC ขนพนักงาน 30,000 คนเรียน Claude — Anthropic ได้ Big Four คนแรกเป็น distribution channel ระดับโลก",
+          "order": 1
+        },
+        {
+          "file": "26-05-17-0602-02-anthropic-claude-agent-meter-decouple-sdk-june-15.md",
+          "title": "Anthropic แยก Claude agent ออกจาก chat sub — บิลแบบ API-style ตั้งแต่ 15 มิ.ย. สัญญาณ \"agent economy\" เริ่มแยกตลาดจริง",
+          "order": 2
+        },
+        {
+          "file": "26-05-17-0602-03-microsoft-research-llms-corrupt-documents-delegate.md",
+          "title": "Microsoft Research ตบหน้า agentic hype — Gemini/Claude/GPT เสีย 25% เนื้อหา document หลัง 20 รอบ delegate, มีแค่ Python ที่พร้อมจริง",
+          "order": 3
+        },
+        {
+          "file": "26-05-17-0602-04-graphon-ai-8m-pre-model-intelligence-layer.md",
+          "title": "Graphon AI ออกจาก stealth $8.3M — ขาย \"pre-model layer\" ที่ทำให้ LLM อ่าน data ก่อนเข้า context window",
+          "order": 4
+        }
+      ],
+      "audio_file": "26-05-17-0602.mp3",
+      "audio_size_bytes": 1606080,
+      "voice": "th-TH-Chirp3-HD-Achernar",
+      "model": "google-cloud-tts-chirp3-hd",
+      "speed": 1.3,
+      "script_char_count": 6156
+    },
     {
       "date": "26-05-16-0604",
       "iso_date": "2026-05-16T06:04:00+07:00",
@@ -37,6 +71,74 @@
       "script_char_count": 5313
     },
     {
+      "date": "26-05-15-0605",
+      "iso_date": "2026-05-15T06:05:00+07:00",
+      "title": "Daily AI Brief — 26-05-15 06:05",
+      "description": "1. SAP เปิด \"Autonomous Enterprise\" ใส่ Claude เป็นสมองหลัก 200+ agent ทำงานในระบบ ERP ของลูกค้าจริง\n2. Vapi ระดมทุน $50M valuation $500M — Amazon Ring โอนสายลูกค้า 100% มาวิ่งบน AI ภายใน 2 สัปดาห์\n3. Notion เปิด Developer Platform + External Agent API — ขอเป็น \"control room\" ที่ agent ของทุกค่ายมา dock\n4. Anthropic แซง OpenAI ครั้งแรกในตลาด enterprise — 34.4% vs 32.3% และเปิด Claude for Small Business ตามทันที",
+      "items": [
+        {
+          "file": "26-05-15-0605-01-sap-autonomous-enterprise-anthropic-200-agents.md",
+          "title": "SAP เปิด \"Autonomous Enterprise\" ใส่ Claude เป็นสมองหลัก 200+ agent ทำงานในระบบ ERP ของลูกค้าจริง",
+          "order": 1
+        },
+        {
+          "file": "26-05-15-0605-02-vapi-50m-amazon-ring-1b-calls.md",
+          "title": "Vapi ระดมทุน $50M valuation $500M — Amazon Ring โอนสายลูกค้า 100% มาวิ่งบน AI ภายใน 2 สัปดาห์",
+          "order": 2
+        },
+        {
+          "file": "26-05-15-0605-03-notion-developer-platform-external-agent-api.md",
+          "title": "Notion เปิด Developer Platform + External Agent API — ขอเป็น \"control room\" ที่ agent ของทุกค่ายมา dock",
+          "order": 3
+        },
+        {
+          "file": "26-05-15-0605-04-anthropic-overtakes-openai-34-percent-enterprise.md",
+          "title": "Anthropic แซง OpenAI ครั้งแรกในตลาด enterprise — 34.4% vs 32.3% และเปิด Claude for Small Business ตามทันที",
+          "order": 4
+        }
+      ],
+      "audio_file": "26-05-15-0605.mp3",
+      "audio_size_bytes": 1728672,
+      "voice": "th-TH-Chirp3-HD-Achernar",
+      "model": "google-cloud-tts-chirp3-hd",
+      "speed": 1.3,
+      "script_char_count": 6372
+    },
+    {
+      "date": "26-05-14-0605",
+      "iso_date": "2026-05-14T06:05:00+07:00",
+      "title": "Daily AI Brief — 26-05-14 06:05",
+      "description": "1. SAP เปิด Autonomous Enterprise: 200+ agents, Claude เป็นสมอง, NVIDIA OpenShell เป็นกรง\n2. Thomson Reuters เอา 175 ปีของกฎหมายมาผูก Claude Agent SDK — MCP เริ่มไต่ขึ้น regulated industry\n3. Amdocs ลง Google Gemini Marketplace — vertical agentic OS เริ่ม ship เป็นสินค้า\n4. Judgment Labs ระดม $32M เพราะ \"evaluation\" คือคอขวดถัดไปของ agent ทุกตัว",
+      "items": [
+        {
+          "file": "26-05-14-0605-01-sap-sapphire-autonomous-enterprise-claude-200-agents.md",
+          "title": "SAP เปิด Autonomous Enterprise: 200+ agents, Claude เป็นสมอง, NVIDIA OpenShell เป็นกรง",
+          "order": 1
+        },
+        {
+          "file": "26-05-14-0605-02-thomson-reuters-cocounsel-claude-agent-sdk-mcp-fiduciary.md",
+          "title": "Thomson Reuters เอา 175 ปีของกฎหมายมาผูก Claude Agent SDK — MCP เริ่มไต่ขึ้น regulated industry",
+          "order": 2
+        },
+        {
+          "file": "26-05-14-0605-03-amdocs-google-gemini-marketplace-telco-agentic-os.md",
+          "title": "Amdocs ลง Google Gemini Marketplace — vertical agentic OS เริ่ม ship เป็นสินค้า",
+          "order": 3
+        },
+        {
+          "file": "26-05-14-0605-04-judgment-labs-32m-agent-trajectory-eval-lightspeed.md",
+          "title": "Judgment Labs ระดม $32M เพราะ \"evaluation\" คือคอขวดถัดไปของ agent ทุกตัว",
+          "order": 4
+        }
+      ],
+      "audio_file": "26-05-14-0605.mp3",
+      "audio_size_bytes": 1181184,
+      "voice": "th-TH-Chirp3-HD-Achernar",
+      "model": "google-cloud-tts-chirp3-hd",
+      "speed": 1.3,
+      "script_char_count": 4298
+    },
+    {
       "date": "26-05-13-0606",
       "iso_date": "2026-05-13T06:06:00+07:00",
       "title": "Daily AI Brief — 26-05-13 06:06",
@@ -69,6 +171,74 @@
       "model": "google-cloud-tts-chirp3-hd",
       "speed": 1.3,
       "script_char_count": 5435
+    },
+    {
+      "date": "26-05-12-0609",
+      "iso_date": "2026-05-12T06:09:00+07:00",
+      "title": "Daily AI Brief — 26-05-12 06:09",
+      "description": "1. OpenAI สร้าง \"บริษัทขาย deployment\" $4B ของตัวเอง — ซื้อ Tomoro 150 FDE, ดึง TPG/Advent/Bain/Brookfield ร่วมเป็น partner, เปิด services era ของ frontier AI\n2. Anthropic Mythos จุดวิกฤต cyber ที่ Wall Street — Fed กับ Treasury เรียก CEO ธนาคารใหญ่, Dimon เรียก \"very heightened risk\", IMF เตือน global financial system\n3. FIS + Anthropic เปิด Financial Crimes AI Agent — บีบ AML investigation จากวันเป็นนาที, BMO + Amalgamated Bank deploy แรก, FDE ฝัง co-design\n4. Uber เผางบ AI ทั้งปี 2026 ภายใน 4 เดือน — Claude Code ดัน 70% ของ code, $500-2,000 ต่อ engineer ต่อเดือน, \"back to the drawing board\"",
+      "items": [
+        {
+          "file": "26-05-12-0609-01-openai-deployment-company-4b-tomoro-fde.md",
+          "title": "OpenAI สร้าง \"บริษัทขาย deployment\" $4B ของตัวเอง — ซื้อ Tomoro 150 FDE, ดึง TPG/Advent/Bain/Brookfield ร่วมเป็น partner, เปิด services era ของ frontier AI",
+          "order": 1
+        },
+        {
+          "file": "26-05-12-0609-02-anthropic-mythos-fed-treasury-bank-ceos-cyber.md",
+          "title": "Anthropic Mythos จุดวิกฤต cyber ที่ Wall Street — Fed กับ Treasury เรียก CEO ธนาคารใหญ่, Dimon เรียก \"very heightened risk\", IMF เตือน global financial system",
+          "order": 2
+        },
+        {
+          "file": "26-05-12-0609-03-fis-anthropic-financial-crimes-agent-bmo-amalgamated.md",
+          "title": "FIS + Anthropic เปิด Financial Crimes AI Agent — บีบ AML investigation จากวันเป็นนาที, BMO + Amalgamated Bank deploy แรก, FDE ฝัง co-design",
+          "order": 3
+        },
+        {
+          "file": "26-05-12-0609-04-uber-3-4b-claude-code-budget-burned-four-months.md",
+          "title": "Uber เผางบ AI ทั้งปี 2026 ภายใน 4 เดือน — Claude Code ดัน 70% ของ code, $500-2,000 ต่อ engineer ต่อเดือน, \"back to the drawing board\"",
+          "order": 4
+        }
+      ],
+      "audio_file": "26-05-12-0609.mp3",
+      "audio_size_bytes": 1442688,
+      "voice": "th-TH-Chirp3-HD-Achernar",
+      "model": "google-cloud-tts-chirp3-hd",
+      "speed": 1.3,
+      "script_char_count": 5397
+    },
+    {
+      "date": "26-05-11-0606",
+      "iso_date": "2026-05-11T06:06:00+07:00",
+      "title": "Daily AI Brief — 26-05-11 06:06",
+      "description": "1. Uber เผางบ AI ทั้งปี 2026 ใน 4 เดือน — Claude Code กลายเป็น cost center ใหม่ที่เลิกใช้ไม่ได้\n2. Pentagon ปิดประตู Anthropic เซ็นสัญญา AI กับ 7 ยักษ์เทค — values vs procurement scale-up ครั้งแรก\n3. ServiceNow Build Agent โผล่ใน Cursor / Windsurf / Claude Code / Copilot — agent ที่ deploy ใน 4 ที่พร้อมกัน เปลี่ยน governance economics\n4. Avoca ปิด $125M ที่ $1B valuation — voice agent ของช่าง HVAC/ประปา ติด ServiceTitan ทำ $1B job bookings/ปี",
+      "items": [
+        {
+          "file": "26-05-11-0606-01-uber-claude-code-34b-ai-budget-burn.md",
+          "title": "Uber เผางบ AI ทั้งปี 2026 ใน 4 เดือน — Claude Code กลายเป็น cost center ใหม่ที่เลิกใช้ไม่ได้",
+          "order": 1
+        },
+        {
+          "file": "26-05-11-0606-02-pentagon-shuts-anthropic-8-bigtech-ai-contracts.md",
+          "title": "Pentagon ปิดประตู Anthropic เซ็นสัญญา AI กับ 7 ยักษ์เทค — values vs procurement scale-up ครั้งแรก",
+          "order": 2
+        },
+        {
+          "file": "26-05-11-0606-03-servicenow-build-agent-cursor-windsurf-claude-copilot.md",
+          "title": "ServiceNow Build Agent โผล่ใน Cursor / Windsurf / Claude Code / Copilot — agent ที่ deploy ใน 4 ที่พร้อมกัน เปลี่ยน governance economics",
+          "order": 3
+        },
+        {
+          "file": "26-05-11-0606-04-avoca-1b-hvac-voice-agent-services-economy.md",
+          "title": "Avoca ปิด $125M ที่ $1B valuation — voice agent ของช่าง HVAC/ประปา ติด ServiceTitan ทำ $1B job bookings/ปี",
+          "order": 4
+        }
+      ],
+      "audio_file": "26-05-11-0606.mp3",
+      "audio_size_bytes": 1673856,
+      "voice": "th-TH-Chirp3-HD-Achernar",
+      "model": "google-cloud-tts-chirp3-hd",
+      "speed": 1.3,
+      "script_char_count": 6043
     },
     {
       "date": "26-05-10-0638",
@@ -137,6 +307,74 @@
       "model": "google-cloud-tts-chirp3-hd",
       "speed": 1.3,
       "script_char_count": 6799
+    },
+    {
+      "date": "26-05-08-0927",
+      "iso_date": "2026-05-08T09:27:00+07:00",
+      "title": "Daily AI Brief — 26-05-08 09:27",
+      "description": "1. Atlassian เปิด Teamwork Graph ให้ agent ค่ายอื่นเข้าถึงผ่าน MCP — 14M actions/เดือน + 90% ลูกค้า enterprise ใช้ Rovo\n2. Anthropic เซ็นดีล SpaceX กิน Colossus 1 ทั้ง data center — 300MW + 220K GPU + เปิดทาง compute ในวงโคจร\n3. OpenAI ปล่อย B2B Signals — frontier firms ใช้ AI 3.5x ของ typical firm, Codex ห่าง 16x\n4. Moonshot AI ระดมทุน $2B ที่ valuation $20B — Kimi K2.6 (1T params, 384 experts) เป็น LLM อันดับสองบน OpenRouter",
+      "items": [
+        {
+          "file": "26-05-08-0927-01-atlassian-teamwork-graph-mcp-third-party-agents.md",
+          "title": "Atlassian เปิด Teamwork Graph ให้ agent ค่ายอื่นเข้าถึงผ่าน MCP — 14M actions/เดือน + 90% ลูกค้า enterprise ใช้ Rovo",
+          "order": 1
+        },
+        {
+          "file": "26-05-08-0927-02-anthropic-spacex-colossus-300mw-orbital-compute.md",
+          "title": "Anthropic เซ็นดีล SpaceX กิน Colossus 1 ทั้ง data center — 300MW + 220K GPU + เปิดทาง compute ในวงโคจร",
+          "order": 2
+        },
+        {
+          "file": "26-05-08-0927-03-openai-b2b-signals-frontier-firms-3-5x.md",
+          "title": "OpenAI ปล่อย B2B Signals — frontier firms ใช้ AI 3.5x ของ typical firm, Codex ห่าง 16x",
+          "order": 3
+        },
+        {
+          "file": "26-05-08-0927-04-moonshot-ai-2b-kimi-k26-china-open-source.md",
+          "title": "Moonshot AI ระดมทุน $2B ที่ valuation $20B — Kimi K2.6 (1T params, 384 experts) เป็น LLM อันดับสองบน OpenRouter",
+          "order": 4
+        }
+      ],
+      "audio_file": "26-05-08-0927.mp3",
+      "audio_size_bytes": 2545824,
+      "voice": "th-TH-Chirp3-HD-Achernar",
+      "model": "google-cloud-tts-chirp3-hd",
+      "speed": 1.3,
+      "script_char_count": 9221
+    },
+    {
+      "date": "26-05-08-0859",
+      "iso_date": "2026-05-08T08:59:00+07:00",
+      "title": "Daily AI Brief — 26-05-08 08:59",
+      "description": "1. OpenAI ตี \"diffusion gap\" เป็นตัวเลขครั้งแรก — Frontier firm ใช้ AI หนักกว่าค่าเฉลี่ย 3.5 เท่า, Codex 16 เท่า\n2. NVIDIA + ServiceNow ปล่อย Project Arc — autonomous desktop agent ที่ \"คิด เขียน code รัน ปรับตัว\" ในกล่อง OpenShell sandbox\n3. ServiceNow + Accenture เปิด FDE program — Forward Deployed Engineer + 300 pre-built agent skill เป็น \"consulting-as-product\"\n4. IBM ออก Context Studio + Process Studio ที่ Think 2026 — pilot จริง 1,400 SOP สู่ 25% cost reduction; SAP Joule ผูก A2A เต็ม",
+      "items": [
+        {
+          "file": "26-05-08-0859-01-openai-b2b-signals-frontier-firms-3x-pulling-ahead.md",
+          "title": "OpenAI ตี \"diffusion gap\" เป็นตัวเลขครั้งแรก — Frontier firm ใช้ AI หนักกว่าค่าเฉลี่ย 3.5 เท่า, Codex 16 เท่า",
+          "order": 1
+        },
+        {
+          "file": "26-05-08-0859-02-nvidia-servicenow-project-arc-desktop-agent-openshell.md",
+          "title": "NVIDIA + ServiceNow ปล่อย Project Arc — autonomous desktop agent ที่ \"คิด เขียน code รัน ปรับตัว\" ในกล่อง OpenShell sandbox",
+          "order": 2
+        },
+        {
+          "file": "26-05-08-0859-03-servicenow-accenture-fde-program-300-agent-skills.md",
+          "title": "ServiceNow + Accenture เปิด FDE program — Forward Deployed Engineer + 300 pre-built agent skill เป็น \"consulting-as-product\"",
+          "order": 3
+        },
+        {
+          "file": "26-05-08-0859-04-ibm-context-process-studio-25-percent-cost-reduction.md",
+          "title": "IBM ออก Context Studio + Process Studio ที่ Think 2026 — pilot จริง 1,400 SOP สู่ 25% cost reduction; SAP Joule ผูก A2A เต็ม",
+          "order": 4
+        }
+      ],
+      "audio_file": "26-05-08-0859.mp3",
+      "audio_size_bytes": 1847328,
+      "voice": "th-TH-Chirp3-HD-Achernar",
+      "model": "google-cloud-tts-chirp3-hd",
+      "speed": 1.3,
+      "script_char_count": 6890
     },
     {
       "date": "26-05-08-0610",

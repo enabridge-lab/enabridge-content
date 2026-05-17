@@ -1,0 +1,32 @@
+{
+  "date": "26-05-15-0605",
+  "iso_date": "2026-05-15T06:05:00+07:00",
+  "title": "Daily AI Brief — 26-05-15 06:05",
+  "items": [
+    {
+      "file": "26-05-15-0605-01-sap-autonomous-enterprise-anthropic-200-agents.md",
+      "title": "SAP เปิด \"Autonomous Enterprise\" ใส่ Claude เป็นสมองหลัก 200+ agent ทำงานในระบบ ERP ของลูกค้าจริง",
+      "order": 1
+    },
+    {
+      "file": "26-05-15-0605-02-vapi-50m-amazon-ring-1b-calls.md",
+      "title": "Vapi ระดมทุน $50M valuation $500M — Amazon Ring โอนสายลูกค้า 100% มาวิ่งบน AI ภายใน 2 สัปดาห์",
+      "order": 2
+    },
+    {
+      "file": "26-05-15-0605-03-notion-developer-platform-external-agent-api.md",
+      "title": "Notion เปิด Developer Platform + External Agent API — ขอเป็น \"control room\" ที่ agent ของทุกค่ายมา dock",
+      "order": 3
+    },
+    {
+      "file": "26-05-15-0605-04-anthropic-overtakes-openai-34-percent-enterprise.md",
+      "title": "Anthropic แซง OpenAI ครั้งแรกในตลาด enterprise — 34.4% vs 32.3% และเปิด Claude for Small Business ตามทันที",
+      "order": 4
+    }
+  ],
+  "script_char_count": 6372,
+  "audio_file": "26-05-15-0605.mp3",
+  "voice": "th-TH-Chirp3-HD-Achernar",
+  "model": "google-cloud-tts-chirp3-hd",
+  "speed": 1.3
+}
