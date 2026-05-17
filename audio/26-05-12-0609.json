@@ -1,0 +1,32 @@
+{
+  "date": "26-05-12-0609",
+  "iso_date": "2026-05-12T06:09:00+07:00",
+  "title": "Daily AI Brief — 26-05-12 06:09",
+  "items": [
+    {
+      "file": "26-05-12-0609-01-openai-deployment-company-4b-tomoro-fde.md",
+      "title": "OpenAI สร้าง \"บริษัทขาย deployment\" $4B ของตัวเอง — ซื้อ Tomoro 150 FDE, ดึง TPG/Advent/Bain/Brookfield ร่วมเป็น partner, เปิด services era ของ frontier AI",
+      "order": 1
+    },
+    {
+      "file": "26-05-12-0609-02-anthropic-mythos-fed-treasury-bank-ceos-cyber.md",
+      "title": "Anthropic Mythos จุดวิกฤต cyber ที่ Wall Street — Fed กับ Treasury เรียก CEO ธนาคารใหญ่, Dimon เรียก \"very heightened risk\", IMF เตือน global financial system",
+      "order": 2
+    },
+    {
+      "file": "26-05-12-0609-03-fis-anthropic-financial-crimes-agent-bmo-amalgamated.md",
+      "title": "FIS + Anthropic เปิด Financial Crimes AI Agent — บีบ AML investigation จากวันเป็นนาที, BMO + Amalgamated Bank deploy แรก, FDE ฝัง co-design",
+      "order": 3
+    },
+    {
+      "file": "26-05-12-0609-04-uber-3-4b-claude-code-budget-burned-four-months.md",
+      "title": "Uber เผางบ AI ทั้งปี 2026 ภายใน 4 เดือน — Claude Code ดัน 70% ของ code, $500-2,000 ต่อ engineer ต่อเดือน, \"back to the drawing board\"",
+      "order": 4
+    }
+  ],
+  "script_char_count": 5397,
+  "audio_file": "26-05-12-0609.mp3",
+  "voice": "th-TH-Chirp3-HD-Achernar",
+  "model": "google-cloud-tts-chirp3-hd",
+  "speed": 1.3
+}
