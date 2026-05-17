@@ -1,0 +1,32 @@
+{
+  "date": "26-05-16-0604",
+  "iso_date": "2026-05-16T06:04:00+07:00",
+  "title": "Daily AI Brief — 26-05-16 06:04",
+  "items": [
+    {
+      "file": "26-05-16-0604-01-sap-autonomous-enterprise-200-joule-agents.md",
+      "title": "SAP เปิด \"Autonomous Enterprise\" ส่ง Joule + 200 agents บุก ERP — เดิมพันใหญ่ที่สุดในประวัติศาสตร์บริษัท",
+      "order": 1
+    },
+    {
+      "file": "26-05-16-0604-02-anthropic-claude-agent-credits-openclaw-meter.md",
+      "title": "Anthropic ใส่ meter ให้ Claude agents — เปิด OpenClaw กลับมาแลก credit แยกชั้น $20/$100/$200",
+      "order": 2
+    },
+    {
+      "file": "26-05-16-0604-03-openai-codex-mobile-chatgpt-app.md",
+      "title": "OpenAI ปล่อย Codex ลง ChatGPT mobile — coding agent อยู่ในกระเป๋า approve งานได้ทุก tier รวม free",
+      "order": 3
+    },
+    {
+      "file": "26-05-16-0604-04-notion-developer-platform-workers-external-agents.md",
+      "title": "Notion เปิด Developer Platform — Workers + External Agents API กลายเป็น \"control room\" ให้ agent ทำงานข้ามระบบ",
+      "order": 4
+    }
+  ],
+  "script_char_count": 5313,
+  "audio_file": "26-05-16-0604.mp3",
+  "voice": "th-TH-Chirp3-HD-Achernar",
+  "model": "google-cloud-tts-chirp3-hd",
+  "speed": 1.3
+}
