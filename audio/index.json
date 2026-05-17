@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-17T16:05:34Z",
+  "generated_at": "2026-05-17T16:07:32Z",
   "count": 33,
   "episodes": [
     {
@@ -64,7 +64,7 @@
         }
       ],
       "audio_file": "26-05-15-0605.mp3",
-      "audio_size_bytes": 1728672,
+      "audio_size_bytes": 1746336,
       "voice": "th-TH-Chirp3-HD-Achernar",
       "model": "google-cloud-tts-chirp3-hd",
       "speed": 1.3,
