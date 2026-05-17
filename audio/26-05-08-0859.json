@@ -1,0 +1,32 @@
+{
+  "date": "26-05-08-0859",
+  "iso_date": "2026-05-08T08:59:00+07:00",
+  "title": "Daily AI Brief — 26-05-08 08:59",
+  "items": [
+    {
+      "file": "26-05-08-0859-01-openai-b2b-signals-frontier-firms-3x-pulling-ahead.md",
+      "title": "OpenAI ตี \"diffusion gap\" เป็นตัวเลขครั้งแรก — Frontier firm ใช้ AI หนักกว่าค่าเฉลี่ย 3.5 เท่า, Codex 16 เท่า",
+      "order": 1
+    },
+    {
+      "file": "26-05-08-0859-02-nvidia-servicenow-project-arc-desktop-agent-openshell.md",
+      "title": "NVIDIA + ServiceNow ปล่อย Project Arc — autonomous desktop agent ที่ \"คิด เขียน code รัน ปรับตัว\" ในกล่อง OpenShell sandbox",
+      "order": 2
+    },
+    {
+      "file": "26-05-08-0859-03-servicenow-accenture-fde-program-300-agent-skills.md",
+      "title": "ServiceNow + Accenture เปิด FDE program — Forward Deployed Engineer + 300 pre-built agent skill เป็น \"consulting-as-product\"",
+      "order": 3
+    },
+    {
+      "file": "26-05-08-0859-04-ibm-context-process-studio-25-percent-cost-reduction.md",
+      "title": "IBM ออก Context Studio + Process Studio ที่ Think 2026 — pilot จริง 1,400 SOP สู่ 25% cost reduction; SAP Joule ผูก A2A เต็ม",
+      "order": 4
+    }
+  ],
+  "script_char_count": 6890,
+  "audio_file": "26-05-08-0859.mp3",
+  "voice": "th-TH-Chirp3-HD-Achernar",
+  "model": "google-cloud-tts-chirp3-hd",
+  "speed": 1.3
+}
