@@ -1,7 +1,41 @@
 {
-  "generated_at": "2026-05-17T16:07:40Z",
-  "count": 34,
+  "generated_at": "2026-05-17T23:18:15Z",
+  "count": 35,
   "episodes": [
+    {
+      "date": "26-05-18-0603",
+      "iso_date": "2026-05-18T06:03:00+07:00",
+      "title": "Daily AI Brief — 26-05-18 06:03",
+      "description": "1. Sierra ระดม $950M ที่ valuation $15B — เปลี่ยน call center เป็น voice agent ที่ 40% ของ Fortune 50 ใช้แล้ว\n2. Circle เปิด Agent Stack — USDC + agent wallet + nanopayments ระดับ $0.000001 สำหรับ machine-to-machine economy\n3. Broadridge ดัน agentic AI เข้า capital markets — 40+ ลูกค้า, ตัดต้นทุน 30% ตั้งแต่ Day 1, ทำ trade fail/break resolution ได้เอง\n4. Google เปิด data: prompt injection โจมตี AI agent จริงในป่าแล้ว — เจอ payload สั่ง PayPal โอนเงิน, เพิ่ม 32% ใน 3 เดือน",
+      "items": [
+        {
+          "file": "26-05-18-0603-01-sierra-950m-150m-arr-voice-agent-fortune-50.md",
+          "title": "Sierra ระดม $950M ที่ valuation $15B — เปลี่ยน call center เป็น voice agent ที่ 40% ของ Fortune 50 ใช้แล้ว",
+          "order": 1
+        },
+        {
+          "file": "26-05-18-0603-02-circle-agent-stack-usdc-nanopayments-agentic-economy.md",
+          "title": "Circle เปิด Agent Stack — USDC + agent wallet + nanopayments ระดับ $0.000001 สำหรับ machine-to-machine economy",
+          "order": 2
+        },
+        {
+          "file": "26-05-18-0603-03-broadridge-agentic-capital-markets-30-percent-cost-cut.md",
+          "title": "Broadridge ดัน agentic AI เข้า capital markets — 40+ ลูกค้า, ตัดต้นทุน 30% ตั้งแต่ Day 1, ทำ trade fail/break resolution ได้เอง",
+          "order": 3
+        },
+        {
+          "file": "26-05-18-0603-04-google-ipi-prompt-injection-paypal-wild-agentic-threat.md",
+          "title": "Google เปิด data: prompt injection โจมตี AI agent จริงในป่าแล้ว — เจอ payload สั่ง PayPal โอนเงิน, เพิ่ม 32% ใน 3 เดือน",
+          "order": 4
+        }
+      ],
+      "audio_file": "26-05-18-0603.mp3",
+      "audio_size_bytes": 1634496,
+      "voice": "th-TH-Chirp3-HD-Achernar",
+      "model": "google-cloud-tts-chirp3-hd",
+      "speed": 1.3,
+      "script_char_count": 6307
+    },
     {
       "date": "26-05-17-0602",
       "iso_date": "2026-05-17T06:02:00+07:00",
