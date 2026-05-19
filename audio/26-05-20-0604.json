@@ -1,0 +1,32 @@
+{
+  "date": "26-05-20-0604",
+  "iso_date": "2026-05-20T06:04:00+07:00",
+  "title": "Daily AI Brief — 26-05-20 06:04",
+  "items": [
+    {
+      "file": "26-05-20-0604-01-anthropic-mcp-tunnels-self-hosted-sandboxes-claude-managed-agents.md",
+      "title": "Anthropic เปิด MCP Tunnels + Self-Hosted Sandboxes — ดัน Claude Managed Agents เข้า private network ของ enterprise โดยไม่ต้องเปิด firewall",
+      "order": 1
+    },
+    {
+      "file": "26-05-20-0604-02-moment-78m-series-c-10-trillion-aum-ai-wealth-management.md",
+      "title": "Moment ระดม $78M ที่ AUM ลูกค้า $10 ล้านล้าน — Edward Jones + LPL + Hightower เปลี่ยน wealth management เป็น AI OS",
+      "order": 2
+    },
+    {
+      "file": "26-05-20-0604-03-openai-dell-codex-on-premises-enterprise-hybrid.md",
+      "title": "OpenAI x Dell — เอา Codex ลง on-prem + Dell AI Factory: 4 ล้าน dev/สัปดาห์ + เปิด front กับ Anthropic-bring-data-to-cloud",
+      "order": 3
+    },
+    {
+      "file": "26-05-20-0604-04-dust-40m-series-b-multiplayer-ai-enterprise-300k-agents.md",
+      "title": "Dust ระดม $40M — Paris สตาร์ตอัพ \"multiplayer AI\" ที่ดีพลอย 300,000 agent + zero churn 2025",
+      "order": 4
+    }
+  ],
+  "script_char_count": 7087,
+  "audio_file": "26-05-20-0604.mp3",
+  "voice": "th-TH-Chirp3-HD-Achernar",
+  "model": "google-cloud-tts-chirp3-hd",
+  "speed": 1.3
+}
