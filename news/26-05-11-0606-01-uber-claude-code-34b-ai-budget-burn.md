@@ -4,7 +4,15 @@ slug: 26-05-11-0606-01-uber-claude-code-34b-ai-budget-burn
 topic: use-case
 reading_time_min: 4
 sources: 5
-image_prompt: A massive corporate budget envelope marked "UBER 2026 AI BUDGET — $3.4B" being rapidly consumed by stylized flames shaped like terminal cursors and code brackets, with a glowing Anthropic Claude Code logo at the center. Calendar pages reading "JAN→APR" flutter away in the fire. In the foreground, a wall chart shows a steep usage curve labeled "84% engineers agentic, 11% PRs by AI" with bold numbers. Composition: editorial business-magazine illustration, slightly satirical, cinematic dramatic lighting, deep navy and ember-orange palette, high contrast for thumbnail readability, 1:1 aspect, no human faces.
+image_prompt: |
+  A massive corporate budget envelope marked "UBER 2026 AI BUDGET — $3.4B" being
+  rapidly consumed by stylized flames shaped like terminal cursors and code
+  brackets, with a glowing Anthropic Claude Code logo at the center. Calendar
+  pages reading "JAN→APR" flutter away in the fire. In the foreground, a wall
+  chart shows a steep usage curve labeled "84% engineers agentic, 11% PRs by AI"
+  with bold numbers. Composition: editorial business-magazine illustration,
+  slightly satirical, cinematic dramatic lighting, deep navy and ember-orange
+  palette, high contrast for thumbnail readability, 1:1 aspect, no human faces.
 image: images/26-05-11-0606-01-uber-claude-code-34b-ai-budget-burn.png
 ---
 

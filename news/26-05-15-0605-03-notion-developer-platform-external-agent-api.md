@@ -4,7 +4,17 @@ slug: notion-developer-platform-external-agent-api
 topic: openbridge-trend
 reading_time_min: 4
 sources: 5
-image_prompt: A glowing Notion-style page rendered as a transparent floating control deck, with multiple agent avatars (small geometric robot icons) docking onto it through cable-like connectors. Logos clearly visible — Claude (orange dot), Codex (OpenAI black), Cursor (silver triangle), Decagon (purple), Salesforce cloud, Zendesk speech bubble, Postgres elephant — all feeding data streams into the central Notion deck. Above the deck a bold banner reads "EXTERNAL AGENT API" with smaller plate "Workers + DB Sync". Style: editorial isometric tech illustration, cinematic black background with neon cyan and orange accents, ultra-sharp text rendering for thumbnail readability at 200px, 1:1 aspect, high contrast, no real human faces.
+image_prompt: |
+  A glowing Notion-style page rendered as a transparent floating control deck,
+  with multiple agent avatars (small geometric robot icons) docking onto it
+  through cable-like connectors. Logos clearly visible — Claude (orange dot),
+  Codex (OpenAI black), Cursor (silver triangle), Decagon (purple), Salesforce
+  cloud, Zendesk speech bubble, Postgres elephant — all feeding data streams into
+  the central Notion deck. Above the deck a bold banner reads "EXTERNAL AGENT API"
+  with smaller plate "Workers + DB Sync". Style: editorial isometric tech
+  illustration, cinematic black background with neon cyan and orange accents,
+  ultra-sharp text rendering for thumbnail readability at 200px, 1:1 aspect, high
+  contrast, no real human faces.
 image: images/26-05-15-0605-03-notion-developer-platform-external-agent-api.png
 ---
 

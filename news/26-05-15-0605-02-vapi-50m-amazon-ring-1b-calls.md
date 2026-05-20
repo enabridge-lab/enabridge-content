@@ -4,7 +4,15 @@ slug: vapi-50m-amazon-ring-1b-calls
 topic: use-case
 reading_time_min: 4
 sources: 5
-image_prompt: A massive glowing telephone switchboard from a 1960s call center, but reimagined as a futuristic AI orchestration hub — every cable replaced by streams of light flowing into a central core labeled "VAPI". Above the switchboard a bold neon number reads "1,000,000,000 CALLS" and a smaller plate "100% of Ring inbound". On the side, an Amazon Ring logo glows in cyan. Style: editorial cinematic isometric tech illustration, dramatic dark-blue-and-orange lighting, ultra-sharp text rendering for thumbnail readability at 200px, 1:1 aspect, high contrast, no real human faces.
+image_prompt: |
+  A massive glowing telephone switchboard from a 1960s call center, but reimagined
+  as a futuristic AI orchestration hub — every cable replaced by streams of light
+  flowing into a central core labeled "VAPI". Above the switchboard a bold neon
+  number reads "1,000,000,000 CALLS" and a smaller plate "100% of Ring inbound".
+  On the side, an Amazon Ring logo glows in cyan. Style: editorial cinematic
+  isometric tech illustration, dramatic dark-blue-and-orange lighting, ultra-sharp
+  text rendering for thumbnail readability at 200px, 1:1 aspect, high contrast, no
+  real human faces.
 image: images/26-05-15-0605-02-vapi-50m-amazon-ring-1b-calls.png
 ---
 

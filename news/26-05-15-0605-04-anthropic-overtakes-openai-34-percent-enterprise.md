@@ -4,7 +4,17 @@ slug: anthropic-overtakes-openai-34-percent-enterprise
 topic: openbridge-trend
 reading_time_min: 4
 sources: 6
-image_prompt: A horizontal bar race graphic, editorial style — Anthropic's orange bar (labeled "34.4%") just edging past OpenAI's black-and-white bar (labeled "32.3%") on a corporate scoreboard. Both bars have growth arrows. Background shows a wall of glowing enterprise logos (Fortune 500-style abstract corporate facades). A large headline at the top reads "ANTHROPIC OVERTAKES OPENAI" and a subtitle "Business adoption, Apr 2026". Below, a small inset shows a Claude logo on small-business storefronts in 10 US cities. Style: editorial data-journalism illustration in the spirit of The Information / Bloomberg, dramatic lighting, ultra-sharp text rendering for thumbnail readability at 200px, 1:1 aspect, high contrast, no real human faces.
+image_prompt: |
+  A horizontal bar race graphic, editorial style — Anthropic's orange bar (labeled
+  "34.4%") just edging past OpenAI's black-and-white bar (labeled "32.3%") on a
+  corporate scoreboard. Both bars have growth arrows. Background shows a wall of
+  glowing enterprise logos (Fortune 500-style abstract corporate facades). A large
+  headline at the top reads "ANTHROPIC OVERTAKES OPENAI" and a subtitle "Business
+  adoption, Apr 2026". Below, a small inset shows a Claude logo on small-business
+  storefronts in 10 US cities. Style: editorial data-journalism illustration in
+  the spirit of The Information / Bloomberg, dramatic lighting, ultra-sharp text
+  rendering for thumbnail readability at 200px, 1:1 aspect, high contrast, no real
+  human faces.
 image: images/26-05-15-0605-04-anthropic-overtakes-openai-34-percent-enterprise.png
 ---
 

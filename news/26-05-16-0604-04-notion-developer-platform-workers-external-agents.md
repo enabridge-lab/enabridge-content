@@ -4,7 +4,15 @@ slug: notion-developer-platform-workers-external-agents
 topic: openbridge-trend
 reading_time_min: 4
 sources: 4
-image_prompt: A futuristic open warehouse loading dock labeled "NOTION" as the control hub, with multiple AI agent characters arriving from different doors labeled "CLAUDE", "CODEX", "DECAGON", "GEMINI". In the center, a glowing conveyor belt with "Workers" engraved on metal plates carrying database icons (Zendesk, Salesforce, Postgres). A large bold floating text reads "External Agents API · Aug 11". Composition: wide hero shot, warm yellow Notion-brand interior light against cool blue exterior, cinematic depth. Style: editorial 3D isometric illustration, high contrast for thumbnail legibility, no human faces.
+image_prompt: |
+  A futuristic open warehouse loading dock labeled "NOTION" as the control hub,
+  with multiple AI agent characters arriving from different doors labeled
+  "CLAUDE", "CODEX", "DECAGON", "GEMINI". In the center, a glowing conveyor belt
+  with "Workers" engraved on metal plates carrying database icons (Zendesk,
+  Salesforce, Postgres). A large bold floating text reads "External Agents API ·
+  Aug 11". Composition: wide hero shot, warm yellow Notion-brand interior light
+  against cool blue exterior, cinematic depth. Style: editorial 3D isometric
+  illustration, high contrast for thumbnail legibility, no human faces.
 image: images/26-05-16-0604-04-notion-developer-platform-workers-external-agents.png
 ---
 

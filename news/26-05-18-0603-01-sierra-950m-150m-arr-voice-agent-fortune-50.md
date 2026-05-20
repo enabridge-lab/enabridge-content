@@ -4,7 +4,18 @@ slug: sierra-950m-150m-arr-voice-agent-fortune-50
 topic: use-case
 reading_time_min: 4
 sources: 6
-image_prompt: A massive vintage call-center switchboard split in two — the left half cluttered with tangled wires, fading neon "HOLD" signs, and silhouettes of exhausted human agents slumped at terminals; the right half a clean modern stage glowing in Sierra's signature deep navy and electric coral, with a single luminous voice waveform pulsing through a sleek "Sierra" wordmark. A giant illuminated billboard floats above showing three numbers stacked: "$950M", "$150M ARR", "40% Fortune 50". Below, a small ticker tape reads "Nordstrom 5 weeks · Singtel 10 weeks · Cigna 80% faster". Editorial isometric composition, dramatic theater lighting with rim light from coral to navy, ultra-sharp text rendering, high contrast for 200px thumbnail readability, 1:1 aspect, tech-magazine cover style, no real human faces (silhouettes only).
+image_prompt: |
+  A massive vintage call-center switchboard split in two — the left half cluttered
+  with tangled wires, fading neon "HOLD" signs, and silhouettes of exhausted human
+  agents slumped at terminals; the right half a clean modern stage glowing in
+  Sierra's signature deep navy and electric coral, with a single luminous voice
+  waveform pulsing through a sleek "Sierra" wordmark. A giant illuminated
+  billboard floats above showing three numbers stacked: "$950M", "$150M ARR", "40%
+  Fortune 50". Below, a small ticker tape reads "Nordstrom 5 weeks · Singtel 10
+  weeks · Cigna 80% faster". Editorial isometric composition, dramatic theater
+  lighting with rim light from coral to navy, ultra-sharp text rendering, high
+  contrast for 200px thumbnail readability, 1:1 aspect, tech-magazine cover style,
+  no real human faces (silhouettes only).
 image: images/26-05-18-0603-01-sierra-950m-150m-arr-voice-agent-fortune-50.png
 ---
 

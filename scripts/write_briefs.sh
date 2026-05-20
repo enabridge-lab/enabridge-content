@@ -34,6 +34,10 @@ if [ "$COUNT" = "0" ]; then
 fi
 echo "[ok] พบ ${COUNT} brief(s)"
 
+# Validate YAML frontmatter — fail fast so we never push a brief that
+# gray-matter (on the site) can't parse. See scripts/validate_briefs.py.
+python3 "${SCRIPT_DIR}/validate_briefs.py" --slug "${SLUG}"
+
 # Checkout branch (สร้างใหม่หรือ reset ถ้ามีอยู่แล้ว)
 if git show-ref --verify --quiet "refs/heads/${BRANCH}"; then
   echo "[git] branch ${BRANCH} มีอยู่แล้ว — checkout + reset ไป main"

@@ -4,7 +4,19 @@ slug: broadridge-agentic-capital-markets-30-percent-cost-cut
 topic: use-case
 reading_time_min: 4
 sources: 6
-image_prompt: A bustling trading-floor scene rendered in classic Wall Street finance palette — deep navy, gold pinstripe, and ticker-tape red — where the chaotic flurry of paper trade tickets on the left transitions across the frame into a clean, geometric grid of glowing AI agent nodes on the right, each labeled with workflow icons (trade fail, break resolution, valuation exception, account opening). A massive ticker board floats above showing "BROADRIDGE AGENTIC AI" in bold sans-serif with three giant numbers stacked: "30% Day-1 cost cut", "40+ clients", "since 2024". Below it a subtitle reads "Capital Markets · Wealth · Post-Trade". Editorial isometric composition, dramatic golden-hour lighting through tall floor-to-ceiling windows, ultra-sharp text rendering, high contrast for 200px thumbnail readability, 1:1 aspect, business-magazine cover style, silhouettes of traders only.
+image_prompt: |
+  A bustling trading-floor scene rendered in classic Wall Street finance palette —
+  deep navy, gold pinstripe, and ticker-tape red — where the chaotic flurry of
+  paper trade tickets on the left transitions across the frame into a clean,
+  geometric grid of glowing AI agent nodes on the right, each labeled with
+  workflow icons (trade fail, break resolution, valuation exception, account
+  opening). A massive ticker board floats above showing "BROADRIDGE AGENTIC AI" in
+  bold sans-serif with three giant numbers stacked: "30% Day-1 cost cut", "40+
+  clients", "since 2024". Below it a subtitle reads "Capital Markets · Wealth ·
+  Post-Trade". Editorial isometric composition, dramatic golden-hour lighting
+  through tall floor-to-ceiling windows, ultra-sharp text rendering, high contrast
+  for 200px thumbnail readability, 1:1 aspect, business-magazine cover style,
+  silhouettes of traders only.
 image: images/26-05-18-0603-03-broadridge-agentic-capital-markets-30-percent-cost-cut.png
 ---
 

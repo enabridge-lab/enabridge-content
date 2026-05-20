@@ -4,7 +4,16 @@ slug: 26-05-11-0606-04-avoca-1b-hvac-voice-agent-services-economy
 topic: use-case
 reading_time_min: 4
 sources: 4
-image_prompt: A bold financial chart on the left rising sharply with the label "$1B in customer jobs booked", and on the right, three illustrated trade-business storefront signs glowing with neon: a HVAC truck, a plumbing wrench, and an automotive workshop, each connected by glowing voice-call wave lines to a central "Avoca AI" hub. Above the hub, smaller logo chips read "ServiceTitan", "Nexstar", "Kleiner Perkins $1B". Composition: editorial business-magazine illustration, warm copper and deep teal palette with golden accent lighting, semi-flat illustration with cinematic backlight glow, sharp readable typography for thumbnail clarity, 1:1 aspect, no human faces.
+image_prompt: |
+  A bold financial chart on the left rising sharply with the label "$1B in
+  customer jobs booked", and on the right, three illustrated trade-business
+  storefront signs glowing with neon: a HVAC truck, a plumbing wrench, and an
+  automotive workshop, each connected by glowing voice-call wave lines to a
+  central "Avoca AI" hub. Above the hub, smaller logo chips read "ServiceTitan",
+  "Nexstar", "Kleiner Perkins $1B". Composition: editorial business-magazine
+  illustration, warm copper and deep teal palette with golden accent lighting,
+  semi-flat illustration with cinematic backlight glow, sharp readable typography
+  for thumbnail clarity, 1:1 aspect, no human faces.
 image: images/26-05-11-0606-04-avoca-1b-hvac-voice-agent-services-economy.png
 ---
 

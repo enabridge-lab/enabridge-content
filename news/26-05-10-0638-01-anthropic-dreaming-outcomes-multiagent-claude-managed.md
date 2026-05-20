@@ -4,7 +4,16 @@ slug: anthropic-dreaming-outcomes-multiagent-claude-managed
 topic: agentic-ai
 reading_time_min: 4
 sources: 5
-image_prompt: A hero illustration of a glowing Claude logo orb sleeping on a cloud at night, with dream bubbles above it containing tiny diagrams of past coding tasks being merged, deduplicated, and patterned. In bold large white text overlaid on the dark sky background, the headline reads "DREAMING + 6x" in massive condensed sans-serif. Below the orb, three small lit windows show silhouettes of a coordinator agent dispatching subagents in parallel. Editorial dark navy and electric purple color palette with high contrast, magazine-cover composition, 1:1 aspect, no real human faces (only silhouettes allowed). Style: The Information / Stratechery cover art with cinematic depth.
+image_prompt: |
+  A hero illustration of a glowing Claude logo orb sleeping on a cloud at night,
+  with dream bubbles above it containing tiny diagrams of past coding tasks being
+  merged, deduplicated, and patterned. In bold large white text overlaid on the
+  dark sky background, the headline reads "DREAMING + 6x" in massive condensed
+  sans-serif. Below the orb, three small lit windows show silhouettes of a
+  coordinator agent dispatching subagents in parallel. Editorial dark navy and
+  electric purple color palette with high contrast, magazine-cover composition,
+  1:1 aspect, no real human faces (only silhouettes allowed). Style: The
+  Information / Stratechery cover art with cinematic depth.
 image: images/26-05-10-0638-01-anthropic-dreaming-outcomes-multiagent-claude-managed.png
 ---
 

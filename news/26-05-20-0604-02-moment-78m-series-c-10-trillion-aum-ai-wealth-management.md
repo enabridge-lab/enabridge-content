@@ -4,7 +4,18 @@ slug: moment-78m-series-c-10-trillion-aum-ai-wealth-management
 topic: use-case
 reading_time_min: 4
 sources: 5
-image_prompt: An editorial isometric illustration of a vast Wall Street trading floor reborn as a glowing AI operating system — old wooden trader desks replaced by sleek terminals showing live portfolio constructions, three AI agent silhouettes labeled "PORTFOLIO" / "SURVEILLANCE" / "COMPLIANCE" hovering above the floor like luminous overseers in Index Ventures coral and Moment's signature navy. A giant illuminated billboard floats overhead with three stacked numbers: "$10 TRILLION AUM", "$78M SERIES C", "33x GROWTH". Below it, three brand logos render crisp and legible: "Edward Jones", "LPL Financial", "Hightower". Dramatic theater lighting with rim light from coral to navy, ultra-sharp text rendering, high contrast for 200px thumbnail readability, 1:1 aspect, tech-magazine cover style, no real human faces (silhouettes only).
+image_prompt: |
+  An editorial isometric illustration of a vast Wall Street trading floor reborn
+  as a glowing AI operating system — old wooden trader desks replaced by sleek
+  terminals showing live portfolio constructions, three AI agent silhouettes
+  labeled "PORTFOLIO" / "SURVEILLANCE" / "COMPLIANCE" hovering above the floor
+  like luminous overseers in Index Ventures coral and Moment's signature navy. A
+  giant illuminated billboard floats overhead with three stacked numbers: "$10
+  TRILLION AUM", "$78M SERIES C", "33x GROWTH". Below it, three brand logos render
+  crisp and legible: "Edward Jones", "LPL Financial", "Hightower". Dramatic
+  theater lighting with rim light from coral to navy, ultra-sharp text rendering,
+  high contrast for 200px thumbnail readability, 1:1 aspect, tech-magazine cover
+  style, no real human faces (silhouettes only).
 image: images/26-05-20-0604-02-moment-78m-series-c-10-trillion-aum-ai-wealth-management.png
 ---
 

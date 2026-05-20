@@ -4,7 +4,17 @@ slug: anthropic-wall-street-banking-agents-moodys-msft365
 topic: use-case
 reading_time_min: 4
 sources: 5
-image_prompt: A hero illustration of the Anthropic Claude logo and the JPMorgan Chase emblem facing each other across a marble Wall Street trading floor, connected by ten glowing data streams labeled with finance icons (KYC, ledger, pitchbook, earnings). Above them, in massive bold condensed sans-serif white text overlaid on the dark navy ceiling: "10 AGENTS · $30B ARR". A small Microsoft Excel logo and a Moody's logo sit on a desk in the foreground, glowing as data flows through them. Editorial cover-art composition, dramatic spotlight, dark navy and gold palette with high contrast, magazine cover style, 1:1 aspect, no real human faces (silhouette of two executives walking on stage in deep background allowed).
+image_prompt: |
+  A hero illustration of the Anthropic Claude logo and the JPMorgan Chase emblem
+  facing each other across a marble Wall Street trading floor, connected by ten
+  glowing data streams labeled with finance icons (KYC, ledger, pitchbook,
+  earnings). Above them, in massive bold condensed sans-serif white text overlaid
+  on the dark navy ceiling: "10 AGENTS · $30B ARR". A small Microsoft Excel logo
+  and a Moody's logo sit on a desk in the foreground, glowing as data flows
+  through them. Editorial cover-art composition, dramatic spotlight, dark navy and
+  gold palette with high contrast, magazine cover style, 1:1 aspect, no real human
+  faces (silhouette of two executives walking on stage in deep background
+  allowed).
 image: images/26-05-10-0638-02-anthropic-wall-street-banking-agents-moodys-msft365.png
 ---
 

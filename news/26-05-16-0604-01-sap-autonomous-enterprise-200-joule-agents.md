@@ -4,7 +4,15 @@ slug: sap-autonomous-enterprise-200-joule-agents
 topic: agentic-ai
 reading_time_min: 4
 sources: 5
-image_prompt: A massive cathedral-like ERP control tower built from glass and steel, transformed into an autonomous agentic command center. Hundreds of small glowing blue agent nodes — each labeled with tiny ledger, supply-chain, HR and procurement icons — orbit around a central Joule logo rendered in clean SAP-blue. Bold floating numeral "200+" hovers in the foreground. Anthropic logo visible as a partner badge in the corner. Composition: low-angle hero shot, dramatic blue and white palette, cinematic depth-of-field. Style: editorial 3D render, high contrast for thumbnail legibility, no human faces.
+image_prompt: |
+  A massive cathedral-like ERP control tower built from glass and steel,
+  transformed into an autonomous agentic command center. Hundreds of small glowing
+  blue agent nodes — each labeled with tiny ledger, supply-chain, HR and
+  procurement icons — orbit around a central Joule logo rendered in clean
+  SAP-blue. Bold floating numeral "200+" hovers in the foreground. Anthropic logo
+  visible as a partner badge in the corner. Composition: low-angle hero shot,
+  dramatic blue and white palette, cinematic depth-of-field. Style: editorial 3D
+  render, high contrast for thumbnail legibility, no human faces.
 image: images/26-05-16-0604-01-sap-autonomous-enterprise-200-joule-agents.png
 ---
 

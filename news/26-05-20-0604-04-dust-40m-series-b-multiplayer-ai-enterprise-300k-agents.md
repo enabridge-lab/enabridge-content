@@ -4,7 +4,18 @@ slug: dust-40m-series-b-multiplayer-ai-enterprise-300k-agents
 topic: agentic-ai
 reading_time_min: 4
 sources: 5
-image_prompt: An editorial isometric illustration of a glowing Paris-style workspace transformed into a "multiplayer" AI co-working hub — multiple human silhouettes seated at sleek terminals, each connected by bright light threads to four floating AI agent figures hovering above the desks, sharing the same illuminated context bubble in the center. Walls are warm cream with Dust's signature charcoal accents. A giant illuminated billboard floats overhead with four stacked numbers: "$40M SERIES B", "3,000 ORGS", "300K AGENTS", "ZERO CHURN 2025". Below it crisp brand logos: "Sequoia", "Abstract", "Snowflake", "Datadog". Dramatic Parisian rim lighting with golden hour glow, ultra-sharp text rendering, high contrast for 200px thumbnail readability, 1:1 aspect, tech-magazine cover style, no real human faces (silhouettes only).
+image_prompt: |
+  An editorial isometric illustration of a glowing Paris-style workspace
+  transformed into a "multiplayer" AI co-working hub — multiple human silhouettes
+  seated at sleek terminals, each connected by bright light threads to four
+  floating AI agent figures hovering above the desks, sharing the same illuminated
+  context bubble in the center. Walls are warm cream with Dust's signature
+  charcoal accents. A giant illuminated billboard floats overhead with four
+  stacked numbers: "$40M SERIES B", "3,000 ORGS", "300K AGENTS", "ZERO CHURN
+  2025". Below it crisp brand logos: "Sequoia", "Abstract", "Snowflake",
+  "Datadog". Dramatic Parisian rim lighting with golden hour glow, ultra-sharp
+  text rendering, high contrast for 200px thumbnail readability, 1:1 aspect,
+  tech-magazine cover style, no real human faces (silhouettes only).
 image:
 ---
 
