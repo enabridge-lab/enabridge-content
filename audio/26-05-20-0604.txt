@@ -1,0 +1,40 @@
+สวัสดีครับ นี่คือ Enabridge AI Brief รอบ 20 May 2026 เวลา 06:04 ครับ.
+รอบนี้มี 4 เรื่อง เน้น Agentic AI, business use case, และ trend ที่เอามาใช้กับ OpenBridge ได้.
+
+เรื่องแรก.
+สวัสดีครับโย้ มาเล่าข่าวใหญ่ของวานนี้ Anthropic เปิด 2 ฟีเจอร์สำคัญใน Claude Managed Agents ที่งาน Code with Claude ครั้งแรกที่ลอนดอน ตัวแรกชื่อ MCP Tunnels เปิดให้ agent ต่อกับ MCP server ที่อยู่หลัง firewall ของลูกค้าได้ โดยลูกค้าไม่ต้องเปิด public endpoint ใด ๆ ใช้ outbound connection เดียวที่ encrypted end-to-end ตัวที่สองชื่อ Self-Hosted Sandboxes ย้าย tool execution ทั้งหมดไปอยู่ฝั่งลูกค้า รันบน VM ของตัวเองหรือผ่าน Cloudflare Daytona Modal Vercel ก็ได้
+
+จุดที่สำคัญที่สุดคือ architecture แยกหน้าที่ orchestration loop กับ context management ยังอยู่บน Anthropic ส่วน data access กับ tool execution อยู่ฝั่งลูกค้าทั้งหมด แก้โจทย์ใหญ่ที่สุดของ enterprise procurement คือ data residency กับ network isolation ตอนนี้ banker insurance hospital regulator ของลูกค้า Anthropic ยอมเซ็นได้แล้วเพราะข้อมูลไม่ออกจาก premises
+
+ทำไมสำคัญ ตอนนี้ MCP กำลังเปลี่ยนจาก spec เป็น enterprise infrastructure layer Anthropic ไม่ใช่เจ้าเดียวที่เคลื่อน Cloudflare เปิด enterprise MCP reference architecture Microsoft Copilot Studio เปลี่ยนตัวเองเป็น AI agent control center Devenex เปิดที่ Google Cloud Next OpenAI ไป Dell on-prem ทุก vendor พยายามครอบ orchestration กับ connectivity ไม่ใช่แค่อยู่หลัง API
+
+มุม OpenBridge ตรงเข้า kill zone ถ้า MCP Tunnel ออก GA ใน Q3 ลูกค้า Thai bank ไม่ต้อง buy connector layer แยกแล้ว defensive play คือสร้าง BOT-certified MCP server library ที่ wrap KBank SCB CIMB กับ Telco BSS OSS hospital HIS แล้ว package ขายเป็น drop-in อีก angle คือสร้าง MCP gateway เป็น firewall อยู่ระหว่าง Anthropic tunnel กับ internal server เก็บ log enforce policy redact PII นี่คือ control point ที่ Tier-1 enterprise ต้องการครับ.
+
+เรื่องที่สอง.
+สวัสดีครับโย้ มาเล่าเรื่อง Moment สตาร์ตอัพ AI wealth management ที่อดีต quant จาก Citadel ตั้งขึ้นใน NYC เมื่อวาน 19 พ.ค. ปิด Series C 78 ล้านดอลลาร์ นำโดย Index Ventures บวก a16z รวมระดมแล้ว 134 ล้าน ตัวเลขที่ทำให้ดีลนี้น่าสนใจคือ AUM ของลูกค้าบน platform แตะ 10 ล้านล้านดอลลาร์ จาก 300 พันล้านเมื่อ 18 เดือนก่อน growth 33 เท่าที่ระดับ asset ไม่ใช่ revenue
+
+ลูกค้าหลักคือ Edward Jones LPL Financial Hightower Advisors ทั้ง 3 รายเลือก standardize stack trading portfolio management compliance ลงบน Moment แทน Charles River BlackRock Aladdin FactSet ที่เป็น incumbent Product มี 3 agent core agent แรกสร้าง custom portfolio จาก natural language ใน "วินาที" agent ที่สอง surveillance scan account หา tax-loss risk concentration transition opportunity แจ้ง advisor ก่อน client agent ที่สาม compliance real-time scan transaction vs custom rule
+
+ทำไมสำคัญ proof ว่า agentic AI ใน wealth management พ้น experimentation เข้า production replacement ของ incumbent แล้ว Edward Jones ที่มี 50,000 advisor ยอมเปลี่ยน OS ทั้งบริษัท ไม่ใช่ pilot ใน 50 office Pattern ที่ทำซ้ำได้ใน insurance underwriting claims processing lending treasury อีกข้อสำคัญ AUM กับ asset velocity เริ่มเป็น new VC metric แทน ARR ปกติ เพราะ asset ที่ platform บริหารคือ accountability ของ fiduciary advisor ย้ายระบบ = audit nightmare
+
+มุม OpenBridge 3 ข้อ หนึ่ง pattern AI-native vertical + incumbent ทำซ้ำใน SEA wealth ได้ OpenBridge ขาย connector ให้ AI-native startup ที่ build Moment for Thai bancassurance สอง report metric ใหม่ connector volume system count data velocity ให้ resonate กับ Series A/B investor สาม เริ่ม sale ที่ compliance integration layer ก่อน — ต่อ AML KYC STR ป.ป.ง. report ให้ BOT — เพราะ regulated industry ยอม sign แรกที่ compliance pain ครับ.
+
+เรื่องที่สาม.
+สวัสดีครับโย้ มาเล่าเรื่อง OpenAI กับ Dell Technologies ที่ประกาศ partnership ใหญ่เมื่อ 18 พ.ค. เป้าหมายเอา Codex AI coding agent ลงไปอยู่ใน hybrid กับ on-premises environment ของ enterprise ผ่าน Dell AI Data Platform กับ Dell AI Factory infrastructure ตัวเลขที่ OpenAI เปิดเผยพร้อมดีลคือ Codex มี active user เกิน 4 ล้าน dev ต่อสัปดาห์ ขยายออกจาก software lifecycle pure ไป business workflow ทั้ง gather context route product feedback qualify lead write follow-up
+
+จุดสำคัญที่ enterprise ตามมานานคือ deployment model ก่อนหน้านี้ Codex รันบน OpenAI cloud อย่างเดียว ลูกค้า bank healthcare government defense ที่มี policy ห้าม source code ออก premises ใช้ไม่ได้ Dell partnership ปลดล็อกด้วย hybrid กับ on-prem option Codex รันบน Dell server ใน datacenter ลูกค้าได้ ต่อกับ source code repo ticketing internal doc โดยไม่ออก network
+
+ทำไมสำคัญ ครั้งแรกที่ OpenAI ยอมรับ public ว่า cloud-only ไม่พอสำหรับ enterprise Pentagon เพิ่งตัด contract Anthropic 8 พันล้าน OpenAI ที่ไม่มี on-prem story จะแพ้ deal นี้ตลอด ถ้าไม่ pivot ใน 12-18 เดือน เราจะเห็น architectural divergence 2 ค่าย OpenAI Dell camp ย้าย model ไป on-prem ของลูกค้า bring model to data Anthropic camp เก็บ model ไว้ที่ตัวเอง extend tentacle ผ่าน MCP Tunnel กับ Self-Hosted Sandbox bring data path to model
+
+มุม OpenBridge on-prem agent กับ cloud control plane จะเป็น default ใน 12-18 เดือน OpenBridge มี window สร้าง hybrid integration backbone ที่ใช้ได้ทั้ง Codex บน Dell และ Claude บน Anthropic ไม่ผูก vendor เดียว อีก angle Codex ขยาย out-of-engineering ไป business workflow คือ direct overlap กับ Zapier Make n8n ระวัง position pivot ไปเป็น integration backbone for Codex-style code-native automation อีกข้อ partner กับ Dell SEA เป็น local integration layer สำหรับ Dell AI Factory deployment ที่ certified กับ KBank SCB BOT requirement ครับ.
+
+เรื่องที่สี่.
+สวัสดีครับโย้ มาเล่าเรื่อง Dust สตาร์ตอัพ enterprise AI agent จาก Paris ที่ Gabriel Hubert อดีต Stripe กับ Stanislas Polu อดีต OpenAI ตั้งขึ้นเมื่อ 2023 เมื่อ 18 พ.ค. ปิด Series B 40 ล้านดอลลาร์ นำโดย Sequoia กับ Abstract บวก Snowflake Ventures กับ Datadog รวมระดมแล้วเกิน 60 ล้าน
+
+ตัวเลข production ที่ Dust เปิดเผยน่าเขย่า 3,000 องค์กรใช้ platform 51,000 MAU 300,000 agent deploy บน workspace zero customer churn ตลอดปี 2025 ซึ่งหายากใน B2B SaaS Thesis ของ Dust คือ multiplayer AI observation ว่า enterprise AI ส่วนใหญ่ตอนนี้เป็น single-player แบบ ChatGPT 1-1 ที่ไม่ scale เพราะ knowledge ไม่ shared Dust สร้าง workspace ที่ทีมกับ agent ทำงานบน project เดียวกัน shared context shared notification bidirectional access
+
+ทำไมสำคัญ Dust เป็น proof point ที่ undercovered ของ EU agentic AI champion ที่ส่งมือถึงระดับโลก Mistral Owkin Helsing Dust กำลังโต silent อยู่ ระยะ 12-18 เดือน multiplayer vs single-player เป็น axis ใหม่ที่ enterprise AI vendor แข่งกัน อีก signal 300,000 agent บน 3,000 องค์กร เฉลี่ย 100 agent ต่อ org แปลว่า agent proliferation curve เร็วกว่า template app 5-10 เท่า
+
+มุม OpenBridge ตรงกระทบ Dust competitor ระยะกลาง แต่ขาย workspace OpenBridge ขาย integration layer opportunity ที่เร็วที่สุดคือ official Dust connector partner สำหรับ SEA stack ติดต่อ Dust BD ใน 30 วัน เสนอ build connector kit KBank LINE ShopeePay Grab AIS PromptPay defensive multiplayer AI thesis คือสิ่งที่ OpenBridge ต้อง absorb เป็น product principle shared context primitive bidirectional notification team-level policy ต้อง ship agent workspace หรือ embed ใต้ Dust Sierra Glean ก่อนปลายปี ไม่งั้นเสีย window ครับ.
+
+ทั้งหมดนี้คือ brief ของรอบนี้. ขอให้วันนี้เป็นวันที่ดีครับ. แล้วเจอกันรอบหน้า.
