@@ -4,7 +4,18 @@ slug: circle-agent-stack-usdc-nanopayments-agentic-economy
 topic: agentic-ai
 reading_time_min: 4
 sources: 6
-image_prompt: A massive futuristic vending-machine-like financial terminal split into five glowing slots, each labeled in bold sans-serif type: "CLI", "AGENT WALLET", "MARKETPLACE", "NANOPAYMENTS", "SKILLS" — rendered in Circle's signature midnight black and electric blue, with the green USDC logo prominently displayed at center top. Silhouettes of small robotic agents queue up to feed coins into the slots; tiny tickets fly out the bottom printed with prices like "$0.000001" and "$0.0001". A giant illuminated banner above reads "MACHINE-TO-MACHINE MONEY" with the subtitle "Agent Stack — Circle 2026". Editorial isometric composition, dramatic neon underlight, ultra-sharp text rendering, high contrast for 200px thumbnail readability, 1:1 aspect, fintech-magazine cover style, no real human faces.
+image_prompt: |
+  A massive futuristic vending-machine-like financial terminal split into five
+  glowing slots, each labeled in bold sans-serif type: "CLI", "AGENT WALLET",
+  "MARKETPLACE", "NANOPAYMENTS", "SKILLS" — rendered in Circle's signature
+  midnight black and electric blue, with the green USDC logo prominently displayed
+  at center top. Silhouettes of small robotic agents queue up to feed coins into
+  the slots; tiny tickets fly out the bottom printed with prices like "$0.000001"
+  and "$0.0001". A giant illuminated banner above reads "MACHINE-TO-MACHINE MONEY"
+  with the subtitle "Agent Stack — Circle 2026". Editorial isometric composition,
+  dramatic neon underlight, ultra-sharp text rendering, high contrast for 200px
+  thumbnail readability, 1:1 aspect, fintech-magazine cover style, no real human
+  faces.
 image: images/26-05-18-0603-02-circle-agent-stack-usdc-nanopayments-agentic-economy.png
 ---
 

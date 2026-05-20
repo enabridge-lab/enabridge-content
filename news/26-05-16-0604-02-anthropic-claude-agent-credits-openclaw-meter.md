@@ -4,7 +4,14 @@ slug: anthropic-claude-agent-credits-openclaw-meter
 topic: agentic-ai
 reading_time_min: 4
 sources: 4
-image_prompt: A vintage gas-station style meter labeled "CLAUDE AGENT CREDITS" with three illuminated dial tiers showing "$20 PRO", "$100 MAX 5x", "$200 MAX 20x" in bold cyberpunk typography. Behind it, a glowing Anthropic logo and an OpenClaw-style claw silhouette reaching toward the meter. A floating date stamp reads "JUNE 15, 2026". Composition: centered hero shot, dark navy background with electric orange accents for contrast. Style: editorial illustration, retro-futuristic, high contrast for thumbnail legibility, no human faces.
+image_prompt: |
+  A vintage gas-station style meter labeled "CLAUDE AGENT CREDITS" with three
+  illuminated dial tiers showing "$20 PRO", "$100 MAX 5x", "$200 MAX 20x" in bold
+  cyberpunk typography. Behind it, a glowing Anthropic logo and an OpenClaw-style
+  claw silhouette reaching toward the meter. A floating date stamp reads "JUNE 15,
+  2026". Composition: centered hero shot, dark navy background with electric
+  orange accents for contrast. Style: editorial illustration, retro-futuristic,
+  high contrast for thumbnail legibility, no human faces.
 image: images/26-05-16-0604-02-anthropic-claude-agent-credits-openclaw-meter.png
 ---
 

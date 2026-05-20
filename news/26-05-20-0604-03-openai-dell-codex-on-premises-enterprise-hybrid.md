@@ -4,7 +4,17 @@ slug: openai-dell-codex-on-premises-enterprise-hybrid
 topic: agentic-ai
 reading_time_min: 4
 sources: 5
-image_prompt: An editorial isometric illustration of a corporate data center suddenly opening like a vault — left side a clean glowing OpenAI logo mounted on a glass server rack, right side a Dell Technologies branded blue server cabinet labeled "AI FACTORY", and between them a luminous Codex agent figure carrying briefcases of code from cloud down into the on-premises racks. A giant illuminated billboard hovers overhead with three stacked numbers: "4M DEVS / WEEK", "ON-PREM CODEX", "HYBRID AI". Bold corporate brand logos render crisp and legible. Dramatic blue-and-white rim lighting with sharp shadows, ultra-sharp text rendering, high contrast for 200px thumbnail readability, 1:1 aspect, tech-magazine cover style, no real human faces.
+image_prompt: |
+  An editorial isometric illustration of a corporate data center suddenly opening
+  like a vault — left side a clean glowing OpenAI logo mounted on a glass server
+  rack, right side a Dell Technologies branded blue server cabinet labeled "AI
+  FACTORY", and between them a luminous Codex agent figure carrying briefcases of
+  code from cloud down into the on-premises racks. A giant illuminated billboard
+  hovers overhead with three stacked numbers: "4M DEVS / WEEK", "ON-PREM CODEX",
+  "HYBRID AI". Bold corporate brand logos render crisp and legible. Dramatic
+  blue-and-white rim lighting with sharp shadows, ultra-sharp text rendering, high
+  contrast for 200px thumbnail readability, 1:1 aspect, tech-magazine cover style,
+  no real human faces.
 image: images/26-05-20-0604-03-openai-dell-codex-on-premises-enterprise-hybrid.png
 ---
 

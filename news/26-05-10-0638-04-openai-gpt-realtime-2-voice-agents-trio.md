@@ -4,7 +4,15 @@ slug: openai-gpt-realtime-2-voice-agents-trio
 topic: agentic-ai
 reading_time_min: 4
 sources: 5
-image_prompt: A hero illustration of three glowing audio waveform orbs floating side by side over a stylized OpenAI globe at night, each labeled in massive bold condensed sans-serif white text overlaid: "REALTIME-2", "TRANSLATE", "WHISPER". Each orb pulses a different neon color (electric blue, magenta, green) representing reasoning, translation, and transcription respectively. Below the orbs in giant numbers: "70 LANGS · $32/1M". Cover-art editorial composition with dramatic depth, dark space-black and neon palette with high contrast, magazine cover style, 1:1 aspect, no real human faces.
+image_prompt: |
+  A hero illustration of three glowing audio waveform orbs floating side by side
+  over a stylized OpenAI globe at night, each labeled in massive bold condensed
+  sans-serif white text overlaid: "REALTIME-2", "TRANSLATE", "WHISPER". Each orb
+  pulses a different neon color (electric blue, magenta, green) representing
+  reasoning, translation, and transcription respectively. Below the orbs in giant
+  numbers: "70 LANGS · $32/1M". Cover-art editorial composition with dramatic
+  depth, dark space-black and neon palette with high contrast, magazine cover
+  style, 1:1 aspect, no real human faces.
 image: images/26-05-10-0638-04-openai-gpt-realtime-2-voice-agents-trio.png
 ---
 

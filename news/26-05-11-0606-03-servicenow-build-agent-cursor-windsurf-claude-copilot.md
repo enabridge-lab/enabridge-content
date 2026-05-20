@@ -4,7 +4,16 @@ slug: 26-05-11-0606-03-servicenow-build-agent-cursor-windsurf-claude-copilot
 topic: openbridge-trend
 reading_time_min: 4
 sources: 3
-image_prompt: A central illuminated ServiceNow control hub portrayed as a glowing geometric platform, sending four golden integration cables outward to four labeled coding-tool tablets — "Cursor", "Windsurf", "Claude Code", "GitHub Copilot" — arranged in a circle. Above the hub floats a "Governed by Default" shield emblem. In the background, an enterprise application diagram shows "Cox Automotive" and "Plat4mation 80% generated" labels glowing softly. Composition: editorial enterprise-tech illustration, deep blue and gold palette with high contrast, semi-3D isometric perspective for visual depth, sharp readable typography, 1:1 aspect, no human faces.
+image_prompt: |
+  A central illuminated ServiceNow control hub portrayed as a glowing geometric
+  platform, sending four golden integration cables outward to four labeled
+  coding-tool tablets — "Cursor", "Windsurf", "Claude Code", "GitHub Copilot" —
+  arranged in a circle. Above the hub floats a "Governed by Default" shield
+  emblem. In the background, an enterprise application diagram shows "Cox
+  Automotive" and "Plat4mation 80% generated" labels glowing softly. Composition:
+  editorial enterprise-tech illustration, deep blue and gold palette with high
+  contrast, semi-3D isometric perspective for visual depth, sharp readable
+  typography, 1:1 aspect, no human faces.
 image: images/26-05-11-0606-03-servicenow-build-agent-cursor-windsurf-claude-copilot.png
 ---
 

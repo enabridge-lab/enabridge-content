@@ -4,7 +4,16 @@ slug: 26-05-11-0606-02-pentagon-shuts-anthropic-8-bigtech-ai-contracts
 topic: agentic-ai
 reading_time_min: 4
 sources: 4
-image_prompt: A stylized Pentagon building rendered as a precise geometric icon, glowing seven golden contract scrolls flowing into its gates, each scroll labeled with a tech logo — OpenAI, Google, Microsoft, AWS, Nvidia, SpaceX, Reflection AI. To the side, one orange Anthropic logo is rendered with a red cancellation X stamped over it, frozen in mid-air with a small "Supply Chain Risk" label tag. Composition: editorial geopolitical illustration in muted slate-blue and gold palette, with sharp contrast for thumbnail readability, semi-realistic flat illustration with subtle shadows, dramatic backlighting, 1:1 aspect, no human faces.
+image_prompt: |
+  A stylized Pentagon building rendered as a precise geometric icon, glowing seven
+  golden contract scrolls flowing into its gates, each scroll labeled with a tech
+  logo — OpenAI, Google, Microsoft, AWS, Nvidia, SpaceX, Reflection AI. To the
+  side, one orange Anthropic logo is rendered with a red cancellation X stamped
+  over it, frozen in mid-air with a small "Supply Chain Risk" label tag.
+  Composition: editorial geopolitical illustration in muted slate-blue and gold
+  palette, with sharp contrast for thumbnail readability, semi-realistic flat
+  illustration with subtle shadows, dramatic backlighting, 1:1 aspect, no human
+  faces.
 image: images/26-05-11-0606-02-pentagon-shuts-anthropic-8-bigtech-ai-contracts.png
 ---
 

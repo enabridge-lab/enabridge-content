@@ -4,7 +4,12 @@ slug: {{short-slug}}
 topic: {{agentic-ai | use-case | openbridge-trend}}
 reading_time_min: {{1-5}}
 sources: {{n}}
-image_prompt: {{EN, 3–5 ประโยค, story-driven hero illustration; logos + text rendering OK (อ่านออกใน 200px thumbnail), 1:1 aspect, no real human faces (silhouette OK); story beat + visual metaphor + composition + style — gen ผ่าน Higgsfield MCP (nano_banana_2)}}
+image_prompt: |
+  {{EN, 3–5 ประโยค, story-driven hero illustration; logos + text rendering OK
+  (อ่านออกใน 200px thumbnail), 1:1 aspect, no real human faces (silhouette OK);
+  story beat + visual metaphor + composition + style — gen ผ่าน Higgsfield MCP
+  (nano_banana_2). ต้องเป็น YAML literal-block scalar (`|` + indent 2 spaces)
+  — ห้ามใส่ค่าบรรทัดเดียว เพราะ prompt มักมี word: "..." patterns ที่ทำให้ YAML พัง}}
 image: {{เติมหลัง gen — path relative จาก news/, e.g. images/26-04-19-0700-001-cloudflare-agents.png}}
 ---
 

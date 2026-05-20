@@ -4,7 +4,16 @@ slug: microsoft-research-llms-corrupt-documents-delegate
 topic: agentic-ai
 reading_time_min: 4
 sources: 4
-image_prompt: A single pristine white office document with sharp text floats at the top of the image, then a vertical chain of 20 progressively more corrupted, torn, ink-smeared versions cascades downward — each more damaged than the last. To the right of the chain, three bold red labels float: "Gemini 3.1 Pro — 25% lost", "Claude 4.6 Opus — 25% lost", "GPT 5.4 — 25% lost". A green Python logo sits alone at the bottom right with the caption "the only survivor". Editorial isometric composition, dramatic top-down lighting with red warning glow, ultra-sharp text rendering, 1:1 aspect, high contrast for 200px thumbnail readability, tech-magazine cover style, no real human faces.
+image_prompt: |
+  A single pristine white office document with sharp text floats at the top of the
+  image, then a vertical chain of 20 progressively more corrupted, torn,
+  ink-smeared versions cascades downward — each more damaged than the last. To the
+  right of the chain, three bold red labels float: "Gemini 3.1 Pro — 25% lost",
+  "Claude 4.6 Opus — 25% lost", "GPT 5.4 — 25% lost". A green Python logo sits
+  alone at the bottom right with the caption "the only survivor". Editorial
+  isometric composition, dramatic top-down lighting with red warning glow,
+  ultra-sharp text rendering, 1:1 aspect, high contrast for 200px thumbnail
+  readability, tech-magazine cover style, no real human faces.
 image: images/26-05-17-0602-03-microsoft-research-llms-corrupt-documents-delegate.png
 ---
 

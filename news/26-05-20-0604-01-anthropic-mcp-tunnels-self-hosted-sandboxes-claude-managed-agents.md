@@ -4,7 +4,19 @@ slug: anthropic-mcp-tunnels-self-hosted-sandboxes-claude-managed-agents
 topic: agentic-ai
 reading_time_min: 4
 sources: 6
-image_prompt: A sleek enterprise data center cross-section in editorial isometric style — left half a dark glass corporate vault holding glowing internal databases, knowledge bases, and ticketing systems labeled "INTERNAL"; right half Anthropic's signature warm cream studio with a luminous Claude orchestration core. Between them, a single bright encrypted tunnel labeled "MCP TUNNEL" arcs from the vault outward, with a smaller floating sandbox box labeled "SELF-HOSTED SANDBOX" hosting tool icons for Cloudflare, Daytona, Modal, Vercel. A bold headline billboard floats above reading "Claude Managed Agents" with three stacked numbers: "ZERO PUBLIC ENDPOINTS", "PRIVATE NETWORK", "BYO COMPUTE". Dramatic rim lighting in coral and deep teal, ultra-sharp text rendering, high contrast for 200px thumbnail readability, 1:1 aspect, tech-magazine cover style, no real human faces.
+image_prompt: |
+  A sleek enterprise data center cross-section in editorial isometric style — left
+  half a dark glass corporate vault holding glowing internal databases, knowledge
+  bases, and ticketing systems labeled "INTERNAL"; right half Anthropic's
+  signature warm cream studio with a luminous Claude orchestration core. Between
+  them, a single bright encrypted tunnel labeled "MCP TUNNEL" arcs from the vault
+  outward, with a smaller floating sandbox box labeled "SELF-HOSTED SANDBOX"
+  hosting tool icons for Cloudflare, Daytona, Modal, Vercel. A bold headline
+  billboard floats above reading "Claude Managed Agents" with three stacked
+  numbers: "ZERO PUBLIC ENDPOINTS", "PRIVATE NETWORK", "BYO COMPUTE". Dramatic rim
+  lighting in coral and deep teal, ultra-sharp text rendering, high contrast for
+  200px thumbnail readability, 1:1 aspect, tech-magazine cover style, no real
+  human faces.
 image: images/26-05-20-0604-01-anthropic-mcp-tunnels-self-hosted-sandboxes-claude-managed-agents.png
 ---
 

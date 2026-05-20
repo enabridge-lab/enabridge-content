@@ -4,7 +4,15 @@ slug: sap-autonomous-enterprise-anthropic-200-agents
 topic: agentic-ai
 reading_time_min: 5
 sources: 6
-image_prompt: A massive SAP-blue corporate cathedral built from glowing data fields, with 50 humanoid "Joule Assistant" silhouettes standing on balconies as foremen, each orchestrating swarms of smaller agent drones below. Across the bottom of the building a giant illuminated banner reads "200+ AGENTS" and a smaller plate "Powered by Claude". An Anthropic logo glows on the central pillar. Style: editorial isometric tech illustration, cinematic dramatic lighting in deep blue and amber, ultra-sharp text rendering for thumbnail readability at 200px, 1:1 aspect, high contrast, no real human faces.
+image_prompt: |
+  A massive SAP-blue corporate cathedral built from glowing data fields, with 50
+  humanoid "Joule Assistant" silhouettes standing on balconies as foremen, each
+  orchestrating swarms of smaller agent drones below. Across the bottom of the
+  building a giant illuminated banner reads "200+ AGENTS" and a smaller plate
+  "Powered by Claude". An Anthropic logo glows on the central pillar. Style:
+  editorial isometric tech illustration, cinematic dramatic lighting in deep blue
+  and amber, ultra-sharp text rendering for thumbnail readability at 200px, 1:1
+  aspect, high contrast, no real human faces.
 image: images/26-05-15-0605-01-sap-autonomous-enterprise-anthropic-200-agents.png
 ---
 

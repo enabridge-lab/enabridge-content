@@ -4,7 +4,16 @@ slug: openai-codex-mobile-chatgpt-app
 topic: agentic-ai
 reading_time_min: 3
 sources: 4
-image_prompt: A smartphone screen displaying a glowing terminal-style "CODEX" interface with an "APPROVE" green button and "REJECT" red button prominent in the foreground. The phone is being held in the bottom of the frame, while in the background a MacBook with the matching Codex desktop app sits across a desk — connected to the phone via a thick glowing data beam. A floating QR code icon and the OpenAI black-and-white logo. Composition: dramatic over-the-shoulder hero shot, dark background with electric green code accents. Style: editorial product photography render, high contrast for thumbnail legibility, no human faces (only hand silhouette).
+image_prompt: |
+  A smartphone screen displaying a glowing terminal-style "CODEX" interface with
+  an "APPROVE" green button and "REJECT" red button prominent in the foreground.
+  The phone is being held in the bottom of the frame, while in the background a
+  MacBook with the matching Codex desktop app sits across a desk — connected to
+  the phone via a thick glowing data beam. A floating QR code icon and the OpenAI
+  black-and-white logo. Composition: dramatic over-the-shoulder hero shot, dark
+  background with electric green code accents. Style: editorial product
+  photography render, high contrast for thumbnail legibility, no human faces (only
+  hand silhouette).
 image: images/26-05-16-0604-03-openai-codex-mobile-chatgpt-app.png
 ---
 
