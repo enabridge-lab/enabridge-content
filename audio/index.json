@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-30T12:51:11Z",
+  "generated_at": "2026-06-30T13:17:29Z",
   "count": 37,
   "episodes": [
     {
@@ -30,7 +30,7 @@
         }
       ],
       "audio_file": "26-06-30-1714.mp3",
-      "audio_size_bytes": 1406304,
+      "audio_size_bytes": 1408800,
       "voice": "th-TH-Chirp3-HD-Achernar",
       "model": "google-cloud-tts-chirp3-hd",
       "speed": 1.3,
