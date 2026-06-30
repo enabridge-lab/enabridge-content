@@ -24,8 +24,8 @@ image: {{เติมหลัง gen — path relative จาก news/, e.g. im
 ## ทำไมสำคัญ
 {{2–3 ย่อหน้า — pattern ที่เห็น, เทียบกับเรื่องอื่นในตลาด, signal อะไรต่อจากนี้. ไม่ต้องกลาง ๆ — มี point of view}}
 
-## มุม OpenBridge
-{{1–2 ย่อหน้า — เอาไปใช้ / ปรับ product / positioning / เตือนใจยังไงได้บ้าง. ถ้าไม่ direct เกี่ยว เขียน "ไม่ direct เกี่ยว แต่..." แล้วชี้ adjacent insight}}
+## มุม AI Agent Platform
+{{1–2 ย่อหน้า — implication ต่อคนสามกลุ่ม: (1) **Builders** ที่กำลังสร้าง agent / framework / orchestration / runtime, (2) **Users / business** ที่กำลัง deploy agent ใน workflow, (3) **Ecosystem** (vendor / cloud / protocol). ใครได้ประโยชน์ ใครเสีย ใครต้องปรับตัวยังไง. ถ้าไม่ direct เกี่ยว เขียน "ไม่ direct เกี่ยว แต่..." แล้วชี้ adjacent insight}}
 
 ## Sources
 - [{{Title}}]({{URL}})

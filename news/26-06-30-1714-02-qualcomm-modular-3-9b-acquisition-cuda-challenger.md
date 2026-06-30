@@ -45,11 +45,11 @@ POV ตรง — **Chris Lattner คือ "compiler whisperer" ที่ valua
 
 Pattern ใหญ่กว่า — **agentic AI ต้องการ inference layer ที่ vendor-neutral**. Agent framework ที่ทำงาน production scale (Cursor, Claude Code, Codex) ใช้ inference call หลายร้อยครั้งต่อ user session. ใน 12-18 เดือนข้างหน้า ทุก agent framework จะต้อง support **runtime portability** — ใช้ NVIDIA สำหรับ peak load + AMD/Qualcomm สำหรับ steady-state + Apple Silicon สำหรับ on-device. คนที่ provide layer นี้คือผู้ชนะของชั้น "inference middleware" และ Qualcomm กำลังจะเป็นนั้น
 
-## มุม OpenBridge
+## มุม AI Agent Platform
 
-ไม่ direct เกี่ยว — OpenBridge ไม่ได้ build silicon และ inference runtime. แต่ adjacent insight สำคัญสำหรับ product roadmap: **agent platform ของ OpenBridge ต้อง assume vendor-portable inference เป็น default ภายใน 12 เดือน**. ลูกค้า enterprise Thai ที่ build agent บน OpenBridge จะอยากเลือก inference provider ตาม cost/latency/data residency — และ Modular MAX (ที่จะกลายเป็น part ของ Qualcomm cloud) เป็น runtime ที่ต้อง integrate ทันที. Recommend: ทำ POC connecter "Modular MAX backend" + "Qualcomm Cloud AI 100" ภายใน Q3 — ก่อนคู่แข่ง
+ไม่ direct เกี่ยว — agent platform builders ส่วนใหญ่ไม่ได้ build silicon หรือ inference runtime เอง. แต่ adjacent insight สำคัญ: **agent platform ทั้งหลายต้อง assume vendor-portable inference เป็น default ภายใน 12 เดือน**. Business ที่ build agent บน platform จะอยากเลือก inference provider ตาม cost/latency/data residency — และ Modular MAX (ที่จะกลายเป็น part ของ Qualcomm cloud) เป็น runtime ที่ทุก platform ต้อง integrate. คนที่ออก connector "Modular MAX backend" + "Qualcomm Cloud AI 100" ก่อนได้ moat — โดยเฉพาะ orchestration layer (LangChain, LlamaIndex, Vercel AI SDK, Dust, OpenBridge) ที่อยู่ใต้ business workflow
 
-ที่อ้อมขึ้น — **timing window สำหรับ Thai sovereign AI**. NECTEC + AIS ที่กำลังคิด sovereign LLM infra ใน Thailand มี option ใหม่ — แทนที่จะซื้อ NVIDIA cluster ที่แพง + export-restricted สามารถ build บน Qualcomm + Modular stack ที่ portable + ไม่ติด US-China dual-use export rule เท่า NVIDIA. OpenBridge อยู่ในตำแหน่งดีที่จะเป็น **"sovereign inference router"** สำหรับ Thai enterprise — ถ้าทำ partnership Qualcomm SEA + ASEAN ภายในไตรมาสนี้
+ที่อ้อมขึ้น — **window สำหรับ sovereign AI ในประเทศที่ไม่ใช่ US/China**. NECTEC, AIS, Singapore IMDA, อินโดฯ, เวียดนาม ที่กำลังคิด sovereign LLM infra มี option ใหม่ — แทนที่จะซื้อ NVIDIA cluster ที่แพง + export-restricted สามารถ build บน Qualcomm + Modular stack ที่ portable + ไม่ติด US-China dual-use export rule เท่า NVIDIA. Implication ต่อ ecosystem: **regional agent platform** ที่ทำ partnership Qualcomm SEA + ASEAN ก่อนใครจะกลายเป็น default backbone ของ enterprise ในภูมิภาค. ฝั่ง business — Thai bank / insurance / hospital ที่เลือก agent platform ต่อจากนี้ต้องถามคำถามใหม่: "platform นี้รัน inference ผ่าน vendor ไหนได้บ้าง"
 
 ## Sources
 - [Qualcomm Just Spent $4B to Break Nvidia's Software Lock — BERI](https://www.beri.net/article/qualcomm-modular-4b-acquisition-nvidia-cuda-lock-in-enterprise-ai-inference-2026)
@@ -68,4 +68,4 @@ Pattern ใหญ่กว่า — **agentic AI ต้องการ inferenc
 
 POV ของผม — ดีลนี้คือ software acquisition ไม่ใช่ hardware deal. NVIDIA moat อยู่ที่ CUDA ไม่ใช่ที่ silicon. นักพัฒนาเขียน CUDA kernel แล้วไม่อยาก port. Modular แก้ปัญหานี้พอดี. ถ้า Qualcomm ทำ MAX เป็น runtime default ของ enterprise ได้ — moat ของ CUDA ที่อยู่มาตั้งแต่ปี 2008 จะรั่วเป็นครั้งแรก.
 
-มุม OpenBridge — agent platform ของเราต้อง assume inference เป็น vendor-portable ภายในปีหน้า. ลูกค้า Thai bank จะอยากเลือก inference provider ตาม cost และ data residency. Modular MAX ต้อง integrate ภายในไตรมาสนี้ ก่อนคู่แข่ง.
+มุม AI Agent platform — ทุก platform ต้อง assume inference เป็น vendor-portable ภายในปีหน้า. business ที่ deploy agent จะอยากเลือก inference provider ตาม cost และ data residency. Modular MAX ต้อง integrate ภายในไตรมาสนี้ ก่อนคู่แข่ง.

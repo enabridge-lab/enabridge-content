@@ -24,7 +24,7 @@
       "order": 4
     }
   ],
-  "script_char_count": 4753,
+  "script_char_count": 4959,
   "audio_file": "26-06-30-1714.mp3",
   "voice": "th-TH-Chirp3-HD-Achernar",
   "model": "google-cloud-tts-chirp3-hd",
