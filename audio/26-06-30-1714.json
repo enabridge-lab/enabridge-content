@@ -1,0 +1,32 @@
+{
+  "date": "26-06-30-1714",
+  "iso_date": "2026-06-30T17:14:00+07:00",
+  "title": "Daily AI Brief — 26-06-30 17:14",
+  "items": [
+    {
+      "file": "26-06-30-1714-01-openai-gpt-5-6-sol-terra-luna-government-gated.md",
+      "title": "OpenAI เปิดตัว GPT-5.6 Sol, Terra, Luna — frontier model ใหม่ที่รัฐบาลสหรัฐ \"อนุญาตให้\" ใช้ก่อนเพียง 20 บริษัท",
+      "order": 1
+    },
+    {
+      "file": "26-06-30-1714-02-qualcomm-modular-3-9b-acquisition-cuda-challenger.md",
+      "title": "Qualcomm ทุ่ม $3.9B ซื้อ Modular ของ Chris Lattner — เปิดศึก CUDA โดยตรง พร้อม Tenstorrent รวมเป็น \"$14B full-stack\" ชน NVIDIA",
+      "order": 2
+    },
+    {
+      "file": "26-06-30-1714-03-claude-microsoft-foundry-ga-azure-blackwell.md",
+      "title": "Claude ขึ้น Microsoft Foundry GA — Anthropic ยอมลง Azure เต็มตัว, รัน Opus 4.8 บน NVIDIA GB300 Blackwell Ultra ฝั่ง Microsoft",
+      "order": 3
+    },
+    {
+      "file": "26-06-30-1714-04-mcp-2026-07-28-stateless-release-candidate.md",
+      "title": "MCP 2026-07-28 ตัด session ออกทั้งหมด — ปลด constraint ใหญ่สุดของ horizontal scaling, เปิดทาง agent fleet ระดับ enterprise",
+      "order": 4
+    }
+  ],
+  "script_char_count": 4753,
+  "audio_file": "26-06-30-1714.mp3",
+  "voice": "th-TH-Chirp3-HD-Achernar",
+  "model": "google-cloud-tts-chirp3-hd",
+  "speed": 1.3
+}
