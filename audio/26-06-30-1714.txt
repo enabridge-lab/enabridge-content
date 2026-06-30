@@ -1,0 +1,40 @@
+สวัสดีครับ นี่คือ Enabridge AI Brief รอบ 30 June 2026 เวลา 17:14 ครับ.
+รอบนี้มี 4 เรื่อง เน้น Agentic AI, business use case, และ trend ที่เอามาใช้กับ OpenBridge ได้.
+
+เรื่องแรก.
+วันที่ยี่สิบหกมิถุนายน OpenAI ปล่อย GPT-5.6 ออกมาเป็นสามเวอร์ชั่นพร้อมกัน Sol, Terra, Luna. Sol คือ flagship — ทำงานยากที่สุด, agentic ดีที่สุด, แพงที่สุด ห้าดอลล่าร์ต่อล้าน input และสามสิบดอลล่าร์ต่อล้าน output. Terra คือเวอร์ชั่นกลาง — ราคาถูกลงสองเท่าจาก GPT-5.5. Luna คือเล็กที่สุด เร็วและถูกที่สุด ดอลล่าร์เดียวต่อล้าน input.
+
+แต่เรื่องไม่ได้จบที่ราคา. ครั้งนี้พิเศษ — เพราะรัฐบาลสหรัฐกำหนดให้ Sol, Terra, Luna ผ่าน frontier AI review process ก่อน. แปลว่ามีแค่ประมาณยี่สิบบริษัทที่ได้ใช้ก่อน. ลูกค้าทั่วไปต้องรอ GA ในอีกหลายสัปดาห์. นี่เป็นครั้งแรกที่ frontier model release จากค่ายอเมริกาผ่าน gate ของรัฐแบบเปิดเผย.
+
+ภาพที่เห็นคือ frontier AI ในสหรัฐกำลังกลายเป็น dual-track. Track หนึ่งคือ commercial release ที่ทุกคนใช้ได้. Track สองคือ preview ที่รัฐ vet partner ที่ได้เข้าถึงก่อน. Anthropic ก็มี Mythos 5 ที่ Commerce Department เพิ่งปลดล็อก export ban บางส่วน. Pattern เดียวกัน.
+
+สำหรับทีม OpenBridge — สาม tier นี้เปลี่ยน design ของ integration layer ทั้งหมด. ต่อจากนี้ connector ต้อง route workload ระหว่าง Sol-class, Terra-class, Luna-class ได้อัตโนมัติ. ใครออกก่อนได้ moat สั้น ๆ ก่อนตลาดบีบ.
+
+เรื่องที่สอง.
+วันที่ยี่สิบสี่มิถุนายน Qualcomm ประกาศซื้อ Modular ในดีลสามจุดเก้าพันล้านดอลล่าร์. Modular คือบริษัทของ Chris Lattner ผู้สร้าง LLVM ซึ่งเป็น compiler infrastructure ที่อยู่ใต้ Swift และ Rust. Modular เป็นเจ้าของภาษา Mojo และ inference engine ชื่อ MAX ที่ทำให้ AI model วิ่งบน NVIDIA, AMD, Intel, Apple Silicon, Qualcomm ได้ด้วย API เดียว.
+
+ทำไมดีลใหญ่ — เพราะ Qualcomm กำลังจะ assemble full stack สู้ NVIDIA. ก่อนหน้านี้รั่วว่า Qualcomm จะซื้อ Tenstorrent ของ Jim Keller อีกแปดถึงสิบพันล้าน. รวมแล้วประมาณสิบสี่พันล้านดอลล่าร์ — สำหรับชนเข้าตลาด inference ที่จะแตะสองร้อยห้าสิบห้าพันล้านดอลล่าร์.
+
+POV ของผม — ดีลนี้คือ software acquisition ไม่ใช่ hardware deal. NVIDIA moat อยู่ที่ CUDA ไม่ใช่ที่ silicon. นักพัฒนาเขียน CUDA kernel แล้วไม่อยาก port. Modular แก้ปัญหานี้พอดี. ถ้า Qualcomm ทำ MAX เป็น runtime default ของ enterprise ได้ — moat ของ CUDA ที่อยู่มาตั้งแต่ปี 2008 จะรั่วเป็นครั้งแรก.
+
+มุม OpenBridge — agent platform ของเราต้อง assume inference เป็น vendor-portable ภายในปีหน้า. ลูกค้า Thai bank จะอยากเลือก inference provider ตาม cost และ data residency. Modular MAX ต้อง integrate ภายในไตรมาสนี้ ก่อนคู่แข่ง.
+
+เรื่องที่สาม.
+ปลายเดือนมิถุนายน Microsoft Anthropic และ NVIDIA ประกาศพร้อมกันว่า Claude เข้า Microsoft Foundry แบบ generally available. Opus 4.8 และ Haiku 4.5 ใช้งานผ่าน Messages API บน Foundry ได้ทันที พร้อม Entra ID auth, Azure RBAC, และ governance policy.
+
+ที่พิเศษคือมี option Hosted on Azure ที่ inference workload วิ่งบน Azure datacenter เต็มตัว รันบน NVIDIA GB300 Blackwell Ultra. ก่อนหน้านี้ Claude บน Foundry ยังเป็น preview แค่ proxy ไปยัง Anthropic infrastructure. ตอนนี้ GA แล้ว — Anthropic ยอมให้ inference วิ่งบน Microsoft hardware เต็มตัว.
+
+ผมว่าสิ่งที่ใหญ่ที่สุดคือ Anthropic เปลี่ยน strategy. เดิม Anthropic positioning เป็น Apple ของ AI — premium, narrow distribution, vertically integrated. ตอนนี้ pivot เป็น distribution maximalism. Microsoft ได้ Claude เป็น OpenAI alternative ใน Foundry. ลูกค้า Azure จะ route call ระหว่าง GPT-5.6 และ Claude ผ่าน API เดียว ทำให้ switching cost ใกล้ศูนย์.
+
+มุม OpenBridge — ต้อง integrate Foundry channel เป็น first-class ทันที. ลูกค้า Thai enterprise ที่ใช้ Azure จะเริ่ม consume Claude ผ่าน Foundry ภายในไตรมาสหน้า. ถ้า OpenBridge ไม่ support pattern นี้จะตกขบวน.
+
+เรื่องที่สี่.
+เมื่อยี่สิบเอ็ดพฤษภาคม MCP steering committee lock release candidate ของ specification ใหม่ 2026-07-28 — ใหญ่ที่สุดตั้งแต่ MCP เปิดตัวปลายปี 2024. Change หลักคือ MCP กลายเป็น stateless ที่ protocol layer ทั้งหมด. Mcp-Session-Id header หาย, protocol session หายตาม. Request ทุกประเภทสามารถ land ที่ server instance ไหนก็ได้.
+
+ที่เพิ่มมาคู่กัน — Tasks extension สำหรับ long-running work, MCP Apps สำหรับ server-rendered UI ที่ client ทุกตัว render ได้, และ OAuth-aligned authorization ผ่าน token exchange มาตรฐาน. ทั้งสี่ change ปลด constraint ที่ enterprise ต้องการมาตั้งแต่ MCP 1.0.
+
+ตลาด context — MCP ครองแล้ว. SDK downloads ประมาณเก้าสิบเจ็ดล้านครั้งต่อเดือน, public MCP server เก้าพันสี่ร้อย, native support ในทุก major client. การเปลี่ยน spec ครั้งนี้คือ moment ที่ MCP เข้าสู่ enterprise maturity เต็มตัว — เหมือน HTTP/1.1 ที่ใช้เวลาสิบปีตกผลึก แต่ MCP ทำได้ในสิบแปดเดือน.
+
+มุม OpenBridge — เราต้อง upgrade runtime เป็น 2026-07-28-compatible ภายใน Q3, build Tasks extension เป็น differentiator สำหรับ long-running workflow, และคิดเรื่อง MCP Apps แบบ vendor-agnostic. ก่อน Cloudflare และ Vercel ยึดตลาดนี้.
+
+ทั้งหมดนี้คือ brief ของรอบนี้. ขอให้วันนี้เป็นวันที่ดีครับ. แล้วเจอกันรอบหน้า.
