@@ -1,0 +1,32 @@
+{
+  "date": "26-07-01-0608",
+  "iso_date": "2026-07-01T06:08:00+07:00",
+  "title": "Daily AI Brief — 26-07-01 06:08",
+  "items": [
+    {
+      "file": "26-07-01-0608-01-globant-anthropic-claude-ai-pods-services-network.md",
+      "title": "Globant ผูกพันธมิตรหลายปีกับ Anthropic — ปั้น 28,500 Glober เป็น \"AI Pods\" ขาย Claude ให้ลูกค้า media, airline, gaming",
+      "order": 1
+    },
+    {
+      "file": "26-07-01-0608-02-coreweave-aria-weights-biases-agent-platform.md",
+      "title": "CoreWeave ปล่อย ARIA — agent ที่อ่าน 1 พันล้าน ML experiment ของลูกค้า W&B และ \"ผลิต insight ที่ researcher มองข้าม\"",
+      "order": 2
+    },
+    {
+      "file": "26-07-01-0608-03-taktile-110m-goldman-sachs-financial-agentic-decisions.md",
+      "title": "Goldman Sachs นำ $110M Series C ใน Taktile — เดิมพันว่า agentic decision คือ \"ของจริง\" ในธนาคารและประกัน",
+      "order": 3
+    },
+    {
+      "file": "26-07-01-0608-04-cognizant-neuro-servicenow-mcp-multi-agent-accelerator.md",
+      "title": "Cognizant เปิดทาง ServiceNow AI Agents วิ่งบน Neuro AI ผ่าน MCP — open-source orchestrator เริ่มกลายเป็น enterprise plumbing จริง",
+      "order": 4
+    }
+  ],
+  "script_char_count": 6430,
+  "audio_file": "26-07-01-0608.mp3",
+  "voice": "th-TH-Chirp3-HD-Achernar",
+  "model": "google-cloud-tts-chirp3-hd",
+  "speed": 1.3
+}
