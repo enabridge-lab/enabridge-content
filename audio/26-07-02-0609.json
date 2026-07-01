@@ -1,0 +1,32 @@
+{
+  "date": "26-07-02-0609",
+  "iso_date": "2026-07-02T06:09:00+07:00",
+  "title": "Daily AI Brief — 26-07-02 06:09",
+  "items": [
+    {
+      "file": "26-07-02-0609-01-claude-sonnet-5-cheaper-agents.md",
+      "title": "Claude Sonnet 5 — Anthropic ปล่อย \"Opus-class agent\" ราคาถูกลง 5 เท่า, ล้ม unit economics ของทั้ง agent market",
+      "order": 1
+    },
+    {
+      "file": "26-07-02-0609-02-salesforce-agentforce-help-agent-pay-per-resolution.md",
+      "title": "Salesforce เปิด Agentforce Help Agent — เก็บเงิน $2 ต่อ \"การแก้ปัญหาสำเร็จ\" เท่านั้น, ล้ม SaaS seat pricing ทั้งวงการ",
+      "order": 2
+    },
+    {
+      "file": "26-07-02-0609-03-gartner-234b-agentic-arbitrage.md",
+      "title": "Gartner: $234B ของ enterprise SaaS spend เสี่ยงถูก agent \"arbitrage\" ภายใน 2030 — SaaS UX กำลังจะกลายเป็น \"invisible layer\"",
+      "order": 3
+    },
+    {
+      "file": "26-07-02-0609-04-bland-50m-voice-ai-proprietary-model.md",
+      "title": "Bland ระดม $50M Series C — ปฏิเสธ OpenAI/Anthropic, own voice model เอง, 175M call/ปี พิสูจน์ vertical play",
+      "order": 4
+    }
+  ],
+  "script_char_count": 6563,
+  "audio_file": "26-07-02-0609.mp3",
+  "voice": "th-TH-Chirp3-HD-Achernar",
+  "model": "google-cloud-tts-chirp3-hd",
+  "speed": 1.3
+}

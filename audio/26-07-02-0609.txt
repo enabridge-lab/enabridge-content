@@ -1,0 +1,40 @@
+สวัสดีครับ นี่คือ Enabridge AI Brief รอบ 02 July 2026 เวลา 06:09 ครับ.
+รอบนี้มี 4 เรื่อง เน้น Agentic AI, business use case, และ trend ที่เอามาใช้กับ OpenBridge ได้.
+
+เรื่องแรก.
+วันที่สามสิบมิถุนายน Anthropic ปล่อย Claude Sonnet 5 กลายเป็น default ของ claude.ai และ Claude Code ทันที. TechCrunch พาดหัวว่านี่คือทางที่ถูกกว่าในการรัน agent — โปรโมชั่นสองดอลลาร์ต่อล้าน token ขาเข้า สิบดอลลาร์ต่อล้าน token ขาออก ถึงสิ้นเดือนสิงหาคม เทียบ Opus 4.8 ที่สิบห้ากับเจ็ดสิบห้า ประหยัดห้าถึงเจ็ดเท่า.
+
+Benchmark น่าตกใจ — Terminal-Bench 2.1 พุ่งจากหกสิบเจ็ดของ Sonnet 4.6 ไปแปดสิบสี่ในสี่เดือน. GDPval knowledge work Elo หนึ่งพันหกร้อยสิบแปด แซง Opus 4.8 ไปเล็กน้อย. หมายถึง Sonnet เล็ก ๆ แซง Opus ในบางงานจริง แล้วราคาถูกลงเกือบสิบเท่า.
+
+จุดที่เปลี่ยนเกมคือ selectable reasoning effort ห้าระดับ ตั้งแต่ low ถึง extra high. Developer เลือก effort ต่อ call ได้. Task routing แบบเก่า Haiku ราคาถูกกับ Opus ยาก ๆ ตอนนี้ยุบรวมใน Sonnet 5 ตัวเดียว. Detail ที่หลายคนจะพลาด — Sonnet 5 ใช้ tokenizer ใหม่ ที่ทำให้ input เดิมกลายเป็น token หนึ่งถึงหนึ่งจุดสามห้าเท่า. Effective price จริงจึงสูงกว่าที่โฆษณาราว 20-35% ในงานเอกสารหนัก.
+
+สำหรับ agent platform ที่ pricing แบบ per-run — Sierra, Decagon, Cognigy — margin ขยายทันที แต่ราคาที่ขายลูกค้าจะมี pressure ลงเพราะลูกค้า benchmark กับ API ตรงได้. Enterprise ที่ deploy ผ่าน Anthropic ตรง ได้ cost reduction ห้าถึงเจ็ดเท่าฟรี แค่เปลี่ยนชื่อ model. ที่ควรใช้ budget ที่เหลือ ไม่ใช่ save เก็บ แต่เอาไปขยาย coverage ให้ agent วิ่งครบทุก channel หรือย้าย task ที่ human handle อยู่ให้ agent รับต่อ. Reasoning effort ยังเป็น knob สำหรับ compliance ที่ยังไม่มีใครพูดถึง — ในงาน audit-critical เขียน policy บังคับ high effort แล้ว log ไว้ ก็เป็น evidence ที่ regulator ยอมรับได้.
+
+เรื่องที่สอง.
+หนึ่งกรกฎาคม Salesforce ประกาศ Agentforce Help Agent ที่จะ GA เดือนนี้ พร้อม pricing model ใหม่ชื่อ pay-per-resolution — คิดสองดอลลาร์ต่อการแก้ปัญหาลูกค้าจนจบเองแบบ autonomous. ลูกค้าขอคุยกับคน หรือเดินจากไปโดยไม่พอใจ ไม่คิดเงิน. นี่คือครั้งแรกที่ SaaS incumbent ระดับ Fortune 500 ยอมทิ้ง per-seat pricing มาขาย outcome.
+
+หลักฐานที่ SF โชว์คือ dogfood ตัวเอง — บน help.salesforce.com Agentforce จัดการ inquiry ไปสี่ล้านสามแสน ticket, resolve autonomous เจ็ดสิบเปอร์เซ็นต์. Prebuilt agent deploy ในไม่กี่นาที ครอบทุก channel voice web portal SMS. CIO คำนวณ ROI ได้ทันที — ต้นทุน call center คนสิบดอลลาร์ต่อ ticket, Help Agent สองดอลลาร์ต่อ resolution, ประหยัดห้าเท่าและ predictable.
+
+Timing ที่น่าสนใจ — Gartner ปล่อยรายงานวันเดียวกันบอกว่าสองแสนสามหมื่นสี่พันล้านของ enterprise SaaS spend เสี่ยง disruption จาก agentic arbitrage ภายในสองพันสามสิบ. George Brocklehurst พูดตรง ๆ ว่า agent ทำ user growth หยุด link กับ revenue growth ของ vendor. คือ Gartner บอกว่า SaaS incumbent จะเสีย SF ตอบทันทีว่า จะเป็นวินเนอร์ ไม่ใช่ผู้แพ้ ของ shift นี้.
+
+สำหรับ agent builder — คำถามใหญ่ที่ต้องตอบไตรมาสหน้า outcome ของคุณคืออะไร. Resolution schema ต้องมี definition ที่ CIO audit ได้, dashboard ต้องแสดง unit cost ต่อ resolution แบบ realtime. สำหรับ enterprise ไทยที่กำลัง pilot — model นี้ตรงกับ business context ไทยกว่า SaaS เก่า เพราะ finance team เคยชินกับ transactional pricing แต่ก่อนเซ็นสัญญา เจรจา definition ของ resolution ให้ชัด — customer confirm plus no reopen ในเจ็ดวัน ไม่ใช่แค่ agent บอกว่าเสร็จ. Cap รายเดือนต้องมี กันเคส agent เพี้ยนแล้ว bill พุ่ง.
+
+เรื่องที่สาม.
+หนึ่งกรกฎาคม Gartner ปล่อยรายงานที่ชี้ตรง ๆ ว่าสองแสนสามหมื่นสี่พันล้านดอลลาร์ของ enterprise SaaS spend เสี่ยง disruption จาก agentic AI ภายในสองพันสามสิบ. เท่ากับยี่สิบเปอร์เซ็นต์ของ SaaS spend รวมทั้งโลก. คำใหม่ที่ Gartner บัญญัติในรายงานนี้คือ agentic arbitrage — agent ทำงานข้าม SaaS หลายตัว user ไม่ต้อง log in UI แต่ละตัว seat ลดลง แต่ workload ยังอยู่.
+
+George Brocklehurst จาก Gartner บอกตรง ๆ ว่า agentic system make software invisible แล้ว break link ระหว่าง user growth กับ revenue growth. คือ SaaS unit economics แบบเดิมพังลงแล้ว. Gartner ไม่ระบุชื่อ vendor แต่ analyst ชี้ไป Zendesk, Freshworks, Asana, monday.com — vendor ที่ต้องพึ่ง active user จำนวนมาก.
+
+Timing ที่น่าสังเกต — Salesforce ประกาศ Agentforce Help Agent pay-per-resolution วันเดียวกัน. เป็น choreograph ที่ SF ตอบด้วย product move เพื่อ frame ตัวเองเป็นวินเนอร์ของ shift. Gartner แนะนำ SaaS vendor สามหนทางรอด embed agent เข้า product, hold customer-specific knowledge, shift ไป outcome-based pricing.
+
+สำหรับ agent builder — คุณคือคนที่ Gartner บอกว่ากำลัง arbitrage SaaS incumbent. คำถามสำคัญไม่ใช่จะ integrate SaaS ไหน แต่จะ own layer ไหน. Moat ระยะยาวมาจาก customer-specific knowledge, outcome contract, และ open API ให้ agent อื่นเข้ามาใช้. สำหรับ CIO ในไทย เริ่ม audit ทันทีว่า SaaS ไหนใช้จริง vs ถือ just in case. ก่อนต่อ contract negotiate agent access clause และ outcome-based tier. ที่หลายทีมยังไม่คิด — arbitrage เกิดใน internal team เอง ทีม product กำลัง build agent ที่แทน SaaS สองสามตัวอยู่แล้ว inventory ให้ครบก่อนต่อ license.
+
+เรื่องที่สี่.
+สิบหกมิถุนายน Bland ปิด Series C ห้าสิบล้านดอลลาร์ นำโดย Dell Technologies Capital พร้อม HubSpot Ventures. Total funding สามปีทะลุร้อยล้าน. รอบนี้โดน reject จากหนึ่งร้อยแปดสิบ investor ก่อน Dell เซ็น. Volume ที่ Bland เปิดเผย น่าตกใจ — หนึ่งร้อยเจ็ดสิบห้าล้าน AI phone call ในปีที่แล้ว. สามล้านห้าแสนต่อสัปดาห์. ตลาดหลักคือ healthcare กับ financial services ในสหรัฐ. ลูกค้า enterprise สองร้อยห้าสิบราย.
+
+จุดที่ Bland ต่างจากคู่แข่งชัดที่สุด — ปฏิเสธจะ integrate OpenAI หรือ Anthropic model. Bland รัน voice model ที่ build in-house ทั้งหมด. Isaiah Granet CEO บอกกับ Fortune ว่า general LLM ไม่รู้จัก turn-taking dynamics ของโทรศัพท์ ต้องเทรน model บน dataset ของ call จริงเท่านั้น. Series C นี้เอาไปทำสามเรื่อง — inference cluster Dell กับ H200 เพื่อ latency ต่ำกว่า 300 มิลลิวินาที, ขยายภาษาจากสี่เป็นสิบสอง, และ compliance HIPAA SOC 2 EU AI Act.
+
+จับคู่กับ Gartner report เมื่อวานที่ว่า agentic arbitrage จะ arbitrage SaaS สองแสนสามหมื่นสี่พันล้าน — Bland คือ case study ตรงของ vertical agent platform ที่ตั้งใจไม่ให้ตัวเองโดน arbitrage. ถ้าใช้ OpenAI คือ margin ไหลไปที่ OpenAI ทันที. โดย own model Bland เก็บ margin ไปสร้าง data flywheel.
+
+สำหรับ voice AI builder — คำถามสำคัญ BYO frontier model หรือ own vertical model. Bland เลือกทางสอง แล้ว ARR โต. Retell กับ Vapi ที่เดินทาง BYO — customer acquisition ง่าย แต่ margin เล็กกว่า long-term. Alternative คือ hybrid. สำหรับ Thai enterprise ที่กำลังเลือก voice agent — ถามเรื่อง latency กับ turn-taking model ก่อน LLM. Vendor ที่ใช้ frontier บาง call latency แปดร้อยถึงพันสองร้อย conversation จะขาด. Voice AI startup ไทย Amity, VULCAN, Botnoi เดินตาม playbook Bland ในภาษาไทย เป็นโอกาสก่อน frontier รุก.
+
+ทั้งหมดนี้คือ brief ของรอบนี้. ขอให้วันนี้เป็นวันที่ดีครับ. แล้วเจอกันรอบหน้า.
