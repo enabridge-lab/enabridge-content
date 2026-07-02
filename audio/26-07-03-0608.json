@@ -1,0 +1,32 @@
+{
+  "date": "26-07-03-0608",
+  "iso_date": "2026-07-03T06:08:00+07:00",
+  "title": "Daily AI Brief — 26-07-03 06:08",
+  "items": [
+    {
+      "file": "26-07-03-0608-01-anthropic-claude-apps-gateway-enterprise-selfhost.md",
+      "title": "Anthropic ปล่อย \"Claude apps gateway\" — enterprise ยัด Claude Code ทั้งบริษัทได้ใต้ SSO + spend cap ของตัวเอง",
+      "order": 1
+    },
+    {
+      "file": "26-07-03-0608-02-anthropic-sonnet-5-agentic-cheap-default.md",
+      "title": "Anthropic ปล่อย Claude Sonnet 5 — \"most agentic Sonnet ever\" ราคาถูกกว่า Opus 5 เท่า, ตั้ง default ให้ทุก user",
+      "order": 2
+    },
+    {
+      "file": "26-07-03-0608-03-oracle-fusion-scm-agentic-inventory-supplier.md",
+      "title": "Oracle ปล่อย 4 Fusion Agentic Apps สำหรับ SCM — แข่ง SAP ที่ layer ที่ ERP ยังเจ็บสุด",
+      "order": 3
+    },
+    {
+      "file": "26-07-03-0608-04-extreme-agent-one-coworker-netops-rollout.md",
+      "title": "Extreme Networks ปล่อย Agent ONE Coworker ให้ทุกลูกค้า Platform ONE แล้ว — autonomous NetOps เริ่ม 1 ก.ค.",
+      "order": 4
+    }
+  ],
+  "script_char_count": 6473,
+  "audio_file": "26-07-03-0608.mp3",
+  "voice": "th-TH-Chirp3-HD-Achernar",
+  "model": "google-cloud-tts-chirp3-hd",
+  "speed": 1.3
+}

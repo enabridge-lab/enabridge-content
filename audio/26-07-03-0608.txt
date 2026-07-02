@@ -1,0 +1,40 @@
+สวัสดีครับ นี่คือ Enabridge AI Brief รอบ 03 July 2026 เวลา 06:08 ครับ.
+รอบนี้มี 4 เรื่อง เน้น Agentic AI, business use case, และ trend ที่เอามาใช้กับ OpenBridge ได้.
+
+เรื่องแรก.
+วันที่ยี่สิบเก้ามิถุนายน Anthropic ปล่อย Claude apps gateway — control plane แบบ self-hosted สำหรับ Claude Code ที่ enterprise เอาไปรันในบ้านตัวเองได้. โครงสร้างเรียบง่ายมาก — stateless container ตัวเดียวหลัง load balancer ต่อ Postgres ตัวเดียว, แต่ทำหน้าที่เป็น chokepoint ของทุก inference call ในองค์กร.
+
+จุดขายอยู่ที่ layer ของ CIO — auth developer ผ่าน OIDC ของบริษัท ไม่ว่าจะ Okta, Entra ID, Google Workspace, บังคับ role-based policy, ตั้ง spend cap รายวัน รายสัปดาห์ รายเดือน แยกตาม organization group user ได้เลย. ที่เด็ดคือ provider failover — route ไป Amazon Bedrock, Google Cloud, หรือ Claude API ก็ได้ ถ้า provider หนึ่งช้าก็สลับอัตโนมัติ ไม่ต้องแก้ code. ที่สำคัญคือ traffic กับ usage data ไม่ส่งกลับ Anthropic ถ้าไม่ได้ config ให้ใช้ Anthropic API โดยตรง.
+
+Pattern ของ Anthropic ชัดขึ้นเรื่อย ๆ — layer หนึ่งคือ model ตัวเก่ง Opus Sonnet, layer สองคือ MCP protocol, layer สามคือ delivery network ผ่าน PwC Globant, layer สี่คือ enterprise runtime ที่ปล่อยวันนี้. คือ vertically integrated stack ที่ CIO ซื้อครบในที่เดียว. ต่างจาก OpenAI ที่กระจายผ่าน partner ทั้ง Broadcom Cognizant Frontier platform.
+
+สำหรับทีมที่สร้าง agent framework — ต้อง assume ว่า route ผ่าน gateway ของ Anthropic จะเป็น default ในองค์กรใหญ่ ๆ. ถ้า tool ของคุณ hard-code endpoint ไป Anthropic API ตรง ๆ, developer ในบริษัทลูกค้าใช้ไม่ได้เพราะ compliance ห้าม. ฝั่ง enterprise ในไทย — ธนาคาร ประกัน โรงพยาบาลที่กำลัง pilot Claude Code — ตอนนี้มี template deployment ที่ไม่ต้องคุย special contract กับ Anthropic. Download binary, config OIDC, ต่อ Bedrock ที่ Singapore, เสร็จ. คุ้มลงทุนถ้ามี developer หลักร้อย spend cap จะช่วยตัด surprise bill ได้ทันที.
+
+เรื่องที่สอง.
+วันที่สามสิบมิถุนายน Anthropic ปล่อย Claude Sonnet 5 ที่บริษัทเรียกว่า most agentic Sonnet ever built. ตัวเลข benchmark ที่โชว์ทั้งหมดเป็น agent-in-action — SWE-bench Pro หกสิบสามจุดสอง OSWorld แปดสิบเอ็ด BrowseComp แปดสิบสี่ Terminal-Bench แปดสิบจุดสี่ ที่จริง ๆ แซง Opus 4.8 ในสองเรื่อง.
+
+จุดเปลี่ยนจริง ๆ อยู่ที่ราคา — intro pricing สองดอลลาร์ต่อล้าน token อินพุต สิบดอลลาร์ต่อล้าน token เอาต์พุต ถึงสิ้นสิงหาคม. ถูกกว่า Opus 4.8 ห้าเท่าที่ performance ใกล้กันมาก. Agent ที่รัน continuous ยี่สิบสี่ชั่วโมง ที่เมื่อก่อนต้อง Opus 4.8 เพราะต้องการ quality — วันนี้ Sonnet 5 ทำได้ที่ 1 ใน 5 ของราคา. Agent ที่กิน 100M input 20M output ต่อวัน savings หลักล้านต่อปี.
+
+Pattern ที่เห็นในตลาดคือ model tier compression — ช่องว่างระหว่าง frontier tier กับ mid tier แคบลงเรื่อย ๆ. Sonnet 5 vs Opus 4.8 ตอนนี้ต่างกันแค่หกคะแนน SWE-bench เมื่อ 12 เดือนก่อนต่างกันสิบห้าถึงยี่สิบคะแนน. Pattern เดียวกันในค่าย OpenAI กับ Google. Premium tier กำลังกลายเป็น edge case ไม่ใช่ default อีกแล้ว.
+
+สำหรับทีมที่สร้าง agent framework — re-benchmark ให้ทัน. ถ้ายัง default เป็น GPT-4o หรือ Sonnet 4.6, ต้อง run eval บน Sonnet 5 ให้เห็นตัวเลข quality cost curve ใหม่ ภายในสัปดาห์นี้. ฝั่ง business ที่ pilot agent ค้างเพราะ TCO ไม่ผ่าน — วันนี้ตัวเลขเปิดกลับมาน่ารันใหม่ทั้งหมด. คำเตือนเดียวคือ intro pricing หายหลังสิงหาคม ถ้า commit long-term contract ให้เจรจา rate lock ให้ทัน.
+
+เรื่องที่สาม.
+วันที่ยี่สิบเก้ามิถุนายน Oracle ประกาศ Fusion Agentic Applications สี่ตัวใหม่บน Fusion Cloud SCM — Inventory Planning Command Center, Supplier Qualification Workspace, Production Readiness Workspace, และ Kanban Administrative Workspace. Oracle เรียกทั้งชุดว่า coordinated teams of specialized AI agents ที่ proactive outcome-driven reasoning-based ไม่ใช่แค่ปุ่มถามคำถามแบบที่ SaaS อื่นชอบทำ.
+
+Inventory Planning Command Center เปลี่ยน inventory management จาก dashboard manual เป็น workflow ที่ agent ระบุ stockout risk ให้เอง. Supplier Qualification Workspace ตัด procurement onboarding จากสองถึงสี่สัปดาห์เหลือหลักชั่วโมง. Production Readiness ตรวจ error ก่อนเข้าไลน์. Kanban Admin monitor exception ทั้งโรงงาน.
+
+หัวใจของกลยุทธ์คือ AI Agent Studio for Fusion Applications — no-code environment ให้ลูกค้าและ SI partner build agent ของตัวเองบน stack Oracle โดย reuse Oracle agents, partner agents, external agents ผ่าน MCP. ตอนนี้ทุก vendor SaaS ยักษ์ทำแนวเดียวกันหมด — SAP Joule Studio, Salesforce Agentforce Studio, ServiceNow Skills, Microsoft Agent 365. Common playbook คือ package agent เป็น application ไม่ใช่ feature.
+
+SCM เป็น battleground แรกที่ agent value visible สุดเพราะ KPI มีชัด service level stockout cycle time, process เดิม friction สูงเพราะ Excel email phone call ระหว่าง planner supplier, และ event-driven — agent monitor ยี่สิบสี่ชั่วโมงได้จริง. Oracle รู้เลยเดินสาย SCM ก่อน finance ก่อน HR. ฝั่งธุรกิจไทยที่รัน Oracle Fusion — PTT SCG CPF TOA — คุยกับ Country Manager ให้ demo บน data ของตัวเอง ROI น่าจะเห็นใน 3-6 เดือนเพราะ structure data พร้อมอยู่แล้ว.
+
+เรื่องที่สี่.
+วันที่หนึ่งกรกฎาคม Extreme Networks เริ่ม rollout Agent ONE Coworker ไปยังทุกลูกค้า Platform ONE โดยไม่ต้อง opt-in ไม่ต้องซื้อ subscription เพิ่ม แค่เปิดปุ่มใน console เดิม. Coworker คือ tier แรกของ Agent ONE ที่บริษัทประกาศตอน Extreme Connect ต้นพฤษภาคม timeline คือ Q3 2026 วันนี้คือวันแรกของ Q3 พอดี.
+
+Coworker ไม่ใช่ chatbot — pitch คือ agent ที่ทำงาน alongside IT team ไม่รอ prompt. Feature หลักสี่กลุ่ม conversational access ไป network data, automated support workflow สร้าง case ตัด case จบเอง, real-time dashboard สร้าง view จาก live data, และ AI Wi-Fi optimization ผ่าน conversational control. จุดต่างจาก AIOps เดิมคือ Nudge — agent เสนอ action ก่อน user ถาม detect Wi-Fi congestion แล้ว nudge config change หรือเห็น POS ช้าซ้ำ ๆ ตอน peak แล้ว nudge traffic priority rule.
+
+Insight คือ infrastructure agent กลับกลายเป็น category ที่ deploy at scale ก่อน knowledge agent ทั้งที่คนคิดว่าจะรอดนาน — เพราะ telemetry structured อยู่แล้ว action well-defined risk observable. AIOps 2.0 กำลัง unfold Cisco Juniper HPE Extreme ทุกเจ้าปล่อย agent ผ่าน platform เดิม ไม่ขาย standalone.
+
+Pattern ที่ builder ต้องอ่าน — ship agent ไป install base กลายเป็น distribution default ในหลาย category. Salesforce ผ่าน Sales Cloud ServiceNow ผ่าน ITSM Oracle ผ่าน SCM Extreme ผ่าน Platform ONE. ไม่มี vendor ไหน pitch agent เป็น standalone แล้วเพราะ integration friction สูง customer ไม่อยาก manage login policy data mapping สำหรับ agent แยก. ฝั่งไทย retail chain hotel chain ที่ใช้ Extreme Wi-Fi 6E ทดสอบ Coworker ใน 1-2 สาขาก่อน expand ROI ที่ track ได้ทันทีคือ mean time to resolution ของ NetOps ticket.
+
+ทั้งหมดนี้คือ brief ของรอบนี้. ขอให้วันนี้เป็นวันที่ดีครับ. แล้วเจอกันรอบหน้า.
