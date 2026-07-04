@@ -1,0 +1,32 @@
+{
+  "date": "26-07-05-0608",
+  "iso_date": "2026-07-05T06:08:00+07:00",
+  "title": "Daily AI Brief — 26-07-05 06:08",
+  "items": [
+    {
+      "file": "26-07-05-0608-01-microsoft-frontier-2-5b-fde-arms-race.md",
+      "title": "Microsoft ตั้ง Frontier Company $2.5B + 6,000 engineers — hyperscaler ทุกเจ้าย้ายเข้าสมรภูมิเดียวกัน \"deploy = moat\"",
+      "order": 1
+    },
+    {
+      "file": "26-07-05-0608-02-salesforce-agentforce-360-aws-bedrock-marketplace.md",
+      "title": "Salesforce จับมือ AWS ปล่อย Agentforce 360 for AWS ขึ้น Marketplace — LLM traffic อยู่ใน Trust Boundary, จ่ายเข้า AWS invoice เดียว",
+      "order": 2
+    },
+    {
+      "file": "26-07-05-0608-03-levis-super-agent-microsoft-foundry-orchestration.md",
+      "title": "Levi's ปล่อย \"Super Agent\" บน Microsoft Foundry — Fortune 500 retailer รายแรกที่ ship orchestration layer ครอบ HR/SAP/Retail agents ในบ้าน",
+      "order": 3
+    },
+    {
+      "file": "26-07-05-0608-04-jamf-ai-governance-mac-shadow-ai-ga.md",
+      "title": "Jamf ปล่อย AI Governance for Mac เข้า GA — CISO ได้ shadow-AI radar ตัวแรกที่เห็น Claude Code / Codex บนเครื่องพนักงาน",
+      "order": 4
+    }
+  ],
+  "script_char_count": 5982,
+  "audio_file": "26-07-05-0608.mp3",
+  "voice": "th-TH-Chirp3-HD-Achernar",
+  "model": "google-cloud-tts-chirp3-hd",
+  "speed": 1.3
+}
