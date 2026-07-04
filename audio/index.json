@@ -1,7 +1,41 @@
 {
-  "generated_at": "2026-07-02T23:23:28Z",
-  "count": 39,
+  "generated_at": "2026-07-03T23:21:10Z",
+  "count": 40,
   "episodes": [
+    {
+      "date": "26-07-04-0609",
+      "iso_date": "2026-07-04T06:09:00+07:00",
+      "title": "Daily AI Brief — 26-07-04 06:09",
+      "description": "1. Cisco แจก AI Agent ให้พนักงาน 90,000 คน — แต่ CFO บอก \"ไม่เผา token ที่ frontier model\"\n2. Salesforce Agentforce Help Agent GA เดือนนี้ — คิดเงินเมื่อ agent \"ปิดจบ\" เท่านั้น $2/resolution\n3. SnapLogic MCP Builder เข้า GA — เปลี่ยน integration pipeline เก่าให้กลายเป็น MCP tool อัตโนมัติ\n4. Straiker ระดม $64M Series A — agentic security กลายเป็นหมวด infra ใหม่ที่ Fortune 500 ยอมจ่าย",
+      "items": [
+        {
+          "file": "26-07-04-0609-01-cisco-90k-employees-personal-agent-token-diet.md",
+          "title": "Cisco แจก AI Agent ให้พนักงาน 90,000 คน — แต่ CFO บอก \"ไม่เผา token ที่ frontier model\"",
+          "order": 1
+        },
+        {
+          "file": "26-07-04-0609-02-salesforce-agentforce-help-agent-two-dollar-resolution.md",
+          "title": "Salesforce Agentforce Help Agent GA เดือนนี้ — คิดเงินเมื่อ agent \"ปิดจบ\" เท่านั้น $2/resolution",
+          "order": 2
+        },
+        {
+          "file": "26-07-04-0609-03-snaplogic-mcp-builder-ga-integration-to-agent-tools.md",
+          "title": "SnapLogic MCP Builder เข้า GA — เปลี่ยน integration pipeline เก่าให้กลายเป็น MCP tool อัตโนมัติ",
+          "order": 3
+        },
+        {
+          "file": "26-07-04-0609-04-straiker-64m-agent-security-fortune-500-15x-revenue.md",
+          "title": "Straiker ระดม $64M Series A — agentic security กลายเป็นหมวด infra ใหม่ที่ Fortune 500 ยอมจ่าย",
+          "order": 4
+        }
+      ],
+      "audio_file": "26-07-04-0609.mp3",
+      "audio_size_bytes": 1162944,
+      "voice": "th-TH-Chirp3-HD-Achernar",
+      "model": "google-cloud-tts-chirp3-hd",
+      "speed": 1.3,
+      "script_char_count": 4370
+    },
     {
       "date": "26-07-03-0608",
       "iso_date": "2026-07-03T06:08:00+07:00",
