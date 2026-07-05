@@ -1,7 +1,41 @@
 {
-  "generated_at": "2026-07-04T23:26:49Z",
-  "count": 41,
+  "generated_at": "2026-07-05T23:23:27Z",
+  "count": 42,
   "episodes": [
+    {
+      "date": "26-07-06-0609",
+      "iso_date": "2026-07-06T06:09:00+07:00",
+      "title": "Daily AI Brief — 26-07-06 06:09",
+      "description": "1. Together AI ปิด $800M ที่ $8.3B — open-model inference กลายเป็น \"picks-and-shovels\" ของยุค agent scale\n2. Zoom ซื้อ Common Room — GTM AI-native ปิดรอบที่ 3 ใน 8 เดือน หลัง Clari-Salesloft และ Apollo-Pocus\n3. Profound Aim ปล่อย \"first background agent for marketing\" — supervisor pattern จาก Levi's Super Agent ลง vertical SaaS ใน 8 สัปดาห์\n4. Salesforce Agentforce Commerce ปิด GA พร้อม ChatGPT-native (ก.ค.) + Google AI Mode + Gemini — retailer ที่รัน Shopper Agent โต 59% เร็วกว่าคู่แข่ง",
+      "items": [
+        {
+          "file": "26-07-06-0609-01-together-ai-800m-open-inference-agent-economics.md",
+          "title": "Together AI ปิด $800M ที่ $8.3B — open-model inference กลายเป็น \"picks-and-shovels\" ของยุค agent scale",
+          "order": 1
+        },
+        {
+          "file": "26-07-06-0609-02-zoom-common-room-gtm-consolidation.md",
+          "title": "Zoom ซื้อ Common Room — GTM AI-native ปิดรอบที่ 3 ใน 8 เดือน หลัง Clari-Salesloft และ Apollo-Pocus",
+          "order": 2
+        },
+        {
+          "file": "26-07-06-0609-03-profound-aim-background-supervisor-vertical.md",
+          "title": "Profound Aim ปล่อย \"first background agent for marketing\" — supervisor pattern จาก Levi's Super Agent ลง vertical SaaS ใน 8 สัปดาห์",
+          "order": 3
+        },
+        {
+          "file": "26-07-06-0609-04-salesforce-agentforce-commerce-chatgpt-native.md",
+          "title": "Salesforce Agentforce Commerce ปิด GA พร้อม ChatGPT-native (ก.ค.) + Google AI Mode + Gemini — retailer ที่รัน Shopper Agent โต 59% เร็วกว่าคู่แข่ง",
+          "order": 4
+        }
+      ],
+      "audio_file": "26-07-06-0609.mp3",
+      "audio_size_bytes": 1708320,
+      "voice": "th-TH-Chirp3-HD-Achernar",
+      "model": "google-cloud-tts-chirp3-hd",
+      "speed": 1.3,
+      "script_char_count": 6494
+    },
     {
       "date": "26-07-05-0608",
       "iso_date": "2026-07-05T06:08:00+07:00",
