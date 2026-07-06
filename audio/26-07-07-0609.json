@@ -1,0 +1,32 @@
+{
+  "date": "26-07-07-0609",
+  "iso_date": "2026-07-07T06:09:00+07:00",
+  "title": "Daily AI Brief — 26-07-07 06:09",
+  "items": [
+    {
+      "file": "26-07-07-0609-01-china-doubao-qwen-agent-shutdown-anthropomorphic-law.md",
+      "title": "จีนสั่งปิด AI Agent ระดับชาติ — Doubao + Qwen dismantle persistent-memory companion วันที่ 15 ก.ค. ก่อนกฎหมาย \"Anthropomorphic AI\" มีผล",
+      "order": 1
+    },
+    {
+      "file": "26-07-07-0609-02-anthropic-claude-science-bionemo-pharma-vertical.md",
+      "title": "Anthropic ทำ agent เข้าห้องแล็บ — Claude Science + NVIDIA BioNeMo ต่อ 60 database + 18/20 top pharma, review 2 ปี → weeks",
+      "order": 2
+    },
+    {
+      "file": "26-07-07-0609-03-alibaba-token-hub-global-expansion-105-zones.md",
+      "title": "Alibaba Token Hub วางหมุดต่างประเทศ — 105 AZ, $53B, DC ใหม่ Japan/Malaysia/France/Mexico วันเดียวกับที่ Qwen agent ในบ้าน dismantle",
+      "order": 3
+    },
+    {
+      "file": "26-07-07-0609-04-un-geneva-white-house-ai-regulatory-grinder.md",
+      "title": "169 ประเทศ + White House + GPT-5.6 gate — regulatory grinder เริ่มบดวันนี้ที่เจนีวา, ตลาดโมเดลรุ่นล่าสุด waiting for permission",
+      "order": 4
+    }
+  ],
+  "script_char_count": 6181,
+  "audio_file": "26-07-07-0609.mp3",
+  "voice": "th-TH-Chirp3-HD-Achernar",
+  "model": "google-cloud-tts-chirp3-hd",
+  "speed": 1.3
+}
