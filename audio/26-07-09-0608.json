@@ -1,0 +1,32 @@
+{
+  "date": "26-07-09-0608",
+  "iso_date": "2026-07-09T06:08:00+07:00",
+  "title": "Daily AI Brief — 26-07-09 06:08",
+  "items": [
+    {
+      "file": "26-07-09-0608-01-bespoke-labs-40m-agent-training-environments.md",
+      "title": "Bespoke Labs ปิด $40M Series A — วางเดิมพันว่า \"moat ต่อไปของ agent ไม่ใช่โมเดล แต่คือสนามฝึก\"",
+      "order": 1
+    },
+    {
+      "file": "26-07-09-0608-02-openai-gpt56-ultra-mode-subagents-runtime.md",
+      "title": "OpenAI GPT-5.6 Ultra Mode ยก sub-agent จาก app layer → **runtime layer** — และเปลี่ยน economics ของ agentic default",
+      "order": 2
+    },
+    {
+      "file": "26-07-09-0608-03-salesforce-1b-switzerland-nation-state-agentic-ai.md",
+      "title": "Salesforce ทุ่ม $1B ให้สวิตเซอร์แลนด์ 5 ปี — pattern \"vendor-signs-with-nation-state\" กำลังกลายเป็น distribution channel ใหม่ของ agentic AI",
+      "order": 3
+    },
+    {
+      "file": "26-07-09-0608-04-anaplan-agentic-enterprise-cfo-bedrock-deterministic-planning.md",
+      "title": "Anaplan ปล่อย \"Agentic Enterprise\" — CFO agents บน Bedrock, deterministic planning, และ Fortune 1000 CFO 1 กลุ่มเป็น co-development partner",
+      "order": 4
+    }
+  ],
+  "script_char_count": 5060,
+  "audio_file": "26-07-09-0608.mp3",
+  "voice": "th-TH-Chirp3-HD-Achernar",
+  "model": "google-cloud-tts-chirp3-hd",
+  "speed": 1.3
+}
