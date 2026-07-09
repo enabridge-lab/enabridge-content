@@ -1,0 +1,32 @@
+{
+  "date": "26-07-10-0608",
+  "iso_date": "2026-07-10T06:08:00+07:00",
+  "title": "Daily AI Brief — 26-07-10 06:08",
+  "items": [
+    {
+      "file": "26-07-10-0608-01-mcp-2026-07-28-stateless-spec-enterprise-auth-ga.md",
+      "title": "MCP 2026-07-28 กำลังจะออก — Stateless HTTP + Enterprise Auth GA = agent protocol โตขึ้นเป็น enterprise-grade แล้ว",
+      "order": 1
+    },
+    {
+      "file": "26-07-10-0608-02-anthropic-claude-cowork-mobile-web-cloud-background.md",
+      "title": "Anthropic ยก Claude Cowork ขึ้น mobile + web พร้อม cloud background — agent เปลี่ยนจาก \"app ที่เปิดไว้\" เป็น \"coworker ที่ทำงานเงียบ ๆ แล้วส่ง notification\"",
+      "order": 2
+    },
+    {
+      "file": "26-07-10-0608-03-8090-135m-chamath-enterprise-coding-agent-salesforce-ventures.md",
+      "title": "Chamath ปิด $135M Series A ให้ 8090 + นั่ง CEO เอง — Salesforce Ventures ลากขบวน bet \"enterprise coding agent สำหรับตลาด regulated\"",
+      "order": 3
+    },
+    {
+      "file": "26-07-10-0608-04-openai-gpt-5-6-sol-terra-luna-live-agentic-tier.md",
+      "title": "OpenAI ปล่อย GPT-5.6 Sol/Terra/Luna + GPT-Live วันนี้ (9 ก.ค.) — model tier แยกตาม agentic use case ชัดเจน, GitHub Copilot รับ day-1",
+      "order": 4
+    }
+  ],
+  "script_char_count": 6053,
+  "audio_file": "26-07-10-0608.mp3",
+  "voice": "th-TH-Chirp3-HD-Achernar",
+  "model": "google-cloud-tts-chirp3-hd",
+  "speed": 1.3
+}
