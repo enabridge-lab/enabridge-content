@@ -1,0 +1,32 @@
+สวัสดีครับ นี่คือ Enabridge AI Brief รอบ 12 July 2026 เวลา 06:08 ครับ.
+รอบนี้มี 4 เรื่อง เน้น Agentic AI, business use case, และ trend ที่เอามาใช้กับ OpenBridge ได้.
+
+เรื่องแรก.
+7 กรกฎาคมที่ผ่านมา Peraton ซึ่งเป็น defense contractor รายใหญ่ ประมาณ 9 พันล้านดอลลาร์ต่อปี พนักงาน 22,000 คน เปิดตัว Peraton[x] แพลตฟอร์ม agentic AI ตัวแรกที่เคลมว่าออกแบบมาเพื่อ mission-critical operations ของรัฐบาลกลางสหรัฐโดยเฉพาะ จุดขายคือ deploy ได้ในหลักชั่วโมง ไม่ใช่หลักเดือน แล้ว programming ด้วย plain English เจ้าหน้าที่ที่ไม่ใช่ developer ก็สั่ง agent ให้ทำ workflow ได้ ทั้งหมดผ่าน FedRAMP Moderate, Zero Trust, และมี traceability ที่ทุก output link กลับไป source material ได้
+
+pattern นี้ตรงกับที่เราตามอยู่ — model layer commoditize แล้ว สนามรบต่อไปคือ deployment กับ control layer และ federal market มีกติกาเฉพาะที่ hyperscaler เข้าตรงยาก Peraton จึง position ตัวเองเป็น prime contractor ที่ห่อ frontier model ไว้ใต้ platform ที่ compliant พร้อมส่งวิศวกร 22,000 คนเข้าไป customize ให้แต่ละ agency
+
+สำหรับ builder ที่อยากขายเข้ารัฐ กติกาต่างจาก commercial ต้องคิด traceability กับ compliance boundary ตั้งแต่ต้น ไม่ใช่ retrofit สำหรับ enterprise commercial สัญญาณคือถ้า vendor ยัง demand setup หลายสัปดาห์ กับทีม data scientist แสดงว่า underestimate ความเร็วของตลาด และสำหรับ SI ในตลาดเดียวกันอย่าง Booz Allen, Leidos, SAIC ต้องรีบมี play ตอบภายในไตรมาสนี้ ไม่งั้น Peraton จะ set standard ให้ก่อน.
+
+เรื่องที่สอง.
+3 กรกฎาคมที่ผ่านมา Arcade ประกาศว่า enterprise ติดตั้ง agent authorization runtime ของเขาได้ผ่าน Microsoft Azure Marketplace กับ AWS Marketplace แบบ 1-click แล้ว จุดที่สำคัญไม่ใช่แค่ tech แต่คือ procurement เพราะ enterprise ส่วนใหญ่มี cloud commitment ที่ต้องเผาให้หมด ซื้อผ่าน marketplace เท่ากับแปลง commit เป็น software spend ทันที ไม่ต้องเริ่ม vendor onboarding ใหม่ ตัด time-to-deploy จากไตรมาสเป็นสัปดาห์
+
+Forbes เพิ่งเขียน 5 กรกฎาคมว่า agent gateway กำลังกลายเป็น control plane ของ enterprise AI — เป็นหมวดเดียวกับที่ Nutanix กับ Manufact กำลังลง และเดือนมิถุนายน startup ในกลุ่มนี้ระดมทุนรวมประมาณ 98 ล้านดอลลาร์แล้ว ตัว value prop ของ Arcade คือ decouple authorization ออกจาก live session — background agent ทำงานภายใต้ delegated user authority ที่ re-check ทุก action ไม่ใช่แค่ตอน login
+
+pattern ที่เห็นชัดคือ agent infrastructure จะ consolidate ผ่าน marketplace ใน 6-12 เดือนข้างหน้า และ procurement friction จะกลายเป็น moat สำคัญกว่า tech ถ้าคุณกำลังสร้าง agent runtime อยู่ ต้อง priority list marketplace และมี BYO cloud model ตั้งแต่วันแรก และถ้าคุณเป็นคน deploy agent ในองค์กร ถามคำถามให้ vendor ว่า auth ของ agent ทำงานยังไง audit ได้ไหม re-check ทุก tool call ไหม ถ้าตอบไม่ได้ ให้เพิ่ม gateway layer ก่อน scale.
+
+เรื่องที่สาม.
+8 กรกฎาคมที่ผ่านมา Quiq เปิดตัว Verified Intelligence เป็น control layer 3 ชั้นสำหรับ agentic AI ในหน้า customer experience ชั้นแรกเป็น guardrails ที่มี Verify Claim ไปเช็คคำตอบกับ source ก่อนส่งลูกค้า และมี Process Guides ให้ team encode brand standard ลงใน behavior ของ AI โดยไม่ต้องเขียนโค้ด ชั้นสองเป็น simulation ที่รัน multi-turn conversation หลายร้อย session ก่อน customer เจอ AI จริง ชั้นสามเป็น visibility ที่ทุก decision ของ AI มี reasoning ที่ audit ได้
+
+จุดที่น่าสังเกตคือเรื่องนี้เข้า pattern เดียวกับ Peraton[x] กับ Arcade ที่เราคุยไปก่อนหน้า สัปดาห์นี้ทั้งสัปดาห์คือเรื่อง control plane สำหรับ agent Peraton ตี federal Arcade ตี developer และ Quiq ตี customer experience ซึ่งเป็นจุดที่ brand damage เกิดเร็วที่สุด Air Canada เคสที่โดนศาลตัดสินเพราะ chatbot ให้ข้อมูลผิดยังเป็น cautionary tale ที่ทุก brand อ้าง
+
+signal ที่ชัดคือ pre-production simulation กำลังกลายเป็น requirement ไม่ใช่ nice-to-have เมื่อ Patronus ระดม 50 ล้านเพื่อ simulate ทั้งโลก และ Gemini Enterprise มี Agent Simulation เป็น first-class component pattern ชัดว่า agent จะไม่ ship ตรงเข้า production อีกต่อไป ถ้าคุณมี chatbot อยู่แล้ว ประเมิน 3 คำถาม test multi-turn ได้ไหม verify claim ก่อนส่งลูกค้าไหม audit trail มีไหม ถ้าตอบ no หลายข้อ คุณกำลังเดินเข้า brand risk.
+
+เรื่องที่สี่.
+8 กรกฎาคมที่ผ่านมา HTEC บริษัท global engineering services เปิดตัว OneLoopAi และประกาศตั้ง category ใหม่ชื่อ AI value orchestration ตัวมันเชื่อม 3 สิ่งเข้าด้วยกัน AI usage ใครใช้ tool ไหน delivery execution วัดผ่าน DORA metrics และ business value ที่ผูกกับ KPI องค์กร ทั้งหมดเข้ามาเป็น loop ต่อเนื่องในหน้าจอเดียว integrate กับ Jira GitHub GitLab Azure DevOps และ Bitbucket ตรง ๆ
+
+positioning ค่อนข้างกล้า HTEC บอกว่านี่ไม่ใช่ agent framework ไม่ใช่ observability ไม่ใช่ FinOps แต่เป็น layer ที่ตอบคำถามที่ CFO ถามทุกไตรมาสว่าเราจ่ายเงิน AI ไปเท่านั้น ได้อะไรกลับมา และคำที่ HTEC ใช้แทน ROI คือ VROI คือ Value Realized on Investment เป็น signal ชัดว่ากำลังโจมตี CFO ที่ต้องตอบ board
+
+ทั้งอุตสาหกรรมพูดถึง AI ROI แต่ไม่มี tool มาตรฐานที่ CFO เชื่อได้ Databricks Forrester Deloitte ทำ survey ได้ตัวเลข 171 ถึง 540 เปอร์เซ็นต์ แต่ตัวเลขระดับองค์กรตัวเอง team ต้องประกอบเองจาก Excel Tableau Jira export คู่แข่งของ HTEC ที่จะโผล่ในไตรมาสหน้าคือ LinearB Faros Jellyfish ที่มี distribution เหนือกว่า ตลาดจะเลือกใครขึ้นกับว่าองค์กรอยากได้ tool หรืออยากได้ turnkey outcome ถ้าคุณ deploy AI coding tool อยู่แล้วแต่ยังไม่มี AI adoption กับ DORA metrics เชื่อมกัน คุยกับ CFO ไม่รู้เรื่องแน่ ๆ เตรียมโดนตัดงบเมื่อ macro เปลี่ยน.
+
+ทั้งหมดนี้คือ brief ของรอบนี้. ขอให้วันนี้เป็นวันที่ดีครับ. แล้วเจอกันรอบหน้า.
