@@ -1,7 +1,41 @@
 {
-  "generated_at": "2026-07-04T23:26:49Z",
-  "count": 41,
+  "generated_at": "2026-07-11T23:20:47Z",
+  "count": 42,
   "episodes": [
+    {
+      "date": "26-07-12-0608",
+      "iso_date": "2026-07-12T06:08:00+07:00",
+      "title": "Daily AI Brief — 26-07-12 06:08",
+      "description": "1. Peraton เปิด Peraton[x] — agentic AI platform ของรัฐบาลกลางที่ programming ด้วยภาษาอังกฤษธรรมดา, deploy ใน \"ชั่วโมง ไม่ใช่เดือน\"\n2. Arcade ยิง agent authorization runtime ขึ้น Azure + AWS Marketplace — \"agent gateway\" กลายเป็น control plane ใหม่ของ enterprise AI\n3. Quiq เปิดตัว Verified Intelligence — control layer 3 ชั้นก่อน agent เจอลูกค้าจริง\n4. HTEC เปิด OneLoopAi สร้างหมวดใหม่ชื่อ \"AI value orchestration\" — เชื่อม DORA metrics กับ VROI loop ในหน้าจอเดียว",
+      "items": [
+        {
+          "file": "26-07-12-0608-01-peraton-x-federal-agentic-platform-plain-english.md",
+          "title": "Peraton เปิด Peraton[x] — agentic AI platform ของรัฐบาลกลางที่ programming ด้วยภาษาอังกฤษธรรมดา, deploy ใน \"ชั่วโมง ไม่ใช่เดือน\"",
+          "order": 1
+        },
+        {
+          "file": "26-07-12-0608-02-arcade-agent-gateway-azure-aws-marketplace.md",
+          "title": "Arcade ยิง agent authorization runtime ขึ้น Azure + AWS Marketplace — \"agent gateway\" กลายเป็น control plane ใหม่ของ enterprise AI",
+          "order": 2
+        },
+        {
+          "file": "26-07-12-0608-03-quiq-verified-intelligence-guardrails-simulations.md",
+          "title": "Quiq เปิดตัว Verified Intelligence — control layer 3 ชั้นก่อน agent เจอลูกค้าจริง",
+          "order": 3
+        },
+        {
+          "file": "26-07-12-0608-04-htec-oneloopai-value-orchestration-dora.md",
+          "title": "HTEC เปิด OneLoopAi สร้างหมวดใหม่ชื่อ \"AI value orchestration\" — เชื่อม DORA metrics กับ VROI loop ในหน้าจอเดียว",
+          "order": 4
+        }
+      ],
+      "audio_file": "26-07-12-0608.mp3",
+      "audio_size_bytes": 1377792,
+      "voice": "th-TH-Chirp3-HD-Achernar",
+      "model": "google-cloud-tts-chirp3-hd",
+      "speed": 1.3,
+      "script_char_count": 5216
+    },
     {
       "date": "26-07-05-0608",
       "iso_date": "2026-07-05T06:08:00+07:00",
