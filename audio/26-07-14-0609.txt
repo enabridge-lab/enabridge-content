@@ -1,0 +1,40 @@
+สวัสดีครับ นี่คือ Enabridge AI Brief รอบ 14 July 2026 เวลา 06:09 ครับ.
+รอบนี้มี 4 เรื่อง เน้น Agentic AI, business use case, และ trend ที่เอามาใช้กับ OpenBridge ได้.
+
+เรื่องแรก.
+วันที่ 1 กรกฎาคมที่ผ่านมา Fortune ตี exclusive กับ Mark Patterson CFO ของ Cisco เขาบอกว่าเมื่อปีการเงินใหม่ของ Cisco เริ่มปลายเดือนกรกฎาคม พนักงานทุกคนของ Cisco เก้าหมื่นคนจะได้รับ AI agent ประจำตัว นี่เป็น largest known internal agent rollout ของ Fortune 100 ที่มีตัวเลข deployment ชัดเจน
+
+จุดที่ทำให้ deployment นี้เป็น blueprint คือเรื่อง cost engineering Patterson บอกตรง ๆ ว่า Cisco จะไม่ default ไป frontier model สำหรับทุก task ระบบมี routing layer ที่ตัดสินใจว่า task นี้ควรวิ่งบน cheap model mid tier หรือ frontier — route แบบ dynamic infrastructure ส่วนใหญ่รันบน on premises ของ Cisco เอง ทั้งเพื่อ cost economy of scale และเพื่อ data control ที่ finance กับ legal team อยากได้ ในทีม finance ของ Patterson เอง AI ผลิต first draft ของ MD&A section แปดสิบถึงเก้าสิบเปอร์เซ็นต์ในเอกสาร public filing ไปแล้ว ทีมกำลัง build CFO cockpit เป็น dashboard ที่ synthesize performance data กับ forecast
+
+context ที่ทำให้เรื่องนี้ไม่ใช่แค่ productivity story คือ Cisco ประกาศ layoff สี่พันตำแหน่งในเดือนเดียวกัน UC Today กับ CXM ตี frame ว่าเป็น biggest trust test ของ enterprise AI จะรัน agent เข้ามาแทน function ที่คนเพิ่งถูกปลดหรือเปล่า พนักงานที่รอดมาจะ trust agent แค่ไหน
+
+signal สำหรับ market model routing กลายเป็น first class infrastructure primitive แล้ว ไม่ใช่ optimization ทีหลัง สำหรับ builder ที่ทำ framework agent runtime ต้องมี built in router สำหรับ business ที่จะ deploy ให้ถาม vendor สามข้อ multi model routing on prem option cost attribution granular ระดับ user ถ้าไม่ครบ product นั้นยังเป็น 2025 product สำหรับ enterprise ไทยที่กำลังพิจารณา agent มี window ราวหกเดือนก่อนที่ playbook Cisco จะกลายเป็น expected baseline ทีม CFO ควรเริ่ม inventory task ที่ AI ทำ first draft ได้เป็น pilot ก่อน.
+
+เรื่องที่สอง.
+วันที่ 7 กรกฎาคม CISA เพิ่ม CVE 2026 55255 ใน Langflow เข้า Known Exploited Vulnerabilities catalog สั่ง federal civilian agencies ต้อง mitigate ภายในสามวัน นี่คือ AI agent building platform ตัวแรกที่ขึ้น KEV เดิม catalog มีแต่ classic infrastructure อย่าง Fortinet Ivanti Microsoft Exchange Cisco IOS moment นี้เหมือน HeartBleed สำหรับ agent platform บอกว่า agent tooling เพิ่งข้ามเข้าสู่ระดับ critical infrastructure
+
+ช่องโหว่จริง ๆ เรียบง่ายกว่าที่คิด endpoint api v1 responses รับ flow ID จาก client แล้ว execute โดยไม่ verify ownership authenticated user คนไหนก็ส่ง flow ID ของ user อื่นเข้ามาแล้ว trigger execution ได้เต็ม flow นั้น รวมถึง flow ที่มี LLM API key AWS credential ฝังอยู่ Sysdig จับ threat actor ที่ scan exploit และ steal secret จริง ๆ แล้ว fix อยู่ใน Langflow 1.9.2 เพิ่มเช็ค user id เทียบ session
+
+ประเด็นที่ใหญ่กว่าคือ agent framework adoption เร็วเกินกว่า security posture ของมัน Langflow Flowise LangChain LlamaIndex Dify AutoGPT grow จาก hackathon tool เป็น production infrastructure ในเวลาต่ำกว่า 24 เดือน CVE นี้ไม่ใช่ zero day sophisticated เป็น IDOR classic ที่ web dev รู้ตั้งแต่สิบปีที่แล้ว แต่ agent framework assume ทุก authenticated user คือเจ้าของ resource คาดว่าอีกหกเดือนจะเจอ CVE ทำนองนี้อีก 3 ถึง 5 ตัว
+
+สำหรับทีม builder audit code base ทันที IDOR pattern ที่ Langflow เจอน่าจะมีอยู่ในทุก framework multi tenant สำหรับ business ที่ใช้ Langflow อยู่ inventory instance ที่ exposed บน internet upgrade เป็น 1.9.2 rotate LLM key และ cloud credential ทั้งหมดที่ผ่าน flow ในหกเดือนที่ผ่านมา สำหรับ ecosystem security vendor เพิ่งได้ wedge product ใหม่ agent framework security scanner จะเป็น category ใหม่ในไตรมาสหน้า.
+
+เรื่องที่สาม.
+วันที่ 6 กรกฎาคม Microsoft ประกาศครั้งใหญ่ Dataverse coding agent plugin ที่เดิมทำงานเฉพาะกับ GitHub Copilot ตอนนี้ available บน Claude และ Cursor ด้วย ครั้งแรกที่ enterprise data platform ของ Microsoft เปิดให้ agent จากคู่แข่งใช้เป็น first class citizen ผ่าน MCP standard ไม่ใช่แค่ Copilot ecosystem ของตัวเอง
+
+Plugin ให้ agent ค่ายไหนก็ได้ทำสามอย่าง discover data model และ business rule ผ่าน natural language query mutate data ตาม existing RBAC generate code Power Fx และ plugin กลับ Dataverse ทั้งหมดเปิดเป็น open source skill architecture ในระดับ ecosystem Microsoft ship 60 กว่า MCP server สำเร็จรูป เปิด certification pathway ผ่าน Partner Center และมี Bring Your Own MCP flow ที่ admin approve และ audit ได้ครบ
+
+Move นี้เป็น pivot สำคัญ Microsoft เลิก bet ว่า Copilot จะเป็น agent runtime เดียว หันไป bet ว่า data กับ governance layer ของ Microsoft จะเป็น underlying ที่ทุก agent วิ่งผ่าน เป็นเกม infrastructure economics แบบเดียวกับที่ AWS ทำกับ S3 ในยุค 2015 timing ตรงกับ MCP 2026 07 28 spec ที่ ship 28 กรกฎาคม เป็น one two punch ที่ยึด reference implementation ให้ enterprise ทั้งวงการ
+
+signal ระยะยาว agent ไม่ใช่ product agent เป็น interchangeable layer coding agent market เข้าสู่ commodity phase เร็วกว่าที่คาด สำหรับ builder Thai ที่ทำ vertical SaaS ให้พิจารณา publish MCP server ผ่าน Partner Center ก่อนสิ้นปีจะได้ default position ที่ enterprise ที่ใช้ Copilot Studio อยู่แล้ว สำหรับ business ก่อนต่อ contract Copilot Studio ปีหน้า ให้ตรวจว่า Claude Cursor ChatGPT ที่ team ใช้จริง เชื่อม Dataverse ได้ผ่านช่องไหน สำหรับ ecosystem Snowflake Databricks Salesforce Data Cloud ต้องตอบภายในไตรมาสไม่งั้นเสีย positioning.
+
+เรื่องที่สี่.
+Salesforce ประกาศ Agentforce Help Agent เข้า GA เดือนกรกฎาคม 2026 พร้อม pricing model ใหม่ที่เรียกว่า pay per resolution สองดอลลาร์ต่อการปิด case แบบ autonomous ตั้งแต่ต้นจนจบ ถ้าลูกค้าขอคุยกับคนหรือเดินออกไม่พอใจ ไม่คิดเงิน ศูนย์ดอลลาร์ Product deploy ได้ในไม่กี่นาที ทำงานข้าม voice web portal messaging ในตัว มี library of actions พร้อมใช้ case management appointment order management account management
+
+ตัวเลขที่ต้องรู้ Agentforce ARR ทะลุ 1.2 พันล้านดอลลาร์ในไตรมาส Q1 FY27 โต 205 เปอร์เซ็นต์ปีต่อปี แต่ analyst จับจ้องว่า น้อยกว่า 10 เปอร์เซ็นต์ของลูกค้า Salesforce สามารถ scale Agentforce ผ่าน pilot ไปสู่ production ได้ deployment time เฉลี่ยห้าถึงสิบเอ็ดเดือน ลูกค้า enterprise เริ่มถามว่าจ่าย seat license ต่อเดือนตอน pilot ล้มเหลว เท่ากับจ่ายให้ Salesforce test product move ครั้งนี้ break rule ที่ Salesforce ถือมา 25 ปีคือ seat based license
+
+Pattern ที่ crystalize คือ enterprise agent economics ไม่ compatible กับ SaaS seat licensing เมื่อ agent ทำงาน 24 ชั่วโมง ไม่มี concept ของ log in output per hour swing ตาม task type การขาย license per seat กลายเป็น misaligned incentive ทันที Salesforce เพิ่งยอมรับว่า pricing model เก่าเป็นเหตุผลหลักที่ scale ไม่ผ่านและ commit ต่อ outcome first economics
+
+สำหรับ builder ที่ทำ agent product ต้อง revisit pricing ทันที ทำสามอย่าง instrument success signal per task ออก hybrid tier ให้ลูกค้าเลือก build cost model break even ที่ high volume outcome flow สำหรับ business ที่จะซื้อ agent ก่อน sign contract ใหม่ run pilot Help Agent ก่อนเพราะ economics ชัดไม่มี floor ต่อรอง vendor อื่นด้วย benchmark สองดอลลาร์ต่อ resolution สำหรับ CCaaS vendor เจอ threat ตรง ต้องเร่งจับ AI agent เข้า core product หรือกลายเป็น dumb pipe.
+
+ทั้งหมดนี้คือ brief ของรอบนี้. ขอให้วันนี้เป็นวันที่ดีครับ. แล้วเจอกันรอบหน้า.

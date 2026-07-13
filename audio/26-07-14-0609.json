@@ -1,0 +1,32 @@
+{
+  "date": "26-07-14-0609",
+  "iso_date": "2026-07-14T06:09:00+07:00",
+  "title": "Daily AI Brief — 26-07-14 06:09",
+  "items": [
+    {
+      "file": "26-07-14-0609-01-cisco-90k-personal-agent-model-routing-onprem.md",
+      "title": "Cisco แจก personal AI agent ให้ 90,000 พนักงานสิ้นเดือน ก.ค. — model routing + on-prem เป็น blueprint ของ enterprise agent ที่ scale จริง",
+      "order": 1
+    },
+    {
+      "file": "26-07-14-0609-02-langflow-cve-cisa-kev-first-ai-agent-platform.md",
+      "title": "Langflow ขึ้น CISA KEV เป็น AI agent platform เจ้าแรก — protocol adoption เร็ว, security ไล่ตามไม่ทัน",
+      "order": 2
+    },
+    {
+      "file": "26-07-14-0609-03-microsoft-dataverse-coding-agent-plugin-claude-cursor-mcp.md",
+      "title": "Microsoft เปิด Dataverse plugin ให้ Claude + Cursor + Copilot ใช้ผ่าน MCP — เดิมพัน \"one data platform, any agent\"",
+      "order": 3
+    },
+    {
+      "file": "26-07-14-0609-04-salesforce-help-agent-pay-per-resolution-2-dollar.md",
+      "title": "Salesforce ship Agentforce Help Agent GA — $2 ต่อ resolution เท่านั้น, แก้ปัญหาที่ <10% ของลูกค้า scale ผ่าน pilot",
+      "order": 4
+    }
+  ],
+  "script_char_count": 6983,
+  "audio_file": "26-07-14-0609.mp3",
+  "voice": "th-TH-Chirp3-HD-Achernar",
+  "model": "google-cloud-tts-chirp3-hd",
+  "speed": 1.3
+}
