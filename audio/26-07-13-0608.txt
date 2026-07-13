@@ -1,0 +1,38 @@
+สวัสดีครับ นี่คือ Enabridge AI Brief รอบ 13 July 2026 เวลา 06:08 ครับ.
+รอบนี้มี 4 เรื่อง เน้น Agentic AI, business use case, และ trend ที่เอามาใช้กับ OpenBridge ได้.
+
+เรื่องแรก.
+Model Context Protocol กำลังจะ ship spec version ใหม่ วันที่ 28 กรกฎาคมนี้ ทีม Anthropic บอกเองว่านี่คือ revision ที่ใหญ่ที่สุดตั้งแต่เปิดตัว protocol มา สาระหลักมีสามเรื่อง หนึ่ง protocol เปลี่ยนเป็น stateless — server ไม่ต้องเก็บ session state อีกต่อไป client cache tools list ได้ตาม TTL ที่ server กำหนด รัน remote MCP server หลัง round-robin load balancer ธรรมดาได้เลย สอง auth เปลี่ยนใหญ่ — align กับ OAuth 2.1 กับ OpenID Connect โดย token ที่ขอสำหรับ server หนึ่ง เอาไป replay กับ server อื่นไม่ได้ enforce ที่ protocol level และ Enterprise Managed Authorization extension เพิ่งขึ้น stable ให้ CIO route MCP access ผ่าน identity provider กลางได้ สาม เปิด extensions framework แบบ reverse DNS identifier แยก repo แยก maintainer จาก core spec
+
+เหตุผลที่เรื่องนี้สำคัญคือ MCP ผ่าน critical mass ไปแล้ว 78 percent ของ enterprise AI team รัน MCP agent ใน production 28 percent ของ Fortune 500 รัน server เอง SDK download 97 ล้านต่อเดือน แต่ spec เก่ายังไม่ผ่าน security review ของ CISO เพราะ session state กับ auth ไม่ครบ 2026 dash 07 dash 28 คือ threshold ที่ MCP ข้ามจาก dev toy เป็น protocol ที่ CIO เซ็นได้
+
+สำหรับ builder ที่รัน MCP อยู่ ต้องจัดสรร sprint หน้าให้ migration session state ต้อง externalize tools list ต้อง idempotent auth flow ต้องรองรับ Enterprise Managed Authorization ถ้าเป็น enterprise ที่ใช้ agent อยู่ ให้ถาม vendor ว่า migrate ไป spec ใหม่หรือยังก่อนเซ็น procurement รอบต่อไป และสำหรับ ecosystem gateway vendor กับ identity provider เพิ่ง get moat จาก protocol โดยตรง — ต่อจากนี้ enterprise MCP traffic ที่ไม่ผ่านสองชั้นนี้จะดูเป็น anomaly ทันที.
+
+เรื่องที่สอง.
+1 กรกฎาคมที่ผ่านมา Together AI ปิด Series C 800 ล้านดอลลาร์ที่ post-money valuation 8 point 3 พันล้านดอลลาร์ เพิ่มขึ้นมากกว่า 2 เท่าจากรอบก่อน round นี้ Aramco Ventures นำ ตามด้วย NVIDIA Vista Equity General Catalyst Emergence Pegatron และ SentinelOne S Ventures ตัวเลขที่บริษัทเปิดคือ annual bookings ทะลุ 1 พันล้านใน Q2 และ usage ของ open-source model บน platform โต 3 เท่าใน 12 เดือน
+
+Together จะใช้เงินก้อนนี้ scale capacity ประมาณ 50 เท่าใน 5 ปีข้างหน้า สัญญาณว่ามอง demand growth เป็น step function ไม่ใช่ linear — เพราะ agent workload เข้ามาแบบ multi-step long context high throughput cost per output token กลายเป็นตัวชี้ขาดมากกว่า benchmark score
+
+pattern ที่เห็นคือ money แบ่งเป็นสองฝั่ง OpenAI Deployment Co 10 พันล้าน Anthropic 50 พันล้าน Microsoft Frontier Company 2 point 5 พันล้าน คือ commercial fund ให้ hyperscaler กับ frontier lab แต่ Together 800 ล้าน Cerebras Groq SambaNova กับ neocloud ที่ Middle East หนุนคือฝั่ง picks and shovels เมื่อ closed model economics เริ่มแตกจาก DeepSeek Llama open weight เข้าใกล้ frontier — ต้นทุน inference commoditize เร็วกว่า model quality gap ตามทัน
+
+สำหรับ builder ที่ทำ agent อยู่ ถ้า round trip ไป frontier API สำหรับทุก tool call cost model จะพังเมื่อ scale hybrid routing ระหว่าง open-source neocloud กับ frontier API ประหยัดได้ 5 ถึง 10 เท่าในหลาย workload สำหรับ business ที่ใช้ vendor agent platform ถามได้เลยว่ามี open-source routing option ไหม เพราะเมื่อ closed API ขึ้นราคาคุณจะเป็นคนรับ ecosystem ที่ต้องปรับคือ hyperscaler ที่พึ่ง single source cluster เพราะ neocloud footprint ที่กระจายไป Gulf India Southeast Asia จะกลายเป็น distribution advantage ในหลาย compliance context.
+
+เรื่องที่สาม.
+9 กรกฎาคมที่ผ่านมา Citrix เปิด NetScaler MCP Gateway control plane เดียวสำหรับ route authenticate monitor และ rate limit agent traffic ที่วิ่งไปหา backend MCP server ทั้งหมด ทำเป็น bundled feature ของ NetScaler platform เดิม จุดที่คมคือ pricing — สำหรับลูกค้า Citrix Platform License หรือ Universal Hybrid Multi Cloud MCP Gateway มาฟรี ไม่มีค่าใช้จ่ายเพิ่ม unlimited instance unlimited bandwidth แปลว่าองค์กรที่ deploy NetScaler อยู่แล้วเปิดใช้งานได้เลยไม่ต้อง sign PO ใหม่
+
+pattern ที่กำลังก่อตัวใน agent gateway ตอนนี้แบ่งเป็นสาม layer หนึ่ง hyperscaler native gateway ของ Azure AWS Google ที่ tie กับ cloud ตัวเอง สอง incumbent networking gateway ของ Citrix F5 Cisco Palo Alto ที่ยัดลง license เดิม สาม agent native gateway startup อย่าง Arcade Portkey Kong AI Gateway ที่มี depth เฉพาะ agent — layer สามต้องรีบ prove value ไม่งั้นจะโดน commoditize ในรอบ 12 ถึง 18 เดือน
+
+พ่วงกับข่าวนี้ Citrix เปิด Claude Code private tech preview ให้ NetScaler AI Gateway ทำหน้าที่เป็น LLM gateway หน้า Claude Code เพื่อให้ dev enterprise เรียกใช้ Anthropic model ผ่าน service provider ได้ under single control point อ่านอีกด้านคือ Anthropic ใช้ Citrix เป็น channel เข้าองค์กรที่ IT ห้าม direct SaaS API call
+
+สำหรับ builder ที่ทำ gateway product ต้อง differentiate เชิง depth agent specific policy prompt guardrails cost attribution สำหรับ business ที่จ่าย Citrix License อยู่แล้วให้ตรวจว่า MCP Gateway มาให้ฟรีก่อน sign PO ไปหา startup รอบใหม่ ปีนี้อาจมี hidden bundling หลายเจ้า ecosystem ที่ต้องปรับคือ agent gateway startup — position เป็น complement ไม่ใช่ replacement หรือยิงไป vertical regulated ที่ incumbent ยังตามไม่ทันจะรอด.
+
+เรื่องที่สี่.
+1 กรกฎาคมที่ผ่านมา Gartner ปล่อย forecast ตัวเลข 234 พันล้านดอลลาร์ของ enterprise application software spend at risk จากสิ่งที่เขาเรียกว่า agentic arbitrage ภายในปี 2030 คิดเป็นประมาณ 20 เปอร์เซ็นต์ของ SaaS spend ทั้งตลาด definition ของ agentic arbitrage คือ agent complete task ข้ามหลาย system โดยตรง ผู้ใช้ไม่ต้องเข้า UI ของ SaaS แต่ละตัว ผลคือ link ระหว่าง user growth กับ revenue growth ของ vendor UI heavy หลุด
+
+George Brocklehurst Managing VP ที่ Gartner ใช้คำว่า agentic AI changes the economics of software เพราะ agentic system deliver outcome โดยตรง SaaS pricing ที่คิดต่อ seat ต่อ session จะ decouple จาก value winner ตาม Gartner คือ AI native startup กับ service provider ที่ position เป็น agentic layer และจะกินไม่ใช่แค่ spend เดิม แต่ incremental budget ที่ ROI ใหม่ปลดล็อก
+
+report นี้จะทำให้ CIO ต้องประชุมด่วนสามเหตุผล ตัวเลข analyst brand เอาลง board deck ได้ คำ agentic arbitrage จะกลายเป็น shorthand ใน quarterly review และ timing ตรงกับ budget planning ครึ่งหลังของปี procurement จะเริ่มถาม vendor ทุก SaaS ว่า agent story คืออะไรก่อน renewal Salesforce ServiceNow Workday SAP ที่มี Agentforce Now Assist Illuminate Joule จะผ่าน filter ง่ายกว่า
+
+สำหรับ builder pricing ต่อ seat ต่อ session ต่อ token ต้องย้ายไปเป็น outcome based ต่อ ticket resolved ต่อ deal closed ต่อ document processed instrumentation ที่วัด outcome คือ moat สำหรับ business ใช้ report นี้เป็น mandate ใน budget cycle audit SaaS ทุกตัวว่า agentic layer คืออะไร มี MCP ไหม vendor ที่ตอบไม่ได้ ตัด renewal หรือลด commitment เหลือ 12 เดือน ecosystem ที่ได้ role ใหญ่ขึ้นคือ SI อย่าง Accenture Deloitte EY TCS Infosys ที่ redirect budget flow จริง ส่วน SaaS incumbent ต้องเลือกเปิด API MCP agent SDK หรือสร้าง agent layer เองไม่งั้นราคาจะถูก compress ใน 3 ถึง 4 ปีข้างหน้า.
+
+ทั้งหมดนี้คือ brief ของรอบนี้. ขอให้วันนี้เป็นวันที่ดีครับ. แล้วเจอกันรอบหน้า.

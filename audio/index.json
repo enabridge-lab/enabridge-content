@@ -1,7 +1,41 @@
 {
-  "generated_at": "2026-07-11T23:20:47Z",
-  "count": 42,
+  "generated_at": "2026-07-12T23:22:04Z",
+  "count": 43,
   "episodes": [
+    {
+      "date": "26-07-13-0608",
+      "iso_date": "2026-07-13T06:08:00+07:00",
+      "title": "Daily AI Brief — 26-07-13 06:08",
+      "description": "1. MCP 2026-07-28 คือ reboot ครั้งใหญ่ที่สุดของ protocol — stateless core, OAuth 2.1, enterprise auth เป็น stable และ ship ใน 16 วัน\n2. Together AI ปิด Series C $800M ที่ valuation $8.3B — open-source inference โต 3x, Aramco นำ, \"picks and shovels\" ยังชนะ\n3. Citrix ยัด MCP Gateway ลง NetScaler ฟรีสำหรับลูกค้าเก่า — incumbent networking vendor เริ่ม \"bundling war\" ของ agent control plane\n4. Gartner ปักธง \"agentic arbitrage\" — $234B ของ enterprise SaaS spend เสี่ยงถูก agent กินภายในปี 2030 (~20% ของตลาด)",
+      "items": [
+        {
+          "file": "26-07-13-0608-01-mcp-2026-07-28-stateless-enterprise-auth-spec.md",
+          "title": "MCP 2026-07-28 คือ reboot ครั้งใหญ่ที่สุดของ protocol — stateless core, OAuth 2.1, enterprise auth เป็น stable และ ship ใน 16 วัน",
+          "order": 1
+        },
+        {
+          "file": "26-07-13-0608-02-together-ai-800m-series-c-open-inference-thesis.md",
+          "title": "Together AI ปิด Series C $800M ที่ valuation $8.3B — open-source inference โต 3x, Aramco นำ, \"picks and shovels\" ยังชนะ",
+          "order": 2
+        },
+        {
+          "file": "26-07-13-0608-03-citrix-netscaler-mcp-gateway-bundled-license.md",
+          "title": "Citrix ยัด MCP Gateway ลง NetScaler ฟรีสำหรับลูกค้าเก่า — incumbent networking vendor เริ่ม \"bundling war\" ของ agent control plane",
+          "order": 3
+        },
+        {
+          "file": "26-07-13-0608-04-gartner-234b-agentic-arbitrage-saas.md",
+          "title": "Gartner ปักธง \"agentic arbitrage\" — $234B ของ enterprise SaaS spend เสี่ยงถูก agent กินภายในปี 2030 (~20% ของตลาด)",
+          "order": 4
+        }
+      ],
+      "audio_file": "26-07-13-0608.mp3",
+      "audio_size_bytes": 1837824,
+      "voice": "th-TH-Chirp3-HD-Achernar",
+      "model": "google-cloud-tts-chirp3-hd",
+      "speed": 1.3,
+      "script_char_count": 6904
+    },
     {
       "date": "26-07-12-0608",
       "iso_date": "2026-07-12T06:08:00+07:00",
