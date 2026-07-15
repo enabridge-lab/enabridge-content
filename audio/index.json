@@ -1,7 +1,41 @@
 {
-  "generated_at": "2026-07-13T23:24:10Z",
-  "count": 44,
+  "generated_at": "2026-07-15T23:22:06Z",
+  "count": 45,
   "episodes": [
+    {
+      "date": "26-07-16-0611",
+      "iso_date": "2026-07-16T06:11:00+07:00",
+      "title": "Daily AI Brief — 26-07-16 06:11",
+      "description": "1. วันที่จีนดึงปลั๊ก AI Agent: Doubao กับ Qwen ต้องปิดฟีเจอร์สร้าง agent ตามกฎหมายใหม่\n2. OpenAI เปิดตัว GPT-5.6, ChatGPT Work และ Multi-Agent Orchestration — Responses API เริ่มเป็น agent runtime จริง\n3. Norm Ai แตะ unicorn ด้วย $120M Series C — เมื่อ vertical legal agent เปิด \"AI-native law firm\" แข่งกับ Big Law\n4. Ollama ปิด $65M Series B — เมื่อ local-first runtime กลายเป็น neutral ground ของ agent economy",
+      "items": [
+        {
+          "file": "26-07-16-0611-01-china-anthropomorphic-ai-doubao-qwen-shutdown.md",
+          "title": "วันที่จีนดึงปลั๊ก AI Agent: Doubao กับ Qwen ต้องปิดฟีเจอร์สร้าง agent ตามกฎหมายใหม่",
+          "order": 1
+        },
+        {
+          "file": "26-07-16-0611-02-openai-gpt56-chatgpt-work-multi-agent-responses.md",
+          "title": "OpenAI เปิดตัว GPT-5.6, ChatGPT Work และ Multi-Agent Orchestration — Responses API เริ่มเป็น agent runtime จริง",
+          "order": 2
+        },
+        {
+          "file": "26-07-16-0611-03-norm-ai-120m-unicorn-legal-agent.md",
+          "title": "Norm Ai แตะ unicorn ด้วย $120M Series C — เมื่อ vertical legal agent เปิด \"AI-native law firm\" แข่งกับ Big Law",
+          "order": 3
+        },
+        {
+          "file": "26-07-16-0611-04-ollama-65m-local-runtime-open-source.md",
+          "title": "Ollama ปิด $65M Series B — เมื่อ local-first runtime กลายเป็น neutral ground ของ agent economy",
+          "order": 4
+        }
+      ],
+      "audio_file": "26-07-16-0611.mp3",
+      "audio_size_bytes": 1303488,
+      "voice": "th-TH-Chirp3-HD-Achernar",
+      "model": "google-cloud-tts-chirp3-hd",
+      "speed": 1.3,
+      "script_char_count": 4641
+    },
     {
       "date": "26-07-14-0609",
       "iso_date": "2026-07-14T06:09:00+07:00",
