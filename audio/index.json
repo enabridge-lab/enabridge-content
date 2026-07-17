@@ -1,7 +1,41 @@
 {
-  "generated_at": "2026-07-15T23:22:06Z",
-  "count": 45,
+  "generated_at": "2026-07-17T00:21:12Z",
+  "count": 46,
   "episodes": [
+    {
+      "date": "26-07-17-0708",
+      "iso_date": "2026-07-17T07:08:00+07:00",
+      "title": "Daily AI Brief — 26-07-17 07:08",
+      "description": "1. Oak เปิดตัว $60M seed — สร้าง Identity Operating System สำหรับยุคที่ agent มีจำนวนมากกว่าคน\n2. Emergent เข้า unicorn club — $130M Series C ที่ $1.5B valuation หนึ่งปีหลัง launch สะท้อน agentic coding กำลังชนะ vibe-code ทั่วโลก\n3. PwC + OpenAI เปิดตัว agentic contact & service CoE — Big 4 กลายเป็นช่องทาง distribution ของ OpenAI สู่ Fortune 500\n4. Rime ปิด $24M Series A — voice AI ที่เทรนจาก studio ของตัวเอง กลายเป็นสูตรที่ยักษ์เข้าไม่ถึง",
+      "items": [
+        {
+          "file": "26-07-17-0708-01-oak-60m-seed-ai-native-identity-operating-system.md",
+          "title": "Oak เปิดตัว $60M seed — สร้าง Identity Operating System สำหรับยุคที่ agent มีจำนวนมากกว่าคน",
+          "order": 1
+        },
+        {
+          "file": "26-07-17-0708-02-emergent-india-unicorn-agentic-coding-130m.md",
+          "title": "Emergent เข้า unicorn club — $130M Series C ที่ $1.5B valuation หนึ่งปีหลัง launch สะท้อน agentic coding กำลังชนะ vibe-code ทั่วโลก",
+          "order": 2
+        },
+        {
+          "file": "26-07-17-0708-03-pwc-openai-agentic-contact-service-coe.md",
+          "title": "PwC + OpenAI เปิดตัว agentic contact & service CoE — Big 4 กลายเป็นช่องทาง distribution ของ OpenAI สู่ Fortune 500",
+          "order": 3
+        },
+        {
+          "file": "26-07-17-0708-04-rime-24m-voice-ai-vertical-enterprise.md",
+          "title": "Rime ปิด $24M Series A — voice AI ที่เทรนจาก studio ของตัวเอง กลายเป็นสูตรที่ยักษ์เข้าไม่ถึง",
+          "order": 4
+        }
+      ],
+      "audio_file": "26-07-17-0708.mp3",
+      "audio_size_bytes": 1394976,
+      "voice": "th-TH-Chirp3-HD-Achernar",
+      "model": "google-cloud-tts-chirp3-hd",
+      "speed": 1.3,
+      "script_char_count": 4990
+    },
     {
       "date": "26-07-16-0611",
       "iso_date": "2026-07-16T06:11:00+07:00",
