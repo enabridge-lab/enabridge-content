@@ -1,7 +1,41 @@
 {
-  "generated_at": "2026-07-17T00:21:12Z",
-  "count": 46,
+  "generated_at": "2026-07-17T23:20:57Z",
+  "count": 47,
   "episodes": [
+    {
+      "date": "26-07-18-0609",
+      "iso_date": "2026-07-18T06:09:00+07:00",
+      "title": "Daily AI Brief — 26-07-18 06:09",
+      "description": "1. MCP 2.0 กำลังจะกลายเป็น \"HTTP ของ agent\" — 28 กรกฎาคมนี้\n2. Agentforce แตะ $1.2B ARR — enterprise agent economy จบยุค \"pilot\" แล้ว\n3. Cars24 handles 1 ล้านนาที/เดือน — ตัวอย่าง voice agent ใน emerging market\n4. Cadence เปิด AuraStack — agentic AI แรกที่ยึด PCB + advanced packaging",
+      "items": [
+        {
+          "file": "26-07-18-0609-01-mcp-stateless-enterprise-authorization-release-candidate.md",
+          "title": "MCP 2.0 กำลังจะกลายเป็น \"HTTP ของ agent\" — 28 กรกฎาคมนี้",
+          "order": 1
+        },
+        {
+          "file": "26-07-18-0609-02-salesforce-agentforce-1-2b-arr-agent-economy.md",
+          "title": "Agentforce แตะ $1.2B ARR — enterprise agent economy จบยุค \"pilot\" แล้ว",
+          "order": 2
+        },
+        {
+          "file": "26-07-18-0609-03-cars24-openai-voice-agents-india-1m-minutes.md",
+          "title": "Cars24 handles 1 ล้านนาที/เดือน — ตัวอย่าง voice agent ใน emerging market",
+          "order": 3
+        },
+        {
+          "file": "26-07-18-0609-04-cadence-aurastack-agentic-pcb-packaging.md",
+          "title": "Cadence เปิด AuraStack — agentic AI แรกที่ยึด PCB + advanced packaging",
+          "order": 4
+        }
+      ],
+      "audio_file": "26-07-18-0609.mp3",
+      "audio_size_bytes": 1406112,
+      "voice": "th-TH-Chirp3-HD-Achernar",
+      "model": "google-cloud-tts-chirp3-hd",
+      "speed": 1.3,
+      "script_char_count": 5113
+    },
     {
       "date": "26-07-17-0708",
       "iso_date": "2026-07-17T07:08:00+07:00",
