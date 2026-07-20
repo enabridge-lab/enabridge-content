@@ -1,0 +1,32 @@
+{
+  "date": "26-07-20-0610",
+  "iso_date": "2026-07-20T06:10:00+07:00",
+  "title": "Daily AI Brief — 26-07-20 06:10",
+  "items": [
+    {
+      "file": "26-07-20-0610-01-openai-chatgpt-work-finished-artifacts.md",
+      "title": "ChatGPT Work: OpenAI ปิด gap ระหว่าง \"AI ตอบคำถาม\" กับ \"AI ทำงานให้เสร็จ\"",
+      "order": 1
+    },
+    {
+      "file": "26-07-20-0610-02-ledger-agent-stack-hardware-enforced-crypto.md",
+      "title": "Ledger Agent Stack: agent วางแผน hardware อนุมัติ — pattern ที่ enterprise agent ควรลอก",
+      "order": 2
+    },
+    {
+      "file": "26-07-20-0610-03-aws-bedrock-agentcore-5x-runtime-web-search.md",
+      "title": "AWS AgentCore เพิ่ม runtime quota 5x + Web Search ในบ้าน: enterprise agent เริ่มเลิกกลัวเรื่อง scale",
+      "order": 3
+    },
+    {
+      "file": "26-07-20-0610-04-sierra-200m-arr-voice-first-vertical-agent.md",
+      "title": "Sierra ทะลุ $200M ARR — voice agent แซง text, ปิดดีล 40% ของ Fortune 50",
+      "order": 4
+    }
+  ],
+  "script_char_count": 6093,
+  "audio_file": "26-07-20-0610.mp3",
+  "voice": "th-TH-Chirp3-HD-Achernar",
+  "model": "google-cloud-tts-chirp3-hd",
+  "speed": 1.3
+}
