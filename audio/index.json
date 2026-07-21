@@ -1,7 +1,41 @@
 {
-  "generated_at": "2026-07-20T23:27:52Z",
-  "count": 50,
+  "generated_at": "2026-07-21T23:25:16Z",
+  "count": 51,
   "episodes": [
+    {
+      "date": "26-07-22-0610",
+      "iso_date": "2026-07-22T06:10:00+07:00",
+      "title": "Daily AI Brief — 26-07-22 06:10",
+      "description": "1. Microsoft + Mistral ต่อสัญญาระดับหลายพันล้าน — เอา Mistral Medium 3.5 ยัดเข้า Foundry + Copilot Studio + Azure sovereign cloud\n2. Booz Allen สำรวจ: 58% หน่วยงานรัฐบาลกลางสหรัฐ deploy agentic AI แล้ว แต่แค่ 28% มั่นใจว่า secure — trust gap ที่ใหญ่ที่สุดใน enterprise segment ปีนี้\n3. SkyPilot ออกจาก stealth พร้อม $20M seed — unified compute layer สำหรับทีม frontier AI ที่ต้อง orchestrate GPU ข้าม cloud หลายชั้น\n4. AWS CloudWatch เปิด Coding Agent Insights — Claude Code / Codex / Copilot telemetry เข้า hyperscaler dashboard, cost transparency ของ coding agent กลายเป็น platform primitive",
+      "items": [
+        {
+          "file": "26-07-22-0610-01-microsoft-mistral-multibillion-partnership-europe-sovereign.md",
+          "title": "Microsoft + Mistral ต่อสัญญาระดับหลายพันล้าน — เอา Mistral Medium 3.5 ยัดเข้า Foundry + Copilot Studio + Azure sovereign cloud",
+          "order": 1
+        },
+        {
+          "file": "26-07-22-0610-02-booz-allen-federal-agentic-ai-adoption-trust-gap.md",
+          "title": "Booz Allen สำรวจ: 58% หน่วยงานรัฐบาลกลางสหรัฐ deploy agentic AI แล้ว แต่แค่ 28% มั่นใจว่า secure — trust gap ที่ใหญ่ที่สุดใน enterprise segment ปีนี้",
+          "order": 2
+        },
+        {
+          "file": "26-07-22-0610-03-skypilot-20m-unified-compute-frontier-ai-teams.md",
+          "title": "SkyPilot ออกจาก stealth พร้อม $20M seed — unified compute layer สำหรับทีม frontier AI ที่ต้อง orchestrate GPU ข้าม cloud หลายชั้น",
+          "order": 3
+        },
+        {
+          "file": "26-07-22-0610-04-cloudwatch-coding-agent-insights-token-budget-observability.md",
+          "title": "AWS CloudWatch เปิด Coding Agent Insights — Claude Code / Codex / Copilot telemetry เข้า hyperscaler dashboard, cost transparency ของ coding agent กลายเป็น platform primitive",
+          "order": 4
+        }
+      ],
+      "audio_file": "26-07-22-0610.mp3",
+      "audio_size_bytes": 2085984,
+      "voice": "th-TH-Chirp3-HD-Achernar",
+      "model": "google-cloud-tts-chirp3-hd",
+      "speed": 1.3,
+      "script_char_count": 8039
+    },
     {
       "date": "26-07-21-0610",
       "iso_date": "2026-07-21T06:10:00+07:00",
