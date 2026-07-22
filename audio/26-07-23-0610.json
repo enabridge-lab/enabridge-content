@@ -1,0 +1,32 @@
+{
+  "date": "26-07-23-0610",
+  "iso_date": "2026-07-23T06:10:00+07:00",
+  "title": "Daily AI Brief — 26-07-23 06:10",
+  "items": [
+    {
+      "file": "26-07-23-0610-01-openai-presence-enterprise-voice-agent-platform-fde-codex.md",
+      "title": "OpenAI เปิดตัว \"Presence\" — เอา Forward Deployed Engineers + Codex feedback loop ยัดเป็น first-class enterprise agent platform",
+      "order": 1
+    },
+    {
+      "file": "26-07-23-0610-02-hcltech-90-18-ai-divide-enterprise-revenue-gap.md",
+      "title": "HCLTech รายงาน: 90% enterprise บอก \"Agentic AI transform workflow\" — แต่เพียง 18% เห็น revenue impact จริง, 43% ของ AI initiative เสี่ยง fail",
+      "order": 2
+    },
+    {
+      "file": "26-07-23-0610-03-google-gemini-3-6-flash-cyber-government-only-price-cut.md",
+      "title": "Google ปล่อย Gemini 3.6 Flash + Cyber variant (government-only) — ตัดราคา output 17%, แต่ยังไม่มี 3.5 Pro (ครั้งที่สาม)",
+      "order": 3
+    },
+    {
+      "file": "26-07-23-0610-04-michaels-ask-mike-gemini-enterprise-75k-conversations-early-results.md",
+      "title": "Michaels \"Ask Mike\" ปล่อยตัวเลข early — 75,000 conversation, 60% product discovery, 6 สัปดาห์จาก concept ถึง production บน Google Gemini Enterprise",
+      "order": 4
+    }
+  ],
+  "script_char_count": 8444,
+  "audio_file": "26-07-23-0610.mp3",
+  "voice": "th-TH-Chirp3-HD-Achernar",
+  "model": "google-cloud-tts-chirp3-hd",
+  "speed": 1.3
+}
