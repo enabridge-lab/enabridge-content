@@ -1,7 +1,41 @@
 {
-  "generated_at": "2026-07-22T23:25:19Z",
-  "count": 52,
+  "generated_at": "2026-07-23T23:26:41Z",
+  "count": 53,
   "episodes": [
+    {
+      "date": "26-07-24-0611",
+      "iso_date": "2026-07-24T06:11:00+07:00",
+      "title": "Daily AI Brief — 26-07-24 06:11",
+      "description": "1. Google Cloud โต 82% — 90% ของ Fortune 100 ใช้ Gemini Enterprise + $514B backlog: enterprise AI ยุค Q2 2026 มีผู้ชนะที่ชัดเจนแล้ว\n2. Alibaba Cloud เปิดตัว \"Agent Native Cloud\" — 15 agent handle 85% dev support, ลด ops time 90%, compress release เหลือ 1 วัน (WAIC 2026)\n3. JADEPUFFER — Sysdig เปิดเผย ransomware ตัวแรกที่ LLM agent รันเองครบ end-to-end (fail-to-fix 31 วินาที, self-narrated payload)\n4. AMD Advancing AI 2026 — MI400 volume, Helios rack ~$5.25M, OpenAI+Meta commit 12GW: compute layer ของ agent economy พึ่ง GPU สองค่ายไม่พออีกต่อไป",
+      "items": [
+        {
+          "file": "26-07-24-0611-01-alphabet-q2-google-cloud-82pct-gemini-enterprise-fortune100.md",
+          "title": "Google Cloud โต 82% — 90% ของ Fortune 100 ใช้ Gemini Enterprise + $514B backlog: enterprise AI ยุค Q2 2026 มีผู้ชนะที่ชัดเจนแล้ว",
+          "order": 1
+        },
+        {
+          "file": "26-07-24-0611-02-alibaba-agent-native-cloud-agentteams-agentloop-waic.md",
+          "title": "Alibaba Cloud เปิดตัว \"Agent Native Cloud\" — 15 agent handle 85% dev support, ลด ops time 90%, compress release เหลือ 1 วัน (WAIC 2026)",
+          "order": 2
+        },
+        {
+          "file": "26-07-24-0611-03-jadepuffer-first-fully-autonomous-llm-ransomware-langflow.md",
+          "title": "JADEPUFFER — Sysdig เปิดเผย ransomware ตัวแรกที่ LLM agent รันเองครบ end-to-end (fail-to-fix 31 วินาที, self-narrated payload)",
+          "order": 3
+        },
+        {
+          "file": "26-07-24-0611-04-amd-mi400-helios-openai-meta-12gw-advancing-ai.md",
+          "title": "AMD Advancing AI 2026 — MI400 volume, Helios rack ~$5.25M, OpenAI+Meta commit 12GW: compute layer ของ agent economy พึ่ง GPU สองค่ายไม่พออีกต่อไป",
+          "order": 4
+        }
+      ],
+      "audio_file": "26-07-24-0611.mp3",
+      "audio_size_bytes": 1363776,
+      "voice": "th-TH-Chirp3-HD-Achernar",
+      "model": "google-cloud-tts-chirp3-hd",
+      "speed": 1.3,
+      "script_char_count": 4536
+    },
     {
       "date": "26-07-23-0610",
       "iso_date": "2026-07-23T06:10:00+07:00",
