@@ -1,0 +1,37 @@
+{
+  "date": "26-07-25-0610",
+  "iso_date": "2026-07-25T06:10:00+07:00",
+  "title": "Daily AI Brief — 26-07-25 06:10",
+  "items": [
+    {
+      "file": "26-07-25-0610-01-anthropic-claude-opus-5-half-price.md",
+      "title": "Anthropic Opus 5 มาแล้ว — ราคาครึ่งเดียวของ Fable 5, ชนะบน Frontier-Bench + OSWorld, จ่อ default runtime สำหรับ agent builder",
+      "order": 1
+    },
+    {
+      "file": "26-07-25-0610-02-salesforce-va-missionforce-1-6b-agentic-contract.md",
+      "title": "Salesforce คว้าดีล $1.6B กับกระทรวงกิจการทหารผ่านศึกสหรัฐ — เปิดตัว \"Agentic Enterprise License\" ครั้งแรก แม่แบบใหม่ของการซื้อ agent platform ยุค deployment",
+      "order": 2
+    },
+    {
+      "file": "26-07-25-0610-03-mcp-2026-07-28-stateless-release-candidate.md",
+      "title": "MCP 2026-07-28 Release Candidate — ตัด stateful, เพิ่ม OAuth, Tasks graduate, MCP Apps — ready สำหรับ enterprise deploy ทันที Monday นี้",
+      "order": 3
+    },
+    {
+      "file": "26-07-25-0610-04-stripe-openrouter-10b-acquisition-talks.md",
+      "title": "Stripe เตรียมซื้อ OpenRouter $10B — payment giant กระโดดเข้า AI model routing layer, 7.7x uplift ใน 2 เดือน",
+      "order": 4
+    },
+    {
+      "file": "26-07-25-0610-05-moonshot-ai-50b-preipo-kimi-k3-hong-kong.md",
+      "title": "Moonshot AI ระดมพรี-IPO ที่ valuation $50B — Kimi K3 ล้ม coding benchmark, IPO ฮ่องกงใน 6 เดือน",
+      "order": 5
+    }
+  ],
+  "script_char_count": 7422,
+  "audio_file": "26-07-25-0610.mp3",
+  "voice": "th-TH-Chirp3-HD-Achernar",
+  "model": "google-cloud-tts-chirp3-hd",
+  "speed": 1.3
+}
