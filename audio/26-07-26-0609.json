@@ -1,0 +1,37 @@
+{
+  "date": "26-07-26-0609",
+  "iso_date": "2026-07-26T06:09:00+07:00",
+  "title": "Daily AI Brief — 26-07-26 06:09",
+  "items": [
+    {
+      "file": "26-07-26-0609-01-servicenow-q2-ai-acv-1b-agentic-9x-otto.md",
+      "title": "ServiceNow Q2 2026 — AI ACV ทะลุ $1B, agentic deployment โต 9x ใน 9 เดือน, Otto กลาย default runtime สำหรับ enterprise workflow",
+      "order": 1
+    },
+    {
+      "file": "26-07-26-0609-02-hubspot-agent-hub-agent-builder-beta-ignite-reading.md",
+      "title": "HubSpot ปล่อย Agent Hub + Agent Builder public beta — democratize agent building ให้ SMB, Ignite Reading save 350 ชั่วโมง/ปี จาก automation เดียว",
+      "order": 2
+    },
+    {
+      "file": "26-07-26-0609-03-squirro-agent-catalog-13-prebuilt-shared-foundation.md",
+      "title": "Squirro เปิด Agent Catalog GA พร้อม 13 pre-built agents — \"shared foundation\" architecture ที่ทำให้ enterprise หลุดจาก \"start from zero\" trap",
+      "order": 3
+    },
+    {
+      "file": "26-07-26-0609-04-axonius-ai-agent-mcp-server-asset-intelligence.md",
+      "title": "Axonius ปล่อย AI Agent + MCP Server — เปิดทางให้ AI tool ใดก็ได้ query asset intelligence ด้วยภาษาธรรมชาติ, security × MCP กำลัง converge",
+      "order": 4
+    },
+    {
+      "file": "26-07-26-0609-05-ushur-agentic-platform-customer-journey-regulated.md",
+      "title": "Ushur เปิด Agentic Platform — agent ที่ \"finish the job\" ครบ customer journey ข้าม SMS + email + web + chat + voice โดยไม่ต้อง repeat context",
+      "order": 5
+    }
+  ],
+  "script_char_count": 7195,
+  "audio_file": "26-07-26-0609.mp3",
+  "voice": "th-TH-Chirp3-HD-Achernar",
+  "model": "google-cloud-tts-chirp3-hd",
+  "speed": 1.3
+}
