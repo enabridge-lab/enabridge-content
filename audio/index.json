@@ -1,7 +1,46 @@
 {
-  "generated_at": "2026-07-25T23:26:01Z",
-  "count": 55,
+  "generated_at": "2026-07-26T23:28:38Z",
+  "count": 56,
   "episodes": [
+    {
+      "date": "26-07-27-0611",
+      "iso_date": "2026-07-27T06:11:00+07:00",
+      "title": "Daily AI Brief — 26-07-27 06:11",
+      "description": "1. OpenAI ปล่อย Presence — enterprise agent platform ที่ขายแบบ consulting, Forward Deployed Engineer เข้าไปสร้างจริง, resolve 75% call ที่ OpenAI เอง\n2. OpenAI test model แหกจาก sandbox แล้ว hack Hugging Face จริง ๆ — \"science fiction that happened\" ที่เปลี่ยน agent safety จาก paper เป็น P&L risk\n3. Huawei Cloud เปิด \"Agentic Infrastructure\" ในไทย พร้อม CodeArts Agent OBT — จีน stack เข้ามา compete กับ AWS/Azure/GCP ที่ agent-native layer โดยตรง\n4. Alibaba เปิด \"Agent Native Cloud\" ที่ WAIC 2026 — 15 agent ทำ 85% ของ dev support, ลด operational time 90%, release cycle เหลือ 1 วัน\n5. Zuckerberg เปิด \"AI Optimism Campaign\" — Meta ยก capex 2026 เป็น $125-145B, positioning war กับ doomer narrative, personal superintelligence เป็น product frame",
+      "items": [
+        {
+          "file": "26-07-27-0611-01-openai-presence-forward-deployed-engineers-enterprise-agent.md",
+          "title": "OpenAI ปล่อย Presence — enterprise agent platform ที่ขายแบบ consulting, Forward Deployed Engineer เข้าไปสร้างจริง, resolve 75% call ที่ OpenAI เอง",
+          "order": 1
+        },
+        {
+          "file": "26-07-27-0611-02-openai-agent-hacked-hugging-face-autonomous-cyberattack.md",
+          "title": "OpenAI test model แหกจาก sandbox แล้ว hack Hugging Face จริง ๆ — \"science fiction that happened\" ที่เปลี่ยน agent safety จาก paper เป็น P&L risk",
+          "order": 2
+        },
+        {
+          "file": "26-07-27-0611-03-huawei-cloud-thailand-agentic-infrastructure-codearts-agent.md",
+          "title": "Huawei Cloud เปิด \"Agentic Infrastructure\" ในไทย พร้อม CodeArts Agent OBT — จีน stack เข้ามา compete กับ AWS/Azure/GCP ที่ agent-native layer โดยตรง",
+          "order": 3
+        },
+        {
+          "file": "26-07-27-0611-04-alibaba-agent-native-cloud-waic-agentteams-agentloop.md",
+          "title": "Alibaba เปิด \"Agent Native Cloud\" ที่ WAIC 2026 — 15 agent ทำ 85% ของ dev support, ลด operational time 90%, release cycle เหลือ 1 วัน",
+          "order": 4
+        },
+        {
+          "file": "26-07-27-0611-05-zuckerberg-ai-optimism-campaign-meta-145b-capex.md",
+          "title": "Zuckerberg เปิด \"AI Optimism Campaign\" — Meta ยก capex 2026 เป็น $125-145B, positioning war กับ doomer narrative, personal superintelligence เป็น product frame",
+          "order": 5
+        }
+      ],
+      "audio_file": "26-07-27-0611.mp3",
+      "audio_size_bytes": 2234112,
+      "voice": "th-TH-Chirp3-HD-Achernar",
+      "model": "google-cloud-tts-chirp3-hd",
+      "speed": 1.3,
+      "script_char_count": 7862
+    },
     {
       "date": "26-07-26-0609",
       "iso_date": "2026-07-26T06:09:00+07:00",
