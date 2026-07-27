@@ -1,7 +1,41 @@
 {
-  "generated_at": "2026-07-26T23:28:38Z",
-  "count": 56,
+  "generated_at": "2026-07-27T23:27:30Z",
+  "count": 57,
   "episodes": [
+    {
+      "date": "26-07-28-0614",
+      "iso_date": "2026-07-28T06:14:00+07:00",
+      "title": "Daily AI Brief — 26-07-28 06:14",
+      "description": "1. MCP spec ล็อกเที่ยงคืนนี้ — protocol กลายเป็น stateless, OAuth 2.1 คลุมทั้ง ecosystem แล้ว\n2. Anthropic ปล่อย \"2026 State of AI Agents\" — 80% ของ enterprise เห็น ROI จริง, มีตัวเลขจาก Novo Nordisk / L'Oréal / Shopify\n3. Microsoft ปล่อย Project Perception + MAI-Cyber-1-Flash — agent สาม squad ล่า-สืบ-ปะเข้าแทน SOC team, ตี CyberGym 96% ราคาครึ่งหนึ่งของ Anthropic\n4. Alterion Draco: runtime governance layer สำหรับ agent — จับ prompt + block action ก่อนเกิด, ตอบ $234B SaaS risk ที่ Gartner เตือน",
+      "items": [
+        {
+          "file": "26-07-28-0614-01-mcp-2026-07-28-spec-locks-today.md",
+          "title": "MCP spec ล็อกเที่ยงคืนนี้ — protocol กลายเป็น stateless, OAuth 2.1 คลุมทั้ง ecosystem แล้ว",
+          "order": 1
+        },
+        {
+          "file": "26-07-28-0614-02-anthropic-state-of-agents-report-500-leaders.md",
+          "title": "Anthropic ปล่อย \"2026 State of AI Agents\" — 80% ของ enterprise เห็น ROI จริง, มีตัวเลขจาก Novo Nordisk / L'Oréal / Shopify",
+          "order": 2
+        },
+        {
+          "file": "26-07-28-0614-03-microsoft-project-perception-mai-cyber-1.md",
+          "title": "Microsoft ปล่อย Project Perception + MAI-Cyber-1-Flash — agent สาม squad ล่า-สืบ-ปะเข้าแทน SOC team, ตี CyberGym 96% ราคาครึ่งหนึ่งของ Anthropic",
+          "order": 3
+        },
+        {
+          "file": "26-07-28-0614-04-alterion-draco-runtime-governance.md",
+          "title": "Alterion Draco: runtime governance layer สำหรับ agent — จับ prompt + block action ก่อนเกิด, ตอบ $234B SaaS risk ที่ Gartner เตือน",
+          "order": 4
+        }
+      ],
+      "audio_file": "26-07-28-0614.mp3",
+      "audio_size_bytes": 1945728,
+      "voice": "th-TH-Chirp3-HD-Achernar",
+      "model": "google-cloud-tts-chirp3-hd",
+      "speed": 1.3,
+      "script_char_count": 6738
+    },
     {
       "date": "26-07-27-0611",
       "iso_date": "2026-07-27T06:11:00+07:00",

@@ -1,0 +1,58 @@
+สวัสดีครับ นี่คือ Enabridge AI Brief รอบ 28 July 2026 เวลา 06:14 ครับ.
+รอบนี้มี 4 เรื่อง เน้น Agentic AI, business use case, และ trend ที่เอามาใช้กับ OpenBridge ได้.
+
+เรื่องแรก.
+เช้านี้วันจันทร์ที่ 28 กรกฎาคม 2026 คือ D-Day ของ Model Context Protocol. Spec ตัวใหม่ที่ตั้งชื่อว่า MCP 2026-07-28 จบ validation window เที่ยงคืนนี้ตามเวลาไทย. เป็น revision ที่ใหญ่ที่สุดตั้งแต่ launch เมื่อพฤศจิกายน 2024. หัวใจสำคัญคือคำเดียว. stateless.
+
+เดิม MCP มี session handshake ที่ pin client ไว้กับ server instance เดียว. pattern นี้ทำงานดีตอนรันบน laptop developer แต่พังทันทีเมื่อ enterprise พยายาม deploy หลัง edge load balancer. Spec ใหม่ทำให้ทุก request routable แยกกัน headers ระบุ context เอง.
+
+Layer authorization ถูก rewrite ทั้งชั้น. MCP server กลายเป็น OAuth 2.1 resource server อย่างเป็นทางการ integrate กับ OpenID Connect ได้ทันที. แปลว่า enterprise ที่ deploy หลัง Okta หรือ Azure AD ไม่ต้องเขียน integration ใหม่. reuse SSO stack เดิม.
+
+ที่ under-reported กว่าคือ extension framework. MCP Apps เปิดให้ server render UI element กลับไปหา client. Tasks ทำให้รับ long-running work ได้โดยไม่ block connection. สองอย่างนี้ break assumption ว่า MCP เท่ากับ tool call เท่ากับ 1 request-response ที่ผูก ecosystem ไว้ตั้งแต่แรก.
+
+จุดที่น่าจับตาคือ timing กับ vulnerability disclosure ต้นเมษายน. Spec 2026-07-28 ไม่ mention ตรง ๆ แต่การย้ายไป OAuth และ stateless คือคำตอบทางเทคนิคที่ industry ถามมา 3 เดือน. Anthropic ไม่พูดคำว่าแก้. แต่ architecture ใหม่ตอบทุกคำถาม.
+
+สำหรับ Enabridge. Window ที่ MCP-native for regulated Thai SMB ยังเปิด. ใครเขียน MCP 2026-07-28 compliant พร้อม audit-ready และ Thai PDPA ใน positioning ภายใน 30 วัน จะยึด SME กับ SET100 ก่อน hyperscaler ตามมา.
+
+เรื่องที่สอง.
+Anthropic ปล่อย 2026 State of AI Agents report เมื่อคืน. งาน research ที่รวม insight จาก 500 กว่า technical leader และ real deployment ที่ Novo Nordisk, L'Oréal, Doctolib, Shopify. ตัวเลขหลักที่ถ้าจำได้อันเดียวคือ 80 เปอร์เซ็นต์ของ organization report ROI ที่ measurable. ไม่ใช่ projected value ไม่ใช่ pilot metric. เป็น real quantifiable.
+
+Case study ที่ carry น้ำหนักสุดคือ Novo Nordisk. pharma มูลค่า 500 พันล้านดอลลาร์ report ว่า clinical study documentation งานที่เคยใช้ทีม regulatory affairs 10 สัปดาห์ ตอนนี้ agent ทำใน 10 นาที. Device verification protocol ประหยัดทรัพยากร 95 เปอร์เซ็นต์. นี่คือ workflow ที่มี regulatory scrutiny สูงสุดในโลก enterprise.
+
+L'Oréal ก็เดิน number ที่พูดง่ายจำง่าย. Conversational analytics accuracy กระโดดจาก 90 เป็น 99.9 เปอร์เซ็นต์. 44,000 monthly active user ภายใน L'Oréal produce 2.5 ล้าน message ต่อเดือน. margin of error เหลือ 25 message ที่ผิดต่อวัน จาก 2,500 ที่เคยผิด.
+
+Doctolib เล่าเรื่อง Claude Code ใน engineering team ทั้งกอง. Ship feature เร็วขึ้น 40 เปอร์เซ็นต์. Legacy testing infrastructure ที่เคยใช้เวลา migration สัปดาห์ agent จัดการใน hours.
+
+Aggregate ที่ตกใจสุดคือ 86 เปอร์เซ็นต์ของ organization deploy agent สำหรับ production code. Number นี้ 2 ปีที่แล้วอยู่ที่ 30 เปอร์เซ็นต์. Inflection point ไม่ใช่จะเกิดเมื่อไหร่. ผ่านมาแล้ว.
+
+สำหรับ Enabridge. Number ที่ต้อง target ใน case study Thai คือ 10 เท่า speedup หรือ 95 เปอร์เซ็นต์ resource reduction. อย่า pitch productivity up 30 เปอร์เซ็นต์อีก. buyer เพิ่งอ่าน 10 weeks to 10 minutes เมื่อวานนี้.
+
+เรื่องที่สาม.
+Microsoft เปิดตัว 2 ผลิตภัณฑ์ที่เชื่อมกันเมื่อวันจันทร์ที่ 27 กรกฎาคม. MAI-Cyber-1-Flash เป็น LLM specialized cybersecurity ตัวแรกของบริษัท และ Project Perception เป็น agentic security platform. ที่ event ไม่ใหญ่ใน SF.
+
+MAI-Cyber-1-Flash ทำ 96 เปอร์เซ็นต์บน CyberGym benchmark สูงกว่า Anthropic Mythos 12 คะแนน. Fine-tune ด้วย security data ที่ Microsoft สะสมมาจาก Defender, Sentinel, GitHub Advanced Security. เป็น top score ของ leaderboard ที่ saturate ยาก.
+
+Project Perception หัวใจคือ agent 3 squad ทำงาน coordinated เหมือน human SOC team. Red team agent ล่า vulnerability ต่อเนื่อง. Blue team agent รับ alert ทำ triage. Green team agent ปิด vulnerability harden config. 3 squad แชร์ memory ผ่าน MDASH ซึ่งเป็น internal orchestration layer.
+
+Pitch เชิง cost คือ Combo นี้ให้ world-class security performance ที่ 50 เปอร์เซ็นต์ของ leading model. Public preview วันที่ 3 สิงหาคม. GA ก่อน Ignite เดือนพฤศจิกายน.
+
+Signal ต่อ Anthropic กับ OpenAI. ทั้งคู่จะเจอปัญหา distribution ใน enterprise security. Mythos ที่ 84 เปอร์เซ็นต์เป็น general-purpose model ที่ผู้ใช้ต้อง wrap เอง. Microsoft ขายเป็น turnkey มี Defender integration พร้อม. CISO ที่อยู่ Azure ecosystem จะเลือก path ที่มี SLA + audit log integrate อยู่แล้ว.
+
+จุดที่ under-appreciated คือ red team agent as product. Pen-test manual จ่าย 500 ถึง 2000 ดอลลาร์ต่อชั่วโมง. ถ้า Microsoft ทำได้ที่ marginal cost ใกล้ 0. อาชีพ offensive security consulting โดน commoditize ในระดับที่ Bloomberg terminal commoditize research junior ปี 2000.
+
+สำหรับ Enabridge. อย่า compete บน generic agent platform. Verticalize ทันที. Agent สำหรับ Thai regulatory Bank of Thailand SEC. Agent สำหรับ Thai fraud pattern call center scam PromptPay abuse. Microsoft ไม่ speak Thai regulator. นั่นคือ moat.
+
+เรื่องที่สี่.
+Alterion startup ที่ก่อตั้งโดยอดีต McKinsey Partner กับอดีต Google Engineering VP launch product ชื่อ Draco เมื่อวันที่ 16 กรกฎาคม. Draco คือ runtime control plane สำหรับ enterprise AI agent. เป็น layer ที่นั่งระหว่าง agent กับ enterprise infrastructure.
+
+ที่ทำให้ Draco แยกจาก APM ทั่วไปคือ granularity ของ observation. ไม่ log แค่ metric. สังเกตทุก prompt ที่ agent ส่ง ทุก tool call ที่เรียก ทุก response ที่ได้กลับ. เมื่อ agent จะทำ high-risk action เช่น transfer เงินเกิน threshold delete production data send email ไป external. Draco intercept ก่อน action ผ่าน.
+
+หัวใจของ pitch enterprise คือ compliance. Draco ship พร้อม SOC 2 ISO 42001 EU AI Act framework built-in. Audit evidence auto-generate. บริษัท regulated ที่ต้อง prove ต่อ regulator ว่า agent ไม่ทำ action ที่ไม่ได้ authorize. Draco ลด barrier deployment จาก 6 ถึง 12 เดือน compliance sprint เหลือ ship เลย.
+
+Timing ของ launch จับ Gartner report ที่ปล่อยต้นเดือน. analyst warning ว่า agentic AI จะ redirect 234 พันล้านดอลลาร์ของ enterprise SaaS spend ระหว่าง 2026 ถึง 2030 คิดเป็นราว 20 เปอร์เซ็นต์ของ SaaS market ทั้งหมด. Gartner เรียก phenomenon นี้ว่า agentic arbitrage. Governance gap คือ blocker หลัก. Draco target ตรงจุดนั้น.
+
+Pattern ที่ชัดคือ 3 category กำลัง form พร้อมกัน. runtime control agent gateway และ policy compliance framework. Winner จะเป็นคน integrate ได้ทั้ง 3 layer.
+
+สำหรับ Enabridge. นี่คือ moat opportunity ระดับ decade. Draco ทำ generic enterprise. Thai regulator ยังไม่มี playbook. Enabridge position agent governance ที่ compliant Thai PDPA Bank of Thailand IT circular audit report ที่ SEC accept. bundle กับ MCP-native gateway และ Thai vertical agent = full stack ที่ Thai enterprise ซื้อ 3-in-1.
+
+ทั้งหมดนี้คือ brief ของรอบนี้. ขอให้วันนี้เป็นวันที่ดีครับ. แล้วเจอกันรอบหน้า.
