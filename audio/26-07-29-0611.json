@@ -1,0 +1,27 @@
+{
+  "date": "26-07-29-0611",
+  "iso_date": "2026-07-29T06:11:00+07:00",
+  "title": "Daily AI Brief — 26-07-29 06:11",
+  "items": [
+    {
+      "file": "26-07-29-0611-01-mcp-2026-07-28-shipped-live-claude-stateless.md",
+      "title": "MCP 2026-07-28 ship จริงแล้ว — stateless core, no handshake, no session — Claude เปิดใช้ทันที กับ 950 connectors ที่ user ล้านคนใช้ทุกวัน",
+      "order": 1
+    },
+    {
+      "file": "26-07-29-0611-02-cognizant-emea-anthropic-premier-agentic-services-layer.md",
+      "title": "Cognizant สับสองไม้ในสัปดาห์เดียว — EMEA AI Unit + Anthropic Global Premier — ตลาดตอบด้วยหุ้น +7% หลัง IDC เปิดตัวเลข 88% pilot ตายก่อน production",
+      "order": 2
+    },
+    {
+      "file": "26-07-29-0611-03-runtime-agent-governance-netzilo-alterion-draco-category.md",
+      "title": "Runtime agent governance กลายเป็น category ใหม่ — Netzilo AIDR + Alterion Draco — EDR/SIEM ตามไม่ทันเพราะ agent ไม่ใช่ endpoint",
+      "order": 3
+    }
+  ],
+  "script_char_count": 4783,
+  "audio_file": "26-07-29-0611.mp3",
+  "voice": "th-TH-Chirp3-HD-Achernar",
+  "model": "google-cloud-tts-chirp3-hd",
+  "speed": 1.3
+}
