@@ -1,0 +1,27 @@
+{
+  "date": "26-07-30-0611",
+  "iso_date": "2026-07-30T06:11:00+07:00",
+  "title": "Daily AI Brief — 26-07-30 06:11",
+  "items": [
+    {
+      "file": "26-07-30-0611-01-pacing-the-frontier-anthropic-openai-endorse-1268-signatories.md",
+      "title": "Pacing the Frontier — 1,268 AI insiders + Anthropic/OpenAI **ในฐานะบริษัท** เซ็นจดหมายขอ US government สร้าง \"governance option\" ก่อน AI เขียน AI ตัวเองได้เร็วเกินคุม",
+      "order": 1
+    },
+    {
+      "file": "26-07-30-0611-02-salesforce-agentforce-help-agent-ga-2-dollar-per-resolution.md",
+      "title": "Salesforce Agentforce Help Agent GA — $2/resolution flat, 4.3M enquiries + 70% autonomous ที่ Salesforce ทดลอง — outcome-based กลายเป็น standard pricing ของ enterprise agent",
+      "order": 2
+    },
+    {
+      "file": "26-07-30-0611-03-amd-anthropic-nvidia-sk-4gw-agentic-compute-crunch.md",
+      "title": "8 วัน 4 กิกะวัตต์ — AMD ทุ่ม 5B ใน Anthropic + Nvidia ล็อก SK 500B พร้อม HBM4 — compute กลายเป็นตัวชี้ว่า agentic AI ใครจะ scale ได้จริง",
+      "order": 3
+    }
+  ],
+  "script_char_count": 5235,
+  "audio_file": "26-07-30-0611.mp3",
+  "voice": "th-TH-Chirp3-HD-Achernar",
+  "model": "google-cloud-tts-chirp3-hd",
+  "speed": 1.3
+}
