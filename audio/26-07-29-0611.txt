@@ -1,0 +1,31 @@
+สวัสดีครับ นี่คือ Enabridge AI Brief รอบ 29 July 2026 เวลา 06:11 ครับ.
+รอบนี้มี 3 เรื่อง เน้น Agentic AI, business use case, และ trend ที่เอามาใช้กับ OpenBridge ได้.
+
+เรื่องแรก.
+เช้านี้เรื่องแรกคือ MCP spec 2026-07-28 ship จริงแล้ววันนี้ — ทีม Model Context Protocol เรียกว่าเป็น update ที่ใหญ่ที่สุดตั้งแต่ launch. Change ใหญ่ที่สุดคือ MCP เลิกเป็น stateful protocol — ตัด session, ตัด initialize handshake, ตัด session ID header ออกหมด. หลังจากนี้ MCP request ทุกอันเป็น self-contained แบบเดียวกับ HTTP — deploy บน AWS Lambda, Cloudflare Workers, Vercel Edge ได้ทันที ไม่ต้องพึ่ง sticky session อีก.
+
+พร้อมกันนั้น Anthropic ประกาศว่า Claude รองรับ spec ใหม่ตั้งแต่วันแรก. Numbers ที่ Anthropic เปิดวันนี้บอก scale ของ ecosystem ชัด — MCP SDK downloads แตะ 400 ล้านต่อเดือน โต 4 เท่าในปีเดียว, บน Claude มี MCP server มากกว่า 950 ตัวที่ user ล้านคนใช้ทุกวัน. MCP กลายเป็น de facto industry standard สำหรับเชื่อม agent กับ tool แบบไม่มีคู่แข่งจริงจังแล้ว.
+
+signal ที่สำคัญ: MCP เข้าเฟส maturity — infrastructure grade, ไม่ใช่ prototype. Vendor ที่ยังไม่ implement MCP server ปีนี้จะเจอ pressure เท่ากับ SaaS ที่ไม่มี REST API ในปี 2015. Cost ที่ทีม deploy MCP server จะลด 60-80% จากการย้ายไป serverless, และเพราะ authorization align กับ OAuth OIDC ที่ Entra Okta ใช้อยู่แล้ว — MCP server จะเข้า pipeline vetting เดียวกับ SaaS ตัวอื่น.
+
+สำหรับทีม builder ในไทย — window นี้เหมาะที่จะ deploy MCP server สำหรับ local system อย่าง Bitkub, K-Bank Open API, GBiz หรือ ThaID เพราะ enterprise ลูกค้าจะเริ่มถามในไตรมาสหน้าแน่นอน.
+
+เรื่องที่สอง.
+เรื่องที่สองเช้านี้เป็นสัปดาห์ของ Cognizant. ในสองวัน Cognizant สับสองไม้ใหญ่ — วันที่ 27 กรกฎาคมประกาศเป็น Global Premier Partner ใน Anthropic Claude Partner Network ระดับ tier บนสุดที่ Anthropic บอกว่ามีน้อยราย พร้อม embed Claude Code ใน Flowsource platform ของตัวเอง. ตัวเลข client จริงที่โชว์แรงมาก — contract review time ลด 40 เปอร์เซ็นต์, extraction accuracy 88 เปอร์เซ็นต์, underwriting research จากชั่วโมงเหลือหนึ่งนาที. 30,000 associates ผ่าน Claude training แล้ว.
+
+วันถัดมา 28 กรกฎาคม Cognizant เปิด EMEA AI Unit dedicated พร้อม Frontier Deployed Engineering สาม tier — Foundation, Accelerate, Transform. Framing สำคัญที่ Cognizant ใช้คือตัวเลข IDC — 88 เปอร์เซ็นต์ของ AI agent pilot ไม่เคยไปถึง production. บริษัทที่ launch 33 pilot มีแค่ 4 pilot ที่ live. หุ้น CTSH +7 เปอร์เซ็นต์วันนั้น — ตลาดเชื่อทันทีว่า services layer เป็นที่ทำเงินจริงในเฟส agentic.
+
+signal ที่สำคัญ: narrative ของตลาดกำลังเปลี่ยนจาก model war ไปเป็น delivery war. Salesforce ServiceNow จบที่ platform, Anthropic OpenAI จบที่ model — แต่ margin ใหญ่ที่สุดอยู่ที่ services layer ที่แก้ปัญหา change management governance integration. คนที่ execute ได้จะกิน spend enterprise ที่ Gartner คาดว่า 234 พันล้านดอลลาร์จะย้ายไป agent ภายในปี 2030.
+
+สำหรับ SI ในไทยและ SEA ทั้ง Enabridge, Bluebik, Datamesh, G-Able — window นี้คือช่วงที่ Cognizant กับ Accenture ยัง scale ทีมท้องถิ่นไม่ทัน. ที่ต้องทำทันทีคือปิด case study บนลูกค้าจริงในไทย, training กับ Anthropic OpenAI Google ให้ทีมพร้อม, และ publish delivery model ของตัวเองก่อนที่ enterprise CIO จะเริ่มถามในไตรมาสหน้า.
+
+เรื่องที่สาม.
+เรื่องที่สามเช้านี้เป็น category ใหม่ที่กำลังเกิด — runtime agent governance หรือ AI Detection and Response, AIDR. เดือนกรกฎาคมมีสอง product เปิดตัวใน category นี้ — Netzilo AIDR ที่ขยาย platform รองรับ Amazon Bedrock AgentCore + agent harness อื่นแบบ cross-platform เมื่อ 1 กรกฎาคม, และ Alterion Draco ที่ launch 16 กรกฎาคม โดยเป็น runtime control plane ที่ deploy ได้ในเวลาน้อยกว่า 1 สัปดาห์โดยไม่ต้อง code change.
+
+Threat model ที่สอง product ตอบเหมือนกัน — prompt injection ทั้งตรงและอ้อม, tool poisoning, capability hijacking, privilege escalation, multi-stage data exfiltration. ปัญหาคือ EDR SIEM DLP stack ปกติที่ enterprise มีอยู่ตอบเรื่องนี้ไม่ได้ — เพราะ agent ไม่ใช่ endpoint และ prompt กับ tool response เป็น semantic ไม่ใช่ signature-based. Compliance target ที่สอง product ตั้งไว้คือ SOC 2, ISO 42001, EU AI Act — สาม framework ที่ enterprise regulated ต้องผ่านในไตรมาสหน้า.
+
+signal ที่สำคัญ: pattern เดียวกับที่ EDR เกิดขึ้นเมื่อ endpoint threat แตกต่างจาก network threat มากพอที่ Symantec McAfee ตามไม่ทัน — ตอนนี้กำลังเกิดซ้ำกับ agent. CrowdStrike-of-agents จะเกิดปีนี้. Palo Alto CrowdStrike SentinelOne Microsoft Defender ที่ยังไม่มี agent-native product ต้อง acquire หรือ build ให้ทันไตรมาสสี่. Gartner จะเปิด Magic Quadrant สำหรับ AIDR ภายใน 2027.
+
+สำหรับ enterprise ที่มี agent deploy production อยู่ — 5 คำถามที่ต้องตอบได้ก่อน audit ปลายปี — log ไปที่ไหน, ตรวจ prompt injection ยังไง, มี kill switch ไหม, SOC 2 evidence ครบไหม, policy-as-code สำหรับ high-risk action มีหรือเปล่า. SI ในไทยที่ pre-integrate AIDR tool ได้ก่อนจะ close pipeline enterprise regulated เร็วกว่า 3-6 เดือน.
+
+ทั้งหมดนี้คือ brief ของรอบนี้. ขอให้วันนี้เป็นวันที่ดีครับ. แล้วเจอกันรอบหน้า.
