@@ -1,0 +1,47 @@
+สวัสดีครับ นี่คือ Enabridge AI Brief รอบ 31 July 2026 เวลา 06:11 ครับ.
+รอบนี้มี 3 เรื่อง เน้น Agentic AI, business use case, และ trend ที่เอามาใช้กับ OpenBridge ได้.
+
+เรื่องแรก.
+วันนี้เช้าที่ Enabridge อยากให้ทุกคนเห็น pattern ที่เกิดใน 24 ชั่วโมง. Hush Security กับ Encore AI สอง startup ที่ทำคนละเรื่องเลย ปิด Series A ขนาดเท่ากันเป๊ะ 30 ล้านเหรียญคนละราว. Hush นำโดย Akamai ในฐานะ strategic investor. Encore นำโดย Team8 กับธนาคาร insurance ที่เดิมเป็น customer.
+
+Hush ทำ non-human identity สำหรับ AI agent. Registry กลาง JIT permission kill switch. Kyndryl ที่เป็น IT infrastructure services ใหญ่ที่สุดในโลก ไม่แค่ใช้เอง แต่เริ่ม resell ให้ enterprise. Encore ทำ Interaction Mining แยก action ของ top performer แล้ว encode เป็น revenue agent. Lending client รายใหญ่โชว์ 10x ROI ภายในไม่กี่เดือน.
+
+วันเดียวกัน Gartner ออก press release. AI agent จะ outnumber seller 10 ต่อ 1 ภายในปี 2028. แต่ paradox คือ น้อยกว่า 40% ของ seller จะบอกว่า agent เพิ่ม productivity. Dan Gottlieb เรียกว่า value ceiling. Melissa Hilbert เสริม beyond a certain point more AI does not mean more productivity.
+
+Signal ที่อยากให้เห็น. Agent workforce กำลังกลาย standard ในเวลาที่เร็วกว่า SaaS revolution รอบก่อน. แต่ 2 gap ใหญ่ open. Governance ที่ security team ยัง visibility ต่ำ. กับ outcome capture ที่ business ยังพิสูจน์ ROI ไม่ได้. Hush เข้ามุมแรก. Encore เข้ามุมสอง. คนละ arbitrage แต่ปัญหาเดียวกัน.
+
+สำหรับ builders ที่ทำ agent framework. ต้อง treat identity กับ outcome เป็น first-class primitive ตั้งแต่ v1. ไม่ใช่ optional module. Framework ที่ไม่มี 2 hook นี้ในปี 2027 ขาย enterprise ไม่ได้.
+
+สำหรับ enterprise ไทย SET50. Q4 นี้ต้องเริ่มถาม vendor สาม คำถาม. Agent enroll เข้า identity registry ได้ไหม. Outcome attribution instrumentation มีมั้ย. Standing credential หรือ JIT. คำถามพวกนี้ Q4 นี้ยังไม่ mandatory. Q4 ปีหน้าจะเป็น. คุยกันวันหน้าครับ.
+
+เรื่องที่สอง.
+ข่าวที่ dev ทุกคนที่ใช้ Visual Studio ต้องรู้เช้านี้. GitHub Copilot in Visual Studio ปล่อย July update วันที่ 30. Feature หลักคือ Agent Preview ตัวใหม่ที่ build บน Copilot SDK ตัวเดียวกับที่ powers Copilot CLI. แปลว่า Microsoft ย้าย AI layer ของ Visual Studio ทั้งหมดให้ run บน SDK เดียวกับ VS Code กับ CLI. ตัดการ maintain agent stack แยก 3 ตัวที่ fork กันมาปีที่ผ่านมา.
+
+Feature ที่ตามมา. Built-in .NET กับ Azure skill ที่ team Microsoft author เอง. dotnet-trace-collect, dotnet-pinvoke, csharp-scripts, azure-validate, azure-upgrade. Organization-level custom instructions ให้ org owner set Copilot preference กลางแล้ว push ลงทุก repo. Copilot Actions Review Selection ให้เลือก code แล้ว invoke inline review.
+
+Zoom out ให้เห็น pattern. 3 vendor ปิดเกม agent runtime สำเร็จภายในปี 2026. Anthropic Claude Code SDK powers Claude Code กับ Claude Desktop กับ Bedrock. OpenAI Agents SDK powers ChatGPT Enterprise กับ Codex CLI. Microsoft GitHub Copilot SDK powers Visual Studio VS Code CLI. 3 vendor lock 3 developer surface ของตัวเอง.
+
+Implication ใหญ่. Agent framework diversity ตายที่ layer runtime. LangChain LlamaIndex CrewAI Autogen ที่ wrap runtime จะ compete ยากขึ้นเมื่อ runtime เจ้าของ features เยอะขึ้น. Enterprise buyer เปลี่ยน calculus. เดิมถาม IDE ไหนที่ dev ชอบ. ตอนนี้ถาม agent runtime ไหนที่จะ lock in 3 ถึง 5 ปี. เพราะ runtime เท่ากับ subscription plus observability plus security posture.
+
+สำหรับ builders. ต้องตัดสินใจ 3 เดือนนี้. Stick หนึ่ง vendor deep. หรือ build cross-runtime abstraction ที่ prove value เกิน wrapper. หรือ pivot ขึ้นชั้น vertical application. Generic framework wrapper ที่ไม่ specialize อะไร ตายเร็วสุด.
+
+สำหรับ SI ไทย. G-Able Bluebik ACI Netka MFEC. Window เปิดให้ position certified Copilot SDK integrator plus .NET migration plus Azure Foundry. คู่กับ Anthropic partnership แบบ Cognizant EMEA. 2 wave ที่ต้องเลือก specialize ก่อน Q1 2027. คุยกันวันหน้าครับ.
+
+เรื่องที่สาม.
+เช้านี้อีกเรื่องที่ทุก sales leader ต้องได้ยิน. Gartner ปล่อย press release วันที่ 28. AI agent จะ outnumber sales rep 10 ต่อ 1 ภายในปี 2028. แต่ paradox ที่หัวข้อเน้น. น้อยกว่า 40% ของ seller จะรายงานว่า agent ช่วยเพิ่ม productivity.
+
+Dan Gottlieb VP Analyst ใน Gartner Sales practice เรียก paradox นี้ว่า value ceiling. 3 สาเหตุ. Data foundation อ่อน. Workflow integration ไม่ครบ. Seller experience แย่. Melissa Hilbert เสริม quote ที่จะกลาย mantra. AI agents are everywhere but there is a value ceiling. Beyond a certain point more AI does not mean more productivity.
+
+Zoom out. Gartner ยังยืน forecast Fortune 500 average จะ operate 150,000 agent ภายในปี 2028 จาก 15 ในปี 2025. แต่ only 13% ขององค์กรมี governance ที่พอ. ตัวเลข 2 ตัวนี้ pair กัน. Agent เพิ่ม 10,000 เท่า แต่ organizational readiness เพิ่ม marginal.
+
+Implication. CFO Q4 2026 จะเริ่มถาม hard question. Where is the productivity number. Vendor ที่ตอบไม่ได้ agent budget freeze หรือ shift ไป outcome-based contract only. Pair กับ Salesforce Agentforce $2 per resolution ที่ Enabridge cover เมื่อวาน. Pattern ชัด.
+
+Root cause 3 ปัญหาที่ 3 SaaS category ใหม่กำลังแก้. Data foundation snowflake cortex Databricks agent bricks Palantir Foundry. Workflow integration Hush registry Cognizant EMEA Anthropic Premier layer. Seller experience Encore Interaction Mining Salesforce Agentforce.
+
+สำหรับ builders ไทย SEA. ถ้า target sales หรือ service vertical อย่าขาย agent stand alone. ขาย agent plus data foundation plus workflow integration เป็น bundle. Vertical ที่ window เปิด. Thai insurance AIA Muang Thai FWD. Thai bank RM SCB K-Bank KBank private. Thai property AP SC Asset Sansiri Origin.
+
+สำหรับ enterprise. Vendor evaluation Q4 นี้ต้องแยก 3 metric. Productivity ที่ measurable. Value ceiling proof point. Failure mode explanation ที่ vendor commit เขียนหน้า contract.
+
+สำหรับ Thai SI. Bluebik G-Able Accenture SEA Deloitte Thailand ที่ position agent value optimization ที่ audit deployment ระบุ value ceiling prescribe fix. Framework ที่ Gartner McKinsey จะ publish Q1 2027 คือ template ที่ SI ต้อง productize ก่อน. คุยกันวันหน้าครับ.
+
+ทั้งหมดนี้คือ brief ของรอบนี้. ขอให้วันนี้เป็นวันที่ดีครับ. แล้วเจอกันรอบหน้า.
