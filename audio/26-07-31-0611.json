@@ -1,0 +1,27 @@
+{
+  "date": "26-07-31-0611",
+  "iso_date": "2026-07-31T06:11:00+07:00",
+  "title": "Daily AI Brief — 26-07-31 06:11",
+  "items": [
+    {
+      "file": "26-07-31-0611-01-hush-encore-30m-twin-raise-agent-native-saas.md",
+      "title": "Hush + Encore ระดม $30M คนละราวเดียวกัน — เผยหน้าตา 2 SaaS category ที่ agent workforce ต้องซื้อ",
+      "order": 1
+    },
+    {
+      "file": "26-07-31-0611-02-microsoft-visual-studio-copilot-sdk-agent-runtime-consolidation.md",
+      "title": "Microsoft ย้าย Visual Studio agent ไป GitHub Copilot SDK — จุดเริ่ม agent runtime consolidation ระดับ vendor",
+      "order": 2
+    },
+    {
+      "file": "26-07-31-0611-03-gartner-10x-agents-sellers-2028-value-ceiling-paradox.md",
+      "title": "Gartner: agent จะ outnumber sales rep 10:1 ปี 2028 — แต่ <40% ของ seller บอกว่า agent เพิ่ม productivity",
+      "order": 3
+    }
+  ],
+  "script_char_count": 5955,
+  "audio_file": "26-07-31-0611.mp3",
+  "voice": "th-TH-Chirp3-HD-Achernar",
+  "model": "google-cloud-tts-chirp3-hd",
+  "speed": 1.3
+}
