@@ -1,0 +1,32 @@
+สวัสดีครับ นี่คือ Enabridge AI Brief รอบ 02 August 2026 เวลา 06:10 ครับ.
+รอบนี้มี 4 เรื่อง เน้น Agentic AI, business use case, และ trend ที่เอามาใช้กับ OpenBridge ได้.
+
+เรื่องแรก.
+วันที่ 27 กรกฎาคม Microsoft เปิดหน้าไพ่ใหญ่ในตลาด security. สองของใหม่พร้อมกัน. หนึ่งคือ MAI-Cyber-1-Flash — โมเดล cybersecurity แรกที่ Microsoft สร้างเอง ไม่พึ่ง OpenAI. สองคือ Project Perception — ระบบ agentic security ที่ประกอบด้วย agent สามสี. Red agents map เส้นทางที่ attacker น่าจะใช้. Blue agents triage risk. Green agents ลงมือแก้ automatic — rotate credential, quarantine host, patch CVE. ทั้งหมด public preview เปิด 3 สิงหาคมนี้ ส่งตรงเข้า Microsoft Defender.
+
+Number ที่ Microsoft เคลม — 96 percent บน CyberGym benchmark, เหนือ Anthropic Mythos 12 คะแนน, และ cost ต่ำกว่า 50 percent เทียบ config เก่าของ Microsoft เอง. ที่สำคัญกว่า number คือ pattern. Microsoft ใช้ multi-model routing — 90 percent ของงานให้ Cyber-1-Flash ที่ถูก, 10 percent ที่ยากสุดค่อยยิงเข้า GPT-5.4. นี่คือ economics ของ agent จริงในโลก production.
+
+Signal ที่สำคัญ — hyperscaler ทุกเจ้ากำลัง build in-house model ต่อ vertical เชิงกลยุทธ์. AWS ทิ้ง Nova ไปทำ Frontier Model Research. Microsoft ทำ Cyber-1-Flash. Google มี Gemini. Foundation model race ไม่ใช่ head-to-head แล้ว. สำหรับ Enabridge — ถ้าคุยกับ Thai enterprise เรื่อง agent security, red-blue-green architecture คือ reference ที่ CISO เข้าใจทันที เพราะเป็นภาษาที่ SOC ใช้มา 20 ปีอยู่แล้ว.
+
+เรื่องที่สอง.
+31 กรกฎาคม DeepSeek ปล่อย V4-Flash รุ่น 0731 เข้า public beta. ราคาไม่ขยับ — 14 cents ต่อล้าน input token, 28 cents ต่อล้าน output. ถ้ารวม cache hit blended rate จะเหลือแค่ 6 cents ต่อล้าน token. ต่ำที่สุดในตลาด frontier-adjacent วันนี้.
+
+Change ที่สำคัญกว่าราคา — DeepSeek เพิ่ม native compatibility กับ OpenAI Responses API และ Codex CLI. แปลว่า agent stack ที่สร้างบน OpenAI SDK — Cursor, Claude Code, LangGraph, CrewAI — สามารถ swap DeepSeek เข้าไปได้โดยไม่แก้ code เลย. เปลี่ยนแค่ base URL กับชื่อ model. Benchmark SWE-bench Pro ที่ 59.5 คะแนน แซง GPT-5.5, เท่ากับ Claude Opus 5 basic ที่แพงกว่า 35 เท่า.
+
+Signal ที่ CFO ต้องเข้าใจ — model layer กำลังกลายเป็น commodity ระดับ next-gen. ที่ OpenAI เพิ่งลด Luna 80 percent เมื่อวาน = defensive move ตอบ DeepSeek pressure. Enterprise ที่จ่าย half million ต่อเดือนให้ Anthropic + OpenAI สำหรับ agent workload ต้อง audit cost วันพรุ่งนี้เช้า. Route 70 percent ของ traffic ไป DeepSeek, เหลือ 30 percent ให้ frontier — savings 50 ถึง 80 percent ทันที. สำหรับ Thai SET50 ที่ยังไม่ได้ setup multi-model gateway — คู่แข่งกำลังจะได้ margin advantage 60 percent ก่อนสิ้นไตรมาส.
+
+เรื่องที่สาม.
+27 กรกฎาคม Dynatrace เปิดของใหม่สามตัวใน Dynatrace Intelligence platform. Autonomous SRE Agent, Cloud SRE Agent, และ Agent Builder. Cloud SRE ออนไลน์ทันที, สองตัวที่เหลือ GA สิงหาคม.
+
+ที่ทำให้ package นี้สำคัญ — Dynatrace เป็น observability vendor แรกที่ยอมให้ agent take corrective action ข้าม AWS, Azure, GCP แล้วเขียน single audit trail เดียว. Datadog ยังแค่ recommend, ไม่ take action. Splunk take action ได้แต่ scope แค่ Cisco stack. Dynatrace มี approval level ตั้งไว้ 3 ระดับ — Level 1 auto, Level 2 human-in-loop 30 วินาที, Level 3 explicit approval — เพื่อให้ CISO map เข้า change management policy ที่มีอยู่แล้ว.
+
+Signal ที่สำคัญ — observability industry กำลัง collapse เป็น autonomous ops platform. เหตุผล — agent ทำ tool call พันครั้งต่อ minute, ถ้ารอ human triage ทุก anomaly = fail. Enterprise ที่ deploy agent จริงอย่าง Klarna, JPMorgan, Morgan Stanley กำลังบอก vendor ว่า "เราต้องการ agent ที่ triage agent ให้เรา". Dynatrace ตอบก่อน. Datadog กับ New Relic จะตามใน 4 ถึง 6 สัปดาห์. สำหรับ Thai bank ที่ยัง run Nagios กับ Zabbix — falling 3 generation behind. Agent-native observability คือ table stakes สำหรับ Basel III audit ต่อไป.
+
+เรื่องที่สี่.
+30 กรกฎาคม Upwind Security ปล่อยของใหม่คู่กัน. AI Agent Context Scanner ที่ inspect instructions, tools, connections ของ agent ก่อน take action. บวก AI Detection & Response หรือ AI DR ที่ moved เข้า general availability. โมเดลเหมือน EDR สำหรับ endpoint — baseline agent behavior แล้ว flag drift real-time.
+
+ที่สำคัญกว่า product — pattern industry กำลัง codify. Agent security แยกเป็น 2 stage. Stage 1 shift-left — สคาน context ก่อน agent act. Stage 2 shift-right — detect drift ระหว่าง act. เทียบ DevSecOps เมื่อ 10 ปีก่อนที่แยก SAST + DAST + runtime EDR. Gartner คาดจะ codify ใน AI TRiSM Magic Quadrant ปีนี้.
+
+Pricing per-agent $18 ต่อเดือน = enterprise ต้องเริ่ม count agent เหมือน count endpoint. F500 average คาด deploy 5,000 ถึง 50,000 agent ใน 2027. Category size 5 ถึง 10 พันล้าน ARR ใน 3 ปี — ใหญ่กว่า email security เดิม. สำหรับ Thai bank ที่ deploy agent workload บน Bedrock กับ Azure AI Foundry แล้ว — BOT กับ BOI จะเริ่มถาม audit trail ปีหน้า. Agent security tooling คือ table stakes ก่อน examiner มา. Enabridge angle — เพิ่ม agent security posture เข้า architecture recommendation, ไม่ใช่ afterthought.
+
+ทั้งหมดนี้คือ brief ของรอบนี้. ขอให้วันนี้เป็นวันที่ดีครับ. แล้วเจอกันรอบหน้า.
