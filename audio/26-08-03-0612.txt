@@ -1,0 +1,32 @@
+สวัสดีครับ นี่คือ Enabridge AI Brief รอบ 03 August 2026 เวลา 06:12 ครับ.
+รอบนี้มี 4 เรื่อง เน้น Agentic AI, business use case, และ trend ที่เอามาใช้กับ OpenBridge ได้.
+
+เรื่องแรก.
+วันที่ 28 กรกฎาคม Agentic AI Foundation ใต้ Linux Foundation ปล่อย MCP spec เวอร์ชั่นใหม่ ชื่อ 2026-07-28. เป็น update ใหญ่สุดตั้งแต่ Anthropic เปิด protocol เมื่อ 20 เดือนก่อน. หัวใจของ change คือคำเดียว — stateless.
+
+ก่อนหน้า MCP เป็น bidirectional stateful — client ต้องเปิด initialize handshake, แลก session id, server ต้องเก็บ state, ต้องมี sticky routing. Spec ใหม่ตัดทั้งหมดทิ้ง. ทุก request เป็น self-describing ผ่าน HTTP header. Server รันบน serverless หรือ edge ได้ทันที. Cloudflare Workers, Lambda, Vercel Functions ทั้งหมด compatible ในวันเดียว. เพิ่ม official extension 3 ตัว — MCP Apps สำหรับ server-rendered UI, Tasks สำหรับ async operation, Enterprise Managed Auth สำหรับ IdP-based provisioning.
+
+Signal สำคัญ — MCP กำลังกลายเป็น HTTP ของ agent ตัวจริง เพราะ enterprise buyer ปฏิเสธ stateful protocol มา 20 ปีตั้งแต่สมัย SOAP ไป REST. เมื่อทิ้ง state, MCP เข้ากับ platform เดิม โดยไม่ต้อง redesign infra. SI ที่ deploy agent ประหยัด 60-80% operational cost. Ecosystem ตอบใน 48 ชั่วโมง — AWS AgentCore Gateway, Cloudflare, Vercel, Netlify ship template หมด. MCP ผ่าน 400 ล้าน SDK download ต่อเดือน โต 4 เท่า YoY. สำหรับ Enabridge — ถ้ากำลัง pitch Thai bank เรื่อง agent deployment, เขียน MCP 2026-07-28 เป็น mandatory line ใน RFP renewal 2027 ทันที.
+
+เรื่องที่สอง.
+วันที่ 30 กรกฎาคม AWS ประกาศปิด Bedrock Agents Classic สำหรับลูกค้าใหม่. เป็น service agent ตัวแรกของ AWS ตั้งแต่พฤศจิกายน 2023. Model catalog ถูก freeze, workload เดิมยังรันได้ แต่ AWS strongly recommend migrate ไป AgentCore ก่อนไตรมาส 4.
+
+AgentCore ต่างจาก Classic ที่เคยเป็น monolith — แยกเป็น 5 service คือ Runtime, Gateway, Memory, Identity, Observability. เพิ่งประกาศเมื่อวานว่า Gateway จะ native support MCP spec 2026-07-28 ที่เพิ่งออกวันที่ 28 กรกฎาคม. หมายความว่า AWS วาดตัวเองเป็น managed MCP router ตัวแรกใน hyperscaler.
+
+Signal ใหญ่กว่า — hyperscaler ทุกเจ้าทำ move เดียวกันหมด. Microsoft ปิด Prompt Flow legacy เดือนมิถุนายน. Google ทิ้ง Vertex AI Studio Legacy เมษายน. AWS ตามวันนี้. Enterprise ไม่มีทางเลือกอีก — agent 1.0 architecture ตายในไตรมาสเดียวกัน. Timing สำคัญ — re:Invent อยู่ 30 พฤศจิกายนถึง 4 ธันวาคม. Enterprise ที่ยังใช้ Bedrock Agents Classic มี 4 เดือน migrate ก่อนถูก financial pressure จาก TAM. สำหรับ Thai enterprise ที่ deploy production บน ap-southeast-1 Singapore — SI ต้อง re-scope proposal ทันที เพราะ AgentCore charging model ต่างจาก Classic; บาง workload ถูกลง 30-50% บาง workload แพงขึ้น 20-40%.
+
+เรื่องที่สาม.
+วันที่ 24 กรกฎาคม Visa และ Lianlian DigiTech บริษัทเพย์เมนต์ฟินเทคฮ่องกง ประกาศเสร็จสมบูรณ์ B2B agentic transaction ตัวแรกใน Greater China. Agent ชื่อ LoopXPay ระบุซัพพลายเออร์ เปรียบเทียบ ordered แล้วจ่ายเงินผ่าน Visa network ในเวิร์กโฟลว์เดียว. ทั้งหมดใช้เวลาไม่ถึง 5 นาที เทียบกับ manual procurement ที่ต้องใช้ 2 ถึง 4 ชั่วโมง.
+
+หัวใจของ deal คือ Visa Trusted Agent Protocol และ Visa Agentic Directory ที่ Visa เปิดเมื่อมีนาคม. Agent ที่จะ execute transaction ต้องผ่าน audit 6 ถึง 8 สัปดาห์ Visa ตรวจ prompt injection defense, spending guardrail, human-in-loop policy. LoopXPay เป็น agent แรกใน APAC ที่ผ่าน. เทียบกับ US ที่มี Perplexity Comet Purchase, OpenAI Operator Wallet, Anthropic Claude Purchase Extension live มาตั้งแต่ไตรมาส 2.
+
+Signal ที่สำคัญที่สุดคือ 3 เรื่อง. หนึ่ง — card network เดิมได้ role ใหม่เป็น identity broker แทนแค่ transaction router. Visa Mastercard Stripe จะเป็น 3-horse race เรื่อง B2B agent payment ก่อนสิ้นปี. สอง — Asia ก่อน US เพราะ regulate ก่อน CAC Hong Kong Monetary Authority ปล่อย tiered agent framework แล้ว. Sarbanes-Oxley ยัง gray area เรื่องนี้. สาม — SMB market ที่จะเกิด vertical B2B agentic payment startup ในไตรมาสหน้าทุก region. สำหรับ Enabridge — Thai fintech อย่าง 2C2P Omise LightNet ควร partner กับ SI ทันที ก่อน foreign player อย่าง LoopXPay หรือ Airwallex เข้าตลาดไทยไตรมาส 4.
+
+เรื่องที่สี่.
+วันที่ 28 กรกฎาคม วันเดียวกับ MCP spec drop Google ปล่อย major update Gemini API Managed Agents. ห้าฟีเจอร์ใหม่ที่สำคัญ. Gemini 3.6 Flash เป็น default model. Environment hooks — script custom รัน pre และ post tool call. Budget controls — token cap และ spend limit. Scheduled triggers — cron native สำหรับ recurring job. และ free tier access — เปิดให้ prototype ฟรีโดยไม่ต้องใช้ credit card.
+
+3 สัปดาห์ก่อนหน้า Google ปล่อย update ก่อน — background tasks, remote MCP integration, custom function calling, network credential refresh. รวม 2 update นี้ = production agent infrastructure ที่ enterprise ต้องการทุกอย่างในที่เดียว.
+
+Signal สำคัญ 3 เรื่อง. หนึ่ง — Google เดินเกม developer first ตรงข้าม AWS ที่ pay only. AWS Bedrock AgentCore, Azure AI Foundry Agent Service ต้องมี paid account ก่อน prototype. Google เปิด free tier = indie developer, startup, student build production agent ได้ทันที. Long term = distribution moat ที่ AWS ตามยาก. สอง — Environment hooks และ budget controls = admission ว่า production agent ต้องมี safety envelope ที่ SOC และ CFO ยอมรับ. Q3 คือเฟส agent infra grow up จาก capability เข้าสู่ compliance. สาม — Scheduled trigger เปิดตลาดใหม่ทั้งหมด. agent ที่รันตามเวลาแทน user request = daily briefing, weekly reconciliation, hourly monitoring. Zapier vertical จะเจอ disruption ใน 6 เดือน. สำหรับ Enabridge — Thai SET50 ที่ใช้ BigQuery และ Vertex AI อยู่แล้ว ควร evaluate Managed Agents ก่อน commit บน AWS หรือ Azure ไตรมาสหน้า.
+
+ทั้งหมดนี้คือ brief ของรอบนี้. ขอให้วันนี้เป็นวันที่ดีครับ. แล้วเจอกันรอบหน้า.
