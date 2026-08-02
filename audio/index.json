@@ -1,7 +1,41 @@
 {
-  "generated_at": "2026-07-31T23:30:03Z",
-  "count": 60,
+  "generated_at": "2026-08-01T23:25:46Z",
+  "count": 61,
   "episodes": [
+    {
+      "date": "26-08-02-0610",
+      "iso_date": "2026-08-02T06:10:00+07:00",
+      "title": "Daily AI Brief — 26-08-02 06:10",
+      "description": "1. Microsoft ทิ้ง MAI-Cyber-1-Flash + Project Perception — โมเดล cyber ตัวแรก, สาม agent สี รบกันเอง, 96% CyberGym แซง Mythos 12 คะแนน\n2. DeepSeek V4-Flash 0731 = $0.14/$0.28 + Codex + Responses API — ผู้เล่นราคาถูกสุดกลายเป็น drop-in สำหรับ agent coding stack ทั่วโลก\n3. Dynatrace เปิด Autonomous SRE + Cloud SRE + Agent Builder — observability vendor แรกที่ take corrective action ข้าม AWS/Azure/GCP ด้วย audit trail เดียว\n4. Upwind Context Scanner + AI DR GA — agent security แยกเป็น \"before act\" กับ \"after act\" อย่างเป็นทางการ",
+      "items": [
+        {
+          "file": "26-08-02-0610-01-microsoft-project-perception-mai-cyber-1-flash-agentic-security.md",
+          "title": "Microsoft ทิ้ง MAI-Cyber-1-Flash + Project Perception — โมเดล cyber ตัวแรก, สาม agent สี รบกันเอง, 96% CyberGym แซง Mythos 12 คะแนน",
+          "order": 1
+        },
+        {
+          "file": "26-08-02-0610-02-deepseek-v4-flash-0731-codex-responses-api-price-shock.md",
+          "title": "DeepSeek V4-Flash 0731 = $0.14/$0.28 + Codex + Responses API — ผู้เล่นราคาถูกสุดกลายเป็น drop-in สำหรับ agent coding stack ทั่วโลก",
+          "order": 2
+        },
+        {
+          "file": "26-08-02-0610-03-dynatrace-autonomous-sre-cloud-agent-builder-ga.md",
+          "title": "Dynatrace เปิด Autonomous SRE + Cloud SRE + Agent Builder — observability vendor แรกที่ take corrective action ข้าม AWS/Azure/GCP ด้วย audit trail เดียว",
+          "order": 3
+        },
+        {
+          "file": "26-08-02-0610-04-upwind-ai-context-scanner-ai-dr-agent-runtime-ga.md",
+          "title": "Upwind Context Scanner + AI DR GA — agent security แยกเป็น \"before act\" กับ \"after act\" อย่างเป็นทางการ",
+          "order": 4
+        }
+      ],
+      "audio_file": "26-08-02-0610.mp3",
+      "audio_size_bytes": 1516992,
+      "voice": "th-TH-Chirp3-HD-Achernar",
+      "model": "google-cloud-tts-chirp3-hd",
+      "speed": 1.3,
+      "script_char_count": 4926
+    },
     {
       "date": "26-08-01-0610",
       "iso_date": "2026-08-01T06:10:00+07:00",
