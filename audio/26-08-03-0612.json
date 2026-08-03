@@ -1,0 +1,32 @@
+{
+  "date": "26-08-03-0612",
+  "iso_date": "2026-08-03T06:12:00+07:00",
+  "title": "Daily AI Brief — 26-08-03 06:12",
+  "items": [
+    {
+      "file": "26-08-03-0612-01-mcp-2026-07-28-stateless-serverless-agent-protocol.md",
+      "title": "MCP 2026-07-28 = ทิ้ง session, เดิน stateless — protocol ที่กำลังกลายเป็น \"HTTP ของ agent\" ในสัปดาห์เดียว",
+      "order": 1
+    },
+    {
+      "file": "26-08-03-0612-02-aws-bedrock-agents-classic-shutdown-agentcore-mcp-2026.md",
+      "title": "AWS ทิ้ง Bedrock Agents Classic 30 ก.ค. — บังคับ enterprise ทั้งตลาดเดิน AgentCore + MCP 2026-07-28 ก่อน re:Invent",
+      "order": 2
+    },
+    {
+      "file": "26-08-03-0612-03-visa-lianlian-loopxpay-b2b-agentic-payment-greater-china.md",
+      "title": "Visa + Lianlian LoopXPay = B2B agentic payment ตัวแรกที่ live ใน Greater China — Trusted Agent Protocol เริ่มมีของจริง",
+      "order": 3
+    },
+    {
+      "file": "26-08-03-0612-04-google-gemini-managed-agents-3-6-flash-hooks-free-tier.md",
+      "title": "Google Gemini Managed Agents ปล่อย 3.6 Flash + hooks + free tier — ทำ production agent infra ให้ developer อินดี้เข้าถึงได้ก่อน AWS",
+      "order": 4
+    }
+  ],
+  "script_char_count": 5494,
+  "audio_file": "26-08-03-0612.mp3",
+  "voice": "th-TH-Chirp3-HD-Achernar",
+  "model": "google-cloud-tts-chirp3-hd",
+  "speed": 1.3
+}
