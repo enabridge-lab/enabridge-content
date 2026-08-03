@@ -1,0 +1,32 @@
+สวัสดีครับ นี่คือ Enabridge AI Brief รอบ 04 August 2026 เวลา 06:13 ครับ.
+รอบนี้มี 4 เรื่อง เน้น Agentic AI, business use case, และ trend ที่เอามาใช้กับ OpenBridge ได้.
+
+เรื่องแรก.
+วันที่ 3 สิงหาคม InfoQ ยืนยัน Microsoft Agent Framework Harness และ Foundry Hosted Agents ขึ้น general availability. Microsoft กลายเป็น hyperscaler ตัวที่สาม ที่มี production agent runtime หลัง AWS AgentCore เมื่อตุลาคม 2025 และ Google Managed Agents เมื่อ 28 กรกฎาคม. Runtime layer ปิดสามค่ายภายในสัปดาห์เดียว.
+
+Harness คือ single binary รันเหมือนกันตั้งแต่ laptop container ไปถึง Foundry Hosted Agents managed compute แบบ consumption-based billing. Built-in ครบ ตั้งแต่ function invocation, context compaction, tool approval, OpenTelemetry trace, ไปจนถึง todo list plan-execute mode. Ship พร้อม GitHub Copilot SDK connector และ Claude Agent SDK connector — coding agent traffic ไหลเข้า Foundry dashboard เดียวกันกับ agent อื่น. Semantic Kernel และ AutoGen เข้า maintenance mode.
+
+Reveal ที่เปลี่ยน framing ทั้งตลาด — MBZUAI analysis ของ Claude Code เวอร์ชั่น 2.1.88 พบว่า 98.4% ของ codebase คือ harness infrastructure permission และ context management. เหลือแค่ 1.6% เป็น AI decision logic. Wes Steyn จาก Microsoft พูดตรง ๆ ว่า model บนตัวมันเองสร้างได้แค่ text — harness คือ product ตัวจริง. Signal สำคัญ hyperscaler agent runtime กลายเป็น commodity — differentiation เลื่อนไปที่ราคาต่อ agent second, fleet governance และ region availability. Startup ที่ยัง pitch model layer กำลังพูดผิด layer. สำหรับ Enabridge ทีมที่ position ตัวเองเป็น harness-native architect deploy agent บน Foundry Hosted Agents AgentCore Managed Agents แล้วรับผิดชอบ fleet governance ครบ จะกินตลาด Thai SET50 ก่อน generic agent builder ในไตรมาสถัดไป.
+
+เรื่องที่สอง.
+วันที่ 3 สิงหาคม Yellow.ai enterprise agentic AI สัญชาติ India ประกาศ business combination กับ Bluerock Acquisition Corp SPAC มูลค่า pro forma equity 550 ล้านเหรียญ. Combined company จะ trade ภายใต้ ticker YAI บน Nasdaq หลัง Bluerock shareholder vote — ปิดครึ่งหลังปี 2026. Yellow.ai valuation pre-money 300 ล้านเหรียญ ประมาณ 9 เท่าของ revenue 34 ล้านเหรียญ; จัดการ 16 พันล้านบทสนทนาต่อปีให้ enterprise client มากกว่า 650 ราย.
+
+Strategy ที่พลิก playbook ทั้งตลาด — Yellow.ai ไม่ได้ขาย software license อย่างเดียว. แผนคือใช้ proceeds ซื้อ BPO firm แล้ว rebuild operation ด้วย platform ตัวเอง. CEO Raghu Ravinutala พูดตรง ๆ ว่าจะ capture labour spend directly. เสริม executive สองคน — Kaushik Bhaskar สาย BPO operating และ Nand Sharma สาย PE roll-up. Market opportunity BPO โลก 384 พันล้านวันนี้ ไปถึง 906 พันล้านปี 2035; AI agent sub-segment โต 43% CAGR ต่อปี.
+
+Signal สำคัญ — pure-play enterprise agentic AI ตัวแรกที่ประกาศ public listing. Sierra, Cresta, Decagon ยังไม่ IPO. Yellow.ai เข้าก่อน = anchor multiple ให้ตลาด. Threat แบบใหม่ต่อ Genesys, NICE, Verint และ Teleperformance กับ Concentrix. Enabridge angle Thai SI ที่มี BPO relationship — package Yellow.ai + BPO client story เป็น reference architecture สำหรับ mid-market ASEAN client ไตรมาส 4. ถ้ามี capital ให้พิจารณา acquire Thai BPO 200-500 seat แล้ว rebuild เป็น AI-augmented — margin story เดียวกัน แต่เข้าไทยก่อน foreign player.
+
+เรื่องที่สาม.
+สัปดาห์ที่แล้ว Snowflake ประกาศ Cortex AI Gateway ก่อนไปเปิด showcase ที่ Black Hat 2026 ใน Las Vegas ระหว่าง 3 ถึง 8 สิงหาคม. Cortex AI Gateway คือ centralized control layer สำหรับ agent identity, tool authorization, cost attribution และ audit trail. รองรับ 100 MCP server จาก day 1 ครอบทั้ง first-party CoCo CoWork และ third-party Amazon Bedrock, Azure AI Foundry, ChatGPT, Claude Code, Cursor.
+
+Product built บน Natoma acquisition เมื่อพฤษภาคม — MCP governance startup ที่ Snowflake ซื้อและ integrate เข้า Cortex ใน 3 เดือน. Feature key เช่น agent identity verification, short-lived task-scoped credential, tool-call-level audit และ token cost attribution ต่อ user ต่อ agent. Partner integration wave แรก Aembit, 1Password, Linx, SailPoint, Saviynt. Mayank Upadhyay Chief Security ของ Snowflake พูดว่า enterprise AI กำลังย้ายจาก data interoperability ไป agent interoperability และ security ต้องอยู่ตรงกลาง shift นี้.
+
+Signal สำคัญ — data warehouse เข้ามาเป็น agent governance infrastructure. Snowflake win rate ในการแข่งกับ Databricks จะขยับขึ้น เพราะ Databricks ยังไม่มี dedicated MCP gateway. MCP router กลายเป็น category ที่ vendor ใหญ่ทุกเจ้า ship ในไตรมาสเดียว — AWS AgentCore Gateway, Snowflake Cortex, Cloudflare Agents Gateway, Kong. สภาพตลาดใน 6 เดือน MCP gateway จะเป็น table-stake เหมือน CDN กับ WAF ทุกวันนี้. Enabridge angle Thai SI ที่ certify เป็น Cortex AI Gateway integration partner ก่อนตลาดเต็ม 50-60 partner จะกินตลาด Snowflake account SEA ในไตรมาส 4 และปี 2027.
+
+เรื่องที่สี่.
+วันนี้ 4 สิงหาคม Ai4 2026 เปิดที่ Venetian Las Vegas — largest AI conference โลกปีนี้ attendee 8,000 คน keynote 4 anchor. Program committee เลือก agentic AI เป็น anchor track อันดับหนึ่ง เปลี่ยนจากปี 2024-2025 ที่ agent เป็น sub-topic. Panel opening เย็นนี้ Geoffrey Hinton, Andrew Ng, Fei-Fei Li สาม pioneer ที่มีมุมมองต่างกัน บนเวทีเดียวกันครั้งแรก.
+
+Keynote agentic infrastructure ที่จะ set narrative สัปดาห์นี้ — Jeetu Patel President ของ Cisco ใน session Critical Infrastructure for the AI Era. Patel วางกรอบว่า agent action ทุก step คือ routing decision, trust decision และ telemetry event. Agent traffic pattern ต่างจาก human 10-100 เท่า throughput เพราะ agent ทำงาน 24 ชั่วโมงไม่หยุด. Enterprise ที่ยัง treat agent เป็น user บัญชีหนึ่งใน RBAC จะเจอระบบล้มใน 12-18 เดือน. Cisco push message นี้ก่อน Palo Alto กับ Fortinet ประกาศ counter-product ในไตรมาส 4.
+
+Signal สำคัญ — Ai4 คือ first mainstream AI conference ที่ agentic AI เป็น anchor ไม่ใช่ side session. Pattern คล้าย KubeCon 2018 ที่ container orchestration ขึ้นสถานะ mainstream. Enterprise procurement และ board-level strategy จะปรับคำที่ใช้ใน 90 วัน จาก AI initiative เป็น agent deployment. Vendor ที่คาดจะประกาศใน 3 วัน — Snowflake Cortex AI Gateway GA date, AWS AgentCore Marketplace expansion, Microsoft Foundry Hosted Agents ap-southeast-1, Google Managed Agents free tier metric, Cisco Splunk joint observability. Thai enterprise executive ที่ไม่ได้ไป Las Vegas — subscribe Ai4 session recording ทันทีที่ปล่อย บวก track hashtag live-tweet จาก analyst จะได้ signal 80% ของงาน.
+
+ทั้งหมดนี้คือ brief ของรอบนี้. ขอให้วันนี้เป็นวันที่ดีครับ. แล้วเจอกันรอบหน้า.
