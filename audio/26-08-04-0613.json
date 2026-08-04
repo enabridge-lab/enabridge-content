@@ -1,0 +1,32 @@
+{
+  "date": "26-08-04-0613",
+  "iso_date": "2026-08-04T06:13:00+07:00",
+  "title": "Daily AI Brief — 26-08-04 06:13",
+  "items": [
+    {
+      "file": "26-08-04-0613-01-microsoft-agent-framework-harness-foundry-hosted-agents-ga.md",
+      "title": "Microsoft Foundry Hosted Agents + Agent Framework Harness GA — hyperscaler agent runtime กลายเป็น \"commodity 3 ค่าย\" ในสัปดาห์เดียว",
+      "order": 1
+    },
+    {
+      "file": "26-08-04-0613-02-yellow-ai-spac-bluerock-550m-bpo-rollup-agentic.md",
+      "title": "Yellow.ai ประกาศ SPAC $550M เข้า Nasdaq — pure-play enterprise agentic AI ตัวแรก + roll-up BPO เอง \"ซื้อ call center แล้วเปลี่ยนเป็น agent\"",
+      "order": 2
+    },
+    {
+      "file": "26-08-04-0613-03-snowflake-cortex-ai-gateway-black-hat-2026-mcp-governance.md",
+      "title": "Snowflake เปิด Cortex AI Gateway ที่ Black Hat 2026 — data warehouse กลายเป็น \"MCP router + agent identity broker\" ที่ enterprise ต้องผ่าน",
+      "order": 3
+    },
+    {
+      "file": "26-08-04-0613-04-ai4-2026-cisco-agentic-infrastructure-mainstream-moment.md",
+      "title": "Ai4 2026 เปิดวันนี้ที่ Las Vegas — Hinton/Ng/Fei-Fei Li + Cisco agentic infrastructure = ครั้งแรกที่ enterprise agent ขึ้นเวทีใหญ่พร้อมกัน",
+      "order": 4
+    }
+  ],
+  "script_char_count": 6259,
+  "audio_file": "26-08-04-0613.mp3",
+  "voice": "th-TH-Chirp3-HD-Achernar",
+  "model": "google-cloud-tts-chirp3-hd",
+  "speed": 1.3
+}
