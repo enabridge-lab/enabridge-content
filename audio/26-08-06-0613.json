@@ -1,0 +1,32 @@
+{
+  "date": "26-08-06-0613",
+  "iso_date": "2026-08-06T06:13:00+07:00",
+  "title": "Daily AI Brief — 26-08-06 06:13",
+  "items": [
+    {
+      "file": "26-08-06-0613-01-cloudflare-wallets-agent-payment-identity-x402.md",
+      "title": "Cloudflare Wallets + cloudflare.pay ตัดสิน agent commerce ที่ layer HTTP: agent มี handle ถาวร, จ่าย USDC ผ่าน x402, guardrail อ่านออกโดย CFO",
+      "order": 1
+    },
+    {
+      "file": "26-08-06-0613-02-nvidia-open-secure-ai-alliance-120-safe-black-hat.md",
+      "title": "Open Secure AI Alliance ทะลุ 120 สมาชิก + SAFE guidelines เปิดตัวที่ Black Hat USA 2026: agent security กลายเป็น industry-standard, closed frontier lab นั่งข้างสนาม",
+      "order": 2
+    },
+    {
+      "file": "26-08-06-0613-03-google-cloud-next-2026-gemini-enterprise-a2a-150-orgs.md",
+      "title": "Google Cloud Next 2026 รวมทุกแบรนด์ agent ไว้ที่เดียว: Vertex → Gemini Enterprise Agent Platform, A2A 1.2 ขึ้น production 150 org, Project Mariner ตั้ง roadmap ถึง Q4 marketplace",
+      "order": 3
+    },
+    {
+      "file": "26-08-06-0613-04-servicenow-1b-ai-acv-salesforce-agentforce-va-1-6b.md",
+      "title": "ServiceNow AI ทะลุ $1B ACV, Salesforce Agentforce $1B ARR + VA $1.6B deal — 2 enterprise agent platform proof out ที่ speed ต่างจาก SaaS classic 3-5 เท่า",
+      "order": 4
+    }
+  ],
+  "script_char_count": 9156,
+  "audio_file": "26-08-06-0613.mp3",
+  "voice": "th-TH-Chirp3-HD-Achernar",
+  "model": "google-cloud-tts-chirp3-hd",
+  "speed": 1.3
+}
