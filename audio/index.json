@@ -1,7 +1,41 @@
 {
-  "generated_at": "2026-08-03T23:32:13Z",
-  "count": 63,
+  "generated_at": "2026-08-04T23:33:03Z",
+  "count": 64,
   "episodes": [
+    {
+      "date": "26-08-05-0614",
+      "iso_date": "2026-08-05T06:14:00+07:00",
+      "title": "Daily AI Brief — 26-08-05 06:14",
+      "description": "1. Palantir Q2 2026 — AIP ชนะ frontier lab แบบ bake-off ที่ $10M ACV: enterprise agent platform economics prove out, Karp ด่า \"Marxist overtones\"\n2. EU AI Act GPAI enforcement live 2 ส.ค. — regulatory floor สำหรับ AI Agent ทั้งโลก, €15M/3% turnover fine, และเหตุผลที่ MCP identity gap กลายเป็น fine-able exposure\n3. xAI Grok Voice Think Fast 2.0 auto-routes วันนี้ 5 ส.ค. — voice agent pricing shock $0.08/min + 60% token cut, Sierra ($200M ARR) กับ Decagon ($4.5B val) เริ่มถูกบีบ\n4. Cognizant × Anthropic Global Premier Partner + Frontier Certified 30K workforce — SI channel กำลังกลายเป็น enterprise agent distribution moat ที่ Big 4 + Big Tech ต้องเข้า",
+      "items": [
+        {
+          "file": "26-08-05-0614-01-palantir-q2-2026-aip-bake-off-frontier-lab.md",
+          "title": "Palantir Q2 2026 — AIP ชนะ frontier lab แบบ bake-off ที่ $10M ACV: enterprise agent platform economics prove out, Karp ด่า \"Marxist overtones\"",
+          "order": 1
+        },
+        {
+          "file": "26-08-05-0614-02-eu-ai-act-gpai-enforcement-live.md",
+          "title": "EU AI Act GPAI enforcement live 2 ส.ค. — regulatory floor สำหรับ AI Agent ทั้งโลก, €15M/3% turnover fine, และเหตุผลที่ MCP identity gap กลายเป็น fine-able exposure",
+          "order": 2
+        },
+        {
+          "file": "26-08-05-0614-03-xai-grok-voice-think-fast-2-routing-live.md",
+          "title": "xAI Grok Voice Think Fast 2.0 auto-routes วันนี้ 5 ส.ค. — voice agent pricing shock $0.08/min + 60% token cut, Sierra ($200M ARR) กับ Decagon ($4.5B val) เริ่มถูกบีบ",
+          "order": 3
+        },
+        {
+          "file": "26-08-05-0614-04-cognizant-anthropic-global-premier-frontier-workforce.md",
+          "title": "Cognizant × Anthropic Global Premier Partner + Frontier Certified 30K workforce — SI channel กำลังกลายเป็น enterprise agent distribution moat ที่ Big 4 + Big Tech ต้องเข้า",
+          "order": 4
+        }
+      ],
+      "audio_file": "26-08-05-0614.mp3",
+      "audio_size_bytes": 2143392,
+      "voice": "th-TH-Chirp3-HD-Achernar",
+      "model": "google-cloud-tts-chirp3-hd",
+      "speed": 1.3,
+      "script_char_count": 7038
+    },
     {
       "date": "26-08-04-0613",
       "iso_date": "2026-08-04T06:13:00+07:00",
