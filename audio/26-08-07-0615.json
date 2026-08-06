@@ -1,0 +1,32 @@
+{
+  "date": "26-08-07-0615",
+  "iso_date": "2026-08-07T06:15:00+07:00",
+  "title": "Daily AI Brief — 26-08-07 06:15",
+  "items": [
+    {
+      "file": "26-08-07-0615-01-zenity-125m-series-c-agent-security-billion-agents.md",
+      "title": "Zenity ระดม $125M เพื่อ \"รักษา\" ยุค 1 พันล้าน AI Agent — Norwest นำ, SoftBank + Hitachi + LG ร่วม",
+      "order": 1
+    },
+    {
+      "file": "26-08-07-0615-02-black-hat-2026-agent-security-acalvio-zero-networks-deception.md",
+      "title": "Black Hat 2026: Agent Security กลายเป็น theme หลัก — decoy MCP, honey skill, least-agency enforcement เต็มพื้น",
+      "order": 2
+    },
+    {
+      "file": "26-08-07-0615-03-crowdstrike-aws-agents-of-chaos-100k-red-team-challenge.md",
+      "title": "CrowdStrike + AWS ประกาศ \"Agents of Chaos\" — $100K red-team challenge สอน defender แฮค AI Agent จริง",
+      "order": 3
+    },
+    {
+      "file": "26-08-07-0615-04-anthropic-claude-enterprise-inference-hooks-admin-api-dlp.md",
+      "title": "Anthropic ปล่อย Inference Hooks + Admin API — Claude Enterprise เพิ่ม DLP + IAM ให้ compliance team ก่อน Sonnet 5 ราคาปกติ",
+      "order": 4
+    }
+  ],
+  "script_char_count": 4843,
+  "audio_file": "26-08-07-0615.mp3",
+  "voice": "th-TH-Chirp3-HD-Achernar",
+  "model": "google-cloud-tts-chirp3-hd",
+  "speed": 1.3
+}
