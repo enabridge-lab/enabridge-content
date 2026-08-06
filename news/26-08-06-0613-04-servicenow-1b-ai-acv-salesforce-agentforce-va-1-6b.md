@@ -1,0 +1,67 @@
+---
+date: 2026-08-06
+slug: servicenow-1b-ai-acv-salesforce-agentforce-va-1-6b
+topic: use-case
+reading_time_min: 4
+sources: 5
+image_prompt: |
+  Editorial isometric illustration of two colossal glass revenue meters
+  standing side by side on a corporate podium. Left meter labeled
+  "SERVICENOW AI" fills to the very top with a giant tag reading
+  "$1B ACV". Right meter labeled "SALESFORCE AGENTFORCE" fills to matching
+  height with a tag reading "$1B ARR". Behind the meters, three trophy
+  cases showcase win logos: "VA $1.6B", "AGENTFORCE 360", "OTTO
+  FRONT DOOR". Below the meters, a small growth-curve chart shows
+  "DEC $500M → FEB $800M → MAY $1B" for Agentforce. Gold accent + midnight
+  blue palette (ServiceNow + Salesforce brand hues), editorial isometric
+  style, 1:1 aspect, no real human faces, text sharp at 200px thumbnail.
+image: images/26-08-06-0613-04-servicenow-1b-ai-acv-salesforce-agentforce-va-1-6b.png
+---
+
+# ServiceNow AI ทะลุ $1B ACV, Salesforce Agentforce $1B ARR + VA $1.6B deal — 2 enterprise agent platform proof out ที่ speed ต่างจาก SaaS classic 3-5 เท่า
+
+## TL;DR
+- **ต้น ส.ค.** — **ServiceNow AI ACV ทะลุ $1B** (ตัวเลขที่ CEO Bill McDermott ระบุใน Q2 FY2026 earnings + Knowledge 2026 recap) — 4 quarter หลังจากที่ Now Assist + AI Control Tower + Otto รวมเป็น product family
+- **Salesforce Agentforce ARR $500M (ธ.ค. 25) → $800M (ก.พ. 26) → $1B (พ.ค. 26)** — 6 เดือน 2x — Marc Benioff เผยใน Connections keynote พร้อมประกาศ **Agentforce 360** (Agentic Segmentation + 4 marketing agents ใหม่)
+- **Anchor deal ที่แสดง traction ระดับ enterprise** — **Salesforce ชนะ $1.6 พันล้าน Veterans Affairs Agentforce contract** (5 ปี) — เป็น federal AI agent deal ใหญ่สุดใน US ปี 2026; ServiceNow + Copilot อยู่ใน short list แต่แพ้เพราะ Salesforce มี "verified Agentic Segmentation" ที่ VA case worker workflow แล้ว
+- **มุม Agent Platform** — 2 vendor นี้กำลัง **prove out enterprise agent economics ที่ speed ต่างจาก classic SaaS 3-5 เท่า** (SaaS classic ใช้ 3-5 ปี ถึง $1B ARR; Agentforce ทำใน 12 เดือน). Winner: enterprise workflow vendor ที่มี **data + customer footprint + pre-built connector**; Loser: horizontal AI startup ที่ต้อง build ecosystem ใหม่
+
+## เกิดอะไรขึ้น
+
+**ต้นสิงหาคม 2026** ServiceNow เผยตัวเลข AI ACV (annualized contract value) ทะลุ **$1 พันล้าน** — 4 quarter หลังจากที่ Now Assist (GenAI copilot), AI Control Tower (agent governance + observability), Otto (unified conversational front door), และ Agent Fabric (multi-agent orchestration) รวมเป็น product family ที่ CEO Bill McDermott เรียกว่า **"AI-first workflow platform"**. Growth ที่ทำได้ = **8x YoY** (จาก ~$125M ที่ ต.ค. 2025). ตัวเลข Q2 FY2026 (May-Jul) revenue = $3.31B (+22% YoY); subscription revenue $3.19B (+22.5%); non-GAAP operating margin 33.3%; renewal rate 98%. **สิ่งที่ทำให้เร็ว** = 3 คู่ใหญ่: (1) Agent Fabric + AI Control Tower ที่ enterprise CIO อ่านออก (dashboard เห็นทุก agent + cost + policy violation), (2) Moveworks acquisition (Q1 2026 - $2.85B) ที่ integrate ให้เป็น Otto — เพิ่ม conversational front door แบบ Slack/Teams-first, (3) **Otto ที่ launched Knowledge 2026 (พ.ค.) — เข้าถึงผ่าน 4 channel: conversational, enterprise search, voice, data explorer** — ทุกช่องทาง governed ผ่าน AI Control Tower
+
+**Salesforce Agentforce เร็วกว่านั้นอีก** — จาก **$500M ARR ณ ธ.ค. 2025 → $800M ณ ก.พ. 2026 → $1B ณ พ.ค. 2026 → $1.2B+ คาดตอน Q2 FY2027 earnings (ก.ย.)**. Marc Benioff (CEO) เผยที่ Connections 2026 (มิ.ย.): **Agentforce 360** ที่รวม (1) **Agentic Segmentation** — agent ที่ analyze customer 360 profile + suggest micro-segment แบบ real-time, (2) **4 marketing agents ใหม่** (Campaign Optimizer, Journey Builder Agent, Content Repurposer, Loyalty Program Agent), (3) รวมกับ Data Cloud + MuleSoft + Slack + Tableau ในระดับ workflow. Benioff ประกาศต่อว่า **Agentforce จะ overtake Marketing Cloud (>$1.5B ARR) ภายในสิ้นปี** — ทำให้เป็น product ใหม่ที่โตเร็วที่สุดในประวัติศาสตร์ Salesforce (Marketing Cloud ใช้ 8 ปีถึง $1B; Agentforce ใช้ 12 เดือน)
+
+**Anchor deal ที่ signal traction เชิง enterprise** เกิดปลาย ก.ค.: **Department of Veterans Affairs (VA) เลือก Salesforce Agentforce เป็น federal-wide agent platform ระยะ 5 ปีที่ $1.6 พันล้าน** — เป็น federal AI agent deal ใหญ่สุดใน US ปี 2026 (ก่อนหน้านี้ Palantir + AWS AgentCore ครองตลาด defense/intelligence). Use case ที่ VA จะ deploy: (1) case worker automation (250k federal case worker ใช้), (2) veteran benefit eligibility processing (ปกติ 90 วัน → target 7 วัน), (3) mental health outreach agent ที่ proactive contact veteran ที่มี risk marker, (4) claim status inquiry agent ที่ integrate กับ VA.gov chatbot. **สาเหตุที่ Salesforce ชนะ** (ตาม procurement doc): (a) Agentic Segmentation ที่มี pre-built VA case worker workflow แล้ว (มาจาก state government deployment เดิม — Texas Health & Human Services + California DMV), (b) FedRAMP High + IL5 certification ครบ, (c) Slack integration ที่ VA staff ใช้อยู่แล้ว. ServiceNow อยู่ใน short list แต่แพ้เพราะ Otto ที่ launch พ.ค. ยังไม่มี FedRAMP High certification (roadmap Q1 2027); Copilot Studio + AgentCore combo ก็ยัง case worker workflow ไม่ vertical พอ
+
+## ทำไมสำคัญ
+
+**สปีดที่ Agentforce ทำได้ (12 เดือน $1B ARR) ทำลาย SaaS classic playbook** — Marketing Cloud ใช้ 8 ปี, Sales Cloud ใช้ 6 ปี, Service Cloud ใช้ 7 ปี. **Agentforce ต่างเพราะ**: (1) **built on existing Salesforce install base** — 150k customer, 5M+ user, 100M+ contact record → agent มี data + context ตั้งแต่ day-1 ไม่ต้องขาย platform ใหม่, (2) **consumption pricing (per conversation / per resolved task)** ที่ CFO ไม่ต้องกด budget ทีเดียว — pilot ที่ department เดียวก่อน scale, (3) **integration ที่ Salesforce มีอยู่แล้ว** (Slack, MuleSoft, Data Cloud, Tableau) ที่ competitor ต้อง build เอง. **Signal ต่อ startup ที่ pitch "AI-first CRM"** (Attio, Attio Enterprise Edition, Common Room, Clay) — **compete ตรงกับ Agentforce ยาก** เพราะ install base advantage เกินกว่า model quality จะชนะ; niche ที่ startup ยัง win ได้คือ **long-tail vertical** (research SaaS ที่ Salesforce ไม่มี expertise, PLG startup ที่ target dev/SMB ไม่ใช่ enterprise)
+
+**VA $1.6B deal เป็น structural precedent** — เป็นครั้งแรกที่ **federal agency ยอมเซ็นเช็ค 9 หลักสำหรับ agent platform (ไม่ใช่ traditional ITSM/CRM licensing)**. Precedent นี้จะ replicate ที่ (1) Department of Defense (มี AgentCore/Palantir ครองอยู่ แต่ non-combat function เปิดช่อง Agentforce/ServiceNow), (2) IRS ที่กำลัง evaluate 3 vendor สำหรับ taxpayer service agent, (3) HHS ที่ต้องการ Medicare claim processing agent, (4) SSA ที่ backlog application 2 ปี — agent จะช่วย. **Total addressable federal agent market ปี 2027 = $12-15B** (McKinsey estimate) → Salesforce + ServiceNow + Palantir + Microsoft + Google กำลังจะแบ่งกัน. Salesforce ที่ชนะ VA ก่อนจะได้ credibility ที่ทำให้เข้า HHS + SSA ได้ง่ายขึ้น
+
+**Enterprise agent platform battle: converge ที่ 5 vendor** — Salesforce Agentforce ($1B ARR), ServiceNow AI ($1B ACV), Microsoft Copilot + Agent Framework ($10B+ AI revenue Q4), Palantir AIP ($3.4B FY26 US commercial guide), Google Gemini Enterprise (still catching up post-rebrand). Startup category ที่ยัง win ได้ = **agent OS / horizontal orchestrator** (Sierra $10B val, Cognition Devin $26B val, Harvey $5B val สำหรับ legal) แต่ต้องเลือก vertical ที่ Salesforce + ServiceNow ไม่ enter. **Startup ที่พยายาม compete ตรง = จะ lose ภายใน 18 เดือน** — เห็นจาก case Attio (raise Series C last month แต่ growth หลุด plan) และ Airtable AI extension ที่ pivot ไป workflow แทน pure agent
+
+## มุม AI Agent Platform
+
+**สำหรับ builders:** ถ้ากำลัง build agent product / SaaS — **compete ตรงกับ Agentforce / Otto ผ่าน "horizontal agent for enterprise" = strategic error ในปี 2027**. Alternative ที่ยัง win ได้: (1) **vertical agent สำหรับ industry ที่ Salesforce/ServiceNow ไม่ enter** (biotech drug discovery, materials science, quantitative finance research, oil & gas engineering — spec หนา, install base เดิมเบา), (2) **AI-first developer tool** (Cursor $29B, Cognition $26B — coding agent เป็น category ที่ enterprise vendor ไม่ vertical), (3) **B2B agent embedded ใน SaaS อื่น** (Attio, Notion, Linear plug-in ที่ complement ไม่ compete). ถ้าจะ compete ตรง — ต้อง **outperform Salesforce ที่ install base advantage** = แทบเป็นไปไม่ได้ยกเว้นเห็น structural shift (AI-native architecture ที่ Salesforce migrate ไม่ทัน — signal ยังไม่มี)
+
+**สำหรับ users/business:** Thai enterprise ที่ evaluate agent platform Q3-Q4 2026 — **ถ้ามี Salesforce หรือ ServiceNow อยู่แล้ว = extend platform เดิมก่อน build ใหม่**. Salesforce customer ในไทย (SCB, K-Bank, AIS, TrueMove, Central Group) → **Agentforce 360 เป็น pilot ตัวเลือกแรก** — consumption pricing, ROI proof point ที่ VA + Toyota + FedEx pitch ได้. ServiceNow customer (Kasikorn Business Technology, PTT Digital, PTG Energy) → **Otto + AI Control Tower** — governance framework แข็ง ITIL-compliant. **Palantir AIP** เป็นตัวเลือกที่ 3 สำหรับ high-audit vertical (insurance, mortgage, defense). **Bank of Thailand / SEC** ยังไม่มี explicit guidance สำหรับ agent — enterprise ต้องรัน pilot ที่ non-critical function ก่อน scale ที่ regulated function (trading, credit decision, KYC)
+
+**สำหรับ ecosystem:** **Winner:** Salesforce + ServiceNow + Microsoft + Palantir + Google — 5 platform ที่ own workflow layer + install base + integration. **Loser:** startup ที่ compete ตรงกับ horizontal enterprise agent (Attio, Airtable AI, most YC S25 batch ที่ทำ "Salesforce for X"). **Neutral:** frontier lab (OpenAI, Anthropic, Google, xAI) — ยังได้ demand จาก workflow platform ที่ใช้ model ของตัวเอง (Agentforce ใช้ Atlas + xLAM + external LLM ผ่าน BYO) แต่ commoditization ยังจะกด margin. **Enabridge angle:** **Thai SI ที่ position เป็น "Agentforce + Otto implementation partner"** — ช่วย Thai enterprise deploy pre-built vertical workflow (banking, retail, government) ที่ vendor global ไม่ localize. Advantage เหนือ Deloitte/Accenture: ราคาถูกกว่า 30-40%, ทีมพูด Thai + Southeast Asia regulatory context, close cycle 6 เดือนแทน 12-18 เดือน. Lighthouse pilot ที่ควร target: Central Group (Salesforce heavy) + PTT Digital (ServiceNow heavy) — 2 anchor เพื่อ credential ต่อ SET50 pipeline
+
+## Sources
+- [ServiceNow Just Hit $1B in AI Revenue: Should Salesforce Be Concerned? — Salesforce Ben](https://www.salesforceben.com/servicenow-just-hit-1b-in-ai-revenue-should-salesforce-be-concerned/)
+- [ServiceNow Q2 FY 2026: AI, Security, and Workflow Expansion Fuel Growth — Futurum](https://futurumgroup.com/insights/servicenow-q2-fy-2026-ai-security-and-workflow-expansion-fuel-growth/)
+- [ServiceNow Surges 6%, Salesforce Climbs 4% as Government AI Deals Lift Enterprise Software — 24/7 Wall St.](https://247wallst.com/investing/2026/07/24/servicenow-surges-6-salesforce-climbs-4-as-government-ai-deals-lift-enterprise-software/)
+- [How Many AI Agents Is Too Many? Salesforce Adds Four More at Connections — Salesforce Ben](https://www.salesforceben.com/how-many-ai-agents-is-too-many-salesforce-adds-four-more-at-connections/)
+- [Meet Otto, ServiceNow's New Conversational AI Layer — The AI Economy](https://theaieconomy.substack.com/p/servicenow-otto-conversational-ai-enterprise?action=share)
+
+---
+
+## Audio script
+ต้นสิงหาคม 2026 ServiceNow เผยตัวเลข AI ACV ทะลุ 1 พันล้านดอลลาร์ 4 quarter หลังจากที่ Now Assist AI Control Tower Otto และ Agent Fabric รวมเป็น product family. Growth ที่ทำได้ 8x YoY จาก 125 ล้านดอลลาร์ที่ตุลาคม 2025. Q2 FY2026 revenue 3.31 พันล้านดอลลาร์ subscription revenue 3.19 พันล้าน operating margin 33.3% renewal rate 98%. สิ่งที่ทำให้เร็ว 3 คู่ Agent Fabric ที่ CIO อ่านออก Moveworks acquisition ที่ integrate เป็น Otto และ Otto ที่ launched Knowledge 2026 เข้าถึงผ่าน 4 channel conversational enterprise search voice data explorer.
+
+Salesforce Agentforce เร็วกว่านั้นอีก จาก 500 ล้านดอลลาร์ ARR ธันวาคม 2025 เป็น 800 ล้าน กุมภาพันธ์ 1 พันล้าน พฤษภาคม และคาด 1.2 พันล้าน Q2 FY2027. Marc Benioff ประกาศ Agentforce 360 ที่รวม Agentic Segmentation และ 4 marketing agents ใหม่. Anchor deal ที่ signal traction Department of Veterans Affairs เลือก Salesforce Agentforce เป็น federal wide agent platform ระยะ 5 ปีที่ 1.6 พันล้านดอลลาร์ — เป็น federal AI agent deal ใหญ่สุดใน US ปี 2026. Use case case worker automation 250k federal case worker veteran benefit eligibility จาก 90 วันเป็น 7 วัน mental health outreach agent claim status inquiry. ServiceNow แพ้เพราะ Otto ที่ launch พฤษภาคมยังไม่มี FedRAMP High certification.
+
+สปีดที่ Agentforce ทำได้ 12 เดือน 1 พันล้าน ARR ทำลาย SaaS classic playbook Marketing Cloud ใช้ 8 ปี Sales Cloud 6 ปี Service Cloud 7 ปี. Agentforce ต่างเพราะ built on install base 150k customer 5M user 100M contact record มี data ตั้งแต่ day 1 consumption pricing และ integration ที่มีอยู่แล้ว. VA 1.6 พันล้าน deal เป็น structural precedent ที่ federal agency ยอมเซ็นเช็ค 9 หลักสำหรับ agent platform จะ replicate ที่ DoD IRS HHS SSA. Total addressable federal agent market ปี 2027 12 ถึง 15 พันล้านดอลลาร์. สำหรับ Thai enterprise ถ้ามี Salesforce หรือ ServiceNow อยู่แล้ว extend platform เดิมก่อน build ใหม่ SCB K Bank AIS TrueMove Central Group — Agentforce 360 เป็น pilot ตัวเลือกแรก. Kasikorn Business Technology PTT Digital PTG Energy — Otto plus AI Control Tower. สำหรับ Enabridge — Thai SI ที่ position เป็น Agentforce Otto implementation partner ช่วย deploy pre built vertical workflow ที่ vendor global ไม่ localize ราคาถูกกว่า Deloitte Accenture 30 ถึง 40% ทีมพูด Thai และ Southeast Asia regulatory context. Lighthouse pilot Central Group และ PTT Digital.
