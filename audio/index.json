@@ -1,7 +1,41 @@
 {
-  "generated_at": "2026-08-05T23:32:16Z",
-  "count": 65,
+  "generated_at": "2026-08-07T23:27:23Z",
+  "count": 66,
   "episodes": [
+    {
+      "date": "26-08-08-0613",
+      "iso_date": "2026-08-08T06:13:00+07:00",
+      "title": "Daily AI Brief — 26-08-08 06:13",
+      "description": "1. Sapiom $35M Series A: model router สำหรับ agent ที่ตัดบิล Anthropic ของลูกค้าลง 10 เท่า — และ Anthropic คือคนใส่เงิน\n2. Databricks Unity AI Gateway GA: ควบคุม model + MCP + agent จาก catalog เดียว, 1 quadrillion token/ปี, Rivian/Asana/Edmunds เดิน production\n3. Omilia $67M Series B: voice agent ที่รับสาย 1 ล้าน call/วัน ที่ธนาคาร Tier 1 สหรัฐ, ARR 10x เป็น $60M — voice = production-grade แล้ว\n4. Naïve $28.5M Series A: infrastructure สำหรับ \"autonomous companies\" — 30K devs, revenue 10x ใน 6 เดือน, ลูกค้าจริงคือ TikTok channel + rental car agency",
+      "items": [
+        {
+          "file": "26-08-08-0613-01-sapiom-35m-series-a-agent-model-router-anthropic-invests.md",
+          "title": "Sapiom $35M Series A: model router สำหรับ agent ที่ตัดบิล Anthropic ของลูกค้าลง 10 เท่า — และ Anthropic คือคนใส่เงิน",
+          "order": 1
+        },
+        {
+          "file": "26-08-08-0613-02-databricks-unity-ai-gateway-ga-quadrillion-tokens.md",
+          "title": "Databricks Unity AI Gateway GA: ควบคุม model + MCP + agent จาก catalog เดียว, 1 quadrillion token/ปี, Rivian/Asana/Edmunds เดิน production",
+          "order": 2
+        },
+        {
+          "file": "26-08-08-0613-03-omilia-67m-series-b-voice-agent-60m-arr-bank-1m-calls.md",
+          "title": "Omilia $67M Series B: voice agent ที่รับสาย 1 ล้าน call/วัน ที่ธนาคาร Tier 1 สหรัฐ, ARR 10x เป็น $60M — voice = production-grade แล้ว",
+          "order": 3
+        },
+        {
+          "file": "26-08-08-0613-04-naive-28m-series-a-autonomous-companies-agent-primitives.md",
+          "title": "Naïve $28.5M Series A: infrastructure สำหรับ \"autonomous companies\" — 30K devs, revenue 10x ใน 6 เดือน, ลูกค้าจริงคือ TikTok channel + rental car agency",
+          "order": 4
+        }
+      ],
+      "audio_file": "26-08-08-0613.mp3",
+      "audio_size_bytes": 2378592,
+      "voice": "th-TH-Chirp3-HD-Achernar",
+      "model": "google-cloud-tts-chirp3-hd",
+      "speed": 1.3,
+      "script_char_count": 8157
+    },
     {
       "date": "26-08-06-0613",
       "iso_date": "2026-08-06T06:13:00+07:00",
