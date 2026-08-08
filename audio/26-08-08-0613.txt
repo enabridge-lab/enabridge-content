@@ -1,0 +1,46 @@
+สวัสดีครับ นี่คือ Enabridge AI Brief รอบ 08 August 2026 เวลา 06:13 ครับ.
+รอบนี้มี 4 เรื่อง เน้น Agentic AI, business use case, และ trend ที่เอามาใช้กับ OpenBridge ได้.
+
+เรื่องแรก.
+วันอังคารที่ 5 สิงหาคม Sapiom startup 11 เดือน สร้าง infrastructure สำหรับ deploy AI agent ปิด Series A 35 ล้านดอลลาร์ นำโดย Dragonfly ตามหลัง 15 ล้านของ Accel เมื่อต้นปี รวม total funding 50 ล้าน. investor list น่าสนใจมาก มี Anthropic ร่วมลง คู่กับ Coinbase Ventures Menlo Gradient Okta Ventures VanEck Ventures.
+
+Sapiom เปิดตัว 3 product พร้อมกัน Router Agent Studio Runtime. เคสที่ pitch คือลูกค้าชื่อ Polsia ที่บิล Anthropic เดิม 1.2 ล้านดอลลาร์ต่อเดือน หลัง route ผ่าน Sapiom Router ที่กระจายทุก call ไปยัง Claude Haiku Sonnet GPT 5.4 Flash Gemini 3 Flash หรือ Llama ตาม profile task บิลลดเหลือประมาณ 1 แสนดอลลาร์ต่อเดือน ประหยัด 10 เท่า. 6 เดือนหลัง launch Sapiom process 270 ล้าน transaction และ powers 100000 agent run ต่อวัน.
+
+Twist ที่น่าสนใจคือ Anthropic ลงเงินในบริษัทที่งานคือ route call ออกจาก Anthropic เอง. อ่านลึกคือ Anthropic ยอมรับว่าสงคราม model จะจบที่ multi model deployment ที่แต่ละ task ใช้ tier ต่างกัน และอยากอยู่ในโต๊ะที่กำหนด routing policy ไม่ใช่โดน orchestrator commoditize จาก outside. คล้ายกับ Cloudflare ลงใน AI infra แล้วดึงมาอยู่ Workers.
+
+Signal สำหรับ enterprise ที่ deploy agent ปี 2026 คือ cost per task ต่าง 5 ถึง 20 เท่าจาก chat interaction เดิม CFO ที่อนุมัติ pilot Q1 กำลังเห็น bill Q3 เริ่มไม่ปกติ. checklist ที่ head of AI ต้องคุยกับ CFO คือมี tier map ของ task ที่ agent ทำหรือยัง มี eval baseline ที่ยืนยันว่า downgrade model แล้วผลไม่แย่ลง มี fallback policy ตอน cheaper model fail. สำหรับ K Bank SCB PTT True AIS ที่ pilot agent อยู่ พิจารณา Sapiom Portkey Not Diamond เป็น procurement item ก่อน production. Thai token ยาวกว่า English 1.5 ถึง 2 เท่า cost per task พองยิ่งกว่า benchmark ของ Sapiom. ตำแหน่งที่ Thai SI ควรเล่นคือ Model FinOps advisor ช่วย enterprise สร้าง tier map และ routing policy ในภาษาไทย.
+
+เรื่องที่สอง.
+วันจันทร์ที่ 4 สิงหาคม Databricks ประกาศ Unity AI Gateway เข้า General Availability. เป็น extension ของ Unity Catalog ที่ปกติ govern data table volume model artifact ขยายไป govern runtime interaction ระหว่าง agent model MCP server skill tool. ทำ 4 อย่าง route AI traffic ข้าม provider control ว่าทีมไหนใช้ service อะไรได้ govern MCP server allowlist และ cost cap monitor spend latency lineage. ตัวเลขก่อน GA คือ 1 quadrillion token ต่อปี หรือ 1000 ล้านล้าน token thousands ของ enterprise customer โดยเน้น Rivian Asana Edmunds.
+
+Timing ที่กด GA สัปดาห์นี้เพราะ MCP 2026 07 28 spec ทำให้ MCP เป็น stateless protocol เหมาะกับ enterprise runtime. MCP มี 400 ล้าน monthly SDK download 4 เท่า year over year. Databricks pitch คือถ้า agent MCP tool เป็น compute storage network ยุคใหม่ Unity Catalog คือ IAM policy observability ที่ mapping ตรง 1 ต่อ 1 กับที่ enterprise คุ้นเคย ไม่ต้อง build governance ใหม่.
+
+Governance คือ blocker หลักของ agent ในองค์กร enterprise ปี 2026. พ้น pilot ที่ engineer สร้าง 1 2 agent พอ scale ไป 50 ถึง 100 agent CISO ถามคำเดียวว่าใครเห็น data อะไรใช้ token เท่าไร log audit ไปที่ไหน ตอบไม่ได้ deployment ค้าง.
+
+Battle 3 ทางกำลังชัด data plane gateway อย่าง Databricks Unity Snowflake Cortex Palantir AIP govern ใกล้ workload. Network plane อย่าง Cloudflare AI Gateway AWS Bedrock AgentCore govern ที่ edge. Endpoint plane อย่าง Anthropic Claude apps gateway OpenAI Enterprise. Enterprise ระดับ Fortune 500 จะ run ทั้ง 3 layer พร้อมกัน แต่ layer ไหนเป็น source of truth ของ policy จะกำหนดตำแหน่งของ vendor ในการเจรจา 3 ปีข้างหน้า.
+
+สำหรับ Thai enterprise K Bank SCB PTT AIS ที่ใช้ Databricks หรือ Snowflake อยู่แล้ว Unity AI Gateway หรือ Cortex Gateway จะเป็น path ที่ต้าน friction น้อยที่สุด. สำหรับ Enabridge ลูกค้าที่ใช้ Databricks หรือ Snowflake อยู่แล้ว การเสนอ Unity AI Gateway implementation เป็น service line ใหม่ upsell ต่อจาก data governance เดิมได้ทันที ไม่ต้อง sell platform ใหม่ sell การใช้ platform ที่ CFO อนุมัติแล้วให้ครอบ agent era.
+
+เรื่องที่สาม.
+วันพุธที่ 6 สิงหาคม Omilia บริษัท voice AI จาก Cyprus ก่อตั้งปี 2003 ปิด Series B 67 ล้านดอลลาร์ นำโดย Expedition Growth Capital. เงินก้อนนี้ใช้เปิดออฟฟิศแรกในสหรัฐครึ่งหลังปี 2026. ตัวเลขที่พิสูจน์ scale คือ live ARR โต 10 เท่าจาก Series A เป็น 60 ล้านดอลลาร์ 200 enterprise deployment ลูกค้ามี Capital One Discover RBC Taco Bell DWP ของรัฐบาล UK และ PSEG. Highlight ใหญ่คือ Tier 1 US bank ใช้ Omilia จัดการ 1 ล้าน call ต่อวัน.
+
+Product timing ที่รับ round นี้ 8 กรกฎาคม Omilia ship Lexis generative TTS model latency ต่ำกว่า 45 มิลลิวินาที ครอบ 25 locale ทำให้ full duplex conversation เป็นไปได้ในระดับ production. เทียบกับ ElevenLabs หรือ OpenAI TTS ที่ latency 200 ถึง 400 มิลลิวินาที Omilia เดิน vertical integration ทั้ง stack ASR NLU dialog TTS ซึ่งเป็น thesis ที่ทำให้ enterprise voice agent ผ่าน SLA ต่ำกว่า 2 วินาทีต่อ turn ที่ธนาคารต้องการ.
+
+Signal ใหญ่คือ voice agent ผ่านจุดที่ CFO เชื่อได้แล้ว 3 ปีก่อน voice AI มี demo สวยแต่ containment rate 20 ถึง 30 เปอร์เซ็นต์ CSAT drop 5 ถึง 10 point. วันนี้ Omilia 60 ล้าน ARR 200 deployment Tier 1 bank ปล่อยให้จัดการ 1 ล้าน call ต่อวัน หมายความว่า containment 60 ถึง 70 เปอร์เซ็นต์ CSAT parity หรือดีกว่าเป็นไปได้ในระดับ production.
+
+CCaaS 30 พันล้านดอลลาร์ ตลาด Cisco Genesys NICE Five9 Talkdesk กำลังถูก reshape จาก voice native AI vendor Omilia Sierra PolyAI Cresta และ CCaaS incumbent ที่ retrofit ด้วย GenAI. 2 ถึง 3 ปีข้างหน้าจะเห็น consolidation.
+
+สำหรับ Thai market Omilia ยังไม่มี Thai locale แต่ PolyAI Cresta หรือ Amity Voice Vulcan KMUTT Speech Lab spinoff จะได้ momentum. Enterprise ที่เคยตอบว่า voice AI ยังไม่พร้อม 2 ปีก่อน จะเริ่มเปิด pilot Q4 2026 ถึง Q1 2027. สำหรับ Enabridge ตำแหน่งที่ Thai integrator ควรเล่นคือ voice agent implementation partner ช่วย Thai bank insurance telco utility evaluate integrate voice AI vendor design escalation policy measure containment KPI ใน 90 วัน. เป็น service line ที่ margin สูง timing เหมาะ proof point Omilia และ Sierra สร้างแล้ว.
+
+เรื่องที่สี่.
+วันพุธที่ 6 สิงหาคม Naïve startup 8 เดือนจาก San Francisco ก่อตั้งโดย Berkeley dropout สองคน Sean Dorje และ Dennis Zax ปิด Series A 28.5 ล้านดอลลาร์ นำโดย Nexus Venture Partners. Cap table มี Y Combinator Zetta Liquid 2 Gokul Rajaram Tim Zheng และ JD Sherman อดีต COO HubSpot. Traction ที่ทำให้ round pop คือ 30000 dev signup ในไม่กี่เดือน annual run rate revenue โต 10 เท่าใน 6 เดือน เป็น low double digit million ประมาณ 12 ล้านดอลลาร์ ARR.
+
+Product ที่ Naïve ขายคือ unified API และ provisioning stack ที่ให้ AI agent มี 4 อย่างที่ต้องมีก่อนเปิดบริษัท verified identity ผ่าน DBA LLC EIN registration KYC cloud infrastructure compute storage database governance gateway role based policy spend cap audit log payment rail bank account card issuance ผ่าน Stripe หรือ Coinbase. Founder เรียก Stripe Atlas สำหรับ agent.
+
+ลูกค้าจริงที่ไม่ใช่ demo คือ AI automation agency faceless TikTok และ YouTube channel และ rental car agency ที่รันแบบ autonomous agent ทำ pricing booking refund insurance claim human ทำแค่ vehicle maintenance. เป็นสัญญาณว่า autonomous company กำลังกลายเป็น business model จริงในระดับ micro business แม้ regulator ยังไม่ตั้งหลัก.
+
+POV คือ autonomous company ไม่ใช่ singularity moment แต่เป็น cost structure disruption ที่ micro business ระดับ 100K ถึง 1 ล้านดอลลาร์ ARR จะเปลี่ยนเจ้าของจาก solo founder ที่ทำ 60 ชั่วโมงต่อสัปดาห์ ไปเป็น solo founder ที่ operator agent 24 ชั่วโมง. ธุรกิจที่โดนก่อนคือ workflow standardize rule based volume สูง complexity ต่ำ อย่าง dropshipping faceless media boutique e commerce small law accounting outsource. Regulator gap เป็นทั้งความเสี่ยงและ moat เพราะเมื่อ TikTok channel ที่ agent รันชนคดี copyright หรือ rental car agent booking ผิดคนแล้วเกิดอุบัติเหตุ ใครรับผิด ยังไม่มีคำตอบใน US EU สิงคโปร์ หรือญี่ปุ่น.
+
+สำหรับ Thai SME ที่มี creator economy micro influencer dropship affiliate ecosystem บน Shopee Lazada TikTok Shop คือ demographic ที่ Naïve จะ target ในอีก 12 เดือน. Thai integrator ที่พูดภาษา creator หรือ SME ได้ integrate PromptPay Truemoney K PLUS API และ National ID KYC ได้ คือโอกาสก่อน US vendor เข้ามาเอง. Enabridge position คือ bridge ระหว่าง global agent stack กับ Thai compliance payment culture.
+
+ทั้งหมดนี้คือ brief ของรอบนี้. ขอให้วันนี้เป็นวันที่ดีครับ. แล้วเจอกันรอบหน้า.
