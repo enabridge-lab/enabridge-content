@@ -1,0 +1,32 @@
+{
+  "date": "26-08-12-0617",
+  "iso_date": "2026-08-12T06:17:00+07:00",
+  "title": "Daily AI Brief — 26-08-12 06:17",
+  "items": [
+    {
+      "file": "26-08-12-0617-01-openai-daybreak-gpt56-cyber-frontier-vertical-security.md",
+      "title": "OpenAI ปล่อย GPT-5.6-Cyber + Daybreak Red/Blue — frontier lab เดินเข้าสมรภูมิ cyber ด้วย model ที่ยอมทำงาน dual-use",
+      "order": 1
+    },
+    {
+      "file": "26-08-12-0617-02-corma-60m-sequoia-defensive-cybersecurity-ai-lab.md",
+      "title": "Corma ระดมทุน $60M seed จาก Sequoia — เปิดตัวเป็น \"first frontier defensive cybersecurity AI lab\" ด้วย agent ที่ลดเวลาตอบสนอง 94%",
+      "order": 2
+    },
+    {
+      "file": "26-08-12-0617-03-anthropic-claude-code-self-hosted-runner-enterprise.md",
+      "title": "Anthropic เปิด Claude Code แบบ self-hosted runner — agent session รันบน infra ลูกค้าเอง สำหรับ bank, hospital, gov contractor",
+      "order": 3
+    },
+    {
+      "file": "26-08-12-0617-04-6sense-mcp-server-ga-gtm-intelligence-agent-native.md",
+      "title": "6sense เปิด MCP Server เข้า GA — GTM intelligence เดินตรงเข้า Claude, ChatGPT, Writer, Agentforce โดยไม่ต้อง custom integration",
+      "order": 4
+    }
+  ],
+  "script_char_count": 5349,
+  "audio_file": "26-08-12-0617.mp3",
+  "voice": "th-TH-Chirp3-HD-Achernar",
+  "model": "google-cloud-tts-chirp3-hd",
+  "speed": 1.3
+}
