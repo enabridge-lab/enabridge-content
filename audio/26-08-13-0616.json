@@ -1,0 +1,32 @@
+{
+  "date": "26-08-13-0616",
+  "iso_date": "2026-08-13T06:16:00+07:00",
+  "title": "Daily AI Brief — 26-08-13 06:16",
+  "items": [
+    {
+      "file": "26-08-13-0616-01-river-ai-1-1b-personal-agent-open-stack.md",
+      "title": "River AI ระดม $1.1B สองเดือนหลังออกจาก stealth — เดิมพัน \"personal AI agent\" ที่คุณเป็นเจ้าของเอง",
+      "order": 1
+    },
+    {
+      "file": "26-08-13-0616-02-anthropic-riot-9-1b-compute-scarcity.md",
+      "title": "Anthropic ล็อกดีล $9.1B / 20 ปี กับ Riot Platforms — บิตคอยน์ไมเนอร์กลายเป็นเจ้าของที่ดินให้ Claude",
+      "order": 2
+    },
+    {
+      "file": "26-08-13-0616-03-ltts-agenticiq-engineering-manufacturing.md",
+      "title": "LTTS เปิด AgenticIQ — vertical agent platform สำหรับ engineering + manufacturing ที่ดัน pilot ขึ้น production",
+      "order": 3
+    },
+    {
+      "file": "26-08-13-0616-04-6sense-mcp-server-gtm-intelligence.md",
+      "title": "6sense เปิด MCP server — เอา buying intelligence เข้า Claude, ChatGPT, Writer, Agentforce ในคำสั่งเดียว",
+      "order": 4
+    }
+  ],
+  "script_char_count": 4992,
+  "audio_file": "26-08-13-0616.mp3",
+  "voice": "th-TH-Chirp3-HD-Achernar",
+  "model": "google-cloud-tts-chirp3-hd",
+  "speed": 1.3
+}
