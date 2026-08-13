@@ -1,7 +1,41 @@
 {
-  "generated_at": "2026-08-10T23:25:55Z",
-  "count": 68,
+  "generated_at": "2026-08-12T23:30:37Z",
+  "count": 69,
   "episodes": [
+    {
+      "date": "26-08-13-0616",
+      "iso_date": "2026-08-13T06:16:00+07:00",
+      "title": "Daily AI Brief — 26-08-13 06:16",
+      "description": "1. River AI ระดม $1.1B สองเดือนหลังออกจาก stealth — เดิมพัน \"personal AI agent\" ที่คุณเป็นเจ้าของเอง\n2. Anthropic ล็อกดีล $9.1B / 20 ปี กับ Riot Platforms — บิตคอยน์ไมเนอร์กลายเป็นเจ้าของที่ดินให้ Claude\n3. LTTS เปิด AgenticIQ — vertical agent platform สำหรับ engineering + manufacturing ที่ดัน pilot ขึ้น production\n4. 6sense เปิด MCP server — เอา buying intelligence เข้า Claude, ChatGPT, Writer, Agentforce ในคำสั่งเดียว",
+      "items": [
+        {
+          "file": "26-08-13-0616-01-river-ai-1-1b-personal-agent-open-stack.md",
+          "title": "River AI ระดม $1.1B สองเดือนหลังออกจาก stealth — เดิมพัน \"personal AI agent\" ที่คุณเป็นเจ้าของเอง",
+          "order": 1
+        },
+        {
+          "file": "26-08-13-0616-02-anthropic-riot-9-1b-compute-scarcity.md",
+          "title": "Anthropic ล็อกดีล $9.1B / 20 ปี กับ Riot Platforms — บิตคอยน์ไมเนอร์กลายเป็นเจ้าของที่ดินให้ Claude",
+          "order": 2
+        },
+        {
+          "file": "26-08-13-0616-03-ltts-agenticiq-engineering-manufacturing.md",
+          "title": "LTTS เปิด AgenticIQ — vertical agent platform สำหรับ engineering + manufacturing ที่ดัน pilot ขึ้น production",
+          "order": 3
+        },
+        {
+          "file": "26-08-13-0616-04-6sense-mcp-server-gtm-intelligence.md",
+          "title": "6sense เปิด MCP server — เอา buying intelligence เข้า Claude, ChatGPT, Writer, Agentforce ในคำสั่งเดียว",
+          "order": 4
+        }
+      ],
+      "audio_file": "26-08-13-0616.mp3",
+      "audio_size_bytes": 1382304,
+      "voice": "th-TH-Chirp3-HD-Achernar",
+      "model": "google-cloud-tts-chirp3-hd",
+      "speed": 1.3,
+      "script_char_count": 4992
+    },
     {
       "date": "26-08-11-0616",
       "iso_date": "2026-08-11T06:16:00+07:00",

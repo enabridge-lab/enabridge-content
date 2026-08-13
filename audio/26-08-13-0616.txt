@@ -1,0 +1,40 @@
+สวัสดีครับ นี่คือ Enabridge AI Brief รอบ 13 August 2026 เวลา 06:16 ครับ.
+รอบนี้มี 4 เรื่อง เน้น Agentic AI, business use case, และ trend ที่เอามาใช้กับ OpenBridge ได้.
+
+เรื่องแรก.
+เมื่อวานนี้วันที่ 11 สิงหาคม River AI ประกาศระดมทุนรวม 1.1 พันล้านดอลลาร์ ทั้ง seed และ Series A รวมกัน หลังจากเพิ่งออกจาก stealth เพียงสองเดือน คนที่นำคือ Igor Babuschkin อดีต co-founder ของ xAI และเคยอยู่ DeepMind กับ OpenAI มาก่อน นำโดย General Catalyst และ AMP PBC มี Nvidia, AMD Ventures, Y Combinator, Temasek ร่วมด้วย
+
+Thesis ของ Babuschkin คือ AI stack ทั้งชุด ตั้งแต่วิธี train ไปจน model, product, และ hardware ต้องถูก rebuild ใหม่ทั้งหมด รอบสิ่งที่เขาเรียกว่า personal agent — agent ที่ user เป็นเจ้าของ ไม่ใช่ intelligence ที่เช่ามาจาก frontier lab เขาเปรียบเหมือน guardian angel ที่นั่งข้างเรา ช่วยงานที่สำคัญกับเรา ไม่ใช่ agent ที่มาแทนที่คน
+
+Product แรกที่ River เปิดคือ API ให้องค์กร train model แบบ open weight โดยใช้ reinforcement learning กับ LoRA fine-tuning จบใน 15 ถึง 20 นาที ไม่ต้องมีทีม infra และประหยัดกว่า closed source ราว 2 ถึง 4 เท่า
+
+จุดที่น่าสนใจสำหรับคนสร้าง agent platform คือ signal นี้ Nvidia กับ AMD ลงในรอบเดียวกัน แปลว่า silicon vendor เห็น personal AI เป็น demand curve ใหม่ ที่ควบคุมโดย user ไม่ใช่ hyperscaler ถ้าคุณกำลังสร้าง vertical agent อยู่ River อาจเปลี่ยน economic ของการ fine-tune model แบบเป็นเจ้าของเองได้อย่างมีนัยยะครับ.
+
+เรื่องที่สอง.
+เมื่อวานนี้ Riot Platforms ประกาศเซ็นสัญญา 20 ปี มูลค่า 9.1 พันล้านดอลลาร์กับ Anthropic โดย Anthropic จะเช่ากำลังไฟ 191 เมกะวัตต์จาก campus ของ Riot ที่ Rockdale เท็กซัส สัญญาครอบคลุมถึงมิถุนายน 2048 และถ้ารวม extension อีกสองรอบ รอบละ 5 ปี มูลค่ารวมจะขึ้นเป็นราว 16.1 พันล้านดอลลาร์ หุ้น Riot กระโดดขึ้น 25% ใน after hours ทันที
+
+ที่น่าสนใจคือ Anthropic ไม่ได้ทำดีลเดียว ก่อนหน้านี้เพิ่งเซ็นกับ Volta อีก 10 พันล้านดอลลาร์ และในเดือนพฤษภาคมทำดีลซื้อ compute ราว 45 พันล้านดอลลาร์จาก xAI ของ Elon Musk แสดงว่าบริษัทกำลัง lock ทั้ง supply chain ของไฟฟ้าและ silicon ยาวไปถึงยุค Claude Opus 6 หรือ 7 เลย
+
+จุดที่คนสร้าง agent platform ต้องคิดต่อคือ compute กำลังกลายเป็น moat มากกว่า chip เพราะ ERCOT ในเท็กซัสเริ่มเข้มขึ้นกับ data center ใหม่ ที่ดินที่มีสายส่งพร้อมอยู่แล้วอย่างของ bitcoin miner กลายเป็น asset ที่ frontier lab ยอมจ่ายแพงเพื่อยึด
+
+สำหรับคนที่ deploy Claude ใน production คำถามที่ต้องถามตอนนี้คือ pricing tier ระยะยาวจะเป็นยังไง เพราะเมื่อ Anthropic ครอง supply มากพอ ราคาต่อ token อาจถูก re-price ตอนนี้เป็นช่วงเจรจา rate card ที่ดีก่อน demand curve ชนกำแพงครับ.
+
+เรื่องที่สาม.
+เมื่อวานนี้ L&T Technology Services หรือ LTTS จากอินเดีย เปิดตัวแพลตฟอร์มชื่อ AgenticIQ ที่ออกแบบมาสำหรับสาย engineering กับ manufacturing โดยเฉพาะ ต่างจาก horizontal framework ที่เราคุ้นเคย ตรงที่ AgenticIQ เอา engineering capability ที่ LTTS ทำมาสิบกว่าปีมาแปลงเป็น AI agent สำเร็จรูปที่ reusable
+
+แนวคิดหลักคือ planning-first architecture agent จะวางแผนทั้ง sequence ก่อน แล้วค่อย execute ผ่าน specialized agent เช่น CAD review agent หรือ QA validation agent เป้าหมายคือแก้ปัญหา reactive agent ที่เรียก tool มั่วในงาน stake สูง เช่น validate CAD design ก่อนส่งเข้าโรงงาน platform เป็น cloud agnostic รันบน cloud หรือ on-premise ก็ได้ กลุ่มลูกค้าเป้าหมายคือ automotive, medical device, semiconductor, plant engineering ตลาดตอบรับดี หุ้น LTTS ขึ้น 2.42% ในวันเดียวกัน
+
+pattern ที่น่าสนใจคือ vertical first framework second SI ที่มี domain knowledge ลึกกำลังลงมาแข่งกับ framework layer โดยตรง เพราะลูกค้า enterprise ไม่ต้องการ toolkit ต้องการ agent ที่เข้าใจว่า ISO 26262 คืออะไร คนที่ own domain knowledge จะ own agent stack
+
+สำหรับ Thai enterprise ที่กำลังเลือก partner คำถามที่ควรถามคือ SI ที่เสนอมา มี agent platform ของตัวเองไหม หรือแค่ resell ของคนอื่น เพราะปีนี้ LTTS, TCS, Infosys, Wipro กำลัง pivot จาก body shop model เป็น platform model กันทั้งหมดครับ.
+
+เรื่องที่สี่.
+เมื่อวานนี้ 6sense บริษัท B2B revenue intelligence ที่ครองตลาด account-based marketing เปิดตัว MCP server อย่างเป็นทางการ ทำให้ intelligence ทั้งชุด ตั้งแต่ account insight, buying stage, 6QA status, keyword intent, ad performance เรียกได้จาก AI agent ที่รองรับ MCP ทุกตัว โดยตัวแรก ๆ ที่ list มาคือ Claude, ChatGPT, Writer, และ Agentforce
+
+สิ่งที่เปลี่ยนไปคือ sales rep ไม่ต้อง export segment จาก 6sense ไป CRM หรือ email tool อีกต่อไป agent เรียกข้อมูลสด ๆ ตอนคุย prospect ได้เลย 6QA status ที่เมื่อก่อนต้อง log in เข้า dashboard ตอนนี้ agent ดึงให้ในคำสั่งเดียว เปิด beta ก่อนสำหรับ Revenue Marketing customer และจะ GA ภายในเดือนนี้
+
+pattern ที่น่าสนใจคือ MCP กลายเป็น default protocol ในเวลาไม่ถึงปี จากเดิม vendor ต้องเลือกว่าจะสร้าง native app ให้ Salesforce, plugin ให้ ChatGPT, integration ให้ HubSpot แยกกัน ตอนนี้ MCP server ตัวเดียวครอบทั้งหมด นี่คือ pattern เดียวกับที่ REST API เอาชนะ SOAP
+
+สำหรับคนที่ทำ SaaS ที่มี proprietary data ถ้ายังไม่ได้ plan MCP server ให้ product ให้จัดลง roadmap ไตรมาสหน้าเลย เพราะปีนี้ procurement question จะมี does it have MCP ในเช็กลิสต์ RFI แน่นอน และคู่แข่งของ 6sense อย่าง ZoomInfo หรือ Apollo คงตามมาในไม่กี่สัปดาห์ครับ.
+
+ทั้งหมดนี้คือ brief ของรอบนี้. ขอให้วันนี้เป็นวันที่ดีครับ. แล้วเจอกันรอบหน้า.
