@@ -1,0 +1,40 @@
+สวัสดีครับ นี่คือ Enabridge AI Brief รอบ 14 August 2026 เวลา 06:30 ครับ.
+รอบนี้มี 4 เรื่อง เน้น Agentic AI, business use case, และ trend ที่เอามาใช้กับ OpenBridge ได้.
+
+เรื่องแรก.
+เมื่อวานนี้วันที่ 13 สิงหาคม Anthropic แจ้งนักลงทุนว่า Q2 2026 ทำรายได้ 10.9 พันล้านดอลลาร์ โต 130 เปอร์เซ็นต์จากไตรมาสก่อน และมี operating profit ครั้งแรก 559 ล้านดอลลาร์ เร็วกว่าแผนภายในของบริษัทถึงสองปี
+
+ตัวเลขที่น่าสนใจกว่ารายได้คือ margin ต้นทุน compute ต่อรายได้ 1 ดอลลาร์ลดจาก 71 เซนต์ใน Q1 เหลือ 56 เซนต์ใน Q2 ตัวขับเคลื่อนหลักคือ Claude Code ที่ enterprise ซื้อจริงจัง ตอนนี้ Anthropic มีลูกค้า enterprise มากกว่า 1,000 บริษัทที่จ่ายเกิน 1 ล้านดอลลาร์ต่อปี แปลว่า Claude ไม่ใช่ dev tool ที่ engineer แอบใช้อีกต่อไป แต่กลายเป็น line item บน enterprise procurement ที่มี business owner จริง
+
+แต่บริษัทเตือน investor ตรง ๆ ว่า Q3 และ Q4 น่าจะกลับเป็นขาดทุน เพราะ capex compute ที่จองไว้ปลายปี และมี SpaceX compute discount ที่ช่วยกดต้นทุน Q2 ต่ำเกินจริง
+
+สำหรับคนสร้าง agent บน Claude เรื่องนี้แปลว่า Anthropic ไม่ต้องแข่งราคาลงต่ำอีกแล้ว เขากล้าขึ้นราคา Sonnet 5 จาก 2 เป็น 3 ดอลลาร์ต่อล้าน token สิ้นเดือนนี้ ถ้า agent ของคุณ tie กับ Claude ให้คำนวณ unit economics ใหม่ก่อนวันที่ 31 สิงหาคม และคิดเผื่อว่าราคาจะขึ้นอีกในรอบต่อไปครับ.
+
+เรื่องที่สอง.
+วันที่ 12 สิงหาคม Bloomberg รายงานว่า Cognition บริษัทเจ้าของ Devin coding agent กำลังคุยกับนักลงทุนรอบใหม่ที่ valuation 40 พันล้านดอลลาร์ขึ้นไป เพียง 3 เดือนหลังปิด 1 พันล้านที่ 26 พันล้านในเดือนพฤษภาคม เป็นการปรับ valuation ขึ้นกว่า 50 เปอร์เซ็นต์ในช่วงที่บริษัท SaaS ทั่วไปยังไม่ทัน renew contract รอบแรกด้วยซ้ำ
+
+ตัวผลักดันคือ ARR annualized run rate ตอนนี้ใกล้ 1 พันล้าน โตประมาณสองเท่าจากรอบก่อน ลูกค้าที่ Cognition เปิดในการ pitch รวม Citi, Mercedes-Benz, Goldman Sachs กับหน่วยงานรัฐบาลอย่าง U.S. Army และ U.S. Navy ทั้งหมดต้องผ่าน security review หนัก กว่าจะยอมให้ agent เขียน commit และ deploy code แทน engineer ได้
+
+ประเด็นสำคัญคือ Cognition วาง Devin เป็น engineer ไม่ใช่ tool ราคา anchor ที่ลูกค้าใช้เทียบไม่ใช่ Copilot ที่ 10 ดอลลาร์ต่อ seat แต่คือ software engineer จริงที่ 150,000 ดอลลาร์ต่อปี pricing ที่กว้างกว่ามากเป็นเหตุผลที่ ARR ทะลุ 1 พันล้านได้ในไม่กี่ไตรมาส
+
+สำหรับคนที่กำลังเลือกใช้ระหว่าง Devin, Copilot หรือ Cursor แนะนำให้แยก decision เป็นสอง layer หนึ่ง IDE assistant สำหรับ dev ทุกคน สอง autonomous engineer สำหรับงาน background ทั้งสอง layer จะกินงบแยกกัน อย่ารวมเป็น line item เดียว เพราะ ROI คำนวณคนละแบบครับ.
+
+เรื่องที่สาม.
+วันที่ 13 สิงหาคม Financial Times รายงานว่า Legora สตาร์ทอัพ legal AI จากสวีเดน กำลังคุยรอบใหม่ที่ valuation 10 พันล้านดอลลาร์ขึ้นไป จาก 5.55 พันล้านตอนปิด Series D กับ Accel เมื่อ 5 เดือนก่อน ตอนนี้บริษัทมี ARR annualized ทะลุ 350 ล้านดอลลาร์ โดย 300 ล้านเป็น recurring โตกว่า 80 เปอร์เซ็นต์จาก 190 ล้านที่ต้นปี
+
+ตัวเลขที่ทำให้ Bessemer Venture Partners ออกมาเขียน blog ยาว ๆ คือ velocity การทะลุ 100 ล้าน ARR ใน 18 เดือน เร็วกว่าทุกบริษัท enterprise software ในประวัติศาสตร์ที่ Bessemer เก็บข้อมูล รวม OpenAI, Anthropic, Cursor และ Wiz ที่จุดเดียวกันของแต่ละบริษัท
+
+ลูกค้าที่ Legora เปิดในการ pitch รวม Linklaters สำนักกฎหมาย magic circle ในลอนดอน, Deloitte และ Heineken งานที่ agent ทำแทนคือ document review, contract drafting, due diligence และ regulatory work ทั้งหมดเคยเป็นงานของ paralegal กับ junior associate
+
+ประเด็นสำหรับคนที่คิดจะสร้าง vertical agent คือ legal healthcare กับ audit เป็นสาม vertical แรกที่ทำเงินได้จริง pattern ร่วมคืองานเดิมทำโดย professional ที่จ่ายชั่วโมงละแพง กับ regulatory compliance ที่ต้องเก็บ audit trail สองอย่างนี้รวมกันคือ pricing anchor ที่สูง กับ defensibility จาก certification ถ้ากำลังเลือก vertical ต่อไป ให้เช็กสองข้อนี้ก่อนตัดสินใจครับ.
+
+เรื่องที่สี่.
+วันที่ 12 สิงหาคม xAI ปล่อย Grok 4.6 พร้อม launch ใน Cursor, Grok Build, OpenRouter, Vercel และ Cloudflare วันเดียวกัน model ใหม่ถูก positioning ตั้งแต่ headline ว่าสร้างเพื่อ long-running agent และงาน coding
+
+ตัวเลขที่ xAI โชว์ คือ context window 500,000 token ใหญ่กว่า Claude Sonnet 5 กับ GPT-5.6 Sol และ Artificial Analysis Intelligence Index ที่ 61 คะแนน ตีเสมอ GPT-5.6 Sol Max ขึ้นจาก Grok 4.5 ห้าคะแนนในเวลา 5 สัปดาห์ pricing เริ่มที่ 2 ดอลลาร์ต่อล้าน input และ 6 ดอลลาร์ต่อล้าน output ถูกกว่า Claude Sonnet 5 ที่จะขึ้นเป็น 3 ดอลลาร์วันที่ 31 สิงหาคมและถูกกว่า GPT-5.6 Sol Max
+
+Pattern ที่น่าสนใจคือ xAI เลือกเน้น long-running agent ในการโฆษณา ไม่ใช่ smart chat หรือ reasoning เป็นการ signal ว่าตลาด model ปีนี้ไม่ได้แข่งกันด้วย benchmark เดี่ยว แต่แข่งด้วย session ยาว tool use loop และ context window ที่พอกับ code repo หรือเอกสารจริง
+
+สำหรับคนที่กำลังสร้าง agent ที่ต้อง run long horizon แนะนำให้ทดสอบ Grok 4.6 เทียบกับ Claude ทันที ไม่ใช่แค่ราคาต่อ token แต่รวม tool use latency กับ output determinism ในการรัน tool call หลายรอบ ที่ผ่านมา Grok มีปัญหาเรื่องความคงที่ของ output ที่ agent ต้องพึ่งพา อย่าเชื่อ benchmark เดี่ยว ต้องทดลองบน workload จริงของคุณครับ.
+
+ทั้งหมดนี้คือ brief ของรอบนี้. ขอให้วันนี้เป็นวันที่ดีครับ. แล้วเจอกันรอบหน้า.

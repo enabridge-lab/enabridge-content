@@ -1,0 +1,32 @@
+{
+  "date": "26-08-14-0630",
+  "iso_date": "2026-08-14T06:30:00+07:00",
+  "title": "Daily AI Brief — 26-08-14 06:30",
+  "items": [
+    {
+      "file": "26-08-14-0630-01-anthropic-first-profit-10-9b-quarter.md",
+      "title": "Anthropic ทำกำไรไตรมาสแรก — Q2 รายได้ $10.9B, กำไรจากปฏิบัติการ $559M, เร็วกว่าแผน 2 ปี",
+      "order": 1
+    },
+    {
+      "file": "26-08-14-0630-02-cognition-devin-40b-valuation.md",
+      "title": "Cognition คุย funding รอบใหม่ที่ $40B — 3 เดือนหลังปิด $26B, Devin ทะลุ $1B ARR",
+      "order": 2
+    },
+    {
+      "file": "26-08-14-0630-03-legora-10b-legal-ai-vertical.md",
+      "title": "Legora คุย $10B — legal AI vertical ที่ $350M ARR โตเร็วที่สุดในประวัติศาสตร์ enterprise SaaS",
+      "order": 3
+    },
+    {
+      "file": "26-08-14-0630-04-grok-46-agent-first-500k-context.md",
+      "title": "xAI ปล่อย Grok 4.6 — 500K context, ราคา $2/M, เจาะตลาด long-running agent ตรง",
+      "order": 4
+    }
+  ],
+  "script_char_count": 4844,
+  "audio_file": "26-08-14-0630.mp3",
+  "voice": "th-TH-Chirp3-HD-Achernar",
+  "model": "google-cloud-tts-chirp3-hd",
+  "speed": 1.3
+}
