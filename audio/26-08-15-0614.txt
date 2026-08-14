@@ -1,0 +1,48 @@
+สวัสดีครับ นี่คือ Enabridge AI Brief รอบ 15 August 2026 เวลา 06:14 ครับ.
+รอบนี้มี 4 เรื่อง เน้น Agentic AI, business use case, และ trend ที่เอามาใช้กับ OpenBridge ได้.
+
+เรื่องแรก.
+เมื่อวันที่ 10 สิงหาคม Salesforce ปล่อย Agentic Enterprise Index รอบสอง เป็น dataset industry-wide ตัวแรกที่รวมข้อมูล agent deployment จริงจากหลายพันบริษัทบน Agentforce ตั้งแต่กุมภาพันธ์ 2025 ถึงเมษายน 2026 ตัวเลขที่โดดเด่นคือ ธุรกิจตอนนี้รันเฉลี่ย 13 agents ต่อบริษัท จาก 5 ตัวเมื่อต้นปี 2025 และ deployment time หายไปครึ่งหนึ่ง
+
+ตัวเลขที่น่าตกใจกว่าคือ agent-driven retail sales โตสี่เท่า และ 94 เปอร์เซ็นต์ของผู้บริโภคเลือกใช้ agent เมื่อได้ตัวเลือก พลิก narrative ที่ว่าลูกค้าไม่ชอบ chatbot ที่ครอบงำวงการมา 10 ปี ในไตรมาสเดียวกัน Agentforce ARR แตะประมาณ 800 ล้านดอลลาร์ โต 169 เปอร์เซ็นต์ YoY กลายเป็น product line ที่โตเร็วที่สุดในประวัติศาสตร์ Salesforce
+
+ทำไมสำคัญ นี่คือครั้งแรกที่ agentic layer มี data ระดับ statistician ยอมรับ ไม่ใช่ cherry-picked case study อีกแล้ว CFO ที่ push back budget ปีก่อนจะเริ่มไม่มีข้ออ้าง และ bottleneck ในการ scale agent ย้ายจาก สร้าง agent ไปเป็น governance, observability, permission scoping ซึ่งอธิบายว่าทำไม LangSmith, Arize, และ MCP gateway vendor กำลัง reprice ขึ้นในไตรมาสนี้
+
+สำหรับ builder ที่สร้าง agent framework สิ่งที่ต้องขายตอนนี้คือ observability กับ cost attribution per agent ไม่ใช่ prompt template สำหรับ business ที่ deploy agent 13 agents ต่อบริษัทเป็น benchmark ที่ board จะเริ่มถามใน Q4 planning และ vertical retail brand ต้องเอา 4x sales lift มาคิด promo strategy ก่อนช่วงเทศกาลปลายปีครับ.
+
+เรื่องที่สอง.
+เมื่อวันที่ 11 สิงหาคม NVIDIA ปล่อย 2 asset พร้อมกันที่จะเปลี่ยน economic ของ agent stack ตัวแรกคือ Nemotron 3.5 Lightning เป็น mixture-of-experts model 30 billion parameters ที่ active แค่ 3 billion ต่อ inference step ทำให้เร็วขึ้น 4 เท่าเทียบ dense model รุ่นเดียวกัน ตั้ง target สำหรับ execution layer ของ long-running agent ไม่ใช่ frontier reasoning
+
+ตัวจริงที่ทำให้ทุกคนตื่นคือ NeMo Switchyard เป็น open source library บน GitHub ที่ route แต่ละ step ของ agent workflow ไป model ที่เหมาะที่สุดจาก provider ใดก็ได้ ไม่ว่าจะเป็น Anthropic, OpenAI, Google หรือ Nemotron โดย preserve API compatibility ทำให้ developer ไม่ต้อง rewrite application ตัวเลข benchmark ของ NVIDIA เอง cut task cost เหลือประมาณ 1 ใน 3 ของการรัน Claude Opus 4.8 อย่างเดียว
+
+Real-world deployment ที่ NVIDIA เปิดเผยคือ Cognition ที่รัน Devin agent cut cost 28 เปอร์เซ็นต์ Ramp cut cost 58 เปอร์เซ็นต์และ runtime 33 เปอร์เซ็นต์ในการรัน finance workflow และ Boomi hit 100 เปอร์เซ็นต์ domain routing accuracy
+
+ทำไมสำคัญ Switchyard เป็นสัญญาณว่า agent inference economics กำลังจะเป็น commodity เหมือนที่เคยเกิดกับ compute cloud CDN และ search value capture จะย้ายจาก provider ไป orchestrator ตอนนี้ agent builder ไม่ต้องเลือกระหว่าง Anthropic หรือ OpenAI ตอน design time อีกต่อไป เขียน 1 ครั้งแล้ว router ตัดสินใจตอน runtime ว่า step นี้ใครทำ
+
+สำหรับ builder ต้องลอง Switchyard สัปดาห์นี้ swap แค่ base URL กับ API key ก็ทดสอบได้ สำหรับ business ที่มี inference bill เกิน 5 หมื่นดอลลาร์ต่อเดือน นี่คือ ROI ในหน่วยสัปดาห์ไม่ใช่เดือนครับ.
+
+เรื่องที่สาม.
+เมื่อวันที่ 12 สิงหาคม Lovable บริษัท vibe coding จาก Stockholm ปิดรอบ Series C มูลค่า 400 ล้านดอลลาร์ ที่ valuation 13.3 พันล้านดอลลาร์ post-money โตเท่าตัวจากรอบก่อนใน 6 เดือน CEO Anton Osika โพสต์ตรง ๆ ว่ารอบนี้เป็น cost of goods ไม่ใช่ growth แปลว่าเงินไปที่ inference cost กับ GPU allocation ไม่ใช่ CAC hyperinflation แบบ growth-at-all-cost ยุค 2021
+
+ตัวเลขที่ทำให้ investor ยอมจ่าย 2x multiple คือ ARR แตะ 500 ล้านในมิถุนายน จาก 200 ล้านเมื่อพฤศจิกายน 2025 โต 2.5 เท่าใน 7 เดือน และบริษัทคาดว่าจะจบสิงหาที่ 600 ล้าน growth rate ระดับ Palantir กับ Snowflake ตอน pre-IPO และเป็นตัวเลขที่ SaaS ปกติไม่เคยเห็นในระดับ half-billion
+
+Menlo Ventures นำ Scaleup Europe Fund โดย EQT co-lead ตามด้วย Balderton, Tencent, Kaszek investor รอบใหม่ครอบ 3 ทวีป เป็นสัญญาณว่า vibe coding ไม่ใช่ trend เดี่ยว แต่เป็น category ที่นักลงทุนทั่วโลกยอมเดิมพัน
+
+Pattern ที่น่าสนใจคือประโยค cost of goods not growth เป็น frame ที่ต่างจาก unicorn ยุค 2021 ทั้งหมด Lovable ยอมพูดตรง ๆ ว่า margin ของ vibe coding ยังบางเพราะ inference cost สูง และ funding ไปเพื่อกด COGS ผ่านการ reserve GPU ระยะยาว
+
+สำหรับ builder ที่สร้าง framework Lovable เป็น invisible agent pattern ที่จะ dominate SMB market ในอีก 24 เดือน ถ้าคุณสร้าง framework ที่ user ต้อง config agent เอง = ตลาด SMB ปิดประตูให้คุณ และ procurement team ต้องเริ่ม vendor evaluation ใน Q3 ก่อน business unit จะ self-serve ก่อน IT อนุมัติครับ.
+
+เรื่องที่สี่.
+เมื่อวันที่ 28 กรกฎาคม MCP working group ปล่อย spec version 2026-07-28 ที่เป็น architectural rewrite ที่ใหญ่ที่สุดตั้งแต่ launch เมื่อพฤศจิกายน 2024 การเปลี่ยนหลักคือ stateless protocol core MCP จากที่เคยเป็น bidirectional stateful ตอนนี้กลายเป็น request response ปกติ
+
+ผลกระทบชัดมาก server ที่ก่อนหน้านี้ต้องมี sticky session shared session store และ deep packet inspection ที่ gateway ตอนนี้รันบน round robin load balancer ธรรมดาได้ pod ไหนก็ตอบคำขอไหนก็ได้ MCP server รันบน Kubernetes cluster ที่ enterprise มีอยู่แล้วโดยไม่ต้องมี custom operator หรือ service mesh พิเศษ
+
+Spec นี้เพิ่ม security แบบ enterprise คือ RFC 9207 ที่ client verify ได้ว่า authorization response มาจาก issuer ที่ถูกต้อง และ RFC 8707 ที่ restrict token ให้ใช้กับ resource เดียว ป้องกัน token exfiltration พร้อม Feature Lifecycle กับ Deprecation Policy อย่างเป็นทางการ enterprise CIO ที่กลัว protocol เปลี่ยนตอนนี้มี roadmap ที่ committed แล้ว
+
+ที่สำคัญไม่แพ้กัน EU AI Act high risk obligations เริ่มบังคับใช้ 2 สิงหาคม 2026 และครอบ MCP gateway ที่ใช้กับ regulated data โดยตรง เช่น credit scoring, medical diagnosis, HR screening บริษัทที่ deploy MCP server บน use case เหล่านี้ต้องมี conformity assessment, risk management, human oversight, และ transparency documentation
+
+Stateless MCP เป็นช่วง HTTP moment ของ agent protocol เพราะ 90 เปอร์เซ็นต์ของ MCP use case จริงคือ tool call request response ไม่ต้อง stateful
+
+สำหรับ builder ที่รัน MCP server migration ไป 2026-07-28 spec ควรอยู่ใน Q3 roadmap โดยเฉพาะถ้ามี production traffic จริง สำหรับ business ที่ deploy agent บน MCP ตรวจสอบว่า vendor stack อยู่ในข่าย EU AI Act high risk หรือไม่ และเริ่ม conformity assessment ทันทีครับ.
+
+ทั้งหมดนี้คือ brief ของรอบนี้. ขอให้วันนี้เป็นวันที่ดีครับ. แล้วเจอกันรอบหน้า.
