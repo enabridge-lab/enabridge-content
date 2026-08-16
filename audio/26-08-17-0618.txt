@@ -1,0 +1,46 @@
+สวัสดีครับ นี่คือ Enabridge AI Brief รอบ 17 August 2026 เวลา 06:18 ครับ.
+รอบนี้มี 4 เรื่อง เน้น Agentic AI, business use case, และ trend ที่เอามาใช้กับ OpenBridge ได้.
+
+เรื่องแรก.
+วันที่ 13 สิงหาคม DeepSeek ปล่อย V4-Pro 0813 ออก general availability พร้อมเรื่องที่ทำให้ทั้งวงการ open-source ต้องหยุดอ่านซ้ำ — เขา open-source ตัว agent runtime ของตัวเองชื่อ DeepSeek Harness v0.1 บน GitHub ภายใต้ MIT license ครั้งแรกที่ frontier lab ตัวใหญ่ ship ทั้งโมเดลและ agent framework มาด้วยกัน ไม่ใช่แค่ปล่อย weight แล้วให้ community เขียน harness เองแบบ Llama หรือ Mistral
+
+ตัวเลขที่ทำให้ต้องจริงจัง 1.6 trillion parameter mixture of experts, active per token แค่ 49 billion, context 1 million token, generate output ได้สูงสุด 384,000 token ต่อ request คะแนน Artificial Analysis Intelligence Index อยู่ที่ 53 สูงกว่าค่ากลาง open-weights กว่าเท่าตัว และที่ tempting สำหรับ dev คือ API compatible กับ OpenAI Responses API format ทันที swap DeepSeek แทน GPT ในโค้ดเดิมได้เลย ไม่ต้อง refactor
+
+แต่วันนี้ 16 สิงหาคม 16:00 UTC ราคา API ขึ้นทันที output token จาก 87 เซ็นต์ต่อล้าน เป็น 3.96 ดอลลาร์ต่อล้านช่วง peak เพิ่ม 4.5 เท่า แม้กระนั้นก็ยังถูกกว่า Anthropic Fable 5 ที่ 50 ดอลลาร์ต่อล้าน ประมาณ 12 เท่า สัญญาณคือ DeepSeek พยายามเก็บ revenue จาก agent workload ที่ token consumption สูง ก่อนที่รอบ commoditize ครั้งต่อไปจะมา
+
+ทำไมสำคัญ pattern ที่ 3 อย่าง หนึ่ง model บวก harness bundle กำลังจะเป็น default ใหม่ รอ Anthropic กับ Google ตอบภายในไตรมาส 4 สอง OpenAI Responses API กำลังกลายเป็น interface standard ของวงการ ไม่ใช่ Chat Completions อีกต่อไป สาม โมเดล agent-tuned จะแซง general-purpose ในตลาด mid-tier ตลาดจะแยกเป็น agentic tier กับ chat tier ชัดเจน
+
+สำหรับ builder ที่สร้าง framework ต้องคิดจริงจังว่าจะ fork DeepSeek Harness หรืออยู่กับ LangGraph CrewAI ต่อ MIT license ใช้ commercial ได้เต็ม และ codebase มาจาก team ที่เข้าใจ behavior ของโมเดลลึกที่สุด สำหรับ business ที่ deploy agent ต้อง benchmark quality-adjusted cost per successful task ไม่ใช่ราคาต่อ token ก่อน migrate ครับ.
+
+เรื่องที่สอง.
+วันที่ 14 สิงหาคม ก่อน Independence Day India หนึ่งวัน Kredily HRMS สัญชาติอินเดียที่มี install base 25,000 บริษัท serve พนักงาน 1 ล้านคน ปล่อยเวอร์ชั่นใหม่ Kredily 3.0 พร้อมเปิดตัว KAI Kredily AI agentic AI ตัวแรกใน India ที่ built-in ในระบบ HRMS ตั้งแต่ core ไม่ใช่ chatbot plug-in
+
+จุดที่ต่าง KAI ไม่ใช่ Q&A assistant แต่รับ instruction ภาษาธรรมชาติ perform action ที่ได้รับ permission validate outcome และ escalate exception ให้ human approve ครบ loop มี 110 skill ครอบทั้ง payroll cycle attendance leave employee data และ compliance filing PF ESI PT ที่ critical สำหรับ regulatory ใน India ที่โมเดล generic อย่าง GPT Gemini ตอบผิดเยอะ
+
+ตัวเลข install base 25,000 บริษัท กับ historical payroll transaction 10 ปี = distribution ทันทีที่ agent-native startup ยังไม่มี บวกกับข้อมูล India-specific ที่ generic LLM ตอบผิด กลายเป็น moat ที่ Workday SAP SuccessFactors เอื้อมไม่ถึง Kredily เปิดคู่กันอีกว่า launch AI-powered Managed Payroll Services เป็น business line ใหม่ ก้าวจาก software vendor เข้าสู่ managed service ราคาต่ำกว่า BPO เดิม 40 ถึง 60%
+
+ทำไมสำคัญ นี่คือ playbook สำหรับ vertical SaaS ทั่วโลกที่มี install base แต่ยังไม่ได้ ship agent Kredily รู้ตัวว่าถ้าปล่อยให้ agent-native startup ship ก่อน install base จะกร่อนใน 18 ถึง 24 เดือน เลยเลือก retrofit agent เข้า core product เป็น first mover pattern ที่เห็นชัดคือ install base คูณ India-specific data moat เท่ากับ agentic advantage ที่ไม่ใช่แค่ feature
+
+สำหรับ business ใน vertical อื่นๆ ที่มี install base ในมือ บทเรียนคือ อย่ารอ agent-native startup มากิน แล้วค่อยขยับ ต้อง ship agent layer ภายใน 6 ถึง 9 เดือน ไม่งั้นเสี่ยง churn ตอน renewal สำหรับ vertical ที่ compliance-heavy accounting healthcare insurance ควรเดิน model Kredily agent บวก managed service เป็น bundled offering กินตลาด SMB ที่ปัจจุบันจ่ายแพงให้ BPO ครับ.
+
+เรื่องที่สาม.
+วันที่ 14 สิงหาคม Octane เปิดตัว AI Operating System ตัวแรกที่ออกแบบเฉพาะ convenience store operator ปั๊มและร้านสะดวกซื้อ วางตัวเป็น operator layer ทั้งหมด ไม่ใช่ dashboard vendor แบบเดิม จุดยืนต่างจาก NCR Verifone Gilbarco PDI ชัดเจน โดยประกาศตรงว่า AI ตัวนี้สร้างมาเพื่อทำงาน ไม่ใช่สร้าง report เพิ่ม
+
+Platform ครอบ 7 domain operation ครบ pricing dynamic fuel และ SKU ในร้าน inventory auto reorder detect shrinkage invoices ทำ 3 way match กับ vendor fuel telemetry ตาม tank กับ delivery scheduling cash reconciliation drawer และ drop timing labor schedule ตาม traffic pattern และ loss prevention detect anomaly ใน transaction ทั้งหมด agent ทำ identify surface และ execute โดยที่ operator ยังคุม approve override
+
+ตอนนี้ pilot 12 สาขา รัน parallel กับ existing system เพื่อ compare decision วัด workload reduction เป็น pattern มาตรฐานสำหรับ vertical AI ก่อน production cutover Octane bet ว่า agent first product configure ต่อ chain ได้ในเวลาสั้น ไม่ต้อง customize code เหมือน enterprise deployment แบบเดิม
+
+ทำไมสำคัญ Octane เป็นตัวอย่างที่ 3 ในสัปดาห์เดียวกับ Kredily HR India และ Weathernews Japan บอกว่า vertical AI OS ไม่ใช่ trend อีกต่อไป มันเป็น product category ที่ก่อตัวแล้ว vertical software ที่ยังเป็น record system กับ dashboard จะเจอ challenger ที่ vertical และ agent native ระลอกเดียวกับที่ Salesforce Workday ล้ม on-premise ERP ในยุค 2010
+
+สำหรับ operator SMB ใน vertical อื่น auto repair dental clinic self-storage laundromat จะเห็น vertical AI OS ในอย่างน้อย 5 category เพิ่มภายใน 6 เดือน ROI จะมาไว labor cost บวก shrinkage ลด 25 ถึง 40% ในระยะแรก แต่ต้องยอม migrate ระบบ record of truth ซึ่งเสี่ยง pilot parallel แบบ Octane 12 สาขา คือ pattern ที่ควรทำตามครับ.
+
+เรื่องที่สี่.
+วันที่ 10 สิงหาคม Weathernews บริษัท weather services ญี่ปุ่นที่ก่อตั้งปี 1986 เพิ่ม chat based AI agent เข้าไปในบริการ Weathernews for Business ครอบ 4 vertical construction logistics retail และ farming ตอบ plain language question พร้อม site specific guidance ที่ actionable ตัวอย่างเช่น ผู้รับเหมาก่อสร้างถามว่า WBGT ระดับ severe caution จะมาเมื่อไร agent ตอบพร้อม timing กับ hydration schedule กับ workflow adjustment ให้เลย
+
+Moat ที่ทำให้ ChatGPT Gemini ตอบแทนไม่ได้ หนึ่ง 13,000 sensor point ทั่วประเทศญี่ปุ่นที่ density สูงกว่า JMA เอง สอง 40 ปี encoded operational interaction กับลูกค้า enterprise ญี่ปุ่น มีบริบทว่าไซต์ไหน region ไหน react ยังไง สาม integration กับ JMA data ที่ authoritative ตามกฎหมาย cross ref กับ proprietary typhoon model ของบริษัทเอง feature ที่ layer สูงกว่า chat คือ agent auto create response timeline เริ่ม 1 สัปดาห์ก่อน storm approach และ post event verify ด้วย sensor ของบริษัทเป็น feedback loop
+
+ทำไมสำคัญ นี่คือตัวอย่างที่ 3 ในสัปดาห์เดียวกับ Kredily India และ Octane US บอกว่า vertical AI agent ที่มี domain moat กำลัง form product category ใหม่ในตลาด enterprise ไม่ใช่ general assistant กับ connector อีกต่อไป pattern สำคัญคือ physical asset network เท่ากับ agentic moat compliance regulatory data integration คือ trust layer และ multilingual กับ operational output เป็น design principle ใหม่
+
+Signal ต่อจากนี้ vertical AI agent จาก Japan enterprise Mitsui SoftBank NTT Data น่าจะเห็นระลอก launch ในไตรมาส 4 มี policy push จาก METI ด้วย expect vertical agent สำหรับ manufacturing utility และ transportation ภายในปีนี้ สำหรับ business ที่มี physical asset สินทรัพย์ที่ควร monetize ผ่าน agent ไม่ใช่แค่ dashboard sell utility logistics agricultural cooperative insurance ทุก vertical นี้ควรมี AI agent เป็น revenue line ใหม่ใน 12 เดือน บริษัทที่พึ่งแค่ generic LLM prompt จะสู้ไม่ได้ เพราะ moat คือข้อมูลที่ generic model access ไม่ได้ครับ.
+
+ทั้งหมดนี้คือ brief ของรอบนี้. ขอให้วันนี้เป็นวันที่ดีครับ. แล้วเจอกันรอบหน้า.
