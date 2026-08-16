@@ -1,7 +1,41 @@
 {
-  "generated_at": "2026-08-15T23:27:55Z",
-  "count": 72,
+  "generated_at": "2026-08-16T23:32:06Z",
+  "count": 73,
   "episodes": [
+    {
+      "date": "26-08-17-0618",
+      "iso_date": "2026-08-17T06:18:00+07:00",
+      "title": "Daily AI Brief — 26-08-17 06:18",
+      "description": "1. DeepSeek V4 Pro 0813 GA + open-source ตัว agent harness — โมเดล frontier ตัวแรกที่มาพร้อม runtime ให้ใช้ฟรี, กำลังจะพลิกเกม agent stack ทั้งวงการ\n2. Kredily 3.0 เปิด \"KAI\" agentic AI ทำ payroll + HR ทั้งกระบวนการ — ครั้งแรกใน India, 25,000 SMB, 1M employee, 110 skill = vertical agent moat ที่ SaaS ทั่วไปแย่งไม่ได้\n3. Octane ปล่อย \"AI Operating System\" สำหรับ convenience store — 12 สาขา pilot, กินงาน pricing/inventory/fuel/cash/labor ครบ; vertical agent อีกตัวที่เลิก \"reports\" แล้วเดินไปทำงาน\n4. Weathernews ปล่อย multilingual AI agent สำหรับ enterprise weather ops — 13,000 sensor + 40 ปี domain data = moat ที่ GPT/Gemini ตอบไม่ได้; Japan playbook สำหรับ vertical agent",
+      "items": [
+        {
+          "file": "26-08-17-0618-01-deepseek-v4-pro-harness-open-source-agent-frontier.md",
+          "title": "DeepSeek V4 Pro 0813 GA + open-source ตัว agent harness — โมเดล frontier ตัวแรกที่มาพร้อม runtime ให้ใช้ฟรี, กำลังจะพลิกเกม agent stack ทั้งวงการ",
+          "order": 1
+        },
+        {
+          "file": "26-08-17-0618-02-kredily-kai-agentic-payroll-india-25000-businesses.md",
+          "title": "Kredily 3.0 เปิด \"KAI\" agentic AI ทำ payroll + HR ทั้งกระบวนการ — ครั้งแรกใน India, 25,000 SMB, 1M employee, 110 skill = vertical agent moat ที่ SaaS ทั่วไปแย่งไม่ได้",
+          "order": 2
+        },
+        {
+          "file": "26-08-17-0618-03-octane-ai-operating-system-convenience-store-vertical-agent.md",
+          "title": "Octane ปล่อย \"AI Operating System\" สำหรับ convenience store — 12 สาขา pilot, กินงาน pricing/inventory/fuel/cash/labor ครบ; vertical agent อีกตัวที่เลิก \"reports\" แล้วเดินไปทำงาน",
+          "order": 3
+        },
+        {
+          "file": "26-08-17-0618-04-weathernews-vertical-ai-agent-japan-40yr-data-moat.md",
+          "title": "Weathernews ปล่อย multilingual AI agent สำหรับ enterprise weather ops — 13,000 sensor + 40 ปี domain data = moat ที่ GPT/Gemini ตอบไม่ได้; Japan playbook สำหรับ vertical agent",
+          "order": 4
+        }
+      ],
+      "audio_file": "26-08-17-0618.mp3",
+      "audio_size_bytes": 1939968,
+      "voice": "th-TH-Chirp3-HD-Achernar",
+      "model": "google-cloud-tts-chirp3-hd",
+      "speed": 1.3,
+      "script_char_count": 7459
+    },
     {
       "date": "26-08-16-0612",
       "iso_date": "2026-08-16T06:12:00+07:00",
