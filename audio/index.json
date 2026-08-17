@@ -1,7 +1,41 @@
 {
-  "generated_at": "2026-08-15T23:27:55Z",
-  "count": 72,
+  "generated_at": "2026-08-17T23:25:30Z",
+  "count": 73,
   "episodes": [
+    {
+      "date": "26-08-18-0611",
+      "iso_date": "2026-08-18T06:11:00+07:00",
+      "title": "Daily AI Brief — 26-08-18 06:11",
+      "description": "1. Zenity ปิด $125M Series C — SoftBank/Hitachi/LG แทงหุ้น \"Agent SecOps\" ก่อนยุค 1 พันล้าน agent\n2. Cisco แจก AI agent ให้พนักงานทั้ง 90,000 คน — เดินสูตร on-prem + model routing เพื่อ cost + trust\n3. NVIDIA ปล่อย Nemotron 3.5 Lightning + NeMo Switchyard — 4x เร็วขึ้น, model routing เป็น OSS\n4. Atlassian Rovo prompt injection — 74 วันยังไม่ patch, exfil ทั้ง Jira + Confluence ด้วย invisible text ใน PDF",
+      "items": [
+        {
+          "file": "26-08-18-0611-01-zenity-125m-agent-security.md",
+          "title": "Zenity ปิด $125M Series C — SoftBank/Hitachi/LG แทงหุ้น \"Agent SecOps\" ก่อนยุค 1 พันล้าน agent",
+          "order": 1
+        },
+        {
+          "file": "26-08-18-0611-02-cisco-90k-agent-rollout.md",
+          "title": "Cisco แจก AI agent ให้พนักงานทั้ง 90,000 คน — เดินสูตร on-prem + model routing เพื่อ cost + trust",
+          "order": 2
+        },
+        {
+          "file": "26-08-18-0611-03-nvidia-nemotron-lightning-switchyard.md",
+          "title": "NVIDIA ปล่อย Nemotron 3.5 Lightning + NeMo Switchyard — 4x เร็วขึ้น, model routing เป็น OSS",
+          "order": 3
+        },
+        {
+          "file": "26-08-18-0611-04-atlassian-rovo-unpatched.md",
+          "title": "Atlassian Rovo prompt injection — 74 วันยังไม่ patch, exfil ทั้ง Jira + Confluence ด้วย invisible text ใน PDF",
+          "order": 4
+        }
+      ],
+      "audio_file": "26-08-18-0611.mp3",
+      "audio_size_bytes": 1303680,
+      "voice": "th-TH-Chirp3-HD-Achernar",
+      "model": "google-cloud-tts-chirp3-hd",
+      "speed": 1.3,
+      "script_char_count": 4505
+    },
     {
       "date": "26-08-16-0612",
       "iso_date": "2026-08-16T06:12:00+07:00",
