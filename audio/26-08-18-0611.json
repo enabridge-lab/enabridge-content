@@ -1,0 +1,32 @@
+{
+  "date": "26-08-18-0611",
+  "iso_date": "2026-08-18T06:11:00+07:00",
+  "title": "Daily AI Brief — 26-08-18 06:11",
+  "items": [
+    {
+      "file": "26-08-18-0611-01-zenity-125m-agent-security.md",
+      "title": "Zenity ปิด $125M Series C — SoftBank/Hitachi/LG แทงหุ้น \"Agent SecOps\" ก่อนยุค 1 พันล้าน agent",
+      "order": 1
+    },
+    {
+      "file": "26-08-18-0611-02-cisco-90k-agent-rollout.md",
+      "title": "Cisco แจก AI agent ให้พนักงานทั้ง 90,000 คน — เดินสูตร on-prem + model routing เพื่อ cost + trust",
+      "order": 2
+    },
+    {
+      "file": "26-08-18-0611-03-nvidia-nemotron-lightning-switchyard.md",
+      "title": "NVIDIA ปล่อย Nemotron 3.5 Lightning + NeMo Switchyard — 4x เร็วขึ้น, model routing เป็น OSS",
+      "order": 3
+    },
+    {
+      "file": "26-08-18-0611-04-atlassian-rovo-unpatched.md",
+      "title": "Atlassian Rovo prompt injection — 74 วันยังไม่ patch, exfil ทั้ง Jira + Confluence ด้วย invisible text ใน PDF",
+      "order": 4
+    }
+  ],
+  "script_char_count": 4505,
+  "audio_file": "26-08-18-0611.mp3",
+  "voice": "th-TH-Chirp3-HD-Achernar",
+  "model": "google-cloud-tts-chirp3-hd",
+  "speed": 1.3
+}
