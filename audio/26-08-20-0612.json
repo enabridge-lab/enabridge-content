@@ -1,0 +1,32 @@
+{
+  "date": "26-08-20-0612",
+  "iso_date": "2026-08-20T06:12:00+07:00",
+  "title": "Daily AI Brief — 26-08-20 06:12",
+  "items": [
+    {
+      "file": "26-08-20-0612-01-warp-factories-coding-agent-cloud-infrastructure.md",
+      "title": "Warp Factories เปิดตัวใน closed beta — \"software factory as code\" ที่ให้ agent 5 ตัวไล่งานตั้งแต่ triage → verify ในไม่ถึง 5 นาที",
+      "order": 1
+    },
+    {
+      "file": "26-08-20-0612-02-etched-700m-21b-sohu-transformer-asic-jane-street.md",
+      "title": "Etched ปิด $700M @ $21B — valuation เท่าตัวใน 1 เดือน, Jane Street เป็น lead investor และลูกค้าแรกที่รับ rack Sohu ไปใช้จริง",
+      "order": 2
+    },
+    {
+      "file": "26-08-20-0612-03-a2a-protocol-agentic-ai-foundation-multi-agent-standard.md",
+      "title": "A2A ย้ายบ้านเข้า Agentic AI Foundation — Google ปล่อยมือ, มาตรฐาน multi-agent มี governance ใหม่ 150+ องค์กร",
+      "order": 3
+    },
+    {
+      "file": "26-08-20-0612-04-cloudways-managed-ai-agents-openclaw-hermes-oss-hosting.md",
+      "title": "Cloudways เปิด \"Managed AI Agents\" GA — SMB deploy open-source agent ได้ในไม่กี่คลิก, DOCN หุ้นเด้ง 5% — คือครั้งแรกที่ hosting ปกติ ship agent runtime สำเร็จรูป",
+      "order": 4
+    }
+  ],
+  "script_char_count": 4901,
+  "audio_file": "26-08-20-0612.mp3",
+  "voice": "th-TH-Chirp3-HD-Achernar",
+  "model": "google-cloud-tts-chirp3-hd",
+  "speed": 1.3
+}
