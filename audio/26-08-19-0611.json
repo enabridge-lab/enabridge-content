@@ -1,0 +1,32 @@
+{
+  "date": "26-08-19-0611",
+  "iso_date": "2026-08-19T06:11:00+07:00",
+  "title": "Daily AI Brief — 26-08-19 06:11",
+  "items": [
+    {
+      "file": "26-08-19-0611-01-stripe-openrouter-7b-agent-economy-ledger.md",
+      "title": "Stripe ซื้อ OpenRouter $7B — เปลี่ยน model routing เป็น \"payment rail ของยุค agent\" ที่วัดทุก token, bill ทุก call",
+      "order": 1
+    },
+    {
+      "file": "26-08-19-0611-02-openai-codex-64-percent-enterprise-tokens-agentic-shift.md",
+      "title": "OpenAI เปิด data ครั้งแรก — Codex กิน 64% ของ enterprise output tokens, frontier firm ใช้ agent มากกว่าค่าเฉลี่ย 8.3 เท่า, การ delegate ชนะ chat แล้ว",
+      "order": 2
+    },
+    {
+      "file": "26-08-19-0611-03-cognition-devin-40b-valuation-coding-agent-thesis.md",
+      "title": "Cognition คุยรอบใหม่ที่ $40B — 3 เดือนหลัง $26B, ARR ทะลุ $492M โต 50% ต่อเดือน 6 เดือนติด, Goldman/Mercedes เป็นลูกค้าจริง — coding agent thesis เข้าโหมด repricing",
+      "order": 3
+    },
+    {
+      "file": "26-08-19-0611-04-ghostsplice-mcp-split-attack-100-percent-exfil.md",
+      "title": "GhostSplice: ทำลาย 11 frontier model ด้วย MCP server เดียว — ขอ credential ตรง ๆ agent ปฏิเสธ, ตัดคำขอเป็นชิ้นเล็ก ๆ compliance ขึ้นเป็น 100% เพราะดูเหมือน \"กรอกฟอร์ม\" ไม่ใช่ \"ขโมย\"",
+      "order": 4
+    }
+  ],
+  "script_char_count": 4227,
+  "audio_file": "26-08-19-0611.mp3",
+  "voice": "th-TH-Chirp3-HD-Achernar",
+  "model": "google-cloud-tts-chirp3-hd",
+  "speed": 1.3
+}
