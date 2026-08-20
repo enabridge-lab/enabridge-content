@@ -1,7 +1,41 @@
 {
-  "generated_at": "2026-08-19T23:25:42Z",
-  "count": 74,
+  "generated_at": "2026-08-20T23:27:26Z",
+  "count": 75,
   "episodes": [
+    {
+      "date": "26-08-21-0612",
+      "iso_date": "2026-08-21T06:12:00+07:00",
+      "title": "Daily AI Brief — 26-08-21 06:12",
+      "description": "1. Databricks ปิด $5B @ $190B — \"agent demand\" ดัน run-rate ทะลุ $7B, 100K agent ถูก build บน Agent Bricks แล้ว\n2. Anthropic push Agent Skills + Files API + Admin API เข้าสถานะ GA — Claude Developer Platform เลิกเรียกตัวเองว่า \"API\" อย่างเป็นทางการ\n3. HTTP 402 คืนชีพ — Cloudflare + AWS ฝัง x402 stablecoin เข้า edge, agent จ่ายเงินเองไม่ต้องผ่านมนุษย์แล้ว 169M ครั้ง\n4. Resolve ปล่อย AgentLab next-gen — IT ops vendor 20 ปีต่อยอด runbook เป็น \"natural-language agent factory\"",
+      "items": [
+        {
+          "file": "26-08-21-0612-01-databricks-5b-190b-100k-agents-agent-bricks.md",
+          "title": "Databricks ปิด $5B @ $190B — \"agent demand\" ดัน run-rate ทะลุ $7B, 100K agent ถูก build บน Agent Bricks แล้ว",
+          "order": 1
+        },
+        {
+          "file": "26-08-21-0612-02-anthropic-agent-skills-files-api-ga-platform.md",
+          "title": "Anthropic push Agent Skills + Files API + Admin API เข้าสถานะ GA — Claude Developer Platform เลิกเรียกตัวเองว่า \"API\" อย่างเป็นทางการ",
+          "order": 2
+        },
+        {
+          "file": "26-08-21-0612-03-cloudflare-aws-x402-stablecoin-agent-payments.md",
+          "title": "HTTP 402 คืนชีพ — Cloudflare + AWS ฝัง x402 stablecoin เข้า edge, agent จ่ายเงินเองไม่ต้องผ่านมนุษย์แล้ว 169M ครั้ง",
+          "order": 3
+        },
+        {
+          "file": "26-08-21-0612-04-resolve-agentlab-enterprise-orchestration-natural-language.md",
+          "title": "Resolve ปล่อย AgentLab next-gen — IT ops vendor 20 ปีต่อยอด runbook เป็น \"natural-language agent factory\"",
+          "order": 4
+        }
+      ],
+      "audio_file": "26-08-21-0612.mp3",
+      "audio_size_bytes": 1166112,
+      "voice": "th-TH-Chirp3-HD-Achernar",
+      "model": "google-cloud-tts-chirp3-hd",
+      "speed": 1.3,
+      "script_char_count": 4053
+    },
     {
       "date": "26-08-20-0612",
       "iso_date": "2026-08-20T06:12:00+07:00",
