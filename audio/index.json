@@ -1,7 +1,41 @@
 {
-  "generated_at": "2026-08-20T23:27:26Z",
-  "count": 75,
+  "generated_at": "2026-08-21T23:20:02Z",
+  "count": 76,
   "episodes": [
+    {
+      "date": "26-08-22-0609",
+      "iso_date": "2026-08-22T06:09:00+07:00",
+      "title": "Daily AI Brief — 26-08-22 06:09",
+      "description": "1. Cognition คุยรอบใหม่ที่ $40B — Devin ตั้ง target $1B ARR หลังพุ่งจาก $492M ใน 3 เดือน, Mercedes/NASA/Goldman deploy จริง\n2. HappyRobot ปิด $150M @ $1.2B — voice agent สำหรับ logistics automate 28,000 ชั่วโมง/เดือน, revenue โต 5 เท่าใน 12 เดือน\n3. Zenity ปิด $125M — \"1 billion agents\" thesis กลายเป็น governance thesis, revenue โต 3 เท่า 2 ปีติด, SoftBank/Fortune 500 ใช้จริง\n4. Yellow.ai IPO ผ่าน SPAC $550M — แทนที่จะขาย software เข้า call center, ไปซื้อ call center แล้ว automate ทั้งชุด",
+      "items": [
+        {
+          "file": "26-08-22-0609-01-cognition-devin-40b-talks-1b-arr-coding-agent.md",
+          "title": "Cognition คุยรอบใหม่ที่ $40B — Devin ตั้ง target $1B ARR หลังพุ่งจาก $492M ใน 3 เดือน, Mercedes/NASA/Goldman deploy จริง",
+          "order": 1
+        },
+        {
+          "file": "26-08-22-0609-02-happyrobot-150m-unicorn-logistics-agentic-enterprise.md",
+          "title": "HappyRobot ปิด $150M @ $1.2B — voice agent สำหรับ logistics automate 28,000 ชั่วโมง/เดือน, revenue โต 5 เท่าใน 12 เดือน",
+          "order": 2
+        },
+        {
+          "file": "26-08-22-0609-03-zenity-125m-security-1-billion-agents-governance.md",
+          "title": "Zenity ปิด $125M — \"1 billion agents\" thesis กลายเป็น governance thesis, revenue โต 3 เท่า 2 ปีติด, SoftBank/Fortune 500 ใช้จริง",
+          "order": 3
+        },
+        {
+          "file": "26-08-22-0609-04-yellow-ai-550m-spac-bpo-rollup-agentic.md",
+          "title": "Yellow.ai IPO ผ่าน SPAC $550M — แทนที่จะขาย software เข้า call center, ไปซื้อ call center แล้ว automate ทั้งชุด",
+          "order": 4
+        }
+      ],
+      "audio_file": "26-08-22-0609.mp3",
+      "audio_size_bytes": 1273344,
+      "voice": "th-TH-Chirp3-HD-Achernar",
+      "model": "google-cloud-tts-chirp3-hd",
+      "speed": 1.3,
+      "script_char_count": 4397
+    },
     {
       "date": "26-08-21-0612",
       "iso_date": "2026-08-21T06:12:00+07:00",
