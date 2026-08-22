@@ -1,0 +1,42 @@
+สวัสดีครับ นี่คือ Enabridge AI Brief รอบ 23 August 2026 เวลา 06:09 ครับ.
+รอบนี้มี 4 เรื่อง เน้น Agentic AI, business use case, และ trend ที่เอามาใช้กับ OpenBridge ได้.
+
+เรื่องแรก.
+วันนี้ทีม Core Maintainers ของ MCP หรือ Model Context Protocol เพิ่งปล่อย roadmap ปี 2026 ออกมา และประเด็นที่น่าจับตาที่สุดคือเรื่อง agent identity ครับ
+
+เดิมที MCP ออกแบบบนสมมติฐานว่ามีคนกดยืนยันในเบราว์เซอร์ ซึ่งใช้ได้ดีกับ Claude Desktop หรือ Cursor แต่ตอนนี้ caller ส่วนใหญ่กลายเป็น agent ที่รันบน cloud มี identity ของตัวเอง และหลายครั้งยังส่งต่ออำนาจไปให้ sub-agent อีกที ดังนั้นการยืนยันด้วยเบราว์เซอร์อย่างเดียวมันไม่พอแล้ว
+
+Roadmap ยกสอง proposal ขึ้นมา — DPoP หรือ Demonstrating Proof of Possession ที่ผูก token กับ key ของ agent ทำให้ token รั่วก็ใช้ไม่ได้ และ Workload Identity Federation ที่ให้ MCP server เชื่อ identity จาก AWS IAM, Google Cloud Service Account หรือ SPIFFE โดยไม่ต้องออก secret เพิ่ม
+
+สัญญาณคือ MCP กำลังเข้าสู่ phase 2 — จาก "เชื่อมทุกอย่างเข้ากัน" ไปสู่ "รันในระดับ enterprise แบบ audit ได้" ถ้าคุณเป็นทีมสร้าง agent platform วันนี้เริ่มออกแบบให้รองรับ workload identity ตั้งแต่ตอนนี้จะได้เปรียบตอน enterprise เขาเริ่ม RFP ครับ.
+
+เรื่องที่สอง.
+Salesforce เปิดตัว Slack Code เมื่อวันที่ 20 สิงหาคมที่ผ่านมา แนวคิดง่ายมากครับ — แปลง Slack channel ให้กลายเป็นห้องทำงานร่วมกันระหว่างทีมกับ AI coding agent หลายตัวพร้อมกัน
+
+Agent ที่รองรับตั้งแต่วันแรกคือ Claude Code จาก Anthropic, Devin จาก Cognition, GitHub Copilot, Vercel Agent และ ChatGPT จาก OpenAI — mention agent ในแชนแนล แล้ว agent จะเข้ามาทำงานให้เห็นบน timeline เดียวกันที่ทีมคุยงาน review code diff ได้ ดู live preview ได้ approve งานได้ ทั้งหมดโดยไม่ต้องออกจาก Slack
+
+ที่น่าสนใจคือฟรีทุก plan รวม free workspace — Salesforce ยอมเปิดบ้านให้ competitor อย่าง Microsoft, Anthropic, OpenAI มาอยู่ในบริบทเดียวกันเพื่อรักษา status ของ Slack ในฐานะ default surface ของทีม dev
+
+สำหรับใครที่กำลังคิดจะ deploy coding agent ในองค์กร นี่คือ moment ที่จะลองแบบ zero-cost — และเป็นสัญญาณว่า agent runtime กำลังย้ายจาก terminal ไปอยู่ใน chat ที่ทีมอยู่แล้วครับ.
+
+เรื่องที่สาม.
+มีชุดข้อมูลจาก VentureBeat ที่น่าสนใจมากออกมาช่วง 20 สิงหาคม ที่บอกสถานะจริงของ AI agent ในองค์กรใหญ่ ๆ แบบไม่โปะเลย
+
+ประเด็นแรก — median enterprise รัน orchestration platform สามเจ้าพร้อมกัน Microsoft AI Foundry อยู่ใน 70% ของ stack, OpenAI Agents SDK 68%, Anthropic Claude Platform 47% ตัวเลขบวกกันเกินร้อยเพราะหลายบริษัทใช้ทั้งสามเจ้า — ไม่ใช่เพราะ optimize workload แต่เพราะไม่ไว้ใจให้ vendor เดียวคุมทั้งบริษัท เหมือน multicloud เมื่อ 5–7 ปีก่อน
+
+ประเด็นที่สอง — 27% ของ enterprise ยอมรับว่าถ้า agent run away เผาเงินหลายพันดอลลาร์ พวกเขาไม่มีวิธี programmatic ที่จะหยุดได้ก่อนบิลจะมา ต้องรอเห็นใน log หลังจากเงินเสียไปแล้ว อีก 21% track spend ผ่าน log อย่างเดียว
+
+Signal สำหรับคนทำ agent platform คือ ช่วง 12 เดือนข้างหน้าคนที่จะขายของได้คือคนที่ครอบสาม platform นั้นได้พร้อมกัน — spend metering, cross-vendor policy, audit trail ข้าม stack — ไม่ใช่คนที่จะเข้ามาเป็น platform ที่ 4 ครับ.
+
+เรื่องที่สี่.
+Natural สตาร์ทอัพจาก San Francisco ที่สร้าง payment infrastructure สำหรับ AI agent เพิ่งปิด credit facility สูงสุด $100M กับ Upper90 Capital Management เมื่อวันที่ 19 สิงหาคม — และที่น่าสังเกตคือมาแค่หนึ่งเดือนหลังปิด Series A $30M
+
+สิ่งที่ Natural สร้างคือระบบให้ AI agent สามารถ hold เงินได้จริง ทำ transaction ได้ settle payment ได้ และเบิก line of credit เมื่อจำเป็น โดยที่บริษัทเจ้าของ agent ยังคุม policy ทั้งหมด
+
+ที่น่าสนใจคือโครงสร้างเงินทุน — Upper90 เป็น credit fund ไม่ใช่ venture ปกติ พวกเขาปล่อยให้ธุรกิจที่ต้อง float working capital ล่วงหน้า การที่ Natural ต้องหาเงินแบบนี้แปลว่า agent-driven transaction volume โตในระดับที่ต้องใช้เงินจริงมา float แล้ว ไม่ใช่แค่ demo
+
+ประกอบกับข่าว Stripe + OpenRouter agent ledger และ Cloudflare + AWS ผลัก x402 stablecoin ที่คลุมไปในรอบก่อน ภาพที่ชัดขึ้นเรื่อย ๆ คือ payment rail สำหรับ agent กำลังก่อตัวเป็น layer แยก ไม่ใช่แค่ให้ agent เรียก Stripe API ธรรมดา แต่มี identity, spending limit, credit underwriting สำหรับ non-human counterparty โดยเฉพาะ
+
+สำหรับคนที่กำลัง deploy agent ที่ trigger paid action ได้ นี่คือช่วงต้องเริ่มดู payment infra ที่มี policy control ในตัว ไม่ใช่รอ agent เผาเงินก่อนแล้วค่อยตามแก้ครับ.
+
+ทั้งหมดนี้คือ brief ของรอบนี้. ขอให้วันนี้เป็นวันที่ดีครับ. แล้วเจอกันรอบหน้า.

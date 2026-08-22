@@ -1,0 +1,32 @@
+{
+  "date": "26-08-23-0609",
+  "iso_date": "2026-08-23T06:09:00+07:00",
+  "title": "Daily AI Brief — 26-08-23 06:09",
+  "items": [
+    {
+      "file": "26-08-23-0609-01-mcp-2026-roadmap-agent-identity-dpop.md",
+      "title": "MCP roadmap 2026 — protocol โตขึ้น, ยก agent identity เป็น first-class",
+      "order": 1
+    },
+    {
+      "file": "26-08-23-0609-02-slack-code-multi-agent-channels-salesforce.md",
+      "title": "Slack Code — Salesforce ดึง Claude Code, Devin, Copilot, Vercel มาอยู่ในแชนแนลเดียวกัน",
+      "order": 2
+    },
+    {
+      "file": "26-08-23-0609-03-enterprise-three-orchestrators-27-percent-runaway-spend.md",
+      "title": "Enterprise รัน 3 orchestration platform พร้อมกัน — เพราะไม่ไว้ใจ vendor เดียว",
+      "order": 3
+    },
+    {
+      "file": "26-08-23-0609-04-natural-100m-credit-facility-agent-payments.md",
+      "title": "Natural ได้ $100M credit facility จาก Upper90 — ปูรางเงินให้ AI agent",
+      "order": 4
+    }
+  ],
+  "script_char_count": 4193,
+  "audio_file": "26-08-23-0609.mp3",
+  "voice": "th-TH-Chirp3-HD-Achernar",
+  "model": "google-cloud-tts-chirp3-hd",
+  "speed": 1.3
+}
