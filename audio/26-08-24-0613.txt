@@ -1,0 +1,46 @@
+สวัสดีครับ นี่คือ Enabridge AI Brief รอบ 24 August 2026 เวลา 06:13 ครับ.
+รอบนี้มี 4 เรื่อง เน้น Agentic AI, business use case, และ trend ที่เอามาใช้กับ OpenBridge ได้.
+
+เรื่องแรก.
+วันนี้ Pinecone ประกาศให้ Nexus ซึ่งเป็น knowledge engine ของเขาเข้าสู่ General Availability พร้อมตัวเลข benchmark ที่กล้ามาก ครับ
+
+agent ที่ใช้ GPT-5.5 บวก Nexus ทำคะแนนได้ 47.4% บน tau-Knowledge ซึ่งเป็น benchmark ของ Sierra สำหรับ agentic customer service เทียบกับ GPT-5.5 เปล่า ๆ ที่ทำได้ 46.4% แปลว่าแม่นยำใกล้กันแต่ cost ต่อ task ต่ำกว่าถึง 77% ที่น่าสนใจกว่านั้นคือ GPT-5.2 ซึ่งเป็น model ที่ถูกกว่า พอเสียบ Nexus เข้าไปได้ 36.1% เทียบ 32.2% ตอนไม่ใช้ โดย tool call ต่อ task ลดจาก 42 เหลือ 17 และ model call ลดจาก 81 เหลือ 42
+
+Pinecone ตั้งชื่อ blog ตรง ๆ ว่า The Ceiling Was Never the Model — เขากำลังบอกว่าที่หลายคนคิดว่าเป็นเพดานของโมเดล จริง ๆ เป็นเพดานของ retrieval ต่างหาก
+
+signal สำหรับคนทำ agent platform คือ อย่ารีบอัพเกรด model tier ก่อนวัด retrieval quality เพราะต้นทุนจริง ๆ อาจอยู่ที่ round trip ที่หายไป ไม่ใช่ราคา token ครับ.
+
+เรื่องที่สอง.
+วันที่ 20 สิงหาคม Ode ซึ่งเป็น services JV ที่ Anthropic ตั้งขึ้นร่วมกับ Blackstone และ Hellman & Friedman เพิ่งประกาศ acquire Casper Studios ซึ่งเป็น boutique consultancy ที่มี expertise ตรงในการเอา Claude เข้าไปในระบบขององค์กร ครับ
+
+ที่น่าสังเกตคือ Ode เพิ่ง formal launch ไม่ถึงเดือน แล้ว M&A ทันที — ทีมของ Casper จะเข้ามาเสริม delivery capacity ให้ Ode รับ deal enterprise-scale ได้เร็วขึ้น
+
+pattern ที่เห็นคือ frontier lab บวก private-equity money บวก boutique consultancy talent = firm ที่ enterprise buy วันเดียวจบทั้ง license, integration และ change management OpenAI ทำ DeployCo, Microsoft ทำ Frontier, Anthropic มี Ode — services layer ของ AI enterprise กำลังรวมตัวเร็วมาก
+
+Signal ที่สำคัญกว่านั้นคือ enterprise pain ไม่ใช่ model ไม่ดีพอ แต่คือทำยังไงให้ 80,000 พนักงานเริ่มใช้ agent ให้เกิดผลจริง
+
+สำหรับคนที่กำลังเลือก vendor — ถามให้ชัดว่าใครเป็นเจ้าของ IP ของ agent ที่ build ให้ และถ้าเปลี่ยน model provider ในอีก 3 ปี ต้องเริ่มใหม่ไหม เพราะ lock-in จะกลายเป็นประเด็นใหญ่ครับ.
+
+เรื่องที่สาม.
+วันที่ 20 สิงหาคม Google ประกาศ bundle Antigravity ซึ่งเป็น coding agent ของตัวเองเข้ากับ Gemini Enterprise subscription ทุก tier ที่รองรับ ครับ
+
+IT admin สามารถ enable Antigravity ให้ user, monitor spend, ตั้ง policy จาก admin console เดียวกับ Gemini Enterprise ได้เลย และ Antigravity หลุดออกจาก IDE ของตัวเอง ไปอยู่บน VS Code, Visual Studio, JetBrains, Zed พร้อม desktop app และ CLI — Google ยอมรับตรง ๆ ว่าคนไม่ย้าย IDE ไปหา coding agent
+
+Feature enterprise ที่ใส่มาแบบ default คือ Workforce Identity Federation ให้ agent ยืม identity จาก Okta หรือ Entra ที่มีอยู่ ไม่ต้องออก secret แยก, admin ตั้ง budget threshold ต่อ user, จำกัด browser permission และ workspace sandbox พร้อม audit log ครบ
+
+Signal คือ framework wars จบไปแล้ว distribution war เริ่มขึ้น ใครมีช่องทางกระจายที่ครอบ Fortune 2000 ครบทั้ง license, admin, support ในสัญญาเดียว จะกินตลาด mass
+
+ถ้าองค์กรมี Gemini Enterprise อยู่แล้ว เปิด Antigravity ตอนนี้ = zero incremental cost วางแผน RFP รอบใหม่ให้ include bundle economics ด้วยครับ.
+
+เรื่องที่สี่.
+วันที่ 4 สิงหาคม HappyRobot ปิด Series C 150 ล้านดอลลาร์ ที่ valuation 1.2 พันล้าน กลายเป็น FreightTech unicorn ตัวใหม่ครับ
+
+Prysm Capital นำ Eurazeo co-lead, a16z, Y Combinator, Koch Disruptive กลับมาลงต่อ บริษัทตอนนี้ deploy agent ที่ 150 กว่าลูกค้า enterprise รวมทั้ง DHL, Uber Freight, Kuehne+Nagel — พวก 3PL ที่ยังต้องมี dispatcher โทรตาม driver ทั้งวัน HappyRobot สอน agent ทำงานแทนใน voice, email, document
+
+metric ที่ทำให้ investor เทเงินคือ NDR เกิน 150% — ลูกค้าปีที่แล้วจ่ายเพิ่มปีนี้เกินครึ่ง หายากใน SaaS ปกติ บริษัทโต 5 เท่าจาก Series B ปลายปีที่แล้ว
+
+Signal ที่กว้างกว่าคือ vertical agent เริ่มชนะ horizontal platform ในตลาดที่ workflow เฉพาะ — เพราะเข้าใจ nuance ของอุตสาหกรรมที่ generic framework ทำไม่ได้ pattern เดียวกับ Sierra ในลูกค้าบริการ, Rogo การเงิน, Norm AI compliance, Avoca HVAC — vertical unicorn โตขึ้นทุก 6-8 สัปดาห์
+
+สำหรับธุรกิจไทยที่มี ops-heavy workflow — logistics, insurance broker, healthcare admin — window เปิดสำหรับสร้าง vertical agent ที่ speak Thai และเข้าใจ workflow local before global player ปรับเข้ามาครับ.
+
+ทั้งหมดนี้คือ brief ของรอบนี้. ขอให้วันนี้เป็นวันที่ดีครับ. แล้วเจอกันรอบหน้า.
