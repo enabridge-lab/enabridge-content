@@ -1,7 +1,41 @@
 {
-  "generated_at": "2026-08-22T23:21:22Z",
-  "count": 76,
+  "generated_at": "2026-08-23T23:32:04Z",
+  "count": 77,
   "episodes": [
+    {
+      "date": "26-08-24-0613",
+      "iso_date": "2026-08-24T06:13:00+07:00",
+      "title": "Daily AI Brief — 26-08-24 06:13",
+      "description": "1. Pinecone Nexus GA — knowledge layer เอาชนะ frontier model บน benchmark ของ Sierra\n2. Ode + Anthropic ซื้อ Casper Studios — services layer ของ AI enterprise รวมตัวเร็วขึ้น\n3. Google Antigravity เข้า Gemini Enterprise — coding agent เดินไปหา admin console\n4. HappyRobot ระดม $150M ที่ valuation $1.2B — voice agent ของ freight ขึ้น unicorn",
+      "items": [
+        {
+          "file": "26-08-24-0613-01-pinecone-nexus-knowledge-beats-frontier-model.md",
+          "title": "Pinecone Nexus GA — knowledge layer เอาชนะ frontier model บน benchmark ของ Sierra",
+          "order": 1
+        },
+        {
+          "file": "26-08-24-0613-02-ode-anthropic-casper-studios-enterprise-transformation.md",
+          "title": "Ode + Anthropic ซื้อ Casper Studios — services layer ของ AI enterprise รวมตัวเร็วขึ้น",
+          "order": 2
+        },
+        {
+          "file": "26-08-24-0613-03-google-antigravity-gemini-enterprise-coding-agent.md",
+          "title": "Google Antigravity เข้า Gemini Enterprise — coding agent เดินไปหา admin console",
+          "order": 3
+        },
+        {
+          "file": "26-08-24-0613-04-happyrobot-150m-series-c-freight-agents-unicorn.md",
+          "title": "HappyRobot ระดม $150M ที่ valuation $1.2B — voice agent ของ freight ขึ้น unicorn",
+          "order": 4
+        }
+      ],
+      "audio_file": "26-08-24-0613.mp3",
+      "audio_size_bytes": 1167072,
+      "voice": "th-TH-Chirp3-HD-Achernar",
+      "model": "google-cloud-tts-chirp3-hd",
+      "speed": 1.3,
+      "script_char_count": 4203
+    },
     {
       "date": "26-08-23-0609",
       "iso_date": "2026-08-23T06:09:00+07:00",
