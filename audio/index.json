@@ -1,7 +1,41 @@
 {
-  "generated_at": "2026-08-23T23:32:04Z",
-  "count": 77,
+  "generated_at": "2026-08-24T23:32:36Z",
+  "count": 78,
   "episodes": [
+    {
+      "date": "26-08-25-0615",
+      "iso_date": "2026-08-25T06:15:00+07:00",
+      "title": "Daily AI Brief — 26-08-25 06:15",
+      "description": "1. Microsoft ThinkingBox — pass^20 คือตัวเลขที่กระชากทุก agent demo กลับสู่ความจริง\n2. AWS Bedrock AgentCore Payments GA — hyperscaler เสียบ agent commerce เข้า console เดียว\n3. Salesforce Agentic Enterprise Index — 5 → 13 agents/ลูกค้าใน 14 เดือน, deploy เฉลี่ย 1.9 วัน\n4. Nuggets Authority Control Plane — agent identity layer แยกตัวออกจาก hyperscaler suite",
+      "items": [
+        {
+          "file": "26-08-25-0615-01-microsoft-thinkingbox-pass-at-20-agent-reliability.md",
+          "title": "Microsoft ThinkingBox — pass^20 คือตัวเลขที่กระชากทุก agent demo กลับสู่ความจริง",
+          "order": 1
+        },
+        {
+          "file": "26-08-25-0615-02-aws-bedrock-agentcore-payments-ga-hyperscaler.md",
+          "title": "AWS Bedrock AgentCore Payments GA — hyperscaler เสียบ agent commerce เข้า console เดียว",
+          "order": 2
+        },
+        {
+          "file": "26-08-25-0615-03-salesforce-agentic-enterprise-index-13-agents-1-9-days.md",
+          "title": "Salesforce Agentic Enterprise Index — 5 → 13 agents/ลูกค้าใน 14 เดือน, deploy เฉลี่ย 1.9 วัน",
+          "order": 3
+        },
+        {
+          "file": "26-08-25-0615-04-nuggets-authority-control-plane-agent-identity-saas.md",
+          "title": "Nuggets Authority Control Plane — agent identity layer แยกตัวออกจาก hyperscaler suite",
+          "order": 4
+        }
+      ],
+      "audio_file": "26-08-25-0615.mp3",
+      "audio_size_bytes": 1046976,
+      "voice": "th-TH-Chirp3-HD-Achernar",
+      "model": "google-cloud-tts-chirp3-hd",
+      "speed": 1.3,
+      "script_char_count": 4129
+    },
     {
       "date": "26-08-24-0613",
       "iso_date": "2026-08-24T06:13:00+07:00",
