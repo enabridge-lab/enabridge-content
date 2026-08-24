@@ -1,0 +1,40 @@
+สวัสดีครับ นี่คือ Enabridge AI Brief รอบ 25 August 2026 เวลา 06:15 ครับ.
+รอบนี้มี 4 เรื่อง เน้น Agentic AI, business use case, และ trend ที่เอามาใช้กับ OpenBridge ได้.
+
+เรื่องแรก.
+วันนี้ Microsoft Research ปล่อย ThinkingBox ครับ เป็น sandbox กับ benchmark ที่วัด agent ที่ state ของ database จริง ไม่ใช่คำอ้างของ agent เอง
+
+ชุด benchmark มี 507 task ของ business workflow ทั้งหมด รันซ้ำ 20 รอบต่อ task ต่อ model ทั้ง proprietary กับ open-weight 12 ตัว ตัวเลขที่ออกมาแรงมาก top model ทำ pass at one ได้ 65% ซึ่งฟังดูโอเค แต่พอวัด pass at twenty คือต้องผ่านครบทั้ง 20 รอบเหลือแค่ 25% เท่านั้น
+
+ที่หนักกว่านั้นคือ pattern ของ fail หลาย run agent จบ tool call ที่ดูถูกต้อง บอก task complete กลับ orchestrator แต่พอเปิดฐานข้อมูลไม่มีการ update จริง Microsoft เรียก failure mode นี้ว่า plausible completion agent ไม่รู้ตัวว่าทำพัง
+
+signal สำหรับคนทำ agent platform คือ อย่า optimize เฉพาะ pass at one ต่อจากนี้ enterprise จะเริ่มถามหา pass at twenty ใน RFP และ agent architecture ต้องมี verifier step หลัง mutation ทุก action ครับ.
+
+เรื่องที่สอง.
+วันนี้ AWS ปล่อย Amazon Bedrock AgentCore Payments เข้า General Availability ครับ agent สามารถจ่ายเงินได้ผ่าน managed layer เดียวที่รองรับทั้ง x402 กับ Machine Payments Protocol พร้อมกัน
+
+Feature ที่ ship มาครบชุด one-click Coinbase Quick Create สำหรับสร้าง merchant account, Stripe Privy wallet สำหรับ stablecoin microtx, spending cap ต่อ session, expiry ที่ credential หมดอายุอัตโนมัติ, และ observability ผ่าน CloudWatch trace ได้ถึง prompt ที่ trigger การจ่าย
+
+Customer proof แรกที่ AWS ปล่อยคู่กันคือ Solv Labs ใช้ AgentCore Payments คู่กับ Nitro Enclaves รัน verified agent payment ใต้ 4 วินาทีต่อ transaction พร้อม cryptographic audit trail anchor ไป Base chain
+
+signal สำหรับคนทำ agent platform คือ payment เพิ่งกลายเป็น commodity layer ของ hyperscaler ต่อจากนี้ value ของ builder ต้องขยับไปที่ orchestration กับ governance policy แทน สำหรับ enterprise ที่อยู่บน AWS อยู่แล้ว procurement automation กับ B2B micro-marketplace คือ use case ที่เริ่มได้ทันทีครับ.
+
+เรื่องที่สาม.
+วันนี้ Salesforce ปล่อย Agentic Enterprise Index ฉบับที่ 2 ครับ เป็น combined report ของ survey 4,689 respondent กับ telemetry จริงจาก Agentforce
+
+ตัวเลขที่แรงที่สุด ลูกค้า Salesforce เฉลี่ยมี agent activated 5 ตัวในเดือนกุมภาพันธ์ปีที่แล้ว โตเป็น 13 ตัวในเดือนเมษายนปีนี้ compound monthly growth 7% ต่อเนื่อง 14 เดือน median time to deploy 1 agent อยู่ที่ 1.9 วัน ซึ่งเทียบกับ AI project ยุคก่อนที่ใช้ 6-9 เดือนถือเป็นการเปลี่ยนกฎ
+
+ที่หนักกว่านั้นคือ retailer ที่ใช้ Agentforce ช่วง holiday shopping ปีที่แล้วโต 4 เท่าของ peer ที่ไม่ใช้ และ Slack Agentforce ที่ GA เดือนกุมภาพันธ์ user เปิดเฉลี่ย 68 session ต่อสัปดาห์ ไม่ใช่ใช้ครั้งเดียวแล้วลืม
+
+ต้องระวังไว้ว่าตัวเลขทั้งหมดเป็น vendor-reported ของ Salesforce เองไม่ใช่ third-party audit แต่ signal คือ platform ที่มี data workflow กับ identity อยู่แล้วมี moat ที่ standalone framework ตามยาก 12 เดือนถัดไปเราจะเห็น Microsoft Copilot Studio กับ Google Workspace ปล่อย equivalent report มาแข่งครับ.
+
+เรื่องที่สี่.
+วันนี้ Nuggets ซึ่งเป็น identity infra firm ปล่อย Authority Control Plane เป็น product ใหม่ ที่ตั้งใจแยกตัวเองออกไปเจาะตลาด enterprise agent governance โดยตรง
+
+ตัว platform นั่ง gate ทุก agent action ตรวจ 4 อย่างต่อ request identity ของ agent, delegated authority, policy ของบริษัท, และ runtime context ทุก decision ปล่อย signed Action Receipt ที่ record ครบ 4 field agent authority action outcome ซึ่ง auditor เอาไป verify กับ Nuggets ledger ได้โดยไม่ต้องเปิด internal log ของบริษัทลูกค้า
+
+Feature ครบชุด enterprise governance spending threshold multi-level expiration บน authority human approval hook เมื่อเกิน threshold Timing ตรงกับ regulatory pressure ทั้ง EU AI Act ที่ effective ปี 2027 กับ DORA สำหรับ financial entity ที่มีผลใน 12 เดือนถัดไป
+
+signal สำหรับคนทำ agent platform คือ ตลาด identity ที่นิ่งมา 5 ปีกำลังกลับมาเปิด เพราะ agent เป็น principal type ใหม่ที่ต้อง verify ต่างจาก human สำหรับลูกค้า Thai SME ในอุตสาหกรรม regulated อย่าง finance หรือ insurance ต้องเริ่ม audit trail spec ตั้งแต่ pilot ไม่ใช่รอจน deadline compliance ถึงค่อยสร้างครับ.
+
+ทั้งหมดนี้คือ brief ของรอบนี้. ขอให้วันนี้เป็นวันที่ดีครับ. แล้วเจอกันรอบหน้า.
