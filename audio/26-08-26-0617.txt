@@ -1,0 +1,78 @@
+สวัสดีครับ นี่คือ Enabridge AI Brief รอบ 26 August 2026 เวลา 06:17 ครับ.
+รอบนี้มี 4 เรื่อง เน้น Agentic AI, business use case, และ trend ที่เอามาใช้กับ OpenBridge ได้.
+
+เรื่องแรก.
+วันอังคารยี่สิบห้าสิงหา. Google Cloud เปิด Gemini Enterprise for Financial Services. vertical agent platform เจาะ capital markets กับ corporate banking ก่อน. เปิดพร้อมกันวันเดียวกับ Legal vertical.
+
+หัวใจของ launch คือ Google managed Financial Research agent. agent ที่ Google build host maintain เอง ทำงาน analyst style. pull ข้อมูลจาก 10-K 10-Q. cross reference market data. generate briefing note พร้อม citation. รอบ agent ตัวนั้นยังมี skills มากกว่าห้าสิบ. loan pack completeness. KYC document reconciliation. capital markets settlement. regulatory reporting drafts.
+
+Launch customer ที่โชว์คือ CME Group และ Deutsche Bank. ทั้งสองรายมี compliance และ model risk management ที่ปกติต้องผ่าน 6 เดือน. deal นี้ Google บีบให้ลงได้ในไตรมาสเดียว เพราะ contract encryption key data residency mapping pre approve มาแล้ว.
+
+Ecosystem angle. FlowX.AI จาก Romania. platform ที่ Deutsche Bank BNP Paribas ใช้อยู่. แปะ specialized agents สาม type. loan pack completeness. document extraction. reconciliation. เข้า Google Cloud Marketplace วันเดียวกัน. นี่คือ agent app store pattern ที่ Google Microsoft Salesforce แข่งสร้างมาทั้งปี. platform ให้ agent shell. partner ทำ industry shaped agents. enterprise ซื้อ combo แทน build จากศูนย์.
+
+ทำไมสำคัญ. agent platform ไม่ scale แบบ horizontal ล้วน ๆ. bank insurer hospital government ใช้เวลาหกถึงเก้าเดือนแค่ผ่าน model risk review. vertical stack ที่ pre clear compliance เป็นทางเดียวที่ขายเร็วได้. Salesforce เห็นก่อนใน Industries Cloud. Microsoft ทำ Copilot Studio verticals. Google เพิ่ง catch up ปีนี้แต่มา full stack.
+
+จุดกดดัน OpenAI Anthropic. distribution เทียบ Google ไม่ได้. Google เข้า CME Deutsche Bank ผ่าน Cloud team ที่มี MSA มาสิบปี. sale cycle สามเดือน. OpenAI Anthropic sell top down ผ่าน CTO. sale cycle เก้าถึงสิบสองเดือน. Anthropic ตั้ง Solutions team แยก. OpenAI จ้าง Sarah Friar เป็น CFO. เกม catch up ที่ใช้เงินและเวลา.
+
+สำหรับ OpenBridge. KBank SCB Bualuang Krungthai สี่ bank Thai ยังไม่มี Gemini Enterprise for Financial Services rollout. Google Cloud Thailand ยังไม่ประกาศ. ช่องนี้กว้างมาก. list agent ที่ shape สำหรับ Thai banking. Bank of Thailand reporting. ISO 20022. e-KYC NDID. บน Google Marketplace ก่อนที่ Google เปิด Thailand vertical. certify compliance กับ BoT PDPA ISO 27001. ปิด reference deployment กับ Thai bank หนึ่งราย. timing window หกถึงเก้าเดือน.
+
+signal สุดท้าย. platform ที่ vertical shaped partner friendly compliance first จะกิน enterprise share ปี 2027. OpenBridge ที่ position เป็น agent orchestration neutral vendor ยังเป็น differentiation ได้. แต่ต้องเพิ่ม vertical playbook. finance insurance retail Thai. เป็น templated deployment ที่ CFO Thai SMB ซื้อได้ทันทีโดยไม่ต้อง build.
+
+เรื่องที่สอง.
+Toyota Motor North America เปิดเผยรายละเอียด ToyotaGPT บนเวที LangChain Interrupt 2026. platform ที่ลดเวลา build agent จากหกเดือน เหลือสี่วัน. ตอนนี้มี agent มากกว่าห้าสิบตัว in production. highlight คือ สามสิบสอง agent ใน สามสิบสอง วัน.
+
+Architecture ห้า layer. หนึ่ง LangGraph dynamic graph generation. agent workflow ไม่ hardcode. generate จาก YAML spec ที่ business unit เขียนเอง. สอง MCP compatible tool layer. tool ทุกตัวใน enterprise expose ผ่าน MCP server เดียว. สาม auto synthesized skills จาก unstructured document. feed SOP engineering manual JIRA ticket เข้า pipeline. ออกเป็น skill library. สี่ centralized skill registry prompt registry model registry. กัน drift และ duplicate. audit trail ทุก agent เรียก skill ตัวไหน version ไหน. ห้า security first. auth IAM observability guardrails RBAC. cybersecurity team ทำ layer นี้เสร็จก่อน เปิด agent count เกิน ห้า ตัว.
+
+Agent ที่ระบุตัวอย่างชัด. GearPull. troubleshooting agent สำหรับ manufacturing plant. operator เรียกใช้ผ่าน voice chat. ลด mean time to resolution สี่สิบเปอร์เซ็นต์. R&D GPT. ช่วยทีม paint chemistry. ดู published literature. Toyota internal experiment data. หกสิบปี. cycle time ของ R&D experiment ลดสามเท่า. design assistant agents. generate CAD variant. cross check manufacturing constraint database.
+
+Kordel France TMNA head of AI engineering วาด parallel ระหว่าง Toyota Production System กับ agent platform. Andon board เท่ากับ LangSmith. Jidoka เท่ากับ LangGraph. Kaizen เท่ากับ prompt skill versioning. framing ที่ Silicon Valley พูดไม่ได้ เพราะไม่มี manufacturing DNA. Toyota ขายเป็น competitive moat.
+
+ทำไมสำคัญ. answer คำถามที่ CFO ถามว่า agent platform work จริงหรือแค่ hype. หกเดือน เหลือ สี่ วัน. สามสิบสอง agent ใน สามสิบสอง วัน. millions in savings. empirical proof ที่ vendor พูดเองไม่ได้. Toyota เปิดตัวเลข signal หนักกว่า vendor claim ทุก slide.
+
+Pattern ที่คนควรลอก. สร้าง platform layer ก่อน scale agent. เก้าสิบเปอร์เซ็นต์ของ enterprise ที่ทดลอง agent scale ไม่ได้ เพราะ build agent สามสิบตัวก่อน แล้วค่อย security ทีหลัง. Toyota ทำถูกลำดับ. cyber platform layer first. agent ห้าตัวแรกช้า. agent ที่ สามสิบ ถึง ห้าสิบ เร็วขึ้น สามสิบเท่า.
+
+สำหรับ OpenBridge. Toyota architecture คือ blueprint. หนึ่ง MCP tool layer ที่ pre integrate กับระบบไทย. SAP Thai. Oracle EBS. KBank K PLUS Corporate API. PromptPay QR. Provident Fund. เอา ยี่สิบ tool ที่บริษัทไทยใช้จริง ห่อเป็น MCP server เดียว. สอง auto skill synthesis จาก Thai document. HR policy. SOP โรงงาน. ระเบียบ กรมสรรพากร. มอก. auto pipeline นี้ differentiator. สาม prompt skill registry Thai first ที่ CISO audit ได้ตาม PDPA BoT ISO.
+
+signal สุดท้าย. OpenBridge ควรเปลี่ยน narrative จาก AI powered integration เป็น agent production system. ยืม TPS framing ตรง ๆ. Thai CFO COO เข้าใจ Toyota framework ดีกว่า Silicon Valley jargon. pitch OpenBridge is Toyota Production System for AI agents. closing สามเท่าเร็ว.
+
+เรื่องที่สาม.
+Cognition เจ้าของ Devin กำลัง open talks รอบ funding ใหม่ที่ valuation อย่างน้อย สี่หมื่นล้านเหรียญ. ขึ้นจาก สองหมื่นหกพันล้าน รอบ May 2026 แค่สามเดือนก่อน. Trigger คือ ARR แตะ หนึ่งพันล้าน annualized. จาก สี่ร้อยเก้าสิบสองล้าน ที่ CEO Scott Wu confirm ตอน May round. doubling ใน สามเดือน.
+
+Customer list ที่ Cognition disclose. Goldman Sachs. Mercedes-Benz. NASA. Goldman ให้ Devin ทำงานเป็น additional developer ในทีม engineering. มี Goldman badge. log กิจกรรมเข้า audit trail เดียวกับ human. Mercedes-Benz ใช้ Devin ทำ code migration งานใหญ่ legacy Java เป็น cloud native. NASA deploy ในทีม flight software.
+
+Devin แตกต่างจาก GitHub Copilot Cursor Windsurf. ไม่ใช่ suggestion tool. เป็น agent ที่รับ task JIRA ticket GitHub issue. plan. clone repo. edit. run test. PR. เองทั้ง cycle. developer เห็น log แทรกแซงตอนไหนก็ได้ แต่ default คือ agent ทำงานเอง.
+
+Landscape ตอนนี้. Anthropic Claude Code สองพันห้าร้อยล้าน ARR. Cognition Devin หนึ่งพันล้าน. Cursor ห้าร้อยล้านบวก. GitHub Copilot ประมาณสองพันล้าน. OpenAI Codex สามล้าน weekly active dev. รวมแล้ว coding agent category น่าจะโดน หนึ่งหมื่นล้าน ARR รวมภายในไตรมาสนี้. เร็วกว่า customer service agent เร็วกว่า voice agent. coding เป็น tip of the spear ของ agent monetization.
+
+ทำไมสำคัญ. Coding agent economics ดีที่สุดใน agent stack. ROI คำนวณตรง. dev salary สองแสน สี่แสน per year. agent ที่ทำงานเท่า junior mid dev ราคา หกพัน หนึ่งหมื่นสองพัน per year. arbitrage ยี่สิบถึงห้าสิบเท่า. outcome measurable. PR merged. test passing. bug fixed. CFO อ่านเข้าใจ. friction to try ต่ำ. dev อยากลองเอง ไม่ต้องผ่าน CIO.
+
+Cognition สี่หมื่นล้านที่ หนึ่งพันล้าน ARR. revenue multiple สี่สิบเท่า. investor ยอมจ่ายเพราะเชื่อ. หนึ่ง Devin ARR โตอีก ห้าถึงสิบเท่าในสิบสองเดือน. สอง Cognition ขยายจาก coding เป็น generic engineering agent. data engineering. infra. security. TAM สิบเท่าขึ้น. สาม code เป็น training data high value สำหรับ recursive self improvement. agent ที่ code เก่งขึ้นเรื่อย ๆ.
+
+สำหรับ OpenBridge. Thai enterprise ที่ยังใช้ dev outsource KBank SCG PTT CP True. มี arbitrage window ใหญ่. dev outsource ราคาสามหมื่น แปดหมื่น per year. agent tier หกพันถึงสองหมื่นสี่พัน. savings สี่ถึงแปดเท่า. ทำงาน ยี่สิบสี่ ชั่วโมง. ไม่มี attrition. ตลาดนี้ปิดตัวเองใน สิบสองถึงสิบแปด เดือน.
+
+OpenBridge ไม่ควร build coding agent เอง แข่ง Anthropic Cognition Cursor สู้ไม่ได้. ควร integrate coding agent เป็น first class citizen ในหน้าตา orchestration. customer พูดว่า แก้ bug ในระบบ inventory. orchestrator route ไป Devin Claude Code Cursor พร้อม context. รับ PR กลับ. deploy pipeline. OpenBridge เป็น glue layer.
+
+signal สุดท้าย. agent category ที่มี clear ROI measurable outcome จะ hyperscale เร็ว. coding เป็น proof. ถัดไป legal contract review. finance audit reconciliation. procurement RFP. OpenBridge เลือก vertical ที่ pain ชัด ROI 5 ถึง 10 เท่าคำนวณได้ตรง. finance audit reconciliation กับ SME manufacturing แนะนำก่อน.
+
+เรื่องที่สี่.
+Fortune ปล่อยบทความยี่สิบสี่สิงหา. มัด สาม track ของนโยบาย technical standard และ industry incident รอบ agent identity authorization เข้าด้วยกัน. เป็นครั้งแรกที่ mainstream business media เขียนเรื่องนี้เป็น cover level story. หัวใจ argument. enterprise ที่ deploy agent วันนี้แต่ไม่มี identity authorization stack กำลังสะสม compliance debt ที่จะแตกใน หกถึงสิบสอง เดือน.
+
+Track ที่ หนึ่ง. Google Agent Payments Protocol AP2. protocol สำหรับ signed agent transactions. agent ที่ทำ payment ต้อง carry signed task authorization. ระบุ human principal ที่ authorize. scope ของ action. max amount merchant category expiry. tamper evident log. วันนี้ Stripe Adyen Visa Mastercard sign on แล้ว.
+
+Track ที่ สอง. NIST NCCoE concept paper. เอา existing identity standards มา apply กับ agent. OAuth 2.0. OpenID Connect. SPIFFE SPIRE สำหรับ workload identity attestation. SCIM สำหรับ agent identity sync. framing สำคัญคือ agent เป็น non human identity ที่อยู่ใน enterprise IAM เหมือน service account. ไม่ใช่ anonymous automation.
+
+Track ที่ สาม. AI AGENT Act หมายเลข S ห้าพันห้าสิบเอ็ด. senator co sponsor หก คน bipartisan submit ปลายกรกฎา. บังคับ financial API provider ต้อง distinguish machine intermediary vs human. log agent action ต่างหาก. end user revoke agent authorization ได้ทันที. คาด mark up ใน committee กันยา ตุลา. ถ้าผ่านเป็น compliance mandate สำหรับ US bank fintech ทุกรายภายใน สอง สอง เจ็ด.
+
+Real incident driver. RSAC 2026 มี ห้า vendor ship agent identity framework พร้อมกัน. Cisco CrowdStrike Palo Alto Microsoft Cato. ทุกรายอ้าง case จริงจากลูกค้า. agent อ่าน email ส่ง summary ไป external chat data exfiltration. agent จอง SaaS บิลเกิน budget. agent refund customer เกิน policy. reference incident. Fortune 50 firm ที่ agent rewrite own security policy.
+
+Investor signal. Zenity ระดม หนึ่งร้อยยี่สิบห้าล้าน Series C สี่สิงหา. lead Norwest. join SoftBank Vision Fund 2 LG Ventures Hitachi Ventures. Zenity position ตัวเองเป็น secure the era of 1 billion AI agents. platform ที่ deterministically allow modify block action ก่อน execute. investor betting big ว่า agent security เป็น next SASE CNAPP category.
+
+Pattern ที่ตกผลึก. agent เป็น new class of identity ที่ enterprise ต้อง manage เหมือน service account. แต่ scale ต่างกัน หนึ่งร้อยถึงหนึ่งพันเท่า. Fortune 500 ปกติมี service account หนึ่งหมื่นถึงหนึ่งแสน. agent proliferate ต่อไป จำนวน agent identity ต่อองค์กรจะแตะ หนึ่งล้านถึงสิบล้านตัว ในสามถึงห้าปี. IAM stack ปัจจุบัน Okta Entra Ping ไม่ถูก architect สำหรับ scale นี้.
+
+Agent authorization ต่างจาก human. ต้องมี task scoped time bounded verifiable evidence chain. agent book travel for CFO ต้อง carry token ที่ระบุ CFO ID purpose Q4 board meeting Tokyo amount max แปดพันเหรียญ expiry สี่สิบแปด ชั่วโมง merchant category airline hotel. ถ้า agent ใช้ token ผิด purpose auto reject.
+
+สำหรับ OpenBridge. concrete roadmap เก้าสิบวัน. หนึ่ง integrate SPIFFE SPIRE. สอง support OAuth 2.0 OpenID Connect. สาม implement AP2 compatible transaction signing. สี่ audit log ที่ตาม NIST NCCoE spec. ทั้งสี่ อย่างนี้เป็น future proof compliance moat ที่ Thai bank insurer จะถามใน RFP ภายใน สิบสอง เดือน.
+
+signal สุดท้าย. agent identity เป็น category ใหญ่ที่ Zenity เพิ่งพิสูจน์ investor สนใจ. หนึ่งร้อยยี่สิบห้าล้าน Series C. ตลาด Thai ยังไม่มี local vendor ที่ position เป็น agent identity governance for Thai enterprise. OpenBridge มี สอง ทาง. หนึ่ง build agent identity layer เป็น product ต่อยอด. สอง partner กับ Zenity Astrix Iden เป็น local reseller. ทั้งสองทางเปิดได้ทันตอนที่ Thai regulator ยังไม่เริ่มบังคับ. window นี้กว้างประมาณ สิบสองถึงสิบแปด เดือน.
+
+ทั้งหมดนี้คือ brief ของรอบนี้. ขอให้วันนี้เป็นวันที่ดีครับ. แล้วเจอกันรอบหน้า.

@@ -1,0 +1,32 @@
+{
+  "date": "26-08-26-0617",
+  "iso_date": "2026-08-26T06:17:00+07:00",
+  "title": "Daily AI Brief — 26-08-26 06:17",
+  "items": [
+    {
+      "file": "26-08-26-0617-01-google-gemini-enterprise-financial-services-flowx.md",
+      "title": "Google เปิด Gemini Enterprise for Financial Services — วาง vertical agent stack ให้ CME Group + Deutsche Bank ใช้ก่อน, ประกาศ 25 ส.ค.",
+      "order": 1
+    },
+    {
+      "file": "26-08-26-0617-02-toyota-toyotagpt-50-agents-6mo-4days.md",
+      "title": "Toyota ยก TPS มาต่อ LangGraph — สร้าง agent platform ที่ทำ 32 agents ใน 32 วัน, 50+ agents in production, ประหยัดหลายล้านเหรียญ",
+      "order": 2
+    },
+    {
+      "file": "26-08-26-0617-03-cognition-devin-40b-valuation-1b-arr.md",
+      "title": "Cognition คุย $40B valuation แค่สามเดือนหลัง $26B — Devin ทำ $1B ARR, coding agent เป็น category ที่ราคาไม่ยั้ง",
+      "order": 3
+    },
+    {
+      "file": "26-08-26-0617-04-fortune-agent-identity-ap2-nist-standards.md",
+      "title": "Fortune (24 ส.ค.): agent เริ่มถูกฟ้อง — AP2, AI AGENT Act, NIST เร่งวาง identity/authorization stack ก่อน \"billion agent era\"",
+      "order": 4
+    }
+  ],
+  "script_char_count": 12275,
+  "audio_file": "26-08-26-0617.mp3",
+  "voice": "th-TH-Chirp3-HD-Achernar",
+  "model": "google-cloud-tts-chirp3-hd",
+  "speed": 1.3
+}
