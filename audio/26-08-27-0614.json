@@ -1,0 +1,32 @@
+{
+  "date": "26-08-27-0614",
+  "iso_date": "2026-08-27T06:14:00+07:00",
+  "title": "Daily AI Brief — 26-08-27 06:14",
+  "items": [
+    {
+      "file": "26-08-27-0614-01-google-a2a-linux-foundation-agentic-ai-standards.md",
+      "title": "Google บริจาค A2A ให้ Linux Foundation — Agentic AI Foundation กลายเป็น \"neutral home\" ของ MCP + A2A, 250+ สมาชิก",
+      "order": 1
+    },
+    {
+      "file": "26-08-27-0614-02-anthropic-claude-agent-stack-ga-five-betas.md",
+      "title": "Anthropic ปล่อย 5 beta ขึ้น GA พร้อมกัน 19 ส.ค. — Claude agent stack \"production-ready\" ครบชุด, Computer Use รอ 1 ปี 10 เดือน",
+      "order": 2
+    },
+    {
+      "file": "26-08-27-0614-03-pinecone-nexus-knowledge-beats-frontier-models.md",
+      "title": "Pinecone Nexus GA — \"knowledge layer\" ตัด cost ต่อ task 77% พร้อมเบิ้ล GPT-5.5 บน τ-Knowledge benchmark",
+      "order": 3
+    },
+    {
+      "file": "26-08-27-0614-04-writer-palmyra-x6-agent-cost-52-percent-cheaper.md",
+      "title": "Writer Palmyra X6 — agent cost ลด 52%, เร็วขึ้น 48%, ราคา $2/$8 ต่อล้าน token ชน Claude Opus $15/$75",
+      "order": 4
+    }
+  ],
+  "script_char_count": 10686,
+  "audio_file": "26-08-27-0614.mp3",
+  "voice": "th-TH-Chirp3-HD-Achernar",
+  "model": "google-cloud-tts-chirp3-hd",
+  "speed": 1.3
+}
