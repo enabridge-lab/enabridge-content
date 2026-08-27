@@ -1,0 +1,90 @@
+สวัสดีครับ นี่คือ Enabridge AI Brief รอบ 28 August 2026 เวลา 06:21 ครับ.
+รอบนี้มี 4 เรื่อง เน้น Agentic AI, business use case, และ trend ที่เอามาใช้กับ OpenBridge ได้.
+
+เรื่องแรก.
+วันพฤหัสยี่สิบแปดสิงหา. Salesforce กับ Anthropic ประกาศ Claudeforce. expanded strategic partnership ที่ยัด CRM ทั้งก้อนของ Salesforce เข้าไปใน Claude.
+
+Product แรกชื่อ Salesforce in Claude. เป็น plugin ที่ปล่อย Claude ให้เข้าถึง revenue cycle ทั้งหมด. pipeline. opportunity. forecast. governance rule. ผ่าน MCP interface. มา พร้อม สาม สิบ เจ็ด prebuilt sales skills. meeting prep. deal health review. pipeline review. built โดยสองบริษัท ไม่ใช่ generic prompt wrapper.
+
+Timeline. pilot ลูกค้าเริ่มใช้วันประกาศ. open beta กันยา. ขยายไป service marketing commerce function ไตรมาสสี่. ราคาแบ่งสอง invoice. Salesforce เก็บค่า headless consumption. Anthropic เก็บค่า Claude inference แยก.
+
+Benioff quote สำคัญ. We're bringing together the world's number one AI and number one CRM. Here the UI is the AI. signal ชัดว่า Salesforce ยอมรับว่าลูกค้าจะเลิกเปิด Salesforce Lightning UI เพื่อทำงาน sales รายวัน.
+
+นี่คือ moment ที่ SaaSpocalypse debate เข้ารอบตัดสิน. คำถามที่ค้างมาสองปีคือ AI agent จะ commoditize SaaS UI layer หรือ SaaS incumbent จะยึด data layer ไว้เป็น moat. Benioff เพิ่งตอบด้วยการเดินหมากที่ analyst เรียกว่า radical concession หรือ brilliant judo.
+
+Per user seat license โมเดล pricing ที่หล่อเลี้ยง SaaS มายี่สิบห้าปี เริ่ม lose coherence. เมื่อ user จริง ๆ ที่ทำ action ใน Salesforce กลายเป็น agent ไม่ใช่คน. pricing จะย้ายไปที่ consumption ที่ token.
+
+คู่แข่งต้องตอบใน หกสิบ ถึง เก้าสิบ วัน. Microsoft Dynamics with Copilot น่าจะประกาศที่ Ignite ตุลา. Google Gemini Enterprise Financial Services เพิ่งประกาศ vertical bet ต้องตามด้วย horizontal. OpenAI ที่ยัง proprietary ทั้ง stack จะเจอ pressure หนักสุด.
+
+สำหรับ builders. model นี้เป็น template ของ next gen SaaS distribution. ไม่ใช่ own the UI แต่ own the skills catalog กับ governance layer กับ billing rail. ที่ agent runtime ใครก็ตามต่อได้. skill catalog moat กับ governance protocol compliance คือ moat ใหม่.
+
+สำหรับ Salesforce customer. เริ่ม pilot Salesforce in Claude กับ sales team เล็ก ห้า ถึง สิบ คน ทันที. ก่อน open beta กันยา. วัด time saved. forecast accuracy. net new pipeline ที่ agent surface ได้.
+
+สำหรับ Thai SMB. ที่ใช้ HubSpot Zoho Freshworks. เช็คว่า vendor มี MCP roadmap หรือยัง. ถ้าไม่. Claude หรือ ChatGPT enterprise plan จะไม่คุ้มค่าใช้จ่าย ในหกเดือนข้างหน้า.
+
+เรื่องที่สอง.
+วันพฤหัสยี่สิบแปดสิงหา. Model Context Protocol เข้ารอบใหญ่. spec สอง พัน ยี่สิบ หก ศูนย์เจ็ด ยี่สิบแปด. เปลี่ยน MCP จาก bidirectional stateful เป็น stateless request response core. MCP server กลายเป็น HTTP workload ธรรมดา. run บน serverless หรือ edge หรือ standard load balancer ได้ทันที.
+
+Metric ที่ปิดคดี. MCP SDK ทะลุ สี่ ร้อย ล้าน monthly downloads. โต สี่ เท่า จากต้นปี. ใกล้เคียง Kubernetes client library ที่มี maturity ห้าถึงหกปี.
+
+Adoption pace น่าตกใจ. GitHub update MCP server ก่อน spec release. Cloudflare deploy stateless day one. Manufact ลด package size แปดสิบสามเปอร์เซ็นต์. เร็วขึ้นยี่สิบห้าเปอร์เซ็นต์. hosts thousands of MCP servers migrate ภายในสิบวัน. Supabase AWS PostHog Microsoft Foundry ship production implementation ในสัปดาห์เดียวกัน. Foundry scale integration count จาก dozens เป็น thousands.
+
+ที่สำคัญกว่า scale คือ enterprise unlock. authorization ใหม่ align กับ OAuth 2.0 กับ OIDC. admin provision MCP connectors ทั้ง org ผ่าน identity provider เดียว. user inherit access ตาม IdP group. เลิก build custom auth ต่อ connector.
+
+Pattern ที่ตกผลึกคือ agent protocol กำลังตาม path เดียวกับ HTTPS ปี สอง พัน สิบ ถึง สอง พัน สิบ ห้า. HTTPS Everywhere เปลี่ยน HTTPS จาก opt in for banking เป็น default for everything ภายในห้าปี. MCP ตอนนี้อยู่ในเฟสเดียวกัน. จาก experimental for early adopter เข้า default for anyone building agent.
+
+การแข่งย้ายลาย. ถ้า MCP กับ A2A เป็น commodity plumbing. moat ใหม่อยู่ที่ skill catalog depth. Claudeforce ที่ ship สาม สิบ เจ็ด skills วันเดียวกันเป็น template. อยู่ที่ tool ecosystem. ใครมี MCP server ให้ enterprise data source สำคัญ. อยู่ที่ governance กับ audit layer. compliance rail ที่ enterprise IT audit ได้.
+
+สำหรับ builders. migrate ไป สอง พัน ยี่สิบ หก ศูนย์ เจ็ด ยี่สิบ แปด spec ทันที. ก่อน enterprise deal มาถาม compliance. ตัด session storage. implement OAuth 2.0. support Multi Round Trip Requests. คนที่ยังไม่ ship stateless implementation จะ lose deal ให้คู่แข่งใน RFP ที่ include MCP baseline.
+
+สำหรับ enterprise. require MCP สอง พัน ยี่สิบ หก ศูนย์ เจ็ด ยี่สิบ แปด ใน RFP. บวก AAIF compliance. Benefit ทันที คือ portable agent workload ข้าม cloud. auth stack ใช้ Okta หรือ Azure AD ที่มีอยู่. audit trail ผ่าน standard OAuth log.
+
+Thai SMB ที่ deploy agent ครั้งแรก. เริ่มจาก MCP server managed จาก Cloudflare หรือ Supabase. cost น้อยกว่าหนึ่งร้อยดอลลาร์ต่อเดือน สำหรับ workload เล็ก. ไม่ต้อง self host
+
+Anthropic ได้ leverage ยาว. MCP native ตั้งแต่ Claude Desktop จนถึง Claudeforce. คู่แข่งที่ retrofit MCP support จะเห็น friction ยาว. architectural debt จาก assistant API design เก่า. คล้าย Google ที่บริจาค Kubernetes ให้ CNCF แล้วยังได้ lead ห้าปีในตลาด managed K8s.
+
+เรื่องที่สาม.
+วันพฤหัสยี่สิบแปดสิงหา. Arga Labs ระดม สิบ ล้าน ดอลลาร์ seed round. นำโดย General Catalyst. พร้อม Box Group Emergence Gradient SV Angel. founder Phillip Li เป็น CEO.
+
+Product คือ digital twin ของ enterprise SaaS. Salesforce Workday email client. Agent เข้าไปฝึก reinforcement learning ใน sandbox ที่ mirror permission กับ webhook กับ business rule จริง ของ production. โดยไม่กระทบ production data.
+
+Problem statement เจ๋ง. Li ให้ตัวอย่าง. Can the agent correctly identify that these two are the same company. เมื่อลูกค้ารายเดียวปรากฏใน Salesforce ในชื่อ Acme Corp และใน HubSpot เป็น Acme Corporation. enterprise SaaS ไม่ได้ออกแบบมาให้ agent ฝึก RL ที่ scale ได้. ไม่มี reset button ให้ run หนึ่ง หมื่น scenarios.
+
+Arga สร้าง digital twin ที่ mirror ทุก object กับ permission กับ webhook กับ workflow rule. agent ลอง หนึ่ง หมื่น scenarios ต่อวันได้. สร้าง lead ผิด ลบ deal update field ที่ไม่ควร. sandbox reset กลับ state เดิม.
+
+Story ที่ Arga บอกคือความจริงที่ hype ปิดไว้. ทุกคนพูดว่า agent deploy production แล้ว. แต่ที่จริงคือ reliability ยังเป็นปัญหาใหญ่ที่สุด. Salesforce Agentic Enterprise Index รายงาน หก สิบ สอง เปอร์เซ็นต์ ของ deploy failures เกิดจาก agent behaving ผิดใน edge case ที่ไม่ได้ test. Microsoft ThinkingBox วัด reliability ของ frontier agent ที่ เจ็ด สิบ หก เปอร์เซ็นต์. แปลว่า ยี่สิบ สี่ ครั้งจาก หนึ่ง ร้อย agent ล้มเหลว.
+
+Pattern ที่กำลังตกผลึกคือ agent development กำลังเลียนแบบ software engineering ยุค สอง พัน สิบ. CI CD infrastructure เกิดในเฟสที่ software eng โตจน test manually before deploy ไม่ scale. RL sandbox สำหรับ agent อยู่ในเฟสเดียวกัน. ทีมที่ยังใช้ founder ทดสอบเอง สิบ scenario แล้ว ship. จะเจอ reliability ceiling ที่ หกสิบ ถึง เจ็ดสิบ เปอร์เซ็นต์ pass rate.
+
+เชื่อมกับ Claudeforce. สาม สิบ เจ็ด sales skills ที่ Salesforce กับ Anthropic ship ไม่ได้เกิดจาก AI vendor พิมพ์ prompt ธรรมดา. ต้อง engineer กับ test เป็นพัน scenario. ทีมที่ไม่มี twin sandbox layer จะ ship skill ช้ากว่าคู่แข่ง ห้า ถึง สิบ เท่า.
+
+สำหรับ builders. หยุด test agent บน production sandbox ที่ founder หมุน manual. sign กับ Arga หรือ build in house twin สำหรับ SaaS ที่ integrate หนัก. investment ใน testing infrastructure สาม ถึง ห้า คน เดือน. save หก ถึง สิบ สอง เดือนของ production incident.
+
+สำหรับ enterprise. เพิ่ม test scenario coverage ใน RFP เป็น requirement. ถาม vendor. กี่ scenario ที่ test ก่อน production ship. rollback plan ถ้า agent ทำ action ผิด. Thai SMB ที่ pilot agent ตัวแรก. เริ่มจาก read only ก่อน. report generation หรือ data aggregation. แล้วค่อยเพิ่ม write action หลัง confidence build สาม ถึง หก เดือน.
+
+สำหรับ ecosystem. agent testing infrastructure เป็น category ใหม่ที่ยังมี room ใหญ่. คู่แข่งที่จะขึ้นมา. SaaS vendor ที่ launch own agent sandbox. hyperscaler ที่ bundle กับ agent runtime. MCP native sandbox provider. Anthropic กับ OpenAI น่าจะ acquire startup ในกลุ่มนี้ภายใน สิบ สอง เดือน.
+
+เรื่องที่สี่.
+วันพฤหัสยี่สิบแปดสิงหา. Microsoft Security ship Secure Now guidance for agentic containment. playbook สี่ หัวข้อให้ enterprise IT ตั้ง control ก่อน agent action ขยายวง.
+
+หัวข้อแรก. constrain agent initiated actions ที่ไม่มี user approval. deny by default. whitelist ที่ต้องคน approve. หัวข้อสอง. harden attack surface. จำกัด scope ของ tool. disable unused MCP server. rotate credential. หัวข้อสาม. govern identities กับ permissions. agent ต้องมี identity แยกจาก user. audit ผ่าน Entra ID กับ Purview. หัวข้อสี่. increase environmental visibility. deploy detection ตาม agent behavior. log ทุก action ผ่าน Sentinel.
+
+Microsoft ประกาศคู่กันวันเดียว. M365 Admin agent ขึ้น GA. เดิม preview หกเดือน. ตอนนี้ enterprise ใช้ได้ทั่วไป. agent จัดการ users licenses service health troubleshooting ใน admin center native. โดยเคารพ RBAC. คำสั่งที่ต้อง sign off ถูก escalate ให้คนใน admin group review ก่อน.
+
+พร้อมกัน multi tenant agent management ขึ้น public preview. MSP กับ enterprise ที่มี subsidiary หลาย tenant จัดการ agent policy ข้าม tenant จาก UI เดียว. use case คือ consulting firm ที่ manage ห้า สิบ customer tenant push policy update พร้อมกัน.
+
+Governance กลายเป็น product category. เดิมทีทีม security คิดว่า agent governance เป็นเรื่อง policy กับ config ที่ตัวเองต้องประกอบเอง. Microsoft เห็นว่ามันเป็น product opportunity. ship playbook กับ tooling กับ admin agent กับ multi tenant management เป็น bundle.
+
+Hyperscaler moat ที่คู่แข่งต้องผ่านให้ได้. Microsoft ได้เปรียบเพราะ own admin plane. own identity provider. own security stack. Anthropic กับ OpenAI ไม่มีสิ่งเหล่านี้. ต้อง partner กับ SaaS incumbent. เห็นชัดจาก Claudeforce ที่ Anthropic partner กับ Salesforce เพื่อได้ governance rail.
+
+Pattern ที่คล้าย cloud security ปี สอง พัน สิบ ห้า ถึง สอง พัน ยี่สิบ. AWS GuardDuty CloudTrail IAM Analyzer กลายเป็น native security tool ที่ third party ต้องแข่ง. Third party ที่ integrate ลึกกับ AWS event bus อยู่รอด. ที่ยึด one platform to rule all clouds หา niche เล็กลง. Agent governance กำลังตาม pattern เดียวกัน.
+
+Regulatory tailwind. EU AI Act compliance deadline สำหรับ high risk agent system ก่อน ธันวา สอง พัน ยี่สิบ หก. US NIST Agent Identity Framework compliance audit ต้นปี สอง พัน ยี่สิบ เจ็ด. Enterprise ที่ยังไม่ตั้ง governance stack จะเจอ audit fail ในหกเดือน. Microsoft ship Secure Now playbook เป็น response ที่ตรง regulatory pressure.
+
+สำหรับ builders. assume ว่า governance layer จะกลายเป็น commodity ในหกเดือน. ที่ต่างคือความลึกของ integration กับ enterprise identity กับ security stack. support agent as service principal. publish audit log ใน standard format. implement action approval workflow. MCP กับ A2A native.
+
+สำหรับ enterprise IT. อ่าน Secure Now guidance วันนี้. priority ที่ควรทำใน สาม สิบ วัน. inventory agent กับ MCP server ที่ deploy อยู่. provision agent identity แยกจาก user. enable audit log กับ Sentinel ingest. เขียน policy สำหรับ high risk action.
+
+สำหรับ Thai SMB ที่ใช้ M365 อยู่แล้ว. enable M365 Admin agent GA ทันที. multi tenant preview เป็น game changer สำหรับ MSP ไทย ที่ manage SMB หลายราย.
+
+ทั้งหมดนี้คือ brief ของรอบนี้. ขอให้วันนี้เป็นวันที่ดีครับ. แล้วเจอกันรอบหน้า.
