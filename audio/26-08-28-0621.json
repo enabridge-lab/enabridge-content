@@ -1,0 +1,32 @@
+{
+  "date": "26-08-28-0621",
+  "iso_date": "2026-08-28T06:21:00+07:00",
+  "title": "Daily AI Brief — 26-08-28 06:21",
+  "items": [
+    {
+      "file": "26-08-28-0621-01-claudeforce-salesforce-anthropic-ui-is-the-ai.md",
+      "title": "Claudeforce: Salesforce ยัด CRM ทั้งก้อนเข้า Claude — Benioff บอก \"UI is the AI\", สั่นสะเทือน SaaS pricing model ทั้งอุตสาหกรรม",
+      "order": 1
+    },
+    {
+      "file": "26-08-28-0621-02-mcp-stateless-400m-downloads-agentic-http.md",
+      "title": "MCP 2026-07-28 stateless spec + 400M SDK downloads: agentic protocol กลายเป็น \"just another HTTP workload\" — enterprise scaling ปลด lock",
+      "order": 2
+    },
+    {
+      "file": "26-08-28-0621-03-arga-labs-digital-twins-training-enterprise-agents.md",
+      "title": "Arga Labs ระดม $10M seed จาก General Catalyst — สร้าง \"digital twin sandbox\" ให้ agent ฝึก Salesforce / Workday / email ก่อน deploy จริง, ปัญหาที่ทำให้ enterprise agent ยัง fail",
+      "order": 3
+    },
+    {
+      "file": "26-08-28-0621-04-microsoft-secure-now-agentic-containment-governance.md",
+      "title": "Microsoft ship \"Secure Now\" agentic containment + M365 Admin agent GA + multi-tenant agent mgmt — governance layer ของ agent economy กำลังเป็นสินค้าจริง",
+      "order": 4
+    }
+  ],
+  "script_char_count": 11081,
+  "audio_file": "26-08-28-0621.mp3",
+  "voice": "th-TH-Chirp3-HD-Achernar",
+  "model": "google-cloud-tts-chirp3-hd",
+  "speed": 1.3
+}
