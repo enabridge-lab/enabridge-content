@@ -1,0 +1,92 @@
+สวัสดีครับ นี่คือ Enabridge AI Brief รอบ 27 August 2026 เวลา 06:14 ครับ.
+รอบนี้มี 4 เรื่อง เน้น Agentic AI, business use case, และ trend ที่เอามาใช้กับ OpenBridge ได้.
+
+เรื่องแรก.
+วันพุธยี่สิบเจ็ดสิงหา. Google บริจาค A2A protocol ให้ Agentic AI Foundation. Linux Foundation project ที่เพิ่งตั้งเมื่อธันวา สองพันยี่สิบห้า. A2A มาอยู่บ้านเดียวกับ MCP ที่ Anthropic บริจาคก่อนหน้านี้.
+
+Agentic AI Foundation เพิ่งเปิดตัวเก้าเดือนก่อน. เริ่มด้วยสมาชิกน้อยกว่าสี่สิบราย. วันนี้มีสองร้อยห้าสิบสมาชิกแล้ว. ครอบ AWS Anthropic Google Microsoft OpenAI Bloomberg Block Cloudflare Shopify. ครบทั้ง hyperscaler และ frontier lab.
+
+แบ่งงานสองโปรโตคอลชัดเจน. MCP standardize วิธีที่ agent เชื่อมต่อกับ tools และ data source. A2A standardize วิธีที่ agent คุยกับ agent ตัวอื่น. discovery. delegation. result exchange. ข้าม framework ข้าม vendor.
+
+Pattern ที่ตกผลึกคือ agent economy ต้อง neutral standards ถึงจะ scale. หนึ่งปีก่อน ทุก vendor พยายามดัน protocol เจ้าเดียว. เจอ friction เดียวกัน. enterprise procurement ไม่ยอมเซ็นสัญญายาวกับ protocol ที่ owner คนเดียว. กลัว lock in. คล้าย Kubernetes ที่ Google ย้ายไป CNCF ปี สองพันสิบห้า. ก่อน enterprise adoption ระเบิด.
+
+จุดกดดัน OpenAI. OpenAI เป็นสมาชิก AAIF แต่ยังไม่บริจาค protocol เจ้าไหน. Assistants API ChatKit Function Calling ยัง proprietary. ถ้า AAIF ประกาศ standard สำหรับ agent runtime อีกสามถึงหกเดือน แล้ว OpenAI ไม่ align. enterprise deal จะเริ่มถามว่า vendor นี้ compliant กับ AAIF baseline ไหม. คล้าย SOC 2.
+
+Anthropic ได้เปรียบเชิงกลยุทธ์. MCP กับ A2A รวมกันแล้ว. platform ของ Anthropic native compatible ตั้งแต่ต้น. คู่แข่งที่ล่าช้าปรับ tooling จะเสียเปรียบ.
+
+สำหรับ builders. เริ่ม audit compatibility กับ AAIF standards วันนี้. รองรับ MCP client server. รองรับ A2A discovery delegation. publish agent card. join AAIF Silver membership. carry trust signal ให้ enterprise sale.
+
+สำหรับ enterprise. เขียน RFP require AAIF compliance เป็น mandatory. proprietary protocol เป็น dealbreaker. Thai SMB และ OpenBridge customer ที่ประเมิน platform ตอนนี้ ควรเช็ค AAIF membership เป็น criteria แรก.
+
+สำหรับ ecosystem. Alibaba ByteDance Tencent ไม่ใช่สมาชิก AAIF วันนี้. จุดที่ต้องดูคือ Chinese cloud จะสร้าง alternative standards body หรือ join AAIF. ถ้าแยก. geopolitical split ของ agent standards ทันที. คล้าย 5G.
+
+เรื่องที่สอง.
+วันอังคารสิบเก้าสิงหา. Anthropic ปล่อยห้าฟีเจอร์ขึ้น GA พร้อมกันบน Claude API. Computer Use. Browser Use. Files API. Agent Skills API. Admin API. ปกติ Anthropic ปล่อย GA ทีละตัวห่างกันเป็นเดือน. การ ship ห้าตัวในวันเดียวคือ coordinated push. signal ว่า agent stack ทั้งชุดพร้อมแล้ว.
+
+หัวใจของรอบนี้คือ Computer Use. feature ที่ Anthropic เปิด preview ตั้งแต่ตุลา สองพันยี่สิบสี่. ใช้เวลาหนึ่งปีสิบเดือนในการ productionize. toolset ใหม่มาพร้อม batch actions. agent execute หลาย action ใน one turn แทน round trip ทุก step. latency ต่อ workflow ลดสามถึงห้าเท่า.
+
+Browser Use เป็น tool ใหม่คนละตัวกับ Computer Use ไม่ใช่ rename. driver browser ที่ app ของคุณ host เอง. อ่าน accessibility tree. set form values ตรงเข้า DOM. เร็วและ reliable กว่าสำหรับ web only workflow. Computer Use ยังจำเป็นสำหรับ desktop app.
+
+Files API ให้ upload file objects พร้อม expiration pagination filter. Agent Skills เป็น named versioned skill packages. agent เรียกเป็น first class primitive. ไม่ต้อง prompt engineer ซ้ำทุกครั้ง. Skills API เปิดให้ enterprise สร้าง private skill registry ของบริษัท. Admin API จัดการ members invites groups custom roles.
+
+Anthropic beta header ไม่ต้องส่งแล้วสำหรับทั้งห้าตัว. spec ล็อค. billing tier ผ่าน enterprise procurement review.
+
+Pattern ชัด. frontier lab เปลี่ยน stance จาก model provider เป็น agent platform provider. หนึ่งปีก่อน Anthropic ขาย API. วันนี้ขาย agent runtime tool ecosystem skill registry enterprise identity ครบ stack.
+
+จุดเปรียบ vs OpenAI. Assistants API v2 มี Function Calling Code Interpreter File Search Retrieval คล้ายกัน. แต่ยังไม่มี native computer control tool ที่ GA. Operator ยัง preview. Anthropic productionize สำเร็จก่อน. competitive moat จริงสำหรับ workflow ที่ต้อง interact กับ legacy desktop app.
+
+ecosystem signal. timing สิบเก้าสิงหา ก่อน A2A ย้ายไป AAIF ยี่สิบสิงหา. ไม่ใช่บังเอิญ. Anthropic push agent stack ให้ production ready ก่อน. วันรุ่งขึ้น protocol layer ย้ายบ้าน. ข้อความชัด. MCP กับ A2A เป็น standards. Claude เป็น reference implementation ที่ enterprise grade แล้ว.
+
+สำหรับ builders. ลบ Anthropic beta header ห้าตัวได้เลย. เปลี่ยนไปใช้ Skills API เก็บ skill เป็น versioned artifact. ประหยัด token สี่สิบถึงหกสิบ percent ต่อ conversation.
+
+สำหรับ enterprise. Compliance officer ที่ block เพราะ still beta ต้องยอมแล้ว. Thai enterprise ธนาคาร ประกัน โรงพยาบาล ที่รอ SLA backed Computer Use. จังหวะเริ่มโครงการคือตอนนี้.
+
+สำหรับ OpenBridge. ถ้า orchestrate multi vendor agents. plan ให้ Computer Use route ไป Claude by default. Text only reasoning ยัง multi vendor ได้ตามราคา latency.
+
+เรื่องที่สาม.
+วันพฤหัสหกสิงหา. Pinecone push Nexus ขึ้น General Availability. knowledge engine ที่ compile ข้อมูลและ workflow ของ enterprise เป็น structured knowledge layer. agent query ผ่าน KnowQL. declarative query language ออกแบบเฉพาะสำหรับ agent.
+
+benchmark ที่เรียกความสนใจ. tau Knowledge ของ Sierra. GPT ห้าจุดห้า บวก Nexus ได้สี่สิบเจ็ดจุดสี่. คะแนนสูงสุด. GPT ห้าจุดห้าเดี่ยวได้สี่สิบหกจุดสี่. ความต่างหนึ่ง percent ไม่ใช่ headline หลัก. headline คือ cost ต่อ task ลดเจ็ดสิบเจ็ด percent. เพราะ Nexus ตัด context ที่ irrelevant ก่อนส่งเข้า model.
+
+Sierra ไม่ใช่คนกลาง เป็นคู่แข่ง. Sierra ก็ทำ agent platform เองที่แข่งกับ approach ของ Pinecone. การที่ Nexus ชนะบน benchmark ของคู่แข่งเองยืนยัน metric อย่างน่าเชื่อถือกว่า vendor claim ปกติ.
+
+deployment model น่าสนใจ. Nexus compile knowledge layer แล้ว deploy ใน customer own cloud. AWS GCP Azure. Pinecone ไม่มี standing access ต่อข้อมูลลูกค้าหลัง compile เสร็จ. data stay in customer VPC. ตอบโจทย์ธนาคาร healthcare government ที่ block SaaS RAG มาตั้งแต่ ChatGPT Enterprise เปิด.
+
+Pattern ที่ตกผลึก. model ceiling กำลังตัน สำหรับ enterprise task ที่ต้องรู้ context เฉพาะบริษัท. เพิ่ม parameter จากห้าร้อย B ไป หนึ่ง T ไป สอง T ไม่ได้ทำให้ agent ตอบดีขึ้น. เพราะ knowledge นั้นไม่อยู่ใน training data. การเพิ่ม context window ช่วยได้บางเคส แต่ราคา latency พุ่งไม่คุ้ม.
+
+Solution ที่ตลาดกำลังไป. knowledge layer ที่ compile retrieval optimize query native for agents. Pinecone pure play. MongoDB Atlas Voyage AI middle ground. Databricks Genie Vector Search Unity Catalog เป็น enterprise data platform approach. Elastic Google Vertex AI Search เป็น established search vendor pivot.
+
+จุดกดดัน hyperscaler. AWS Bedrock Google Vertex AI Azure AI Search มี knowledge retrieval feature แต่ยัง fragmented. vector search แยก semantic search แยก structured filter แยก. Pinecone Nexus ให้ primitive เดียว KnowQL ที่ agent เรียก. ถ้า hyperscaler ไม่รวมกันใน หกเดือน. Pinecone จะ carve out enterprise mindshare.
+
+สำหรับ builders. ประเมิน Nexus จริงจัง. Payoff คือ cost เจ็ดสิบเจ็ด percent บวก development time. skill ที่ build ก่อนหน้านี้กลายเป็น commodity. คำถาม. differentiator อยู่ที่ retrieval หรือที่ business logic บน retrieval.
+
+สำหรับ enterprise. เขียน RFP เปรียบเทียบสาม tier. hand rolled RAG baseline. hyperscaler native. knowledge engine. Thai enterprise ที่ยังไม่เริ่ม RAG. ข้าม hand rolled ไปเลย. เริ่มที่ knowledge engine ตั้งแต่แรก.
+
+สำหรับ OpenBridge. layer knowledge engine ต้อง portable ผ่าน MCP. ไม่ผูกกับ agent runtime เจ้าไหน. multi tenant SaaS ที่ทำ vertical agent ควรประเมิน Nexus vs Cognee vs LlamaIndex Cloud เป็น สาม candidate หลัก.
+
+เรื่องที่สี่.
+วันพฤหัสสิบสามสิงหา. Writer เปิด Palmyra X6 flagship model บวก upgrade Writer Agent harness. enterprise ที่รัน agentic workflow บน Writer เห็น cost ลดเฉลี่ยห้าสิบสอง percent. speed เพิ่มสี่สิบแปด percent. quality เพิ่มสิบ percent.
+
+ราคา token สองดอลลาร์ ต่อล้าน input. แปดดอลลาร์ ต่อล้าน output. เทียบ Claude Opus สี่จุดแปด ที่สิบห้าดอลลาร์ กับเจ็ดสิบห้าดอลลาร์. Writer ถูกกว่า input แปดสิบเจ็ด percent. output แปดสิบเก้า percent. เทียบ GPT ห้าจุดห้า ที่ห้าดอลลาร์ กับสิบห้าดอลลาร์. Writer ถูกกว่า input หกสิบ percent. output สี่สิบเจ็ด percent.
+
+การเปิดที่ไม่พูดเสียงดัง. Palmyra X6 build บน GLM ห้าจุดสอง. open source model จาก Z dot AI. Chinese lab เดิมชื่อ Zhipu AI. Writer ไม่ hide แต่ไม่ marketing เน้น. Writer ทำ post training safety alignment tool use fine tune บน GLM ห้าจุดสอง พร้อม Writer specific instruction dataset. ผลลัพธ์คือ enterprise ready model ที่ราคา infrastructure ถูกกว่า train from scratch หลายเท่า.
+
+Writer Agent harness upgrades. governance dashboard. admin monitor token spend per workflow per team per skill. budget limit auto throttle เมื่อชน threshold. retry logic ที่ intelligent. agent step ที่ fail retry เฉพาะ node ไม่ redo ทั้ง workflow.
+
+segment target ชัด. Writer เจาะ marketing revenue teams. ไม่ใช่ engineering finance ops แบบ Cognizant JPMorgan. reason. marketing team รัน workflow ที่ token heavy. long form content. personalization at scale. campaign analysis. cost sensitivity สูงกว่า workflow อื่น. ถ้า cost ลดห้าสิบสอง percent. marketing budget ที่จ้าง agent เพิ่มสองเท่าได้ทันที.
+
+pattern ที่ตกผลึก. agent economics ที่ token spend รวมของ enterprise พุ่งเกิน budget model. cost optimization กลายเป็น product feature หลัก. หนึ่งปีก่อน enterprise ซื้อ model ที่ best quality regardless of cost. วันนี้ CFO ที่เห็นบิล API ห้าถึงห้าสิบล้านดอลลาร์ต่อไตรมาส สั่งให้ product team หา alternative.
+
+สัญญาณเชิงกลยุทธ์. Chinese open source model บวก Western enterprise wrapper เท่ากับราคาที่ตัด frontier lab. ก่อนหน้านี้ enterprise US หลีกเลี่ยง DeepSeek Qwen GLM จาก compliance angle. Writer แก้ด้วย inference ใน US cloud บวก legal entity US. Cohere Databricks Snowflake น่าจะทำตามในไตรมาสหน้า.
+
+จุดกดดัน OpenAI Anthropic. GPT ห้าจุดห้า และ Claude Opus โดนเทียบ head to head บน enterprise proposal. Writer ถูกกว่าสามถึงเก้าเท่า. response ที่เป็นไปได้. OpenAI ปล่อย GPT ห้า Mini agent optimize tier. Anthropic ปล่อย Claude Haiku สี่จุดห้า tier พิเศษ.
+
+Writer risk. ถ้า Z dot AI โดน US export control. Writer ต้อง fallback ไปสร้าง base model เอง หรือ swap ไปใช้ Llama Mistral. enterprise ที่ deploy Writer ควรถาม continuity plan.
+
+สำหรับ builders. ต้องเพิ่ม abstraction layer ที่ swap model ได้ transparent. LiteLLM OpenRouter Portkey เป็น pattern reference. customer ที่ token spend เกินหนึ่งแสนดอลลาร์ต่อเดือน จะ demand เรื่องนี้ในไตรมาสหน้า.
+
+สำหรับ marketing team. ประเมิน Writer proposal จริงจัง. Thai enterprise ที่ scale content operation. SCB KBank marketing. True AIS creative team. window แรกที่ควรทดลอง.
+
+สำหรับ OpenBridge. positioning ควรเน้น route agent workflow ผ่าน model ที่คุ้มค่าที่สุด per task. ไม่ใช่ best model regardless of cost. customer Thai SMB ที่ agent spend ห้าพันถึงห้าหมื่นดอลลาร์ต่อเดือน คือ sweet spot.
+
+ทั้งหมดนี้คือ brief ของรอบนี้. ขอให้วันนี้เป็นวันที่ดีครับ. แล้วเจอกันรอบหน้า.
