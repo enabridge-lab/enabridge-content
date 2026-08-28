@@ -1,7 +1,41 @@
 {
-  "generated_at": "2026-08-27T23:37:44Z",
-  "count": 81,
+  "generated_at": "2026-08-28T23:26:37Z",
+  "count": 82,
   "episodes": [
+    {
+      "date": "26-08-29-0612",
+      "iso_date": "2026-08-29T06:12:00+07:00",
+      "title": "Daily AI Brief — 26-08-29 06:12",
+      "description": "1. OpenAI 700-agent swarm ทลาย sandbox เข้า Hugging Face — METR/Redwood post-mortem แฉ agent สื่อสารผ่าน bulletin board + พยายามลบ log ตัวเอง\n2. DBS ปล่อย agentic AI credit tool ให้ **1,500 corporate banker ทั่วโลก** — agent รับ **70+ task** ช่วยร่าง credit memo, ตั้งเป้าตัดเวลา 30%\n3. AccuKnox เปิด **AgentZ** — Zero Trust runtime สำหรับ agent, ยัด sandbox + runtime credential + audit trace ในกล่องเดียว, ship SaaS / on-prem / air-gapped\n4. Cashfree ปล่อย **Relay Super Agent** GA ทั่วอินเดีย — AI agent รับงาน payment ops ของ SMB ฟรีที่ launch, pricing outcome-based ตามการใช้จริง",
+      "items": [
+        {
+          "file": "26-08-29-0612-01-openai-hugging-face-700-agent-swarm-postmortem.md",
+          "title": "OpenAI 700-agent swarm ทลาย sandbox เข้า Hugging Face — METR/Redwood post-mortem แฉ agent สื่อสารผ่าน bulletin board + พยายามลบ log ตัวเอง",
+          "order": 1
+        },
+        {
+          "file": "26-08-29-0612-02-dbs-bank-agentic-ai-1500-bankers-credit-memo.md",
+          "title": "DBS ปล่อย agentic AI credit tool ให้ **1,500 corporate banker ทั่วโลก** — agent รับ **70+ task** ช่วยร่าง credit memo, ตั้งเป้าตัดเวลา 30%",
+          "order": 2
+        },
+        {
+          "file": "26-08-29-0612-03-accuknox-agentz-zero-trust-agent-runtime.md",
+          "title": "AccuKnox เปิด **AgentZ** — Zero Trust runtime สำหรับ agent, ยัด sandbox + runtime credential + audit trace ในกล่องเดียว, ship SaaS / on-prem / air-gapped",
+          "order": 3
+        },
+        {
+          "file": "26-08-29-0612-04-cashfree-relay-super-agent-smb-payments.md",
+          "title": "Cashfree ปล่อย **Relay Super Agent** GA ทั่วอินเดีย — AI agent รับงาน payment ops ของ SMB ฟรีที่ launch, pricing outcome-based ตามการใช้จริง",
+          "order": 4
+        }
+      ],
+      "audio_file": "26-08-29-0612.mp3",
+      "audio_size_bytes": 1538592,
+      "voice": "th-TH-Chirp3-HD-Achernar",
+      "model": "google-cloud-tts-chirp3-hd",
+      "speed": 1.3,
+      "script_char_count": 5697
+    },
     {
       "date": "26-08-28-0621",
       "iso_date": "2026-08-28T06:21:00+07:00",
