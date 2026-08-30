@@ -1,0 +1,32 @@
+{
+  "date": "26-08-30-0609",
+  "iso_date": "2026-08-30T06:09:00+07:00",
+  "title": "Daily AI Brief — 26-08-30 06:09",
+  "items": [
+    {
+      "file": "26-08-30-0609-01-openai-jalapeno-inference-asic-agent-economics.md",
+      "title": "OpenAI ปล่อย benchmarks Jalapeño — inference ASIC ตัวแรกกับ Broadcom, แซง Nvidia GB300 ที่ 1.9x tokens/kWh, 3.6x lower latency",
+      "order": 1
+    },
+    {
+      "file": "26-08-30-0609-02-temporal-state-development-agents-daily-use-jump.md",
+      "title": "Temporal เผย State of Development 2026 — engineer ใช้ AI agent ทุกวันพุ่งจาก 47% → 80.8%, แต่ 35.7% ชี้ตรงกันว่า \"tracking state\" คือ blocker อันดับหนึ่ง",
+      "order": 2
+    },
+    {
+      "file": "26-08-30-0609-03-clearlake-google-cloud-portfolio-agent-distribution.md",
+      "title": "Clearlake Capital จับมือ Google Cloud ยัด full-stack agentic AI เข้า portfolio company ทั้งกอง — PE-scale distribution ที่ทำให้ Gemini Enterprise ทะลุองค์กร mid-market ทีเดียวเป็นหลายสิบราย",
+      "order": 3
+    },
+    {
+      "file": "26-08-30-0609-04-sequel-io-agentic-engagement-cloud-webinar-vertical.md",
+      "title": "Sequel.io เปิด Agentic Engagement Cloud — ยัด AI agent เข้า webinar ที่ run บนเว็บลูกค้าเอง, first-party data + agent = pipeline อัตโนมัติ ไม่ต้อง redirect ไป Zoom/On24",
+      "order": 4
+    }
+  ],
+  "script_char_count": 7342,
+  "audio_file": "26-08-30-0609.mp3",
+  "voice": "th-TH-Chirp3-HD-Achernar",
+  "model": "google-cloud-tts-chirp3-hd",
+  "speed": 1.3
+}
