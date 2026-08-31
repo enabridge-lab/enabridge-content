@@ -1,7 +1,41 @@
 {
-  "generated_at": "2026-08-29T23:24:53Z",
-  "count": 83,
+  "generated_at": "2026-08-30T23:30:34Z",
+  "count": 84,
   "episodes": [
+    {
+      "date": "26-08-31-0618",
+      "iso_date": "2026-08-31T06:18:00+07:00",
+      "title": "Daily AI Brief — 26-08-31 06:18",
+      "description": "1. Meta เตรียมยิง \"Hatch\" — consumer AI agent ตัวแรกที่ยึด distribution ของ Instagram 2B DAU, จ่อ launch ต้น ก.ย.\n2. Claudeforce — Salesforce ยัด CRM ทั้งก้อนเข้า Claude, 37 sales skills, Benioff บอก \"you won't need our app\"\n3. HappyRobot ปิด Series C $150M @ $1.2B — voice agent ของโลจิสติกส์ ที่ DHL/Uber/K+N ใช้จริง, revenue โต 5×, NDR 150%+\n4. AccuKnox ปล่อย \"AgentZ\" — one-stack platform สำหรับ build/run/govern agent ที่ security team ยอมเซ็น",
+      "items": [
+        {
+          "file": "26-08-31-0618-01-meta-hatch-consumer-agent-instagram.md",
+          "title": "Meta เตรียมยิง \"Hatch\" — consumer AI agent ตัวแรกที่ยึด distribution ของ Instagram 2B DAU, จ่อ launch ต้น ก.ย.",
+          "order": 1
+        },
+        {
+          "file": "26-08-31-0618-02-claudeforce-salesforce-anthropic-37-skills.md",
+          "title": "Claudeforce — Salesforce ยัด CRM ทั้งก้อนเข้า Claude, 37 sales skills, Benioff บอก \"you won't need our app\"",
+          "order": 2
+        },
+        {
+          "file": "26-08-31-0618-03-happyrobot-150m-freight-voice-agent.md",
+          "title": "HappyRobot ปิด Series C $150M @ $1.2B — voice agent ของโลจิสติกส์ ที่ DHL/Uber/K+N ใช้จริง, revenue โต 5×, NDR 150%+",
+          "order": 3
+        },
+        {
+          "file": "26-08-31-0618-04-accuknox-agentz-agent-governance-stack.md",
+          "title": "AccuKnox ปล่อย \"AgentZ\" — one-stack platform สำหรับ build/run/govern agent ที่ security team ยอมเซ็น",
+          "order": 4
+        }
+      ],
+      "audio_file": "26-08-31-0618.mp3",
+      "audio_size_bytes": 1305696,
+      "voice": "th-TH-Chirp3-HD-Achernar",
+      "model": "google-cloud-tts-chirp3-hd",
+      "speed": 1.3,
+      "script_char_count": 4544
+    },
     {
       "date": "26-08-30-0609",
       "iso_date": "2026-08-30T06:09:00+07:00",
