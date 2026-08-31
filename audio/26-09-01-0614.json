@@ -1,0 +1,32 @@
+{
+  "date": "26-09-01-0614",
+  "iso_date": "2026-09-01T06:14:00+07:00",
+  "title": "Daily AI Brief — 26-09-01 06:14",
+  "items": [
+    {
+      "file": "26-09-01-0614-01-mckinsey-state-ai-agentic-coding-eats-saas.md",
+      "title": "McKinsey State of AI 2026 — 32% เอนเทอร์ไพรส์ยกเลิกซื้อซอฟต์แวร์เพราะ agentic coding, agent scaling 27→40% ในหนึ่งปี",
+      "order": 1
+    },
+    {
+      "file": "26-09-01-0614-02-anthropic-model-hardware-standard-agents-on-infra.md",
+      "title": "Anthropic เปิด \"Model Hardware Standard\" — MCP สำหรับโลกกายภาพ, Carnegie Mellon รัน dose-response เร็วขึ้น 3 เท่า",
+      "order": 2
+    },
+    {
+      "file": "26-09-01-0614-03-cloudflare-x402-linux-foundation-agent-payments-standard.md",
+      "title": "x402 ย้ายเข้า Linux Foundation, 40+ member รวม Google/Stripe/Visa/Mastercard — machine-native payment กลายเป็น open standard ในเวลา 90 วัน",
+      "order": 3
+    },
+    {
+      "file": "26-09-01-0614-04-woori-bank-kt-agent-connect-korea-financial-vertical.md",
+      "title": "Woori Bank ให้ KT rebuild ระบบ chatbot ทั้งหมด — \"Agent Connect\" ส่ง context ข้าม chatbot / consultation bot / AI banker / agent, phase 1 ธ.ค. 2026",
+      "order": 4
+    }
+  ],
+  "script_char_count": 5168,
+  "audio_file": "26-09-01-0614.mp3",
+  "voice": "th-TH-Chirp3-HD-Achernar",
+  "model": "google-cloud-tts-chirp3-hd",
+  "speed": 1.3
+}
