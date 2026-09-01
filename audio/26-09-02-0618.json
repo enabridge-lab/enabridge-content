@@ -1,0 +1,32 @@
+{
+  "date": "26-09-02-0618",
+  "iso_date": "2026-09-02T06:18:00+07:00",
+  "title": "Daily AI Brief — 26-09-02 06:18",
+  "items": [
+    {
+      "file": "26-09-02-0618-01-dod-genai-mil-3m-personnel-chatgpt-grok.md",
+      "title": "Pentagon เปิด GenAI.mil ให้ ChatGPT + Grok ยิงตรงเข้า 3M ทหาร-พลเรือน — Claude ถูก block เพราะดีลเรื่อง lethal weapons ล่ม",
+      "order": 1
+    },
+    {
+      "file": "26-09-02-0618-02-runway-solaris-interface-world-model.md",
+      "title": "Runway Solaris — \"Interface World Model\" ที่ generate UI ทีละ frame แบบ real-time, ทำลาย paradigm coded interface",
+      "order": 2
+    },
+    {
+      "file": "26-09-02-0618-03-microsoft-humain-1m-mena-arabic-ai-pc.md",
+      "title": "Microsoft + HUMAIN ยิงเป้า 1M user MENA — ปล่อย HUMAIN ONE agent bundle + AI PC + ALLAM Arabic model 20 ก.ย.",
+      "order": 3
+    },
+    {
+      "file": "26-09-02-0618-04-optimizely-virtual-teammates-role-agents.md",
+      "title": "Optimizely เปิด \"Virtual Teammates\" — agent มี job title, นั่งใน org chart, ทำงานแบบพนักงานจริง ไม่ใช่ tool",
+      "order": 4
+    }
+  ],
+  "script_char_count": 5160,
+  "audio_file": "26-09-02-0618.mp3",
+  "voice": "th-TH-Chirp3-HD-Achernar",
+  "model": "google-cloud-tts-chirp3-hd",
+  "speed": 1.3
+}
