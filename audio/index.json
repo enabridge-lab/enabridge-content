@@ -1,7 +1,41 @@
 {
-  "generated_at": "2026-09-01T23:30:48Z",
-  "count": 85,
+  "generated_at": "2026-09-02T23:23:52Z",
+  "count": 86,
   "episodes": [
+    {
+      "date": "26-09-03-0613",
+      "iso_date": "2026-09-03T06:13:00+07:00",
+      "title": "Daily AI Brief — 26-09-03 06:13",
+      "description": "1. Claudeforce เปิด Open Beta กันยา 26 — Salesforce ยอมให้ CRM ตัวเองอยู่ใน Claude แทน UI ตัวเอง\n2. Microsoft ยอมให้ Claude 5 อยู่ใน Copilot Studio — ยุค \"multi-model agent\" มาถึงแบบเป็น GA\n3. McKinsey State of AI 2026 — 80% เห็น productivity แต่ 37% เห็น EBIT: scaling gap คือปัญหาที่ agent ต้องปิด\n4. Cashfree Relay GA — SMB จ่าย 60 ชม./สัปดาห์ให้ payment ops ลดเหลือ 45 นาที ผ่าน AI Super Agent",
+      "items": [
+        {
+          "file": "26-09-03-0613-01-claudeforce-salesforce-anthropic-open-beta.md",
+          "title": "Claudeforce เปิด Open Beta กันยา 26 — Salesforce ยอมให้ CRM ตัวเองอยู่ใน Claude แทน UI ตัวเอง",
+          "order": 1
+        },
+        {
+          "file": "26-09-03-0613-02-copilot-studio-multi-agent-claude-models.md",
+          "title": "Microsoft ยอมให้ Claude 5 อยู่ใน Copilot Studio — ยุค \"multi-model agent\" มาถึงแบบเป็น GA",
+          "order": 2
+        },
+        {
+          "file": "26-09-03-0613-03-mckinsey-state-of-ai-2026-scaling-gap.md",
+          "title": "McKinsey State of AI 2026 — 80% เห็น productivity แต่ 37% เห็น EBIT: scaling gap คือปัญหาที่ agent ต้องปิด",
+          "order": 3
+        },
+        {
+          "file": "26-09-03-0613-04-cashfree-relay-smb-payment-super-agent.md",
+          "title": "Cashfree Relay GA — SMB จ่าย 60 ชม./สัปดาห์ให้ payment ops ลดเหลือ 45 นาที ผ่าน AI Super Agent",
+          "order": 4
+        }
+      ],
+      "audio_file": "26-09-03-0613.mp3",
+      "audio_size_bytes": 1133760,
+      "voice": "th-TH-Chirp3-HD-Achernar",
+      "model": "google-cloud-tts-chirp3-hd",
+      "speed": 1.3,
+      "script_char_count": 4209
+    },
     {
       "date": "26-09-02-0618",
       "iso_date": "2026-09-02T06:18:00+07:00",
