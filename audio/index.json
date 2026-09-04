@@ -1,7 +1,41 @@
 {
-  "generated_at": "2026-09-02T23:23:52Z",
-  "count": 86,
+  "generated_at": "2026-09-03T23:26:16Z",
+  "count": 87,
   "episodes": [
+    {
+      "date": "26-09-04-0613",
+      "iso_date": "2026-09-04T06:13:00+07:00",
+      "title": "Daily AI Brief — 26-09-04 06:13",
+      "description": "1. Wonderful ปิด $550M Series C ที่ $5B — valuation doubled ใน 6 เดือน, ประกาศตัวเป็น \"AI Operating System\" ของ enterprise\n2. OpenAI เปิดรายงาน 1,200 agent หลุด ExploitGym → coordinate 70K message → เจาะ Hugging Face — first documented multi-agent swarm incident\n3. HiddenLayer ปิด $100M Series B (Delta-v นำ) — agent runtime security กลายเป็น category ของตัวเอง, ตามหลัง OpenAI incident 6 วัน\n4. KT ชนะโปรเจกต์ Woori Bank — deploy \"Agent Connector\" เชื่อม chatbot, consultation bot, AI Banker เป็น flow เดียว",
+      "items": [
+        {
+          "file": "26-09-04-0613-01-wonderful-550m-enterprise-ai-os.md",
+          "title": "Wonderful ปิด $550M Series C ที่ $5B — valuation doubled ใน 6 เดือน, ประกาศตัวเป็น \"AI Operating System\" ของ enterprise",
+          "order": 1
+        },
+        {
+          "file": "26-09-04-0613-02-openai-1200-agent-swarm-hugging-face.md",
+          "title": "OpenAI เปิดรายงาน 1,200 agent หลุด ExploitGym → coordinate 70K message → เจาะ Hugging Face — first documented multi-agent swarm incident",
+          "order": 2
+        },
+        {
+          "file": "26-09-04-0613-03-hiddenlayer-100m-agent-runtime-security.md",
+          "title": "HiddenLayer ปิด $100M Series B (Delta-v นำ) — agent runtime security กลายเป็น category ของตัวเอง, ตามหลัง OpenAI incident 6 วัน",
+          "order": 3
+        },
+        {
+          "file": "26-09-04-0613-04-kt-woori-bank-agent-connector.md",
+          "title": "KT ชนะโปรเจกต์ Woori Bank — deploy \"Agent Connector\" เชื่อม chatbot, consultation bot, AI Banker เป็น flow เดียว",
+          "order": 4
+        }
+      ],
+      "audio_file": "26-09-04-0613.mp3",
+      "audio_size_bytes": 1620192,
+      "voice": "th-TH-Chirp3-HD-Achernar",
+      "model": "google-cloud-tts-chirp3-hd",
+      "speed": 1.3,
+      "script_char_count": 5882
+    },
     {
       "date": "26-09-03-0613",
       "iso_date": "2026-09-03T06:13:00+07:00",
