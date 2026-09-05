@@ -1,0 +1,32 @@
+{
+  "date": "26-09-05-0610",
+  "iso_date": "2026-09-05T06:10:00+07:00",
+  "title": "Daily AI Brief — 26-09-05 06:10",
+  "items": [
+    {
+      "file": "26-09-05-0610-01-xai-grok-bot-cursor-enterprise-persistent-agents.md",
+      "title": "xAI ปล่อย Grok Bot for Enterprise (ร่วมกับ Cursor) — persistent agent บน VM ของตัวเอง, ราคาเริ่ม $120/seat, ตัด waitlist 3 ก.ย.",
+      "order": 1
+    },
+    {
+      "file": "26-09-05-0610-02-genesys-navigator-orchestrator-agentic-cx.md",
+      "title": "Genesys เปิด agentic orchestration stack ที่ Xperience 2026 — Navigator, Orchestrator, Contextual Intelligence, AI Control Plane; Cloud ARR แตะ $2.9B, AI ARR ทะลุ $400M โต 2× ของ core",
+      "order": 2
+    },
+    {
+      "file": "26-09-05-0610-03-jetstream-clearance-zero-trust-agent-authorization.md",
+      "title": "JetStream Clearance — reasoning engine ตัวใหม่ที่ตัดสินก่อน agent ลงมือ, ไม่ใช่แค่ detect หลังเกิดเหตุ; เปิดตัว 2 ก.ย. GA ฤดูใบไม้ร่วง",
+      "order": 3
+    },
+    {
+      "file": "26-09-05-0610-04-proofpoint-soc-agent-openai-daybreak.md",
+      "title": "Proofpoint SOC Analyst Agent — first product ของ Daybreak Defense Network, ใช้ OpenAI cyber-tuned model แปลงคำถามภาษาคนเป็นสืบสวน; private preview, GA สิ้น Q3 2026",
+      "order": 4
+    }
+  ],
+  "script_char_count": 6269,
+  "audio_file": "26-09-05-0610.mp3",
+  "voice": "th-TH-Chirp3-HD-Achernar",
+  "model": "google-cloud-tts-chirp3-hd",
+  "speed": 1.3
+}
