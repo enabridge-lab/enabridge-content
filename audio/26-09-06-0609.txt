@@ -1,0 +1,24 @@
+สวัสดีครับ นี่คือ Enabridge AI Brief รอบ 06 September 2026 เวลา 06:09 ครับ.
+รอบนี้มี 4 เรื่อง เน้น Agentic AI, business use case, และ trend ที่เอามาใช้กับ OpenBridge ได้.
+
+เรื่องแรก.
+Tenable กับ OpenAI ประกาศตัวใหม่ที่ชื่อ CyberAgents Exchange AI Inspector ที่งาน OpenAI Cyber Summit เมื่อวานนี้ ตัวนี้เป็น process ตรวจ security แบบ pre-deployment สำหรับ agent, skill, MCP server, และ multi-agent playbook ที่ community submit เข้ามาใน exchange ของ Tenable ที่เพิ่งเปิดเมื่อเดือนสิงหาคม ตอนนี้มี component เกินร้อยชิ้นแล้วหลังจาก SWARM build event ที่ Black Hat USA ตัว inspector ใช้ combo สามชั้น GPT cyber model จาก OpenAI Daybreak Tenable One AI Exposure engine และ manual review จากทีม Tenable Research
+
+ที่น่าสนใจคือ pattern ที่กำลังก่อรูป agent security แตกออกเป็นสาม sub layer ชัด pre deployment inspection ที่ Tenable ทำ pre execution authorization ที่ JetStream Clearance ทำเมื่อ 2 กันยา และ runtime detection ที่ HiddenLayer กับ Lakera ครอง enterprise ที่ scale agent จริงจะต้องซื้อทั้งสาม layer เหมือน firewall IDS SIEM ยุคก่อน อีกอันที่ต้องจับตา OpenAI Daybreak กำลังเป็น model layer ของอุตสาหกรรม security ในหนึ่งสัปดาห์เราเห็นสาม vendor ประกาศใช้แล้ว Proofpoint Tenable CrowdStrike ถ้า Google หรือ Microsoft ไม่ตอบภายในสิ้นปี ตลาด cyber tuned model จะ consolidate ไป OpenAI คล้าย NVIDIA CUDA เมื่อสิบปีก่อน สำหรับ builder ที่ทำ agent ขาย enterprise ควร submit เข้า exchange เป็น distribution channel ใหม่ และเตรียม security audit report ให้พร้อม inspector scan ครับ.
+
+เรื่องที่สอง.
+Anthropic เพิ่งปล่อย Claude Fable 5.1 กับ Mythos 5.1 อาทิตย์นี้ headline ที่ agent builder ทุกคนต้องอ่าน ราคา cache read ลดจากดอลลาร์ต่อล้าน token เหลือ 25 cent ตัดไป 75% ในคราวเดียว base input output ยังเท่าเดิม context ยัง 1 ล้าน token ผลกระทบสุทธิ workload ทั่วไปประหยัด 25% แต่ workload ที่ agentic หนัก long system prompt tool schema เยอะ retrieval context ใหญ่ conversation history ยาว จะประหยัดถึง 45% เพราะทุก turn ที่ 2 เป็นต้นไป input 95% มาจาก cache
+
+ในสเกลจริง agent loop รัน 10,000 ครั้งต่อวัน ต้นทุน compute ลดจาก 750 ดอลลาร์เหลือ 190 ดอลลาร์ต่อวัน middleware ที่ inject context ซ้ำโดยไม่ hit cache จะกลายเป็น cost driver ที่มองเห็นทันที เพราะตอนนี้ cache read ถูกกว่า input read 40 เท่า LangChain LlamaIndex crewAI ต้อง audit pipeline ใหม่ builder ที่ rebuild ให้ cache friendly ในเดือนนี้จะเห็น cost drop 40% ทันที ในระดับ strategic Anthropic ส่งสัญญาณชัดว่า agentic use case คือ priority ยอมเสียมาร์จินสั้นๆ เพื่อ lock in long context loop ที่ OpenAI Astra กับ Gemini 3.8 tap ไม่ได้ง่าย คาดว่า OpenAI กับ Google จะตัดราคา cache tier ตามภายในสิ้นปี ครับ.
+
+เรื่องที่สาม.
+Instinct บริษัท AI agent สำหรับ consumer ปิดรอบ Series B 250 ล้านดอลลาร์ที่ valuation 2.5 พันล้าน Index Ventures กับ Benchmark เป็น co lead น่าตกใจตรงที่ valuation trajectory 50 พฤษภาคม ล้าน สิงหาคมต้นเดือน 500 ล้าน สิงหาคมปลายเดือน 2.5 พันล้าน 50 เท่าใน 4 เดือน founder Noah Shinn อายุ 23 อดีตวิศวกร Sierra ก่อตั้งบริษัทปี 2025 product ยัง private testing ยังไม่เปิดสาธารณะ
+
+ที่น่าสนใจไม่ใช่ตัวเงิน แต่เป็น product design distribution ผ่าน SMS กับ voice call ไม่ใช่ chat app ใหม่ user ส่ง SMS book flight to Bangkok next Tuesday under 500 dollar หรือโทรหา agent ให้ reschedule นัด agent ทำเสร็จ report กลับใน channel เดียวกัน pattern นี้เดินอ้อม cold start problem ที่ chatbot ยุค 2023 ล้มเหลว SMS voice เป็น interface ที่ user โต้ตอบมาตั้งแต่เกิด ไม่ต้อง onboarding ไม่ต้องสร้าง habit ใหม่ retention เกิดจาก habit ที่มีอยู่ implication ใหญ่สำหรับตลาดไทย consumer brand ต้องเตรียม agent callable API ภายใน 12 เดือน ถ้า user โทรบอก Instinct ให้จอง flight ระหว่าง Bangkok Airways กับ Air Asia API ที่ dev friendly จะได้ default choice API ที่ต้อง scrape web จะถูกข้าม ครับ.
+
+เรื่องที่สี่.
+Agentrys บริษัท startup ทำ AI agent สำหรับ chip design ระดมทุน 24.5 ล้านดอลลาร์ประกอบด้วย seed 19.1 ล้าน Etna Labs นำ กับ pre seed 5.4 ล้าน MediaTek นำเป็น strategic backer แรก founder Mark Ren เคย lead กลุ่ม AI for chip design ที่ NVIDIA ตีพิมพ์ paper เรื่อง PrefixRL DeepPCB และ Nemotron for EDA workflow
+
+ที่น่าสนใจไม่ใช่ตัวเงิน แต่เป็น category ที่บริษัท position ตัวเอง Agentic Design Automation หรือ ADA เป็น successor ของ EDA เดิม Cadence Synopsys Siemens EDA ทั้งหมดยัง focus per task automation engineer ต้อง orchestrate ระหว่าง tool ด้วยมือ Agentrys เสนอ platform ที่ engineer define goal แล้ว agent workforce verification agent floorplan agent timing agent DFT agent ทำงานร่วมกัน learn จาก project ก่อน pattern สำคัญที่ต้องอ่านออก vertical agent for engineering discipline กำลังกลายเป็น thesis ที่ VC ลงทุนหนัก Rebar สำหรับ HVAC Faro สำหรับ pharma Agentrys สำหรับ silicon สาม pattern เดียวกัน naming Agentic X Automation จะซ้ำในทุก vertical Legal Clinical Compliance HR IT enterprise buyer ในไทยควร map budget ปี 2027 ตาม vertical suffix นี้ อย่ารอให้ incumbent SaaS obsolete แล้วค่อยตัดสินใจ ครับ.
+
+ทั้งหมดนี้คือ brief ของรอบนี้. ขอให้วันนี้เป็นวันที่ดีครับ. แล้วเจอกันรอบหน้า.
