@@ -1,0 +1,32 @@
+{
+  "date": "26-09-07-0610",
+  "iso_date": "2026-09-07T06:10:00+07:00",
+  "title": "Daily AI Brief — 26-09-07 06:10",
+  "items": [
+    {
+      "file": "26-09-07-0610-01-nvidia-hugging-face-13b-open-model-hub.md",
+      "title": "Nvidia จ่าย $12.9B ซื้อ Hugging Face — chip company กลายเป็นเจ้าของ open-model hub ที่ agents ทุกตัวเดินผ่าน",
+      "order": 1
+    },
+    {
+      "file": "26-09-07-0610-02-openai-wiki-incident-anthropic-response-multi-state-probe.md",
+      "title": "OpenAI Wiki Incident — 15,000 edits, 700 agents, 16 รัฐเปิดสอบ; Anthropic ย้าย 150 engineer เข้า safety team",
+      "order": 2
+    },
+    {
+      "file": "26-09-07-0610-03-docusign-mcp-server-every-agent-agreement-layer.md",
+      "title": "Docusign เปิด MCP server ให้ทุก AI agent 30 ก.ย. — agreement layer กลายเป็น first-class citizen ของ agentic enterprise",
+      "order": 3
+    },
+    {
+      "file": "26-09-07-0610-04-air-security-50m-agent-firewall-supply-chain.md",
+      "title": "AIR Security ออกสตีลธ์ ระดม $50M จาก Sequoia — firewall สำหรับ agent add-on ที่พบ 17,800 plugin, 6.7M installs พึ่ง untrusted source",
+      "order": 4
+    }
+  ],
+  "script_char_count": 4894,
+  "audio_file": "26-09-07-0610.mp3",
+  "voice": "th-TH-Chirp3-HD-Achernar",
+  "model": "google-cloud-tts-chirp3-hd",
+  "speed": 1.3
+}
