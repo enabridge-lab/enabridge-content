@@ -1,0 +1,76 @@
+สวัสดีครับ นี่คือ Enabridge AI Brief รอบ 09 September 2026 เวลา 06:11 ครับ.
+รอบนี้มี 4 เรื่อง เน้น Agentic AI, business use case, และ trend ที่เอามาใช้กับ OpenBridge ได้.
+
+เรื่องแรก.
+สัปดาห์นี้ agent commerce infrastructure ตกผลึกจริง หลังพูดกันมาครึ่งปี. AWS ประกาศ Bedrock AgentCore Payments GA. agent ที่ deploy บน AgentCore ถือ wallet ได้เอง. เจอ HTTP 402 response ปุ๊ปทำ x402 protocol negotiation เอง. authenticate wallet ส่ง payment รับ proof กลับ. reasoning loop ไม่แตก. developer เห็นแค่ call สำเร็จ.
+
+Coinbase ต่อยอด. เปิด x402 Bazaar เป็น MCP server. catalog ของ payment-gated service. หนึ่งหมื่น endpoint กว่า ๆ. ครอบ web search weather financial data translation image gen code execution LLM inference. list พร้อมราคา rate limit schema. agent search ได้เอง. discovery API เป็น public. ไม่ต้องมี Coinbase key ก่อนก็ query ได้.
+
+Cloudflare จับข้าง supply. เปิด Monetization Gateway. เจ้าของเว็บ API MCP server ตั้งราคาต่อ request ที่ Cloudflare edge. verify payment ก่อน forward. integrated กับ CloudFront กับ AWS WAF. positioning ชัด. Cloudflare นั่งหน้า internet. พอ agent traffic ระเบิด content owner ต้อง monetize ได้โดยไม่ต้องเขียน paywall เอง.
+
+Pattern ปีที่แล้ว agent คือ chatbot ตอบคำถาม. ครึ่งปีที่ผ่านมา agent ใช้ tool. สัปดาห์นี้ agent มีกระเป๋าเงิน. เปลี่ยน default assumption ของทั้ง API economy.
+
+Signal ใหญ่. B2A pricing model. agent เลือก vendor เองใน sub second based on price latency quality. subscription seat bundle จะ face pressure จาก per call pricing ที่ transparent กว่า. Twilio Stripe แทน enterprise phone contract เมื่อสิบห้าปีก่อน. x402 กำลังทำสิ่งเดียวกันกับ API data inference.
+
+สำหรับ builder. x402 support กำลังเป็น table stake ก่อนสิ้นปี. LangChain LangGraph CrewAI Vercel AI SDK ต้อง emit x402 aware HTTP client. เตรียม wallet abstraction spending policy observability hook. startup ที่ทำ FinOps for agent จะโตเร็ว.
+
+สำหรับ enterprise. รีบทำ wallet governance cost attribution vendor risk policy. Bazaar หนึ่งหมื่น endpoint แต่ CISO ต้องรู้ว่า agent buy จาก vendor ที่ผ่าน compliance เท่านั้น. สำหรับ SME. เอา expertise dataset tool ของตัวเอง list ใน Bazaar เก็บ revenue จาก agent ทั่วโลก โดยไม่ต้องมี sales.
+
+ผู้แพ้ระยะสั้น SaaS vendor ที่ขาย subscription กว้างแต่ feature ที่ agent replace ได้. ผู้ชนะ hyperscaler payment rail CDN vertical data expert ที่ agent replace ไม่ได้.
+
+เรื่องที่สอง.
+วันจันทร์ที่แปดกันยายน Cognition ปิด Series E สอง พัน ล้านดอลลาร์ ที่ valuation สี่สิบแปดพันล้าน. ขยับจากยี่สิบหกพันล้านเมื่อพฤษภาคม. สี่เดือนเท่านั้น. Cognition กลายเป็น AI native company รายที่สามที่ทะลุสี่สิบพันล้าน หลัง OpenAI กับ Anthropic. เป็นสตาร์ทอัพเดียวใน top tier ที่ product เป็น agent ล้วน ๆ.
+
+Revenue growth curve หนัก. ARR จากสี่ ร้อยเก้าสิบสองล้านพฤษภาคม เป็น เก้าร้อยล้านกันยายน. เกือบสองเท่าในหนึ่งไตรมาส. Enterprise usage โต ห้าสิบ เปอร์เซ็นต์ month over month มาหกเดือน. เป็น curve ที่ SaaS incumbent ไม่ทำมานาน.
+
+Product ซ่อมเสร็จ. Devin Local ที่เคยชื่อ Cascade ของ Windsurf. rewrite เป็น Rust. token efficient เพิ่ม สามสิบ เปอร์เซ็นต์. รองรับ subagent ที่แตก task ใหญ่เป็น parallel worker. Cognition collapse product line เข้าเป็น brand เดียว. Devin Desktop IDE. Devin Cloud autonomous agent. Devin CLI headless. Devin Review code review. ทั้งหมดใต้ Agent Command Center ที่เป็น Kanban ของ agent ทุกตัว.
+
+ตลาด AI IDE เหลือ independent player น้อยราย. Cursor ถูก SpaceX acquire เมษายน. Windsurf ถูก Cognition ซื้อไปแล้ว. Copilot อยู่ใต้ Microsoft. Cognition เลือก stay independent ที่ สี่สิบแปดพันล้าน. สัญญาณว่า founder ต้องการ IPO path. เตรียม S one ตามหลัง Anthropic ในสอง พัน ยี่สิบเจ็ด.
+
+Pattern signal. Cognition proof ว่า agent native company ที่ไม่มี legacy SaaS ทำเงินได้เท่า infrastructure vendor รุ่นเก่า ในไทม์ไลน์ที่สั้นกว่าห้าเท่า. VC เคยมอง Devin เป็น toy ที่ hype demo. สิบแปดเดือนต่อมา ARR เก้าร้อยล้าน 50 percent MoM growth. narrative นั้น dead. Enterprise เลือก Devin เพราะ agent ทำงาน end to end ได้.
+
+Bet ที่จับตา. หลาย vertical จะเห็น Cognition ของ vertical ตัวเองเกิดใน สิบสอง เดือน. Harvey สำหรับ legal. Sierra สำหรับ operations. Rogo Hebbia สำหรับ finance. Abridge สำหรับ medical. Encore AI สำหรับ sales. Pattern เดียวกัน. Agent ที่ ship product ให้ vertical โดย founder ไม่มี legacy SaaS หลัง.
+
+สำหรับ builder. หลักสามอย่างที่ทำให้ Devin ต่างจาก competitor. long horizon planning หกถึงแปดชั่วโมงต่อ task. local subagent cloud handoff. unified control plane. ถ้า build agent product ต้องมี Command Center layer ก่อนขายเข้า Fortune 500.
+
+สำหรับ Thailand. ยังไม่มี Cognition analog. แต่ pattern ชัด. team ที่ build agent สำหรับ SME accounting HR sales compliance ภาษาไทย จะ find PMF เร็วกว่า SaaS ที่ต้อง compete กับ international vendor. timing window หก ถึง สิบสอง เดือน.
+
+เรื่องที่สาม.
+MCP protocol spec ปล่อย version สอง พัน ยี่สิบหก ศูนย์เจ็ด ยี่สิบแปด. เป็น biggest change since launch. Protocol core กลายเป็น stateless ทั้งระบบ. ตัด initialize handshake. ตัด session ID header. request ทุก call self describing. carry protocol version client identity capabilities inline ใน meta field. gateway route ได้ด้วย header ไม่ต้อง parse JSON.
+
+Cloudflare ship day zero. Agents SDK v ศูนย์ จุด สอง ศูนย์. product MCP server ทั้งหมดรัน spec ใหม่. fresh stateless server ต่อ request. ไม่ต้องใช้ Durable Object. ไม่ต้องมี sticky session. Sentry Linear เข้า production วันแรก.
+
+Feature ใหม่ที่ underappreciated. multi round trip requests. header based routing. cacheable list results. authorization hardening. formal extensions framework. gateway ที่ serve หลาย tenant ทำได้ง่ายมาก. list result cache ที่ CDN ระดับวัน. server load ลดลงหลายเท่า.
+
+Governance shift ที่คู่กัน. ธันวาคม สอง พัน ยี่สิบห้า Anthropic donate MCP ให้ Agentic AI Foundation ใต้ Linux Foundation. OpenAI Block เป็น co founder. AWS Google Microsoft Cloudflare GitHub Bloomberg เป็น supporting member. release cycle อยู่ใต้ neutral foundation. contributor เพิ่มเป็นห้าร้อยกว่า. RFC process open.
+
+Pattern signal. Statelessness เท่ากับ CDN first architecture. ก่อนหน้านี้ MCP server ต้อง hold session. sticky routing connection pool memory. หลัง spec ใหม่ MCP server run ใน serverless function ที่ edge. Cloudflare Workers Lambda Edge Vercel Edge Deno Deploy. เหมือน REST สอง จุด ศูนย์ ที่ทำให้ web scale ปี สอง พัน สิบ. MCP ถอดบทเรียนเดียวกัน สิบห้า ปีหลัง.
+
+Bet ที่จับตา. AWS AgentCore Gateway compete กับ Cloudflare Monetization Gateway ในไตรมาสหน้า. Google Vertex Anthropic OpenAI จะปล่อย gateway ของตัวเองภายในสิ้นปี. เกิดเป็น สี่ MCP gateway ที่แข่ง protocol เดียวกัน. network effect ให้ standard. competition ให้ price feature.
+
+Deep signal. statelessness ปิด attack surface ใหญ่ที่ MCP security research ปีนี้เจอ. session state ที่ hold ระหว่าง call เป็นที่เก็บ token credential cached response. attacker ที่ hijack session เข้าถึงทุกอย่าง. spec ใหม่ credential ไม่ persist ใน server memory. attack window ลดจาก session เป็น request เดียว.
+
+สำหรับ builder. migration checklist. remove initialize handshake. migrate session scope state ไป external store. implement method tool name header. mark idempotent list result ให้ cacheable. test authorization hardening flow.
+
+สำหรับ Thailand enterprise. audit inventory MCP server ทั้งหมด. version ที่รัน. server pre spec ใหม่จะ break ในไตรมาสหน้า. เตรียม budget Q สี่ สำหรับ MCP server upgrade gateway migration.
+
+เรื่องที่สี่.
+GitHub Copilot อัพเดตใหญ่กันยายน. parallel agent sessions. dev มอบหมาย task แยกกัน. agent หลายตัวทำ implementation test doc review พร้อมกัน. แต่ละ session isolated บน Git worktree ของตัวเอง. ไม่มี merge conflict ระหว่างทำงาน. dev เห็นทุก session ใน unified session view. reviewer role เท่านั้น. ไม่ต้อง context switch พิมพ์เอง.
+
+Copilot Workspace ประกาศ GA พร้อมกัน. planning layer companion. developer พิมพ์ feature request natural language. Workspace generate task plan กับ dependency graph. step ที่ independent รัน parallel. step ที่ dependent รอ linear. beta user เห็น cycle time drop สี่สิบ ถึง หกสิบ เปอร์เซ็นต์ สำหรับ multi file feature.
+
+OpenHands หนึ่ง จุด ศูนย์ ประกาศ production release. เป็น open source autonomous coding agent. หกสิบแปดเปอร์เซ็นต์ SWE bench verified ที่รัน Docker sandbox. แซง Devin baseline ปีที่แล้ว. Docker sandboxing security policy resource limit built in. plugin system ที่ extend capability. เป็น open source agent ตัวแรกที่ enterprise IT security ยอม deploy in cluster โดยไม่ต้อง audit หนัก.
+
+Anthropic Fable ห้า จุด หนึ่ง กับ Mythos ห้า จุด หนึ่ง ปล่อย หนึ่ง กันยายน. one million token context. เจ็ดสิบห้าเปอร์เซ็นต์ price cut ต่อ prompt cache read. long running agent ที่ต้อง re read context ลดลงเหลือ ยี่สิบห้าเปอร์เซ็นต์ ของ cost เดิม. combine กับ parallel session pattern. dev team ที่ run ห้าถึงแปด agent concurrent ตอนนี้ economics ยอมรับได้.
+
+Pattern signal. dev primary role shift จาก typist เป็น reviewer orchestrator. workflow ที่ทำจริงพร้อมแล้ว. cycle time drop สี่สิบถึงหกสิบเปอร์เซ็นต์. ถ้าตัวเลขนี้ generalize ที่ Fortune 500 engineer productivity metric ทั้ง industry ต้อง re baseline.
+
+Skill ใหม่สามตัวที่ dev ต้องมี. task decomposition ที่ทำให้ agent parallel ทำงานได้. code review skill ที่ scale อ่าน PR ห้าถึงแปด ต่อวัน. design skill ที่ specify boundary ให้ agent ไม่ scope creep. bootcamp กับ engineering onboarding โปรแกรมทั้งหมดต้อง redesign ในไตรมาสหน้า.
+
+Bet ที่จับตา. seat license pricing ของ engineering tool จะ collapse ในสิบสอง ถึง สิบแปด เดือน. Copilot seat license ยี่สิบดอลลาร์ จะ face pressure จาก customer ที่บอกทีม ร้อย คนทำ output ของทีม สอง ร้อย คน ทำไมต้องจ่ายสองเท่า. Microsoft response น่าจะเป็น usage based tier ที่ meter agent execution ควบคู่ seat.
+
+Deep signal. OpenHands หกสิบแปดเปอร์เซ็นต์ SWE bench verified เท่ากับ commercial baseline commoditized. differentiation ของ commercial ต้องย้าย layer. long horizon task. integration memory ที่ personalize. compliance audit. support SLA.
+
+สำหรับ Thailand team ยี่สิบ ถึง หนึ่งร้อย dev. OpenHands self host เป็น serious option. cost saving หกสิบ ถึง เจ็ดสิบ เปอร์เซ็นต์ vs Copilot enterprise. trade off DevOps overhead ML infra. เตรียม review skill training onboarding SBOM policy ก่อน auditor ปี สอง พัน ยี่สิบเจ็ด จะถาม.
+
+ทั้งหมดนี้คือ brief ของรอบนี้. ขอให้วันนี้เป็นวันที่ดีครับ. แล้วเจอกันรอบหน้า.
