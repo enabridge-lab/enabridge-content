@@ -1,7 +1,41 @@
 {
-  "generated_at": "2026-09-09T23:27:25Z",
-  "count": 92,
+  "generated_at": "2026-09-10T23:29:02Z",
+  "count": 93,
   "episodes": [
+    {
+      "date": "26-09-11-0610",
+      "iso_date": "2026-09-11T06:10:00+07:00",
+      "title": "Daily AI Brief — 26-09-11 06:10",
+      "description": "1. Clay ปิด $115M Series D ที่ $7.1B — เขียน narrative ใหม่ว่า \"GTM Engineer + Growth Agent\" คือ category ต่อไป, valuation คูณสองใน 12 เดือน\n2. Zscaler เปิด \"Agentic SOC\" — AI agent วิ่งบน 750B daily transaction, plug กับ Anthropic + OpenAI frontier model ตรง; SOC operating model ที่ถูก re-write\n3. Salesforce จ่อจ่าย $2B ซื้อ Listen Labs — voice AI research เข้าใส่ Agentforce, valuation คูณ 4 ใน 8 เดือน, ดีล AI ที่ 4 ของ Salesforce ปี 2026\n4. GTIG ยืนยัน — attacker รัน multi-agent credential harvest ครบวงจรใน \"ต่ำกว่า 6 ชั่วโมง\"; agent-enabled attack เข้าเฟส operational, ไม่ใช่ research อีกแล้ว",
+      "items": [
+        {
+          "file": "26-09-11-0610-01-clay-115m-gtm-engineer-agent-71b.md",
+          "title": "Clay ปิด $115M Series D ที่ $7.1B — เขียน narrative ใหม่ว่า \"GTM Engineer + Growth Agent\" คือ category ต่อไป, valuation คูณสองใน 12 เดือน",
+          "order": 1
+        },
+        {
+          "file": "26-09-11-0610-02-zscaler-agentic-soc-frontier-model.md",
+          "title": "Zscaler เปิด \"Agentic SOC\" — AI agent วิ่งบน 750B daily transaction, plug กับ Anthropic + OpenAI frontier model ตรง; SOC operating model ที่ถูก re-write",
+          "order": 2
+        },
+        {
+          "file": "26-09-11-0610-03-salesforce-listen-labs-2b-agentforce-voice.md",
+          "title": "Salesforce จ่อจ่าย $2B ซื้อ Listen Labs — voice AI research เข้าใส่ Agentforce, valuation คูณ 4 ใน 8 เดือน, ดีล AI ที่ 4 ของ Salesforce ปี 2026",
+          "order": 3
+        },
+        {
+          "file": "26-09-11-0610-04-google-gtig-multi-agent-attack-6-hours.md",
+          "title": "GTIG ยืนยัน — attacker รัน multi-agent credential harvest ครบวงจรใน \"ต่ำกว่า 6 ชั่วโมง\"; agent-enabled attack เข้าเฟส operational, ไม่ใช่ research อีกแล้ว",
+          "order": 4
+        }
+      ],
+      "audio_file": "26-09-11-0610.mp3",
+      "audio_size_bytes": 3073152,
+      "voice": "th-TH-Chirp3-HD-Achernar",
+      "model": "google-cloud-tts-chirp3-hd",
+      "speed": 1.3,
+      "script_char_count": 10707
+    },
     {
       "date": "26-09-10-0610",
       "iso_date": "2026-09-10T06:10:00+07:00",
