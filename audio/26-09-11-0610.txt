@@ -1,0 +1,78 @@
+สวัสดีครับ นี่คือ Enabridge AI Brief รอบ 11 September 2026 เวลา 06:10 ครับ.
+รอบนี้มี 4 เรื่อง เน้น Agentic AI, business use case, และ trend ที่เอามาใช้กับ OpenBridge ได้.
+
+เรื่องแรก.
+วันอังคารที่ 9 กันยายน Clay ประกาศ Series D 115 ล้านเหรียญ ที่ valuation 7.1 พันล้าน. Wellington Management นั่ง lead. Sequoia a16z Perennial Meritech DST CapitalG StepStone Bloomberg Beta Evolution เข้ามาทั้งขบวน. ราคานี้คูณสองจาก 3.1 พันล้าน ที่ Clay ปิด Series C เมื่อสิงหาคมปีที่แล้ว. คูณสองใน 12 เดือน.
+
+ที่น่าสังเกตกว่าเลข valuation คือ customer base. Clay มีลูกค้า 17,000 ราย. แปดสิบเปอร์เซ็นต์ของ Forbes AI 50 ใช้อยู่. Anthropic Google OpenAI Stripe ElevenLabs Workday Siemens. รายชื่อนี้แปลว่า Clay ขาย enterprise motion ได้แล้ว. ไม่ใช่แค่ SMB tool.
+
+Clay ไม่ pitch ว่าเป็น sales tool. pitch ว่าเป็น AI Growth Engine. และประกาศว่า ลูกค้ากำลังจ้าง role ใหม่ ที่เรียกว่า GTM Engineer. คนที่ใช้ Clay orchestrate agent หลายตัว. agent หนึ่งดึง firmographic. agent หนึ่ง monitor intent signal. agent หนึ่ง compose personalized outbound. ทั้งหมด compound เข้ากัน. CEO Kareem Amin เรียกมันว่า GTM system that improves with use.
+
+พร้อมกันนี้ Clay เปิด scholarship 1 ล้าน ชื่อ GTME Scholarship. ฝึก GTM Engineer ใหม่. certify ทีมงานลูกค้าให้เป็น orchestrator. เป็น play เดียวกับที่ Salesforce ทำกับคำว่า Trailblazer หรือ HubSpot กับ Growth Hacker. สร้าง profession ก่อน lock category naming.
+
+Wellington เป็น lead investor ที่น่าสนใจ. Wellington ปกติเข้าเฉพาะ late-stage private ก่อน IPO. Databricks Stripe SpaceX. การที่ Wellington นำ round นี้แปลว่า Clay น่าจะ file S-1 ภายใน 12 ถึง 18 เดือน. หรืออย่างน้อยอยู่ใน pre-IPO position แล้ว.
+
+pattern ที่เห็น. Cognition 48 พันล้านสำหรับ Devin. Clay 7.1 พันล้าน สำหรับ GTM agent. Sierra 10 พันล้านสำหรับ CX agent. Harvey 5 พันล้านสำหรับ legal agent. Vertical agent platform ทำ valuation แซง horizontal AI infra vendor ที่ทำมาก่อน. Snowflake ใช้ 5 ปีจาก 10 พันล้าน ถึง 70 พันล้าน. Clay Cognition Sierra กำลังบีบเป็น 18 เดือน.
+
+signal สำคัญที่สุดคือ Clay ไม่ใช่ plug-in ของ CRM. Clay เป็น orchestration layer ที่ CRM เป็น downstream sink ตัวหนึ่ง. เมื่อ agent ที่ผลิต pipeline สามารถอยู่เหนือ CRM ได้แล้ว system of record กำลังกลายเป็น system of storage. primary control point ย้ายไปที่ orchestration layer. Salesforce รู้เรื่องนี้. เลยพยายามซื้อ Listen Labs 2 พันล้าน ในสัปดาห์เดียวกัน.
+
+สำหรับผู้ที่สนใจตลาด Thailand หรือ APAC. Clay ยังเข้ามา soft. window เปิดอยู่. บริษัทที่ hire GTM Engineer ใหม่ 1-2 คน จ่าย 2 ถึง 5 พันดอลลาร์ต่อเดือน สำหรับ Clay จะไล่ทัน enterprise ที่ยังใช้ SDR 20 คน กับ Salesforce Outreach หมื่นดอลลาร์ต่อเดือน ในไตรมาสเดียว. role change ต้องมาก่อน tool.
+
+เรื่องที่สอง.
+วันอังคารที่ 9 กันยายน Zscaler ประกาศ Zscaler Agentic SOC ที่ Goldman Sachs conference. Jay Chaudhry ซีอีโอ และ Adam Geller Chief Product Officer วางกรอบเป็น AI-first SOC ที่ purpose-built ตั้งแต่ ground up. ไม่ใช่ SIEM SOAR เดิมที่แปะ Copilot ทับ. แต่คือ operating model ใหม่ที่ agent ทำ workflow แทน analyst โดย default. human เข้ามาเมื่อ escalate เท่านั้น.
+
+bet ที่โดดที่สุดคือ data moat. Zscaler อ้างว่า agent เข้าถึง telemetry 750 พันล้าน zero-trust transaction ต่อวัน. network identity endpoint cloud AI insight. บน customer footprint ของ Zscaler เอง. Fortune 500 หลายพันราย. นี่เป็น context window ที่ Splunk Sentinel QRadar ไม่มี. เพราะเขาเก็บ log ของแต่ละลูกค้าแยกกัน. Zscaler เก็บ trust decision cross-tenant เป็น graph เดียว ที่ agent เรียนได้ทั้งกลุ่ม.
+
+Agent แบ่งเป็น 4 ตัว. Triage agent วิเคราะห์ alert. Root-cause investigation agent pivot signal ไปหาต้นเหตุ. Verdict assignment agent ตัดสิน true false positive. Response workflow agent trigger containment. ทั้ง 4 ถูก train บน experience 10 ปี ของทีม frontline SOC MDR threat hunting ของ Zscaler เอง.
+
+จุดที่น่าสนใจกว่าคือ partnership. Zscaler ประกาศชัดว่า wire frontier model ของทั้ง Anthropic และ OpenAI เข้ากับ proprietary threat intelligence. ครั้งแรกที่ security vendor ระดับ hyperscale ประกาศใช้ dual frontier model. ไม่ใช่ single-lab lock-in. security workload มี requirement redundancy กับ benchmarking ที่ single model API ไม่ตอบได้เดี่ยวๆ.
+
+Zscaler บอก available globally now. ไม่มี preview ไม่มี early-access ไม่มี waitlist. ยิงตรงเข้า enterprise procurement cycle ที่ CISO กำลังวาง budget ปี 2027. Timing 6 ถึง 8 สัปดาห์ก่อน RFP ปิด. ไม่ใช่บังเอิญ.
+
+signal ที่คมสามชั้น. ชั้นแรก SIEM หมดยุค. Splunk ที่ Cisco จ่าย 28 พันล้านซื้อไปกำลังโดน bet ผิด direction. Microsoft Security Copilot ที่วางบน Sentinel ต้อง re-architect. Splunk M&A จะกลายเป็น SolarWinds Symantec ของ security decade นี้.
+
+ชั้นที่สอง dual-lab partnership เป็น default ใหม่. Vertical AI startup ที่ pitch based on GPT-5 หรือ powered by Claude ต้องเตรียม multi-model story ก่อน sales call.
+
+ชั้นที่สาม SOC analyst hiring plateau. Tier 1 role จะ shrink. junior headcount ปี 2027 2028 อาจไม่โตหรือลดจริง. demand สำหรับ senior agent supervisor และ threat hunter ที่ handle escalation จะขึ้น.
+
+สำหรับผู้ที่ evaluate security agent อยู่. อย่ารีบ commit vendor. รอ 60 ถึง 90 วันให้ Palo Alto CrowdStrike Microsoft ตอบก่อน. เพราะสัปดาห์นี้ Zscaler ตั้ง benchmark ที่ทุกคนต้อง match. RFP ควรถามเรื่อง dual-frontier model plan telemetry footprint agent training data years. และ migration path เมื่อ frontier lab เปลี่ยน pricing policy.
+
+เรื่องที่สาม.
+วันอังคารที่ 9 กันยายน Business Insider เปิดข่าว. Salesforce กำลังคุย acquisition Listen Labs ที่ราคาประมาณ 2 พันล้าน. Salesforce ยังไม่ยืนยันเป็นทางการ. แต่ report ยันว่าเข้า advanced stage แล้ว.
+
+Listen Labs สร้างขึ้นปี 2024 โดย co-founder 3 คน Y Combinator alumni. ทำ AI-powered customer research platform. core product คือ voice AI agent ที่ทำ interview กับ survey แบบ conversational กับลูกค้าจริง. แล้ว distill เป็น structured insight สำหรับ product team. ลูกค้าที่ public reference มี Anthropic Chime Uber Duolingo Reddit. ใช้ Listen Labs แทน UserTesting Qualtrics dscout. value proposition ตรงคือ interview 1000 คนในหนึ่งสัปดาห์. ราคาน้อยกว่า 10% ของ agency แบบเก่า. เพราะ voice agent คุยได้ 24 ชั่วโมง 7 วัน พร้อมกัน 500 ถึง 1000 session.
+
+valuation กระโดดจาก 500 ล้าน ที่ round ต้นปี ถึง 2 พันล้าน. premium 4 เท่าใน 8 เดือน. ราคานี้ไม่ใช่ outlier. Sierra จาก 4 พันล้าน ถึง 10 พันล้านใน 12 เดือน. Cognition จาก 10 พันล้าน ถึง 48 พันล้านใน 8 เดือน.
+
+Listen Labs เป็น AI acquisition ที่ 4 ของ Salesforce ปีนี้. ตามหลัง Fin support AI. Informatica 8 พันล้าน data catalog. Convergence agent orchestration. อัตราการซื้อของ Salesforce ปีนี้ 1 deal ต่อไตรมาส. ต่างจากปีก่อนที่ Benioff public บอกว่าจะ focus on organic AI.
+
+CRM stock ตก 2% หลัง report. public market เริ่มเบื่อ acquisition spree. กังวล integration risk margin compression. แต่ Benioff เดินหน้า. เพราะเชื่อว่า window ของ agentic AI vertical กำลังปิด. ถ้าไม่ซื้อ Listen Labs ตอนนี้. อีก 6 เดือน Anthropic OpenAI Perplexity อาจกลืน category ด้วย free-tier feature.
+
+Salesforce กำลังเดิน M&A moat playbook แบบ Cisco ปี 1997 ถึง 2005. Cisco ในยุค router boom ซื้อ startup ให้ก่อน architecture change แต่ละครั้ง. เพื่อ lock-in enterprise procurement. Salesforce ทำเหมือนกันกับ AI. ซื้อ vertical agent data layer research layer integration layer ทั้งหมด. ทำให้ CIO ที่ commit Agentforce ไม่มีเหตุผลจะประเมิน competitor. Cisco ปีนั้นทำ market cap จาก 50 พันล้าน ถึง 500 พันล้านใน 6 ปี. Salesforce หวัง repeat.
+
+สำหรับผู้ที่ประเมิน customer research tool อยู่. อย่าเพิ่ง sign 3 ปี contract กับ Qualtrics UserTesting. รอ Salesforce ซื้อ Listen Labs ปิด. แล้วประเมิน Agentforce bundle. บริษัทที่ใช้ Salesforce อยู่แล้ว potential saving 50 ถึง 500 พันดอลลาร์ต่อปี.
+
+สำหรับ vertical AI startup ที่มี traction. exit path เปิด. Sales force Adobe ServiceNow Oracle reach out อยู่. Listen Labs 8 เดือนถึง 2 พันล้าน เป็น baseline ใหม่ของ vertical agent M&A. seller market. founder ที่มี revenue ควร recognize ว่าใน 12 ถึง 18 เดือน ราคาจะเปลี่ยนได้เร็ว.
+
+เรื่องที่สี่.
+วันจันทร์ที่ 8 กันยายน Google Threat Intelligence Group ปล่อย update ของ AI Threat Tracker. รายงานฉบับนี้ base บน incident response data ไตรมาส 2 ปี 2026 ทั่ว customer base ของ Mandiant กับ Google Cloud.
+
+case study ที่ Google highlight เป็น สัญญาณเชิง operational. Mandiant investigator สืบสวน incident หนึ่ง. attacker compromise cloud environment ของ organization. แล้วใช้ compute กับ credential access ของ tenant นั้น plan build run multi-agent credential harvesting campaign. เก็บ credential ได้หลักพัน. ทั้งหมดในเวลาต่ำกว่า 6 ชั่วโมง.
+
+Agent ในระบบถูก wire ให้ทำ 3 บทบาท. หนึ่ง scanning pipeline management coordinate reconnaissance ข้าม service. สอง operational error handling เมื่อ scan fail agent retry adapt. สาม credential harvesting extract credential จาก compromised system อัตโนมัติ.
+
+ก่อนหน้านี้ Google Anthropic OpenAI Microsoft เคย publish threat report ที่บันทึกว่า attacker ใช้ LLM สำหรับ prompt-level task. เขียน phishing email debug malware code translate reconnaissance output. นี่คือครั้งแรกที่ Google ยืนยัน multi-agent framework ถูกใช้ตลอดวงจรของ attack chain. Mandiant เรียก pattern นี้ว่า agentic attack อย่างเป็นทางการ.
+
+Google note ว่ายังไม่เห็น fully autonomous end-to-end pipeline ที่ exploit zero-day. Activity ที่เห็นส่วนใหญ่ยังเป็น gradual improvement. การใช้ known vulnerability เร็วขึ้น. automated reconnaissance ที่ scale ขึ้น. social engineering ที่ personalize ขึ้น. แต่ operational maturity เปลี่ยนไป. 6 ชั่วโมงเพื่อจบ campaign ที่ปกติต้องใช้ 3 ถึง 5 วัน. คือ compression ที่บังคับให้ defender ต้อง shift จาก day-scale ไปเป็น hour-scale.
+
+Timing น่าสังเกต. GTIG report ออกก่อน Zscaler Agentic SOC ประกาศ 1 วัน. ก่อน CrowdStrike Palo Alto quarterly earnings 1 ถึง 2 สัปดาห์. Google กำลัง coordinate messaging. agentic threat real. defender need agentic response.
+
+signal ที่ต้องจับ. หนึ่ง 6 ชั่วโมง credential harvest คือ inflection point. playbook incident response แบบ manual escalation ticket CISO review containment ไม่ทันแล้ว. business justification ที่แข็งสำหรับ Agentic SOC.
+
+สอง multi-agent framework กำลังกลายเป็น dual-use technology. LangGraph CrewAI AutoGen Microsoft Agent Framework MCP registry threat actor ใช้ stack เดียวกัน. framework maintainer จะโดน pressure จาก policy maker EU US ASEAN ให้ implement abuse detection agent identity signing ภายใน 12 เดือน. MCP registry อาจต้อง introduce trust tier คล้าย SSL certificate authority.
+
+สาม cloud compute credential fabric attacker leverage. attacker ใช้ compute ของเหยื่อเอง. ไม่ต้อง infrastructure ตัวเอง. traditional egress detection กันไม่ทัน. AWS Azure Google Cloud ต้อง introduce compute-level anomaly detection.
+
+สำหรับผู้ที่ deploy agent อยู่. budget agentic SOC ต้องขึ้นเป็น line item แยก. commit อย่างน้อย 1 agentic detection platform ภายใน 2 ไตรมาส. ถ้าไม่ทำ regulator PDPA จะจับตอน audit. บริษัทที่ handle personal data ควรเริ่ม document agent identity provenance audit trail ตั้งแต่วันนี้.
+
+ทั้งหมดนี้คือ brief ของรอบนี้. ขอให้วันนี้เป็นวันที่ดีครับ. แล้วเจอกันรอบหน้า.
