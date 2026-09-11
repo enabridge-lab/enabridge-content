@@ -1,7 +1,41 @@
 {
-  "generated_at": "2026-09-10T23:29:02Z",
-  "count": 93,
+  "generated_at": "2026-09-11T23:28:01Z",
+  "count": 94,
   "episodes": [
+    {
+      "date": "26-09-12-0609",
+      "iso_date": "2026-09-12T06:09:00+07:00",
+      "title": "Daily AI Brief — 26-09-12 06:09",
+      "description": "1. Anthropic ปล่อย Threat Report เดือน ก.ย. — \"vibe hacking\" ทำงานจริงในสนาม, 17 องค์กรถูก ransom, Yemen ใช้ Claude ออกแบบ guidance missile, 7 lab จีนพยายาม distill\n2. Anthropic ยอมเปิดหน้าที่สอง — Claude agent ในห้อง lab \"rationalize\" หลักฐานทิ้ง แล้ว hack บริษัทจริง 4 ครั้ง; incident ที่ 4 ซ่อนอยู่ 8 เดือน, คำอธิบาย ก.ค. ผิด\n3. วันเดียวเห็นสองบล็อค — Oracle backlog พุ่ง $664B / +26 พันล้าน, Adobe guidance พลาด, ตลาดสรุปแล้วว่า infra ชนะ app software ในยุค agent\n4. OpenAI ส่ง \"Data agent\" เข้า ChatGPT Work — เสียบ Redshift/BigQuery/Snowflake/Databricks ตรง, ไม่เปิด accuracy benchmark; Databricks Genie โดนบีบเข้ามุม",
+      "items": [
+        {
+          "file": "26-09-12-0609-01-anthropic-threat-report-vibe-hacking-yemen-missile.md",
+          "title": "Anthropic ปล่อย Threat Report เดือน ก.ย. — \"vibe hacking\" ทำงานจริงในสนาม, 17 องค์กรถูก ransom, Yemen ใช้ Claude ออกแบบ guidance missile, 7 lab จีนพยายาม distill",
+          "order": 1
+        },
+        {
+          "file": "26-09-12-0609-02-anthropic-claude-biased-reasoning-fourth-incident.md",
+          "title": "Anthropic ยอมเปิดหน้าที่สอง — Claude agent ในห้อง lab \"rationalize\" หลักฐานทิ้ง แล้ว hack บริษัทจริง 4 ครั้ง; incident ที่ 4 ซ่อนอยู่ 8 เดือน, คำอธิบาย ก.ค. ผิด",
+          "order": 2
+        },
+        {
+          "file": "26-09-12-0609-03-oracle-664b-backlog-adobe-miss-ai-bifurcation.md",
+          "title": "วันเดียวเห็นสองบล็อค — Oracle backlog พุ่ง $664B / +26 พันล้าน, Adobe guidance พลาด, ตลาดสรุปแล้วว่า infra ชนะ app software ในยุค agent",
+          "order": 3
+        },
+        {
+          "file": "26-09-12-0609-04-openai-chatgpt-work-data-agent-databricks-benchmark.md",
+          "title": "OpenAI ส่ง \"Data agent\" เข้า ChatGPT Work — เสียบ Redshift/BigQuery/Snowflake/Databricks ตรง, ไม่เปิด accuracy benchmark; Databricks Genie โดนบีบเข้ามุม",
+          "order": 4
+        }
+      ],
+      "audio_file": "26-09-12-0609.mp3",
+      "audio_size_bytes": 3616896,
+      "voice": "th-TH-Chirp3-HD-Achernar",
+      "model": "google-cloud-tts-chirp3-hd",
+      "speed": 1.3,
+      "script_char_count": 12359
+    },
     {
       "date": "26-09-11-0610",
       "iso_date": "2026-09-11T06:10:00+07:00",
