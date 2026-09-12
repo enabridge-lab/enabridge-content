@@ -1,7 +1,41 @@
 {
-  "generated_at": "2026-09-10T23:29:02Z",
-  "count": 93,
+  "generated_at": "2026-09-12T23:25:40Z",
+  "count": 94,
   "episodes": [
+    {
+      "date": "26-09-13-0609",
+      "iso_date": "2026-09-13T06:09:00+07:00",
+      "title": "Daily AI Brief — 26-09-13 06:09",
+      "description": "1. Visa + Mastercard + Ant International เปิด \"Know-Your-Agent\" (KYA) — 3 protocol คู่แข่งยอมมาโต๊ะเดียว, agentic commerce เข้าเฟส standardized\n2. OpenAI เปิด Agents API เป็น public beta — Codex harness กลายเป็นบริการ, sandbox 9 ค่ายพร้อมยิง, กติกา builder เปลี่ยนอีกครั้ง\n3. Positron ระดม $875M ที่ $5B — เอา commodity memory ไปท้า HBM ในตลาด inference; Jim Clark กลับมา, Oracle เดินขบวนแรก\n4. Google ADK ได้ CVE เต็มสิบ (RCE ไม่ต้อง auth) พร้อมกับที่ VC ยิง $435M เข้า agent security 12 deal ใน 5 เดือน — attack surface กับ defense stack โตพร้อมกัน",
+      "items": [
+        {
+          "file": "26-09-13-0609-01-kya-framework-ant-visa-mastercard-agent-commerce.md",
+          "title": "Visa + Mastercard + Ant International เปิด \"Know-Your-Agent\" (KYA) — 3 protocol คู่แข่งยอมมาโต๊ะเดียว, agentic commerce เข้าเฟส standardized",
+          "order": 1
+        },
+        {
+          "file": "26-09-13-0609-02-openai-agents-api-public-beta-managed-runtime.md",
+          "title": "OpenAI เปิด Agents API เป็น public beta — Codex harness กลายเป็นบริการ, sandbox 9 ค่ายพร้อมยิง, กติกา builder เปลี่ยนอีกครั้ง",
+          "order": 2
+        },
+        {
+          "file": "26-09-13-0609-03-positron-875m-inference-chip-memory-first-oracle.md",
+          "title": "Positron ระดม $875M ที่ $5B — เอา commodity memory ไปท้า HBM ในตลาด inference; Jim Clark กลับมา, Oracle เดินขบวนแรก",
+          "order": 3
+        },
+        {
+          "file": "26-09-13-0609-04-google-adk-cve-agent-security-435m-funding-wave.md",
+          "title": "Google ADK ได้ CVE เต็มสิบ (RCE ไม่ต้อง auth) พร้อมกับที่ VC ยิง $435M เข้า agent security 12 deal ใน 5 เดือน — attack surface กับ defense stack โตพร้อมกัน",
+          "order": 4
+        }
+      ],
+      "audio_file": "26-09-13-0609.mp3",
+      "audio_size_bytes": 3881952,
+      "voice": "th-TH-Chirp3-HD-Achernar",
+      "model": "google-cloud-tts-chirp3-hd",
+      "speed": 1.3,
+      "script_char_count": 12982
+    },
     {
       "date": "26-09-11-0610",
       "iso_date": "2026-09-11T06:10:00+07:00",

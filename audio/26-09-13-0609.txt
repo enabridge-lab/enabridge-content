@@ -1,0 +1,82 @@
+สวัสดีครับ นี่คือ Enabridge AI Brief รอบ 13 September 2026 เวลา 06:09 ครับ.
+รอบนี้มี 4 เรื่อง เน้น Agentic AI, business use case, และ trend ที่เอามาใช้กับ OpenBridge ได้.
+
+เรื่องแรก.
+วันพุธและพฤหัส เก้าถึงสิบกันยายน. Ant International Visa Mastercard ประกาศร่วมกันว่าจะสร้าง framework ชื่อ Know Your Agent หรือ KYA เพื่อให้ AI agent ที่ไปซื้อของแทนคน onboard และยืนยันตัวตนได้ข้าม network. Visa มี Trusted Agent Protocol ของตัวเอง. Mastercard มี Verifiable Intent. Ant มี Agentic Mobile Protocol. สามค่ายจะ align มา common principle เดียวกัน.
+
+ตัวเลขที่ทั้งสามยกมาน่าสนใจ. Agent จะ orchestrate consumer commerce สามถึงห้าล้านล้านเหรียญทั่วโลกภายในปี 2030. เก้าสิบเปอร์เซ็นต์ของ enterprise บอกว่า bot management เป็น major challenge. หนึ่งแสนล้านเหรียญต่อปี เสียหายจาก outdated identity control ทั้ง fraud และ false decline.
+
+Jiang Ming Yang Chief Innovation Officer ของ Ant ให้คำที่ควรจับ. richer signals. แปลว่า KYA ไม่ใช่แค่บอกว่า agent ตัวนี้ใคร ของ vendor ไหน แต่จะรวม behavior signal ที่ network ทั้งสามมีอยู่แล้ว. transaction pattern. device fingerprint. spend velocity. geographic anomaly. รวมเข้าเป็นสัญญาณ trust แบบ real time.
+
+ยังเป็น principles alignment ไม่ใช่ merged spec เดียว. ยังไม่มี timeline ปิด. แต่การที่ Visa Mastercard Ant มายืนบนเวทีเดียวกันในเรื่อง identity ยังไม่เคยเกิดขึ้นเลยตั้งแต่สาม D Secure ปี 2001. ตอนนั้น Visa เริ่มก่อน แล้ว Mastercard JCB AmEx ตามเข้า EMVCo. e-commerce online payment ได้ authentication framework เดียว. fraud loss ลดจากศูนย์จุดสามเปอร์เซ็นต์เหลือศูนย์จุดศูนย์ห้าในห้าปี. KYA ในบริบท agent มีศักยภาพเป็น 3DS 2.0 for agent.
+
+pattern ที่ต้องอ่านคือ payment rail incumbent เข้ามา own agent identity ก่อนที่ browser LLM vendor หรือ OS จะทำ. ถ้าปล่อยอีก 12 เดือน OpenAI Anthropic Google Apple จะ define agent identity แล้ว payment network จะต้อง comply. Visa Mastercard Ant อยาก define ก่อน.
+
+signal ที่คมกว่าคือ Ant อยู่บนเวทีเดียวกับ US card network. ปกติ Ant Alipay อยู่คนละ sphere กับ Visa Mastercard. การที่ Ant ยอม open protocol เท่ากับยอมรับว่าตลาด Chinese APAC agent commerce จะไม่ closed. และในทางกลับกัน Visa Mastercard ยอมรับว่าถ้าไม่มี Ant ที่ครอบหนึ่งจุดสองพันล้าน active user ก็ไม่มี global standard.
+
+สำหรับผู้สนใจตลาดไทยและ APAC. Ant มี direct pipeline เข้ามาก่อน US network. Alipay+ GrabPay PromptPay agentic checkout จะมาก่อน. SME ไทยที่ใช้ payment provider เหล่านี้ควรถาม roadmap ตั้งแต่ Q4 2026. Stripe Adyen Fiserv Worldpay คาดว่าจะประกาศ KYA support ใน 30-60 วัน.
+
+builder ที่กำลังสร้าง agent commerce framework ต้อง architect identity layer แบบ pluggable. อย่า hardcode protocol ของ network เดียว. เพราะ KYA จะ mandate multi protocol dispatcher. และจับตา agent signed credential pattern ที่ทุก framework จะต้อง sign transaction ด้วย.
+
+เรื่องที่สอง.
+วันที่สิบกันยายน OpenAI ปล่อย Agents API เข้า public beta. ไม่มี event ใหญ่ ไม่มี DevDay stage. แค่ release note. signal ว่านี่คือ infrastructure release ปกติ ไม่ใช่ hype moment.
+
+ตัว API แพ็ค 5 อย่างเข้าเป็นบริการเดียว. Managed Codex harness ที่รัน session ต่อเนื่องได้หลายวัน. automatic context compaction เมื่อใกล้ full. retry policy ต่อกลับให้เอง. sandbox orchestration. และ tool กับ MCP server binding โดยตรง.
+
+quote ของ Amit Kumar Jena ที่ Kanerika frame ได้ดี. long running agent ที่ทำเองต้องมี job queue มี state database มี sandbox fleet มี compaction routine มี retry policy. Fewer moving parts. เดิม builder ที่จะทำ agent จริงต้อง compose 5 layer จาก 5 vendor คนละที่. ตอนนี้ OpenAI ยอมเก็บของ 5 อย่างไปวิ่งให้.
+
+Sandbox partner first class มี 9 ค่าย. Blaxel Cloudflare Dev Daytona DigitalOcean E2B Modal Oracle Cloud Runloop Vercel. Deploy สามทางเลือก. OpenAI managed. sandbox partner. หรือ self VPC. beta ไม่มี additional fee. จ่ายเท่า token usage ปกติ.
+
+pattern ที่เห็นชัดคือ OpenAI absorb orchestration layer เข้าเป็น native. เดิม LangChain LlamaIndex CrewAI Semantic Kernel AutoGen มีตลาดเพราะ OpenAI API แค่ให้ chat completion กับ tool call เดี่ยว ไม่มี state ไม่มี long running session ไม่มี sandbox. Agents API เก็บส่วนที่ orchestration framework ทำอยู่ให้เอง. framework เหลือคุณค่าสองอย่าง. agent design pattern และ portability layer.
+
+signal ที่ควรอ่านคู่กันคือ Anthropic Claude Code update วันที่เก้ากันยายน. Google กำลังผลัก ADK 2.7 แต่ต้อง delay เพราะ CVE 2026 79696. สาม frontier lab กำลัง converge ที่จุดเดียว. agent runtime กลายเป็นบริการ. framework กลายเป็น glue.
+
+จุดคมที่สามคือ sandbox industry กำลังโตขึ้น. E2B Modal Daytona Runloop สี่ค่ายในกลุ่ม first class เป็น sandbox pure play ที่ระดม funding รอบ 50 ถึง 200 ล้านมาแล้วในปีที่ผ่านมา. OpenAI ยอมกำหนดว่าเป็น official partner ทำให้ sandbox layer กลายเป็น commodity ที่ราคาแข่งกันหนัก. Vercel Cloudflare Dev ที่มี dev platform อยู่แล้วจะกินตลาดนี้เร็ว. ตลาด agent sandbox startup อาจ consolidate ภายใน 12 ถึง 18 เดือน.
+
+สำหรับ builder ที่มี agent product อยู่แล้ว. ประเมิน migration cost จาก LangChain CrewAI ไป Agents API. ถ้ารันข้าม OpenAI Anthropic Gemini ให้ชะลอ. ถ้าล็อค OpenAI แล้วให้ย้ายเร็วเพื่อลด infrastructure ownership. MCP server จะกลายเป็น key differentiator เพราะ Agents API bind ตรง.
+
+สำหรับ business ที่ deploy agent ในองค์กร ระวัง procurement risk. Agents API เป็น managed service. lock in สูงกว่า LangChain กับ own infrastructure. ประเมินก่อนย้าย. compliance question. session state OpenAI เก็บที่ไหน. retention เท่าไหร่. EU AI Act หรือ PDPA compliance. ถ้ายังไม่ชัดให้ใช้ self VPC sandbox.
+
+ecosystem framework generic ที่ไม่มี reasoning pattern เฉพาะหรือ vertical domain จะโดนบีบ. hyperscaler ที่ไม่ใช่ Oracle จะต้องประกาศ first class integration ใน 30 ถึง 60 วัน. Azure น่าจะเร็วสุดผ่าน Foundry. Thai cloud อย่าง True IDC INET CAT ที่ทำ AI infra ควรพิจารณาเป็น regional sandbox provider. window เปิดช่วงนี้เท่านั้น.
+
+เรื่องที่สาม.
+วันสิบกันยายน Positron AI ประกาศ Series C 875 ล้านเหรียญ ที่ valuation 5 พันล้าน post money. โครงสร้าง round มีสองชั้น. C 375 ล้าน pre money 3.5 พันล้าน co led โดย NEA Atreides Valor Andra กับ Dylan Patel ที่ SemiAnalysis Capital. C หนึ่ง สูงสุด 500 ล้าน led โดย NEA กับ Jim Clark. Jim Clark ที่เป็น co founder Silicon Graphics และ Netscape.
+
+Bet ที่ contrarian ของ Positron. ใช้ LPDDR5X memory ที่เป็น commodity แทน HBM ที่ Nvidia lock supply ผ่าน SK Hynix Samsung Micron. หลัก architecture คือ inference workload memory bound มากกว่า compute bound. ถ้า design chip ให้ memory bandwidth กับ capacity เยอะ ไม่ต้อง compute density สูงเท่า training chip. Asimov Gen 2 จะมี memory 288 GB ถึง 2,304 GB per chip. เทียบกับ H100 ที่ 80 GB. B200 ที่ 192 GB. capacity ที่กว้างขึ้น แปลว่า model 16 ล้านล้าน parameter รันได้ใน node เดียว ไม่ต้อง shard.
+
+Product ที่วิ่งอยู่แล้ว. Atlas Gen 1 deploy 50 กว่า rack ที่ Oracle Cloud Infrastructure. Customer ยืนยันแล้ว. Parasail. Jump Trading. i3d.net. Positron ยัง cite Anthropic เป็น evaluation partner.
+
+pattern ที่เห็นใน semiconductor stage คือ inference market แยกออกจาก training market. Training ยัง Nvidia dominant. Inference กำลัง fragment ให้ specialist หลายค่าย. Cerebras wafer scale. Groq LPU. SambaNova RDU. Etched Sohu ASIC. และตอนนี้ Positron commodity memory. Reason คือ economics ต่างกัน. Training runs 10K ถึง 100K chip 6 ถึง 12 เดือน. Inference runs 100 ล้าน query ต่อวันตลอดปี. energy กับ memory bandwidth ต่อ query สำคัญกว่า peak FLOPs.
+
+signal ที่คมกว่าคือ Jim Clark กลับมาลงระดับ big check. Clark วางมือจาก tech หลัง Netscape IPO 1995 มา 30 ปี. การกลับมาลง 500 ล้าน anchor round นี้แปลว่า มองเห็น Silicon Graphics moment ในตลาด inference. SGI ยุค 90 ชนะ workstation graphics ด้วย custom silicon ที่ commodity chip ตามไม่ทัน. Positron ทำในทิศตรงกันข้าม. ใช้ commodity memory ไปกด HBM ที่กลายเป็น custom กับ supply locked. playbook ต่างกันแต่ theme เดียวกัน. memory กับ interconnect คือ battleground.
+
+จุดคมที่สาม Oracle เดินเกม supplier diversification เต็มตัว. Oracle Cloud Infrastructure เพิ่งประกาศ 300 พันล้าน deal กับ Nvidia เดือนก่อน. deploy Atlas 50 กว่า rack แปลว่า OCI ไม่ต้องพึ่ง Nvidia ร้อยเปอร์เซ็นต์. AWS Trainium Inferentia. Google TPU. Meta MTIA มี in house silicon อยู่แล้ว. Oracle ที่ไม่มี chip design DNA ต้อง outsource แต่ diversify. Positron เป็น bet แรก. คาดว่าจะตามด้วย Groq หรือ SambaNova ภายในไตรมาส.
+
+สำหรับ builder ที่รัน agent workload. Agent มี characteristic ที่ต่างจาก chatbot. long running session. heavy tool call. repeated context. Positron memory first architecture ตรงกับ agent workload มากกว่า training derived chip. เพราะ agent มี KV cache ที่ยาว มี context ที่ต้อง persist ข้าม turn. Builder ที่วางแผน 6 ถึง 12 เดือนควรถาม cloud vendor ว่ามี Positron Groq SambaNova instance offer ไหม. cost per token ตอน scale อาจถูกกว่า H100 B200 สี่สิบถึงหกสิบเปอร์เซ็นต์ตาม workload.
+
+สำหรับ enterprise ไทย APAC ที่มี data residency requirement ควรถามว่า Oracle Bangkok หรือ Singapore region จะได้ Atlas cluster เมื่อไหร่. น่าจะครึ่งแรกปี 2027. HBM supply crunch ที่เป็น chokepoint ของ Nvidia จะเริ่มถูก question ในบอร์ด Nvidia tax ในตลาด inference กำลังโดนบีบ.
+
+เรื่องที่สี่.
+วันเก้ากันยายน Google Cloud disclose CVE 2026 79696 ที่ scoring CVSS สี่จุดศูนย์เท่ากับสิบจุดศูนย์. Critical สูงสุด. Vulnerability อยู่ใน adk web component ของ Agent Development Kit สำหรับ Python. SDK ที่ Google ผลักเป็น flagship ตั้งแต่ Cloud Next 2025 ให้ enterprise เขียน agent บน Vertex AI Cloud Run และ GKE.
+
+Attack mechanism คือ crafted test session replay data ที่ bypass incomplete denylist ทำให้ arbitrary code execution ในสิทธิ์ของ adk web process. Unauthenticated. Full takeover. Version affected คือ 2.0.0 ถึง 2.6.0 เมื่อ deploy บน Python OSS Cloud Run GKE ที่มี pytest installed. mitigation คือถอด pytest ออกจาก production image หรือ upgrade. CWE class คือ CWE 184 Incomplete List of Disallowed Inputs. Pattern เดียวกับ Log4Shell class ที่ regex กับ string filter miss escape sequence.
+
+พร้อมกันในสัปดาห์เดียว มี aggregate data ที่ Yahoo Finance กับ Forkast รายงาน. ระหว่างเมษายน ถึง กันยายน 2026 VC ปล่อย 435 ล้านดอลลาร์เข้า enterprise AI agent security กับ governance ผ่าน 12 financing rounds. 9 ใน 12 รอบ โฟกัส governance observability runtime security for agent ตรง ๆ. รอบใหญ่ Zenity 125 ล้าน Series C วันสี่สิงหาคม led Norwest Qumra SoftBank Vision Fund 2 Hitachi LG. รวม Zenity กับ Alice ได้ 265 ล้าน คิดเป็น 61 เปอร์เซ็นต์ของ 435 ล้าน.
+
+Statistic ที่บังคับให้ตลาดนี้โต. IDC กับ Lenovo research ระบุว่า 88 เปอร์เซ็นต์ของ enterprise ที่มี agent initiative ไม่เคย ship ไป production. root cause ไม่ใช่ model capability แต่คือ governance security observability cost control ที่ยังทำไม่ได้ในระดับที่ CISO หรือ compliance ยอม sign off.
+
+pattern ที่ต้องอ่านสองด้านพร้อมกัน. CVE 2026 79696 คือ symptom ของ ADK surface expansion. Google ADK ปล่อยเวอร์ชัน 2.0 ต้นปี ship เร็วมาก feature เยอะ community adoption สูง. เก็บ vulnerability ระดับสิบได้ใน 6 เดือน. เทียบกับ LangChain ปี 2023 ที่โดน prompt injection กับ agent hijack เป็นชุด. Auto GPT 2023 ที่ซ้ำ pattern. agent framework ทุกตัวที่เร่ง ship จะได้ CVE class critical ภายใน 12 ถึง 18 เดือน.
+
+signal ที่ VC ยิง 435 ล้านใน 5 เดือน สอดคล้องกับ EDR market timing ปี 2015 ถึง 2018. ตอนนั้น CrowdStrike SentinelOne Carbon Black ระดม funding ระดับใหญ่หลัง breach ระดับ nation state. OPM 2015. Yahoo 2016. Equifax 2017. 5 ปีหลังจากนั้น EDR กลายเป็น mandatory procurement มาตรฐาน. Agent security ตอนนี้อยู่ใน early wave 2015 equivalent. pattern บอกว่าจะเป็น mandatory ภายในปี 2028 ถึง 2029.
+
+สาม vector ที่ agent security vendor กำลัง compete. หนึ่ง runtime observability. trace กับ audit trail ของ agent action prompt tool call. Zenity Arize Lasso. สอง access control กับ identity. สิทธิ์ที่ agent ควรมี scope down just in time credential. Alice Prompt Security. สาม policy engine กับ guardrail. content policy action approval hallucination detection. WhyLabs Robust Intelligence NVIDIA NeMo Guardrails.
+
+จุดคมที่สาม cloud provider จะต้อง react. Google ต้อง ship ADK 2.7 พร้อม hardening layer ที่ default safe คาดใน 30 วัน. Microsoft Semantic Kernel กับ AWS Bedrock Agents จะเจอ CVE ของตัวเองใน 60 ถึง 90 วัน. frontier lab อย่าง OpenAI Agents API ที่เพิ่งเปิดจะโดน pressure ให้ ship native audit trail กับ role based access ตั้งแต่ GA.
+
+สำหรับ builder ที่ใช้ Google ADK อยู่ในโปรดักชัน. ถอด pytest ออกจาก production image ทันที หรือ upgrade ADK 2.7 เมื่อออก. check adk web exposure. ถ้ามี public endpoint และมี pytest อยู่ ประเมิน emergency patch window. audit dependency chain. ถ้ามี dev dependency ที่ leak เข้า production image คนอาจโดน similar attack pattern.
+
+สำหรับ enterprise ที่กำลัง deploy agent. เพิ่ม security requirement เข้า RFP. runtime observability audit trail policy engine credential scoping. vendor ที่ไม่มีทั้ง 4 layer ให้ skip. budget เผื่อ agent security tooling สิบถึงสิบห้าเปอร์เซ็นต์ของ agent runtime cost.
+
+สำหรับ enterprise ไทย ที่ต้อง PDPA กับ BOT compliance ควรใช้ 88 เปอร์เซ็นต์ failure stat เป็น anchor ในการต่อรอง vendor. RFP demand governance layer แต่แรก ไม่ใช่หลัง pilot ล้ม. Thailand ETDA PDPC BOT ควรพิจารณา agent runtime observability requirement เข้าใน IT Governance Guideline เวอร์ชันถัดไป. Thai bank กับ insurer ที่ deploy agent กับ PII มี window 6 ถึง 12 เดือนก่อน regulator เข้ามา demand.
+
+ทั้งหมดนี้คือ brief ของรอบนี้. ขอให้วันนี้เป็นวันที่ดีครับ. แล้วเจอกันรอบหน้า.
