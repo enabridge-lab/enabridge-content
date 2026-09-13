@@ -1,0 +1,32 @@
+{
+  "date": "26-09-14-0609",
+  "iso_date": "2026-09-14T06:09:00+07:00",
+  "title": "Daily AI Brief — 26-09-14 06:09",
+  "items": [
+    {
+      "file": "26-09-14-0609-01-salesforce-long-horizon-runtime-hunter-weeks.md",
+      "title": "Salesforce เปิด long-horizon runtime — agent ที่ทำงานเป็นสัปดาห์ ไม่ใช่แค่ chat",
+      "order": 1
+    },
+    {
+      "file": "26-09-14-0609-02-openai-gpt-live-1-voice-api-full-duplex.md",
+      "title": "OpenAI เปิด GPT-Live-1 API ที่ $0.05 ต่อนาที — voice agent economics เปลี่ยนอีกครั้ง",
+      "order": 2
+    },
+    {
+      "file": "26-09-14-0609-03-nvidia-hugging-face-open-data-agents-40-percent.md",
+      "title": "NVIDIA + Hugging Face เปิด Open Data for Agents — 50,000 task trajectories, benchmark +40%",
+      "order": 3
+    },
+    {
+      "file": "26-09-14-0609-04-openai-navier-stokes-10000-agents-parallel.md",
+      "title": "10,000 agents ทำงานขนานกัน 88 ชั่วโมง — OpenAI อ้างแก้ Navier-Stokes สำเร็จ",
+      "order": 4
+    }
+  ],
+  "script_char_count": 5048,
+  "audio_file": "26-09-14-0609.mp3",
+  "voice": "th-TH-Chirp3-HD-Achernar",
+  "model": "google-cloud-tts-chirp3-hd",
+  "speed": 1.3
+}
