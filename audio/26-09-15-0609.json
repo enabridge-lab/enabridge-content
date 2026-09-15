@@ -1,0 +1,32 @@
+{
+  "date": "26-09-15-0609",
+  "iso_date": "2026-09-15T06:09:00+07:00",
+  "title": "Daily AI Brief — 26-09-15 06:09",
+  "items": [
+    {
+      "file": "26-09-15-0609-01-anthropic-claude-financial-advisors-12-connectors.md",
+      "title": "Anthropic เปิด Claude for Financial Advisors — vertical agent เข้าตลาด wealth ด้วย 12 connector",
+      "order": 1
+    },
+    {
+      "file": "26-09-15-0609-02-openai-agents-api-hosted-codex-harness.md",
+      "title": "OpenAI เปิด Agents API ให้ทุกคน — hosted Codex harness เป็น product แล้ว",
+      "order": 2
+    },
+    {
+      "file": "26-09-15-0609-03-abacus-smaug-agentic-100x-cost-open-weight.md",
+      "title": "Abacus.AI ปล่อย Smaug agentic — open-weight ตัดต้นทุน agent 10–100 เท่า",
+      "order": 3
+    },
+    {
+      "file": "26-09-15-0609-04-deadbugz-mcp-metadata-poisoning-supply-chain.md",
+      "title": "Deadbugz — MCP supply-chain campaign ที่รอ 3 tool call แล้วค่อยพิษ",
+      "order": 4
+    }
+  ],
+  "script_char_count": 6284,
+  "audio_file": "26-09-15-0609.mp3",
+  "voice": "th-TH-Chirp3-HD-Achernar",
+  "model": "google-cloud-tts-chirp3-hd",
+  "speed": 1.3
+}
