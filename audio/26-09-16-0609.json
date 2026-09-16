@@ -1,0 +1,32 @@
+{
+  "date": "26-09-16-0609",
+  "iso_date": "2026-09-16T06:09:00+07:00",
+  "title": "Daily AI Brief — 26-09-16 06:09",
+  "items": [
+    {
+      "file": "26-09-16-0609-01-google-antigravity-claude-opus-5-engineers.md",
+      "title": "Google เปิดประตูให้ engineer ทุกคนใช้ Claude Opus 5 ผ่าน Antigravity — เส้นระหว่าง frontier lab เริ่มเบลอ",
+      "order": 1
+    },
+    {
+      "file": "26-09-16-0609-02-dreamforce-agentforce-360-ai-control-plane.md",
+      "title": "Dreamforce Day 1 — Salesforce เปิด Agentforce 360 + AI Control Plane และ ยึดเกม enterprise agent ด้วย 7 ตัวจริง",
+      "order": 2
+    },
+    {
+      "file": "26-09-16-0609-03-anthropic-openai-google-safety-standards-body.md",
+      "title": "สามเจ้าคุยตั้ง AI safety body — แต่ Trump ไม่เอา slowdown; เกม governance เริ่มเดิมพัน",
+      "order": 3
+    },
+    {
+      "file": "26-09-16-0609-04-docusign-mcp-agreement-layer-every-agent.md",
+      "title": "Docusign MCP GA 30 กันยา — สัญญาไป plug ทุก agent, ปิดเกม agreement layer ก่อนคนอื่น",
+      "order": 4
+    }
+  ],
+  "script_char_count": 6356,
+  "audio_file": "26-09-16-0609.mp3",
+  "voice": "th-TH-Chirp3-HD-Achernar",
+  "model": "google-cloud-tts-chirp3-hd",
+  "speed": 1.3
+}

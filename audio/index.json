@@ -1,7 +1,41 @@
 {
-  "generated_at": "2026-09-14T23:23:07Z",
-  "count": 96,
+  "generated_at": "2026-09-15T23:21:56Z",
+  "count": 97,
   "episodes": [
+    {
+      "date": "26-09-16-0609",
+      "iso_date": "2026-09-16T06:09:00+07:00",
+      "title": "Daily AI Brief — 26-09-16 06:09",
+      "description": "1. Google เปิดประตูให้ engineer ทุกคนใช้ Claude Opus 5 ผ่าน Antigravity — เส้นระหว่าง frontier lab เริ่มเบลอ\n2. Dreamforce Day 1 — Salesforce เปิด Agentforce 360 + AI Control Plane และ ยึดเกม enterprise agent ด้วย 7 ตัวจริง\n3. สามเจ้าคุยตั้ง AI safety body — แต่ Trump ไม่เอา slowdown; เกม governance เริ่มเดิมพัน\n4. Docusign MCP GA 30 กันยา — สัญญาไป plug ทุก agent, ปิดเกม agreement layer ก่อนคนอื่น",
+      "items": [
+        {
+          "file": "26-09-16-0609-01-google-antigravity-claude-opus-5-engineers.md",
+          "title": "Google เปิดประตูให้ engineer ทุกคนใช้ Claude Opus 5 ผ่าน Antigravity — เส้นระหว่าง frontier lab เริ่มเบลอ",
+          "order": 1
+        },
+        {
+          "file": "26-09-16-0609-02-dreamforce-agentforce-360-ai-control-plane.md",
+          "title": "Dreamforce Day 1 — Salesforce เปิด Agentforce 360 + AI Control Plane และ ยึดเกม enterprise agent ด้วย 7 ตัวจริง",
+          "order": 2
+        },
+        {
+          "file": "26-09-16-0609-03-anthropic-openai-google-safety-standards-body.md",
+          "title": "สามเจ้าคุยตั้ง AI safety body — แต่ Trump ไม่เอา slowdown; เกม governance เริ่มเดิมพัน",
+          "order": 3
+        },
+        {
+          "file": "26-09-16-0609-04-docusign-mcp-agreement-layer-every-agent.md",
+          "title": "Docusign MCP GA 30 กันยา — สัญญาไป plug ทุก agent, ปิดเกม agreement layer ก่อนคนอื่น",
+          "order": 4
+        }
+      ],
+      "audio_file": "26-09-16-0609.mp3",
+      "audio_size_bytes": 1721664,
+      "voice": "th-TH-Chirp3-HD-Achernar",
+      "model": "google-cloud-tts-chirp3-hd",
+      "speed": 1.3,
+      "script_char_count": 6356
+    },
     {
       "date": "26-09-15-0609",
       "iso_date": "2026-09-15T06:09:00+07:00",
