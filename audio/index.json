@@ -1,7 +1,41 @@
 {
-  "generated_at": "2026-09-15T23:21:56Z",
-  "count": 97,
+  "generated_at": "2026-09-16T23:22:20Z",
+  "count": 98,
   "episodes": [
+    {
+      "date": "26-09-17-0609",
+      "iso_date": "2026-09-17T06:09:00+07:00",
+      "title": "Daily AI Brief — 26-09-17 06:09",
+      "description": "1. Salesforce ประกาศ AIforce — \"AI replaces the UI\" เปิดข้อมูล CRM ให้ Claude, Slack, Amazon Q ใช้ตรง\n2. Salesforce + NVIDIA เปิด Koa — CRM reasoning model ที่ต่อ Nemotron ด้วย 27 ปีของข้อมูล CRM\n3. TypeSafe AI ออกจาก stealth $40M seed — เขียนโมเดลใหม่ให้ software เรียกใช้ ไม่ใช่คนคุย\n4. Noetive ออกจาก stealth $41M — เอา world model ไปวางบน $30 ล้านล้านของ physical economy",
+      "items": [
+        {
+          "file": "26-09-17-0609-01-salesforce-aiforce-interface-layer-claude-slack.md",
+          "title": "Salesforce ประกาศ AIforce — \"AI replaces the UI\" เปิดข้อมูล CRM ให้ Claude, Slack, Amazon Q ใช้ตรง",
+          "order": 1
+        },
+        {
+          "file": "26-09-17-0609-02-salesforce-nvidia-koa-crm-reasoning-model.md",
+          "title": "Salesforce + NVIDIA เปิด Koa — CRM reasoning model ที่ต่อ Nemotron ด้วย 27 ปีของข้อมูล CRM",
+          "order": 2
+        },
+        {
+          "file": "26-09-17-0609-03-typesafe-ai-jev-machine-native-40m-seed.md",
+          "title": "TypeSafe AI ออกจาก stealth $40M seed — เขียนโมเดลใหม่ให้ software เรียกใช้ ไม่ใช่คนคุย",
+          "order": 3
+        },
+        {
+          "file": "26-09-17-0609-04-noetive-physical-economy-industrial-world-model-41m.md",
+          "title": "Noetive ออกจาก stealth $41M — เอา world model ไปวางบน $30 ล้านล้านของ physical economy",
+          "order": 4
+        }
+      ],
+      "audio_file": "26-09-17-0609.mp3",
+      "audio_size_bytes": 1225920,
+      "voice": "th-TH-Chirp3-HD-Achernar",
+      "model": "google-cloud-tts-chirp3-hd",
+      "speed": 1.3,
+      "script_char_count": 4163
+    },
     {
       "date": "26-09-16-0609",
       "iso_date": "2026-09-16T06:09:00+07:00",
