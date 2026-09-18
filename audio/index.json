@@ -1,7 +1,41 @@
 {
-  "generated_at": "2026-09-15T23:21:56Z",
-  "count": 97,
+  "generated_at": "2026-09-17T23:22:00Z",
+  "count": 98,
   "episodes": [
+    {
+      "date": "26-09-18-0609",
+      "iso_date": "2026-09-18T06:09:00+07:00",
+      "title": "Daily AI Brief — 26-09-18 06:09",
+      "description": "1. Google เปิด Home API ให้ Claude / Hermes / OpenClaw คุมบ้าน — MCP กลายเป็น consumer protocol ตัวแรกที่มี hyperscaler backing\n2. Anthropic รวม chat + Cowork + Design เป็น \"One Claude\" — เปิด Docs และ Slides beta ยิงตรง Google Workspace + Microsoft 365 Copilot\n3. AGNTCon + MCPCon Europe เปิดที่ Amsterdam วันนี้ — MCP ย้ายจาก Anthropic ไป Linux Foundation จบ, protocol governance เริ่มเป็นทางการ\n4. Wonderful ปิด Series C $550M ที่ valuation $5B — \"AI OS for the enterprise\" กลายเป็น category ใหม่ที่ Insight + Salesforce เข้าเบท",
+      "items": [
+        {
+          "file": "26-09-18-0609-01-google-home-mcp-claude-consumer-smart-home.md",
+          "title": "Google เปิด Home API ให้ Claude / Hermes / OpenClaw คุมบ้าน — MCP กลายเป็น consumer protocol ตัวแรกที่มี hyperscaler backing",
+          "order": 1
+        },
+        {
+          "file": "26-09-18-0609-02-anthropic-one-claude-docs-slides-productivity.md",
+          "title": "Anthropic รวม chat + Cowork + Design เป็น \"One Claude\" — เปิด Docs และ Slides beta ยิงตรง Google Workspace + Microsoft 365 Copilot",
+          "order": 2
+        },
+        {
+          "file": "26-09-18-0609-03-agntcon-mcpcon-europe-linux-foundation-governance.md",
+          "title": "AGNTCon + MCPCon Europe เปิดที่ Amsterdam วันนี้ — MCP ย้ายจาก Anthropic ไป Linux Foundation จบ, protocol governance เริ่มเป็นทางการ",
+          "order": 3
+        },
+        {
+          "file": "26-09-18-0609-04-wonderful-550m-series-c-enterprise-ai-os.md",
+          "title": "Wonderful ปิด Series C $550M ที่ valuation $5B — \"AI OS for the enterprise\" กลายเป็น category ใหม่ที่ Insight + Salesforce เข้าเบท",
+          "order": 4
+        }
+      ],
+      "audio_file": "26-09-18-0609.mp3",
+      "audio_size_bytes": 1492224,
+      "voice": "th-TH-Chirp3-HD-Achernar",
+      "model": "google-cloud-tts-chirp3-hd",
+      "speed": 1.3,
+      "script_char_count": 5120
+    },
     {
       "date": "26-09-16-0609",
       "iso_date": "2026-09-16T06:09:00+07:00",
