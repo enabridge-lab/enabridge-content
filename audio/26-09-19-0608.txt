@@ -1,0 +1,48 @@
+สวัสดีครับ นี่คือ Enabridge AI Brief รอบ 19 September 2026 เวลา 06:08 ครับ.
+รอบนี้มี 4 เรื่อง เน้น Agentic AI, business use case, และ trend ที่เอามาใช้กับ OpenBridge ได้.
+
+เรื่องแรก.
+ข่าวใหญ่วงการ security เช้านี้. ทีมสามคนชื่อ Hacktron AI เพิ่งเปิดเผยเมื่อวานว่า เจาะเข้า OpenAI internal system สำเร็จ ในเวลาน้อยกว่า 72 ชั่วโมง โดยใช้ Claude Opus 5 เป็น engine หลัก. ค่า token รวมกันน้อยกว่า 3,000 ดอลลาร์. bounty ที่ OpenAI จ่ายกลับให้ 6,500 ดอลลาร์. margin เกินสองเท่า ต่อ engagement เดียว.
+
+เส้นทางการเจาะน่าสนใจมาก. เริ่มจาก community forum ของ OpenAI ที่ใช้ Discourse. Hacktron หาเจอว่า image upload แบบ HEIC ของ iPhone ถูก route ผ่าน ImageMagick ที่เรียก library ชื่อ libheif ซึ่งมี heap buffer overflow ที่ยังไม่ patch. Chain สำเร็จก็ pivot จาก forum ไป employee ChatGPT account. ต่อไป Codex. ต่อไป GitHub organization ของ OpenAI. เข้าถึง private repository ได้เลย. แต่ Hacktron ไม่ download อะไรออกมา แค่ demonstrate access.
+
+จุดที่น่ากลัวคือ. ก่อนหน้านั้นทีมลอง Claude Opus 4.8 กับโจทย์เดียวกันหลาย session. โดน ASLR กันอยู่ทุกครั้ง. พอ Opus 5 release วันที่ 24 กรกฎา. ทีมลองใหม่. สำเร็จภายในไม่กี่ชั่วโมง. capability jump ใน 3-4 เดือนพอที่จะเปลี่ยน task จากเจาะไม่ได้ เป็นเจาะได้ในหนึ่งบ่าย.
+
+CEO ของ Gray Swan สรุปประโยคเดียวว่า สำหรับ 200 ดอลลาร์ต่อเดือน ใครก็ตามใช้ tool พวกนี้เจาะบริษัทระดับ OpenAI ได้. ประโยคนี้บีบ economics ของ offensive security ทั้งวงการลง. เมื่อก่อน nation-state ต้องมีทีม 5-10 คน 3-6 เดือน ต่อ zero-day หนึ่งอัน. ตอนนี้ทีม 3 คน 3 วัน หนึ่ง engagement.
+
+สำหรับ founder ไทย. หนึ่ง. ถ้ามี public web endpoint. ต้อง presume breach และ audit stack วันนี้ด้วยเลนส์ ถ้า attacker มี Opus 5 budget 3,000 ดอลลาร์ จะเข้าอะไรได้บ้าง. สอง. patch dependency ที่ CVSS 7 ขึ้นไปใน 48 ชั่วโมง ไม่ใช่ 30 วัน. สาม. โอกาสสำหรับ vendor ไทย คือ package agentic pentest เป็น subscription รายเดือน 5,000-15,000 บาท เข้าถึง SMB tier ที่ Hacktron ไม่ target. Enabridge ทำได้ทันที เพราะแค่ orchestrate Claude กับ Gemini แล้วออก report ภาษาไทย.
+
+เรื่องที่สอง.
+Anthropic ปล่อย metric เมื่อวานที่จะเปลี่ยนวิธีคิดของทั้งวงการเรื่อง agentic AI. Claude เป็น lead ของ R&D task 26% ที่บริษัทเดือนสิงหาคม. ขึ้นจาก 1% เมื่อมีนา. คือ 26 เท่าใน 6 เดือน. ถ้า trajectory นี้ hold. เกินครึ่งของ R&D จะนำโดย model ของตัวเอง ก่อนสิ้นไตรมาส 1 ปีหน้า.
+
+คำว่า lead ใน definition ของ Anthropic คือ. human ตั้งโจทย์ระดับ paragraph. Claude ทำ everything else. ตั้งแต่ literature review. experiment design. code. evaluation. ไปจนถึง writeup. ถ้ารวม collaboration ที่กว้างกว่าคือ. 90% ของ R&D ทั้งหมด ทำร่วมกับ Claude ในระดับใดระดับหนึ่ง.
+
+ตัวเลขที่น่ากลัวกว่านั้นคือ. Anthropic บอกว่ามี 30,000 agent วิ่ง research workload อยู่หลังบ้าน. เทียบกับ headcount human ที่ 1,500 กว่าคน. คือ agent ต่อ human = 20 ต่อ 1 ในกลุ่ม research.
+
+จุดที่สำคัญคือ. เรื่องนี้ไม่ใช่ marketing. เป็น recursive self-improvement ที่เริ่มมี dashboard number update รายเดือน. ก่อนหน้านี้เป็น thought experiment ของ AI safety community. ตอนนี้เป็น metric สาธารณะ.
+
+สำหรับ founder ไทย. ถ้าจะ deploy agent ใน workflow บริษัท. หนึ่ง. ตั้ง metric แบบเดียวกันวันนี้. track % ของ task ที่ AI ทำ leading role vs collaboration vs assist. บริษัทที่ไม่วัด. จะไม่รู้ว่ากำลัง scale หรือ stagnate. สอง. อย่ารอ market ready. deploy narrow agent ใน customer workflow เช่น invoice reconciliation หรือ order intake. แล้ว publish % ของ task ที่ agent lead. metric นี้จะกลายเป็น trust metric ที่ B2B buyer ถามก่อน sign contract. เหมือน uptime ในยุค SaaS.
+
+เรื่องที่สาม.
+Kastle. startup ที่ Y Combinator เคย backed. เพิ่งปิด Series A 24 ล้านดอลลาร์เมื่อวาน โดย Insight Partners นำ. product ที่ขายคือ AI workforce สำหรับ banking operations. ทำงานแบบ AI FTE ที่นั่งอยู่บน core banking system เก่า โดยไม่ต้อง rip and replace ใด ๆ.
+
+Traction ที่เขาบอกคือ ประมวลผลไปแล้ว 1.8 ถึง 2 พันล้านดอลลาร์ในธุรกรรม. customer คือ bank ระดับ largest in the world. แต่ชื่อไม่เปิดเผย.
+
+จุดที่ทำให้ bank buyer sign contract คือ. CIO ของ bank ส่วนใหญ่ไม่กล้าเปลี่ยน core banking ใน career เดียว. ทุก vendor ที่มาบอกให้ migrate core = ถูก reject ทันที. Kastle offer ตรงข้ามพอดี. เก็บ core เดิม เราวางบนสุด ทำ workload. Sales cycle จาก 18 เดือนลงเหลือ 3-6 เดือน.
+
+Pricing model ที่น่าสนใจคือ. per FTE equivalent. bank เข้าใจได้ทันทีเพราะเทียบกับ headcount และ BPO contract โดยตรง. ปกติราคา 20-40% ของ human FTE. CFO sign ได้ใน 1 meeting.
+
+สำหรับ Thai bank และ Southeast Asia. หนึ่ง. pricing model per-FTE จะกลายเป็น standard ในปี 2027. local vendor คนไหน pivot ก่อน จะขาย story ที่ CFO เข้าใจได้ใน 5 นาที. ไม่ต้อง education cycle 6 เดือนเรื่อง compute cost. สอง. workflow ที่ pilot ได้ทันทีคือ consumer loan intake. insurance claim first notice of loss. KYC document verify. อย่าเลือก vendor ที่บังคับ platform migration. หา vendor ที่ deploy บน core เดิมได้. สาม. Enabridge สร้าง Thai localized version ของ Kastle ได้ทันที ถ้ามี team ที่เข้าใจ integration ระดับ transaction กับ ICBS หรือ Silverlake.
+
+เรื่องที่สี่.
+AIUC. บริษัทที่ founder เคยอยู่ Anthropic กับ COO ของ METR. เพิ่งปิด Series A 40 ล้านดอลลาร์ โดย Ribbit Capital นำ. รวมระดมได้ 55 ล้านตั้งแต่ก่อตั้ง. product ที่ขายคือ AIUC-1. standard คล้าย SOC 2 แต่สำหรับ AI agent โดยเฉพาะ.
+
+ทำงานยังไง. แต่ละ audit จะ run agent ผ่านประมาณ 5,000 test. jailbreak, hallucination, data leak. AI ทำ test เอง. sort result. human sign off. ผลลัพธ์คือ report 100 หน้าที่ระบุว่า agent hold up ตรงไหน fail ตรงไหน. enterprise buyer ใช้ใน procurement pipeline. vendor ใช้เป็น marketing collateral.
+
+customer ที่เปิดเผยแล้ว. Cursor. Lovable. Harvey. ElevenLabs. milestone ที่ shift narrative คือ. KPMG กลายเป็น Big 4 รายแรกที่ได้ AIUC-1 certification เมื่อสิงหา. Deloitte EY PwC จะตามใน 6 เดือน ไม่ตามจะโดน RFP ตัด. AIUC-1 เพิ่งเข้าไปอยู่ใน CSA STAR Registry ด้วย. คือได้ mainstream badge ที่ CISO ยอมรับ.
+
+จุดที่สำคัญคือ. SOC 2 ใช้เวลา 10 ปีกว่าจะกลายเป็น enterprise standard. AIUC-1 ใช้เวลา 12 เดือนถึง Big 4 adoption. compression rate 10 เท่า. แปลว่า enterprise buyer พร้อมและต้องการ standard ก่อนที่จะ scale agent deployment. ทุก vendor agentic ที่ target enterprise ปี 2027 จะต้องมี AIUC-1 หรือ equivalent ก่อน sign deal ล้านดอลลาร์ขึ้นไป.
+
+สำหรับ Thai vendor. หนึ่ง. AIUC จะไม่ audit ภาษาไทยในเร็ววันนี้. โอกาสของ local certification body เช่น ETDA หรือ สอวช. คือ port methodology ของ AIUC-1 มา localize สำหรับ Thai language jailbreak. cultural safety. บริบท PDPA. ธปท guideline. vendor ที่ push local standard body ให้ออก equivalent ภายในปี 2027 จะ capture Southeast Asia trust market ก่อน AIUC เข้ามา expand. สอง. ถ้า evaluate agent vendor ให้ deploy ใน workflow critical. require AIUC-1 หรือ equivalent ใน RFP วันนี้เลย. เหมือน SOC 2 ปี 2015. คำถามที่ CISO เพิ่งเริ่มถาม 2 ปี ก่อนกลายเป็น hard gate.
+
+ทั้งหมดนี้คือ brief ของรอบนี้. ขอให้วันนี้เป็นวันที่ดีครับ. แล้วเจอกันรอบหน้า.
