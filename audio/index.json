@@ -1,7 +1,41 @@
 {
-  "generated_at": "2026-09-17T23:22:00Z",
-  "count": 98,
+  "generated_at": "2026-09-18T23:23:30Z",
+  "count": 99,
   "episodes": [
+    {
+      "date": "26-09-19-0608",
+      "iso_date": "2026-09-19T06:08:00+07:00",
+      "title": "Daily AI Brief — 26-09-19 06:08",
+      "description": "1. Hacktron ใช้ Claude Opus 5 เจาะ OpenAI ใน 72 ชม. — token ค่าใช้ต่ำกว่า $3,000, bounty ได้ $6,500\n2. Claude นำ 26% ของ R&D ที่ Anthropic เอง — จาก 1% ในมีนา, 90% ทำ \"ร่วม\" — 30,000 agent วิ่งอยู่หลังบ้าน\n3. Kastle ปิด Series A $24M — Insight นำ, ขาย \"AI FTE\" ที่ deploy บน core banking เก่าโดยไม่ต้อง rip-and-replace, ประมวลผลไปแล้ว $1.8B\n4. AIUC ปิด Series A $40M — Ribbit นำ, สร้าง \"SOC 2 ของ AI agent\" ที่ Cursor/Lovable/Harvey/ElevenLabs ใช้แล้ว, KPMG เพิ่งเป็น Big 4 รายแรกที่ได้ certify",
+      "items": [
+        {
+          "file": "26-09-19-0608-01-hacktron-claude-opus-5-openai-breach-agentic-pentest.md",
+          "title": "Hacktron ใช้ Claude Opus 5 เจาะ OpenAI ใน 72 ชม. — token ค่าใช้ต่ำกว่า $3,000, bounty ได้ $6,500",
+          "order": 1
+        },
+        {
+          "file": "26-09-19-0608-02-anthropic-claude-leads-26-percent-rd.md",
+          "title": "Claude นำ 26% ของ R&D ที่ Anthropic เอง — จาก 1% ในมีนา, 90% ทำ \"ร่วม\" — 30,000 agent วิ่งอยู่หลังบ้าน",
+          "order": 2
+        },
+        {
+          "file": "26-09-19-0608-03-kastle-24m-ai-fte-banking-workforce.md",
+          "title": "Kastle ปิด Series A $24M — Insight นำ, ขาย \"AI FTE\" ที่ deploy บน core banking เก่าโดยไม่ต้อง rip-and-replace, ประมวลผลไปแล้ว $1.8B",
+          "order": 3
+        },
+        {
+          "file": "26-09-19-0608-04-aiuc-40m-agent-certification-soc2.md",
+          "title": "AIUC ปิด Series A $40M — Ribbit นำ, สร้าง \"SOC 2 ของ AI agent\" ที่ Cursor/Lovable/Harvey/ElevenLabs ใช้แล้ว, KPMG เพิ่งเป็น Big 4 รายแรกที่ได้ certify",
+          "order": 4
+        }
+      ],
+      "audio_file": "26-09-19-0608.mp3",
+      "audio_size_bytes": 2078784,
+      "voice": "th-TH-Chirp3-HD-Achernar",
+      "model": "google-cloud-tts-chirp3-hd",
+      "speed": 1.3,
+      "script_char_count": 6644
+    },
     {
       "date": "26-09-18-0609",
       "iso_date": "2026-09-18T06:09:00+07:00",
