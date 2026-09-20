@@ -1,0 +1,32 @@
+{
+  "date": "26-09-21-0610",
+  "iso_date": "2026-09-21T06:10:00+07:00",
+  "title": "Daily AI Brief — 26-09-21 06:10",
+  "items": [
+    {
+      "file": "26-09-21-0610-01-anthropic-100b-arr-ipo-november.md",
+      "title": "Anthropic แตะ $100B annualized revenue — เตรียม IPO พ.ย. ที่ $2T \"ใหญ่ที่สุดในประวัติศาสตร์\"",
+      "order": 1
+    },
+    {
+      "file": "26-09-21-0610-02-hubspot-digital-workers-19-percent-adoption.md",
+      "title": "HubSpot เปิดตัวเลข \"digital workers\" — 19% ของ Pro Plus ใช้ agent แล้ว, actions โต 3.5 เท่า",
+      "order": 2
+    },
+    {
+      "file": "26-09-21-0610-03-plugin4shell-spain-first-agent-breach.md",
+      "title": "Plugin4Shell + Spain filing แรก: สัปดาห์ที่ agent security เจอ \"wake-up call\" คู่ขนาน",
+      "order": 3
+    },
+    {
+      "file": "26-09-21-0610-04-microsoft-autogen-sunset-agent-framework.md",
+      "title": "Microsoft AutoGen เข้าสู่ maintenance mode — 54,000 dev ต้องเลือกทางใหม่",
+      "order": 4
+    }
+  ],
+  "script_char_count": 4530,
+  "audio_file": "26-09-21-0610.mp3",
+  "voice": "th-TH-Chirp3-HD-Achernar",
+  "model": "google-cloud-tts-chirp3-hd",
+  "speed": 1.3
+}
