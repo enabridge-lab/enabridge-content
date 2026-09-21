@@ -1,0 +1,32 @@
+{
+  "date": "26-09-22-0608",
+  "iso_date": "2026-09-22T06:08:00+07:00",
+  "title": "Daily AI Brief — 26-09-22 06:08",
+  "items": [
+    {
+      "file": "26-09-22-0608-01-google-ax-open-agentic-orchestrator.md",
+      "title": "Google เปิดตัว AX — open-source orchestrator สำหรับ agent scale พันล้าน task ต่อ cluster; #1 บน HN 24 ชม.",
+      "order": 1
+    },
+    {
+      "file": "26-09-22-0608-02-anthropic-life-sciences-verification-program.md",
+      "title": "Anthropic ปล่อย Life Sciences Verification Program — ปลดล็อก Mythos/Opus/Sonnet ให้ทีมชีววิทยา; ยอมรับ \"โมเดลใหม่ไม่ต่ำกว่า bioweapon threshold แล้ว\"",
+      "order": 2
+    },
+    {
+      "file": "26-09-22-0608-03-cognition-devin-2b-48b-900m-arr.md",
+      "title": "Cognition (Devin) ปิด $2B Series E ที่ valuation $48B ใน 4 เดือน — ARR run-rate ทะยานจาก $492M → $900M; a16z + Accel นำ; target $4-5B ARR ปี 2027",
+      "order": 3
+    },
+    {
+      "file": "26-09-22-0608-04-bain-capital-1-6b-life-after-agi-fund.md",
+      "title": "Bain Capital Ventures ปิด fund $1.6B ใหญ่ขึ้น 14% เพื่อ bet \"Life After AGI\" — โฟกัส workflow + application layer ไม่ใช่ foundation model",
+      "order": 4
+    }
+  ],
+  "script_char_count": 6091,
+  "audio_file": "26-09-22-0608.mp3",
+  "voice": "th-TH-Chirp3-HD-Achernar",
+  "model": "google-cloud-tts-chirp3-hd",
+  "speed": 1.3
+}
