@@ -1,0 +1,32 @@
+{
+  "date": "26-09-23-0614",
+  "iso_date": "2026-09-23T06:14:00+07:00",
+  "title": "Daily AI Brief — 26-09-23 06:14",
+  "items": [
+    {
+      "file": "26-09-23-0614-01-opus-55-vs-gpt6-sol-price-war.md",
+      "title": "Dueling launch — Anthropic Opus 5.5 กับ OpenAI GPT-6 Sol/Luna ปล่อยห่างกันไม่กี่ชั่วโมง; agent runtime cost ลง 40–58% ในวันเดียว",
+      "order": 1
+    },
+    {
+      "file": "26-09-23-0614-02-salesforce-aiforce-headless-toolkit-mcp.md",
+      "title": "Salesforce ปลด UI ตัวเอง — AIforce + Headless Toolkit เปิดทุก workflow ให้ agent เรียกผ่าน MCP; AgentExchange launch พร้อม Anthropic + Google + Microsoft",
+      "order": 2
+    },
+    {
+      "file": "26-09-23-0614-03-sapiens-aip-agentic-insurance-core.md",
+      "title": "Sapiens เปิดตัว SapiensAIP — AI-native insurance platform ที่ฝัง agent swarm ตั้งแต่ underwriting ยัน claims; migration hub ที่ profile/map/validate/extract ด้วย agent",
+      "order": 3
+    },
+    {
+      "file": "26-09-23-0614-04-reinventing-ai-open-source-ai-employees.md",
+      "title": "Reinventing.AI ปล่อย 8 open-source AI Employees บน MIT — รันบนเครื่องตัวเองผ่าน 11 agent harness; 59 scheduled routines สำหรับ SMB",
+      "order": 4
+    }
+  ],
+  "script_char_count": 6040,
+  "audio_file": "26-09-23-0614.mp3",
+  "voice": "th-TH-Chirp3-HD-Achernar",
+  "model": "google-cloud-tts-chirp3-hd",
+  "speed": 1.3
+}
