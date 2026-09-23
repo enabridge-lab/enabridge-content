@@ -1,0 +1,32 @@
+{
+  "date": "26-09-24-0615",
+  "iso_date": "2026-09-24T06:15:00+07:00",
+  "title": "Daily AI Brief — 26-09-24 06:15",
+  "items": [
+    {
+      "file": "26-09-24-0615-01-bessemer-575b-agentic-fund.md",
+      "title": "Bessemer ปิดกอง $5.75B — $4B growth + $1.75B early — และประกาศ \"agentic operating layer\" คือ thesis หลัก",
+      "order": 1
+    },
+    {
+      "file": "26-09-24-0615-02-un-security-council-ai-briefing.md",
+      "title": "ครั้งแรกที่ frontier AI lab บรีฟ UN Security Council — Amodei, Altman, DeepSeek, Moonshot นั่งโต๊ะเดียวกันขณะ Trump เรียก \"globalist scheme\"",
+      "order": 2
+    },
+    {
+      "file": "26-09-24-0615-03-ande-52m-corporate-entertainment-os.md",
+      "title": "Ande $52M — จอง corporate entertainment $400M/ปีผ่าน agent workflow กับ 60 enterprise รวม Cloudflare / Salesforce / McGraw Hill",
+      "order": 3
+    },
+    {
+      "file": "26-09-24-0615-04-intrinsic-core-apache-robotics.md",
+      "title": "Intrinsic Core open source — Alphabet ปล่อย robotics stack ระดับ manufacturing ใต้ Apache 2.0 ที่ ROSCon 2026",
+      "order": 4
+    }
+  ],
+  "script_char_count": 5469,
+  "audio_file": "26-09-24-0615.mp3",
+  "voice": "th-TH-Chirp3-HD-Achernar",
+  "model": "google-cloud-tts-chirp3-hd",
+  "speed": 1.3
+}
