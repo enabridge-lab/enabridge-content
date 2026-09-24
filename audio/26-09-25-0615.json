@@ -1,0 +1,32 @@
+{
+  "date": "26-09-25-0615",
+  "iso_date": "2026-09-25T06:15:00+07:00",
+  "title": "Daily AI Brief — 26-09-25 06:15",
+  "items": [
+    {
+      "file": "26-09-25-0615-01-alibaba-agentcore-agentic-cloud.md",
+      "title": "Alibaba เปิด AgentCore + Agentic Cloud — reveal full stack \"Model, Harness, Context\" พร้อม 99% task completion และ TCO -70%",
+      "order": 1
+    },
+    {
+      "file": "26-09-25-0615-02-amazon-seller-central-claude-bedrock.md",
+      "title": "Amazon เปิด Seller Central APIs ให้ Claude/Quick เรียก — first-party marketplace ยักษ์ยอมรับต่อสาธารณะว่า 90% ของ seller ใช้ AI นอกอยู่แล้ว",
+      "order": 2
+    },
+    {
+      "file": "26-09-25-0615-03-ema-ai-employees-77m-wipro.md",
+      "title": "Ema ระดม $77M Series B — Wipro deploy AI Employee ถึง 240,000 คน ใน 65 ประเทศ; valuation ขึ้น 4x",
+      "order": 3
+    },
+    {
+      "file": "26-09-25-0615-04-distyl-ai-175m-fortune-500-transformation.md",
+      "title": "Distyl AI ระดม $175M Series B — valuation $1.8B ขึ้น 9x ใน 22 เดือน; Palantir alumni รีดราคา AI transformation ให้ Fortune 500",
+      "order": 4
+    }
+  ],
+  "script_char_count": 4427,
+  "audio_file": "26-09-25-0615.mp3",
+  "voice": "th-TH-Chirp3-HD-Achernar",
+  "model": "google-cloud-tts-chirp3-hd",
+  "speed": 1.3
+}
