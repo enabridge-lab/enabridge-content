@@ -1,7 +1,41 @@
 {
-  "generated_at": "2026-09-22T23:29:31Z",
-  "count": 101,
+  "generated_at": "2026-09-25T23:29:47Z",
+  "count": 102,
   "episodes": [
+    {
+      "date": "26-09-26-0615",
+      "iso_date": "2026-09-26T06:15:00+07:00",
+      "title": "Daily AI Brief — 26-09-26 06:15",
+      "description": "1. Amazon เปิด Seller Central ให้ third-party AI agents — Claude เป็นตัวแรก, OAuth 60 วิ, ยกเว้น ads\n2. 949 Claude agents รันเอง 21 ชั่วโมง เจอ enzyme system ใหม่ที่ยังไม่มีใครรู้จัก — เกิด agentic science จริงเป็นครั้งแรก\n3. Dataiku launch Agent Management — ตัว inventory + observability สำหรับ agent ที่รันข้าม 8 platform, จับ agent sprawl ที่ enterprise เพิ่งเริ่มมองเห็น\n4. Ando ปิด $20M seed สร้าง Slack ที่มี AI agent เป็นสมาชิกทีม — ไม่ใช่ bot, แต่เป็นเพื่อนร่วมงานที่มี identity, permission, memory",
+      "items": [
+        {
+          "file": "26-09-26-0615-01-amazon-seller-central-agents-claude.md",
+          "title": "Amazon เปิด Seller Central ให้ third-party AI agents — Claude เป็นตัวแรก, OAuth 60 วิ, ยกเว้น ads",
+          "order": 1
+        },
+        {
+          "file": "26-09-26-0615-02-claude-949-agents-art-enzyme.md",
+          "title": "949 Claude agents รันเอง 21 ชั่วโมง เจอ enzyme system ใหม่ที่ยังไม่มีใครรู้จัก — เกิด agentic science จริงเป็นครั้งแรก",
+          "order": 2
+        },
+        {
+          "file": "26-09-26-0615-03-dataiku-agent-management-observability.md",
+          "title": "Dataiku launch Agent Management — ตัว inventory + observability สำหรับ agent ที่รันข้าม 8 platform, จับ agent sprawl ที่ enterprise เพิ่งเริ่มมองเห็น",
+          "order": 3
+        },
+        {
+          "file": "26-09-26-0615-04-ando-agent-native-messaging.md",
+          "title": "Ando ปิด $20M seed สร้าง Slack ที่มี AI agent เป็นสมาชิกทีม — ไม่ใช่ bot, แต่เป็นเพื่อนร่วมงานที่มี identity, permission, memory",
+          "order": 4
+        }
+      ],
+      "audio_file": "26-09-26-0615.mp3",
+      "audio_size_bytes": 2161536,
+      "voice": "th-TH-Chirp3-HD-Achernar",
+      "model": "google-cloud-tts-chirp3-hd",
+      "speed": 1.3,
+      "script_char_count": 7601
+    },
     {
       "date": "26-09-23-0614",
       "iso_date": "2026-09-23T06:14:00+07:00",
