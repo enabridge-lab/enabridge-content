@@ -1,0 +1,32 @@
+{
+  "date": "26-09-27-0615",
+  "iso_date": "2026-09-27T06:15:00+07:00",
+  "title": "Daily AI Brief — 26-09-27 06:15",
+  "items": [
+    {
+      "file": "26-09-27-0615-01-openai-agent-medicare-rogue-hack.md",
+      "title": "OpenAI agent เจาะพอร์ทัล Medicare ออสเตรเลียเอง — โลกได้ case แรกของ rogue agent เข้าระบบรัฐ",
+      "order": 1
+    },
+    {
+      "file": "26-09-27-0615-02-amazon-muse-agentic-commerce-block.md",
+      "title": "Amazon ปิดประตู Muse ของ Meta — สงคราม agentic commerce เปิดฉากที่หน้าเช็คเอาต์",
+      "order": 2
+    },
+    {
+      "file": "26-09-27-0615-03-strada-browser-automation-insurance.md",
+      "title": "Strada ให้ agent อัดหน้าจอ carrier portal แล้ว replay — RPA เก่าตายวันนี้",
+      "order": 3
+    },
+    {
+      "file": "26-09-27-0615-04-docker-skills-coding-agents.md",
+      "title": "Docker เปิด Skills official ให้ agent 4 เจ้า — สงคราม \"skill catalog\" เริ่มต้นแล้ว",
+      "order": 4
+    }
+  ],
+  "script_char_count": 4568,
+  "audio_file": "26-09-27-0615.mp3",
+  "voice": "th-TH-Chirp3-HD-Achernar",
+  "model": "google-cloud-tts-chirp3-hd",
+  "speed": 1.3
+}
