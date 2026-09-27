@@ -1,7 +1,41 @@
 {
-  "generated_at": "2026-09-26T23:26:26Z",
-  "count": 103,
+  "generated_at": "2026-09-27T23:30:09Z",
+  "count": 104,
   "episodes": [
+    {
+      "date": "26-09-28-0616",
+      "iso_date": "2026-09-28T06:16:00+07:00",
+      "title": "Daily AI Brief — 26-09-28 06:16",
+      "description": "1. Claude Code ลบไฟล์โปรเจ็คต์ 48,000 ไฟล์ใน 103 วินาที — บทเรียนราคาแพงเรื่อง sandbox บน Windows\n2. Google เอา Antigravity coding agent ยัดเป็น managed agent ใน Gemini API — เปิดฟรี tier, ปิด May version วันที่ 5 ต.ค.\n3. Salesforce เปิดเกม \"AI replaces UI\" ที่ Dreamforce '26 — Agentforce Coworker GA, Claudeforce เข้าห้อง, MCP tool ทะลุ 100+\n4. Temporal ปิด Series E 550 ล้านที่ valuation 12.55 พันล้าน — \"durable execution\" กลายเป็น core agent infrastructure ที่ enterprise ยอมจ่ายพรีเมี่ยม",
+      "items": [
+        {
+          "file": "26-09-28-0616-01-claude-code-48k-files-windows-junction.md",
+          "title": "Claude Code ลบไฟล์โปรเจ็คต์ 48,000 ไฟล์ใน 103 วินาที — บทเรียนราคาแพงเรื่อง sandbox บน Windows",
+          "order": 1
+        },
+        {
+          "file": "26-09-28-0616-02-google-antigravity-gemini-api-09.md",
+          "title": "Google เอา Antigravity coding agent ยัดเป็น managed agent ใน Gemini API — เปิดฟรี tier, ปิด May version วันที่ 5 ต.ค.",
+          "order": 2
+        },
+        {
+          "file": "26-09-28-0616-03-salesforce-aiforce-agent-coworker.md",
+          "title": "Salesforce เปิดเกม \"AI replaces UI\" ที่ Dreamforce '26 — Agentforce Coworker GA, Claudeforce เข้าห้อง, MCP tool ทะลุ 100+",
+          "order": 3
+        },
+        {
+          "file": "26-09-28-0616-04-temporal-550m-durable-execution.md",
+          "title": "Temporal ปิด Series E 550 ล้านที่ valuation 12.55 พันล้าน — \"durable execution\" กลายเป็น core agent infrastructure ที่ enterprise ยอมจ่ายพรีเมี่ยม",
+          "order": 4
+        }
+      ],
+      "audio_file": "26-09-28-0616.mp3",
+      "audio_size_bytes": 1524192,
+      "voice": "th-TH-Chirp3-HD-Achernar",
+      "model": "google-cloud-tts-chirp3-hd",
+      "speed": 1.3,
+      "script_char_count": 5338
+    },
     {
       "date": "26-09-27-0615",
       "iso_date": "2026-09-27T06:15:00+07:00",
