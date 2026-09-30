@@ -1,0 +1,32 @@
+{
+  "date": "26-10-01-0616",
+  "iso_date": "2026-10-01T06:16:00+07:00",
+  "title": "Daily AI Brief — 26-10-01 06:16",
+  "items": [
+    {
+      "file": "26-10-01-0616-01-intelligence-explosion-paper-anthropic-openai.md",
+      "title": "22 นักวิจัย AI แถวหน้าเซ็นชื่อร่วม — เตือน \"intelligence explosion\" อาจเริ่มปี 2028 พร้อมตัวเลขจริงจาก Anthropic ที่ AI เขียนโค้ดแทนมนุษย์แล้ว 80%",
+      "order": 1
+    },
+    {
+      "file": "26-10-01-0616-02-rsa-agent-id-identity-governance-mcp.md",
+      "title": "RSA เปิดตัว \"Agent ID\" — เอา identity infrastructure ที่คุ้นกับ enterprise มายัดเข้า MCP server กับ AI agent ทั้งกอง",
+      "order": 2
+    },
+    {
+      "file": "26-10-01-0616-03-claude-sonnet-55-cross-cloud-agent-model.md",
+      "title": "Claude Sonnet 5.5 — Anthropic ปล่อยรุ่นเร็วขึ้น 30% ราคาเท่าเดิม บน 3 hyperscaler พร้อมกัน = agent runtime ข้าม cloud ราคาลงจริง",
+      "order": 3
+    },
+    {
+      "file": "26-10-01-0616-04-meta-muse-smb-agent-connectors.md",
+      "title": "Meta ปล่อย \"Muse for Small Business\" — agent เข้าถึง Asana, Zoom, Intuit, Box, Canva, Slack, Meta Ads พร้อมกัน — โจมตี segment ที่ OpenAI dots + Salesforce ยังไม่ถึง",
+      "order": 4
+    }
+  ],
+  "script_char_count": 6442,
+  "audio_file": "26-10-01-0616.mp3",
+  "voice": "th-TH-Chirp3-HD-Achernar",
+  "model": "google-cloud-tts-chirp3-hd",
+  "speed": 1.3
+}
