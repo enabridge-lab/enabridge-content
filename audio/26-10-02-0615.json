@@ -1,0 +1,37 @@
+{
+  "date": "26-10-02-0615",
+  "iso_date": "2026-10-02T06:15:00+07:00",
+  "title": "Daily AI Brief — 26-10-02 06:15",
+  "items": [
+    {
+      "file": "26-10-02-0615-01-ibm-bob-self-hosted-sovereign-agentic.md",
+      "title": "IBM เปิด self-hosted deployment ของ Bob — agentic dev platform เข้า air-gapped แล้ว, \"sovereign AI\" กลายเป็น table stakes สำหรับ regulated enterprise",
+      "order": 1
+    },
+    {
+      "file": "26-10-02-0615-02-bloomberg-enterprise-mcp-dl-plus.md",
+      "title": "Bloomberg เปิดตัว Enterprise MCP — Fortune 500 data vendor เจ้าแรกที่ยัด Data License Plus ให้ agent เรียกผ่าน protocol มาตรฐาน",
+      "order": 2
+    },
+    {
+      "file": "26-10-02-0615-03-classie-supervise-agent-governance-ga.md",
+      "title": "Classie เปิด Supervise GA — ให้ CIO/CISO เห็น \"ทั้ง sanctioned + shadow agents\" ภายในองค์กร, real-time policy enforcement + spend attribution",
+      "order": 3
+    },
+    {
+      "file": "26-10-02-0615-04-restate-20m-durable-agent-runtime.md",
+      "title": "Restate ระดม $20M Series A — \"agents need an OS layer\" กลายเป็น thesis ของ VC จริงจัง, Replit Agent รัน durable orchestration อยู่บนนี้",
+      "order": 4
+    },
+    {
+      "file": "26-10-02-0615-05-alibaba-agent-native-cloud-apsara.md",
+      "title": "Alibaba ประกาศ \"Agent Native Cloud\" + AgentCore ที่ Apsara 2026 — จีน (และ SEA) ได้ full-stack agentic infra ที่ไม่ต้องพึ่ง US vendor",
+      "order": 5
+    }
+  ],
+  "script_char_count": 7325,
+  "audio_file": "26-10-02-0615.mp3",
+  "voice": "th-TH-Chirp3-HD-Achernar",
+  "model": "google-cloud-tts-chirp3-hd",
+  "speed": 1.3
+}
