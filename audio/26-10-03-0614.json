@@ -1,0 +1,37 @@
+{
+  "date": "26-10-03-0614",
+  "iso_date": "2026-10-03T06:14:00+07:00",
+  "title": "Daily AI Brief — 26-10-03 06:14",
+  "items": [
+    {
+      "file": "26-10-03-0614-01-google-gemini-4-argon.md",
+      "title": "Google ปล่อย Gemini 4 Argon — ตั้ง DeepSWE 77.9%, ตั้งราคาเท่า GPT-6.1 Sol, เข็นสนาม cyber defense",
+      "order": 1
+    },
+    {
+      "file": "26-10-03-0614-02-meta-muse-gadgets-open-source-hardware.md",
+      "title": "Meta เปิด Muse Gadgets open source — ESP32 firmware + Linux SDK + 5,000 USB-C dongle แจกฟรี, บุก home layer",
+      "order": 2
+    },
+    {
+      "file": "26-10-03-0614-03-armadin-255m-offensive-security.md",
+      "title": "Armadin ปิด Series B $255.5M ที่ valuation $2.5B — Mandia เอา agent swarm บุก offensive security",
+      "order": 3
+    },
+    {
+      "file": "26-10-03-0614-04-inworld-ultravox-voice-stack.md",
+      "title": "Inworld ซื้อ Ultravox — รวม voice agent + model inference เป็น full stack เดียว ยิง sub-100ms ใน 200+ ภาษา",
+      "order": 4
+    },
+    {
+      "file": "26-10-03-0614-05-classie-supervise-agent-governance.md",
+      "title": "Classie เปิด Supervise GA — install 15 นาที, ครบ posture 5 วัน, บุก CIO/CISO ด้วย runtime transcript",
+      "order": 5
+    }
+  ],
+  "script_char_count": 7389,
+  "audio_file": "26-10-03-0614.mp3",
+  "voice": "th-TH-Chirp3-HD-Achernar",
+  "model": "google-cloud-tts-chirp3-hd",
+  "speed": 1.3
+}
