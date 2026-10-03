@@ -1,7 +1,46 @@
 {
-  "generated_at": "2026-10-02T23:28:43Z",
-  "count": 105,
+  "generated_at": "2026-10-03T23:26:35Z",
+  "count": 106,
   "episodes": [
+    {
+      "date": "26-10-04-0615",
+      "iso_date": "2026-10-04T06:15:00+07:00",
+      "title": "Daily AI Brief — 26-10-04 06:15",
+      "description": "1. Anthropic เปิด \"Mods\" ให้ Claude Code — TypeScript middleware ที่ hook เข้า agent ภายใน, ไม่มี sandbox\n2. IBM เปิด Bob แบบ self-hosted — air-gapped coding agent สำหรับ regulated enterprise, หุ้นเด้ง 5%\n3. DigitalOcean วาง Agent Droplets — microVM แบบ Droplet, $50/mo, 16K+ tool, มา challenge AWS Bedrock\n4. LlamaIndex ปล่อย Extract v2.5 — grounding score กระโดด 46.8 → 80.6, schema extraction agent ชั้นใหม่\n5. Yellow.ai เปิด Nexus EDGE — agentic desktop ที่ \"ทำให้เสร็จ\" ไม่ใช่ \"ตอบคำถาม\", ตั้ง category ใหม่ EX Automation",
+      "items": [
+        {
+          "file": "26-10-04-0615-01-anthropic-claude-code-mods-plugins.md",
+          "title": "Anthropic เปิด \"Mods\" ให้ Claude Code — TypeScript middleware ที่ hook เข้า agent ภายใน, ไม่มี sandbox",
+          "order": 1
+        },
+        {
+          "file": "26-10-04-0615-02-ibm-bob-self-hosted-air-gapped.md",
+          "title": "IBM เปิด Bob แบบ self-hosted — air-gapped coding agent สำหรับ regulated enterprise, หุ้นเด้ง 5%",
+          "order": 2
+        },
+        {
+          "file": "26-10-04-0615-03-digitalocean-agent-droplets-managed.md",
+          "title": "DigitalOcean วาง Agent Droplets — microVM แบบ Droplet, $50/mo, 16K+ tool, มา challenge AWS Bedrock",
+          "order": 3
+        },
+        {
+          "file": "26-10-04-0615-04-llamaindex-extract-v25-grounding.md",
+          "title": "LlamaIndex ปล่อย Extract v2.5 — grounding score กระโดด 46.8 → 80.6, schema extraction agent ชั้นใหม่",
+          "order": 4
+        },
+        {
+          "file": "26-10-04-0615-05-yellow-ai-nexus-edge-desktop.md",
+          "title": "Yellow.ai เปิด Nexus EDGE — agentic desktop ที่ \"ทำให้เสร็จ\" ไม่ใช่ \"ตอบคำถาม\", ตั้ง category ใหม่ EX Automation",
+          "order": 5
+        }
+      ],
+      "audio_file": "26-10-04-0615.mp3",
+      "audio_size_bytes": 1536864,
+      "voice": "th-TH-Chirp3-HD-Achernar",
+      "model": "google-cloud-tts-chirp3-hd",
+      "speed": 1.3,
+      "script_char_count": 5512
+    },
     {
       "date": "26-10-03-0614",
       "iso_date": "2026-10-03T06:14:00+07:00",
