@@ -1,0 +1,37 @@
+{
+  "date": "26-10-05-0615",
+  "iso_date": "2026-10-05T06:15:00+07:00",
+  "title": "Daily AI Brief — 26-10-05 06:15",
+  "items": [
+    {
+      "file": "26-10-05-0615-01-microsoft-agent-framework-codeact.md",
+      "title": "Microsoft เปิดไพ่ MAF ที่ BUILD 2026 — CodeAct ตัด latency 52%, token 64% ผ่าน Hyperlight micro-VM",
+      "order": 1
+    },
+    {
+      "file": "26-10-05-0615-02-openai-agents-api-computer-use.md",
+      "title": "OpenAI เปิด Computer Use ใน Agents API — hosted browser ตัวใหม่ อนุมัติต่อ site ไม่ใช่ต่อ action",
+      "order": 2
+    },
+    {
+      "file": "26-10-05-0615-03-synopsys-agentengineer-autopilot.md",
+      "title": "Synopsys ปล่อย Autopilot + AgentEngineer — agent ออกแบบชิปข้าม 7 domain, Intel/Samsung/MediaTek ร่วมโรง, Fujitsu RTL +10-30%",
+      "order": 3
+    },
+    {
+      "file": "26-10-05-0615-04-restate-20m-durable-agents.md",
+      "title": "Restate ปิด Series A $20M — durable execution สำหรับ agent กลายเป็น venture category, อดีตทีม Apache Flink ชน Temporal",
+      "order": 4
+    },
+    {
+      "file": "26-10-05-0615-05-amd-tokenomics-hybrid-ai-pc.md",
+      "title": "AMD เปิด Tokenomics Calculator — hybrid AI PC fleet ประหยัด 40-60%, bank 10K seat ตัด Azure $1.2M/ปี",
+      "order": 5
+    }
+  ],
+  "script_char_count": 5827,
+  "audio_file": "26-10-05-0615.mp3",
+  "voice": "th-TH-Chirp3-HD-Achernar",
+  "model": "google-cloud-tts-chirp3-hd",
+  "speed": 1.3
+}
