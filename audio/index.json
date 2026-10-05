@@ -1,7 +1,46 @@
 {
-  "generated_at": "2026-10-03T23:26:35Z",
-  "count": 106,
+  "generated_at": "2026-10-05T23:29:40Z",
+  "count": 107,
   "episodes": [
+    {
+      "date": "26-10-06-0615",
+      "iso_date": "2026-10-06T06:15:00+07:00",
+      "title": "Daily AI Brief — 26-10-06 06:15",
+      "description": "1. Cohere ปล่อย North 2 — ให้ enterprise agent \"มี memory + ใช้ token ตาม budget\", ลงรัฐบาลผ่าน Carahsoft\n2. ZoomInfo ซื้อ DoubleO.ai แล้วเปิด Agent Teams — ยัดเข้า GTM Studio ไม่ขึ้น SKU, อัด sales workflow 2026\n3. Shopify เปิด Canvas — merchant \"แชต\" กับ Sidekick แล้ว store รัน live code เสร็จใน 20 นาที\n4. Hawley + Murphy เสนอ AI Agent Accountability Act — ขยาย CFAA ลงถึง operator และ developer ของ agent\n5. Claude Code 2.1.289 เปิด agent.spawn — subprocess ที่ปลอดภัยกว่า, deny rule ลง nested compound command ได้แล้ว",
+      "items": [
+        {
+          "file": "26-10-06-0615-01-cohere-north-2-memory-token-caps.md",
+          "title": "Cohere ปล่อย North 2 — ให้ enterprise agent \"มี memory + ใช้ token ตาม budget\", ลงรัฐบาลผ่าน Carahsoft",
+          "order": 1
+        },
+        {
+          "file": "26-10-06-0615-02-zoominfo-agent-teams-doubleo.md",
+          "title": "ZoomInfo ซื้อ DoubleO.ai แล้วเปิด Agent Teams — ยัดเข้า GTM Studio ไม่ขึ้น SKU, อัด sales workflow 2026",
+          "order": 2
+        },
+        {
+          "file": "26-10-06-0615-03-shopify-canvas-sidekick-store.md",
+          "title": "Shopify เปิด Canvas — merchant \"แชต\" กับ Sidekick แล้ว store รัน live code เสร็จใน 20 นาที",
+          "order": 3
+        },
+        {
+          "file": "26-10-06-0615-04-agent-accountability-act-cfaa.md",
+          "title": "Hawley + Murphy เสนอ AI Agent Accountability Act — ขยาย CFAA ลงถึง operator และ developer ของ agent",
+          "order": 4
+        },
+        {
+          "file": "26-10-06-0615-05-claude-code-agent-spawn-subprocess.md",
+          "title": "Claude Code 2.1.289 เปิด agent.spawn — subprocess ที่ปลอดภัยกว่า, deny rule ลง nested compound command ได้แล้ว",
+          "order": 5
+        }
+      ],
+      "audio_file": "26-10-06-0615.mp3",
+      "audio_size_bytes": 1788864,
+      "voice": "th-TH-Chirp3-HD-Achernar",
+      "model": "google-cloud-tts-chirp3-hd",
+      "speed": 1.3,
+      "script_char_count": 6179
+    },
     {
       "date": "26-10-04-0615",
       "iso_date": "2026-10-04T06:15:00+07:00",
