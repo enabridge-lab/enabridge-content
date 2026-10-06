@@ -1,0 +1,37 @@
+{
+  "date": "26-10-07-0616",
+  "iso_date": "2026-10-07T06:16:00+07:00",
+  "title": "Daily AI Brief — 26-10-07 06:16",
+  "items": [
+    {
+      "file": "26-10-07-0616-01-oracle-fusion-claw-runtime.md",
+      "title": "Oracle ปล่อย Fusion Claw — แยก \"AI คิด\" กับ \"เครื่องคำนวณ\" ออกจากกัน แล้ว deploy 25 agent apps เพิ่มทันที",
+      "order": 1
+    },
+    {
+      "file": "26-10-07-0616-02-meta-hatch-watermelon-consumer.md",
+      "title": "Meta เตรียมปล่อย Hatch + Watermelon — ยิง AI agent สำหรับผู้บริโภค $199/เดือน ชนตรง ChatGPT Pro",
+      "order": 2
+    },
+    {
+      "file": "26-10-07-0616-03-vida-outcome-based-billing.md",
+      "title": "Vida เปิด outcome-based billing — ลูกค้าจ่ายเฉพาะเมื่อ agent \"ปิด lead / โอนสาย / ชนะกลับลูกค้า\" สำเร็จ",
+      "order": 3
+    },
+    {
+      "file": "26-10-07-0616-04-reco-55m-agent-security-funding.md",
+      "title": "Reco ปิด $55M จาก AT&T Ventures — pump เงินเข้า \"ตำรวจของ agent\" ขณะ Gartner forecast Fortune 500 จะมี agent 150,000 ตัวต่อ enterprise ภายใน 2028",
+      "order": 4
+    },
+    {
+      "file": "26-10-07-0616-05-davinci-commerce-product-context-memory.md",
+      "title": "DaVinci Commerce ขยาย Product Context Memory — ติด \"ความทรงจำ\" ให้ SKU เพื่อให้ ChatGPT / Gemini แนะนำแบรนด์ตัวเอง",
+      "order": 5
+    }
+  ],
+  "script_char_count": 6005,
+  "audio_file": "26-10-07-0616.mp3",
+  "voice": "th-TH-Chirp3-HD-Achernar",
+  "model": "google-cloud-tts-chirp3-hd",
+  "speed": 1.3
+}
