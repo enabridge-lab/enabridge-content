@@ -1,0 +1,32 @@
+{
+  "date": "26-10-08-0615",
+  "iso_date": "2026-10-08T06:15:00+07:00",
+  "title": "Daily AI Brief — 26-10-08 06:15",
+  "items": [
+    {
+      "file": "26-10-08-0615-01-mcp-dev-summit-toronto-scope-line.md",
+      "title": "MCP Dev Summit Toronto — ผู้ดูแลโปรโตคอลลาก \"scope line\" กลางห้อง: identity, governance, observability ไม่ใช่ของเรา",
+      "order": 1
+    },
+    {
+      "file": "26-10-08-0615-02-ox-security-15465-mcp-servers.md",
+      "title": "OX Security: 15,465 MCP server สาธารณะ, 0 governance — เอเจนต์คุณกำลังต่อ tool กับโฮมเน็ตเวิร์กที่ไหนไม่รู้",
+      "order": 2
+    },
+    {
+      "file": "26-10-08-0615-03-gemini-4-argon-fairwind-rollout.md",
+      "title": "Gemini 4 Argon ปล่อย 7 วันแล้ว แต่คุณยังเรียกไม่ได้ — Google เปลี่ยน \"GA\" เป็น \"trusted defenders first\"",
+      "order": 3
+    },
+    {
+      "file": "26-10-08-0615-04-anthropic-cvp-mythos-pentest-expansion.md",
+      "title": "Anthropic Cyber Verification Program — Picus, Ridge, Escape, BreachLock เข้าแถว; \"Mythos-class\" กลายเป็น commercial access tier",
+      "order": 4
+    }
+  ],
+  "script_char_count": 5114,
+  "audio_file": "26-10-08-0615.mp3",
+  "voice": "th-TH-Chirp3-HD-Achernar",
+  "model": "google-cloud-tts-chirp3-hd",
+  "speed": 1.3
+}
