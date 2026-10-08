@@ -1,7 +1,46 @@
 {
-  "generated_at": "2026-10-06T23:30:36Z",
-  "count": 108,
+  "generated_at": "2026-10-08T23:29:10Z",
+  "count": 109,
   "episodes": [
+    {
+      "date": "26-10-09-0615",
+      "iso_date": "2026-10-09T06:15:00+07:00",
+      "title": "Daily AI Brief — 26-10-09 06:15",
+      "description": "1. Google เปิด \"Gemini agent\" — universal agent ที่คุณสั่งเป้าหมาย แล้วมันคิดวางแผน, สร้าง sub-agent, และทำงานต่อแม้ปิดจอ\n2. Instinct ปิด $1B Series C ที่ valuation $10B ภายในเดือนเดียว — personal AI agent moment มาถึงจริงแล้วรึยัง\n3. FieldAI เซ็น term sheet $700M ที่ $10B — \"universal brain\" ตัวเดียวที่สั่งหุ่น humanoid, dog, drone, rover ได้โดยไม่ต้องมี GPS / wifi\n4. Kevin Mandia เปิด Armadin — $255.5M Series B ที่ $2.5B 7 เดือนหลังออกจาก stealth แล้ว Fortune 500 ใช้งานจริงแล้ว\n5. EliseAI ปิด $350M ที่ $4B — \"1 ใน 6 US apartments\" + $200M ARR + Apollo agent ตัวใหม่ สำหรับ housing และ healthcare",
+      "items": [
+        {
+          "file": "26-10-09-0615-01-google-gemini-agent-work.md",
+          "title": "Google เปิด \"Gemini agent\" — universal agent ที่คุณสั่งเป้าหมาย แล้วมันคิดวางแผน, สร้าง sub-agent, และทำงานต่อแม้ปิดจอ",
+          "order": 1
+        },
+        {
+          "file": "26-10-09-0615-02-instinct-personal-ai-agent-1b.md",
+          "title": "Instinct ปิด $1B Series C ที่ valuation $10B ภายในเดือนเดียว — personal AI agent moment มาถึงจริงแล้วรึยัง",
+          "order": 2
+        },
+        {
+          "file": "26-10-09-0615-03-fieldai-robot-brain-700m.md",
+          "title": "FieldAI เซ็น term sheet $700M ที่ $10B — \"universal brain\" ตัวเดียวที่สั่งหุ่น humanoid, dog, drone, rover ได้โดยไม่ต้องมี GPS / wifi",
+          "order": 3
+        },
+        {
+          "file": "26-10-09-0615-04-armadin-agentic-security-mandia.md",
+          "title": "Kevin Mandia เปิด Armadin — $255.5M Series B ที่ $2.5B 7 เดือนหลังออกจาก stealth แล้ว Fortune 500 ใช้งานจริงแล้ว",
+          "order": 4
+        },
+        {
+          "file": "26-10-09-0615-05-eliseai-apollo-housing-healthcare.md",
+          "title": "EliseAI ปิด $350M ที่ $4B — \"1 ใน 6 US apartments\" + $200M ARR + Apollo agent ตัวใหม่ สำหรับ housing และ healthcare",
+          "order": 5
+        }
+      ],
+      "audio_file": "26-10-09-0615.mp3",
+      "audio_size_bytes": 1750272,
+      "voice": "th-TH-Chirp3-HD-Achernar",
+      "model": "google-cloud-tts-chirp3-hd",
+      "speed": 1.3,
+      "script_char_count": 6095
+    },
     {
       "date": "26-10-07-0616",
       "iso_date": "2026-10-07T06:16:00+07:00",
