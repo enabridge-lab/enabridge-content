@@ -1,0 +1,37 @@
+{
+  "date": "26-10-10-0615",
+  "iso_date": "2026-10-10T06:15:00+07:00",
+  "title": "Daily AI Brief — 26-10-10 06:15",
+  "items": [
+    {
+      "file": "26-10-10-0615-01-google-gemini-agent-enterprise.md",
+      "title": "Google เปิด Gemini Agent — \"ผู้ร่วมงานเสมือน\" ตัวเดียวที่คุมได้ทั้ง Workspace, Slack และ Microsoft 365",
+      "order": 1
+    },
+    {
+      "file": "26-10-10-0615-02-atlassian-amp-multiplayer-protocol.md",
+      "title": "Atlassian เปิด AMP — เอา AI agent มานั่งโต๊ะเดียวกับทีม แล้ว @mention เรียกใช้งานได้เหมือนคน",
+      "order": 2
+    },
+    {
+      "file": "26-10-10-0615-03-nous-research-hermes-enterprise.md",
+      "title": "Nous Research ปิด $90M ที่ valuation $1.5B — เปิด \"Hermes for Businesses\" พร้อมเก็บ 2.5% ของ token โลก",
+      "order": 3
+    },
+    {
+      "file": "26-10-10-0615-04-stuut-order-to-cash-agent.md",
+      "title": "Stuut ปิด $52.5M จาก Insight + a16z + M12 — agent วิ่ง order-to-cash ครบ 5 สเตจ, DSO ลด 47%",
+      "order": 4
+    },
+    {
+      "file": "26-10-10-0615-05-netskope-agentskope-marketplace.md",
+      "title": "Netskope เปิด AgentSkope Marketplace — ซื้อ agent รักษาความปลอดภัยแบบจ่ายรวมจาก credit pool เดียว",
+      "order": 5
+    }
+  ],
+  "script_char_count": 6872,
+  "audio_file": "26-10-10-0615.mp3",
+  "voice": "th-TH-Chirp3-HD-Achernar",
+  "model": "google-cloud-tts-chirp3-hd",
+  "speed": 1.3
+}
