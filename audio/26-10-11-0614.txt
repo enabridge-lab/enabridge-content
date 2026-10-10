@@ -1,0 +1,32 @@
+สวัสดีครับ นี่คือ Enabridge AI Brief รอบ 11 October 2026 เวลา 06:14 ครับ.
+รอบนี้มี 4 เรื่อง เน้น Agentic AI, business use case, และ trend ที่เอามาใช้กับ OpenBridge ได้.
+
+เรื่องแรก.
+สวัสดีครับ วันเสาร์ที่ 11 ตุลาคม 2026 ครับ ข่าวแรกวันนี้คือดีลที่น่าสนใจมากในวงการ developer platform — Supabase เจ้าของฐานข้อมูล Postgres แบบ open source ที่หลายคนใช้กัน ปิดรอบใหม่ 150 ล้านดอลลาร์ นำโดย GIC ซึ่งเป็นกองทุนความมั่งคั่งของสิงคโปร์ และพร้อมกันนั้นก็ซื้อสตาร์ทอัพชื่อ Turso ที่ทำ SQLite แบบ serverless ด้วย — มูลค่าดีลไม่เปิดเผย แต่ valuation รวมของ Supabase ขยับไปที่ประมาณ 10 point 65 billion ครับ
+
+เหตุผลที่น่าสนใจคือ Supabase บอกว่าทราฟฟิกจาก AI agent ที่ยิงเข้า DB โตขึ้น 600 เปอร์เซ็นต์ในปีเดียว และ pattern การใช้งานผิดจาก SaaS app ปกติ agent ตัวหนึ่งขอฐานข้อมูลมาเล่นแป๊บเดียวแล้วทิ้ง ตัวต่อไปขอใหม่ขนานสิบตัว การจัดการ connection แบบ Postgres เดิมคุมไม่อยู่ Turso เลยเข้ามาตอบ — spin ฐานข้อมูลใหม่ได้ใน มิลลิวินาที คิดราคาต่อ query ไม่ใช่ต่อ connection รันในคลาวด์ Supabase หรือ bring-your-own-cloud ก็ได้ Glauber Costa founder Turso ย้ายไปเป็น Head of Agentic Services ที่ Supabase ตำแหน่งใหม่ที่ไม่เคยมีก่อน
+
+สำหรับทีมในไทยที่กำลังสร้าง agent หรือ framework ประเด็นที่ต้องคิดคือ สถาปัตยกรรมแบบที่ agent ทุกตัวแชร์ Postgres เดียวกำลังหมดอายุ ลูกค้า enterprise จะเริ่มขอ data isolation ระดับ task ไม่ใช่แค่ระดับ tenant และสำหรับ SaaS ที่ขาย GovTech หรือ BankingTech ควรเพิ่ม BYOC และ database isolation เป็น default ตั้งแต่ตอนนี้ สิ่งที่เคยเป็น nice to have ปี 2024 กำลังจะเป็น table stakes สำหรับ RFP ปี 2027 ครับ.
+
+เรื่องที่สอง.
+ข่าวที่สองวันนี้ครับ สายข่าวความปลอดภัยไซเบอร์ — Armadin บริษัทของ Kevin Mandia ผู้ก่อตั้ง Mandiant ที่ Google ซื้อไปปี 2022 ปิด Series B 255 point 5 ล้านดอลลาร์ ที่ valuation มากกว่า 2 point 5 billion นำโดย a16z กับ Accel มี Bain Capital Ventures กับ Redpoint เข้าใหม่ และคืนทัพรวม Google Ventures, Kleiner Perkins, และ In-Q-Tel ซึ่งเป็น VC ของ CIA ครับ
+
+สินค้าของ Armadin ไม่ใช่ security copilot แบบที่เราคุ้นเคย แต่คือ swarm ของ AI agent ที่บุกเข้าระบบของลูกค้าเองเพื่อหาช่องโหว่ก่อนอาชญากรจะเจอ — autonomous red team as a service ที่รัน 24 ชั่วโมง 7 วันไม่หยุด ต่างจากการจ้าง pentest ปกติที่เป็น engagement 2 สัปดาห์แล้วจบ Mandia บอกว่าถ้าคุณคิดจะใช้ AI defender คุณต้องสมมติว่า attacker ของคุณมี AI ก่อนคุณแล้ว — thesis นี้ขายได้กับ Fortune 500 กับหน่วยข่าวกรอง แต่สำหรับ mid-market หรือ SMB ที่ไม่มี blue team อยู่แล้วการเอา autonomous red team เข้ามาอาจเสี่ยงกว่าได้ เจอรูแล้วไม่มีคนปิด
+
+ประเด็นที่น่าสนใจคือ Armadin ไม่เปิดเผย ARR ไม่มีชื่อลูกค้า และ guardrail กับการขอ approval ก่อน exploit จริงยังเป็น configurable ซึ่งเป็นคำที่กว้างจนไม่รู้ว่าดีหรือไม่ดี สำหรับ CISO ไทยที่กำลังพิจารณาซื้อ attack-simulation agent คำถามที่ต้องถามคือ ใครรับผิดชอบถ้า agent exploit production system จริงแล้วทำ downtime และสำหรับหน่วยงานรัฐไทยที่กำลังสร้าง data sovereignty regulation การที่ VC ของ CIA ลงทุนในหมวดนี้ชี้ว่า agentic cybersecurity กำลังเข้าสู่ dual-use territory ที่ regulatory risk ต้องเริ่มคิดตั้งแต่ตอนนี้ครับ.
+
+เรื่องที่สาม.
+ข่าวที่สามครับ Ironclad เจ้า contract lifecycle management ที่หลายคนรู้จัก เปิด Ironclad Agent คู่กับ Contract Knowledge Graph หรือ CKG วันที่ 8 ตุลาคม ตัว agent วิ่งงาน legal procurement sales ด้วยภาษาธรรมชาติ สั่งงานเช่น ค้นหาสัญญา NDA ทั้งหมดที่หมดอายุไตรมาสหนึ่ง หรือ เริ่มดราฟท์ redline ตาม playbook ปกติ แล้ว agent วิ่ง workflow ของ Ironclad เอง ไม่ต้องกด UI step by step
+
+สิ่งที่น่าสนใจคือ CKG — layer ใหม่ที่โยง clauses relationships obligations และประวัติการเจรจาของทุกสัญญาลงใน graph เดียว agent query graph นี้แทน RAG แบบปกติที่ chunk แล้ว embed แล้ว retrieve — เพราะสัญญามีความสัมพันธ์หลายชั้น master agreement โยง SOW amendment โยง original ซึ่ง RAG ปกติรักษาไม่ได้ ที่สำคัญคือ CKG อยู่ใน environment ของลูกค้า foundation model ไม่ absorb ข้อมูลสัญญาเข้า training data pitch ตรงจุด enterprise legal team ที่กลัวข้อมูลรั่ว
+
+นี่เป็นเจ้าที่สามในสัปดาห์เดียวที่ประกาศ domain graph คู่กับ agent หลัง Atlassian กับ Salesforce pattern เริ่มชัดขึ้น generic RAG หมดอายุใน vertical SaaS ต้องมี knowledge graph เฉพาะ domain สำหรับ builders ที่สร้าง vertical agent ไทยไม่ว่าจะ legal healthcare finance หรือ insurance ควรหยุดสร้าง chat UI บน RAG generic แล้วเริ่มสร้าง domain knowledge graph ตั้งแต่ day 1 เพราะ pattern นี้สร้าง moat ใหม่ให้ incumbent SaaS ที่ยากจะโดนแย่งตลาดด้วย AI อย่างเดียวครับ.
+
+เรื่องที่สี่.
+ข่าวสุดท้ายวันนี้ครับ SAP ประกาศ Autonomous Enterprise architecture เข้า general availability ที่งาน SAP Connect ต้นเดือนตุลาคม พร้อมสามองค์ประกอบใหญ่ หนึ่ง SAP Autonomous Suite ที่มี 50 กว่า Joule assistants ครอบโดเมน finance supply chain procurement HR customer engagement แต่ละ assistant orchestrate subset ของ 200 กว่า specialized agents ที่รัน task-level execution สอง Joule Work กับ Joule Desktop ที่ขายแยกผ่าน SAP for Me portal และสาม AI Agent Hub ที่เป็น single pane manage agent ข้าม SAP กับ non-SAP เข้า GA ไตรมาสสาม ไม่คิดเงินเพิ่ม
+
+CEO Christian Klein ยืนยัน thesis ว่า ERP ยุคใหม่ไม่ใช่ system of record อีกต่อไป แต่คือ system of agents แต่ Constellation Research แย้งว่า ประกาศเยอะแต่สิ่งที่ GA จริงวันนี้น้อย ส่วนใหญ่จะอยู่ใน Early Adopter Care ไตรมาสหนึ่ง ปี 2027 โดยมีบางส่วนลงจอดไตรมาสสี่ ปี 2026 เท่านั้น — คำนี้สำคัญเพราะมันบอกว่าลูกค้าที่ปิดสัญญาวันนี้อาจไม่ได้ใช้งานจริงจนไตรมาสสอง 2027
+
+สำหรับบริษัทไทยใหญ่ที่ใช้ S4HANA ไม่ว่าจะเป็น PTT SCG CP ควรเริ่ม conversation กับ SAP account team ตอนนี้เพื่อเข้าร่วม Early Adopter Care ไตรมาสสี่ 2026 แทนรอ GA ปี 2027 และสำหรับ system integrator ไทยที่ขาย SAP ควรเริ่มฝึกทีม Joule Studio กับ AI Agent Hub ตั้งแต่ไตรมาสสี่ ปีนี้เลยครับ เพราะจะเป็น skillset ที่ขาดในตลาด SI จากตอนนี้ 18 เดือนครับ.
+
+ทั้งหมดนี้คือ brief ของรอบนี้. ขอให้วันนี้เป็นวันที่ดีครับ. แล้วเจอกันรอบหน้า.
