@@ -1,7 +1,46 @@
 {
-  "generated_at": "2026-10-09T23:29:13Z",
-  "count": 109,
+  "generated_at": "2026-10-11T23:32:19Z",
+  "count": 110,
   "episodes": [
+    {
+      "date": "26-10-12-0615",
+      "iso_date": "2026-10-12T06:15:00+07:00",
+      "title": "Daily AI Brief — 26-10-12 06:15",
+      "description": "1. สองโปรโตคอลใหม่สำหรับ \"เอเจนต์เคาะประตูธุรกิจ\" — PAP กับ PACT เริ่มสงครามเลเยอร์ identity ก่อนเลเยอร์ payment\n2. Automation Anywhere ซื้อ Boost.ai — เดิมพัน $8B valuation ว่า voice คือทางลัดสู่ \"autonomous enterprise 80%\"\n3. Ampersand ระดม $15M — เดิมพันว่า integration สู่ CRM / ERP คือ moat จริงของยุค agent (ไม่ใช่ model)\n4. doxx.net ระดม $38M จาก a16z — Barrett Lyon กลับมาสร้างชั้น network ให้เอเจนต์ หลัง 20 ปีของการสร้าง \"ท่อ internet\"\n5. Microsoft เปิด Work IQ Preview — ให้ Copilot อ่าน Dynamics / Power Apps และ \"เสนอการแก้ไข\" ก่อน approve",
+      "items": [
+        {
+          "file": "26-10-12-0615-01-pap-pact-identity-war.md",
+          "title": "สองโปรโตคอลใหม่สำหรับ \"เอเจนต์เคาะประตูธุรกิจ\" — PAP กับ PACT เริ่มสงครามเลเยอร์ identity ก่อนเลเยอร์ payment",
+          "order": 1
+        },
+        {
+          "file": "26-10-12-0615-02-automation-anywhere-boost-ai.md",
+          "title": "Automation Anywhere ซื้อ Boost.ai — เดิมพัน $8B valuation ว่า voice คือทางลัดสู่ \"autonomous enterprise 80%\"",
+          "order": 2
+        },
+        {
+          "file": "26-10-12-0615-03-ampersand-15m-integration-platform.md",
+          "title": "Ampersand ระดม $15M — เดิมพันว่า integration สู่ CRM / ERP คือ moat จริงของยุค agent (ไม่ใช่ model)",
+          "order": 3
+        },
+        {
+          "file": "26-10-12-0615-04-doxxnet-agentic-defined-networking.md",
+          "title": "doxx.net ระดม $38M จาก a16z — Barrett Lyon กลับมาสร้างชั้น network ให้เอเจนต์ หลัง 20 ปีของการสร้าง \"ท่อ internet\"",
+          "order": 4
+        },
+        {
+          "file": "26-10-12-0615-05-microsoft-work-iq-dynamics-preview.md",
+          "title": "Microsoft เปิด Work IQ Preview — ให้ Copilot อ่าน Dynamics / Power Apps และ \"เสนอการแก้ไข\" ก่อน approve",
+          "order": 5
+        }
+      ],
+      "audio_file": "26-10-12-0615.mp3",
+      "audio_size_bytes": 2326848,
+      "voice": "th-TH-Chirp3-HD-Achernar",
+      "model": "google-cloud-tts-chirp3-hd",
+      "speed": 1.3,
+      "script_char_count": 7963
+    },
     {
       "date": "26-10-10-0615",
       "iso_date": "2026-10-10T06:15:00+07:00",
