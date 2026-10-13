@@ -1,0 +1,75 @@
+สวัสดีครับ นี่คือ Enabridge AI Brief รอบ 13 October 2026 เวลา 06:15 ครับ.
+รอบนี้มี 5 เรื่อง เน้น Agentic AI, business use case, และ trend ที่เอามาใช้กับ OpenBridge ได้.
+
+เรื่องแรก.
+วันพุธที่ผ่านมา Anthropic เปิด Claude Dashboards และ Claude Motion ใน beta — เรื่องนี้ founder ไทยที่ใช้ Looker หรือ Tableau ต้องฟัง. Dashboards ให้ user ถามเป็นภาษาธรรมดา แล้ว Claude เขียน SQL เอง สร้าง dashboard ที่ update ตัวเองเมื่อ data เปลี่ยน. รองรับ Snowflake, BigQuery, Redshift, Databricks, ClickHouse ตั้งแต่ day 1. Salesforce ก็ได้ ผ่าน app integration
+
+จุดที่ต่างจาก BI legacy คือสองอย่าง. หนึ่ง — ไม่ต้อง schema modeling ไม่ต้อง LookML ไม่ต้อง published data source. สอง — ทุก chart โชว์ SQL ที่ run ให้ดู พร้อม timestamp refresh ล่าสุด. ถ้า CFO ถามว่า เลขนี้มาจากไหน. คลิก SQL อ่านได้ทันที. Looker กับ Tableau ตอบไม่ได้ง่ายขนาดนี้
+
+ด้าน plan — Dashboards อยู่บน Pro, Max, Team, Enterprise. Motion เฉพาะ Team กับ Enterprise. Enterprise ต้องให้ admin เปิดใน organization settings ก่อน. Anthropic ระวังพอสมควร เพราะยัง ไม่มี row-level security ไม่มี audit log ไม่มี version history. feature ที่ enterprise BI สะสม 15 ปี Claude ยังไม่มี
+
+แต่ที่สำคัญคือ pricing power ของ BI incumbent หาย. Looker ลูกค้า Snowflake ที่จ่าย $150 ต่อ user ต่อเดือน ตอนนี้ต้องชี้แจงว่า ถ้า Claude Pro $20 ต่อเดือน ทำ dashboard พื้นฐานได้ 70% ของ use case. ทำไมต้องจ่ายเพิ่ม. Deal renewal รอบหน้าจะปั่นป่วนแน่
+
+สำหรับทีม Enabridge. ถ้าคุณสร้าง vertical BI product — moat ที่เหลือคือ data model, metric definition, compliance workflow. ไม่ใช่ dashboard builder UX ที่ Claude กำลังทำให้เป็น commodity. ถ้าคุณเป็นคนซื้อ BI — POC Claude Dashboards กับ 2-3 team ก่อน renewal. Benchmark time-to-first-chart และ SQL quality. แล้วใช้ pressure ลด price กับ incumbent
+
+สัญญาณใหญ่กว่าคือ foundation model vendor กำลัง collapse BI stack เป็น 2 ชั้น — warehouse ตรงไป Claude. tooling layer กลางหายไป. อีก 18 เดือน Snowflake Cortex, Databricks Genie, OpenAI Operator จะมา feature เดียวกัน. ปี 2027 ตลาด BI คือตลาด infrastructure และ compliance ไม่ใช่ตลาด UI.
+
+เรื่องที่สอง.
+SAP เปิดตัว Autonomous Enterprise stack เข้า general availability เดือนนี้ — เรื่องที่ CFO ของบริษัทไทยที่ใช้ SAP ต้องสนใจที่สุดในสัปดาห์นี้. Scope ใหญ่กว่าทุก vendor ERP เคยทำ. ห้าสิบ domain-specific Joule Assistants orchestrate อีกสองร้อย specialized agents. ครอบคลุม finance, supply chain, procurement, HR, customer experience. ปล่อยผ่าน SAP for Me portal แบบ SAP-managed — ลูกค้าไม่ต้องจัดการ infrastructure เอง
+
+จุดที่ positioning ชนะคือ. SAP ปล่อย Joule Work ให้พนักงานตัวเอง 110,000 คนใช้ ก่อน GA. เป็น reference deployment ที่ Microsoft กับ Oracle ต้องตามให้ทัน. Fortune 500 CIO ปี 2027 จะถามว่า คุณใช้ตัวเองไหม — SAP ตอบได้ Oracle ยังตอบไม่ได้
+
+Flagship use case ที่โชว์คือ Autonomous Close Assistant. บีบ cycle การปิดงบจากสัปดาห์เป็นวัน. และ RWE บริษัทพลังงานเยอรมัน ใช้บน asset management ของ offshore wind turbine. ตัวเลขยังไม่ผ่าน third-party audit — ก็ต้องระวังการตีความ
+
+ที่ไม่คาดคิดคือ dev tool. Joule Studio 2.0 ฟรีถึงสิ้นปี. รองรับ Python, Claude Code, Cursor — ไม่ใช่ SAP ABAP เท่านั้น. SAP รู้ว่า developer flow ของ agent ไม่ควรบังคับให้อยู่ IDE ของตัวเอง นี่คือการ open integration ที่ไม่คาดคิดจาก vendor ที่ขึ้นชื่อเรื่อง lock-in
+
+สำหรับทีม Enabridge. ถ้าคุณสร้าง vertical AI สำหรับ finance หรือ procurement โดยไม่ต่อ ERP core — ระวัง. SAP กำลัง bundle feature ของคุณฟรีให้ลูกค้าเก่า. Moat ที่เหลือคือ data นอก S/4HANA, workflow depth, deployment speed. ลูกค้า SAP ไทย — เริ่ม POC Autonomous Close Q4 นี้. ก่อน Oracle กับ Microsoft release competing feature แล้วลด leverage ของคุณในการเจรจา
+
+สัญญาณใหญ่กว่า. สงคราม ERP ที่ค้างมา 20 ปี กำลัง reset. ค่ายเดิมแบ่ง installed base เดิม pricing เดิม. แต่ agent-first ERP กำลังเปลี่ยน workflow design จาก screen-based เป็น intent-based. SAP ชนะครึ่งแรกเพราะ data gravity ของ S/4HANA. ครึ่งหลังจะวัดกันที่ migration speed. ปี 2028 เราจะรู้ว่าใครคือ ERP leader ของยุค agent.
+
+เรื่องที่สาม.
+สัปดาห์ที่แล้ว Restate บริษัทจาก Berlin ปิด Series A สองล้านดอลลาร์. นำโดย Singular กับ Redpoint. Capital One Ventures เข้าร่วม. ตัวเลขไม่ใหญ่เท่า deal อื่นในสัปดาห์. แต่ story สำคัญกว่าตัวเลข
+
+Restate ขาย durable workflow runtime. คือ layer ที่ save state ของ agent process ทุกขั้น. เมื่อ server crash หรือ network drop. agent resume จากจุดเดิมได้ไม่ต้อง restart. co-founder Stephan Ewen คือคนสร้าง Apache Flink. stream processing standard ยุค Big Data
+
+ที่น่าสนใจคือ Restate ชน Temporal ตรง ๆ. Temporal เพิ่งปิด Series E ห้าร้อยห้าสิบล้านดอลลาร์ สองสัปดาห์ก่อน valuation สิบสองพันห้าร้อยห้าสิบล้าน. ARR สองร้อยห้าสิบล้าน. 4,300 paying customer รวม OpenAI, Snap, Nvidia, Netflix, JPMorgan. Restate มีลูกค้า Replit กับ Fortune 500 financial services ที่ไม่เปิดเผย. ขนาดเล็กกว่าชัด
+
+แต่สำคัญคือ Restate กำลัง position ว่าเป็น Temporal ที่ developer คนเดียวต่อใช้ได้. SDK embed ใน TypeScript, Python, Rust โดยตรง. ต่างจาก Temporal ที่ต้องการทีม infra 20+ engineer
+
+สิ่งที่ founder ไทยต้องเข้าใจคือ. ถ้าคุณสร้าง agent ที่รันหลายนาที หลายชั่วโมง หลาย external service call หรือ handle เงิน. durable execution ไม่ optional. ไม่งั้น error 10% ที่จุดใดจุดหนึ่งเท่ากับ restart ทั้ง workflow + ทำซ้ำ side effect. ลูกค้าโกรธ compliance หัก
+
+Point of view ของผม. ตลาด durable execution จะ consolidate เป็นสามค่ายใน 24 เดือน. hyperscaler primitive, specialized enterprise, developer-first SDK. Temporal อยู่ค่ายสอง. Restate อยู่ค่ายสาม. บริษัท infrastructure ที่ไม่ชัดเจน position = เสี่ยง squeeze
+
+สำหรับ Enabridge. ถ้าสร้าง agent framework หรือ platform — ควร integrate durable runtime อย่างน้อย 2 เจ้าภายใน 6 เดือน. ลูกค้า enterprise จะไม่ยอมเขียน glue code เอง. ลูกค้า fintech ไทยควรดูที่ Restate ก่อน. เพราะ Capital One Ventures ลงเงิน = signal ของ compliance-sensitive context.
+
+เรื่องที่สี่.
+วันพุธ Ironclad ประกาศ Ironclad Agent กับ Contract Knowledge Graph. เรื่องที่ General Counsel กับ Chief Procurement Officer ของบริษัทไทยต้องรู้. เพราะ positioning ของ Ironclad เปลี่ยนจาก Contract Lifecycle Management software กลายเป็น agent-first legal platform ที่ CLM เป็น substrate
+
+จุดที่สำคัญกว่า marketing คือการ shift จาก RAG สู่ graph. ตั้งแต่ ChatGPT ยุคแรก legal AI ส่วนใหญ่ใช้ RAG. ดึง chunk จาก contract แล้วให้ LLM สรุป. ปัญหาคือ RAG แก้ relationship ระหว่าง clause ไม่ได้. ข้อ 3 ของ MSA A ชน ข้อ 7 ของ SOW B ถ้า amendment C มีผล. Ironclad แก้ด้วย graph. node = clause. edge = relationship, obligation, precedent
+
+การ orchestration ที่ Ironclad โชว์. Ironclad Agent เป็น top level รับ query จาก legal procurement sales. เมื่อต้อง redline สัญญา Ironclad Agent เรียก Contract Review Agent sub-agent specialized. redline กลับมา. multi-agent flow ที่ user ไม่ต้องรู้ว่ามี sub-agent. UX ที่ Google Gemini Agent กับ OpenAI Dots กำลัง push ให้เป็น default
+
+Point of view ของผม. Harvey ที่ raise สามร้อยล้านดอลลาร์ บน horizontal legal reasoning. กับ Robin AI ที่ทำ contract review แบบ RAG. ทั้งคู่กำลังเจอ existential pressure. เพราะ Ironclad มี customer-specific contract repository ของหมื่นลูกค้า. CKG คือ moat ที่ foundation model copy ไม่ได้. CLM playbook รอบที่สองคือ ไม่ขาย software ขาย institutional memory
+
+สำหรับทีม Enabridge. ถ้าคุณสร้าง vertical AI legal finance HR procurement — lesson คือ shift จาก RAG สู่ graph เร็วที่สุด. ลงทุน 3-6 เดือน data engineering ไม่ใช่ ML engineer เท่านั้น. ลูกค้าที่ปิดสัญญาเยอะ — ประเมิน Ironclad ภายใน 90 วัน. ถ้า CLM ของคุณไม่ใช่ Ironclad เริ่มคุย transition. legal tech ไทยควร prototype graph layer เอง หรือ partner foundation vendor
+
+สัญญาณใหญ่กว่า. vertical AI ที่มี proprietary customer data + domain workflow ชนะ horizontal copilot. argument นี้ Ironclad พิสูจน์ได้ชัด. ปี 2027 Knowledge Graph as a Moat จะกลายเป็น standard narrative ของ vertical SaaS ทั้งวงการ. DocuSign Workday ServiceNow Pigment ทุกเจ้าที่มี customer data ประวัติจะ replicate pattern นี้.
+
+เรื่องที่ห้า.
+วันพฤหัสที่ผ่านมา Kore.ai บริษัท conversational AI ที่ Fortune 500 bank กับ telco ใช้มาตั้งแต่ยุค chatbot เปิด Autoloop. Platform สำหรับ test, monitor, improve AI agent ทั้งก่อนและหลัง deploy. ตัวเลขเล็กในสัปดาห์แต่ signal ใหญ่
+
+Problem ที่ Autoloop แก้คือ enterprise CIO มีคำถามซ้ำ 18 เดือน. เรารู้ได้ไงว่า agent production ไม่ regress เมื่อ model upgrade หรือ prompt เปลี่ยน. Autoloop ตอบด้วย simulation + production monitoring loop. Run simulated conversation ที่ synthesize จาก production edge case ก่อน model หรือ prompt change ไป production
+
+Categorically ชน LangSmith ของ LangChain. ชน Arize AI. ชน Humanloop. ชน Patronus. ที่ Kore.ai ชนะได้คือ ลูกค้า Fortune 500 bank กับ telco ที่ pay มาตั้งแต่ปี 2020. Distribution ที่ specialized startup ยังไม่มี. Moat ที่ incumbent ย้ายเร็วชนะ
+
+Point of view ของผม. ปี 2024-2025 เป็นยุคของ build agent. ปี 2026 เริ่มเข้ายุคของ operate agent. Fortune 500 ที่ sign ปี 2020-2022 กำลัง RFP รอบใหม่ Q4 นี้. Agent observability เป็น line item ที่เพิ่งปรากฏใน checklist. ไม่เคยมีใน RFP 2024
+
+ตลาด observability จะ consolidate เร็วกว่าตลาด framework. ภายใน 18 เดือน จะเห็นผู้ชนะสามค่าย. hyperscaler bundle. incumbent conversational AI ที่ขยับทัน. specialized startup หนึ่งหรือสองเจ้า
+
+สำหรับ Enabridge. ถ้าคุณสร้าง agent framework หรือ orchestration — ควร bundle observability พื้นฐานใน SDK ตั้งแต่ day 1. ไม่ให้ลูกค้าต้อง integrate 3rd party. Pattern จาก Datadog ที่ bundle APM log metric ย้ายมา agent stack. Observability ไม่ใช่ feature เป็น table stakes
+
+ลูกค้าไทยที่ run agent production เกินหกเดือน. SCB TrueCorp PTT. ปิดคำถาม ถ้า model upgrade แล้ว agent regress เราจะรู้ยังไง. ด้วย POC สองเจ้า. LangSmith Humanloop หรือ Autoloop. Benchmark time to detect regression, false positive rate, cost per million trace. ลง observability ก่อน scale ไป production สอง. ถูกกว่าแก้หลัง incident สิบเท่า
+
+ที่น่าจับตาคือ Datadog New Relic Splunk. มี distribution shortest path สู่ enterprise ที่ run agent production. ยังไม่ build native agent observability จริงจัง. น่าจะ acquire startup หนึ่งหรือสองรายก่อนสิ้นปี. Keep watching.
+
+ทั้งหมดนี้คือ brief ของรอบนี้. ขอให้วันนี้เป็นวันที่ดีครับ. แล้วเจอกันรอบหน้า.
