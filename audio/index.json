@@ -1,7 +1,41 @@
 {
-  "generated_at": "2026-10-13T23:30:45Z",
-  "count": 112,
+  "generated_at": "2026-10-14T23:27:36Z",
+  "count": 113,
   "episodes": [
+    {
+      "date": "26-10-15-0616",
+      "iso_date": "2026-10-15T06:16:00+07:00",
+      "title": "Daily AI Brief — 26-10-15 06:16",
+      "description": "1. Workday เปิดฝาข้อมูล HR + Finance ให้ AI agent ของลูกค้าเดินเข้ามาเอง\n2. Google ให้ AI agent มี Gmail กับโต๊ะทำงานของตัวเอง — รันงานยาว 7 วัน\n3. Decagon ถูกรายงานคุย M&A กับ ServiceNow แล้วถูกปฏิเสธภายในวัน — จบที่ \"ไม่สนใจ\" แต่ signal ยังอยู่\n4. MCP ตัวแรกที่โดนขึ้น CISA KEV — LiteLLM gateway ปล่อย session ให้ fake bearer token",
+      "items": [
+        {
+          "file": "26-10-15-0616-01-workday-headless-agent-platform.md",
+          "title": "Workday เปิดฝาข้อมูล HR + Finance ให้ AI agent ของลูกค้าเดินเข้ามาเอง",
+          "order": 1
+        },
+        {
+          "file": "26-10-15-0616-02-google-gemini-agent-workspace-identity.md",
+          "title": "Google ให้ AI agent มี Gmail กับโต๊ะทำงานของตัวเอง — รันงานยาว 7 วัน",
+          "order": 2
+        },
+        {
+          "file": "26-10-15-0616-03-decagon-servicenow-ma-denial.md",
+          "title": "Decagon ถูกรายงานคุย M&A กับ ServiceNow แล้วถูกปฏิเสธภายในวัน — จบที่ \"ไม่สนใจ\" แต่ signal ยังอยู่",
+          "order": 3
+        },
+        {
+          "file": "26-10-15-0616-04-litellm-mcp-cisa-kev-first.md",
+          "title": "MCP ตัวแรกที่โดนขึ้น CISA KEV — LiteLLM gateway ปล่อย session ให้ fake bearer token",
+          "order": 4
+        }
+      ],
+      "audio_file": "26-10-15-0616.mp3",
+      "audio_size_bytes": 1327872,
+      "voice": "th-TH-Chirp3-HD-Achernar",
+      "model": "google-cloud-tts-chirp3-hd",
+      "speed": 1.3,
+      "script_char_count": 4498
+    },
     {
       "date": "26-10-14-0615",
       "iso_date": "2026-10-14T06:15:00+07:00",
