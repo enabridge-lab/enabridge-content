@@ -1,0 +1,37 @@
+{
+  "date": "26-10-14-0615",
+  "iso_date": "2026-10-14T06:15:00+07:00",
+  "title": "Daily AI Brief — 26-10-14 06:15",
+  "items": [
+    {
+      "file": "26-10-14-0615-01-google-gemini-agent-claude-routing.md",
+      "title": "Google เปิด Gemini Agent \"universal agent for work\" + Smart Routing ไป Claude — ครั้งแรกที่ hyperscaler เอา model คู่แข่งใส่ประตูหน้าของ workflow enterprise",
+      "order": 1
+    },
+    {
+      "file": "26-10-14-0615-02-digitalocean-agent-learning-loop.md",
+      "title": "DigitalOcean เปิด Agent Learning + Data Services — budget cloud กำลังเปลี่ยนเกมด้วย \"recursively self-improving agent\" และ Bright Data เป็น default web layer",
+      "order": 2
+    },
+    {
+      "file": "26-10-14-0615-03-rein-security-sidecar-agent-runtime.md",
+      "title": "Rein Security ได้ $25M Series A — sidecar architecture กำลังชนะ gateway บน agent runtime security",
+      "order": 3
+    },
+    {
+      "file": "26-10-14-0615-04-nous-research-hermes-enterprise-15b.md",
+      "title": "Nous Research ปิด $90M Series B ที่ $1.5B — open-source Hermes agent กำลังเดินทาง enterprise ด้วย ARR $36M + 2.5% ของ global AI token",
+      "order": 4
+    },
+    {
+      "file": "26-10-14-0615-05-dataiku-cross-platform-agent-management.md",
+      "title": "Dataiku ปล่อย Agent Management GA — cross-platform agent inventory ชน single-vendor monitoring ของ hyperscaler",
+      "order": 5
+    }
+  ],
+  "script_char_count": 8025,
+  "audio_file": "26-10-14-0615.mp3",
+  "voice": "th-TH-Chirp3-HD-Achernar",
+  "model": "google-cloud-tts-chirp3-hd",
+  "speed": 1.3
+}
