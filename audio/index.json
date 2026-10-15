@@ -1,7 +1,46 @@
 {
-  "generated_at": "2026-10-13T23:30:45Z",
-  "count": 112,
+  "generated_at": "2026-10-15T23:27:33Z",
+  "count": 113,
   "episodes": [
+    {
+      "date": "26-10-16-0615",
+      "iso_date": "2026-10-16T06:15:00+07:00",
+      "title": "Daily AI Brief — 26-10-16 06:15",
+      "description": "1. ServiceNow AI Passport: agent governance กลายเป็น infrastructure layer\n2. Gemini 4 Argon: Google ตั้งราคา agent model ต่ำกว่า Astra ครึ่งหนึ่ง + ฆ่า Code Assist\n3. Nous Research: open-source agent ที่โตถึง $36M ARR แล้วเพิ่งเริ่มเก็บเงิน\n4. Meta Muse Wonder: Zuckerberg เข้า enterprise agent — แต่มี trust gap ต้องข้าม\n5. Anthropic Dynamic Workflows: Claude Platform ย้าย orchestration ขึ้น server ของตัวเอง",
+      "items": [
+        {
+          "file": "26-10-16-0615-01-servicenow-ai-passport.md",
+          "title": "ServiceNow AI Passport: agent governance กลายเป็น infrastructure layer",
+          "order": 1
+        },
+        {
+          "file": "26-10-16-0615-02-google-gemini-4-argon-antigravity.md",
+          "title": "Gemini 4 Argon: Google ตั้งราคา agent model ต่ำกว่า Astra ครึ่งหนึ่ง + ฆ่า Code Assist",
+          "order": 2
+        },
+        {
+          "file": "26-10-16-0615-03-nous-research-hermes-enterprise.md",
+          "title": "Nous Research: open-source agent ที่โตถึง $36M ARR แล้วเพิ่งเริ่มเก็บเงิน",
+          "order": 3
+        },
+        {
+          "file": "26-10-16-0615-04-meta-muse-wonder-enterprise.md",
+          "title": "Meta Muse Wonder: Zuckerberg เข้า enterprise agent — แต่มี trust gap ต้องข้าม",
+          "order": 4
+        },
+        {
+          "file": "26-10-16-0615-05-anthropic-dynamic-workflows-beta.md",
+          "title": "Anthropic Dynamic Workflows: Claude Platform ย้าย orchestration ขึ้น server ของตัวเอง",
+          "order": 5
+        }
+      ],
+      "audio_file": "26-10-16-0615.mp3",
+      "audio_size_bytes": 1685088,
+      "voice": "th-TH-Chirp3-HD-Achernar",
+      "model": "google-cloud-tts-chirp3-hd",
+      "speed": 1.3,
+      "script_char_count": 6555
+    },
     {
       "date": "26-10-14-0615",
       "iso_date": "2026-10-14T06:15:00+07:00",
