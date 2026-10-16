@@ -1,0 +1,43 @@
+สวัสดีครับ นี่คือ Enabridge AI Brief รอบ 16 October 2026 เวลา 06:15 ครับ.
+รอบนี้มี 5 เรื่อง เน้น Agentic AI, business use case, และ trend ที่เอามาใช้กับ OpenBridge ได้.
+
+เรื่องแรก.
+วันนี้ ServiceNow เปิดตัวสิ่งที่เรียกว่า AI Passport ตัวช่วย governance ของ AI agent ในองค์กร คอนเซ็ปต์ง่าย ๆ คือ agent ทุกตัว ไม่ว่าจะเป็นของ ServiceNow เองหรือของ vendor อื่น หรือแม้แต่ MCP server ที่ทีมภายในสร้างขึ้นมา ทุกตัวต้องมี passport ที่ลงลายเซ็น บอกว่าทำอะไรได้บ้าง เข้าถึง data ไหน และใครเป็นเจ้าของ ถ้า agent ตัวไหนเริ่ม drift ออกนอก scope ระบบ kill agent ตัวนั้นทันทีแบบ real-time
+
+ที่สำคัญคือ ServiceNow เขียน MCP เข้าไปใน spec ด้วย ไม่ใช่แค่ agent runtime หมายความว่า tool layer ก็ต้องมี identity ของมันเองเหมือนกัน นี่คือการ reposition ตัวเองของ ServiceNow จาก workflow platform มาเป็น AI governance platform
+
+ภาพรวมที่น่าสนใจคือ pattern นี้กำลังเลียนแบบ cloud platform สมัย 10 ปีก่อน ตอนแรกทุกคนขาย compute แล้วค่อย ๆ ลงมาที่ orchestration ตอนนี้ที่ ServiceNow Hyland และ Okta ลงมาเล่น agent IAM กันแล้ว แปลว่าการแข่งขัน agentic AI กำลังย้ายจากคำถามว่าใคร agent เก่งสุด ไปที่คำถามว่าใคร verify agent ได้ดีกว่า สำหรับทีม builder ของเรา ถ้ากำลังจะขาย agent หรือ MCP server เข้า enterprise รีบคิดเรื่อง metadata schema ที่ให้ passport provider อ่านได้ก่อน ไม่งั้นลูกค้าจะเลือก vendor ที่ interop ได้ก่อนเสมอ.
+
+เรื่องที่สอง.
+สัปดาห์นี้ Google ขยับสองเรื่องพร้อมกันในเรื่อง agentic AI หนึ่งคือเปิด Gemini 4 Argon model ตัวใหม่ที่ออกแบบมาสำหรับ agent ที่รันงานยาว ๆ เช่น code migration หรือ enterprise research จุดขายคือ output token limit โตจาก 64K เป็น 1 ล้าน token และตั้งราคา promo แค่ 2 ดอลลาร์ต่อ 1 ล้าน input token กับ 10 ดอลลาร์ต่อ output token
+
+สองคือ Google หยุดขาย Gemini Code Assist subscription ใหม่ ลูกค้า enterprise ที่สนใจถูกไล่ไปที่ Antigravity ซึ่งเป็น agentic development platform ที่คิดเงินแบบ task-based แทน seat-based ที่น่าสนใจคือ Google ยอม cannibalize product ของตัวเองเพื่อย้ายลูกค้าไปโมเดลธุรกิจใหม่
+
+ที่น่าจับตาคือ pattern นี้บอกว่า pricing war ของปีที่แล้วที่แข่งกัน per-token อย่างเดียวจบไปแล้ว ตอนนี้เป็น tiered model ตามประเภทงานบวกกับ task-based platform billing สำหรับทีม builder ของเรา นี่คือสัญญาณให้ทบทวน model selection logic ใน orchestrator ถ้ายังใช้ model เดียวสำหรับทุก workload อยู่ก็กำลังจ่ายเกินจริง สำหรับ business ที่ deploy agent รีบคำนวณใหม่ว่า workflow ไหนที่เคยคิดว่าแพงเกินไป ตอนนี้คุ้มรันหรือยัง และสำหรับ pure copilot vendor อย่าง Cursor หรือ Windsurf นี่คือ signal ที่น่ากลัวมาก เพราะ Google กำลังบอกว่า autocomplete ไม่ใช่ product แล้ว แต่เป็นแค่ feature ของ agent platform.
+
+เรื่องที่สาม.
+Wall Street Journal รายงานสัปดาห์นี้ว่า Nous Research ปิด Series B ที่ 90 ล้านดอลลาร์ ด้วย valuation 1.5 พันล้านดอลลาร์ นำโดย Robot Ventures มี Nvidia Microsoft Samsung และ Y Combinator ร่วมด้วย ที่น่าทึ่งไม่ใช่ตัวเลข funding แต่คือเรื่องของ Hermes Agent ที่เปิดภายใต้ MIT license เมื่อกุมภาพันธ์ปีนี้ 8 เดือนทำยอดดาวน์โหลดไปแล้ว 22.7 ล้านครั้ง และ ARR แตะ 36 ล้านดอลลาร์กลางเดือน ก.ย. บริษัทคาดว่าจะทะลุ 100 ล้านก่อนสิ้นปี
+
+สิ่งที่น่าสนใจคือ Nous กำลังทำซ้ำ playbook ของ MongoDB และ Databricks ที่ปล่อย core เป็น open-source แล้วขาย hosted commercial แต่เร็วกว่ามาก MongoDB ใช้เวลา 4 ถึง 5 ปีจาก open release ถึง 100 ล้าน ARR Nous กำลังจะทำใน 10 เดือน
+
+ที่เร็วเพราะสองอย่าง หนึ่ง enterprise ยุคนี้พร้อมจ่ายเงินให้ hosted version ของ open-source ที่ developer ตัวเองใช้อยู่แล้ว เพราะ host เองแพง สอง agent workload ต้องเก็บ state ยาวและเชื่อม tool เยอะ ทำให้ hosted คุ้มกว่า self-deploy มาก สำหรับทีมที่กำลังสร้าง agent framework ให้ดู model ของ Nous เป็น reference ปล่อย core เป็น MIT แล้ว build hosted ที่ opinionated รอบ compliance observability และ managed GPU สำหรับ business ที่กำลังเลือก agent platform Hermes ควรอยู่ใน shortlist เพราะ Nvidia Microsoft Samsung อยู่ในรอบนี้ แปลว่า integration กับ stack ของเขาจะมาเร็ว.
+
+เรื่องที่สี่.
+วันจันทร์ที่ 12 ต.ค. Meta ประกาศ Muse Wonder และ Wonder Full ซึ่งเป็น frontier model สำหรับ agentic task Meta บอกว่าเป็น model ที่สามารถที่สุดสำหรับงาน agent ทั้ง consumer และ enterprise feature เด่นคือ Active Memory ที่ให้ agent เก็บ context ข้าม session ได้ และ Active Focus ที่ให้ agent recovery จาก multi-step error โดยไม่ต้อง rollback ทั้ง task
+
+Independent Artificial Analysis ให้ Wonder Full ที่คะแนน 56 ใกล้ Claude Sonnet 5.5 แต่ต่ำกว่า Claude Opus 5.5 ที่ 58 ที่น่าสนใจกว่า model คือ Zuckerberg เปิด Meta Enterprise Platform พร้อมกัน และดึง CJ Desai อดีต CEO MongoDB มานำ นี่เป็นครั้งแรกที่ Meta ลงมาเล่น B2B seriously หลังพยายามหลายรอบใน workplace era ที่ล้มเหลว
+
+ปัญหาที่น่าจับตาคือ trust gap AI Business ชี้ว่า enterprise ส่วนใหญ่ไม่เชื่อ Meta ในฐานะ data custodian จากประวัติ Cambridge Analytica และ ad targeting ความสำเร็จจึงไม่ได้ขึ้นกับ benchmark แต่ขึ้นกับว่า Desai จะ clean brand enterprise ของ Meta ได้แค่ไหน
+
+สำหรับทีมที่ทำ memory service แยกอยู่อย่าง Mem0 หรือ Letta ต้องทบทวนว่า differentiation อยู่ตรงไหน เพราะ memory layer กำลังจะกลายเป็น commodity ของ model สำหรับ business ที่เลือก agent platform ให้ชั่งน้ำหนัก trust cost อย่างจริงจัง Meta ให้ราคาคุ้มกว่า แต่ data governance team อาจไม่อนุมัติ ภาพรวม pricing ของ frontier model จะกดลงอีกใน Q4 นี้.
+
+เรื่องที่ห้า.
+วันพฤหัสที่ 9 ต.ค. Anthropic ปล่อย dynamic workflows เข้า beta ภายใน Claude Platform สำหรับ Managed Agents หลักการคือ agent เขียน program ไม่ใช่ graph แล้ว server รันให้ ต่างจาก static workflow อย่าง LangGraph หรือ Temporal ที่ต้อง pre-define ล่วงหน้า dynamic workflow ให้ root agent decide ที่ runtime ว่าจะ spawn sub-agent กี่ตัว แต่ละตัวทำอะไร เหมือน fork ของ Unix process
+
+Spec ที่น่าสนใจคือ 64 thread พร้อมกันใน run เดียว 1000 agent ตลอดอายุ run 24 ชั่วโมง lifetime default ราคาคิดแค่ token ตาม rate ของ model เดิม บวก 0.08 ดอลลาร์ต่อ session-hour ไม่มี orchestration fee แยก ซึ่งถ้าเทียบกับการ host K8s pod ของตัวเองก็ประมาณราคาเดียวกัน
+
+ที่สำคัญคือ pattern นี้บอกว่า Anthropic กำลังเดินทางเดียวกับ Google ที่เพิ่งเปิด Antigravity สัปดาห์เดียวกัน คือ model company เริ่มสร้าง opinionated runtime ของตัวเอง แทนที่จะปล่อยให้ user เลือก framework เอง นี่คือการเปลี่ยนจากแข่งที่ model quality ไปที่ developer experience และ runtime economics
+
+สำหรับ builder ที่กำลังสร้าง orchestrator ของตัวเองต้องตัดสินใจตอนนี้ว่าจะวาง position ยังไง เป็น open-source alternative เป็น multi-model orchestrator หรือเป็น vertical specialist เพราะการเล่น general managed orchestrator ไปแข่งตรง ๆ กับ Anthropic กับ Google กำลังเสียเปรียบมากขึ้น สำหรับ business ที่ deploy agent ถ้า workflow ส่วนใหญ่คือ Claude อยู่แล้ว การย้ายไป Dynamic Workflows จะลด infra cost ชัด แต่ถ้าใช้ multi-model ต้องประเมิน vendor lock-in ให้ดี.
+
+ทั้งหมดนี้คือ brief ของรอบนี้. ขอให้วันนี้เป็นวันที่ดีครับ. แล้วเจอกันรอบหน้า.
