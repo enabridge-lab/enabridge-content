@@ -1,0 +1,37 @@
+{
+  "date": "26-10-17-0614",
+  "iso_date": "2026-10-17T06:14:00+07:00",
+  "title": "Daily AI Brief — 26-10-17 06:14",
+  "items": [
+    {
+      "file": "26-10-17-0614-01-microsoft-copilot-studio-agent-accounts.md",
+      "title": "Microsoft Copilot Studio ให้ agent มี account ของตัวเอง — เสียงสะท้อนตรงจาก ServiceNow Passport",
+      "order": 1
+    },
+    {
+      "file": "26-10-17-0614-02-honeywell-forge-cognition-physical-ai.md",
+      "title": "Honeywell Forge Cognition: agent + digital twin + NVIDIA — physical AI หลุดจาก demo สู่ 6 pilot จริง",
+      "order": 2
+    },
+    {
+      "file": "26-10-17-0614-03-cisco-webex-agentic-framework.md",
+      "title": "Cisco Webex ให้ agent \"เดินเข้ามานั่งใน meeting\" — collab platform กลายเป็น agent runtime",
+      "order": 3
+    },
+    {
+      "file": "26-10-17-0614-04-kakao-kanana-space-messenger-agent.md",
+      "title": "Kakao Kanana Space: เมื่อ messenger กลายเป็น primary interface ของ agent — 10M MAU target",
+      "order": 4
+    },
+    {
+      "file": "26-10-17-0614-05-rapidcanvas-29m-series-b-ai-services.md",
+      "title": "RapidCanvas ปิด $29M Series B — \"70% agent / 30% human\" กลายเป็น business model ที่ venture ยอมจ่าย premium",
+      "order": 5
+    }
+  ],
+  "script_char_count": 6427,
+  "audio_file": "26-10-17-0614.mp3",
+  "voice": "th-TH-Chirp3-HD-Achernar",
+  "model": "google-cloud-tts-chirp3-hd",
+  "speed": 1.3
+}
