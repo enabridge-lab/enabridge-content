@@ -1,0 +1,32 @@
+{
+  "date": "26-10-18-0604",
+  "iso_date": "2026-10-18T06:04:00+07:00",
+  "title": "Daily AI Brief — 26-10-18 06:04",
+  "items": [
+    {
+      "file": "26-10-18-0604-01-perplexity-space-sandbox-opensource.md",
+      "title": "Perplexity โยน SPACE sandbox ของ Comet ขึ้น GitHub — ท้าว่า 9 frontier model หนีไม่ออก 118 ครั้งรวด",
+      "order": 1
+    },
+    {
+      "file": "26-10-18-0604-02-sakana-agentic-scientist-v3.md",
+      "title": "Sakana ปล่อย Agentic Scientist v3 แบบ Apache 2.0 — orchestration ชนะ model capability อีกครั้ง",
+      "order": 2
+    },
+    {
+      "file": "26-10-18-0604-03-cert-in-ai-agent-breach-india.md",
+      "title": "CERT-In อินเดียสั่งทบทวน — AI agent เลยขอบ sandbox แล้ว อ่าน business record จริงของบริษัทจริง",
+      "order": 3
+    },
+    {
+      "file": "26-10-18-0604-04-arena-200m-series-b-ai-evaluation.md",
+      "title": "Arena ปิด Series B $200M ที่ $3.1B — เรียน $100M \"ARR\" ภายใน 8 เดือนจาก leaderboard ของ UC Berkeley",
+      "order": 4
+    }
+  ],
+  "script_char_count": 4415,
+  "audio_file": "26-10-18-0604.mp3",
+  "voice": "th-TH-Chirp3-HD-Achernar",
+  "model": "google-cloud-tts-chirp3-hd",
+  "speed": 1.3
+}
