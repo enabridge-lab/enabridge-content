@@ -1,0 +1,47 @@
+สวัสดีครับ นี่คือ Enabridge AI Brief รอบ 17 October 2026 เวลา 06:14 ครับ.
+รอบนี้มี 5 เรื่อง เน้น Agentic AI, business use case, และ trend ที่เอามาใช้กับ OpenBridge ได้.
+
+เรื่องแรก.
+เมื่อวานเราคุยเรื่อง ServiceNow AI Passport ว่า agent ทุกตัวต้องมี signed identity กับ runtime kill-switch วันนี้ 15 ตุลาคม Microsoft ขยับตามแบบวันต่อวัน เปิด preview Copilot Studio agent accounts ใน Frontier early-access program ให้ agent แต่ละตัวมี Entra ID ของตัวเอง มี shared business-process memory และมี triggers ที่ให้ agent เริ่มทำงานเองโดยไม่ต้องรอ user prompt ไม่ว่าจะเป็น email ที่เข้า mailbox เฉพาะ หรือ scheduled time หรือ external webhook
+
+ประเด็นสำคัญคือ Microsoft ไม่ต้อง bootstrap identity provider จากศูนย์เหมือน ServiceNow เพราะมี Entra และ Microsoft Graph อยู่แล้ว แปลว่า Entra กำลังจะกลายเป็น identity provider ของ agent ตั้งแต่วันแรก Audit log แยกได้ conditional access ตั้งได้ licensing ก็มีแนวโน้มว่าจะคิดเป็น seat ของ agent ไม่ใช่ seat ของ user เหมือนเดิม
+
+เรื่องที่ enterprise security team จะต้องจับตาคือ shared memory เพราะ preview เขียนไว้ว่าไม่มี opt-out แต่เอกสาร Learn ของ Microsoft ที่พูดถึง memory ของ GitHub Copilot เขียนว่า private นี่เป็น gap ของ product ที่ Microsoft ต้อง clarify ก่อน GA
+
+ภาพรวมที่สำคัญคือ ServiceNow 14 ตุลาคม Microsoft 15 ตุลาคม สองยักษ์ enterprise platform ที่ไม่ใช่ framework vendor ลงมา claim agent OS layer ภายใน 24 ชั่วโมงกัน pattern เดียวกันเลย คือ identity ของ agent plus runtime trigger plus accountable owner คำถามคือใครในวงการ framework open-source อย่าง LangGraph หรือ CrewAI จะยอม interop กับ Entra ตั้งแต่ day one หรือยอมเสีย enterprise segment ไปเลย.
+
+เรื่องที่สอง.
+เมื่อวันพุธ 14 ตุลาคม Honeywell ประกาศ Forge Cognition platform สำหรับ facility operations ที่รวม AI agent กับ real-time digital twin ของอาคารจริง ร่วมกับ NVIDIA และ Dell โดยเปิดตัวพร้อม pilot 6 แห่ง กระจายใน US Dubai Singapore และ Bangalore ครอบตั้งแต่ office airport data center จนถึง factory
+
+Use case หลักคือ alarm management ที่ทุกวันนี้ facility ops team ท่วมด้วย alarm จาก building management system Honeywell เอามา classify และ verify ด้วย digital twin ก่อน dispatch work order ผู้ใช้เลือกได้ว่าจะ auto resolve หรือ review ก่อน และยังมี HVAC predictive maintenance ที่ flag ปัญหาก่อน 48 ถึง 72 ชั่วโมง
+
+Infrastructure stack น่าสนใจ ตัว platform รันบน NVIDIA RTX PRO สำหรับ on-prem และกำลังจะขยายไป far edge ด้วย NVIDIA DGX Spark ในไตรมาสแรกปี 2027 ส่วน Dell เข้ามาเป็น hardware integrator ทำ pre-configured bundle เป็น supply chain play ตั้งแต่วันแรก
+
+ภาพรวมที่สำคัญคือ physical AI กำลัง productize ที่ layer ของ facility operations ก่อน layer ของ humanoid robot แปลว่าถ้าทีมใครกำลังจะ deploy agent ใน industrial setting ควรดูว่า vertical incumbent ของ domain ตัวเองกำลังสร้าง agent OS ของตัวเองอยู่หรือยัง ไม่งั้นอาจจะไปซื้อ horizontal framework ที่ไม่รู้จัก asset ใน domain เลย.
+
+เรื่องที่สาม.
+ที่งาน WebexOne 2026 Cisco เปิด framework agentic ของ Webex ให้ agent เข้าร่วม spaces meetings calls ได้เหมือน teammate ลง log ว่าใครทำอะไร มี audit trail และข้อสำคัญคือมี Dialog layer ที่เก็บ customer context ข้าม interaction หมายความว่า customer service agent ที่คุยเรื่อง refund วันจันทร์ จำได้วันพุธเวลา customer โทรกลับเรื่อง delivery พร้อมบริบททั้งหมด
+
+Pattern ที่น่าสนใจคือ collaboration platform เริ่ม compete กับ agent framework ที่ layer ของที่อยู่ของ agent ก่อนหน้านี้ agent รันใน sandbox ของ cloud ตอนนี้ agent รันในที่ที่ work เกิดขึ้นจริง ไม่ว่าจะเป็น Webex Teams หรือ Slack ซึ่งเปลี่ยนเกม distribution ลูกค้าไม่ต้องเลือก IDE แปลก ๆ มา invoke agent แต่ invoke จาก conversation ที่มีอยู่แล้ว
+
+จุดอ่อนของ Cisco คือ identity และ licensing Microsoft มี Entra ที่หนัก Cisco มี Duo ที่น้ำหนักน้อยกว่า และ Cisco ยังไม่ประกาศว่า price agent as attendee แบบ seat หรือแบบ task สำหรับทีมที่กำลังสร้าง agent framework ถ้า Webex expose metadata ให้ Dialog layer อ่านเข้าใจ แปลว่า integration layer กับ collaboration platform กลายเป็น strategic หลัก ไม่ใช่แค่กับ cloud orchestration อย่างเดียวอีกต่อไป.
+
+เรื่องที่สี่.
+Kakao Corp ที่ operate KakaoTalk messenger ที่ 95 เปอร์เซ็นต์ของคน South Korea ใช้ ประกาศ Kanana Space เมื่อ 13 ตุลาคมที่งาน if kakao 26 ว่าจะเปลี่ยน KakaoTalk จาก messaging app เป็น primary interface ของ agent คุม message schedule shopping payment ภายใน chatroom เดียว ไม่ต้อง switch app
+
+Closed beta เริ่ม ธันวาคม 2026 เปิด public ผ่าน KakaoTalk ครึ่งแรกปี 2027 Target คือ 10 ล้าน MAU ของ AI services ภายในสิ้นปี และระยะยาวตั้งเป้าแซง ChatGPT ใน South Korea ภายใน 2029
+
+จุดสำคัญคือ constraint design — Kakao บังคับให้ payment และ outgoing message ต้องมี final approval จาก user ก่อน ซึ่งเป็น response ตรงต่อ fail mode ที่ WeChat เคยเจอใน mini program เรื่อง fraud spam phishing และต่างจาก US agent framework ที่ assume full autonomy ก่อนแล้วค่อยเพิ่ม guard rail Kakao เริ่มด้วย guard rail ก่อน
+
+Pattern นี้สำคัญสำหรับทีมในไทยที่ build consumer agent เพราะ LINE ที่ dominant ใน SEA น่าจะเปิด agent API ที่คล้ายกันภายในครึ่งแรกปี 2027 ถ้า Kanana Space ประสบความสำเร็จ แปลว่า brand ที่กำลังสร้าง consumer agent ควรวาง roadmap ว่าจะอยู่ใน messenger ของ user ไม่ใช่สร้าง app standalone แยกออกไป เพราะ friction ของการ switch app จะทำให้ conversion ตก.
+
+เรื่องที่ห้า.
+RapidCanvas ที่ตั้งอยู่ Austin กับ office ใน India ปิด Series B 29 ล้านดอลลาร์เมื่อ 16 ตุลาคม นำโดย Vertex Ventures SEA & India และมี Hitachi Ventures เข้าร่วม รวมเงินทั้งหมด 52 จุด 5 ล้านดอลลาร์ ตั้งแต่ก่อตั้ง
+
+Business model ของ RapidCanvas น่าสนใจ ไม่ใช่ SaaS pure play แต่เป็น platform plus managed service ที่ LLM powered agent ทำงาน data science 70 เปอร์เซ็นต์ ส่วน 30 เปอร์เซ็นต์ที่เหลือเป็น system design hypothesis testing business logic review ยังเป็น human expert ของ RapidCanvas เอง อ้างว่า margin อยู่ที่ 55 เปอร์เซ็นต์บวก แม้ว่า third party ยังไม่ยืนยัน
+
+ที่น่าจับตาคือ pattern ของ VC rounds ล่าสุด Harvey ด้าน legal Hebbia ด้าน research Nous Research ที่เพิ่งปิด 90 ล้าน และ RapidCanvas วันนี้ ทั้งหมดคือ AI service firm ที่ workload ถูก automate 60 ถึง 80 เปอร์เซ็นต์ด้วย agent หลังบ้าน แล้ว human ขายเฉพาะส่วนที่ model fail นี่เป็น signal ว่า venture เริ่มยอมจ่าย premium สำหรับ model นี้
+
+สำหรับทีมที่ขาย agent framework ประเด็นที่ต้องเก็บคือ ลูกค้า mid market ไม่ซื้อ framework ซื้อ outcome ถ้า framework ไม่มา pre packaged กับ professional service หรือ partner network segment นี้จะยาก Vertex + Hitachi เลือกนำร่วมบ่งบอกว่า RapidCanvas จะ expand ไป Asia Pacific เป็นหลัก ไม่ใช่ US first ซึ่งต่างจาก AI Series B ก่อนหน้านี้.
+
+ทั้งหมดนี้คือ brief ของรอบนี้. ขอให้วันนี้เป็นวันที่ดีครับ. แล้วเจอกันรอบหน้า.
