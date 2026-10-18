@@ -1,0 +1,32 @@
+{
+  "date": "26-10-19-0604",
+  "iso_date": "2026-10-19T06:04:00+07:00",
+  "title": "Daily AI Brief — 26-10-19 06:04",
+  "items": [
+    {
+      "file": "26-10-19-0604-01-anthropic-agent-negotiation-legal-framework.md",
+      "title": "Anthropic เรียก law firms มาร่าง \"มารยาท\" ของ AI agent ก่อนปล่อยไปต่อรองจริง — ก่อน IPO ตุรกี",
+      "order": 1
+    },
+    {
+      "file": "26-10-19-0604-02-opsin-21m-ai-agent-security.md",
+      "title": "Opsin ปิด $21M คุม agent sprawl — 93% ของ tool ที่ agent connect อยู่ \"ไม่มี gate\" ให้ human approve เลย",
+      "order": 2
+    },
+    {
+      "file": "26-10-19-0604-03-opencode-distillation-breach.md",
+      "title": "OpenCode ยอมรับ breach — API key ของ OpenAI/Anthropic/Google หลุดจาก \"legacy system\" ที่กำลังจะปลดระวาง",
+      "order": 3
+    },
+    {
+      "file": "26-10-19-0604-04-anthropic-public-benefit-fund-5-percent.md",
+      "title": "Anthropic ยอมแบ่ง 5% equity เข้า Public Benefit Fund — แต่โครงสร้างคือ LLC ไม่ใช่ nonprofit, และยัง scalable เพิ่มได้",
+      "order": 4
+    }
+  ],
+  "script_char_count": 5624,
+  "audio_file": "26-10-19-0604.mp3",
+  "voice": "th-TH-Chirp3-HD-Achernar",
+  "model": "google-cloud-tts-chirp3-hd",
+  "speed": 1.3
+}
