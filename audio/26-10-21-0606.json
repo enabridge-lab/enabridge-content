@@ -1,0 +1,32 @@
+{
+  "date": "26-10-21-0606",
+  "iso_date": "2026-10-21T06:06:00+07:00",
+  "title": "Daily AI Brief — 26-10-21 06:06",
+  "items": [
+    {
+      "file": "26-10-21-0606-01-daytona-60m-series-b-agent-cloud-unicorn.md",
+      "title": "Daytona ปิด $60M Series B ที่ $1B — \"ที่ให้ digital employee ล้มเหลวได้อย่างปลอดภัย\" กลายเป็น unicorn ภายใน 8 เดือน",
+      "order": 1
+    },
+    {
+      "file": "26-10-21-0606-02-neural-concept-mcp-bridge-cad.md",
+      "title": "Neural Concept ปล่อย MCP Bridge — MCP ข้ามจาก SaaS เข้าซอฟต์แวร์วิศวกรรมเครื่องกลครั้งแรก Traton เป็น case study",
+      "order": 2
+    },
+    {
+      "file": "26-10-21-0606-03-sumsub-kya-opsin-agent-identity-layer.md",
+      "title": "วันเดียว 2 บริษัทเปิดชั้น \"Know Your Agent\" — Sumsub ปล่อย KYA Module, Opsin ปิด $21M; identity layer ของ agent กลายเป็น category จริง",
+      "order": 3
+    },
+    {
+      "file": "26-10-21-0606-04-town-series-b-personal-agent-race.md",
+      "title": "Town ใกล้ปิด $90M ที่ unicorn — Forerunner + Menlo นำ หลัง Index Ventures ถอยเพราะ conflict กับ Instinct; สงคราม personal AI assistant เข้าเฟสจริง",
+      "order": 4
+    }
+  ],
+  "script_char_count": 4559,
+  "audio_file": "26-10-21-0606.mp3",
+  "voice": "th-TH-Chirp3-HD-Achernar",
+  "model": "google-cloud-tts-chirp3-hd",
+  "speed": 1.3
+}
