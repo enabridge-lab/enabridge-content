@@ -1,0 +1,37 @@
+{
+  "date": "26-10-23-0605",
+  "iso_date": "2026-10-23T06:05:00+07:00",
+  "title": "Daily AI Brief — 26-10-23 06:05",
+  "items": [
+    {
+      "file": "26-10-23-0605-01-google-agent-compute-engine.md",
+      "title": "Google เปิด Agent Compute Engine — microVM ต่อ 1 agent, Titanium IPU กันขาด, ขายอินฟราที่รัน Gemini ของตัวเองให้คนอื่น",
+      "order": 1
+    },
+    {
+      "file": "26-10-23-0605-02-daytona-1b-agent-cloud.md",
+      "title": "Daytona แตะ $1B — \"agent execution cloud\" ที่ hyperscaler ไม่อยากทำ, Patrick Collison กับ Tobi Lütke ลงเงินด้วย",
+      "order": 2
+    },
+    {
+      "file": "26-10-23-0605-03-quantum-metric-mcp-ga.md",
+      "title": "Quantum Metric MCP GA — 46 tool, 300+ data type, agent รู้แล้วว่าลูกค้าทำอะไรบนเว็บจริง ๆ",
+      "order": 3
+    },
+    {
+      "file": "26-10-23-0605-04-neural-concept-mcp-bridge-cad.md",
+      "title": "Neural Concept เปิด MCP Bridge — AI agent เริ่มขับ CATIA กับ Abaqus, งานล้าง wheel rim 1 วัน → 3 นาที",
+      "order": 4
+    },
+    {
+      "file": "26-10-23-0605-05-town-108m-collaborative-assistants.md",
+      "title": "Town แตะ $1B หลัง launch 4 เดือน — \"Townie\" ของทุกคนในทีมคุยกันเองได้แล้ว",
+      "order": 5
+    }
+  ],
+  "script_char_count": 6095,
+  "audio_file": "26-10-23-0605.mp3",
+  "voice": "th-TH-Chirp3-HD-Achernar",
+  "model": "google-cloud-tts-chirp3-hd",
+  "speed": 1.3
+}
