@@ -1,0 +1,37 @@
+{
+  "date": "26-10-24-0606",
+  "iso_date": "2026-10-24T06:06:00+07:00",
+  "title": "Daily AI Brief — 26-10-24 06:06",
+  "items": [
+    {
+      "file": "26-10-24-0606-01-walmart-agent-gateway-mcp.md",
+      "title": "Walmart เปิด Agent Gateway (MCP) ให้ AI agent ซื้อของแทนลูกค้า — Amazon ปิด, Walmart เลือกเปิด",
+      "order": 1
+    },
+    {
+      "file": "26-10-24-0606-02-volkswagen-copilot-330k-26k-agents.md",
+      "title": "Volkswagen roll out Copilot ให้ 330,000 คน + 26,000 agent live ภายในเดือนเดียว — Microsoft โชว์ case ที่ใหญ่ที่สุดของปี",
+      "order": 2
+    },
+    {
+      "file": "26-10-24-0606-03-servicenow-arc-ai-passport-nvidia.md",
+      "title": "ServiceNow ส่ง Arc + AI Passport GA — governance agent ลงลึกถึงชิป NVIDIA BlueField",
+      "order": 3
+    },
+    {
+      "file": "26-10-24-0606-04-1password-for-agents-trust-layer.md",
+      "title": "1Password for Agents — เลเยอร์ identity ที่ 6 agent (Claude Duet, ChatGPT Work, Muse, Dots, Grok, Town) ใช้ sign-in แทนลูกค้าโดยไม่เห็น password",
+      "order": 4
+    },
+    {
+      "file": "26-10-24-0606-05-aaif-four-projects-agent-skills.md",
+      "title": "Agentic AI Foundation รับ 4 โปรเจกต์ใหม่ — Anthropic Agent Skills (1M skills, 280M installs), OpenAI Open Responses, HF OpenEnv, Alibaba OpenSandbox",
+      "order": 5
+    }
+  ],
+  "script_char_count": 7990,
+  "audio_file": "26-10-24-0606.mp3",
+  "voice": "th-TH-Chirp3-HD-Achernar",
+  "model": "google-cloud-tts-chirp3-hd",
+  "speed": 1.3
+}
