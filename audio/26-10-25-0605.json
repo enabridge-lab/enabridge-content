@@ -1,0 +1,37 @@
+{
+  "date": "26-10-25-0605",
+  "iso_date": "2026-10-25T06:05:00+07:00",
+  "title": "Daily AI Brief — 26-10-25 06:05",
+  "items": [
+    {
+      "file": "26-10-25-0605-01-general-reasoning-avalon-m1-rlcr.md",
+      "title": "Avalon-M1 โชว์ \"องค์กร AI 9 เอเจนต์\" trained ด้วย collective rewards — แต่เปิด safety gap ที่น่ากลัว",
+      "order": 1
+    },
+    {
+      "file": "26-10-25-0605-02-replit-openai-100m-anthropic-switch.md",
+      "title": "Replit ย้ายงบ AI กว่า $100M/ปี จาก Anthropic ไป OpenAI หลัง 30%+ discount — model switching กลายเป็น enterprise reality",
+      "order": 2
+    },
+    {
+      "file": "26-10-25-0605-03-anthropic-sandbox-runtime-opensource.md",
+      "title": "Anthropic เปิดซอร์ส sandbox-runtime (Apache 2.0) — MCP server ถูก sandbox ได้ที่ระดับ OS โดยไม่ต้องมี container",
+      "order": 3
+    },
+    {
+      "file": "26-10-25-0605-04-moonshot-kimi-k31-pro-open-weights.md",
+      "title": "Moonshot ปล่อย Kimi K3.1 Pro — open-weight ที่ตาม Claude Opus 5.5 ห่าง 0.7 แต้ม + 1M context, เปิด weights 4 พ.ย.",
+      "order": 4
+    },
+    {
+      "file": "26-10-25-0605-05-cursor-computer-use-desktop.md",
+      "title": "Cursor Computer Use เข้าสู่ desktop IDE — coding agent คลิกใน iOS Simulator, Xcode, และ browser ได้ในคำสั่งเดียว",
+      "order": 5
+    }
+  ],
+  "script_char_count": 9106,
+  "audio_file": "26-10-25-0605.mp3",
+  "voice": "th-TH-Chirp3-HD-Achernar",
+  "model": "google-cloud-tts-chirp3-hd",
+  "speed": 1.3
+}
