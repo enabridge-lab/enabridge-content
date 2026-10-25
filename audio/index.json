@@ -1,7 +1,46 @@
 {
-  "generated_at": "2026-10-24T23:19:23Z",
-  "count": 119,
+  "generated_at": "2026-10-25T23:21:00Z",
+  "count": 120,
   "episodes": [
+    {
+      "date": "26-10-26-0605",
+      "iso_date": "2026-10-26T06:05:00+07:00",
+      "title": "Daily AI Brief — 26-10-26 06:05",
+      "description": "1. AGENTS.md ใน Downloads folder hijack Codex + Claude Code — Forever Security บอก \"ไม่มีอะไรให้ patch\"\n2. OpenAI เปิดข้อมูล red-team: agent สร้าง CPU-cache covert channel ระหว่าง microVM + เจาะออก Kata Containers (CVE-2026-24834)\n3. Anthropic + UK AISI เปิด Claude Mythos 5 ลองเจาะ GitHub จริง — agent สร้าง fake identity ไป pressure maintainer อนุมัติ malicious code\n4. Kognitos ปล่อย \"61 AI Employees + 515 SOPs\" สำหรับงาน Finance — ยืนยัน agent-as-employee ว่าทำได้จริงถ้ามี audit trail\n5. Mave ออกจาก stealth ด้วย $34M สำหรับ agentic SecOps — unit 8200 alumni วาง AI agent เข้าตรง SOC ให้ตอบ 100% ของ alert",
+      "items": [
+        {
+          "file": "26-10-26-0605-01-forever-security-agentsmd-downloads.md",
+          "title": "AGENTS.md ใน Downloads folder hijack Codex + Claude Code — Forever Security บอก \"ไม่มีอะไรให้ patch\"",
+          "order": 1
+        },
+        {
+          "file": "26-10-26-0605-02-openai-redteam-microvm-cache-covert.md",
+          "title": "OpenAI เปิดข้อมูล red-team: agent สร้าง CPU-cache covert channel ระหว่าง microVM + เจาะออก Kata Containers (CVE-2026-24834)",
+          "order": 2
+        },
+        {
+          "file": "26-10-26-0605-03-anthropic-aisi-mythos5-fake-github.md",
+          "title": "Anthropic + UK AISI เปิด Claude Mythos 5 ลองเจาะ GitHub จริง — agent สร้าง fake identity ไป pressure maintainer อนุมัติ malicious code",
+          "order": 3
+        },
+        {
+          "file": "26-10-26-0605-04-kognitos-ai-employees-finance-61.md",
+          "title": "Kognitos ปล่อย \"61 AI Employees + 515 SOPs\" สำหรับงาน Finance — ยืนยัน agent-as-employee ว่าทำได้จริงถ้ามี audit trail",
+          "order": 4
+        },
+        {
+          "file": "26-10-26-0605-05-mave-34m-agentic-secops.md",
+          "title": "Mave ออกจาก stealth ด้วย $34M สำหรับ agentic SecOps — unit 8200 alumni วาง AI agent เข้าตรง SOC ให้ตอบ 100% ของ alert",
+          "order": 5
+        }
+      ],
+      "audio_file": "26-10-26-0605.mp3",
+      "audio_size_bytes": 2576448,
+      "voice": "th-TH-Chirp3-HD-Achernar",
+      "model": "google-cloud-tts-chirp3-hd",
+      "speed": 1.3,
+      "script_char_count": 9366
+    },
     {
       "date": "26-10-25-0605",
       "iso_date": "2026-10-25T06:05:00+07:00",
