@@ -1,7 +1,46 @@
 {
-  "generated_at": "2026-10-24T23:19:23Z",
-  "count": 119,
+  "generated_at": "2026-10-26T23:17:38Z",
+  "count": 120,
   "episodes": [
+    {
+      "date": "26-10-27-0607",
+      "iso_date": "2026-10-27T06:07:00+07:00",
+      "title": "Daily AI Brief — 26-10-27 06:07",
+      "description": "1. Town ระดมอีก 108 ล้าน — AI assistant ที่ \"คุยกันเอง\" กลายเป็นยูนิคอร์นภายใน 4 เดือน\n2. Daytona ยูนิคอร์นที่สาม — Agent cloud ที่ provision sandbox ใน 60ms + รายได้โต 25 เท่าตั้งแต่ต้นปี\n3. Claude Duet — Anthropic เปิดตัว proactive agent ที่ \"เริ่มพูดก่อน\" บน Opus 5.5\n4. Microsoft ประกาศ \"agent คือ insider\" — Entra Agent ID + Guardian Agents กลายเป็น default enterprise control plane\n5. Opsin $21M + \"93% ของ agent tool ไม่มี access control\" — agent sprawl กลายเป็น enterprise crisis",
+      "items": [
+        {
+          "file": "26-10-27-0607-01-town-108m-townies.md",
+          "title": "Town ระดมอีก 108 ล้าน — AI assistant ที่ \"คุยกันเอง\" กลายเป็นยูนิคอร์นภายใน 4 เดือน",
+          "order": 1
+        },
+        {
+          "file": "26-10-27-0607-02-daytona-60m-agent-cloud.md",
+          "title": "Daytona ยูนิคอร์นที่สาม — Agent cloud ที่ provision sandbox ใน 60ms + รายได้โต 25 เท่าตั้งแต่ต้นปี",
+          "order": 2
+        },
+        {
+          "file": "26-10-27-0607-03-claude-duet-proactive-agent.md",
+          "title": "Claude Duet — Anthropic เปิดตัว proactive agent ที่ \"เริ่มพูดก่อน\" บน Opus 5.5",
+          "order": 3
+        },
+        {
+          "file": "26-10-27-0607-04-microsoft-project-perception-agents.md",
+          "title": "Microsoft ประกาศ \"agent คือ insider\" — Entra Agent ID + Guardian Agents กลายเป็น default enterprise control plane",
+          "order": 4
+        },
+        {
+          "file": "26-10-27-0607-05-opsin-21m-agent-governance.md",
+          "title": "Opsin $21M + \"93% ของ agent tool ไม่มี access control\" — agent sprawl กลายเป็น enterprise crisis",
+          "order": 5
+        }
+      ],
+      "audio_file": "26-10-27-0607.mp3",
+      "audio_size_bytes": 1233888,
+      "voice": "th-TH-Chirp3-HD-Achernar",
+      "model": "google-cloud-tts-chirp3-hd",
+      "speed": 1.3,
+      "script_char_count": 4558
+    },
     {
       "date": "26-10-25-0605",
       "iso_date": "2026-10-25T06:05:00+07:00",
