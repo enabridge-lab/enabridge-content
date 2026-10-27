@@ -1,7 +1,46 @@
 {
-  "generated_at": "2026-10-24T23:19:23Z",
-  "count": 119,
+  "generated_at": "2026-10-27T23:23:53Z",
+  "count": 120,
   "episodes": [
+    {
+      "date": "26-10-28-0605",
+      "iso_date": "2026-10-28T06:05:00+07:00",
+      "title": "Daily AI Brief — 26-10-28 06:05",
+      "description": "1. OpenAI Dots เปิดราคา $500/เดือน — consumer AI product ตัวแรกที่กล้าตั้งราคาระดับนี้\n2. Vercel Drives GA — persistent storage ของ agent sandbox เริ่มเป็น primitive มาตรฐาน\n3. SailPoint Navigate 2026 — identity-first governance ของ \"non-human workforce\" เริ่ม GA\n4. Google เปิด \"Universal Gemini for Work\" — agent หนึ่งตัว ครอบ Workspace + Microsoft + Salesforce + Snowflake\n5. $5.7B ไหลเข้า agent startup ใน 3 สัปดาห์ — median $15.5M, pattern ชี้ชั้น primitive + vertical ลึก",
+      "items": [
+        {
+          "file": "26-10-28-0605-01-openai-dots-500-tier-always-on-agent.md",
+          "title": "OpenAI Dots เปิดราคา $500/เดือน — consumer AI product ตัวแรกที่กล้าตั้งราคาระดับนี้",
+          "order": 1
+        },
+        {
+          "file": "26-10-28-0605-02-vercel-drives-ga-ship-2026.md",
+          "title": "Vercel Drives GA — persistent storage ของ agent sandbox เริ่มเป็น primitive มาตรฐาน",
+          "order": 2
+        },
+        {
+          "file": "26-10-28-0605-03-sailpoint-agentic-fabric-navigate-2026.md",
+          "title": "SailPoint Navigate 2026 — identity-first governance ของ \"non-human workforce\" เริ่ม GA",
+          "order": 3
+        },
+        {
+          "file": "26-10-28-0605-04-google-universal-gemini-work.md",
+          "title": "Google เปิด \"Universal Gemini for Work\" — agent หนึ่งตัว ครอบ Workspace + Microsoft + Salesforce + Snowflake",
+          "order": 4
+        },
+        {
+          "file": "26-10-28-0605-05-agent-funding-wave-october-2026.md",
+          "title": "$5.7B ไหลเข้า agent startup ใน 3 สัปดาห์ — median $15.5M, pattern ชี้ชั้น primitive + vertical ลึก",
+          "order": 5
+        }
+      ],
+      "audio_file": "26-10-28-0605.mp3",
+      "audio_size_bytes": 3041952,
+      "voice": "th-TH-Chirp3-HD-Achernar",
+      "model": "google-cloud-tts-chirp3-hd",
+      "speed": 1.3,
+      "script_char_count": 11105
+    },
     {
       "date": "26-10-25-0605",
       "iso_date": "2026-10-25T06:05:00+07:00",
