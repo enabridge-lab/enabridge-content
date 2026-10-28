@@ -1,0 +1,32 @@
+{
+  "date": "26-10-29-0605",
+  "iso_date": "2026-10-29T06:05:00+07:00",
+  "title": "Daily AI Brief — 26-10-29 06:05",
+  "items": [
+    {
+      "file": "26-10-29-0605-01-casap-56m-financial-agent-base10.md",
+      "title": "Casap ปิด $56M Series B — AI agent ของ dispute operations ขึ้น $90M total funding + revenue 10x",
+      "order": 1
+    },
+    {
+      "file": "26-10-29-0605-02-infisical-40m-agent-vault-600m.md",
+      "title": "Infisical ปิด $40M Series B ที่ valuation $600M — \"Agent Vault\" กลายเป็น primitive ที่ Fortune 500 ซื้อ",
+      "order": 2
+    },
+    {
+      "file": "26-10-29-0605-03-sierra-stripe-pci-payment-calls.md",
+      "title": "Sierra + Stripe เปิด payment rail สำหรับ AI agent — รับบัตรเครดิตบนสายโทรศัพท์ Level 1 PCI",
+      "order": 3
+    },
+    {
+      "file": "26-10-29-0605-04-omnichat-10m-apac-agentic-cx.md",
+      "title": "Omnichat เปิด Agentic AI Platform + ตั้งเป้า Series A+ $10M — APAC agent play ที่ Thai founder ควรจับตา",
+      "order": 4
+    }
+  ],
+  "script_char_count": 5353,
+  "audio_file": "26-10-29-0605.mp3",
+  "voice": "th-TH-Chirp3-HD-Achernar",
+  "model": "google-cloud-tts-chirp3-hd",
+  "speed": 1.3
+}
