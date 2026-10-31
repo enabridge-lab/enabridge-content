@@ -1,7 +1,46 @@
 {
-  "generated_at": "2026-10-27T23:23:53Z",
-  "count": 120,
+  "generated_at": "2026-10-30T23:21:07Z",
+  "count": 121,
   "episodes": [
+    {
+      "date": "26-10-31-0604",
+      "iso_date": "2026-10-31T06:04:00+07:00",
+      "title": "Daily AI Brief — 26-10-31 06:04",
+      "description": "1. Mintive แตะ 2.5M agent call ต่อวัน — agent identity กำลังกลายเป็นชั้น infra ใหม่ของ enterprise\n2. OpenAI ปล่อย ServiceNow MCP plugin เข้า ChatGPT marketplace — \"update ServiceNow record จาก chat\" ไม่ต้องออกจากหน้าต่าง\n3. Dell + NVIDIA ประกาศ Agent Factory เต็ม stack — \"AI infrastructure is no longer a cost center\"\n4. Meta เปิด Muse personal agent ที่สิงคโปร์ — ต่อ Shopee, Grab, Agoda, Lazada เป็นที่แรก, Thai consumer เป็นเป้าหมายต่อ\n5. EMBRACE: ช่องโหว่ embedded browser ใน Cursor, Copilot, Codex, VS Code, Claude Desktop — 2 ตัวยังไม่ patch",
+      "items": [
+        {
+          "file": "26-10-31-0604-01-mintive-agent-identity-mcp-gateway.md",
+          "title": "Mintive แตะ 2.5M agent call ต่อวัน — agent identity กำลังกลายเป็นชั้น infra ใหม่ของ enterprise",
+          "order": 1
+        },
+        {
+          "file": "26-10-31-0604-02-openai-servicenow-mcp-marketplace.md",
+          "title": "OpenAI ปล่อย ServiceNow MCP plugin เข้า ChatGPT marketplace — \"update ServiceNow record จาก chat\" ไม่ต้องออกจากหน้าต่าง",
+          "order": 2
+        },
+        {
+          "file": "26-10-31-0604-03-dell-nvidia-agent-factory-deskside-datacenter.md",
+          "title": "Dell + NVIDIA ประกาศ Agent Factory เต็ม stack — \"AI infrastructure is no longer a cost center\"",
+          "order": 3
+        },
+        {
+          "file": "26-10-31-0604-04-meta-muse-singapore-sea-consumer-agent.md",
+          "title": "Meta เปิด Muse personal agent ที่สิงคโปร์ — ต่อ Shopee, Grab, Agoda, Lazada เป็นที่แรก, Thai consumer เป็นเป้าหมายต่อ",
+          "order": 4
+        },
+        {
+          "file": "26-10-31-0604-05-embrace-attack-ai-coding-tools-browser.md",
+          "title": "EMBRACE: ช่องโหว่ embedded browser ใน Cursor, Copilot, Codex, VS Code, Claude Desktop — 2 ตัวยังไม่ patch",
+          "order": 5
+        }
+      ],
+      "audio_file": "26-10-31-0604.mp3",
+      "audio_size_bytes": 3607296,
+      "voice": "th-TH-Chirp3-HD-Achernar",
+      "model": "google-cloud-tts-chirp3-hd",
+      "speed": 1.3,
+      "script_char_count": 12812
+    },
     {
       "date": "26-10-28-0605",
       "iso_date": "2026-10-28T06:05:00+07:00",
