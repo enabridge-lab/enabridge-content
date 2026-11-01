@@ -1,7 +1,46 @@
 {
-  "generated_at": "2026-10-30T23:21:07Z",
-  "count": 121,
+  "generated_at": "2026-10-31T23:18:18Z",
+  "count": 122,
   "episodes": [
+    {
+      "date": "26-11-01-0606",
+      "iso_date": "2026-11-01T06:06:00+07:00",
+      "title": "Daily AI Brief — 26-11-01 06:06",
+      "description": "1. UBS เปิดตัวเลข 12,700 personal agent + 608 use case ใน Q3 — enterprise agent หลุด pilot เข้า production บน banking tier\n2. Sema4.ai 3.0 — จาก per-user agent → team workspace, Verified Queries ตัด token 80% บอก playbook ใหม่ของ enterprise\n3. Cresta เปิด Conductor ให้ developer self-service — Claude Agent SDK + 1 สัปดาห์เข้า prod + 5 compliance badge\n4. OpenAI Agents API โยน Codex guardrail ลง primitive — Auto Review + time awareness บอกทิศ coding agent ปี 2027\n5. Persona ปล่อย AI suite สำหรับ identity ops — agent ทำ case review แทน แต่ human ยังเซ็น ‘consequential decision’",
+      "items": [
+        {
+          "file": "26-11-01-0606-01-ubs-12700-agents-608-usecases.md",
+          "title": "UBS เปิดตัวเลข 12,700 personal agent + 608 use case ใน Q3 — enterprise agent หลุด pilot เข้า production บน banking tier",
+          "order": 1
+        },
+        {
+          "file": "26-11-01-0606-02-sema4-ai-30-team-workspace-token-cut.md",
+          "title": "Sema4.ai 3.0 — จาก per-user agent → team workspace, Verified Queries ตัด token 80% บอก playbook ใหม่ของ enterprise",
+          "order": 2
+        },
+        {
+          "file": "26-11-01-0606-03-cresta-conductor-claude-sdk-selfservice.md",
+          "title": "Cresta เปิด Conductor ให้ developer self-service — Claude Agent SDK + 1 สัปดาห์เข้า prod + 5 compliance badge",
+          "order": 3
+        },
+        {
+          "file": "26-11-01-0606-04-openai-agents-api-auto-review-time-awareness.md",
+          "title": "OpenAI Agents API โยน Codex guardrail ลง primitive — Auto Review + time awareness บอกทิศ coding agent ปี 2027",
+          "order": 4
+        },
+        {
+          "file": "26-11-01-0606-05-persona-ai-identity-ops-case-review.md",
+          "title": "Persona ปล่อย AI suite สำหรับ identity ops — agent ทำ case review แทน แต่ human ยังเซ็น ‘consequential decision’",
+          "order": 5
+        }
+      ],
+      "audio_file": "26-11-01-0606.mp3",
+      "audio_size_bytes": 1660416,
+      "voice": "th-TH-Chirp3-HD-Achernar",
+      "model": "google-cloud-tts-chirp3-hd",
+      "speed": 1.3,
+      "script_char_count": 6193
+    },
     {
       "date": "26-10-31-0604",
       "iso_date": "2026-10-31T06:04:00+07:00",
