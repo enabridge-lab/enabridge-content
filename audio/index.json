@@ -1,7 +1,46 @@
 {
-  "generated_at": "2026-10-31T23:18:18Z",
-  "count": 122,
+  "generated_at": "2026-11-01T23:20:37Z",
+  "count": 123,
   "episodes": [
+    {
+      "date": "26-11-02-0605",
+      "iso_date": "2026-11-02T06:05:00+07:00",
+      "title": "Daily AI Brief — 26-11-02 06:05",
+      "description": "1. Anthropic ยื่น S-1 สาธารณะ — $19.7B TTM revenue, 250 ลูกค้าใช้เกิน $10M, มุ่ง Nasdaq ANT ก่อน Thanksgiving\n2. ServiceNow ซื้อ Sweep ~$400M — Agentic CRM ข้าม Salesforce/HubSpot พร้อม MCP server เข้าสู่ roadmap\n3. Google ปิด Jules → ย้าย learning เข้า Antigravity + เปิด Plugin Marketplace (Atlassian/Stripe MCP/Databricks)\n4. Chainalysis โดนเจาะด้วย \"offensive agentic techniques\" — breach แรกที่ vendor ยืนยันว่าใช้ agent attack\n5. Anthropic เปิดเลเยอร์ \"self-evaluation\" + watermark 4 รุ่นก่อน EU AI Act 2 ธ.ค. — governance primitive ย้ายเข้า model",
+      "items": [
+        {
+          "file": "26-11-02-0605-01-anthropic-s1-19b-revenue-ipo.md",
+          "title": "Anthropic ยื่น S-1 สาธารณะ — $19.7B TTM revenue, 250 ลูกค้าใช้เกิน $10M, มุ่ง Nasdaq ANT ก่อน Thanksgiving",
+          "order": 1
+        },
+        {
+          "file": "26-11-02-0605-02-servicenow-sweep-400m-mcp-crm.md",
+          "title": "ServiceNow ซื้อ Sweep ~$400M — Agentic CRM ข้าม Salesforce/HubSpot พร้อม MCP server เข้าสู่ roadmap",
+          "order": 2
+        },
+        {
+          "file": "26-11-02-0605-03-google-jules-sunset-antigravity-plugin-marketplace.md",
+          "title": "Google ปิด Jules → ย้าย learning เข้า Antigravity + เปิด Plugin Marketplace (Atlassian/Stripe MCP/Databricks)",
+          "order": 3
+        },
+        {
+          "file": "26-11-02-0605-04-chainalysis-breach-offensive-agentic-techniques.md",
+          "title": "Chainalysis โดนเจาะด้วย \"offensive agentic techniques\" — breach แรกที่ vendor ยืนยันว่าใช้ agent attack",
+          "order": 4
+        },
+        {
+          "file": "26-11-02-0605-05-anthropic-self-eval-watermark-eu-ai-act.md",
+          "title": "Anthropic เปิดเลเยอร์ \"self-evaluation\" + watermark 4 รุ่นก่อน EU AI Act 2 ธ.ค. — governance primitive ย้ายเข้า model",
+          "order": 5
+        }
+      ],
+      "audio_file": "26-11-02-0605.mp3",
+      "audio_size_bytes": 1989792,
+      "voice": "th-TH-Chirp3-HD-Achernar",
+      "model": "google-cloud-tts-chirp3-hd",
+      "speed": 1.3,
+      "script_char_count": 7355
+    },
     {
       "date": "26-11-01-0606",
       "iso_date": "2026-11-01T06:06:00+07:00",
