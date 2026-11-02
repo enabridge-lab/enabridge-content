@@ -1,0 +1,37 @@
+{
+  "date": "26-11-03-0605",
+  "iso_date": "2026-11-03T06:05:00+07:00",
+  "title": "Daily AI Brief — 26-11-03 06:05",
+  "items": [
+    {
+      "file": "26-11-03-0605-01-dayforce-agentic-hcm-claude-mcp.md",
+      "title": "Dayforce เปิด Agentic HCM Platform + ส่ง MCP connector เข้า Claude — ERP vendor รายต่อไปที่ต้องเลือกข้างใน 2027",
+      "order": 1
+    },
+    {
+      "file": "26-11-03-0605-02-bettercloud-agent-lifecycle-spend-governance.md",
+      "title": "BetterCloud ผนวก AI agent lifecycle + spend tracking เข้า SaaS management — SaaS governance ย้ายขอบเขตเป็น \"agent sprawl\"",
+      "order": 2
+    },
+    {
+      "file": "26-11-03-0605-03-island-enterprise-browser-agents-mcp.md",
+      "title": "Island เปิด Enterprise Browser for Agents — เสนอ browser เป็น \"agent control plane\" แทน MCP extension ของ AI vendor",
+      "order": 3
+    },
+    {
+      "file": "26-11-03-0605-04-uber-mcp-gateway-800-servers-5000-tools.md",
+      "title": "Uber ships MCP Gateway production — 800 server + 5,000 tool หลัง gateway เดียว, และ playbook ที่ Fortune 500 จะ copy",
+      "order": 4
+    },
+    {
+      "file": "26-11-03-0605-05-deepseek-harness-mit-plugin-agent-runtime.md",
+      "title": "DeepSeek Harness MIT: open-source agent runtime ที่ \"ทุกอย่างคือ plugin\" ท้าทาย Claude Agent SDK กับ OpenAI Agents API",
+      "order": 5
+    }
+  ],
+  "script_char_count": 8622,
+  "audio_file": "26-11-03-0605.mp3",
+  "voice": "th-TH-Chirp3-HD-Achernar",
+  "model": "google-cloud-tts-chirp3-hd",
+  "speed": 1.3
+}
