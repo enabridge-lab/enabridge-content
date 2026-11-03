@@ -1,0 +1,37 @@
+{
+  "date": "26-11-04-0604",
+  "iso_date": "2026-11-04T06:04:00+07:00",
+  "title": "Daily AI Brief — 26-11-04 06:04",
+  "items": [
+    {
+      "file": "26-11-04-0604-01-uber-mcp-gateway-800-servers-5000-tools.md",
+      "title": "Uber เปิด MCP Gateway — 800 server + 5,000 tool หลังประตูเดียว, agentic infrastructure เข้าสู่ยุค platform",
+      "order": 1
+    },
+    {
+      "file": "26-11-04-0604-02-github-copilot-26-mcp-connectors-preview.md",
+      "title": "GitHub Copilot เปิด MCP connector 26 ตัวพร้อม public preview — distribution layer ของ agent-tool กำลังถูก lock",
+      "order": 2
+    },
+    {
+      "file": "26-11-04-0604-03-android-studio-byoa-40-agents-acp.md",
+      "title": "Android Studio เปิด BYOA — 40+ coding agent ต่อผ่าน Agent Client Protocol, IDE กลายเป็น neutral ground",
+      "order": 3
+    },
+    {
+      "file": "26-11-04-0604-04-deepseek-super-agent-open-source-always-on.md",
+      "title": "DeepSeek เปิด Super-Agent open-source — always-on coding agent ที่ไม่รอให้ summon, ท้า Claude Code",
+      "order": 4
+    },
+    {
+      "file": "26-11-04-0604-05-akamai-agent-sandbox-wasm-isolation.md",
+      "title": "Akamai Agent Sandbox เปิด beta — WebAssembly isolation deny-by-default สำหรับโค้ดที่ agent เขียน",
+      "order": 5
+    }
+  ],
+  "script_char_count": 6861,
+  "audio_file": "26-11-04-0604.mp3",
+  "voice": "th-TH-Chirp3-HD-Achernar",
+  "model": "google-cloud-tts-chirp3-hd",
+  "speed": 1.3
+}
