@@ -1,7 +1,46 @@
 {
-  "generated_at": "2026-10-31T23:18:18Z",
-  "count": 122,
+  "generated_at": "2026-11-04T23:19:34Z",
+  "count": 123,
   "episodes": [
+    {
+      "date": "26-11-05-0605",
+      "iso_date": "2026-11-05T06:05:00+07:00",
+      "title": "Daily AI Brief — 26-11-05 06:05",
+      "description": "1. Menlo Ventures เปิดตัวเลข $177B — ปี 2026 enterprise จ่ายเกินแผนตัวเอง 2.5 เท่า แต่ 80% ของ token ตกอยู่กับ agent แล้ว\n2. Adobe ส่ง CX Coworker ไปทุก LLM platform — pattern ใหม่ของ app vendor คือ “distribute agent หนีการโดน disrupt”\n3. CrowdStrike วาง Falcon Guardian ไว้ข้าง Claude Cowork — EDR เข้ามาเป็นเลเยอร์ใหม่ที่ agent runtime ต้องมี\n4. Sentra ปิด $150M นำโดย Capital One Ventures — เลเยอร์ที่คุมว่า agent เห็น data อะไรได้ เริ่มมีเจ้าใหญ่\n5. Anthropic ปล่อย Message Threads beta — ตัดภาระ agent ส่ง conversation ซ้ำทุกเทิร์น แต่ token cost เท่าเดิม",
+      "items": [
+        {
+          "file": "26-11-05-0605-01-menlo-enterprise-ai-177b.md",
+          "title": "Menlo Ventures เปิดตัวเลข $177B — ปี 2026 enterprise จ่ายเกินแผนตัวเอง 2.5 เท่า แต่ 80% ของ token ตกอยู่กับ agent แล้ว",
+          "order": 1
+        },
+        {
+          "file": "26-11-05-0605-02-adobe-cx-coworker-multi-platform.md",
+          "title": "Adobe ส่ง CX Coworker ไปทุก LLM platform — pattern ใหม่ของ app vendor คือ “distribute agent หนีการโดน disrupt”",
+          "order": 2
+        },
+        {
+          "file": "26-11-05-0605-03-crowdstrike-falcon-guardian-claude-cowork.md",
+          "title": "CrowdStrike วาง Falcon Guardian ไว้ข้าง Claude Cowork — EDR เข้ามาเป็นเลเยอร์ใหม่ที่ agent runtime ต้องมี",
+          "order": 3
+        },
+        {
+          "file": "26-11-05-0605-04-sentra-150m-agentic-data-governance.md",
+          "title": "Sentra ปิด $150M นำโดย Capital One Ventures — เลเยอร์ที่คุมว่า agent เห็น data อะไรได้ เริ่มมีเจ้าใหญ่",
+          "order": 4
+        },
+        {
+          "file": "26-11-05-0605-05-anthropic-message-threads-beta.md",
+          "title": "Anthropic ปล่อย Message Threads beta — ตัดภาระ agent ส่ง conversation ซ้ำทุกเทิร์น แต่ token cost เท่าเดิม",
+          "order": 5
+        }
+      ],
+      "audio_file": "26-11-05-0605.mp3",
+      "audio_size_bytes": 1568544,
+      "voice": "th-TH-Chirp3-HD-Achernar",
+      "model": "google-cloud-tts-chirp3-hd",
+      "speed": 1.3,
+      "script_char_count": 5551
+    },
     {
       "date": "26-11-01-0606",
       "iso_date": "2026-11-01T06:06:00+07:00",
