@@ -1,7 +1,46 @@
 {
-  "generated_at": "2026-11-04T23:19:34Z",
-  "count": 123,
+  "generated_at": "2026-11-05T23:15:52Z",
+  "count": 124,
   "episodes": [
+    {
+      "date": "26-11-06-0605",
+      "iso_date": "2026-11-06T06:05:00+07:00",
+      "title": "Daily AI Brief — 26-11-06 06:05",
+      "description": "1. Salesforce พิมพ์ตัวเลขที่ enterprise agent รอมาทั้งปี — 185,000 คน, โต 21 เท่าใน 3 เดือน, $50/user/เดือน\n2. CrowdStrike ควัก $495M ซื้อ Fiddler + Dreadnode — เปลี่ยน Falcon เป็น agent observability stack\n3. Nooks ปั๊ม $500M non-dilutive จาก General Catalyst เปิด Node — bet ว่า sales rep คือ next seat ที่ agent จะยึด\n4. Palo Alto จ่อ $500M ซื้อ Clutch — non-human identity กลายเป็นตลาดจริง หลัง CyberArk $25B ปูทาง\n5. SAP ยัด 70+ models + n8n + Cursor ลง Joule Studio — เดิมพันว่า enterprise agent สร้างง่ายกว่า code",
+      "items": [
+        {
+          "file": "26-11-06-0605-01-salesforce-agentforce-coworker-21x.md",
+          "title": "Salesforce พิมพ์ตัวเลขที่ enterprise agent รอมาทั้งปี — 185,000 คน, โต 21 เท่าใน 3 เดือน, $50/user/เดือน",
+          "order": 1
+        },
+        {
+          "file": "26-11-06-0605-02-crowdstrike-fiddler-dreadnode-495m.md",
+          "title": "CrowdStrike ควัก $495M ซื้อ Fiddler + Dreadnode — เปลี่ยน Falcon เป็น agent observability stack",
+          "order": 2
+        },
+        {
+          "file": "26-11-06-0605-03-nooks-500m-node-revenue-agent.md",
+          "title": "Nooks ปั๊ม $500M non-dilutive จาก General Catalyst เปิด Node — bet ว่า sales rep คือ next seat ที่ agent จะยึด",
+          "order": 3
+        },
+        {
+          "file": "26-11-06-0605-04-palo-alto-clutch-500m-non-human-identity.md",
+          "title": "Palo Alto จ่อ $500M ซื้อ Clutch — non-human identity กลายเป็นตลาดจริง หลัง CyberArk $25B ปูทาง",
+          "order": 4
+        },
+        {
+          "file": "26-11-06-0605-05-sap-joule-studio-70-models.md",
+          "title": "SAP ยัด 70+ models + n8n + Cursor ลง Joule Studio — เดิมพันว่า enterprise agent สร้างง่ายกว่า code",
+          "order": 5
+        }
+      ],
+      "audio_file": "26-11-06-0605.mp3",
+      "audio_size_bytes": 1601568,
+      "voice": "th-TH-Chirp3-HD-Achernar",
+      "model": "google-cloud-tts-chirp3-hd",
+      "speed": 1.3,
+      "script_char_count": 6161
+    },
     {
       "date": "26-11-05-0605",
       "iso_date": "2026-11-05T06:05:00+07:00",
