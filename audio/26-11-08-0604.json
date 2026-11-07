@@ -1,0 +1,37 @@
+{
+  "date": "26-11-08-0604",
+  "iso_date": "2026-11-08T06:04:00+07:00",
+  "title": "Daily AI Brief — 26-11-08 06:04",
+  "items": [
+    {
+      "file": "26-11-08-0604-01-google-agent-substrate-cncf-kubernetes.md",
+      "title": "Google ยก Agent Substrate + gVisor ให้ CNCF — เดิมพันว่า agent runtime จะเป็น \"Kubernetes ตัวถัดไป\"",
+      "order": 1
+    },
+    {
+      "file": "26-11-08-0604-02-ocient-100m-petabyte-agentic-analytics.md",
+      "title": "Ocient ปิด $100M Series C — พนัน $260M ว่า agent จะไม่ย้าย data ไป warehouse แต่จะวิ่งเข้า data เอง",
+      "order": 2
+    },
+    {
+      "file": "26-11-08-0604-03-shackleton-ai-5m-construction-vertical-agent.md",
+      "title": "Shackleton AI โผล่จาก stealth $5M — operator-founder ที่ทำ $35M revenue มาก่อน ขาย \"agentic OS\" ให้วงการก่อสร้าง",
+      "order": 3
+    },
+    {
+      "file": "26-11-08-0604-04-firmly-15m-ask-agent-commerce-conversion.md",
+      "title": "firmly ปิด $15M + ปล่อย Ask Agent — ขาย agentic commerce เป็น \"JS 1 บรรทัด\" บวกตัวเลข conversion ที่น่าสนใจ",
+      "order": 4
+    },
+    {
+      "file": "26-11-08-0604-05-agiloft-execution-agents-mcp-clm.md",
+      "title": "Agiloft เปิดตัว 3 agent \"ทำงานจริง\" + MCP สำหรับ Claude — contract AI เปลี่ยนจาก \"analyze\" เป็น \"execute\"",
+      "order": 5
+    }
+  ],
+  "script_char_count": 6788,
+  "audio_file": "26-11-08-0604.mp3",
+  "voice": "th-TH-Chirp3-HD-Achernar",
+  "model": "google-cloud-tts-chirp3-hd",
+  "speed": 1.3
+}
