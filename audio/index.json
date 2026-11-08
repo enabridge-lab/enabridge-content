@@ -1,7 +1,46 @@
 {
-  "generated_at": "2026-11-05T23:15:52Z",
-  "count": 124,
+  "generated_at": "2026-11-08T23:19:53Z",
+  "count": 125,
   "episodes": [
+    {
+      "date": "26-11-09-0607",
+      "iso_date": "2026-11-09T06:07:00+07:00",
+      "title": "Daily AI Brief — 26-11-09 06:07",
+      "description": "1. ADNOC เป็น energy major แรกที่กด \"สวิตช์ OpenAI Frontier\" ทั้งบริษัท — 40,000 คน, 97% adoption, agent จาก wellhead ถึง trading floor\n2. Traversal แตะ unicorn ที่ $120M — agent สำหรับ on-call SRE กลายเป็นหมวดที่ VC เททั้งทัพ\n3. Firmly ปิด $15M + ปล่อย Ask Agent — JPM กับ Mastercard ลงทุนใน rail ที่ agent ซื้อของแทนลูกค้า\n4. Snowflake เปลี่ยน CoCo + CoWork เป็น always-on agent — persistent memory, async API, 60+ industry datasets\n5. Walmart เปิดประตูให้ AI agent — Agent Profiles, Gateway, และ MCP ทำให้ retail ที่ใหญ่ที่สุดในอเมริกาเป็น agent-friendly ตัวแรก",
+      "items": [
+        {
+          "file": "26-11-09-0607-01-adnoc-openai-g42-frontier-energy.md",
+          "title": "ADNOC เป็น energy major แรกที่กด \"สวิตช์ OpenAI Frontier\" ทั้งบริษัท — 40,000 คน, 97% adoption, agent จาก wellhead ถึง trading floor",
+          "order": 1
+        },
+        {
+          "file": "26-11-09-0607-02-traversal-120m-ai-sre-unicorn.md",
+          "title": "Traversal แตะ unicorn ที่ $120M — agent สำหรับ on-call SRE กลายเป็นหมวดที่ VC เททั้งทัพ",
+          "order": 2
+        },
+        {
+          "file": "26-11-09-0607-03-firmly-15m-ask-agent-commerce.md",
+          "title": "Firmly ปิด $15M + ปล่อย Ask Agent — JPM กับ Mastercard ลงทุนใน rail ที่ agent ซื้อของแทนลูกค้า",
+          "order": 3
+        },
+        {
+          "file": "26-11-09-0607-04-snowflake-always-on-coco-cowork.md",
+          "title": "Snowflake เปลี่ยน CoCo + CoWork เป็น always-on agent — persistent memory, async API, 60+ industry datasets",
+          "order": 4
+        },
+        {
+          "file": "26-11-09-0607-05-walmart-agent-gateway-mcp-retail.md",
+          "title": "Walmart เปิดประตูให้ AI agent — Agent Profiles, Gateway, และ MCP ทำให้ retail ที่ใหญ่ที่สุดในอเมริกาเป็น agent-friendly ตัวแรก",
+          "order": 5
+        }
+      ],
+      "audio_file": "26-11-09-0607.mp3",
+      "audio_size_bytes": 1832352,
+      "voice": "th-TH-Chirp3-HD-Achernar",
+      "model": "google-cloud-tts-chirp3-hd",
+      "speed": 1.3,
+      "script_char_count": 6648
+    },
     {
       "date": "26-11-06-0605",
       "iso_date": "2026-11-06T06:05:00+07:00",
