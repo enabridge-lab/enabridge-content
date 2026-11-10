@@ -1,0 +1,32 @@
+{
+  "date": "26-11-11-0604",
+  "iso_date": "2026-11-11T06:04:00+07:00",
+  "title": "Daily AI Brief — 26-11-11 06:04",
+  "items": [
+    {
+      "file": "26-11-11-0604-01-ibm-microsoft-imagine-enterprise.md",
+      "title": "IBM กับ Microsoft เปิดตัว Imagine Enterprise — แพลตฟอร์ม agent แบบ industry-specific พร้อม 6,000+ pre-built assets",
+      "order": 1
+    },
+    {
+      "file": "26-11-11-0604-02-google-agent-substrate-cncf.md",
+      "title": "Google ยก Agent Substrate กับ gVisor ให้ CNCF — เปิดสนาม runtime มาตรฐานของ stateful agent",
+      "order": 2
+    },
+    {
+      "file": "26-11-11-0604-03-bay-ai-50m-agent-security.md",
+      "title": "Bay AI เปิดตัวพร้อม $50M — ตรวจทุก action ของ agent ก่อนรันจริง, Fortune 100 ขยาย autonomous agent 3 เท่าใน 30 วัน",
+      "order": 3
+    },
+    {
+      "file": "26-11-11-0604-04-crowdstrike-fiddler-dreadnode-495m.md",
+      "title": "CrowdStrike ควบ Fiddler AI + Dreadnode ~$495M — รวมเป็น Falcon Observe, สัญญาณ agent observability รวมศูนย์",
+      "order": 4
+    }
+  ],
+  "script_char_count": 4669,
+  "audio_file": "26-11-11-0604.mp3",
+  "voice": "th-TH-Chirp3-HD-Achernar",
+  "model": "google-cloud-tts-chirp3-hd",
+  "speed": 1.3
+}
