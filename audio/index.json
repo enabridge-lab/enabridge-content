@@ -1,7 +1,46 @@
 {
-  "generated_at": "2026-11-05T23:15:52Z",
-  "count": 124,
+  "generated_at": "2026-11-12T23:16:55Z",
+  "count": 125,
   "episodes": [
+    {
+      "date": "26-11-13-0604",
+      "iso_date": "2026-11-13T06:04:00+07:00",
+      "title": "Daily AI Brief — 26-11-13 06:04",
+      "description": "1. Mercor $750M ที่ $20B valuation — การประเมิน AI Agent กลายเป็นธุรกิจใหญ่สุดก่อนที่ agent เองจะโต\n2. Rox $100M ชน Salesforce ที่ hallway ของ CRM — แต่คำถามจริงคือใครจ่าย renewal\n3. Adobe เปิดบ้านให้ MCP — ไม่ใช่ feature แต่เป็น retreat จาก walled garden\n4. Bay $50M ออกจาก stealth — Agent runtime enforcement กลายเป็นหมวดใหม่ที่ Wiz CEO เองยังลงเงิน\n5. Kindo $30M + 800% revenue growth — AI Agent FinOps กลายเป็นสายอาชีพใหม่ของ CIO",
+      "items": [
+        {
+          "file": "26-11-13-0604-01-mercor-750m-agent-eval-benchmark.md",
+          "title": "Mercor $750M ที่ $20B valuation — การประเมิน AI Agent กลายเป็นธุรกิจใหญ่สุดก่อนที่ agent เองจะโต",
+          "order": 1
+        },
+        {
+          "file": "26-11-13-0604-02-rox-100m-revenue-agent-salesforce.md",
+          "title": "Rox $100M ชน Salesforce ที่ hallway ของ CRM — แต่คำถามจริงคือใครจ่าย renewal",
+          "order": 2
+        },
+        {
+          "file": "26-11-13-0604-03-adobe-mcp-creative-suite-agent-control.md",
+          "title": "Adobe เปิดบ้านให้ MCP — ไม่ใช่ feature แต่เป็น retreat จาก walled garden",
+          "order": 3
+        },
+        {
+          "file": "26-11-13-0604-04-bay-50m-agent-runtime-enforcement.md",
+          "title": "Bay $50M ออกจาก stealth — Agent runtime enforcement กลายเป็นหมวดใหม่ที่ Wiz CEO เองยังลงเงิน",
+          "order": 4
+        },
+        {
+          "file": "26-11-13-0604-05-kindo-30m-control-center-finops.md",
+          "title": "Kindo $30M + 800% revenue growth — AI Agent FinOps กลายเป็นสายอาชีพใหม่ของ CIO",
+          "order": 5
+        }
+      ],
+      "audio_file": "26-11-13-0604.mp3",
+      "audio_size_bytes": 1808832,
+      "voice": "th-TH-Chirp3-HD-Achernar",
+      "model": "google-cloud-tts-chirp3-hd",
+      "speed": 1.3,
+      "script_char_count": 6567
+    },
     {
       "date": "26-11-06-0605",
       "iso_date": "2026-11-06T06:05:00+07:00",
