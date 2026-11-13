@@ -1,7 +1,46 @@
 {
-  "generated_at": "2026-11-05T23:15:52Z",
-  "count": 124,
+  "generated_at": "2026-11-13T23:17:16Z",
+  "count": 125,
   "episodes": [
+    {
+      "date": "26-11-14-0605",
+      "iso_date": "2026-11-14T06:05:00+07:00",
+      "title": "Daily AI Brief — 26-11-14 06:05",
+      "description": "1. LangChain พิมพ์ตัวเลขที่ agent tooling market รอมาทั้งปี — $300M, $3B valuation, LangSmith 7,000 องค์กร\n2. Anthropic เปิดให้ enterprise รัน Claude Managed Agents บน server ตัวเอง — regulated industries unlock\n3. IBM กับ Microsoft เปิด Imagine Enterprise — 6,000 agents ขายเป็น consulting ไม่ใช่ SaaS\n4. Decagon เปิด Missions — customer service agent ขยับจาก Q&A ไปทำงานข้ามหลายวัน\n5. Rox ปิด $100M @ $1.3B — sales agent unicorn รุ่นใหม่ ARR โต 10 เท่าในปีเดียว",
+      "items": [
+        {
+          "file": "26-11-14-0605-01-langchain-300m-3b-langsmith-7000.md",
+          "title": "LangChain พิมพ์ตัวเลขที่ agent tooling market รอมาทั้งปี — $300M, $3B valuation, LangSmith 7,000 องค์กร",
+          "order": 1
+        },
+        {
+          "file": "26-11-14-0605-02-anthropic-self-hosted-managed-agents.md",
+          "title": "Anthropic เปิดให้ enterprise รัน Claude Managed Agents บน server ตัวเอง — regulated industries unlock",
+          "order": 2
+        },
+        {
+          "file": "26-11-14-0605-03-ibm-microsoft-imagine-6000-agents.md",
+          "title": "IBM กับ Microsoft เปิด Imagine Enterprise — 6,000 agents ขายเป็น consulting ไม่ใช่ SaaS",
+          "order": 3
+        },
+        {
+          "file": "26-11-14-0605-04-decagon-missions-long-horizon.md",
+          "title": "Decagon เปิด Missions — customer service agent ขยับจาก Q&A ไปทำงานข้ามหลายวัน",
+          "order": 4
+        },
+        {
+          "file": "26-11-14-0605-05-rox-100m-sales-agent-10x-arr.md",
+          "title": "Rox ปิด $100M @ $1.3B — sales agent unicorn รุ่นใหม่ ARR โต 10 เท่าในปีเดียว",
+          "order": 5
+        }
+      ],
+      "audio_file": "26-11-14-0605.mp3",
+      "audio_size_bytes": 1872768,
+      "voice": "th-TH-Chirp3-HD-Achernar",
+      "model": "google-cloud-tts-chirp3-hd",
+      "speed": 1.3,
+      "script_char_count": 7105
+    },
     {
       "date": "26-11-06-0605",
       "iso_date": "2026-11-06T06:05:00+07:00",
