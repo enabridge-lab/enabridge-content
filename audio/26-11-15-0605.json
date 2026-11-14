@@ -1,0 +1,32 @@
+{
+  "date": "26-11-15-0605",
+  "iso_date": "2026-11-15T06:05:00+07:00",
+  "title": "Daily AI Brief — 26-11-15 06:05",
+  "items": [
+    {
+      "file": "26-11-15-0605-01-anthropic-self-hosted-managed-agents-private-beta.md",
+      "title": "Anthropic เปิด self-hosted Claude Managed Agents private beta — ย้าย agent control plane เข้าไปอยู่ใน perimeter ของลูกค้า",
+      "order": 1
+    },
+    {
+      "file": "26-11-15-0605-02-langchain-300m-series-c-3b-valuation.md",
+      "title": "LangChain ระดม $300M Series C ที่ valuation $3B — CapitalG double down บน thesis \"neutral agent runtime\"",
+      "order": 2
+    },
+    {
+      "file": "26-11-15-0605-03-mirendil-1b-series-a-lor-ai-research-lab.md",
+      "title": "Mirendil ระดม $1B Series A — ex-Anthropic นักวิจัยเดิมพัน \"agent รัน AI lab ได้ทั้ง lab\" valuation $5B",
+      "order": 3
+    },
+    {
+      "file": "26-11-15-0605-04-ibm-microsoft-imagine-enterprise-6000-agents.md",
+      "title": "IBM + Microsoft เปิด Imagine Enterprise — 6,000 prebuilt agent + consulting delivery = \"agent marketplace\" ของ big tech เริ่มแล้ว",
+      "order": 4
+    }
+  ],
+  "script_char_count": 5989,
+  "audio_file": "26-11-15-0605.mp3",
+  "voice": "th-TH-Chirp3-HD-Achernar",
+  "model": "google-cloud-tts-chirp3-hd",
+  "speed": 1.3
+}
