@@ -1,0 +1,39 @@
+สวัสดีครับ นี่คือ Enabridge AI Brief รอบ 17 November 2026 เวลา 06:05 ครับ.
+รอบนี้มี 5 เรื่อง เน้น Agentic AI, business use case, และ trend ที่เอามาใช้กับ OpenBridge ได้.
+
+เรื่องแรก.
+วันพุธนี้ 19 พฤศจิกายน Anthropic จะเข้าเทรดใน Nasdaq ตัวย่อ ANT หลังตั้งราคา IPO ที่ 70 ถึง 78 ดอลลาร์ต่อหุ้น ซึ่งทำให้บริษัทมี valuation ระหว่าง 9 แสน 1 หมื่น 6 พันล้าน ถึง 1 ล้านล้าน 4 แสนล้านดอลลาร์ ถ้านับหุ้นทั้งหมด ใหญ่กว่า Oracle และใกล้ Mastercard เทียบกับ AI pure-play IPO ของ Snowflake หรือ Palantir นี่คือก้าวใหญ่ที่สุดที่ตลาดเคยให้ค่าบริษัท agentic AI ที่ขึ้นมาแค่ 5 ปี
+
+สิ่งที่น่าสนใจกว่าตัวเลขคือโครงสร้างของดีล — มี private placement มูลค่า 26 พันล้านดอลลาร์ ขายให้ strategic buyer 7 รายล่วงหน้า book ปิดแล้วก่อน IPO เริ่มด้วยซ้ำ นี่คือการล็อก ecosystem partner ก่อนเข้าตลาด คล้ายที่ Snowflake ทำตอนปี 2020 แต่ขนาดใหญ่กว่าหลายเท่า สื่อเดาว่าในกลุ่มนี้มี Amazon เพื่อขยาย compute commitment และ enterprise distribution partner อย่าง ServiceNow
+
+สำหรับทีม Enabridge และคนไทยที่สร้าง agent บน Claude ข่าวนี้มีสองนัยสำคัญ หนึ่ง — Anthropic จะไม่ discount แข่ง market share เหมือนก่อน IPO อีกต่อไป CFO ควรล็อกราคา multi-year ตอนนี้ก่อน Q1 สอง — MCP จะกลายเป็น protocol มาตรฐานที่ตลาดไม่ตั้งคำถาม เพราะ public company หนุน open standard มีน้ำหนักกว่า proprietary API สามเท่า ส่วน dependency risk — ถ้าธุรกิจเรา run บน Claude ล้วน model router + fallback ผ่าน MCP ไม่ใช่ตัวเลือก แต่เป็น business continuity requirement ครับ.
+
+เรื่องที่สอง.
+วันนี้ Dreamteam ออกจาก stealth พร้อมเงิน 53 ล้านดอลลาร์ นำโดย Accel บวก Together Fund และ Premji Invest สิ่งที่ทำให้ข่าวนี้น่าสนใจกว่า CRM startup ทั่วไปคือ founder trio เป็น ex-Freshworks executive รวมถึง CEO ที่ build Freshsales จากศูนย์จน IPO ปี 2021 — ครั้งนี้เขาตัดสินใจ rebuild CRM จากศูนย์แทนที่จะ graft AI ลงบนระบบเดิม
+
+Product มี AI teammate 4 ตัวทำงานแยกหน้าที่แต่แชร์ memory เดียวกัน ที่เรียกว่า Company Brain Rachel ทำ account research ก่อน meeting ทุกครั้ง Sally drafts follow-up email และ recommends deal stage Raj วิเคราะห์ pipeline ชี้ deal ที่เสี่ยง slip quarter และ Alex เป็น admin agent รับคำสั่งภาษาธรรมชาติเพื่อตั้งค่าระบบ แทน Salesforce admin job ที่กินเวลา 20% ของ team
+
+ที่ต้องเก็บไว้คิดคือ — ไม่กี่สัปดาห์ก่อน Salesforce เพิ่งประกาศ Agentforce Coworker ที่ scale 21 เท่าใน 3 เดือน Dreamteam ไม่ได้ท้าทายโดยทำ agent ให้ดีกว่า แต่ rebuild tech stack ทั้งตัวให้ agent-first ตั้งแต่ database, memory, ไปจน admin UI pattern นี้คล้าย Notion vs Confluence ปี 2019 ที่ incumbent ไม่ตาย แต่ segment ใหม่ (SMB, startup) ถูก disrupt อย่างชัดเจน สำหรับทีม Enabridge นี่คือ validation สำคัญ — vertical agent platform ที่ rebuild workflow จากศูนย์ขายได้ ไม่ต้องรอ incumbent ให้พรครับ.
+
+เรื่องที่สาม.
+AT&T เพิ่งพิมพ์ตัวเลข agentic AI ที่หายากมากในตลาดจริง Luke Corbin รองประธานฝ่าย AI ของ AT&T ยืนยันว่ามี workflow agentic เกือบ 500 ตัวอยู่ใน production — platform ภายในชื่อ Business Agent Foundry ประมวล token 45 พันล้านตัวต่อวัน ทำ transaction ธุรกิจมากกว่า 1 ล้านรายการต่อเดือน และเป้าหมายคือทำให้ตัวเลขนี้โต 3 เท่าในปี 2027
+
+ตัวเลข 45 พันล้าน token ต่อวันสำคัญมาก เพราะมันใกล้ครึ่งหนึ่งของ ChatGPT ทั้ง consumer base นั่นหมายความว่า enterprise workload เริ่มใหญ่พอ ๆ กับ consumer scale และ AI gateway ของ AT&T ที่ route ไปหลาย model ทั้ง open-source และ proprietary กลายเป็น infrastructure ที่มี throughput ไม่น้อยไปกว่า hyperscaler
+
+สิ่งที่น่าสนใจคือ AT&T ไม่ได้ใช้ agent framework ของ hyperscaler ตัวใดตัวหนึ่ง Business Agent Foundry เป็น in-house platform ที่ orchestrate หลาย model ผ่าน AI gateway บวก observability layer บวก human-in-loop ทุก workflow จนกว่า accuracy จะยืนที่ mid-to-high 90% range สำหรับ Enabridge และคนที่สร้าง agent platform บทเรียนตรงนี้ชัด — การลงทุน gateway กับ observability ต้องมาก่อน agent framework และ pattern "human-in-loop until stable" ต้องเป็น default ไม่ใช่ feature พิเศษครับ.
+
+เรื่องที่สี่.
+IBM กับ Microsoft ประกาศ Imagine Enterprise เมื่อ 10 พฤศจิกายน — platform agentic ที่มาพร้อม agent และ asset มากกว่า 6,000 ตัว รันบน Azure IBM ให้ library agent บวก consulting know-how ส่วน Microsoft ให้ cloud บวก identity ผ่าน Entra บวก governance ผ่าน Purview บวก security ผ่าน Defender
+
+Entry industry คือ financial services, insurance, retail ซึ่งเป็น segment ที่ IBM Consulting มี account relationship แน่นอยู่แล้ว ทางเลือก engagement มีสองแบบ IBM deploy และ operate ให้ทั้งหมด หรือ co-innovation กับทีม in-house ของลูกค้า — ไม่มี publish pricing เพราะ IBM จะขายผ่าน consulting engagement เป็นหลัก
+
+สำหรับ IBM นี่คือการ pivot ที่ชัดที่สุดในรอบ 18 เดือน — ยอมเป็น distribution และ domain expert layer แทนที่จะพยายามเป็น platform ชั้นล่าง ส่วน Microsoft ได้ลูกค้า regulated enterprise ที่ compliance review ช้าโดยไม่ต้อง build sales motion เอง แต่สิ่งที่ยังไม่ชัดคือ audit trail รายตัวของ agent action — ซึ่งเป็น gating item ของธนาคาร tier 1 โดยเฉพาะ EU AI Act มาตรา 13 ถึง 14 ที่จะบังคับใช้ H1 2027 สำหรับทีม Enabridge และคนที่สร้าง agent platform ให้ลูกค้า regulated คำถามที่ต้องตอบคือ audit trail export ไป SIEM ได้ไหม data residency อยู่ที่ไหน และ model provenance verify ได้ไหม ถ้า vendor ตอบไม่ครบสามข้อนี้ อย่าเพิ่ง sign ครับ.
+
+เรื่องที่ห้า.
+Bay บริษัท AI agent security จาก Tel Aviv เพิ่งออกจาก stealth เมื่อ 10 พฤศจิกายน ด้วยเงินรวม 50 ล้านดอลลาร์ แบ่งเป็น Series A 37 ล้านนำโดย Battery Ventures และ seed 13 ล้านนำโดย YL Ventures นักลงทุนที่น่าสนใจคือ Assaf Rappaport ซีอีโอของ Wiz ลงทุนเงินส่วนตัว เท่ากับว่าคนที่ชนะในตลาด cloud security รุ่นก่อนเดิมพันว่า agent security คือคลื่นต่อไป
+
+สิ่งที่ทำให้ Bay แตกต่างคือ on-device action gating — ทุกครั้งที่ AI agent จะ execute action เช่นเปิด file call API หรือ write database Bay สกัด action นั้นที่ endpoint ก่อน แล้วเทียบกับ policy แล้วตัดสิน allow block หรือ escalate ไปที่มนุษย์ ต่างจาก network-level security ที่ตรวจ API call ที่ออก internet Bay ตรวจที่ application layer ก่อน call ออกไปด้วยซ้ำ
+
+ตลาด agent security กำลัง segment ตัวเองเป็น 4 layer ชัดเจน identity ใครเป็น agent action agent ทำอะไรได้ network agent คุยกับใคร และ audit หลังเกิดเหตุแล้วต้อง review อะไร Bay อยู่ที่ action layer แข่งกับ Kindo สำหรับ Enabridge และคนที่สร้าง agent platform หมายความว่าต้อง expose action manifest ที่โครงสร้างชัด ไม่ใช่ opaque LLM call ไม่งั้นลูกค้า enterprise ที่ compliance หนัก reject ตอน security review แน่นอนครับ.
+
+ทั้งหมดนี้คือ brief ของรอบนี้. ขอให้วันนี้เป็นวันที่ดีครับ. แล้วเจอกันรอบหน้า.
