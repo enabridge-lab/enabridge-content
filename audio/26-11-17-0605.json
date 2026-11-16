@@ -1,0 +1,37 @@
+{
+  "date": "26-11-17-0605",
+  "iso_date": "2026-11-17T06:05:00+07:00",
+  "title": "Daily AI Brief — 26-11-17 06:05",
+  "items": [
+    {
+      "file": "26-11-17-0605-01-anthropic-ipo-1-trillion-valuation.md",
+      "title": "Anthropic เคาะราคา IPO ที่ $70–$78 — ตลาดประเมินบริษัท agentic AI ที่ $1.4T ก่อนเทรดวันที่ 19 พ.ย.",
+      "order": 1
+    },
+    {
+      "file": "26-11-17-0605-02-dreamteam-53m-ai-native-crm.md",
+      "title": "ex-Freshworks ปลุก Dreamteam ด้วย $53M — ท้า Salesforce ด้วย CRM ที่มี AI teammate 4 คนทำงานแทน sales rep",
+      "order": 2
+    },
+    {
+      "file": "26-11-17-0605-03-att-500-workflows-45b-tokens.md",
+      "title": "AT&T พิมพ์ตัวเลข agentic ของจริง — 500 workflow ใน production, 45 พันล้าน token/วัน, 5x ROI ภายในปีเดียว",
+      "order": 3
+    },
+    {
+      "file": "26-11-17-0605-04-ibm-microsoft-imagine-enterprise.md",
+      "title": "IBM กับ Microsoft เปิด Imagine Enterprise — เอา agent 6,000+ ตัวใส่ Azure เพื่อขาย \"AI agent as service\" ให้สถาบันการเงิน",
+      "order": 4
+    },
+    {
+      "file": "26-11-17-0605-05-bay-50m-agent-action-vetting.md",
+      "title": "Bay โผล่จาก stealth $50M — Battery Ventures + Wiz CEO เดิมพันว่า \"ตรวจก่อนปล่อย\" คือ moat ของ agent security",
+      "order": 5
+    }
+  ],
+  "script_char_count": 6234,
+  "audio_file": "26-11-17-0605.mp3",
+  "voice": "th-TH-Chirp3-HD-Achernar",
+  "model": "google-cloud-tts-chirp3-hd",
+  "speed": 1.3
+}
