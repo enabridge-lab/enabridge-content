@@ -1,7 +1,46 @@
 {
-  "generated_at": "2026-11-05T23:15:52Z",
-  "count": 124,
+  "generated_at": "2026-11-17T23:16:57Z",
+  "count": 125,
   "episodes": [
+    {
+      "date": "26-11-18-0605",
+      "iso_date": "2026-11-18T06:05:00+07:00",
+      "title": "Daily AI Brief — 26-11-18 06:05",
+      "description": "1. Model ML ได้ $250M ที่ $1.5B — agent สำหรับ banker ขึ้น unicorn ใน 18 เดือน หลังออกจาก stealth\n2. Genpact Onyx — BPO ยักษ์ Ventures 30 ปี เปิด agent platform ที่สร้างจาก process intelligence เป็นแกน\n3. Corma ขึ้น unicorn ใน 90 วัน — NEA นำ $125M อัด AI agent ฝั่ง defense เข้า SOC แทน analyst\n4. Poppy 1.0 เปิดสเปค — Sierra กับ Meta วางรางให้ \"agent คุยกับธุรกิจ\" ผ่าน OAuth, Shopify เปิดทุกร้านทันที\n5. Kindo ได้ $30M — AI Control Center สำหรับคุม agent \"ทุกตัว ทุกทีม\" และอ้าง revenue โต 800% ปีเดียว",
+      "items": [
+        {
+          "file": "26-11-18-0605-01-model-ml-250m-series-b.md",
+          "title": "Model ML ได้ $250M ที่ $1.5B — agent สำหรับ banker ขึ้น unicorn ใน 18 เดือน หลังออกจาก stealth",
+          "order": 1
+        },
+        {
+          "file": "26-11-18-0605-02-genpact-onyx-agentic-operations.md",
+          "title": "Genpact Onyx — BPO ยักษ์ Ventures 30 ปี เปิด agent platform ที่สร้างจาก process intelligence เป็นแกน",
+          "order": 2
+        },
+        {
+          "file": "26-11-18-0605-03-corma-125m-defensive-cyber-ai.md",
+          "title": "Corma ขึ้น unicorn ใน 90 วัน — NEA นำ $125M อัด AI agent ฝั่ง defense เข้า SOC แทน analyst",
+          "order": 3
+        },
+        {
+          "file": "26-11-18-0605-04-sierra-poppy-personal-agent-protocol.md",
+          "title": "Poppy 1.0 เปิดสเปค — Sierra กับ Meta วางรางให้ \"agent คุยกับธุรกิจ\" ผ่าน OAuth, Shopify เปิดทุกร้านทันที",
+          "order": 4
+        },
+        {
+          "file": "26-11-18-0605-05-kindo-30m-agent-control-center.md",
+          "title": "Kindo ได้ $30M — AI Control Center สำหรับคุม agent \"ทุกตัว ทุกทีม\" และอ้าง revenue โต 800% ปีเดียว",
+          "order": 5
+        }
+      ],
+      "audio_file": "26-11-18-0605.mp3",
+      "audio_size_bytes": 1464960,
+      "voice": "th-TH-Chirp3-HD-Achernar",
+      "model": "google-cloud-tts-chirp3-hd",
+      "speed": 1.3,
+      "script_char_count": 5605
+    },
     {
       "date": "26-11-06-0605",
       "iso_date": "2026-11-06T06:05:00+07:00",
