@@ -1,0 +1,29 @@
+สวัสดีครับ นี่คือ Enabridge AI Brief รอบ 18 November 2026 เวลา 06:05 ครับ.
+รอบนี้มี 5 เรื่อง เน้น Agentic AI, business use case, และ trend ที่เอามาใช้กับ OpenBridge ได้.
+
+เรื่องแรก.
+วันนี้มีข่าวใหญ่จากลอนดอน บริษัทชื่อ Model ML เพิ่งปิด Series B สองร้อยห้าสิบล้านดอลลาร์ ที่ valuation หนึ่งพันห้าร้อยล้าน นำโดย General Atlantic กับ QED Investors บริษัทนี้สร้าง personal agent สำหรับคนทำงานใน investment banking กับ consulting โดยเฉพาะ สิ่งที่น่าสนใจคือ agent ของเขาเสียบตรงเข้าไปใน Excel กับ PowerPoint ของลูกค้า แล้วรับงานหนัก ๆ แทน junior banker เช่น สร้าง financial model ประกอบ pitch deck และเขียน due diligence report
+
+จุดต่างที่ทำให้ Tier-one VC ลงทุน ไม่ใช่เพราะ model เก่งกว่าใคร แต่เพราะใช้ model-routing — คือเลือก model ที่ถูกที่สุดกับ task นั้นๆ แทนที่จะเรียก frontier model ทุกครั้ง บริษัทอ้างว่า cost เหลือแค่ 2% ของการใช้ frontier อย่างเดียว ถ้าเป็นจริงแม้แค่ครึ่งหนึ่ง นี่คือ pattern ที่ vertical agent รุ่นต่อไปจะเดินตาม สัญญาณสำหรับทีมที่กำลังสร้าง agent คือ moat อาจไม่ได้อยู่ที่ model แต่อยู่ที่ orchestration layer ที่รู้ว่างานไหนเรียกใคร และสำหรับ enterprise ที่กำลังจะซื้อ agent ต้องเริ่มถาม vendor ว่า cost structure เขาทนทานกับการขึ้น token price ของ frontier lab แค่ไหน.
+
+เรื่องที่สอง.
+Genpact BPO ยักษ์ใหญ่สามสิบปี เปิดตัว platform ใหม่ชื่อ Onyx เมื่อสองวันก่อน เป็น agentic operations platform สำหรับสร้างและคุม AI agent ที่ทำงาน enterprise operations ตั้งแต่ finance, supply chain, HR ไปจนถึง customer service จุดขายคือ Process Intelligence Core ซึ่งเป็น knowledge เกี่ยวกับ workflow ของ Fortune 500 ที่ Genpact สะสมมาเป็นสามทศวรรษ ทำให้ agent ของ Onyx ไม่ใช่แค่ chatbot เรียก API แต่เป็น agent ที่เข้าใจ process จริง use case แรกที่ Genpact โชว์คือ Accounts Payable Suite — agent รับ invoice, match PO, flag anomaly แล้วส่งให้คน approve เฉพาะ case ที่ไม่แน่ใจ
+
+สิ่งที่น่าจับตาคือ governance model ที่เรียกว่า earned autonomy — agent ต้องผ่าน human approval หลายรอบก่อนจะได้ทำงานอิสระ ซึ่งเป็น framing ที่ CFO กับ compliance team ยอมรับได้ง่ายกว่า pattern ของ agent รุ่นเก่า นี่คือเดิมพันว่า IP ของ Genpact อยู่ที่ process knowledge ไม่ใช่ model และเป็นสัญญาณให้ builders เห็นว่า การแข่งใน enterprise จะวัดกันที่ integration กับ audit trail มากกว่า benchmark สำหรับ organization ที่กำลังเลือก agent platform ข้อดีของ option BPO คือ consultant รู้ process คุณอยู่แล้ว ข้อเสียคือต้องถามให้ชัดว่า process IP ที่ codify ไปเป็นของใคร.
+
+เรื่องที่สาม.
+ข่าวจากอิสราเอล บริษัทชื่อ Corma เพิ่งปิด Series A หนึ่งร้อยยี่สิบห้าล้านดอลลาร์ ที่ valuation หนึ่งพันล้าน นำโดย NEA โดยที่ Sequoia, Khosla, Coatue ที่ลง seed ตอนสิงหาคม ก็ลงต่อทั้งหมด บริษัทนี้ขึ้น unicorn ในเวลาเก้าสิบวันหลังออกจาก stealth เท่านั้น สิ่งที่ Corma ทำไม่ใช่ copilot ไม่ใช่ SIEM แต่เป็น foundation model ที่เทรนเองสำหรับ cyber defense แล้ว deploy เป็น AI workforce ทำงานใน SOC ของลูกค้าร่วมกับ analyst
+
+team ผสม researcher จาก Google กับ DeepMind เข้ากับ operator จาก Unit 8200 ของกองทัพอิสราเอล ทำให้ได้ premium จาก VC agent ของ Corma ไม่ได้แค่แจ้งเตือน แต่สืบ root cause เขียน playbook แล้วรัน action ใน EDR กับ firewall เอง โดยคนเข้ามา supervise เฉพาะเคสที่ไม่แน่ใจ บริษัทอ้างว่า cost งาน security ลดเกินเก้าสิบเปอร์เซ็นต์ ซึ่งยังต้องรอ third party ยืนยัน สัญญาณสำหรับ builders ใน vertical อื่นคือ การถือ foundation model ของตัวเองเริ่มเป็น moat ไม่ใช่ overhead แต่คุณต้องมี proprietary data ที่ beat frontier ในงานเฉพาะได้จริง สำหรับ CISO ต้องเริ่มถาม vendor ว่า foundation layer เขาอยู่ที่ไหน.
+
+เรื่องที่สี่.
+Sierra ของ Bret Taylor เพิ่งปล่อย Personal Agent Protocol version หนึ่ง ชื่อเล่น Poppy เมื่อสี่วันก่อน พร้อม design partner กว่าร้อยราย รวม Meta, Shopify, Stripe, Walmart, Genesys โปรโตคอลนี้ตั้งอยู่บน OAuth model การทำงานคือ personal agent ของ user ไปหา business discover ว่า agent endpoint อยู่ที่ไหน ขอ guest session ก่อน แล้วถ้าเจ้าของ business authorize จะได้ read-only หรือ read-write token ธุรกิจเลือกได้ว่าจะ expose ผ่าน website, API หรือ agent ของตัวเอง
+
+ที่น่าสังเกตคือ Shopify เปิด Poppy endpoint ให้ร้านค้าทุกร้านอัตโนมัติ สองล้านกว่าร้านทั่วโลก พร้อมให้ personal agent ของ user เข้ามา browse แต่ spec version แรกยังไม่ครอบ payments ซึ่งเป็นช่องว่างที่ Visa มี Trusted Agent Protocol ของตัวเองรออยู่ Stripe กับ Shopify เลยเข้าร่วมทั้งสองค่ายเพื่อ hedge นี่คือ protocol war ที่หลายคนรอ และสัญญาณสำหรับ builders คือ Poppy ขึ้นเร็วกว่า MCP ตอนเปิดตัว การ support Poppy เร็วอาจเป็น edge ในปีหน้า สำหรับธุรกิจ ถ้ามี website หรือ API ของตัวเอง ลองประเมินว่าจะเปิด endpoint ได้ใน sprint ไหน เพราะเมื่อ user ถือ agent ที่คุย Poppy ได้ ธุรกิจที่เปิดก่อนจะได้เข้าสายตา agent ก่อน.
+
+เรื่องที่ห้า.
+Kindo สตาร์ตอัปที่ขายตัวเองเป็น AI Control Center เพิ่งได้เงินเพิ่มสามสิบล้านดอลลาร์ co-led โดย Crosspoint Capital กับ Forgepoint Capital รวม funding ห้าสิบเจ็ดล้าน บริษัทอ้างว่า revenue โตแปดร้อยเปอร์เซ็นต์ปีต่อปี ซึ่งถ้าจริงสะท้อนว่า budget สำหรับคุม agent กำลังแยกจาก budget ที่ใช้สร้าง agent ชัดขึ้นเรื่อยๆ
+
+ตัว product คือ dashboard สำหรับ CISO, head of IT, compliance กับ CFO ให้เห็นในองค์กรตัวเองว่า agent วิ่งอยู่กี่ตัว ใช้ model อะไร เรียก tool ไหน คิด token เท่าไหร่ ล้มเหลวที่ไหน จุดต่างคือ agent ไม่ต้องถูกสร้างใน Kindo ก็ cover ได้ ตราบใดที่ instrument ด้วย SDK Pattern ที่เห็นในสองเดือนนี้ชัดว่า agent sprawl กำลังจะเป็น cloud sprawl เวอร์ชันใหม่ และเร็วกว่าเดิม เพราะ agent คิดค่าแบบ per-token ไม่ใช่ per-instance สัญญาณสำหรับ builders คือออกแบบ observability hook ให้ Kindo-class vendor ดึง telemetry ได้ตั้งแต่วันแรก สำหรับ enterprise ถ้าคุณจะมี agent เกินสิบตัวในหกถึงสิบสองเดือนข้างหน้า ต้องมี control plane ใน shortlist ของการประเมิน budget 5-10% ของ total agent spend ถือเป็น baseline ของ category นี้.
+
+ทั้งหมดนี้คือ brief ของรอบนี้. ขอให้วันนี้เป็นวันที่ดีครับ. แล้วเจอกันรอบหน้า.
