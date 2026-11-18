@@ -1,7 +1,46 @@
 {
-  "generated_at": "2026-11-05T23:15:52Z",
-  "count": 124,
+  "generated_at": "2026-11-18T23:18:04Z",
+  "count": 125,
   "episodes": [
+    {
+      "date": "26-11-19-0605",
+      "iso_date": "2026-11-19T06:05:00+07:00",
+      "title": "Daily AI Brief — 26-11-19 06:05",
+      "description": "1. Microsoft ให้ agent มี Entra ID ของตัวเอง — Copilot Autopilot เปลี่ยน agent จาก \"เครื่องมือ\" เป็น \"พนักงาน\" ที่มีตัวตน\n2. Cognition กด shipping — Devin Bots มาตรฐานใหม่ของ coding agent ที่อยู่ยาวเป็นสัปดาห์, Citi 14,000 engineers ตัด vendor spend 30%\n3. Model ML ปิดราคา $1.5B ของ \"AI agent ส่วนตัวสำหรับ banker\" — ARR โต 12 เท่า, DAU โต 26 เท่า, มี fine-tuned model เองที่ถูกกว่า frontier 50 เท่า\n4. Uber พิสูจน์ว่า MCP ไม่ใช่ demo — MCP Gateway production 800 servers / 5,000 tools / token overhead เกือบ 0\n5. Chargebee Arc — AI agent เข้าทำงานใน back-office ของ finance; 3 task แรกคือ contract, collections, revenue recognition",
+      "items": [
+        {
+          "file": "26-11-19-0605-01-microsoft-copilot-autopilot-entra-identity.md",
+          "title": "Microsoft ให้ agent มี Entra ID ของตัวเอง — Copilot Autopilot เปลี่ยน agent จาก \"เครื่องมือ\" เป็น \"พนักงาน\" ที่มีตัวตน",
+          "order": 1
+        },
+        {
+          "file": "26-11-19-0605-02-cognition-devin-bots-48b-citigroup.md",
+          "title": "Cognition กด shipping — Devin Bots มาตรฐานใหม่ของ coding agent ที่อยู่ยาวเป็นสัปดาห์, Citi 14,000 engineers ตัด vendor spend 30%",
+          "order": 2
+        },
+        {
+          "file": "26-11-19-0605-03-model-ml-250m-series-b-banking-agent.md",
+          "title": "Model ML ปิดราคา $1.5B ของ \"AI agent ส่วนตัวสำหรับ banker\" — ARR โต 12 เท่า, DAU โต 26 เท่า, มี fine-tuned model เองที่ถูกกว่า frontier 50 เท่า",
+          "order": 3
+        },
+        {
+          "file": "26-11-19-0605-04-uber-mcp-gateway-800-servers-5000-tools.md",
+          "title": "Uber พิสูจน์ว่า MCP ไม่ใช่ demo — MCP Gateway production 800 servers / 5,000 tools / token overhead เกือบ 0",
+          "order": 4
+        },
+        {
+          "file": "26-11-19-0605-05-chargebee-arc-agentic-finance.md",
+          "title": "Chargebee Arc — AI agent เข้าทำงานใน back-office ของ finance; 3 task แรกคือ contract, collections, revenue recognition",
+          "order": 5
+        }
+      ],
+      "audio_file": "26-11-19-0605.mp3",
+      "audio_size_bytes": 1945824,
+      "voice": "th-TH-Chirp3-HD-Achernar",
+      "model": "google-cloud-tts-chirp3-hd",
+      "speed": 1.3,
+      "script_char_count": 7008
+    },
     {
       "date": "26-11-06-0605",
       "iso_date": "2026-11-06T06:05:00+07:00",
