@@ -1,7 +1,46 @@
 {
-  "generated_at": "2026-11-05T23:15:52Z",
-  "count": 124,
+  "generated_at": "2026-11-19T23:17:02Z",
+  "count": 125,
   "episodes": [
+    {
+      "date": "26-11-20-0605",
+      "iso_date": "2026-11-20T06:05:00+07:00",
+      "title": "Daily AI Brief — 26-11-20 06:05",
+      "description": "1. Microsoft agent-framework ถูก hijack บน PyPI — คนสร้าง agent คือ attack surface ใหม่\n2. Model ML ปิด $250M ที่ $1.5B — \"ทุก banker มี agent\" คือ pitch ที่ตลาดเชื่อแล้ว\n3. Genpact เปิด Onyx GA — BPO ยักษ์เดิมพันว่า \"earned autonomy\" คือ moat ของ enterprise agent\n4. Replit ปล่อย Missions — \"งบ\" คือ primitive ใหม่ของ agent UX ที่ platform อื่นยังไม่มี\n5. สามรอบใน 10 วัน — Kindo, Bay, Metano ยืนยันว่า \"agent governance\" คือ category แล้ว",
+      "items": [
+        {
+          "file": "26-11-20-0605-01-microsoft-agent-framework-pypi-compromise.md",
+          "title": "Microsoft agent-framework ถูก hijack บน PyPI — คนสร้าง agent คือ attack surface ใหม่",
+          "order": 1
+        },
+        {
+          "file": "26-11-20-0605-02-model-ml-250m-banker-agents.md",
+          "title": "Model ML ปิด $250M ที่ $1.5B — \"ทุก banker มี agent\" คือ pitch ที่ตลาดเชื่อแล้ว",
+          "order": 2
+        },
+        {
+          "file": "26-11-20-0605-03-genpact-onyx-ga-earned-autonomy.md",
+          "title": "Genpact เปิด Onyx GA — BPO ยักษ์เดิมพันว่า \"earned autonomy\" คือ moat ของ enterprise agent",
+          "order": 3
+        },
+        {
+          "file": "26-11-20-0605-04-replit-missions-budget-swarm.md",
+          "title": "Replit ปล่อย Missions — \"งบ\" คือ primitive ใหม่ของ agent UX ที่ platform อื่นยังไม่มี",
+          "order": 4
+        },
+        {
+          "file": "26-11-20-0605-05-agent-governance-kindo-bay-metano.md",
+          "title": "สามรอบใน 10 วัน — Kindo, Bay, Metano ยืนยันว่า \"agent governance\" คือ category แล้ว",
+          "order": 5
+        }
+      ],
+      "audio_file": "26-11-20-0605.mp3",
+      "audio_size_bytes": 1483392,
+      "voice": "th-TH-Chirp3-HD-Achernar",
+      "model": "google-cloud-tts-chirp3-hd",
+      "speed": 1.3,
+      "script_char_count": 5560
+    },
     {
       "date": "26-11-06-0605",
       "iso_date": "2026-11-06T06:05:00+07:00",

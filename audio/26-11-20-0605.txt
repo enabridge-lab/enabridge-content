@@ -1,0 +1,39 @@
+สวัสดีครับ นี่คือ Enabridge AI Brief รอบ 20 November 2026 เวลา 06:05 ครับ.
+รอบนี้มี 5 เรื่อง เน้น Agentic AI, business use case, และ trend ที่เอามาใช้กับ OpenBridge ได้.
+
+เรื่องแรก.
+เรื่องใหญ่วันนี้ Microsoft agent-framework แพ็กเกจที่ builder ใช้สร้าง agent บน Python ถูก hijack บน PyPI เมื่อวันที่ 17 พฤศจิกายนที่ผ่านมา เวอร์ชัน 1.26.1 กับ 1.26.2 ถูกดันขึ้นห่างกันแค่ 33 นาที ภายใต้บัญชี Microsoft ของจริง ข้างในฝัง credential stealer ที่รันผ่าน Python startup hook — แปลว่าไม่ต้อง import ก็โดน ขโมยทั้ง key ของ Azure AWS GitHub Docker Hugging Face และ OpenAI ส่งเข้า webhook ของ attacker
+
+Wiz วิเคราะห์ว่าผู้โจมตีน่าจะได้ client certificate ของ Microsoft ESRP ซึ่งเป็น release pipeline ภายในของ Microsoft เอง นี่ไม่ใช่ typosquat — มันคือ supply chain attack ของจริง package นี้มียอด download เดือนละเกือบสองแสนครั้ง กลุ่มเป้าหมายคือคนสร้าง agent ที่เก็บ key ทุก cloud ไว้ใน environment
+
+ประเด็นที่ควรเก็บ — นี่คือครั้งแรกที่ attack surface ใหม่ของยุค agent ชัดเจนว่าอยู่ที่ "คนที่กำลัง build agent" ไม่ใช่ agent ที่ run แล้ว ถ้าทีมใช้ Microsoft agent framework ให้ pin version กลับไป 1.26.0 ทันที scan environment แล้ว rotate credential ทุกตัว บริษัทไทยที่ deploy agent บน Microsoft stack ควรถาม vendor ภายใน 48 ชั่วโมงว่า version ไหนอยู่ใน production ก่อนวันที่ 17 ครับ.
+
+เรื่องที่สอง.
+Model ML บริษัท agent สำหรับ banker ที่ London เพิ่งปิด Series B สองร้อยห้าสิบล้านเหรียญ valuation ที่หนึ่งพันห้าร้อยล้านเหรียญ General Atlantic กับ QED Investors ซึ่งเป็น VC fintech ตัวจริง co-lead รอบนี้ ตัวเลขที่น่าสังเกตคือ ARR โต 12 เท่าในหนึ่งปี และ Series A รอบก่อนหน้าเพิ่งปิดเมื่อหนึ่งปีก่อนที่ valuation ต่ำกว่าถึง 5-6 เท่า
+
+ที่ positioning ของ Model ML ต่างจากคู่แข่งคือ CEO พูดชัดว่า agent ของเขาช่วย bank "หาเงิน" ไม่ใช่ประหยัดเวลา analyst — งานที่ agent ทำคือเตรียม pitch deck, ร่าง term sheet, วิเคราะห์ portfolio exposure ให้ relationship manager ซึ่งเป็น revenue-generating ไม่ใช่ cost center
+
+เทรนด์ใหญ่ที่เห็นในรอบนี้คือ VC capital ย้ายจาก horizontal agent framework ไปที่ vertical agent สำหรับอุตสาหกรรมที่ลูกค้าจ่ายได้แพง bank, law firm, consulting ก่อนหน้านี้มี Rogo ปิดร้อยหกสิบล้าน Harvey ปิดใหญ่สำหรับ legal ปีนี้ชัดว่า defensibility ของ agent business ไม่ได้มาจาก model แต่มาจาก industry depth และ data integration สำหรับ bank ไทยนี่คือ signal ว่าเริ่ม evaluate vendor ภายนอกได้แล้วครับ.
+
+เรื่องที่สาม.
+Genpact บริษัท BPO ขนาดใหญ่ที่มีรายได้สี่พันห้าร้อยล้านเหรียญต่อปี ประกาศ GA แพลตฟอร์ม Onyx เมื่อวันที่ 16 พฤศจิกายน Onyx เป็น platform agentic operations สำหรับ enterprise ใช้สร้างและ govern AI agent สินค้าตัวแรกคือ Accounts Payable Suite ที่ Genpact อ้างว่าช่วยลูกค้ารายหนึ่งไปจากไม่มี automation เลยเป็น 67% touchless
+
+สิ่งที่ Genpact pitch ว่าเป็น differentiator คือ "earned autonomy" — agent ต้อง earn trust ของ human ผ่าน approval loop หลายรอบก่อนที่จะได้สิทธิ์ทำงาน autonomous เอง ทุก action audit ได้และ trace กลับไปที่ reason ของ decision ได้ Platform รองรับ model หลายตัวและ integrate กับ AWS ServiceNow Microsoft Databricks
+
+narrative ที่น่าสังเกต BPO ยักษ์ไม่ได้เป็น channel ของ Agentforce หรือ Copilot แต่เลือก build platform ของตัวเอง — เพราะพวกเขาคุม workflow และ data ของลูกค้า Fortune 500 อยู่แล้ว สำหรับ bank insurance retailer ไทยที่ outsource งานหลังบ้านให้ BPO ต่างชาติอยู่ภายในสองไตรมาส account manager ของ Genpact น่าจะ pitch Onyx ให้ ควรถามก่อนว่า data portable ไหม ถ้าเปลี่ยน vendor ครับ.
+
+เรื่องที่สี่.
+Replit เปิดตัว Missions เมื่อวันที่ 17 พฤศจิกายน เป็น product ที่พยายามเปลี่ยน UX ของ agentic coding user ตั้ง goal แล้วตั้ง spending cap ก่อนเริ่ม จากนั้น swarm ที่มี agent สูงสุด 32 ตัว ทำงาน concurrent plan build test iterate ภายในงบนั้น ถ้าจะ exceed ต้องขอ approval ก่อน และก่อนทำ action ที่กระทบลูกค้า เช่น ส่ง proposal หรือติดต่อ prospect agent ต้องรอ sign-off เสมอ
+
+Replit อ้างว่าใช้ Missions สร้าง DataCat แพลตฟอร์ม monitoring ของตัวเองภายใน 2 วันด้วยงบสามพันเหรียญ และบอกว่า beat Claude Code ที่ 5 เท่าบน trace benchmark ซึ่งเป็น internal metric ยังต้องรอ third-party verify
+
+สิ่งที่น่าสนใจกว่าคือ Replit กำลัง pitch primitive ใหม่ของ agent UX — budget as first-class citizen ปีที่ผ่านมาทุก vendor focus ที่ agent ทำงานเก่งแค่ไหน แต่ไม่ค่อยมีใครให้ CFO predict cost ได้ ถ้าคุณกำลัง build agent product ลองถามตัวเองว่า pricing primitive ของเราคืออะไร per-seat, per-action, per-token หรือ per-budget ใครที่ CFO predict cost ได้ง่ายที่สุดจะชนะ deal ใหญ่ใน Q1 ปีหน้าครับ.
+
+เรื่องที่ห้า.
+ช่วง 10 วันที่ผ่านมามีสามรอบ funding อยู่ใน category เดียวกัน — agent governance ซึ่งปีที่แล้วยังเรียกชื่อไม่ลงตัว Kindo ปิดสามสิบล้านเหรียญเมื่อ 12 พฤศจิกายน Bay ปิด Series A สามสิบเจ็ดล้านเหรียญเมื่อ 10 พฤศจิกายน และ Metano เพิ่ง stealth exit วันนี้ 19 พฤศจิกายน ด้วย seed สิบสองล้านเหรียญ จาก Sierra Ventures พร้อม GA ของ platform security + governance สำหรับ agent
+
+รวมกัน 79 ล้านเหรียญเข้า agent governance อย่างเดียวใน 10 วัน บวกกับ Palo Alto ซื้อ Clutch 500 ล้านเมื่อต้นเดือน และ CrowdStrike ซื้อ Fiddler + Dreadnode ก่อนหน้านั้น capital flow ไปที่ category "คุม agent" สะสมเกินพันล้านเหรียญภายใน 6 สัปดาห์
+
+ปีที่แล้ว agent security ยังเป็น feature ของ platform ใหญ่ ตอนนี้ VC เริ่มเดิมพันว่าจะเป็น standalone category ขนาดใหญ่พอให้มี 3-5 ผู้เล่น independent — logic เดียวกับที่ CrowdStrike กับ Wiz ขึ้นเป็น unicorn แม้ Microsoft กับ Google มี security tool ของตัวเอง enterprise ที่ deploy agent ข้าม vendor หลายเจ้าภายในไตรมาสหน้าควรเริ่ม evaluate control plane อย่างจริงจัง สำหรับ startup ไทยที่ pitch AI security angle ที่ยังเปิดคือ Southeast Asia compliance เพราะ buyer ไทยไม่พร้อม trust US vendor สำหรับ regulated workload ครับ.
+
+ทั้งหมดนี้คือ brief ของรอบนี้. ขอให้วันนี้เป็นวันที่ดีครับ. แล้วเจอกันรอบหน้า.
