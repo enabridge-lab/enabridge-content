@@ -1,0 +1,37 @@
+{
+  "date": "26-11-20-0605",
+  "iso_date": "2026-11-20T06:05:00+07:00",
+  "title": "Daily AI Brief — 26-11-20 06:05",
+  "items": [
+    {
+      "file": "26-11-20-0605-01-microsoft-agent-framework-pypi-compromise.md",
+      "title": "Microsoft agent-framework ถูก hijack บน PyPI — คนสร้าง agent คือ attack surface ใหม่",
+      "order": 1
+    },
+    {
+      "file": "26-11-20-0605-02-model-ml-250m-banker-agents.md",
+      "title": "Model ML ปิด $250M ที่ $1.5B — \"ทุก banker มี agent\" คือ pitch ที่ตลาดเชื่อแล้ว",
+      "order": 2
+    },
+    {
+      "file": "26-11-20-0605-03-genpact-onyx-ga-earned-autonomy.md",
+      "title": "Genpact เปิด Onyx GA — BPO ยักษ์เดิมพันว่า \"earned autonomy\" คือ moat ของ enterprise agent",
+      "order": 3
+    },
+    {
+      "file": "26-11-20-0605-04-replit-missions-budget-swarm.md",
+      "title": "Replit ปล่อย Missions — \"งบ\" คือ primitive ใหม่ของ agent UX ที่ platform อื่นยังไม่มี",
+      "order": 4
+    },
+    {
+      "file": "26-11-20-0605-05-agent-governance-kindo-bay-metano.md",
+      "title": "สามรอบใน 10 วัน — Kindo, Bay, Metano ยืนยันว่า \"agent governance\" คือ category แล้ว",
+      "order": 5
+    }
+  ],
+  "script_char_count": 5560,
+  "audio_file": "26-11-20-0605.mp3",
+  "voice": "th-TH-Chirp3-HD-Achernar",
+  "model": "google-cloud-tts-chirp3-hd",
+  "speed": 1.3
+}
