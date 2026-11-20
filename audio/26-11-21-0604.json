@@ -1,0 +1,37 @@
+{
+  "date": "26-11-21-0604",
+  "iso_date": "2026-11-21T06:04:00+07:00",
+  "title": "Daily AI Brief — 26-11-21 06:04",
+  "items": [
+    {
+      "file": "26-11-21-0604-01-linq-90m-a16z-agent-messaging.md",
+      "title": "Linq ปิด $90M a16z ย้าย agent ออกจาก chat window ไปอยู่ในข้อความทุกช่องที่คนใช้อยู่แล้ว",
+      "order": 1
+    },
+    {
+      "file": "26-11-21-0604-02-langchain-300m-capitalg-agent-ops.md",
+      "title": "LangChain ปิด $300M ที่ valuation $3B นำโดย CapitalG — จาก framework กลายเป็น agent control plane ของ enterprise",
+      "order": 2
+    },
+    {
+      "file": "26-11-21-0604-03-model-ml-250m-banking-agent.md",
+      "title": "Model ML ปิด $250M ที่ $1.5B — thesis \"agent เฉพาะทางให้แต่ละ banker\" เริ่มมีผลตอบรับจริง",
+      "order": 3
+    },
+    {
+      "file": "26-11-21-0604-04-att-500-workflows-45b-tokens.md",
+      "title": "AT&T พิมพ์ตัวเลขที่ enterprise agent รอมานาน — 500 workflow ใน production, 45 พันล้าน token/วัน, human gate ทุกตัว",
+      "order": 4
+    },
+    {
+      "file": "26-11-21-0604-05-replit-missions-agent-swarm-budget.md",
+      "title": "Replit Missions เปิดให้ delegate งานให้ swarm ของ agent — ผูกด้วย budget cap + approval gate รายขั้น",
+      "order": 5
+    }
+  ],
+  "script_char_count": 7425,
+  "audio_file": "26-11-21-0604.mp3",
+  "voice": "th-TH-Chirp3-HD-Achernar",
+  "model": "google-cloud-tts-chirp3-hd",
+  "speed": 1.3
+}

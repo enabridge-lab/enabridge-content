@@ -1,7 +1,46 @@
 {
-  "generated_at": "2026-11-05T23:15:52Z",
-  "count": 124,
+  "generated_at": "2026-11-20T23:17:37Z",
+  "count": 125,
   "episodes": [
+    {
+      "date": "26-11-21-0604",
+      "iso_date": "2026-11-21T06:04:00+07:00",
+      "title": "Daily AI Brief — 26-11-21 06:04",
+      "description": "1. Linq ปิด $90M a16z ย้าย agent ออกจาก chat window ไปอยู่ในข้อความทุกช่องที่คนใช้อยู่แล้ว\n2. LangChain ปิด $300M ที่ valuation $3B นำโดย CapitalG — จาก framework กลายเป็น agent control plane ของ enterprise\n3. Model ML ปิด $250M ที่ $1.5B — thesis \"agent เฉพาะทางให้แต่ละ banker\" เริ่มมีผลตอบรับจริง\n4. AT&T พิมพ์ตัวเลขที่ enterprise agent รอมานาน — 500 workflow ใน production, 45 พันล้าน token/วัน, human gate ทุกตัว\n5. Replit Missions เปิดให้ delegate งานให้ swarm ของ agent — ผูกด้วย budget cap + approval gate รายขั้น",
+      "items": [
+        {
+          "file": "26-11-21-0604-01-linq-90m-a16z-agent-messaging.md",
+          "title": "Linq ปิด $90M a16z ย้าย agent ออกจาก chat window ไปอยู่ในข้อความทุกช่องที่คนใช้อยู่แล้ว",
+          "order": 1
+        },
+        {
+          "file": "26-11-21-0604-02-langchain-300m-capitalg-agent-ops.md",
+          "title": "LangChain ปิด $300M ที่ valuation $3B นำโดย CapitalG — จาก framework กลายเป็น agent control plane ของ enterprise",
+          "order": 2
+        },
+        {
+          "file": "26-11-21-0604-03-model-ml-250m-banking-agent.md",
+          "title": "Model ML ปิด $250M ที่ $1.5B — thesis \"agent เฉพาะทางให้แต่ละ banker\" เริ่มมีผลตอบรับจริง",
+          "order": 3
+        },
+        {
+          "file": "26-11-21-0604-04-att-500-workflows-45b-tokens.md",
+          "title": "AT&T พิมพ์ตัวเลขที่ enterprise agent รอมานาน — 500 workflow ใน production, 45 พันล้าน token/วัน, human gate ทุกตัว",
+          "order": 4
+        },
+        {
+          "file": "26-11-21-0604-05-replit-missions-agent-swarm-budget.md",
+          "title": "Replit Missions เปิดให้ delegate งานให้ swarm ของ agent — ผูกด้วย budget cap + approval gate รายขั้น",
+          "order": 5
+        }
+      ],
+      "audio_file": "26-11-21-0604.mp3",
+      "audio_size_bytes": 1956384,
+      "voice": "th-TH-Chirp3-HD-Achernar",
+      "model": "google-cloud-tts-chirp3-hd",
+      "speed": 1.3,
+      "script_char_count": 7425
+    },
     {
       "date": "26-11-06-0605",
       "iso_date": "2026-11-06T06:05:00+07:00",
